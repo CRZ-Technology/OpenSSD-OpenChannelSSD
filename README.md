@@ -1,6 +1,6 @@
 # OpenSSD-OpenChannelSSD
 
-CRZ Technoloy released OpenSSD / OpenChannelSSD sources on CosmosPlus / DaisyPlus platforms.
+CRZ Technoloy released OpenSSD / OpenChannelSSD sources on CosmosPlus, Daisy, DaisyPlus platforms.
 
 CosmosPlus Directory
 
@@ -9,6 +9,12 @@ CosmosPlus Directory
            - OpenSSD - Hynix_NAND - OpenSSD source for Hynix NAND module on CosmosPlus board.
               
                      - Toshiba_NAND - OpenSSD source for Toshiba NAND module on CosmosPlus board.
+
+
+Daisy Directory
+
+          - NVMe - NVMe source on Daisy board
+
 
 DaisyPlus Directory
 
