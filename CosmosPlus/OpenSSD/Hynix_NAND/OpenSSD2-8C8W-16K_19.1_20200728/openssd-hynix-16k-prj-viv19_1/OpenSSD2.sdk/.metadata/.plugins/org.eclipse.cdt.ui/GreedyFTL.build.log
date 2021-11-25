@@ -1,0 +1,8 @@
+18:07:55 **** Incremental Build of configuration Debug for project GreedyFTL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+18:07:56 Build Finished (took 707ms)
+

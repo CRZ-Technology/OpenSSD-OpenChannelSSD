@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;ZC702_hw_platform&apos;" deleteContents="true" description="Delete resource &apos;ZC702_hw_platform&apos;" element1="/ZC702_hw_platform" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1565352339803"/>&#x0A;<refactoring comment="Delete 2 resources" deleteContents="true" description="Delete 2 resources" element1="/GreedyFTL3" element2="/GreedyFTL3_bsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1565352418562"/>
+</session>

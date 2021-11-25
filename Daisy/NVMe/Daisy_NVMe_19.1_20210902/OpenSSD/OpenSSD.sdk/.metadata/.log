@@ -1,0 +1,57 @@
+!SESSION 2021-09-01 10:35:49.197 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/sources/DaisyPlus_NVMe_19.1_20210421/OpenSSD/OpenSSD.sdk
+
+This is a continuation of log file D:\sources\DaisyPlus_NVMe_19.1_20210421\OpenSSD\OpenSSD.sdk\.metadata\.bak_2.log
+Created Time: 2021-09-02 14:10:02.661
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:02.661
+!MESSAGE XSCT Command: [psu_ps_pl_reset_config], Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:02.699
+!MESSAGE XSCT command with result: [psu_ps_pl_reset_config], Result: [null, ]. Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:02.700
+!MESSAGE XSCT Command: [catch {psu_protection}], Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:02.727
+!MESSAGE XSCT command with result: [catch {psu_protection}], Result: [null, 0]. Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:02.727
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308AAF6B1"} -index 1], Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:02.765
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308AAF6B1"} -index 1], Result: [null, ]. Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:02.766
+!MESSAGE XSCT Command: [dow D:/sources/DaisyPlus_NVMe_19.1_20210421/OpenSSD/OpenSSD.sdk/nvme/Debug/nvme.elf], Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:03.202
+!MESSAGE XSCT command with result: [dow D:/sources/DaisyPlus_NVMe_19.1_20210421/OpenSSD/OpenSSD.sdk/nvme/Debug/nvme.elf], Result: [null, ]. Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:03.202
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:03.209
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:03.303
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308AAF6B1"} -index 1], Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:03.347
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308AAF6B1"} -index 1], Result: [null, ]. Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:03.348
+!MESSAGE XSCT Command: [con], Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:10:03.387
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-220
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:29:48.267
+!MESSAGE XSCT Command: [disconnect tcfchan#15], Thread: Thread-1675
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-09-02 14:29:48.271
+!MESSAGE XSCT command with result: [disconnect tcfchan#15], Result: [null, ]. Thread: Thread-1675

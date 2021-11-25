@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/OpenSSD/Project/OpenSSD2_Prebuild_200MT/OpenSSD2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="56" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_ARADDR" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_ARADDR[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_ARREADY" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_ARREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_ARVALID" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_ARVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_AWADDR" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_AWADDR[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RREADY" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_RREADY</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_RREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RVALID" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_RVALID</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_RVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_AWVALID" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_AWVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_BREADY" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_BREADY</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_BREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_BVALID" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_BVALID</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_BVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RDATA" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_RDATA[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="vbus103" type="vbus">
+      <obj_property name="label">Way RB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RDATA[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">Tiger4NSC_0/C_RDATA[7]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RDATA[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">Tiger4NSC_0/C_RDATA[6]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RDATA[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">Tiger4NSC_0/C_RDATA[5]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RDATA[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">Tiger4NSC_0/C_RDATA[4]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RDATA[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">Tiger4NSC_0/C_RDATA[3]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RDATA[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">Tiger4NSC_0/C_RDATA[2]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RDATA[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">Tiger4NSC_0/C_RDATA[1]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_RDATA[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">Tiger4NSC_0/C_RDATA[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_WREADY" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_WREADY</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_WREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_WDATA" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_WDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_WDATA" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_WDATA[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/C_WVALID" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/C_WVALID</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/C_WVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_RLAST" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_RLAST</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_RLAST</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_WLAST" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_WLAST</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_WLAST</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_WVALID" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_WVALID</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_WVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_WREADY" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_WREADY</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_WREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_ARLEN" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_ARLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_ARLEN[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_ARVALID" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_ARVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_AWLEN" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_AWLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_AWLEN[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_RREADY" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_RREADY</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_RREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_RVALID" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_RVALID</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_RVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_ARREADY" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_ARREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_AWREADY" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_AWREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/D_AWVALID" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/D_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/D_AWVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="PS/M_AXI_GP0_ARREADY" type="logic">
+      <obj_property name="ElementShortName">PS/M_AXI_GP0_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">PS/M_AXI_GP0_ARREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/wBNC_P_read_DT00h_Last" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/wBNC_P_read_DT00h_Last</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/wBNC_P_read_DT00h_Last</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/wBNC_P_read_DT00h_Ready" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/wBNC_P_read_DT00h_Ready</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/wBNC_P_read_DT00h_Ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/wPM_ReadReady_PCG_PM" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/wPM_ReadReady_PCG_PM</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/wPM_ReadReady_PCG_PM</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/oReadValid" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/oReadValid</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/oReadValid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/iReadLast" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/iReadLast</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/iReadLast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/oAddress" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/oAddress[0:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/oAddress[0:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/oCMDValid" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/oCMDValid</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/oCMDValid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/oLength" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/oLength[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/oLength[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/wBNC_P_read_DT00h_Start" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/wBNC_P_read_DT00h_Start</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/wBNC_P_read_DT00h_Start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/rReady" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/rReady</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/rReady</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/wPM_ReadValid_PCG_PM" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/wPM_ReadValid_PCG_PM</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/wPM_ReadValid_PCG_PM</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/oWriteReady" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/oWriteReady</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/oWriteReady</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/iCMDReady" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/iCMDReady</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/iCMDReady</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/iReadValid" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/iReadValid</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/iReadValid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/oCMDReady" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/oCMDReady</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/oCMDReady</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/iReadyBusy" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/iReadyBusy[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/iReadyBusy[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/rCurState" type="array">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/rCurState[3:0]</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/inst/Inst_NPCG_Toggle_Top/bCMD_BNC_P_read_DT00h/rCurState[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/oReadLast" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/oReadLast</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/oReadLast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/oWriteValid" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/oWriteValid</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/oWriteValid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/iWriteReady" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/iWriteReady</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/iWriteReady</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/iWriteValid" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/iWriteValid</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/iWriteValid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/oOpcode" type="array">
+      <obj_property name="ElementShortName">Tiger4NSC_0/oOpcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/oOpcode[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/oReadReady" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/oReadReady</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/oReadReady</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Tiger4NSC_0/oWriteLast" type="logic">
+      <obj_property name="ElementShortName">Tiger4NSC_0/oWriteLast</obj_property>
+      <obj_property name="ObjectShortName">Tiger4NSC_0/oWriteLast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/iCMDValid" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/iCMDValid</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/iCMDValid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/iOpcode" type="array">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/iOpcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/iOpcode[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/iReadReady" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/iReadReady</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/iReadReady</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="V2NFC100DDR_0/iWriteLast" type="logic">
+      <obj_property name="ElementShortName">V2NFC100DDR_0/iWriteLast</obj_property>
+      <obj_property name="ObjectShortName">V2NFC100DDR_0/iWriteLast</obj_property>
+   </wvobject>
+</wave_config>

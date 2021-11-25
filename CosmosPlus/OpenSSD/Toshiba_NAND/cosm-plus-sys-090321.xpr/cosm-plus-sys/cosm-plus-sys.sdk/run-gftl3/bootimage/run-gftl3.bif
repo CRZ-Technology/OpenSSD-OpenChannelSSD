@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Xilinx\Cosmos+\Toshiba\cosm-plus-sys-083021.xpr\cosm-plus-sys\cosm-plus-sys.sdk\fsbl\Debug\fsbl.elf
+	C:\Xilinx\Cosmos+\Toshiba\cosm-plus-sys-083021.xpr\cosm-plus-sys\cosm-plus-sys.sdk\sys_top_wrapper_hw_platform_0\sys_top_wrapper.bit
+	C:\Xilinx\Cosmos+\Toshiba\cosm-plus-sys-083021.xpr\cosm-plus-sys\cosm-plus-sys.sdk\run-gftl3\Debug\run-gftl3.elf
+}

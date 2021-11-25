@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Wed Apr  1 13:29:38 2020
+# Process ID: 25488
+# Current directory: C:/Users/Jeon/Desktop/projects-viv19_1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Jeon/Desktop/projects-viv19_1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Jeon/Desktop/projects-viv19_1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

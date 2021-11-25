@@ -1,0 +1,4249 @@
+!SESSION 2021-11-16 13:38:06.164 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file D:\sources\CosmosPlus_OCSSD-8C8W-16K_19.1_20211101\openssd-hynix-16k-prj-viv19_1\OpenSSD2.sdk\.metadata\.bak_0.log
+Created Time: 2021-11-16 13:40:32.577
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.577
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.579
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.581
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.582
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.595
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.596
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.599
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.600
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.602
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.610
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.613
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 1000000000]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.614
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.618
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.619
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.643
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"__Tiger4NSC_0_C_AXI": {"name": "__Tiger4NSC_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_1_C_AXI": {"name": "__Tiger4NSC_1",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_2_C_AXI": {"name": "__Tiger4NSC_2",
+"base": "0x43C20000",
+"high": "0x43C2FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_3_C_AXI": {"name": "__Tiger4NSC_3",
+"base": "0x43C30000",
+"high": "0x43C3FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_4_C_AXI": {"name": "__Tiger4NSC_4",
+"base": "0x43C40000",
+"high": "0x43C4FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_5_C_AXI": {"name": "__Tiger4NSC_5",
+"base": "0x43C50000",
+"high": "0x43C5FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_6_C_AXI": {"name": "__Tiger4NSC_6",
+"base": "0x43C60000",
+"high": "0x43C6FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_7_C_AXI": {"name": "__Tiger4NSC_7",
+"base": "0x43C70000",
+"high": "0x43C7FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__NVMeHostController_0_s0_axi": {"name": "__NVMeHostController_0",
+"base": "0x83C00000",
+"high": "0x83C1FFFF",
+"size": "131072",
+"slaveintf": "s0_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_i2c_0": {"name": "ps7_i2c_0",
+"base": "0xE0004000",
+"high": "0xE0004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFDFFFFFF",
+"size": "33554432",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__axi_bram_ctrl_1_S_AXI_Mem0": {"name": "__axi_bram_ctrl_1",
+"base": "0x80000000",
+"high": "0x80001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"__axi_bram_ctrl_3_S_AXI_Mem0": {"name": "__axi_bram_ctrl_3",
+"base": "0x80010000",
+"high": "0x80011FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.645
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.647
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.648
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.651
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.652
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.654
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.685
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.717
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.718
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.722
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.723
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.726
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 1000000000]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.747
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.752
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, __NVMeHostController_0 __Tiger4NSC_0 __Tiger4NSC_1 __Tiger4NSC_2 __Tiger4NSC_3 __Tiger4NSC_4 __Tiger4NSC_5 __Tiger4NSC_6 __Tiger4NSC_7 __axi_bram_ctrl_1 __axi_bram_ctrl_3 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_i2c_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.754
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf bit], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.757
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf bit], Result: [null, OpenSSD2.bit]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:32.759
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.356
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.358
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.766
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.768
+!MESSAGE XSCT Command: [version -server], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.770
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.771
+!MESSAGE XSCT Command: [version], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.773
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.790
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.800
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.801
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.833
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.835
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.845
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.847
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.872
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.873
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.882
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.883
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.906
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.909
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.916
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.917
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.944
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.945
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.956
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.960
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.986
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.987
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.998
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:36.999
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.032
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.033
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.057
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.059
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.064
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.071
+!MESSAGE XSCT Command: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.079
+!MESSAGE XSCT command with result: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.080
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.139
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.140
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.331
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:37.332
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:40.345
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:40.388
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:40.394
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:40.395
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:40.415
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:40.416
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:40.457
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:40.458
+!MESSAGE XSCT Command: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:48.096
+!MESSAGE XSCT command with result: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:49.837
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:49.863
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:49.864
+!MESSAGE XSCT Command: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:49.931
+!MESSAGE XSCT command with result: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, OpenSSD2_1]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:49.932
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:49.935
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:49.937
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:49.969
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:49.971
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:50.492
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:50.493
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:50.500
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:50.501
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:50.526
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:50.527
+!MESSAGE XSCT Command: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:50.822
+!MESSAGE XSCT command with result: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:50.823
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:50.826
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:50.996
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:51.045
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:51.047
+!MESSAGE XSCT Command: [con], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 13:40:51.071
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:33.783
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-89
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:33.807
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-89
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-11-16 14:19:34.794
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.796
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.803
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.803
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.814
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.815
+!MESSAGE XSCT Command: [version -server], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.817
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.817
+!MESSAGE XSCT Command: [version], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.819
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.819
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.827
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.828
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.846
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.847
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.859
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.859
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.878
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.878
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.885
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.886
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.907
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.908
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.920
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.921
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.949
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.950
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.959
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.960
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.983
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.984
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.990
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:34.991
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.012
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.017
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.036
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.037
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.038
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.047
+!MESSAGE XSCT Command: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.050
+!MESSAGE XSCT command with result: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.051
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.085
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.086
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.239
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:35.240
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:38.251
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:38.277
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:38.296
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:38.297
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:38.317
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:38.318
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:38.341
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:38.343
+!MESSAGE XSCT Command: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:45.981
+!MESSAGE XSCT command with result: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:45.998
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:46.023
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:46.024
+!MESSAGE XSCT Command: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:51.655
+!MESSAGE XSCT command with result: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, OpenSSD2_4]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:51.656
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:51.658
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:51.661
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:51.685
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:51.686
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.011
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.012
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.019
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.020
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.044
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.045
+!MESSAGE XSCT Command: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.346
+!MESSAGE XSCT command with result: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.347
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.357
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.438
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.509
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.510
+!MESSAGE XSCT Command: [con], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 14:19:52.535
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-1
+!SESSION 2021-11-16 18:02:27.649 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-11-16 18:02:34.547
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2021-11-16 18:02:35.348
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-11-16 18:02:35.348
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2021-11-16 18:02:35.929
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-11-16 18:02:35.929
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:51.756
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:51.756
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:51.766
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:51.767
+!MESSAGE XSCT Command: [setws D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:59.833
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:59.834
+!MESSAGE XSCT command with result: [setws D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk], Result: [null, ]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:59.845
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:59.848
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, {"device": "7z045",
+"family": "zynq",
+"timestamp": "Mon Nov  1 17:45:13 2021",
+"vivado_version": "2019.1",
+"part": "xc7z045ffg900-3",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:59.856
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:59.882
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, {"__CH0MMCMC1H200": {"hier_name": "__CH0MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__CH2MMCMC1H200": {"hier_name": "__CH2MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__CH3MMCMC1H200": {"hier_name": "__CH3MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__CH4MMCMC1H200": {"hier_name": "__CH4MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__CH6MMCMC1H200": {"hier_name": "__CH6MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__CH7MMCMC1H200": {"hier_name": "__CH7MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__Dispatcher_uCode_0": {"hier_name": "__Dispatcher_uCode_0",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_1": {"hier_name": "__Dispatcher_uCode_1",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_2": {"hier_name": "__Dispatcher_uCode_2",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_3": {"hier_name": "__Dispatcher_uCode_3",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_4": {"hier_name": "__Dispatcher_uCode_4",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_5": {"hier_name": "__Dispatcher_uCode_5",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_6": {"hier_name": "__Dispatcher_uCode_6",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_7": {"hier_name": "__Dispatcher_uCode_7",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__GPIC0": {"hier_name": "__GPIC0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"__GPIC1": {"hier_name": "__GPIC1",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"__HPIC3": {"hier_name": "__HPIC3",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"__NVMeHostController_0": {"hier_name": "__NVMeHostController_0",
+"type": "NVMeHostController",
+"version": "2.0.0",
+"ip_type": "PERIPHERAL",
+},
+"__PS": {"hier_name": "__PS",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"__Tiger4NSC_0": {"hier_name": "__Tiger4NSC_0",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_1": {"hier_name": "__Tiger4NSC_1",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_2": {"hier_name": "__Tiger4NSC_2",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_3": {"hier_name": "__Tiger4NSC_3",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_4": {"hier_name": "__Tiger4NSC_4",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_5": {"hier_name": "__Tiger4NSC_5",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_6": {"hier_name": "__Tiger4NSC_6",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_7": {"hier_name": "__Tiger4NSC_7",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4SharedKES_0": {"hier_name": "__Tiger4SharedKES_0",
+"type": "Tiger4SharedKES",
+"version": "1.0.1",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4SharedKES_1": {"hier_name": "__Tiger4SharedKES_1",
+"type": "Tiger4SharedKES",
+"version": "1.0.1",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_0": {"hier_name": "__V2NFC100DDR_0",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_1": {"hier_name": "__V2NFC100DDR_1",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_2": {"hier_name": "__V2NFC100DDR_2",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_3": {"hier_name": "__V2NFC100DDR_3",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_4": {"hier_name": "__V2NFC100DDR_4",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_5": {"hier_name": "__V2NFC100DDR_5",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_6": {"hier_name": "__V2NFC100DDR_6",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_7": {"hier_name": "__V2NFC100DDR_7",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__axi_bram_ctrl_0": {"hier_name": "__axi_bram_ctrl_0",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"__axi_bram_ctrl_1": {"hier_name": "__axi_bram_ctrl_1",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"__axi_bram_ctrl_2": {"hier_name": "__axi_bram_ctrl_2",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"__axi_bram_ctrl_3": {"hier_name": "__axi_bram_ctrl_3",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"__axi_interconnect_0": {"hier_name": "__axi_interconnect_0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"__axi_interconnect_1": {"hier_name": "__axi_interconnect_1",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"__blk_mem_gen_0": {"hier_name": "__blk_mem_gen_0",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__blk_mem_gen_1": {"hier_name": "__blk_mem_gen_1",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__proc_sys_reset_0": {"hier_name": "__proc_sys_reset_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"__proc_sys_reset_1": {"hier_name": "__proc_sys_reset_1",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"__proc_sys_reset_2": {"hier_name": "__proc_sys_reset_2",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"__proc_sys_reset_3": {"hier_name": "__proc_sys_reset_3",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_i2c_0": {"hier_name": "ps7_i2c_0",
+"type": "ps7_i2c",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp1": {"hier_name": "ps7_m_axi_gp1",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:59.886
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:02:59.908
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"__Tiger4NSC_0_C_AXI": {"name": "__Tiger4NSC_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_1_C_AXI": {"name": "__Tiger4NSC_1",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_2_C_AXI": {"name": "__Tiger4NSC_2",
+"base": "0x43C20000",
+"high": "0x43C2FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_3_C_AXI": {"name": "__Tiger4NSC_3",
+"base": "0x43C30000",
+"high": "0x43C3FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_4_C_AXI": {"name": "__Tiger4NSC_4",
+"base": "0x43C40000",
+"high": "0x43C4FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_5_C_AXI": {"name": "__Tiger4NSC_5",
+"base": "0x43C50000",
+"high": "0x43C5FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_6_C_AXI": {"name": "__Tiger4NSC_6",
+"base": "0x43C60000",
+"high": "0x43C6FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_7_C_AXI": {"name": "__Tiger4NSC_7",
+"base": "0x43C70000",
+"high": "0x43C7FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__NVMeHostController_0_s0_axi": {"name": "__NVMeHostController_0",
+"base": "0x83C00000",
+"high": "0x83C1FFFF",
+"size": "131072",
+"slaveintf": "s0_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_i2c_0": {"name": "ps7_i2c_0",
+"base": "0xE0004000",
+"high": "0xE0004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFDFFFFFF",
+"size": "33554432",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__axi_bram_ctrl_1_S_AXI_Mem0": {"name": "__axi_bram_ctrl_1",
+"base": "0x80000000",
+"high": "0x80001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"__axi_bram_ctrl_3_S_AXI_Mem0": {"name": "__axi_bram_ctrl_3",
+"base": "0x80010000",
+"high": "0x80011FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:00.003
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:00.014
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"__NVMeHostController_0": {},
+"__Tiger4NSC_0": {},
+"__Tiger4NSC_1": {},
+"__Tiger4NSC_2": {},
+"__Tiger4NSC_3": {},
+"__Tiger4NSC_4": {},
+"__Tiger4NSC_5": {},
+"__Tiger4NSC_6": {},
+"__Tiger4NSC_7": {},
+"__axi_bram_ctrl_1": {},
+"__axi_bram_ctrl_3": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_i2c_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:00.015
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:00.025
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"__NVMeHostController_0": {},
+"__Tiger4NSC_0": {},
+"__Tiger4NSC_1": {},
+"__Tiger4NSC_2": {},
+"__Tiger4NSC_3": {},
+"__Tiger4NSC_4": {},
+"__Tiger4NSC_5": {},
+"__Tiger4NSC_6": {},
+"__Tiger4NSC_7": {},
+"__axi_bram_ctrl_1": {},
+"__axi_bram_ctrl_3": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_i2c_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:05.019
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:05.189
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-11-16 18:03:10.861
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.865
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.872
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "1000",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "100",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.873
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.876
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.877
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.890
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.892
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.901
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.902
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.907
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.908
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.935
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.939
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.947
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 1000000000]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:10.995
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.001
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.002
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.025
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"__Tiger4NSC_0_C_AXI": {"name": "__Tiger4NSC_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_1_C_AXI": {"name": "__Tiger4NSC_1",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_2_C_AXI": {"name": "__Tiger4NSC_2",
+"base": "0x43C20000",
+"high": "0x43C2FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_3_C_AXI": {"name": "__Tiger4NSC_3",
+"base": "0x43C30000",
+"high": "0x43C3FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_4_C_AXI": {"name": "__Tiger4NSC_4",
+"base": "0x43C40000",
+"high": "0x43C4FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_5_C_AXI": {"name": "__Tiger4NSC_5",
+"base": "0x43C50000",
+"high": "0x43C5FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_6_C_AXI": {"name": "__Tiger4NSC_6",
+"base": "0x43C60000",
+"high": "0x43C6FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_7_C_AXI": {"name": "__Tiger4NSC_7",
+"base": "0x43C70000",
+"high": "0x43C7FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__NVMeHostController_0_s0_axi": {"name": "__NVMeHostController_0",
+"base": "0x83C00000",
+"high": "0x83C1FFFF",
+"size": "131072",
+"slaveintf": "s0_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_i2c_0": {"name": "ps7_i2c_0",
+"base": "0xE0004000",
+"high": "0xE0004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFDFFFFFF",
+"size": "33554432",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__axi_bram_ctrl_1_S_AXI_Mem0": {"name": "__axi_bram_ctrl_1",
+"base": "0x80000000",
+"high": "0x80001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"__axi_bram_ctrl_3_S_AXI_Mem0": {"name": "__axi_bram_ctrl_3",
+"base": "0x80010000",
+"high": "0x80011FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.027
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.029
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.030
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.033
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.039
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.041
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.042
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.044
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.045
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.047
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.048
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.050
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 1000000000]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.073
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.076
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, __NVMeHostController_0 __Tiger4NSC_0 __Tiger4NSC_1 __Tiger4NSC_2 __Tiger4NSC_3 __Tiger4NSC_4 __Tiger4NSC_5 __Tiger4NSC_6 __Tiger4NSC_7 __axi_bram_ctrl_1 __axi_bram_ctrl_3 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_i2c_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.077
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf bit], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.079
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf bit], Result: [null, OpenSSD2.bit]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:11.080
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:14.763
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:14.765
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:18.031
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:21.036
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:24.047
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:24.048
+!MESSAGE XSCT Command: [version -server], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:24.050
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:24.051
+!MESSAGE XSCT Command: [version], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:24.052
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:24.066
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:27.073
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:30.081
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.597
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.598
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.623
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.624
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.632
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.633
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.650
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.651
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.657
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.659
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.722
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.724
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.730
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.732
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.756
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.757
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.765
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.765
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.785
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.786
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.793
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.794
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.812
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.813
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.842
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.843
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.868
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.869
+!MESSAGE XSCT Command: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.875
+!MESSAGE XSCT command with result: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.876
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.900
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:32.901
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:33.053
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:33.053
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:36.066
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:36.107
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:36.127
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:36.127
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:36.145
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:36.146
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:36.192
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:36.193
+!MESSAGE XSCT Command: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:43.828
+!MESSAGE XSCT command with result: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:43.854
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:43.884
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:43.885
+!MESSAGE XSCT Command: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:43.948
+!MESSAGE XSCT command with result: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, OpenSSD2_1]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:43.949
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:43.951
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:43.954
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:43.982
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:43.983
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.355
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.356
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.365
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.366
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.391
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.392
+!MESSAGE XSCT Command: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.701
+!MESSAGE XSCT command with result: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.702
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.724
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.848
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.904
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.905
+!MESSAGE XSCT Command: [con], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 18:03:44.932
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:46.470
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-90
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:46.517
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-90
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-11-16 19:31:47.497
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.498
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.504
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.505
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.523
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.524
+!MESSAGE XSCT Command: [version -server], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.526
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.526
+!MESSAGE XSCT Command: [version], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.527
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.528
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.533
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.533
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.563
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.564
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.573
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.574
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.594
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.595
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.610
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.611
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.640
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.640
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.647
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.648
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.667
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.668
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.675
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.676
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.693
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.694
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.700
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.701
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.721
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.722
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.747
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.748
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.749
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.753
+!MESSAGE XSCT Command: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.757
+!MESSAGE XSCT command with result: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.758
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.794
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.795
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.954
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:47.955
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:50.959
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:50.981
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:50.989
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:50.990
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:51.011
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:51.011
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:51.032
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:51.033
+!MESSAGE XSCT Command: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:58.651
+!MESSAGE XSCT command with result: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:58.670
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:58.696
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:31:58.697
+!MESSAGE XSCT Command: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.291
+!MESSAGE XSCT command with result: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, OpenSSD2_4]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.292
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.294
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.313
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.339
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.340
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.696
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.697
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.704
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.705
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.728
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:04.729
+!MESSAGE XSCT Command: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:05.031
+!MESSAGE XSCT command with result: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:05.032
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:05.041
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:05.137
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:05.206
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:05.208
+!MESSAGE XSCT Command: [con], Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-16 19:32:05.239
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:51.734
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-141
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:51.767
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-141
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-11-17 10:42:52.759
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.760
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.766
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.766
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.779
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.780
+!MESSAGE XSCT Command: [version -server], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.794
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.795
+!MESSAGE XSCT Command: [version], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.795
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.796
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.802
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.802
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.822
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.823
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.836
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.836
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.862
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.863
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.876
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.877
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.915
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.915
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.923
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.924
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.950
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.951
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.956
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.957
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.977
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.978
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.984
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:52.984
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.004
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.004
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.025
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.026
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.027
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.030
+!MESSAGE XSCT Command: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.034
+!MESSAGE XSCT command with result: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.034
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.072
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.073
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.202
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:53.203
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:56.215
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:56.253
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:56.262
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:56.262
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:56.281
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:56.282
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:56.326
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:42:56.327
+!MESSAGE XSCT Command: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:03.940
+!MESSAGE XSCT command with result: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:03.984
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:04.013
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:04.014
+!MESSAGE XSCT Command: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.019
+!MESSAGE XSCT command with result: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, OpenSSD2_7]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.020
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.021
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.025
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.049
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.050
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.451
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.452
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.459
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.460
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.514
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.515
+!MESSAGE XSCT Command: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.798
+!MESSAGE XSCT command with result: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.803
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.805
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.881
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.965
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:10.966
+!MESSAGE XSCT Command: [con], Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 10:43:11.019
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:20.628
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-191
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:20.666
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-191
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-11-17 11:40:21.653
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.654
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.661
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.662
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.679
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.680
+!MESSAGE XSCT Command: [version -server], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.682
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.682
+!MESSAGE XSCT Command: [version], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.684
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.685
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.691
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.692
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.710
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.710
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.716
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.717
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.736
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.736
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.742
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.742
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.759
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.760
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.769
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.769
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.794
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.795
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.801
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.802
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.822
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.823
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.829
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.829
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.847
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.848
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.865
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.866
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.869
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.880
+!MESSAGE XSCT Command: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.883
+!MESSAGE XSCT command with result: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.884
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.909
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:21.910
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:22.071
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:22.072
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:25.072
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:25.103
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:25.119
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:25.119
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:25.139
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:25.140
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:25.161
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:25.162
+!MESSAGE XSCT Command: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:32.822
+!MESSAGE XSCT command with result: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:32.858
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:32.891
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:32.891
+!MESSAGE XSCT Command: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:37.937
+!MESSAGE XSCT command with result: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, OpenSSD2_10]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:37.938
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:37.940
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:37.943
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:37.975
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:37.976
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.336
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.337
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.343
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.344
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.367
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.368
+!MESSAGE XSCT Command: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.667
+!MESSAGE XSCT command with result: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.668
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.679
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.776
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.847
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.848
+!MESSAGE XSCT Command: [con], Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 11:40:38.881
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:00.155
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-240
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:00.178
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-240
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-11-17 13:36:01.180
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.182
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.193
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.194
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.220
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.220
+!MESSAGE XSCT Command: [version -server], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.222
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.222
+!MESSAGE XSCT Command: [version], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.223
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.223
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.229
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.230
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.250
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.251
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.258
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.258
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.275
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.276
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.283
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.283
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.306
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.307
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.314
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.315
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.335
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.336
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.342
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.342
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.361
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.361
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.367
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.368
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.385
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.385
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.402
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.403
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.404
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.408
+!MESSAGE XSCT Command: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.410
+!MESSAGE XSCT command with result: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.411
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.459
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.460
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.587
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:01.587
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:04.593
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:04.617
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:04.638
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:04.638
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:04.657
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:04.658
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:04.678
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:04.678
+!MESSAGE XSCT Command: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:12.320
+!MESSAGE XSCT command with result: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:12.387
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:12.417
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:12.418
+!MESSAGE XSCT Command: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.293
+!MESSAGE XSCT command with result: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, OpenSSD2_13]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.293
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.295
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.298
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.322
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.323
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.692
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.693
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.717
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.718
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.747
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:17.748
+!MESSAGE XSCT Command: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:18.035
+!MESSAGE XSCT command with result: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:18.036
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:18.038
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:18.109
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:18.173
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:18.174
+!MESSAGE XSCT Command: [con], Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 13:36:18.207
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:02.778
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-290
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:02.805
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-290
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-11-17 14:55:03.785
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.786
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.792
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.792
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.802
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.803
+!MESSAGE XSCT Command: [version -server], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.805
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.805
+!MESSAGE XSCT Command: [version], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.806
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.807
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.813
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.813
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.830
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.831
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.837
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.838
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.855
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.855
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.863
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.863
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.882
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.883
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.889
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.890
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.910
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.911
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.921
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.922
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.942
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.943
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.949
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.950
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.968
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.969
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.989
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A1B191" && level == 0}], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.990
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.992
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.995
+!MESSAGE XSCT Command: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.999
+!MESSAGE XSCT command with result: [source D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:03.999
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:04.034
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:04.035
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:04.199
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:04.200
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:07.202
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:07.226
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:07.248
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A1B191]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:07.248
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:07.266
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:07.267
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:07.289
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:07.290
+!MESSAGE XSCT Command: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:14.943
+!MESSAGE XSCT command with result: [fpga -file D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:14.983
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:15.013
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:15.014
+!MESSAGE XSCT Command: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:19.913
+!MESSAGE XSCT command with result: [loadhw -hw D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, OpenSSD2_16]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:19.913
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:19.915
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:19.918
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:19.942
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:19.943
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.328
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.329
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.337
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.337
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.359
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.360
+!MESSAGE XSCT Command: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.653
+!MESSAGE XSCT command with result: [dow D:/sources/CosmosPlus_OCSSD-8C8W-16K_19.1_20211101/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/CosmosPlus_OCSSD/Debug/CosmosPlus_OCSSD.elf], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.654
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.656
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.746
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.814
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A1B191"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.815
+!MESSAGE XSCT Command: [con], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:55:20.848
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:59:12.177
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-341
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-17 14:59:12.188
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [null, ]. Thread: Thread-341

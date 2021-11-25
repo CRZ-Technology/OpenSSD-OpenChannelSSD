@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Xilinx\Cosmos+\Cosmos-plus_prjs\OpenSSD2-8C8W-16K_19.1\openssd-hynix-16k-prj-viv19_1\OpenSSD2.sdk\fsbl\Debug\fsbl.elf
+	C:\Xilinx\Cosmos+\Cosmos-plus_prjs\OpenSSD2-8C8W-16K_19.1\openssd-hynix-16k-prj-viv19_1\OpenSSD2.sdk\OpenSSD2_hw_platform_0\OpenSSD2.bit
+	C:\Xilinx\Cosmos+\Cosmos-plus_prjs\OpenSSD2-8C8W-16K_19.1\openssd-hynix-16k-prj-viv19_1\OpenSSD2.sdk\GreedyFTL\Debug\GreedyFTL.elf
+}

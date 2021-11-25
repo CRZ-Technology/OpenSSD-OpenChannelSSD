@@ -1,0 +1,2006 @@
+!SESSION 2020-06-01 18:07:15.603 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk
+
+This is a continuation of log file C:\Xilinx\Cosmos+\Cosmos-plus_prjs\OpenSSD2-8C8W-16K_19.1\openssd-hynix-16k-prj-viv19_1\OpenSSD2.sdk\.metadata\.bak_0.log
+Created Time: 2020-06-01 18:07:57.795
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.796
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.804
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "1000",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "100",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.805
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.812
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"__NVMeHostController_0": {},
+"__Tiger4NSC_0": {},
+"__Tiger4NSC_1": {},
+"__Tiger4NSC_2": {},
+"__Tiger4NSC_3": {},
+"__Tiger4NSC_4": {},
+"__Tiger4NSC_5": {},
+"__Tiger4NSC_6": {},
+"__Tiger4NSC_7": {},
+"__axi_bram_ctrl_1": {},
+"__axi_bram_ctrl_3": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_i2c_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.813
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.832
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"__Tiger4NSC_0_C_AXI": {"name": "__Tiger4NSC_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_1_C_AXI": {"name": "__Tiger4NSC_1",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_2_C_AXI": {"name": "__Tiger4NSC_2",
+"base": "0x43C20000",
+"high": "0x43C2FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_3_C_AXI": {"name": "__Tiger4NSC_3",
+"base": "0x43C30000",
+"high": "0x43C3FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_4_C_AXI": {"name": "__Tiger4NSC_4",
+"base": "0x43C40000",
+"high": "0x43C4FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_5_C_AXI": {"name": "__Tiger4NSC_5",
+"base": "0x43C50000",
+"high": "0x43C5FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_6_C_AXI": {"name": "__Tiger4NSC_6",
+"base": "0x43C60000",
+"high": "0x43C6FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_7_C_AXI": {"name": "__Tiger4NSC_7",
+"base": "0x43C70000",
+"high": "0x43C7FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__NVMeHostController_0_s0_axi": {"name": "__NVMeHostController_0",
+"base": "0x83C00000",
+"high": "0x83C1FFFF",
+"size": "131072",
+"slaveintf": "s0_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_i2c_0": {"name": "ps7_i2c_0",
+"base": "0xE0004000",
+"high": "0xE0004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFDFFFFFF",
+"size": "33554432",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__axi_bram_ctrl_1_S_AXI_Mem0": {"name": "__axi_bram_ctrl_1",
+"base": "0x80000000",
+"high": "0x80001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"__axi_bram_ctrl_3_S_AXI_Mem0": {"name": "__axi_bram_ctrl_3",
+"base": "0x80010000",
+"high": "0x80011FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.833
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.835
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.836
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.842
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.843
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.844
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.844
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.846
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.846
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.855
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.856
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.857
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 1000000000]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.858
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.872
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.873
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.883
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"__NVMeHostController_0": {},
+"__Tiger4NSC_0": {},
+"__Tiger4NSC_1": {},
+"__Tiger4NSC_2": {},
+"__Tiger4NSC_3": {},
+"__Tiger4NSC_4": {},
+"__Tiger4NSC_5": {},
+"__Tiger4NSC_6": {},
+"__Tiger4NSC_7": {},
+"__axi_bram_ctrl_1": {},
+"__axi_bram_ctrl_3": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_i2c_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.884
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.907
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"__Tiger4NSC_0_C_AXI": {"name": "__Tiger4NSC_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_1_C_AXI": {"name": "__Tiger4NSC_1",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_2_C_AXI": {"name": "__Tiger4NSC_2",
+"base": "0x43C20000",
+"high": "0x43C2FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_3_C_AXI": {"name": "__Tiger4NSC_3",
+"base": "0x43C30000",
+"high": "0x43C3FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_4_C_AXI": {"name": "__Tiger4NSC_4",
+"base": "0x43C40000",
+"high": "0x43C4FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_5_C_AXI": {"name": "__Tiger4NSC_5",
+"base": "0x43C50000",
+"high": "0x43C5FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_6_C_AXI": {"name": "__Tiger4NSC_6",
+"base": "0x43C60000",
+"high": "0x43C6FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__Tiger4NSC_7_C_AXI": {"name": "__Tiger4NSC_7",
+"base": "0x43C70000",
+"high": "0x43C7FFFF",
+"size": "65536",
+"slaveintf": "C_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__NVMeHostController_0_s0_axi": {"name": "__NVMeHostController_0",
+"base": "0x83C00000",
+"high": "0x83C1FFFF",
+"size": "131072",
+"slaveintf": "s0_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_i2c_0": {"name": "ps7_i2c_0",
+"base": "0xE0004000",
+"high": "0xE0004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFDFFFFFF",
+"size": "33554432",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"__axi_bram_ctrl_1_S_AXI_Mem0": {"name": "__axi_bram_ctrl_1",
+"base": "0x80000000",
+"high": "0x80001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"__axi_bram_ctrl_3_S_AXI_Mem0": {"name": "__axi_bram_ctrl_3",
+"base": "0x80010000",
+"high": "0x80011FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.909
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.912
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.913
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.915
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.920
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.922
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.933
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.935
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.935
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.937
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.938
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.939
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 1000000000]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.942
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.944
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, __NVMeHostController_0 __Tiger4NSC_0 __Tiger4NSC_1 __Tiger4NSC_2 __Tiger4NSC_3 __Tiger4NSC_4 __Tiger4NSC_5 __Tiger4NSC_6 __Tiger4NSC_7 __axi_bram_ctrl_1 __axi_bram_ctrl_3 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_i2c_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.945
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf bit], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.963
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf bit], Result: [null, OpenSSD2.bit]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:07:57.964
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.104
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.105
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.362
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A543CD]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.364
+!MESSAGE XSCT Command: [version -server], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.369
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.370
+!MESSAGE XSCT Command: [version], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.370
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.373
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.383
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A543CD]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.384
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.401
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.402
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.407
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A543CD]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.408
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.428
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.429
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.435
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A543CD]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.435
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.457
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.459
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.463
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A543CD]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.464
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.481
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.482
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.490
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A543CD]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.490
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.517
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.518
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.528
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A543CD]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.529
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.554
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.555
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A543CD" && level == 0}], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.572
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A543CD" && level == 0}], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.572
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.574
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.579
+!MESSAGE XSCT Command: [source C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.582
+!MESSAGE XSCT command with result: [source C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.583
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD"} -index 0], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.609
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD"} -index 0], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.610
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.736
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:00.737
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:03.738
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:03.805
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:03.814
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A543CD]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:03.814
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:03.829
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z045 (idcode 23731093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:03.830
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:03.851
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:03.852
+!MESSAGE XSCT Command: [fpga -file C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:11.445
+!MESSAGE XSCT command with result: [fpga -file C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:11.518
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD"} -index 0], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:11.558
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD"} -index 0], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:11.559
+!MESSAGE XSCT Command: [loadhw -hw C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:11.621
+!MESSAGE XSCT command with result: [loadhw -hw C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, OpenSSD2_1]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:11.621
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:11.623
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:11.627
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD"} -index 0], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:11.650
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD"} -index 0], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:11.650
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.005
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.006
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.014
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.015
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD"} -index 0], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.041
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD"} -index 0], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.042
+!MESSAGE XSCT Command: [dow C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/GreedyFTL/Debug/GreedyFTL.elf], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.340
+!MESSAGE XSCT command with result: [dow C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/GreedyFTL/Debug/GreedyFTL.elf], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.341
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.342
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.453
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD"} -index 0], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.509
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A543CD"} -index 0], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.509
+!MESSAGE XSCT Command: [con], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-01 18:08:12.536
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-02 09:32:10.659
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-92
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-02 09:32:10.662
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-92
+!SESSION 2020-06-05 15:24:47.283 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk
+
+!ENTRY org.eclipse.ui 2 0 2020-06-05 15:24:49.487
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-06-05 15:24:49.487
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2020-06-05 15:24:50.255
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-06-05 15:24:50.255
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:24:57.780
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:24:57.780
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:24:57.787
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:24:57.793
+!MESSAGE XSCT Command: [setws C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:24:58.365
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:24:58.366
+!MESSAGE XSCT command with result: [setws C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:24:58.381
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:25:05.001
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-6
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:25:06.512
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:25:06.514
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, {"device": "7z045",
+"family": "zynq",
+"timestamp": "Thu Apr  2 18:22:34 2020",
+"vivado_version": "2019.1",
+"part": "xc7z045ffg900-3",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:25:06.528
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-06-05 15:25:06.552
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, {"__CH0MMCMC1H200": {"hier_name": "__CH0MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__CH2MMCMC1H200": {"hier_name": "__CH2MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__CH3MMCMC1H200": {"hier_name": "__CH3MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__CH4MMCMC1H200": {"hier_name": "__CH4MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__CH6MMCMC1H200": {"hier_name": "__CH6MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__CH7MMCMC1H200": {"hier_name": "__CH7MMCMC1H200",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"__Dispatcher_uCode_0": {"hier_name": "__Dispatcher_uCode_0",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_1": {"hier_name": "__Dispatcher_uCode_1",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_2": {"hier_name": "__Dispatcher_uCode_2",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_3": {"hier_name": "__Dispatcher_uCode_3",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_4": {"hier_name": "__Dispatcher_uCode_4",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_5": {"hier_name": "__Dispatcher_uCode_5",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_6": {"hier_name": "__Dispatcher_uCode_6",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__Dispatcher_uCode_7": {"hier_name": "__Dispatcher_uCode_7",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__GPIC0": {"hier_name": "__GPIC0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"__GPIC1": {"hier_name": "__GPIC1",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"__HPIC3": {"hier_name": "__HPIC3",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"__NVMeHostController_0": {"hier_name": "__NVMeHostController_0",
+"type": "NVMeHostController",
+"version": "2.0.0",
+"ip_type": "PERIPHERAL",
+},
+"__PS": {"hier_name": "__PS",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"__Tiger4NSC_0": {"hier_name": "__Tiger4NSC_0",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_1": {"hier_name": "__Tiger4NSC_1",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_2": {"hier_name": "__Tiger4NSC_2",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_3": {"hier_name": "__Tiger4NSC_3",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_4": {"hier_name": "__Tiger4NSC_4",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_5": {"hier_name": "__Tiger4NSC_5",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_6": {"hier_name": "__Tiger4NSC_6",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4NSC_7": {"hier_name": "__Tiger4NSC_7",
+"type": "Tiger4NSC",
+"version": "1.2.6",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4SharedKES_0": {"hier_name": "__Tiger4SharedKES_0",
+"type": "Tiger4SharedKES",
+"version": "1.0.1",
+"ip_type": "PERIPHERAL",
+},
+"__Tiger4SharedKES_1": {"hier_name": "__Tiger4SharedKES_1",
+"type": "Tiger4SharedKES",
+"version": "1.0.1",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_0": {"hier_name": "__V2NFC100DDR_0",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_1": {"hier_name": "__V2NFC100DDR_1",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_2": {"hier_name": "__V2NFC100DDR_2",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_3": {"hier_name": "__V2NFC100DDR_3",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_4": {"hier_name": "__V2NFC100DDR_4",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_5": {"hier_name": "__V2NFC100DDR_5",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_6": {"hier_name": "__V2NFC100DDR_6",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__V2NFC100DDR_7": {"hier_name": "__V2NFC100DDR_7",
+"type": "V2NFC100DDR",
+"version": "1.0.4",
+"ip_type": "PERIPHERAL",
+},
+"__axi_bram_ctrl_0": {"hier_name": "__axi_bram_ctrl_0",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"__axi_bram_ctrl_1": {"hier_name": "__axi_bram_ctrl_1",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"__axi_bram_ctrl_2": {"hier_name": "__axi_bram_ctrl_2",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"__axi_bram_ctrl_3": {"hier_name": "__axi_bram_ctrl_3",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"__axi_interconnect_0": {"hier_name": "__axi_interconnect_0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"__axi_interconnect_1": {"hier_name": "__axi_interconnect_1",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"__blk_mem_gen_0": {"hier_name": "__blk_mem_gen_0",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__blk_mem_gen_1": {"hier_name": "__blk_mem_gen_1",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"__proc_sys_reset_0": {"hier_name": "__proc_sys_reset_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"__proc_sys_reset_1": {"hier_name": "__proc_sys_reset_1",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"__proc_sys_reset_2": {"hier_name": "__proc_sys_reset_2",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"__proc_sys_reset_3": {"hier_name": "__proc_sys_reset_3",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_i2c_0": {"hier_name": "ps7_i2c_0",
+"type": "ps7_i2c",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp1": {"hier_name": "ps7_m_axi_gp1",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+!SESSION 2020-07-28 10:09:30.393 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk
+
+!ENTRY org.eclipse.ui 2 0 2020-07-28 10:09:32.398
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-07-28 10:09:32.398
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2020-07-28 10:09:33.122
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-07-28 10:09:33.122
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-28 10:09:40.372
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-28 10:09:40.372
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-28 10:09:41.016
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-28 10:09:41.017
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-28 10:09:41.017
+!MESSAGE XSCT Command: [setws C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-28 10:09:41.019
+!MESSAGE XSCT command with result: [setws C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-28 10:09:41.049
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-28 10:09:47.050
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Xilinx/Cosmos+/Cosmos-plus_prjs/OpenSSD2-8C8W-16K_19.1/openssd-hynix-16k-prj-viv19_1/OpenSSD2.sdk/OpenSSD2_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-4

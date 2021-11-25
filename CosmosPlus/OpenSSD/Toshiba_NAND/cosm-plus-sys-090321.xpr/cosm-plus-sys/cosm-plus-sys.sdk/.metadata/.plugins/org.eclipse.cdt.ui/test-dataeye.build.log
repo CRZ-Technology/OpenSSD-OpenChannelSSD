@@ -1,0 +1,405 @@
+19:58:08 **** Build of configuration Debug for project test-dataeye ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test-dataeye_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'test_readwrite':
+../src/main.c:83:9: warning: implicit declaration of function 'nfc_set_dq_delay'; did you mean 'nfc_set_dqs_delay'? [-Wimplicit-function-declaration]
+         nfc_set_dq_delay(ch, dqDelay);
+         ^~~~~~~~~~~~~~~~
+         nfc_set_dqs_delay
+../src/main.c:92:85: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+           printf("[-] Read fail at block %d and row %d of ch %d and way %d; err0=0x%x, err1=0x%x\n", block, row, ch, way, read_errinfo[0], read_errinfo[1]);
+                                                                                    ~^                                     ~~~~~~~~~~~~~~~
+                                                                                    %lx
+../src/main.c:92:96: warning: format '%x' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+           printf("[-] Read fail at block %d and row %d of ch %d and way %d; err0=0x%x, err1=0x%x\n", block, row, ch, way, read_errinfo[0], read_errinfo[1]);
+                                                                                               ~^                                           ~~~~~~~~~~~~~~~
+                                                                                               %lx
+../src/main.c:59:20: warning: variable 'dum' set but not used [-Wunused-but-set-variable]
+       volatile int dum;
+                    ^~~
+../src/main.c: In function 'test_read_status':
+../src/main.c:165:10: warning: unused variable 'row' [-Wunused-variable]
+      int row = 0;
+          ^~~
+../src/main.c:164:10: warning: unused variable 'block' [-Wunused-variable]
+      int block = 2;
+          ^~~~~
+../src/main.c:162:9: warning: unused variable 'pat' [-Wunused-variable]
+     int pat = 1234;
+         ^~~
+../src/main.c:140:12: warning: unused variable 'read_errinfo' [-Wunused-variable]
+  uint32_t* read_errinfo = (uint32_t*)0x1400000;
+            ^~~~~~~~~~~~
+../src/main.c:139:12: warning: unused variable 'read_sbuf' [-Wunused-variable]
+  uint32_t* read_sbuf = (uint32_t*)0x1300000;
+            ^~~~~~~~~
+../src/main.c:138:12: warning: unused variable 'read_pbuf' [-Wunused-variable]
+  uint32_t* read_pbuf = (uint32_t*)0x1200000;
+            ^~~~~~~~~
+../src/main.c:137:12: warning: unused variable 'write_sbuf' [-Wunused-variable]
+  uint32_t* write_sbuf = (uint32_t*)0x1100000;
+            ^~~~~~~~~~
+../src/main.c:136:12: warning: unused variable 'write_pbuf' [-Wunused-variable]
+  uint32_t* write_pbuf = (uint32_t*)0x1000000;
+            ^~~~~~~~~~
+../src/main.c:134:6: warning: unused variable 'err' [-Wunused-variable]
+  int err;
+      ^~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nfc-helper.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nfc-helper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test-dataeye_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nfc-helper.d" -MT"src/nfc-helper.o" -o "src/nfc-helper.o" "../src/nfc-helper.c"
+../src/nfc-helper.c: In function 'nfc_ctrler_assign':
+../src/nfc-helper.c:10:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[0], T4NSC(0));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/ps7_cortexa9_0/include/xparameters.h:535:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_0_BASEADDR 0x43C00000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_0_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:10:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[0], T4NSC(0));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:13:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[1], T4NSC(1));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/ps7_cortexa9_0/include/xparameters.h:540:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_1_BASEADDR 0x43C10000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_1_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:13:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[1], T4NSC(1));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:16:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[2], T4NSC(2));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/ps7_cortexa9_0/include/xparameters.h:545:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_2_BASEADDR 0x43C20000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_2_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:16:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[2], T4NSC(2));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:19:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[3], T4NSC(3));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/ps7_cortexa9_0/include/xparameters.h:550:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_3_BASEADDR 0x43C30000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_3_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:19:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[3], T4NSC(3));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:22:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[4], T4NSC(4));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/ps7_cortexa9_0/include/xparameters.h:555:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_4_BASEADDR 0x43C40000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_4_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:22:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[4], T4NSC(4));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:25:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[5], T4NSC(5));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/ps7_cortexa9_0/include/xparameters.h:560:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_5_BASEADDR 0x43C50000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_5_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:25:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[5], T4NSC(5));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:28:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[6], T4NSC(6));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/ps7_cortexa9_0/include/xparameters.h:565:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_6_BASEADDR 0x43C60000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_6_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:28:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[6], T4NSC(6));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:31:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[7], T4NSC(7));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/ps7_cortexa9_0/include/xparameters.h:570:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_7_BASEADDR 0x43C70000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_7_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:31:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[7], T4NSC(7));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_init':
+../src/nfc-helper.c:117:24: warning: unused variable 'rep' [-Wunused-variable]
+  volatile unsigned int rep = 0;
+                        ^~~
+../src/nfc-helper.c:116:24: warning: unused variable 'comp' [-Wunused-variable]
+  volatile unsigned int comp = 0;
+                        ^~~~
+../src/nfc-helper.c: In function 'nfc_prog_raw':
+../src/nfc-helper.c:165:55: warning: passing argument 6 of 'T4NSCProgramPageRawAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCProgramPageRawAsync(channel, way, row, 0, 4584, buf, sb, 1);
+                                                       ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:394:152: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCProgramPageRawAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddr, unsigned int colAddr, unsigned int wordLength, unsigned int dataBufAddr, unsigned int sb, int pSlcMode);
+                                                                                                                                           ~~~~~~~~~~~~~^~~~~~~~~~~
+../src/nfc-helper.c:163:24: warning: unused variable 'completion' [-Wunused-variable]
+  volatile unsigned int completion;
+                        ^~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_read_raw':
+../src/nfc-helper.c:198:55: warning: passing argument 5 of 'T4NSCReadPageTransferRawAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCReadPageTransferRawAsync(channel, way, 0, 4584, buf, &completion);
+                                                       ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:393:135: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCReadPageTransferRawAsync(unsigned int chNo, unsigned int wayNo, unsigned int colAddr, unsigned int wordLength, unsigned int dataBufAddr, unsigned int* completion);
+                                                                                                                          ~~~~~~~~~~~~~^~~~~~~~~~~
+../src/nfc-helper.c:198:60: warning: passing argument 6 of 'T4NSCReadPageTransferRawAsync' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCReadPageTransferRawAsync(channel, way, 0, 4584, buf, &completion);
+                                                            ^~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:393:162: note: expected 'unsigned int *' but argument is of type 'volatile unsigned int *'
+ void T4NSCReadPageTransferRawAsync(unsigned int chNo, unsigned int wayNo, unsigned int colAddr, unsigned int wordLength, unsigned int dataBufAddr, unsigned int* completion);
+                                                                                                                                                    ~~~~~~~~~~~~~~^~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_fsprog':
+../src/nfc-helper.c:238:35: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].pageDataAddress = ((char*)buf) + 4096 * i;
+                                   ^
+../src/nfc-helper.c:239:36: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].spareDataAddress = ((char*)sbuf) + 32 * i;
+                                    ^
+../src/nfc-helper.c:274:35: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].pageDataAddress = ((char*)buf) + 4096 * (4 + i);
+                                   ^
+../src/nfc-helper.c:275:36: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].spareDataAddress = ((char*)sbuf) + 32 * (4 + i);
+                                    ^
+../src/nfc-helper.c:309:35: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].pageDataAddress = ((char*)buf) + 4096 * (8 + i);
+                                   ^
+../src/nfc-helper.c:310:36: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].spareDataAddress = ((char*)sbuf) + 32 * (8 + i);
+                                    ^
+../src/nfc-helper.c:226:24: warning: unused variable 'completion' [-Wunused-variable]
+  volatile unsigned int completion;
+                        ^~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_prog':
+../src/nfc-helper.c:336:47: warning: passing argument 4 of 'T4NSCProgramPagepSLCAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCProgramPagepSLCAsync(channel, way, row, buf, sbuf);
+                                               ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:398:109: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCProgramPagepSLCAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddress, unsigned int dataBufAddr, unsigned int spareDataBufAddr);
+                                                                                                ~~~~~~~~~~~~~^~~~~~~~~~~
+../src/nfc-helper.c:336:52: warning: passing argument 5 of 'T4NSCProgramPagepSLCAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCProgramPagepSLCAsync(channel, way, row, buf, sbuf);
+                                                    ^~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:398:135: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCProgramPagepSLCAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddress, unsigned int dataBufAddr, unsigned int spareDataBufAddr);
+                                                                                                                          ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+../src/nfc-helper.c:334:24: warning: unused variable 'completion' [-Wunused-variable]
+  volatile unsigned int completion;
+                        ^~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_read':
+../src/nfc-helper.c:406:52: warning: passing argument 4 of 'T4NSCReadPageTransferpSLCAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCReadPageTransferpSLCAsync(channel, way, row, buf, sbuf, err, &completion);
+                                                    ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:399:114: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCReadPageTransferpSLCAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddress, unsigned int dataBufAddr, unsigned int spareDataBufAddr, unsigned int errorInfoDataBufAddr, volatile unsigned int* completion);
+                                                                                                     ~~~~~~~~~~~~~^~~~~~~~~~~
+../src/nfc-helper.c:406:57: warning: passing argument 5 of 'T4NSCReadPageTransferpSLCAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCReadPageTransferpSLCAsync(channel, way, row, buf, sbuf, err, &completion);
+                                                         ^~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:399:140: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCReadPageTransferpSLCAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddress, unsigned int dataBufAddr, unsigned int spareDataBufAddr, unsigned int errorInfoDataBufAddr, volatile unsigned int* completion);
+                                                                                                                               ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+../src/nfc-helper.c:406:63: warning: passing argument 6 of 'T4NSCReadPageTransferpSLCAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCReadPageTransferpSLCAsync(channel, way, row, buf, sbuf, err, &completion);
+                                                               ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:399:171: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCReadPageTransferpSLCAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddress, unsigned int dataBufAddr, unsigned int spareDataBufAddr, unsigned int errorInfoDataBufAddr, volatile unsigned int* completion);
+                                                                                                                                                              ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_read_id':
+../src/nfc-helper.c:420:38: warning: passing argument 4 of 'T4NSCReadIDAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCReadIDAsync(channel, way, sel, buf, &completion);
+                                      ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:387:84: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCReadIDAsync(unsigned int chNo, unsigned int wayNo, int sel, unsigned int dataBufAddr, volatile unsigned int* completion);
+                                                                       ~~~~~~~~~~~~~^~~~~~~~~~~
+'Finished building: ../src/nfc-helper.c'
+' '
+'Building file: ../src/ps-cpu.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ps-cpu.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test-dataeye_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps-cpu.d" -MT"src/ps-cpu.o" -o "src/ps-cpu.o" "../src/ps-cpu.c"
+'Finished building: ../src/ps-cpu.c'
+' '
+'Building file: ../src/t4nsc_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/t4nsc_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test-dataeye_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/t4nsc_lld.d" -MT"src/t4nsc_lld.o" -o "src/t4nsc_lld.o" "../src/t4nsc_lld.c"
+../src/t4nsc_lld.c: In function 'T4NSCSetReadLevelACEG':
+../src/t4nsc_lld.c:327:54: warning: passing argument 5 of 'T4NSCSetLUNFeaturesT' makes integer from pointer without a cast [-Wint-conversion]
+     T4NSCSetLUNFeaturesT(chNo, wayNo, lunAddr, 0x89, payloadBuf);
+                                                      ^~~~~~~~~~
+../src/t4nsc_lld.c:40:119: note: expected 'unsigned int' but argument is of type 'volatile unsigned int *'
+ void T4NSCSetLUNFeaturesT(unsigned int chNo, unsigned int wayNo, unsigned int lun, unsigned int address, unsigned int payload)
+                                                                                                          ~~~~~~~~~~~~~^~~~~~~
+../src/t4nsc_lld.c: In function 'T4NSCSetReadLevelBDF':
+../src/t4nsc_lld.c:336:54: warning: passing argument 5 of 'T4NSCSetLUNFeaturesT' makes integer from pointer without a cast [-Wint-conversion]
+     T4NSCSetLUNFeaturesT(chNo, wayNo, lunAddr, 0x8A, payloadBuf);
+                                                      ^~~~~~~~~~
+../src/t4nsc_lld.c:40:119: note: expected 'unsigned int' but argument is of type 'volatile unsigned int *'
+ void T4NSCSetLUNFeaturesT(unsigned int chNo, unsigned int wayNo, unsigned int lun, unsigned int address, unsigned int payload)
+                                                                                                          ~~~~~~~~~~~~~^~~~~~~
+../src/t4nsc_lld.c: In function 'T4NSCReadPageTransferpSLCAsync':
+../src/t4nsc_lld.c:364:39: warning: assignment to 'unsigned int' from 'volatile unsigned int *' makes integer from pointer without a cast [-Wint-conversion]
+  readpagepSLC.completionReportAddress = completion;
+                                       ^
+'Finished building: ../src/t4nsc_lld.c'
+' '
+'Building target: test-dataeye.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test-dataeye_bsp/ps7_cortexa9_0/lib -o "test-dataeye.elf"  ./src/main.o ./src/nfc-helper.o ./src/ps-cpu.o ./src/t4nsc_lld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test-dataeye.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test-dataeye.elf  |tee "test-dataeye.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72872	   6120	  23520	 102512	  19070	test-dataeye.elf
+'Finished building: test-dataeye.elf.size'
+' '
+
+19:58:10 Build Finished (took 2s.374ms)
+

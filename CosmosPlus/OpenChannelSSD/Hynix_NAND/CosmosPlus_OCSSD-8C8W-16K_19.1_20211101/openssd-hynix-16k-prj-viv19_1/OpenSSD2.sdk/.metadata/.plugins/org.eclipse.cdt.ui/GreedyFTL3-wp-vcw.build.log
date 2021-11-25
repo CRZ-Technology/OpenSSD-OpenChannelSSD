@@ -1,0 +1,101 @@
+15:10:53 **** Auto Build of configuration Debug for project GreedyFTL3-wp-vcw ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/probe/log_handle.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/probe/log_handle.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GreedyFTL3-wp-vcw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/probe/log_handle.d" -MT"src/probe/log_handle.o" -o "src/probe/log_handle.o" "../src/probe/log_handle.c"
+In file included from ../src/probe/log_format.h:11,
+                 from ../src/probe/log_handle.h:11,
+                 from ../src/probe/log_handle.c:8:
+../../GreedyFTL3-wp-vcw_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from ../src/probe/../memory_map.h:50,
+                 from ../src/probe/log_handle.c:11:
+../src/probe/../data_buffer.h:75:17: error: variably modified 'dataBuf' at file scope
+  DATA_BUF_ENTRY dataBuf[AVAILABLE_DATA_BUFFER_ENTRY_COUNT];
+                 ^~~~~~~
+../src/probe/../data_buffer.h:90:22: error: variably modified 'dataBufHash' at file scope
+  DATA_BUF_HASH_ENTRY dataBufHash[AVAILABLE_DATA_BUFFER_ENTRY_COUNT];
+                      ^~~~~~~~~~~
+../src/probe/../data_buffer.h:100:27: error: variably modified 'tempDataBuf' at file scope
+  TEMPORARY_DATA_BUF_ENTRY tempDataBuf[AVAILABLE_TEMPORARY_DATA_BUFFER_ENTRY_COUNT];
+                           ^~~~~~~~~~~
+In file included from ../src/probe/../memory_map.h:51,
+                 from ../src/probe/log_handle.c:11:
+../src/probe/../address_translation.h:117:22: error: variably modified 'logicalSlice' at file scope
+  LOGICAL_SLICE_ENTRY logicalSlice[SLICES_PER_SSD];
+                      ^~~~~~~~~~~~
+../src/probe/../address_translation.h:127:22: error: variably modified 'virtualSlice' at file scope
+  VIRTUAL_SLICE_ENTRY virtualSlice[SLICES_PER_SSD];
+                      ^~~~~~~~~~~~
+../src/probe/../address_translation.h:142:22: error: variably modified 'block' at file scope
+  VIRTUAL_BLOCK_ENTRY block[USER_DIES][USER_BLOCKS_PER_DIE];
+                      ^~~~~
+../src/probe/../address_translation.h:157:20: error: variably modified 'die' at file scope
+  VIRTUAL_DIE_ENTRY die[USER_DIES];
+                    ^~~
+../src/probe/../address_translation.h:173:29: error: variably modified 'bbtInfo' at file scope
+  BAD_BLOCK_TABLE_INFO_ENTRY bbtInfo[USER_DIES];
+                             ^~~~~~~
+../src/probe/../address_translation.h:183:18: error: variably modified 'phyBlock' at file scope
+  PHY_BLOCK_ENTRY phyBlock[USER_DIES][TOTAL_BLOCKS_PER_DIE];
+                  ^~~~~~~~
+In file included from ../src/probe/../memory_map.h:52,
+                 from ../src/probe/log_handle.c:11:
+../src/probe/../request_allocation.h:60:17: error: variably modified 'reqPool' at file scope
+  SSD_REQ_FORMAT reqPool[AVAILABLE_OUNTSTANDING_REQ_COUNT];
+                 ^~~~~~~
+../src/probe/../request_allocation.h:87:53: error: variably modified 'blockedByRowAddrDepReqQ' at file scope
+ extern BLOCKED_BY_ROW_ADDR_DEPENDENCY_REQUEST_QUEUE blockedByRowAddrDepReqQ[USER_CHANNELS][USER_WAYS];
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+../src/probe/../request_allocation.h:87:53: error: variably modified 'blockedByRowAddrDepReqQ' at file scope
+../src/probe/../request_allocation.h:89:27: error: variably modified 'nandReqQ' at file scope
+ extern NAND_REQUEST_QUEUE nandReqQ[USER_CHANNELS][USER_WAYS];
+                           ^~~~~~~~
+../src/probe/../request_allocation.h:89:27: error: variably modified 'nandReqQ' at file scope
+In file included from ../src/probe/../memory_map.h:53,
+                 from ../src/probe/log_handle.c:11:
+../src/probe/../request_schedule.h:81:15: error: variably modified 'completeFlag' at file scope
+  unsigned int completeFlag[USER_CHANNELS][USER_WAYS];
+               ^~~~~~~~~~~~
+../src/probe/../request_schedule.h:81:15: error: variably modified 'completeFlag' at file scope
+../src/probe/../request_schedule.h:85:15: error: variably modified 'statusReport' at file scope
+  unsigned int statusReport[USER_CHANNELS][USER_WAYS];
+               ^~~~~~~~~~~~
+../src/probe/../request_schedule.h:85:15: error: variably modified 'statusReport' at file scope
+../src/probe/../request_schedule.h:89:15: error: variably modified 'errorInfo' at file scope
+  unsigned int errorInfo[USER_CHANNELS][USER_WAYS][ERROR_INFO_WORD_COUNT];
+               ^~~~~~~~~
+../src/probe/../request_schedule.h:89:15: error: variably modified 'errorInfo' at file scope
+../src/probe/../request_schedule.h:93:6: error: variably modified 'retryLimit' at file scope
+  int retryLimit[USER_CHANNELS][USER_WAYS];
+      ^~~~~~~~~~
+../src/probe/../request_schedule.h:93:6: error: variably modified 'retryLimit' at file scope
+../src/probe/../request_schedule.h:105:18: error: variably modified 'dieState' at file scope
+  DIE_STATE_ENTRY dieState[USER_CHANNELS][USER_WAYS];
+                  ^~~~~~~~
+../src/probe/../request_schedule.h:105:18: error: variably modified 'dieState' at file scope
+../src/probe/../request_schedule.h:128:21: error: variably modified 'wayPriority' at file scope
+  WAY_PRIORITY_ENTRY wayPriority[USER_CHANNELS];
+                     ^~~~~~~~~~~
+In file included from ../src/probe/../memory_map.h:54,
+                 from ../src/probe/log_handle.c:11:
+../src/probe/../request_transform.h:76:28: error: variably modified 'block' at file scope
+  ROW_ADDR_DEPENDENCY_ENTRY block[USER_CHANNELS][USER_WAYS][MAIN_BLOCKS_PER_DIE];
+                            ^~~~~
+../src/probe/../request_transform.h:76:28: error: variably modified 'block' at file scope
+In file included from ../src/probe/../memory_map.h:55,
+                 from ../src/probe/log_handle.c:11:
+../src/probe/../garbage_collection.h:58:23: error: variably modified 'gcVictimList' at file scope
+  GC_VICTIM_LIST_ENTRY gcVictimList[USER_DIES][SLICES_PER_BLOCK + 1];
+                       ^~~~~~~~~~~~
+In file included from ../src/probe/log_handle.c:16:
+../src/probe/performance_counter.h:55:34: error: variably modified 'cntPerCh' at file scope
+  PERFORMANCE_COUNTER_PER_CHANNEL cntPerCh[USER_CHANNELS];
+                                  ^~~~~~~~
+make: *** [src/probe/subdir.mk:32: src/probe/log_handle.o] Error 1
+
+15:10:53 Build Finished (took 709ms)
+

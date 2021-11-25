@@ -1,0 +1,334 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2650 -y 1900 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2650 -y 1930 -defaultsOSRD
+preplace port O_NAND_CH0_CLE -pg 1 -lvl 7 -x 2650 -y 280 -defaultsOSRD
+preplace port O_NAND_CH0_RE_P -pg 1 -lvl 7 -x 2650 -y 190 -defaultsOSRD
+preplace port O_NAND_CH0_RE_N -pg 1 -lvl 7 -x 2650 -y 220 -defaultsOSRD
+preplace port IO_NAND_CH0_DQS_N -pg 1 -lvl 7 -x 2650 -y 70 -defaultsOSRD
+preplace port O_NAND_CH0_WE -pg 1 -lvl 7 -x 2650 -y 160 -defaultsOSRD
+preplace port IO_NAND_CH0_DQS_P -pg 1 -lvl 7 -x 2650 -y 40 -defaultsOSRD
+preplace port O_NAND_CH0_ALE -pg 1 -lvl 7 -x 2650 -y 250 -defaultsOSRD
+preplace port O_NAND_CH0_WP -pg 1 -lvl 7 -x 2650 -y 310 -defaultsOSRD
+preplace port IO_NAND_CH1_DQS_N -pg 1 -lvl 7 -x 2650 -y 400 -defaultsOSRD
+preplace port IO_NAND_CH1_DQS_P -pg 1 -lvl 7 -x 2650 -y 370 -defaultsOSRD
+preplace port O_NAND_CH1_ALE -pg 1 -lvl 7 -x 2650 -y 580 -defaultsOSRD
+preplace port O_NAND_CH1_CLE -pg 1 -lvl 7 -x 2650 -y 610 -defaultsOSRD
+preplace port O_NAND_CH1_RE_N -pg 1 -lvl 7 -x 2650 -y 550 -defaultsOSRD
+preplace port O_NAND_CH1_RE_P -pg 1 -lvl 7 -x 2650 -y 520 -defaultsOSRD
+preplace port O_NAND_CH1_WE -pg 1 -lvl 7 -x 2650 -y 490 -defaultsOSRD
+preplace port O_NAND_CH1_WP -pg 1 -lvl 7 -x 2650 -y 640 -defaultsOSRD
+preplace port IO_NAND_CH2_DQS_P -pg 1 -lvl 7 -x 2650 -y 920 -defaultsOSRD
+preplace port IO_NAND_CH2_DQS_N -pg 1 -lvl 7 -x 2650 -y 950 -defaultsOSRD
+preplace port O_NAND_CH2_ALE -pg 1 -lvl 7 -x 2650 -y 1130 -defaultsOSRD
+preplace port O_NAND_CH2_CLE -pg 1 -lvl 7 -x 2650 -y 1160 -defaultsOSRD
+preplace port O_NAND_CH2_RE_N -pg 1 -lvl 7 -x 2650 -y 1100 -defaultsOSRD
+preplace port O_NAND_CH2_RE_P -pg 1 -lvl 7 -x 2650 -y 1070 -defaultsOSRD
+preplace port O_NAND_CH2_WE -pg 1 -lvl 7 -x 2650 -y 1040 -defaultsOSRD
+preplace port O_NAND_CH2_WP -pg 1 -lvl 7 -x 2650 -y 1190 -defaultsOSRD
+preplace port IO_NAND_CH3_DQS_N -pg 1 -lvl 7 -x 2650 -y 1530 -defaultsOSRD
+preplace port IO_NAND_CH3_DQS_P -pg 1 -lvl 7 -x 2650 -y 1500 -defaultsOSRD
+preplace port O_NAND_CH3_ALE -pg 1 -lvl 7 -x 2650 -y 1710 -defaultsOSRD
+preplace port O_NAND_CH3_CLE -pg 1 -lvl 7 -x 2650 -y 1740 -defaultsOSRD
+preplace port O_NAND_CH3_RE_N -pg 1 -lvl 7 -x 2650 -y 1680 -defaultsOSRD
+preplace port O_NAND_CH3_RE_P -pg 1 -lvl 7 -x 2650 -y 1650 -defaultsOSRD
+preplace port O_NAND_CH3_WE -pg 1 -lvl 7 -x 2650 -y 1620 -defaultsOSRD
+preplace port O_NAND_CH3_WP -pg 1 -lvl 7 -x 2650 -y 1770 -defaultsOSRD
+preplace port pcie_perst_n -pg 1 -lvl 7 -x 2650 -y 4060 -defaultsOSRD -right
+preplace port pcie_ref_clk_n -pg 1 -lvl 7 -x 2650 -y 4750 -defaultsOSRD -right
+preplace port pcie_ref_clk_p -pg 1 -lvl 7 -x 2650 -y 4780 -defaultsOSRD -right
+preplace port IO_NAND_CH4_DQS_N -pg 1 -lvl 7 -x 2650 -y 3260 -defaultsOSRD
+preplace port IO_NAND_CH4_DQS_P -pg 1 -lvl 7 -x 2650 -y 3230 -defaultsOSRD
+preplace port O_NAND_CH4_ALE -pg 1 -lvl 7 -x 2650 -y 3440 -defaultsOSRD
+preplace port O_NAND_CH4_CLE -pg 1 -lvl 7 -x 2650 -y 3470 -defaultsOSRD
+preplace port O_NAND_CH4_RE_N -pg 1 -lvl 7 -x 2650 -y 3410 -defaultsOSRD
+preplace port O_NAND_CH4_RE_P -pg 1 -lvl 7 -x 2650 -y 3380 -defaultsOSRD
+preplace port O_NAND_CH4_WE -pg 1 -lvl 7 -x 2650 -y 3350 -defaultsOSRD
+preplace port O_NAND_CH4_WP -pg 1 -lvl 7 -x 2650 -y 3500 -defaultsOSRD
+preplace port IO_NAND_CH5_DQS_P -pg 1 -lvl 7 -x 2650 -y 3560 -defaultsOSRD
+preplace port IO_NAND_CH5_DQS_N -pg 1 -lvl 7 -x 2650 -y 3590 -defaultsOSRD
+preplace port O_NAND_CH5_ALE -pg 1 -lvl 7 -x 2650 -y 3770 -defaultsOSRD
+preplace port O_NAND_CH5_CLE -pg 1 -lvl 7 -x 2650 -y 3800 -defaultsOSRD
+preplace port O_NAND_CH5_RE_N -pg 1 -lvl 7 -x 2650 -y 3740 -defaultsOSRD
+preplace port O_NAND_CH5_RE_P -pg 1 -lvl 7 -x 2650 -y 3710 -defaultsOSRD
+preplace port O_NAND_CH5_WE -pg 1 -lvl 7 -x 2650 -y 3680 -defaultsOSRD
+preplace port O_NAND_CH5_WP -pg 1 -lvl 7 -x 2650 -y 3830 -defaultsOSRD
+preplace port IO_NAND_CH6_DQS_N -pg 1 -lvl 7 -x 2650 -y 4480 -defaultsOSRD
+preplace port IO_NAND_CH6_DQS_P -pg 1 -lvl 7 -x 2650 -y 4450 -defaultsOSRD
+preplace port O_NAND_CH6_ALE -pg 1 -lvl 7 -x 2650 -y 4660 -defaultsOSRD
+preplace port O_NAND_CH6_CLE -pg 1 -lvl 7 -x 2650 -y 4690 -defaultsOSRD
+preplace port O_NAND_CH6_RE_N -pg 1 -lvl 7 -x 2650 -y 4630 -defaultsOSRD
+preplace port O_NAND_CH6_RE_P -pg 1 -lvl 7 -x 2650 -y 4600 -defaultsOSRD
+preplace port O_NAND_CH6_WE -pg 1 -lvl 7 -x 2650 -y 4570 -defaultsOSRD
+preplace port O_NAND_CH6_WP -pg 1 -lvl 7 -x 2650 -y 4720 -defaultsOSRD
+preplace port IO_NAND_CH7_DQS_N -pg 1 -lvl 7 -x 2650 -y 4150 -defaultsOSRD
+preplace port IO_NAND_CH7_DQS_P -pg 1 -lvl 7 -x 2650 -y 4120 -defaultsOSRD
+preplace port O_NAND_CH7_ALE -pg 1 -lvl 7 -x 2650 -y 4330 -defaultsOSRD
+preplace port O_NAND_CH7_CLE -pg 1 -lvl 7 -x 2650 -y 4360 -defaultsOSRD
+preplace port O_NAND_CH7_RE_N -pg 1 -lvl 7 -x 2650 -y 4300 -defaultsOSRD
+preplace port O_NAND_CH7_RE_P -pg 1 -lvl 7 -x 2650 -y 4270 -defaultsOSRD
+preplace port O_NAND_CH7_WE -pg 1 -lvl 7 -x 2650 -y 4240 -defaultsOSRD
+preplace port O_NAND_CH7_WP -pg 1 -lvl 7 -x 2650 -y 4390 -defaultsOSRD
+preplace portBus O_DEBUG -pg 1 -lvl 7 -x 2650 -y 700 -defaultsOSRD
+preplace portBus IO_NAND_CH0_DQ -pg 1 -lvl 7 -x 2650 -y 100 -defaultsOSRD
+preplace portBus O_NAND_CH0_CE -pg 1 -lvl 7 -x 2650 -y 130 -defaultsOSRD
+preplace portBus I_NAND_CH0_RB -pg 1 -lvl 7 -x 2650 -y 340 -defaultsOSRD -right
+preplace portBus I_NAND_CH1_RB -pg 1 -lvl 7 -x 2650 -y 670 -defaultsOSRD -right
+preplace portBus IO_NAND_CH1_DQ -pg 1 -lvl 7 -x 2650 -y 430 -defaultsOSRD
+preplace portBus O_NAND_CH1_CE -pg 1 -lvl 7 -x 2650 -y 460 -defaultsOSRD
+preplace portBus IO_NAND_CH2_DQ -pg 1 -lvl 7 -x 2650 -y 980 -defaultsOSRD
+preplace portBus I_NAND_CH2_RB -pg 1 -lvl 7 -x 2650 -y 890 -defaultsOSRD -right
+preplace portBus O_NAND_CH2_CE -pg 1 -lvl 7 -x 2650 -y 1010 -defaultsOSRD
+preplace portBus IO_NAND_CH3_DQ -pg 1 -lvl 7 -x 2650 -y 1560 -defaultsOSRD
+preplace portBus I_NAND_CH3_RB -pg 1 -lvl 7 -x 2650 -y 1800 -defaultsOSRD -right
+preplace portBus O_NAND_CH3_CE -pg 1 -lvl 7 -x 2650 -y 1590 -defaultsOSRD
+preplace portBus pcie_rx_n -pg 1 -lvl 7 -x 2650 -y 4810 -defaultsOSRD -right
+preplace portBus pcie_rx_p -pg 1 -lvl 7 -x 2650 -y 4090 -defaultsOSRD -right
+preplace portBus pcie_tx_p -pg 1 -lvl 7 -x 2650 -y 3960 -defaultsOSRD
+preplace portBus pcie_tx_n -pg 1 -lvl 7 -x 2650 -y 3990 -defaultsOSRD
+preplace portBus IO_NAND_CH4_DQ -pg 1 -lvl 7 -x 2650 -y 3290 -defaultsOSRD
+preplace portBus O_NAND_CH4_CE -pg 1 -lvl 7 -x 2650 -y 3320 -defaultsOSRD
+preplace portBus I_NAND_CH4_RB -pg 1 -lvl 7 -x 2650 -y 3200 -defaultsOSRD -right
+preplace portBus I_NAND_CH5_RB -pg 1 -lvl 7 -x 2650 -y 3530 -defaultsOSRD -right
+preplace portBus IO_NAND_CH5_DQ -pg 1 -lvl 7 -x 2650 -y 3620 -defaultsOSRD
+preplace portBus O_NAND_CH5_CE -pg 1 -lvl 7 -x 2650 -y 3650 -defaultsOSRD
+preplace portBus I_NAND_CH6_RB -pg 1 -lvl 7 -x 2650 -y 4840 -defaultsOSRD -right
+preplace portBus IO_NAND_CH6_DQ -pg 1 -lvl 7 -x 2650 -y 4510 -defaultsOSRD
+preplace portBus O_NAND_CH6_CE -pg 1 -lvl 7 -x 2650 -y 4540 -defaultsOSRD
+preplace portBus I_NAND_CH7_RB -pg 1 -lvl 7 -x 2650 -y 4420 -defaultsOSRD -right
+preplace portBus IO_NAND_CH7_DQ -pg 1 -lvl 7 -x 2650 -y 4180 -defaultsOSRD
+preplace portBus O_NAND_CH7_CE -pg 1 -lvl 7 -x 2650 -y 4210 -defaultsOSRD
+preplace inst CH2MMCMC1H200 -pg 1 -lvl 4 -x 1470 -y 930 -defaultsOSRD
+preplace inst CH4MMCMC1H200 -pg 1 -lvl 4 -x 1470 -y 3560 -defaultsOSRD
+preplace inst CH3MMCMC1H200 -pg 1 -lvl 4 -x 1470 -y 1730 -defaultsOSRD
+preplace inst CH6MMCMC1H200 -pg 1 -lvl 4 -x 1470 -y 4150 -defaultsOSRD
+preplace inst CH7MMCMC1H200 -pg 1 -lvl 4 -x 1470 -y 4290 -defaultsOSRD
+preplace inst Dispatcher_uCode_1 -pg 1 -lvl 4 -x 1470 -y 620 -defaultsOSRD
+preplace inst Dispatcher_uCode_2 -pg 1 -lvl 4 -x 1470 -y 1060 -defaultsOSRD
+preplace inst Dispatcher_uCode_3 -pg 1 -lvl 4 -x 1470 -y 1160 -defaultsOSRD
+preplace inst Dispatcher_uCode_4 -pg 1 -lvl 4 -x 1470 -y 3030 -defaultsOSRD
+preplace inst Dispatcher_uCode_5 -pg 1 -lvl 4 -x 1470 -y 3130 -defaultsOSRD
+preplace inst Dispatcher_uCode_6 -pg 1 -lvl 4 -x 1470 -y 3430 -defaultsOSRD
+preplace inst Dispatcher_uCode_7 -pg 1 -lvl 4 -x 1470 -y 2930 -defaultsOSRD
+preplace inst Tiger4SharedKES_0 -pg 1 -lvl 4 -x 1470 -y 770 -defaultsOSRD
+preplace inst Tiger4SharedKES_1 -pg 1 -lvl 4 -x 1470 -y 3280 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -x 2010 -y 2350 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 5 -x 2010 -y 2490 -defaultsOSRD
+preplace inst axi_bram_ctrl_2 -pg 1 -lvl 5 -x 2010 -y 2650 -defaultsOSRD
+preplace inst axi_bram_ctrl_3 -pg 1 -lvl 5 -x 2010 -y 2790 -defaultsOSRD
+preplace inst GPIC0 -pg 1 -lvl 2 -x 570 -y 1510 -defaultsOSRD
+preplace inst HPIC3 -pg 1 -lvl 4 -x 1470 -y 1950 -defaultsOSRD
+preplace inst GPIC1 -pg 1 -lvl 4 -x 1470 -y 2710 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1470 -y 1430 -defaultsOSRD
+preplace inst axi_interconnect_1 -pg 1 -lvl 4 -x 1470 -y 2320 -defaultsOSRD
+preplace inst Dispatcher_uCode_0 -pg 1 -lvl 4 -x 1470 -y 520 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -x 2470 -y 2480 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 6 -x 2470 -y 2660 -defaultsOSRD
+preplace inst CH0MMCMC1H200 -pg 1 -lvl 4 -x 1470 -y 70 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 200 -y 1700 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 1 -x 200 -y 2180 -defaultsOSRD
+preplace inst proc_sys_reset_2 -pg 1 -lvl 3 -x 970 -y 2630 -defaultsOSRD
+preplace inst proc_sys_reset_3 -pg 1 -lvl 3 -x 970 -y 1940 -defaultsOSRD
+preplace inst PS -pg 1 -lvl 5 -x 2010 -y 2010 -defaultsOSRD
+preplace inst V2NFC100DDR_0 -pg 1 -lvl 5 -x 2010 -y 190 -defaultsOSRD
+preplace inst V2NFC100DDR_1 -pg 1 -lvl 5 -x 2010 -y 490 -defaultsOSRD
+preplace inst V2NFC100DDR_2 -pg 1 -lvl 5 -x 2010 -y 1050 -defaultsOSRD
+preplace inst V2NFC100DDR_3 -pg 1 -lvl 5 -x 2010 -y 1640 -defaultsOSRD
+preplace inst V2NFC100DDR_4 -pg 1 -lvl 5 -x 2010 -y 3380 -defaultsOSRD
+preplace inst V2NFC100DDR_5 -pg 1 -lvl 5 -x 2010 -y 3680 -defaultsOSRD
+preplace inst V2NFC100DDR_6 -pg 1 -lvl 5 -x 2010 -y 4570 -defaultsOSRD
+preplace inst V2NFC100DDR_7 -pg 1 -lvl 5 -x 2010 -y 4270 -defaultsOSRD
+preplace inst Tiger4NSC_0 -pg 1 -lvl 3 -x 970 -y 520 -defaultsOSRD
+preplace inst Tiger4NSC_1 -pg 1 -lvl 3 -x 970 -y 700 -defaultsOSRD
+preplace inst Tiger4NSC_2 -pg 1 -lvl 3 -x 970 -y 1060 -defaultsOSRD
+preplace inst Tiger4NSC_3 -pg 1 -lvl 3 -x 970 -y 1270 -defaultsOSRD
+preplace inst Tiger4NSC_4 -pg 1 -lvl 3 -x 970 -y 3030 -defaultsOSRD
+preplace inst Tiger4NSC_5 -pg 1 -lvl 3 -x 970 -y 3210 -defaultsOSRD
+preplace inst Tiger4NSC_6 -pg 1 -lvl 3 -x 970 -y 3430 -defaultsOSRD
+preplace inst Tiger4NSC_7 -pg 1 -lvl 3 -x 970 -y 2850 -defaultsOSRD
+preplace inst NVMeHostController_0 -pg 1 -lvl 5 -x 2010 -y 3960 -defaultsOSRD
+preplace netloc PS_FCLK_CLK2 1 2 4 790 2530 1290 2070 1710 2220 2250
+preplace netloc PS_FCLK_CLK0 1 0 6 10 1530 380 1230 790 420 1230 160 1720 2200 2260
+preplace netloc PS_FCLK_RESET0_N 1 0 6 10 1820 NJ 1820 NJ 1820 NJ 1820 NJ 1820 2230
+preplace netloc PS_FCLK_CLK1 1 0 6 30 2280 410 2280 750 2280 1250 3490 1690 3030 2290
+preplace netloc PS_FCLK_RESET1_N 1 0 6 20 1800 NJ 1800 NJ 1800 NJ 1800 NJ 1800 2280
+preplace netloc PS_FCLK_RESET2_N 1 2 4 770 1810 NJ 1810 NJ 1810 2270
+preplace netloc PS_FCLK_RESET3_N 1 2 4 780 1830 NJ 1830 1660J 2210 2230
+preplace netloc PS_FCLK_CLK3 1 2 4 790 1840 1270 2080 1680 2230 2240
+preplace netloc M00_ARESETN_1 1 1 3 390 1250 740J 1370 1140
+preplace netloc proc_sys_reset_2_peripheral_aresetn 1 3 2 1260 2090 1640
+preplace netloc ARESETN_2 1 3 1 1300 1360n
+preplace netloc M00_ARESETN_2 1 3 2 1280 2550 1610J
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 4 370J 1240 780 410 1220 220 1740
+preplace netloc CH0MMCMC1H200_clk_out1 1 4 1 1750 70n
+preplace netloc CH2MMCMC1H200_clk_out1 1 4 1 1730 930n
+preplace netloc CH3MMCMC1H200_clk_out1 1 4 1 1660 1630n
+preplace netloc ARESETN_3 1 3 1 N 2650
+preplace netloc NVMeHostController_0_dev_irq_assert 1 4 2 1760 2240 2230
+preplace netloc V2NFC100DDR_0_O_NAND_CLE 1 5 2 NJ 260 2610J
+preplace netloc V2NFC100DDR_0_O_NAND_RE_P 1 5 2 2330J 190 NJ
+preplace netloc V2NFC100DDR_0_O_NAND_RE_N 1 5 2 NJ 220 NJ
+preplace netloc Net 1 5 2 2320J 70 NJ
+preplace netloc V2NFC100DDR_0_O_NAND_WE 1 5 2 2350J 160 NJ
+preplace netloc Net1 1 5 2 2330J 100 NJ
+preplace netloc Net2 1 5 2 2310J 40 NJ
+preplace netloc V2NFC100DDR_0_O_NAND_CE 1 5 2 2340J 130 NJ
+preplace netloc I_NAND_RB_1 1 4 3 1760 20 NJ 20 2620J
+preplace netloc V2NFC100DDR_0_O_NAND_ALE 1 5 2 NJ 240 2630J
+preplace netloc V2NFC100DDR_0_O_NAND_WP 1 5 2 NJ 280 2590J
+preplace netloc Net3 1 5 2 2340J 400 NJ
+preplace netloc Net4 1 5 2 2320J 370 NJ
+preplace netloc I_NAND_RB_2 1 4 3 1760 670 NJ 670 NJ
+preplace netloc Net5 1 5 2 2330J 430 NJ
+preplace netloc V2NFC100DDR_1_O_NAND_ALE 1 5 2 NJ 540 2610J
+preplace netloc V2NFC100DDR_1_O_NAND_CE 1 5 2 NJ 460 NJ
+preplace netloc V2NFC100DDR_1_O_NAND_CLE 1 5 2 NJ 560 2600J
+preplace netloc V2NFC100DDR_1_O_NAND_RE_N 1 5 2 NJ 520 2620J
+preplace netloc V2NFC100DDR_1_O_NAND_RE_P 1 5 2 NJ 500 2630J
+preplace netloc V2NFC100DDR_1_O_NAND_WE 1 5 2 2330J 490 NJ
+preplace netloc V2NFC100DDR_1_O_NAND_WP 1 5 2 NJ 580 2590J
+preplace netloc Net6 1 5 2 2310J 920 NJ
+preplace netloc Net7 1 5 2 2350J 980 NJ
+preplace netloc Net8 1 5 2 2330J 950 NJ
+preplace netloc I_NAND_RB_3 1 4 3 1760 890 NJ 890 NJ
+preplace netloc V2NFC100DDR_2_O_NAND_ALE 1 5 2 NJ 1100 2620J
+preplace netloc V2NFC100DDR_2_O_NAND_CE 1 5 2 2330J 1010 NJ
+preplace netloc V2NFC100DDR_2_O_NAND_CLE 1 5 2 NJ 1120 2600J
+preplace netloc V2NFC100DDR_2_O_NAND_RE_N 1 5 2 NJ 1080 2630J
+preplace netloc V2NFC100DDR_2_O_NAND_RE_P 1 5 2 NJ 1060 2610J
+preplace netloc V2NFC100DDR_2_O_NAND_WE 1 5 2 NJ 1040 NJ
+preplace netloc V2NFC100DDR_2_O_NAND_WP 1 5 2 NJ 1140 2590J
+preplace netloc Net9 1 5 2 2340J 1560 NJ
+preplace netloc Net10 1 5 2 2320J 1530 NJ
+preplace netloc Net11 1 5 2 2310J 1500 NJ
+preplace netloc I_NAND_RB_4 1 4 3 1760 1790 NJ 1790 2610J
+preplace netloc V2NFC100DDR_3_O_NAND_ALE 1 5 2 NJ 1690 2620J
+preplace netloc V2NFC100DDR_3_O_NAND_CE 1 5 2 2350J 1590 NJ
+preplace netloc V2NFC100DDR_3_O_NAND_CLE 1 5 2 NJ 1710 2600J
+preplace netloc V2NFC100DDR_3_O_NAND_RE_N 1 5 2 2330J 1680 NJ
+preplace netloc V2NFC100DDR_3_O_NAND_RE_P 1 5 2 NJ 1650 NJ
+preplace netloc V2NFC100DDR_3_O_NAND_WE 1 5 2 2330J 1620 NJ
+preplace netloc V2NFC100DDR_3_O_NAND_WP 1 5 2 NJ 1730 2590J
+preplace netloc pcie_perst_n_1 1 4 3 1750 4110 2240J 4060 NJ
+preplace netloc pcie_ref_clk_n_1 1 4 3 1730 4750 NJ 4750 NJ
+preplace netloc pcie_rx_n_1 1 4 3 1740 4810 NJ 4810 NJ
+preplace netloc pcie_rx_p_1 1 4 3 1760 4120 2270J 4090 NJ
+preplace netloc pcie_ref_clk_p_1 1 4 3 1720 4780 NJ 4780 NJ
+preplace netloc NVMeHostController_0_pcie_tx_p 1 5 2 2290J 3960 NJ
+preplace netloc NVMeHostController_0_pcie_tx_n 1 5 2 NJ 3990 NJ
+preplace netloc M04_ARESETN_1 1 1 3 420 2220 NJ 2220 1140
+preplace netloc proc_sys_reset_1_peripheral_reset 1 1 4 N 2180 710 3330 1200 3640 1700
+preplace netloc CH4MMCMC1H200_clk_out1 1 4 1 1750 3370n
+preplace netloc Net12 1 5 2 2330J 3290 NJ
+preplace netloc Net13 1 5 2 2320J 3260 NJ
+preplace netloc Net14 1 5 2 2310J 3230 NJ
+preplace netloc V2NFC100DDR_4_O_NAND_ALE 1 5 2 NJ 3430 2610J
+preplace netloc V2NFC100DDR_4_O_NAND_CE 1 5 2 2340J 3320 NJ
+preplace netloc V2NFC100DDR_4_O_NAND_CLE 1 5 2 NJ 3450 2620J
+preplace netloc V2NFC100DDR_4_O_NAND_RE_N 1 5 2 NJ 3410 NJ
+preplace netloc V2NFC100DDR_4_O_NAND_RE_P 1 5 2 2340J 3380 NJ
+preplace netloc V2NFC100DDR_4_O_NAND_WE 1 5 2 2350J 3350 NJ
+preplace netloc V2NFC100DDR_4_O_NAND_WP 1 5 2 NJ 3470 2600J
+preplace netloc I_NAND_RB_5 1 4 3 1760 3200 NJ 3200 NJ
+preplace netloc Net15 1 5 2 2330J 3560 NJ
+preplace netloc I_NAND_RB_6 1 4 3 1760 3530 NJ 3530 NJ
+preplace netloc Net16 1 5 2 2340J 3620 NJ
+preplace netloc Net17 1 5 2 2350J 3590 NJ
+preplace netloc V2NFC100DDR_5_O_NAND_ALE 1 5 2 NJ 3730 2610J
+preplace netloc V2NFC100DDR_5_O_NAND_CE 1 5 2 NJ 3650 NJ
+preplace netloc V2NFC100DDR_5_O_NAND_CLE 1 5 2 NJ 3750 2600J
+preplace netloc V2NFC100DDR_5_O_NAND_RE_N 1 5 2 NJ 3710 2620J
+preplace netloc V2NFC100DDR_5_O_NAND_RE_P 1 5 2 NJ 3690 2630J
+preplace netloc V2NFC100DDR_5_O_NAND_WE 1 5 2 NJ 3670 2610J
+preplace netloc V2NFC100DDR_5_O_NAND_WP 1 5 2 NJ 3770 2590J
+preplace netloc CH6MMCMC1H200_clk_out1 1 4 1 1620 4150n
+preplace netloc I_NAND_RB_7 1 4 3 1760 4840 NJ 4840 NJ
+preplace netloc Net18 1 5 2 2290J 4510 NJ
+preplace netloc Net19 1 5 2 2340J 4480 NJ
+preplace netloc Net20 1 5 2 2270J 4450 NJ
+preplace netloc V2NFC100DDR_6_O_NAND_ALE 1 5 2 NJ 4620 2610J
+preplace netloc V2NFC100DDR_6_O_NAND_CE 1 5 2 NJ 4540 NJ
+preplace netloc V2NFC100DDR_6_O_NAND_CLE 1 5 2 NJ 4640 2600J
+preplace netloc V2NFC100DDR_6_O_NAND_RE_N 1 5 2 NJ 4600 2620J
+preplace netloc V2NFC100DDR_6_O_NAND_RE_P 1 5 2 NJ 4580 2630J
+preplace netloc V2NFC100DDR_6_O_NAND_WE 1 5 2 NJ 4560 2610J
+preplace netloc V2NFC100DDR_6_O_NAND_WP 1 5 2 NJ 4660 2590J
+preplace netloc CH7MMCMC1H200_clk_out1 1 4 1 1710 4260n
+preplace netloc I_NAND_RB_8 1 4 3 1760 4420 NJ 4420 NJ
+preplace netloc Net21 1 5 2 2330J 4180 NJ
+preplace netloc Net22 1 5 2 2320J 4150 NJ
+preplace netloc Net23 1 5 2 2300J 4120 NJ
+preplace netloc V2NFC100DDR_7_O_NAND_ALE 1 5 2 NJ 4320 2610J
+preplace netloc V2NFC100DDR_7_O_NAND_CE 1 5 2 2340J 4210 NJ
+preplace netloc V2NFC100DDR_7_O_NAND_CLE 1 5 2 NJ 4340 2620J
+preplace netloc V2NFC100DDR_7_O_NAND_RE_N 1 5 2 NJ 4300 NJ
+preplace netloc V2NFC100DDR_7_O_NAND_RE_P 1 5 2 2290J 4270 NJ
+preplace netloc V2NFC100DDR_7_O_NAND_WE 1 5 2 2350J 4240 NJ
+preplace netloc V2NFC100DDR_7_O_NAND_WP 1 5 2 NJ 4360 2600J
+preplace netloc ARESETN_1 1 1 1 400 1350n
+preplace netloc Tiger4NSC_1_uROMInterface 1 3 1 1160J 620n
+preplace netloc Tiger4NSC_2_NFCInterface 1 3 2 1150J 1000 N
+preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 5 1 2340 2670n
+preplace netloc GPIC0_M07_AXI 1 2 1 730 1580n
+preplace netloc Tiger4NSC_6_SharedKESInterface 1 3 1 1310 3270n
+preplace netloc processing_system7_0_FIXED_IO 1 5 2 NJ 1920 2610J
+preplace netloc GPIC1_M00_AXI 1 4 1 1630 2690n
+preplace netloc Tiger4NSC_0_uROMInterface 1 3 1 NJ 520
+preplace netloc S03_AXI_1 1 3 1 1200 1230n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 5 1 2350 2350n
+preplace netloc Tiger4NSC_6_uROMInterface 1 3 1 NJ 3430
+preplace netloc Tiger4NSC_2_uROMInterface 1 3 1 NJ 1060
+preplace netloc GPIC0_M01_AXI 1 2 1 720 680n
+preplace netloc S01_AXI_1 1 3 1 1260 660n
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 1710 1420n
+preplace netloc S01_AXI_2 1 3 1 1220 2170n
+preplace netloc PS_M_AXI_GP0 1 1 5 400 140 NJ 140 NJ 140 1650J 30 2290
+preplace netloc Tiger4NSC_7_uROMInterface 1 3 1 1190J 2850n
+preplace netloc NVMeHostController_0_m0_axi 1 3 3 1310 150 1660J 40 2300
+preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1670 1440n
+preplace netloc axi_interconnect_1_M00_AXI 1 4 1 1650 1980n
+preplace netloc Tiger4NSC_3_SharedKESInterface 1 3 1 1160 780n
+preplace netloc Tiger4NSC_5_uROMInterface 1 3 1 1240J 3130n
+preplace netloc axi_interconnect_1_M01_AXI 1 4 1 1650 2330n
+preplace netloc GPIC1_M01_AXI 1 4 1 1660 2470n
+preplace netloc HPIC3_M00_AXI 1 4 1 1680 1950n
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 5 1 N 2490
+preplace netloc Tiger4NSC_0_SharedKESInterface 1 3 1 1300 540n
+preplace netloc Tiger4NSC_4_SharedKESInterface 1 3 1 1200 3050n
+preplace netloc GPIC1_M02_AXI 1 4 1 1650 2730n
+preplace netloc Tiger4NSC_7_NFCInterface 1 3 2 1180 4220 NJ
+preplace netloc Tiger4NSC_7_SharedKESInterface 1 3 1 1170 2870n
+preplace netloc GPIC0_M05_AXI 1 2 1 740 1540n
+preplace netloc S00_AXI_2 1 3 3 1320 340 NJ 340 2240
+preplace netloc Tiger4NSC_2_SharedKESInterface 1 3 1 1140 760n
+preplace netloc Tiger4NSC_3_uROMInterface 1 3 1 1170J 1160n
+preplace netloc Tiger4NSC_1_SharedKESInterface 1 3 1 1270 720n
+preplace netloc Tiger4NSC_5_NFCInterface 1 3 2 1150 3630 NJ
+preplace netloc Tiger4NSC_1_NFCInterface 1 3 2 1150 440 NJ
+preplace netloc Tiger4NSC_2_D_AXI 1 3 1 1210 1020n
+preplace netloc Tiger4NSC_4_NFCInterface 1 3 2 1240 2870 1620J
+preplace netloc Tiger4NSC_3_NFCInterface 1 3 2 1180 1660 1650J
+preplace netloc GPIC0_M02_AXI 1 2 1 730 1040n
+preplace netloc GPIC0_M04_AXI 1 2 1 760 1520n
+preplace netloc Tiger4NSC_5_SharedKESInterface 1 3 1 1160 3230n
+preplace netloc Tiger4NSC_0_D_AXI 1 3 1 1290 480n
+preplace netloc Tiger4NSC_4_D_AXI 1 3 1 1200 2150n
+preplace netloc Tiger4NSC_6_NFCInterface 1 3 2 1140 4520 NJ
+preplace netloc Tiger4NSC_0_NFCInterface 1 3 2 1140 170 1670J
+preplace netloc GPIC0_M03_AXI 1 2 1 760 1250n
+preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 5 1 N 2650
+preplace netloc GPIC0_M00_AXI 1 2 1 710 500n
+preplace netloc Tiger4NSC_4_uROMInterface 1 3 1 NJ 3030
+preplace netloc S03_AXI_2 1 3 1 1210 2210n
+preplace netloc Tiger4NSC_6_D_AXI 1 3 1 1230 2190n
+preplace netloc GPIC0_M06_AXI 1 2 1 720 1560n
+preplace netloc processing_system7_0_DDR 1 5 2 NJ 1900 NJ
+levelinfo -pg 1 -10 200 570 970 1470 2010 2470 2650
+pagesize -pg 1 -db -bbox -sgen -10 0 2850 4860
+"
+}
+{
+   "da_ps7_cnt":"1"
+}
