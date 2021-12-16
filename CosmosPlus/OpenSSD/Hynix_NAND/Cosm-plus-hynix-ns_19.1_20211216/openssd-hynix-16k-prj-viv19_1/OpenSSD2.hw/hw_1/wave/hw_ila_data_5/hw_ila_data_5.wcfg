@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/OpenSSD/Project/OpenSSD2_Prebuild_200MT/OpenSSD2.hw/hw_1/wave/hw_ila_data_5/hw_ila_data_5.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="34">
+	</WVObjectSize>
+	<wvobject fp_name="NVMeHostController_0/s0_axi_arvalid" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">NVMeHostController_0/s0_axi_arvalid</obj_property>
+		<obj_property name="ObjectShortName">NVMeHostController_0/s0_axi_arvalid</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="NVMeHostController_0/s0_axi_awvalid" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">NVMeHostController_0/s0_axi_awvalid</obj_property>
+		<obj_property name="ObjectShortName">NVMeHostController_0/s0_axi_awvalid</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="NVMeHostController_0/s0_axi_awready" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">NVMeHostController_0/s0_axi_awready</obj_property>
+		<obj_property name="ObjectShortName">NVMeHostController_0/s0_axi_awready</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="NVMeHostController_0/s0_axi_arready" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">NVMeHostController_0/s0_axi_arready</obj_property>
+		<obj_property name="ObjectShortName">NVMeHostController_0/s0_axi_arready</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="NVMeHostController_0/s0_axi_bvalid" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">NVMeHostController_0/s0_axi_bvalid</obj_property>
+		<obj_property name="ObjectShortName">NVMeHostController_0/s0_axi_bvalid</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="NVMeHostController_0/s0_axi_bready" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">NVMeHostController_0/s0_axi_bready</obj_property>
+		<obj_property name="ObjectShortName">NVMeHostController_0/s0_axi_bready</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="NVMeHostController_0/s0_axi_rready" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">NVMeHostController_0/s0_axi_rready</obj_property>
+		<obj_property name="ObjectShortName">NVMeHostController_0/s0_axi_rready</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="NVMeHostController_0/s0_axi_rvalid" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">NVMeHostController_0/s0_axi_rvalid</obj_property>
+		<obj_property name="ObjectShortName">NVMeHostController_0/s0_axi_rvalid</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="NVMeHostController_0/s0_axi_wready" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">NVMeHostController_0/s0_axi_wready</obj_property>
+		<obj_property name="ObjectShortName">NVMeHostController_0/s0_axi_wready</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="NVMeHostController_0/s0_axi_wvalid" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">NVMeHostController_0/s0_axi_wvalid</obj_property>
+		<obj_property name="ObjectShortName">NVMeHostController_0/s0_axi_wvalid</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_ARREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_ARREADY</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_ARREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_ARVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_ARVALID</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_ARVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_AWREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_AWREADY</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_AWREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_AWVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_AWVALID</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_AWVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_BREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_BREADY</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_BREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_BVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_BVALID</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_BVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_RLAST" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_RLAST</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_RLAST</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_RREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_RREADY</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_RREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_RVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_RVALID</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_RVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_WLAST" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_WLAST</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_WLAST</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_WVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_WVALID</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_WVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP0_WREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP0_WREADY</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP0_WREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_ARREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_ARREADY</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_ARREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_ARVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_ARVALID</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_ARVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_AWREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_AWREADY</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_AWREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_AWVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_AWVALID</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_AWVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_BREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_BREADY</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_BREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_BVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_BVALID</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_BVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_RLAST" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_RLAST</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_RLAST</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_RREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_RREADY</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_RREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_RVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_RVALID</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_RVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_WLAST" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_WLAST</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_WLAST</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_WVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_WVALID</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_WVALID</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="PS/M_AXI_GP1_WREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">PS/M_AXI_GP1_WREADY</obj_property>
+		<obj_property name="ObjectShortName">PS/M_AXI_GP1_WREADY</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

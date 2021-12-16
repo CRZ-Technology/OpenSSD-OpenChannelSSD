@@ -1,0 +1,832 @@
+
+**** Build of configuration Debug for project cosmosplus_ocssd ****
+
+Nothing to build for project cosmosplus_ocssd
+16:07:52 **** Auto Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/nvme/debug.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/debug.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/debug.d" -MT"src/nvme/debug.o" -o "src/nvme/debug.o" "../src/nvme/debug.c"
+'Finished building: ../src/nvme/debug.c'
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+In file included from ../src/nvme/host_lld.c:61:
+../src/nvme/host_lld.c: In function 'dev_irq_init':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:51:60: note: in definition of macro 'IO_WRITE32'
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                                            ^~~~
+../src/nvme/host_lld.h:63:35: note: in expansion of macro 'HOST_IP_ADDR'
+ #define DEV_IRQ_MASK_REG_ADDR    (HOST_IP_ADDR + 0x4)
+                                   ^~~~~~~~~~~~
+../src/nvme/host_lld.c:89:13: note: in expansion of macro 'DEV_IRQ_MASK_REG_ADDR'
+  IO_WRITE32(DEV_IRQ_MASK_REG_ADDR, devReg.dword);
+             ^~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.h:61:28: note: each undeclared identifier is reported only once for each function it appears in
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:51:60: note: in definition of macro 'IO_WRITE32'
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                                            ^~~~
+../src/nvme/host_lld.h:63:35: note: in expansion of macro 'HOST_IP_ADDR'
+ #define DEV_IRQ_MASK_REG_ADDR    (HOST_IP_ADDR + 0x4)
+                                   ^~~~~~~~~~~~
+../src/nvme/host_lld.c:89:13: note: in expansion of macro 'DEV_IRQ_MASK_REG_ADDR'
+  IO_WRITE32(DEV_IRQ_MASK_REG_ADDR, devReg.dword);
+             ^~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'dev_irq_handler':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:65:37: note: in expansion of macro 'HOST_IP_ADDR'
+ #define DEV_IRQ_STATUS_REG_ADDR    (HOST_IP_ADDR + 0xC)
+                                     ^~~~~~~~~~~~
+../src/nvme/host_lld.c:98:27: note: in expansion of macro 'DEV_IRQ_STATUS_REG_ADDR'
+  devReg.dword = IO_READ32(DEV_IRQ_STATUS_REG_ADDR);
+                           ^~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'check_nvme_cc_en':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:70:34: note: in expansion of macro 'HOST_IP_ADDR'
+ #define NVME_STATUS_REG_ADDR    (HOST_IP_ADDR + 0x200)
+                                  ^~~~~~~~~~~~
+../src/nvme/host_lld.c:188:28: note: in expansion of macro 'NVME_STATUS_REG_ADDR'
+  nvmeReg.dword = IO_READ32(NVME_STATUS_REG_ADDR);
+                            ^~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_nvme_csts_rdy':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:70:34: note: in expansion of macro 'HOST_IP_ADDR'
+ #define NVME_STATUS_REG_ADDR    (HOST_IP_ADDR + 0x200)
+                                  ^~~~~~~~~~~~
+../src/nvme/host_lld.c:197:28: note: in expansion of macro 'NVME_STATUS_REG_ADDR'
+  nvmeReg.dword = IO_READ32(NVME_STATUS_REG_ADDR);
+                            ^~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_nvme_csts_shst':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:70:34: note: in expansion of macro 'HOST_IP_ADDR'
+ #define NVME_STATUS_REG_ADDR    (HOST_IP_ADDR + 0x200)
+                                  ^~~~~~~~~~~~
+../src/nvme/host_lld.c:207:28: note: in expansion of macro 'NVME_STATUS_REG_ADDR'
+  nvmeReg.dword = IO_READ32(NVME_STATUS_REG_ADDR);
+                            ^~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_nvme_admin_queue':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:72:41: note: in expansion of macro 'HOST_IP_ADDR'
+ #define NVME_ADMIN_QUEUE_SET_REG_ADDR  (HOST_IP_ADDR + 0x21C)
+                                         ^~~~~~~~~~~~
+../src/nvme/host_lld.c:217:28: note: in expansion of macro 'NVME_ADMIN_QUEUE_SET_REG_ADDR'
+  nvmeReg.dword = IO_READ32(NVME_ADMIN_QUEUE_SET_REG_ADDR);
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'get_nvme_cmd':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:76:36: note: in expansion of macro 'HOST_IP_ADDR'
+ #define NVME_CMD_FIFO_REG_ADDR    (HOST_IP_ADDR + 0x300)
+                                    ^~~~~~~~~~~~
+../src/nvme/host_lld.c:230:28: note: in expansion of macro 'NVME_CMD_FIFO_REG_ADDR'
+  nvmeReg.dword = IO_READ32(NVME_CMD_FIFO_REG_ADDR);
+                            ^~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_auto_nvme_cpl':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:51:60: note: in definition of macro 'IO_WRITE32'
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                                            ^~~~
+../src/nvme/host_lld.h:77:36: note: in expansion of macro 'HOST_IP_ADDR'
+ #define NVME_CPL_FIFO_REG_ADDR    (HOST_IP_ADDR + 0x304)
+                                    ^~~~~~~~~~~~
+../src/nvme/host_lld.c:258:14: note: in expansion of macro 'NVME_CPL_FIFO_REG_ADDR'
+  IO_WRITE32((NVME_CPL_FIFO_REG_ADDR + 4), nvmeReg.dword[1]);
+              ^~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_nvme_slot_release':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:51:60: note: in definition of macro 'IO_WRITE32'
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                                            ^~~~
+../src/nvme/host_lld.h:77:36: note: in expansion of macro 'HOST_IP_ADDR'
+ #define NVME_CPL_FIFO_REG_ADDR    (HOST_IP_ADDR + 0x304)
+                                    ^~~~~~~~~~~~
+../src/nvme/host_lld.c:271:14: note: in expansion of macro 'NVME_CPL_FIFO_REG_ADDR'
+  IO_WRITE32((NVME_CPL_FIFO_REG_ADDR + 8), nvmeReg.dword[2]);
+              ^~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_nvme_cpl':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:51:60: note: in definition of macro 'IO_WRITE32'
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                                            ^~~~
+../src/nvme/host_lld.h:77:36: note: in expansion of macro 'HOST_IP_ADDR'
+ #define NVME_CPL_FIFO_REG_ADDR    (HOST_IP_ADDR + 0x304)
+                                    ^~~~~~~~~~~~
+../src/nvme/host_lld.c:284:13: note: in expansion of macro 'NVME_CPL_FIFO_REG_ADDR'
+  IO_WRITE32(NVME_CPL_FIFO_REG_ADDR, nvmeReg.dword[0]);
+             ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/nvme/host_lld.c:65:
+../src/nvme/host_lld.c: In function 'set_io_sq':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.h:61:28: note: in definition of macro 'HOST_IP_ADDR'
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c:300:9: note: in expansion of macro 'NVME_IO_SQ_SET_REG_ADDR'
+  addr = NVME_IO_SQ_SET_REG_ADDR + (ioSqIdx * 8);
+         ^~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_cq':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.h:61:28: note: in definition of macro 'HOST_IP_ADDR'
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c:317:9: note: in expansion of macro 'NVME_IO_CQ_SET_REG_ADDR'
+  addr = NVME_IO_CQ_SET_REG_ADDR + (ioCqIdx * 8);
+         ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/nvme/host_lld.c:61:
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:51:60: note: in definition of macro 'IO_WRITE32'
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                                            ^~~~
+../src/nvme/host_lld.h:78:39: note: in expansion of macro 'HOST_IP_ADDR'
+ #define HOST_DMA_CMD_FIFO_REG_ADDR   (HOST_IP_ADDR + 0x310)
+                                       ^~~~~~~~~~~~
+../src/nvme/host_lld.c:339:13: note: in expansion of macro 'HOST_DMA_CMD_FIFO_REG_ADDR'
+  IO_WRITE32(HOST_DMA_CMD_FIFO_REG_ADDR, hostDmaReg.dword[0]);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:51:60: note: in definition of macro 'IO_WRITE32'
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                                            ^~~~
+../src/nvme/host_lld.h:78:39: note: in expansion of macro 'HOST_IP_ADDR'
+ #define HOST_DMA_CMD_FIFO_REG_ADDR   (HOST_IP_ADDR + 0x310)
+                                       ^~~~~~~~~~~~
+../src/nvme/host_lld.c:364:13: note: in expansion of macro 'HOST_DMA_CMD_FIFO_REG_ADDR'
+  IO_WRITE32(HOST_DMA_CMD_FIFO_REG_ADDR, hostDmaReg.dword[0]);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_auto_tx_dma':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:71:39: note: in expansion of macro 'HOST_IP_ADDR'
+ #define HOST_DMA_FIFO_CNT_REG_ADDR   (HOST_IP_ADDR + 0x204)
+                                       ^~~~~~~~~~~~
+../src/nvme/host_lld.c:381:45: note: in expansion of macro 'HOST_DMA_FIFO_CNT_REG_ADDR'
+  g_hostDmaStatus.fifoHead.dword = IO_READ32(HOST_DMA_FIFO_CNT_REG_ADDR);
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_auto_rx_dma':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:71:39: note: in expansion of macro 'HOST_IP_ADDR'
+ #define HOST_DMA_FIFO_CNT_REG_ADDR   (HOST_IP_ADDR + 0x204)
+                                       ^~~~~~~~~~~~
+../src/nvme/host_lld.c:414:45: note: in expansion of macro 'HOST_DMA_FIFO_CNT_REG_ADDR'
+  g_hostDmaStatus.fifoHead.dword = IO_READ32(HOST_DMA_FIFO_CNT_REG_ADDR);
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'check_direct_tx_dma_done':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:71:39: note: in expansion of macro 'HOST_IP_ADDR'
+ #define HOST_DMA_FIFO_CNT_REG_ADDR   (HOST_IP_ADDR + 0x204)
+                                       ^~~~~~~~~~~~
+../src/nvme/host_lld.c:444:46: note: in expansion of macro 'HOST_DMA_FIFO_CNT_REG_ADDR'
+   g_hostDmaStatus.fifoHead.dword = IO_READ32(HOST_DMA_FIFO_CNT_REG_ADDR);
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'check_direct_rx_dma_done':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:71:39: note: in expansion of macro 'HOST_IP_ADDR'
+ #define HOST_DMA_FIFO_CNT_REG_ADDR   (HOST_IP_ADDR + 0x204)
+                                       ^~~~~~~~~~~~
+../src/nvme/host_lld.c:452:46: note: in expansion of macro 'HOST_DMA_FIFO_CNT_REG_ADDR'
+   g_hostDmaStatus.fifoHead.dword = IO_READ32(HOST_DMA_FIFO_CNT_REG_ADDR);
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'check_auto_tx_dma_done':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:71:39: note: in expansion of macro 'HOST_IP_ADDR'
+ #define HOST_DMA_FIFO_CNT_REG_ADDR   (HOST_IP_ADDR + 0x204)
+                                       ^~~~~~~~~~~~
+../src/nvme/host_lld.c:460:46: note: in expansion of macro 'HOST_DMA_FIFO_CNT_REG_ADDR'
+   g_hostDmaStatus.fifoHead.dword = IO_READ32(HOST_DMA_FIFO_CNT_REG_ADDR);
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'check_auto_rx_dma_done':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:71:39: note: in expansion of macro 'HOST_IP_ADDR'
+ #define HOST_DMA_FIFO_CNT_REG_ADDR   (HOST_IP_ADDR + 0x204)
+                                       ^~~~~~~~~~~~
+../src/nvme/host_lld.c:468:46: note: in expansion of macro 'HOST_DMA_FIFO_CNT_REG_ADDR'
+   g_hostDmaStatus.fifoHead.dword = IO_READ32(HOST_DMA_FIFO_CNT_REG_ADDR);
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'check_auto_tx_dma_partial_done':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:71:39: note: in expansion of macro 'HOST_IP_ADDR'
+ #define HOST_DMA_FIFO_CNT_REG_ADDR   (HOST_IP_ADDR + 0x204)
+                                       ^~~~~~~~~~~~
+../src/nvme/host_lld.c:476:45: note: in expansion of macro 'HOST_DMA_FIFO_CNT_REG_ADDR'
+  g_hostDmaStatus.fifoHead.dword = IO_READ32(HOST_DMA_FIFO_CNT_REG_ADDR);
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/host_lld.c: In function 'check_auto_rx_dma_partial_done':
+../src/nvme/host_lld.h:61:28: error: 'XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR___NVMEHOSTCONTROLLER_0_BASEADDR'?
+ #define HOST_IP_ADDR      (XPAR_NVMEHOSTCONTROLLER_OCSSD_0_BASEADDR)
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nvme/io_access.h:52:56: note: in definition of macro 'IO_READ32'
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                                                        ^~~~
+../src/nvme/host_lld.h:71:39: note: in expansion of macro 'HOST_IP_ADDR'
+ #define HOST_DMA_FIFO_CNT_REG_ADDR   (HOST_IP_ADDR + 0x204)
+                                       ^~~~~~~~~~~~
+../src/nvme/host_lld.c:519:45: note: in expansion of macro 'HOST_DMA_FIFO_CNT_REG_ADDR'
+  g_hostDmaStatus.fifoHead.dword = IO_READ32(HOST_DMA_FIFO_CNT_REG_ADDR);
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/nvme/subdir.mk:38: src/nvme/host_lld.o] Error 1
+16:10:42 **** Auto Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.c:343:64: warning: 'hostDmaReg.<Ua2f8>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.c:368:64: warning: 'hostDmaReg.<Ua2f8>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+'Finished building: ../src/nvme/host_lld.c'
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/nvme/ocssd_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/ocssd_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/ocssd_lld.d" -MT"src/nvme/ocssd_lld.o" -o "src/nvme/ocssd_lld.o" "../src/nvme/ocssd_lld.c"
+'Finished building: ../src/nvme/ocssd_lld.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nsc_driver.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nsc_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nsc_driver.d" -MT"src/nsc_driver.o" -o "src/nsc_driver.o" "../src/nsc_driver.c"
+'Finished building: ../src/nsc_driver.c'
+' '
+'Building file: ../src/nvme_io_cmd_completion.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_io_cmd_completion.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme_io_cmd_completion.d" -MT"src/nvme_io_cmd_completion.o" -o "src/nvme_io_cmd_completion.o" "../src/nvme_io_cmd_completion.c"
+'Finished building: ../src/nvme_io_cmd_completion.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: cosmosplus_ocssd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/lib -o "cosmosplus_ocssd.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/ocssd_lld.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cosmosplus_ocssd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cosmosplus_ocssd.elf  |tee "cosmosplus_ocssd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 124636	   3360	  24784	 152780	  254cc	cosmosplus_ocssd.elf
+'Finished building: cosmosplus_ocssd.elf.size'
+' '
+16:12:34 **** Incremental Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:15:42 **** Auto Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/nvme/ocssd_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/ocssd_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/ocssd_lld.d" -MT"src/nvme/ocssd_lld.o" -o "src/nvme/ocssd_lld.o" "../src/nvme/ocssd_lld.c"
+'Finished building: ../src/nvme/ocssd_lld.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/nvme_io_cmd_completion.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_io_cmd_completion.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme_io_cmd_completion.d" -MT"src/nvme_io_cmd_completion.o" -o "src/nvme_io_cmd_completion.o" "../src/nvme_io_cmd_completion.c"
+'Finished building: ../src/nvme_io_cmd_completion.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: cosmosplus_ocssd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/lib -o "cosmosplus_ocssd.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/ocssd_lld.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cosmosplus_ocssd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cosmosplus_ocssd.elf  |tee "cosmosplus_ocssd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 124540	   3360	  24784	 152684	  2546c	cosmosplus_ocssd.elf
+'Finished building: cosmosplus_ocssd.elf.size'
+' '
+16:15:52 **** Incremental Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:22:08 **** Auto Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building target: cosmosplus_ocssd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/lib -o "cosmosplus_ocssd.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/ocssd_lld.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cosmosplus_ocssd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cosmosplus_ocssd.elf  |tee "cosmosplus_ocssd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 124540	   3360	  24784	 152684	  2546c	cosmosplus_ocssd.elf
+'Finished building: cosmosplus_ocssd.elf.size'
+' '
+16:22:36 **** Incremental Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:32:39 **** Auto Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/nvme/debug.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/debug.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/debug.d" -MT"src/nvme/debug.o" -o "src/nvme/debug.o" "../src/nvme/debug.c"
+'Finished building: ../src/nvme/debug.c'
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.c:343:64: warning: 'hostDmaReg.<Ua2f8>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.c:368:64: warning: 'hostDmaReg.<Ua2f8>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+'Finished building: ../src/nvme/host_lld.c'
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/nvme/ocssd_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/ocssd_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/ocssd_lld.d" -MT"src/nvme/ocssd_lld.o" -o "src/nvme/ocssd_lld.o" "../src/nvme/ocssd_lld.c"
+'Finished building: ../src/nvme/ocssd_lld.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nvme_io_cmd_completion.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_io_cmd_completion.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme_io_cmd_completion.d" -MT"src/nvme_io_cmd_completion.o" -o "src/nvme_io_cmd_completion.o" "../src/nvme_io_cmd_completion.c"
+'Finished building: ../src/nvme_io_cmd_completion.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: cosmosplus_ocssd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/lib -o "cosmosplus_ocssd.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/ocssd_lld.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cosmosplus_ocssd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cosmosplus_ocssd.elf  |tee "cosmosplus_ocssd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 124860	   3360	  24784	 153004	  255ac	cosmosplus_ocssd.elf
+'Finished building: cosmosplus_ocssd.elf.size'
+' '
+16:32:51 **** Incremental Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:36:24 **** Auto Build of configuration Debug for project GreedyFTL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GreedyFTL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.c:358:64: warning: 'hostDmaReg.<U1c78>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.c:383:64: warning: 'hostDmaReg.<U1c78>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+'Finished building: ../src/nvme/host_lld.c'
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GreedyFTL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building target: GreedyFTL.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GreedyFTL_bsp/ps7_cortexa9_0/lib -o "GreedyFTL.elf"  ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GreedyFTL.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GreedyFTL.elf  |tee "GreedyFTL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 135640	   3360	  24800	 163800	  27fd8	GreedyFTL.elf
+'Finished building: GreedyFTL.elf.size'
+' '
+16:37:05 **** Incremental Build of configuration Debug for project GreedyFTL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:37:55 **** Incremental Build of configuration Debug for project GreedyFTL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:43:32 **** Auto Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:50:13 **** Auto Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/nvme/debug.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/debug.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/debug.d" -MT"src/nvme/debug.o" -o "src/nvme/debug.o" "../src/nvme/debug.c"
+'Finished building: ../src/nvme/debug.c'
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.c:342:64: warning: 'hostDmaReg.<Ua2f8>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.c:367:64: warning: 'hostDmaReg.<Ua2f8>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+'Finished building: ../src/nvme/host_lld.c'
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/nvme/ocssd_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/ocssd_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/ocssd_lld.d" -MT"src/nvme/ocssd_lld.o" -o "src/nvme/ocssd_lld.o" "../src/nvme/ocssd_lld.c"
+'Finished building: ../src/nvme/ocssd_lld.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+'Finished building: ../src/request_schedule.c'
+' '
+'Building target: cosmosplus_ocssd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/lib -o "cosmosplus_ocssd.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/ocssd_lld.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cosmosplus_ocssd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cosmosplus_ocssd.elf  |tee "cosmosplus_ocssd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 124896	   3360	  24784	 153040	  255d0	cosmosplus_ocssd.elf
+'Finished building: cosmosplus_ocssd.elf.size'
+' '
+16:55:46 **** Incremental Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:47:11 **** Incremental Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:53:08 **** Auto Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/nvme/debug.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/debug.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/debug.d" -MT"src/nvme/debug.o" -o "src/nvme/debug.o" "../src/nvme/debug.c"
+'Finished building: ../src/nvme/debug.c'
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.c:342:64: warning: 'hostDmaReg.<U42f8>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.c:367:64: warning: 'hostDmaReg.<U42f8>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+'Finished building: ../src/nvme/host_lld.c'
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/nvme/ocssd_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/ocssd_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/ocssd_lld.d" -MT"src/nvme/ocssd_lld.o" -o "src/nvme/ocssd_lld.o" "../src/nvme/ocssd_lld.c"
+'Finished building: ../src/nvme/ocssd_lld.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+'Finished building: ../src/request_schedule.c'
+' '
+'Building target: cosmosplus_ocssd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cosmosplus_ocssd_bsp/ps7_cortexa9_0/lib -o "cosmosplus_ocssd.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/ocssd_lld.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cosmosplus_ocssd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cosmosplus_ocssd.elf  |tee "cosmosplus_ocssd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 124860	   3360	  24784	 153004	  255ac	cosmosplus_ocssd.elf
+'Finished building: cosmosplus_ocssd.elf.size'
+' '
+17:53:19 **** Incremental Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:47:22 **** Auto Build of configuration Debug for project GreedyFTL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:47:37 **** Incremental Build of configuration Debug for project GreedyFTL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

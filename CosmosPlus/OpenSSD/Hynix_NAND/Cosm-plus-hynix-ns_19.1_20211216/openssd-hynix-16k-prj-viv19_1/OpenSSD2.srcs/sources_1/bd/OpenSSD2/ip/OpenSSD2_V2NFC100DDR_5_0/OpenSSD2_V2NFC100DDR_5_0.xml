@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>ENCLab</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>OpenSSD2_V2NFC100DDR_5_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>NFCInterface</spirit:name>
+      <spirit:busType spirit:vendor="ENCLab" spirit:library="user" spirit:name="V2FMCDCLW" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="ENCLab" spirit:library="user" spirit:name="V2FMCDCLW_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>Opcode</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iOpcode</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TargetID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iTargetID</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SourceID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iSourceID</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>Address</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iAddress</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>Length</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iLength</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CMDValid</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iCMDValid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CMDReady</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>oCMDReady</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WriteData</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iWriteData</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WriteLast</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iWriteLast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WriteValid</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iWriteValid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WriteReady</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>oWriteReady</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ReadData</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>oReadData</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ReadLast</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>oReadLast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ReadValid</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>oReadValid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ReadReady</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iReadReady</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ReadyBusy</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>oReadyBusy</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>signal_clock</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iSystemClock</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.SIGNAL_CLOCK.ASSOCIATED_RESET">iReset</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.SIGNAL_CLOCK.ASSOCIATED_BUSIF">NFCInterface</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SIGNAL_CLOCK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SIGNAL_CLOCK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SIGNAL_CLOCK.CLK_DOMAIN">OpenSSD2_processing_system7_0_0_FCLK_CLK1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.SIGNAL_CLOCK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>signal_reset</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iReset</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.SIGNAL_RESET.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_HIGH</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.SIGNAL_RESET.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>iSystemClock</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iDelayRefClock</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iOutputDrivingClock</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iReset</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iOpcode</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iTargetID</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iSourceID</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iAddress</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iLength</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iCMDValid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>oCMDReady</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iWriteData</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iWriteLast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iWriteValid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>oWriteReady</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>oReadData</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>oReadLast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>oReadValid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iReadReady</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>oReadyBusy</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.NumberOfWays&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>IO_NAND_DQS_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>IO_NAND_DQS_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>IO_NAND_DQ</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>O_NAND_CE</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.NumberOfWays&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>O_NAND_WE</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>O_NAND_RE_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>O_NAND_RE_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>O_NAND_ALE</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>O_NAND_CLE</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>I_NAND_RB</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.NumberOfWays&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>O_NAND_WP</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>NumberOfWays</spirit:name>
+        <spirit:displayName>Numberofways</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.NumberOfWays">8</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>IDelayValue</spirit:name>
+        <spirit:displayName>Idelayvalue</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.IDelayValue">13</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>InputClockBufferType</spirit:name>
+        <spirit:displayName>Inputclockbuffertype</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.InputClockBufferType">0</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:description>V2NFC @ 100MHz DDR</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>NumberOfWays</spirit:name>
+      <spirit:displayName>Number of ways</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NumberOfWays">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">OpenSSD2_V2NFC100DDR_5_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>IDelayValue</spirit:name>
+      <spirit:displayName>IDelay value</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.IDelayValue">13</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>InputClockBufferType</spirit:name>
+      <spirit:displayName>Input clock buffer type</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.InputClockBufferType">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NoIDelayCtrl</spirit:name>
+      <spirit:displayName>Do not instantiate IDELAYCTRL</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NoIDelayCtrl" spirit:minimum="0" spirit:maximum="1" spirit:rangeType="long">0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>V2NFC</xilinx:displayName>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="xilinx.com:ip:NFC_Toggle_Top_DDR100:1.0_ARCHIVE_LOCATION">i:/projects/v2/iprepo/packages/v2nfc100ddr</xilinx:tag>
+        <xilinx:tag xilinx:name="xilinx.com:ip:V2NFC100DDR:1.0_ARCHIVE_LOCATION">i:/projects/v2/iprepo/packages/v2nfc100ddr</xilinx:tag>
+        <xilinx:tag xilinx:name="ENCLab:ip:V2NFC100DDR:1.0_ARCHIVE_LOCATION">i:/projects/v2/iprepo/packages/v2nfc100ddr</xilinx:tag>
+        <xilinx:tag xilinx:name="ENCLab:ip:V2NFC100DDR:1.0.1_ARCHIVE_LOCATION">i:/projects/v2/iprepo/packages/v2nfc100ddr</xilinx:tag>
+        <xilinx:tag xilinx:name="ENCLab:ip:V2NFC100DDR:1.0.2_ARCHIVE_LOCATION">i:/projects/v2/iprepo/packages/v2nfc100ddr</xilinx:tag>
+        <xilinx:tag xilinx:name="ENCLab:ip:V2NFC100DDR:1.0.0_ARCHIVE_LOCATION">i:/projects/v2/iprepo/packages/v2nfc100ddr</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29194646_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@175f779d_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dc2473c_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ea28d40_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e931e69_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cfe487b_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1132a1a1_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21758c90_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18c46266_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fde2a24_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@410f4787_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4487dae6_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b0c0d0_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10de7ea8_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a5275de_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@790807d2_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@416da5db_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@356443a8_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6883443b_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c79732e_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d0cabf7_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cacd617_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b878ff5_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77e02a8a_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22764a20_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57fd1293_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78432b4e_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51525cf3_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8fe911e_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b90279_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@413e6ad9_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a7e324c_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14849f66_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57402670_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c38420a_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a24af11_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d9329ea_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33c31b43_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35046d11_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ffceb85_ARCHIVE_LOCATION">c:/Work/openssd-hynix-4k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@401b9716_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4325d17_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19160393_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@798c8492_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7940f34b_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a45b966_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6049402a_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c88b689_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f233b82_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70484226_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29ed0252_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@552e3de8_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@665f4bba_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dcb1342_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64819872_ARCHIVE_LOCATION">c:/Work/openssd-hynix-16k-iprepo/V2NFC100DDR</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SIGNAL_CLOCK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SIGNAL_CLOCK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd_and_user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4ff2bc94"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="40e1b04d"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="17fff687"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="718801d2"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="f3d3d095"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

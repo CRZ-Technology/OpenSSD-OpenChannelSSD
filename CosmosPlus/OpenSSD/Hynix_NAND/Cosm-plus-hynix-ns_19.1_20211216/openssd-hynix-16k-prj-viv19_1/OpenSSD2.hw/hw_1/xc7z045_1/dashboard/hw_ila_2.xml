@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="609"
+                layout="JideBoxLayout" vgap="6" width="181">
+                <Gadget height="64" key="Trigger Capture Status" width="181"/>
+                <Gadget height="219" key="Basic Trigger Setup" width="181">
+                    <Probe name="s00_couplers/auto_us_cc_df/m_axi_awvalid"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

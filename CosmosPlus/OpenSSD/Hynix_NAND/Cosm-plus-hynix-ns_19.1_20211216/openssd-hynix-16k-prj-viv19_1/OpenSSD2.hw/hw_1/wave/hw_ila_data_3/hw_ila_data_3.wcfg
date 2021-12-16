@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/OpenSSD/Project/OpenSSD2_Prebuild_200MT/OpenSSD2.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="26" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_arlen" type="array">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_arlen[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_arready" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_arready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_arvalid" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_awlen" type="array">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_awlen[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_awready" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_awready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_rlast" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_rlast</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_rlast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_rready" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_rready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_rvalid" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_wlast" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_wlast</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_wlast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_wready" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_wready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/m_axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/m_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/m_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_arlen" type="array">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_arlen[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_arready" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_arready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_arvalid" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_awlen" type="array">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_awlen[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_awready" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_awready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_bready" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_bready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_bvalid" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_rlast" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_rlast</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_rlast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_rready" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_rready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_rvalid" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_wlast" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_wlast</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_wlast</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_wready" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_wready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="m00_couplers/m00_data_fifo/s_axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">m00_couplers/m00_data_fifo/s_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_couplers/m00_data_fifo/s_axi_wvalid</obj_property>
+   </wvobject>
+</wave_config>

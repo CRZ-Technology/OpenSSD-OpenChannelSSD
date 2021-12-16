@@ -1,0 +1,16 @@
+14:06:09 **** Auto Build of configuration Debug for project GreedyFTL3 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GreedyFTL3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+In file included from ../src/nvme/host_lld.c:60:
+../src/nvme/host_lld.h:57:10: fatal error: xparameter.h: No such file or directory
+ #include "xparameter.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/nvme/subdir.mk:32: src/nvme/host_lld.o] Error 1
+
+14:06:10 Build Finished (took 657ms)
+

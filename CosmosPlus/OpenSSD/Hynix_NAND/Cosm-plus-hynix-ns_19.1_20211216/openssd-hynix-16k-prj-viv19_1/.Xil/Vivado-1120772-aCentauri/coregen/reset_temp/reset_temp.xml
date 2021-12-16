@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com"
+		xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<spirit:vendor>xilinx.com</spirit:vendor>
+	<spirit:library>customized_ip</spirit:library>
+	<spirit:name>reset_temp</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:model>
+		<spirit:ports>
+			<spirit:port>
+				<spirit:name>const</spirit:name>
+				<spirit:wire>
+					<spirit:direction>out</spirit:direction>
+					<spirit:vector>
+						<spirit:left spirit:format="long"
+								spirit:resolve="immediate">0</spirit:left>
+						<spirit:right spirit:format="long"
+								spirit:resolve="immediate">0</spirit:right>
+					</spirit:vector>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic_vector</spirit:typeName>
+							<spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+		</spirit:ports>
+	</spirit:model>
+	<spirit:choices>
+		<spirit:choice>
+			<spirit:name>choices_0</spirit:name>
+			<spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+			<spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+		</spirit:choice>
+	</spirit:choices>
+	<spirit:description>intf_reset_v1_0</spirit:description>
+	<spirit:parameters>
+		<spirit:parameter>
+			<spirit:name>PortWidth</spirit:name>
+			<spirit:displayName>Portwidth</spirit:displayName>
+			<spirit:value spirit:format="long"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.PortWidth"
+					spirit:order="1500">1</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>POLARITY</spirit:name>
+			<spirit:displayName>Polarity</spirit:displayName>
+			<spirit:value spirit:format="string"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.POLARITY"
+					spirit:choiceRef="choices_0"
+					spirit:order="1300"
+					spirit:configGroups="0 UnGrouped radioGroup">ACTIVE_LOW</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>Component_Name</spirit:name>
+			<spirit:value spirit:resolve="user"
+					spirit:id="PARAM_VALUE.Component_Name"
+					spirit:order="1">reset_temp</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>TYPE</spirit:name>
+			<spirit:displayName>Type</spirit:displayName>
+			<spirit:value spirit:resolve="user"
+					spirit:id="PARAM_VALUE.TYPE"
+					spirit:order="1200">PERIPHERAL</spirit:value>
+		</spirit:parameter>
+	</spirit:parameters>
+	<spirit:vendorExtensions>
+		<xilinx:coreExtensions>
+			<xilinx:supportedFamilies>
+				<xilinx:family xilinx:lifeCycle="Hidden">artix7</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">kintex7</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">kintex7l</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">virtex7</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">virtex7l</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">zynq</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">artix7l</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">aartix7</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">qvirtex7</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">qkintex7</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">qvirtex7l</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">qkintex7l</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">qartix7</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">qartix7l</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">qzynq</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">azynq</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">olyevalarch</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">virtexu</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">zynq7000</xilinx:family>
+				<xilinx:family xilinx:lifeCycle="Hidden">kintexu</xilinx:family>
+			</xilinx:supportedFamilies>
+			<xilinx:taxonomies>
+				<xilinx:taxonomy>/BaseIP</xilinx:taxonomy>
+			</xilinx:taxonomies>
+			<xilinx:displayName>intf_reset_v1_0</xilinx:displayName>
+			<xilinx:designToolContexts>
+				<xilinx:designToolContext>IPI</xilinx:designToolContext>
+			</xilinx:designToolContexts>
+			<xilinx:coreRevision>1</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2014-02-22T00:34:17Z</xilinx:coreCreationDateTime>
+			<xilinx:tags>
+				<xilinx:tag xilinx:name="nopcore"/>
+			</xilinx:tags>
+		</xilinx:coreExtensions>
+		<xilinx:packagingInfo>
+			<xilinx:xilinxVersion>2014.1.0</xilinx:xilinxVersion>
+			<xilinx:checksum xilinx:scope="fileGroups"
+					xilinx:value="8c78762f"/>
+			<xilinx:checksum xilinx:scope="ports"
+					xilinx:value="afa03a67"/>
+			<xilinx:checksum xilinx:scope="parameters"
+					xilinx:value="d39624b6"/>
+		</xilinx:packagingInfo>
+	</spirit:vendorExtensions>
+</spirit:component>

@@ -1,0 +1,8 @@
+17:53:19 **** Incremental Build of configuration Debug for project cosmosplus_ocssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+17:53:20 Build Finished (took 549ms)
+
