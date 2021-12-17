@@ -1,0 +1,26 @@
+13:34:58 **** Auto Build of configuration Debug for project pcie_test ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../pcie_test_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/xdmapcie_rc_enumerate_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdmapcie_rc_enumerate_example.o" -I../../pcie_test_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xdmapcie_rc_enumerate_example.d" -MT"src/xdmapcie_rc_enumerate_example.o" -o "src/xdmapcie_rc_enumerate_example.o" "../src/xdmapcie_rc_enumerate_example.c"
+'Finished building: ../src/xdmapcie_rc_enumerate_example.c'
+' '
+'Building target: pcie_test.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../pcie_test_bsp/psu_cortexa53_0/lib -o "pcie_test.elf"  ./src/platform.o ./src/xdmapcie_rc_enumerate_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pcie_test.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size pcie_test.elf  |tee "pcie_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50880	   4672	  20800	  76352	  12a40	pcie_test.elf
+'Finished building: pcie_test.elf.size'
+' '
+
+13:35:00 Build Finished (took 1s.934ms)
+

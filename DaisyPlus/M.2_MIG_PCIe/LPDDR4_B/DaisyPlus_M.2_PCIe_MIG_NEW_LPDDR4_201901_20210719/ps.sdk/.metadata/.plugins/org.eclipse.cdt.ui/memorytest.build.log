@@ -1,0 +1,30 @@
+13:40:56 **** Auto Build of configuration Debug for project memorytest ****
+make all 
+'Building file: ../src/memorytest.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/memorytest.o" -I../../memorytest_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.o" -o "src/memorytest.o" "../src/memorytest.c"
+../src/memorytest.c: In function 'Xil_TestMem64':
+../src/memorytest.c:59:6: warning: unused variable 'j' [-Wunused-variable]
+  u64 j;
+      ^
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../memorytest_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: memorytest.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../memorytest_bsp/psu_cortexa53_0/lib -o "memorytest.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: memorytest.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size memorytest.elf  |tee "memorytest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38852	   2392	  12544	  53788	   d21c	memorytest.elf
+'Finished building: memorytest.elf.size'
+' '
+
+13:40:57 Build Finished (took 965ms)
+

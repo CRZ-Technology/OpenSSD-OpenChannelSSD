@@ -1,0 +1,12 @@
+09:56:16 **** Incremental Build of configuration Debug for project lwip ****
+make all 
+'Building target: lwip.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lwip_bsp/psu_cortexa53_0/lib -o "lwip.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/../../../../aarch64-none-elf/bin/ld.exe: lwip.elf section `.bss' will not fit in region `psu_ocm_ram_0_MEM_0'
+c:/xilinx/sdk/2018.3/gnu/aarch64/nt/aarch64-none/bin/../lib/gcc/aarch64-none-elf/7.3.1/../../../../aarch64-none-elf/bin/ld.exe: region `psu_ocm_ram_0_MEM_0' overflowed by 6363456 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: lwip.elf] Error 1
+
+09:56:17 Build Finished (took 428ms)
+

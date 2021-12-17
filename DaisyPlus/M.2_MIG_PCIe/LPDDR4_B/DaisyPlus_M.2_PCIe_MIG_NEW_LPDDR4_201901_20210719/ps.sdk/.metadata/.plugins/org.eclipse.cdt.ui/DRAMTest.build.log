@@ -1,0 +1,6 @@
+10:57:51 **** Incremental Build of configuration Debug for project DRAMTest ****
+make all 
+make: Nothing to be done for 'all'.
+
+10:57:51 Build Finished (took 302ms)
+

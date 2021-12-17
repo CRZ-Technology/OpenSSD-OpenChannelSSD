@@ -1,0 +1,21 @@
+16:16:47 **** Build of configuration Debug for project pcie_test_bsp_xdmapcie_rc_enumerate_example_2 ****
+make all 
+'Building file: ../src/xdmapcie_rc_enumerate_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xdmapcie_rc_enumerate_example.o" -I../../pcie_test_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xdmapcie_rc_enumerate_example.d" -MT"src/xdmapcie_rc_enumerate_example.o" -o "src/xdmapcie_rc_enumerate_example.o" "../src/xdmapcie_rc_enumerate_example.c"
+'Finished building: ../src/xdmapcie_rc_enumerate_example.c'
+' '
+'Building target: pcie_test_bsp_xdmapcie_rc_enumerate_example_2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../pcie_test_bsp/psu_cortexa53_0/lib -o "pcie_test_bsp_xdmapcie_rc_enumerate_example_2.elf"  ./src/xdmapcie_rc_enumerate_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pcie_test_bsp_xdmapcie_rc_enumerate_example_2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size pcie_test_bsp_xdmapcie_rc_enumerate_example_2.elf  |tee "pcie_test_bsp_xdmapcie_rc_enumerate_example_2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  42516	   2592	  20800	  65908	  10174	pcie_test_bsp_xdmapcie_rc_enumerate_example_2.elf
+'Finished building: pcie_test_bsp_xdmapcie_rc_enumerate_example_2.elf.size'
+' '
+
+16:16:48 Build Finished (took 866ms)
+

@@ -1,0 +1,13 @@
+13:27:55 **** Auto Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:84:10: fatal error: xaxipcie.h: No such file or directory
+ #include "xaxipcie.h"  /* XAxiPcie level 1 interface */
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+
+13:27:56 Build Finished (took 275ms)
+

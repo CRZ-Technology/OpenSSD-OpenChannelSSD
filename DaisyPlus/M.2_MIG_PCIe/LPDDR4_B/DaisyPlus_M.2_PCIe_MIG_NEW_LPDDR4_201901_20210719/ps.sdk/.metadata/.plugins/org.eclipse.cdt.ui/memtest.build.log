@@ -1,0 +1,14 @@
+18:55:38 **** Incremental Build of configuration Debug for project MemTest ****
+make all 
+'Building file: ../src/memorytest.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/memorytest.o" -I../../MemTest_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.o" -o "src/memorytest.o" "../src/memorytest.c"
+In file included from ../src/memorytest.c:34:
+../../MemTest_bsp/psu_cortexa53_0/include/xparameters.h:24:10: fatal error: xparameters_ps.h: No such file or directory
+ #include "xparameters_ps.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:29: src/memorytest.o] Error 1
+
+18:55:40 Build Finished (took 1s.662ms)
+
