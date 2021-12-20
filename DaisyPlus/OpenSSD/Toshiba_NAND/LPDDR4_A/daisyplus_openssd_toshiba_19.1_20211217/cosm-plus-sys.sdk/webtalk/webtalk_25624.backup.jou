@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Mon Dec 20 18:49:36 2021
+# Process ID: 25624
+# Current directory: C:/Xilinx/DaisyPlus/OpenSSD/daisyplus_openssd_toshiba_19.1_20211217/cosm-plus-sys.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Xilinx/DaisyPlus/OpenSSD/daisyplus_openssd_toshiba_19.1_20211217/cosm-plus-sys.sdk/webtalk/webtalk.log
+# Journal file: C:/Xilinx/DaisyPlus/OpenSSD/daisyplus_openssd_toshiba_19.1_20211217/cosm-plus-sys.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
