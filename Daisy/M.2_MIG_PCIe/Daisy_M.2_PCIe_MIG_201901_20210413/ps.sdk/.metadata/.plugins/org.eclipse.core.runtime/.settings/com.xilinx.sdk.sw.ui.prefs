@@ -1,0 +1,3 @@
+com.xilinx.sdk.sw.ui.key.dontprompt.bspregen=true
+eclipse.preferences.version=1
+regenerate_bsp_source_key=always

@@ -15,7 +15,9 @@ Daisy Directory
 
           - NVMe - NVMe source on Daisy board
 
-
+          - M.2_MIG_PCIe - M.2 / MIG / PCIe test project on Daisy board
+		  
+		  
 DaisyPlus Directory
 
           - NVMe - LPDDR4_A - NVMe source on DaisyPlus board(LPDDR4_A)
