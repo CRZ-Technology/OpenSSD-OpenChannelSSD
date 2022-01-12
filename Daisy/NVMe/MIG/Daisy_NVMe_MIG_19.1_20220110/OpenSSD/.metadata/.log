@@ -1,0 +1,34 @@
+!SESSION 2022-01-11 15:07:55.424 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Xilinx\Daisy\OpenSSD\2019.1\Daisy_NVMe_MIG_19.1_20220110\OpenSSD
+
+!ENTRY org.eclipse.ui 2 0 2022-01-11 15:07:57.440
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-01-11 15:07:57.440
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2022-01-11 15:07:58.018
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-01-11 15:07:58.018
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-11 15:08:04.877
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-11 15:08:04.877
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-11 15:08:05.283
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-11 15:08:05.283
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-11 15:08:05.283
+!MESSAGE XSCT Command: [setws C:/Xilinx/Daisy/OpenSSD/2019.1/Daisy_NVMe_MIG_19.1_20220110/OpenSSD], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-11 15:08:05.283
+!MESSAGE XSCT command with result: [setws C:/Xilinx/Daisy/OpenSSD/2019.1/Daisy_NVMe_MIG_19.1_20220110/OpenSSD], Result: [null, ]. Thread: Thread-14
