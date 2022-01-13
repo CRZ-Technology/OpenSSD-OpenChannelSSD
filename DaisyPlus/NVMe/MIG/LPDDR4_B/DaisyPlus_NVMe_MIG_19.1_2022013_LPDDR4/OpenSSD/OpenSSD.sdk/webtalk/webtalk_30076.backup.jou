@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Thu Sep  2 16:42:36 2021
+# Process ID: 30076
+# Current directory: C:/Xilinx/DaisyPlus/OpenSSD/2019.1/DaisyPlus_NVMe_19.1_20210902_LPDDR4/OpenSSD/OpenSSD.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Xilinx/DaisyPlus/OpenSSD/2019.1/DaisyPlus_NVMe_19.1_20210902_LPDDR4/OpenSSD/OpenSSD.sdk/webtalk/webtalk.log
+# Journal file: C:/Xilinx/DaisyPlus/OpenSSD/2019.1/DaisyPlus_NVMe_19.1_20210902_LPDDR4/OpenSSD/OpenSSD.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
