@@ -1,0 +1,1868 @@
+16:39:33 **** Clean-only build of configuration Debug for project run-gtfl3 ****
+make clean 
+rm -rf  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o  ./src/nvme/debug.d ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d  ./src/address_translation.d ./src/data_buffer.d ./src/ftl_config.d ./src/garbage_collection.d ./src/main.d ./src/nsc_driver.d ./src/request_allocation.d ./src/request_schedule.d ./src/request_transform.d  run-gtfl3.elf.size  run-gtfl3.elf
+' '
+16:39:34 **** Clean-only build of project run-gtfl3_bsp ****
+make -k clean 
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/bram_v4_3/src -s clean 
+make -C psu_cortexa53_0/libsrc/clockps_v1_1/src -s clean 
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/csudma_v1_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s clean 
+make -C psu_cortexa53_0/libsrc/emacps_v3_9/src -s clean 
+make -C psu_cortexa53_0/libsrc/gpiops_v3_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/iicps_v3_9/src -s clean 
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_9/src -s clean 
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s clean 
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/scugic_v4_0/src -s clean 
+make -C psu_cortexa53_0/libsrc/sdps_v3_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/standalone_v7_0/src -s clean 
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s clean 
+rm -f psu_cortexa53_0/lib/libxil.a
+16:39:36 **** Build of project run-gtfl3_bsp ****
+make -k all 
+"Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/bram_v4_3/src"
+make -C psu_cortexa53_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/clockps_v1_1/src"
+make -C psu_cortexa53_0/libsrc/clockps_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/csudma_v1_4/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/emacps_v3_9/src"
+make -C psu_cortexa53_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_5/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/iicps_v3_9/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/qspipsu_v1_9/src"
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/resetps_v1_2/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_7/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/scugic_v4_0/src"
+make -C psu_cortexa53_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sdps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/standalone_v7_0/src"
+make -C psu_cortexa53_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/uartps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/zdma_v1_7/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling axipmon"
+aarch64-none-elf-ar: creating ../../../lib/libxil.a
+"Running Make libs in psu_cortexa53_0/libsrc/bram_v4_3/src"
+make -C psu_cortexa53_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in psu_cortexa53_0/libsrc/clockps_v1_1/src"
+make -C psu_cortexa53_0/libsrc/clockps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling clockps"
+"Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling cpu_cortexa53"
+"Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_4/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling csudma"
+"Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ddrcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/emacps_v3_9/src"
+make -C psu_cortexa53_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_5/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in psu_cortexa53_0/libsrc/iicps_v3_9/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ipipsu"
+"Running Make libs in psu_cortexa53_0/libsrc/qspipsu_v1_9/src"
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling qspipsu"
+"Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_2/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling resetps"
+"Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_7/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling rtcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/scugic_v4_0/src"
+make -C psu_cortexa53_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in psu_cortexa53_0/libsrc/sdps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in psu_cortexa53_0/libsrc/standalone_v7_0/src"
+make -C psu_cortexa53_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling standalone ARMv8 64 bit"
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:52:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:59:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+translation_table.S:145:2: warning: #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined" [-Wcpp]
+ #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined"
+  ^~~~~~~
+"Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sysmonpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_7/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling zdma"
+'Finished building libraries'
+16:40:35 **** Build of configuration Debug for project run-gtfl3 ****
+make all 
+'Building file: ../src/nvme/debug.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/debug.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/debug.d" -MT"src/nvme/debug.o" -o "src/nvme/debug.o" "../src/nvme/debug.c"
+'Finished building: ../src/nvme/debug.c'
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+In file included from ../src/nvme/host_lld.c:57:
+../src/nvme/host_lld.c: In function 'get_nvme_cmd':
+../src/nvme/io_access.h:52:30: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                              ^
+../src/nvme/host_lld.c:257:24: note: in expansion of macro 'IO_READ32'
+    *(cmdDword + idx) = IO_READ32(addr + (idx * 4));
+                        ^~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_sq':
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:316:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32(addr, nvmeReg.dword[0]);
+  ^~~~~~~~~~
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:317:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32((addr + 4), nvmeReg.dword[1]);
+  ^~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_cq':
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:333:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32(addr, nvmeReg.dword[0]);
+  ^~~~~~~~~~
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:334:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32((addr + 4), nvmeReg.dword[1]);
+  ^~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.c:358:64: warning: 'hostDmaReg.<U3be0>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.c:383:64: warning: 'hostDmaReg.<U3be0>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+'Finished building: ../src/nvme/host_lld.c'
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:65:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:155:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+../src/address_translation.c: In function 'FindBadBlock':
+../src/address_translation.c:343:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:344:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:381:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:382:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:393:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater= (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                 ^
+../src/address_translation.c: In function 'RecoverBadBlockTable':
+../src/address_translation.c:495:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo]);
+                     ^
+../src/address_translation.c:504:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                       ^
+../src/address_translation.c: In function 'UpdateBadBlockTableForGrownBadBlock':
+../src/address_translation.c:903:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                  ^
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitChCtlReg':
+../src/ftl_config.c:115:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   nfc_install_ucode((unsigned int*)NSC_UCODES[i]);
+                     ^
+../src/ftl_config.c:116:37: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   V2FInitializeHandle(&chCtlReg[i], (void*)NSCS[i]);
+                                     ^
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:173:34: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+   V2FReadIdSync(&chCtlReg[i], 0, idData);
+                                  ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:446:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/ftl_config.c:174:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+../src/ftl_config.c:174:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ftl_config.c:174:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ftl_config.c:54:1:
++#include <stdio.h>
+ #include "nsc_driver.h"
+../src/ftl_config.c:174:3:
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+At top level:
+../src/ftl_config.c:106:21: warning: 'dq_delay' defined but not used [-Wunused-variable]
+ static unsigned int dq_delay[]  = {50, 50, 50, 50};
+                     ^~~~~~~~
+../src/ftl_config.c:105:21: warning: 'dqs_delay' defined but not used [-Wunused-variable]
+ static unsigned int dqs_delay[] = {400, 400, 400, 400};
+                     ^~~~~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/garbage_collection.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/garbage_collection.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/garbage_collection.d" -MT"src/garbage_collection.o" -o "src/garbage_collection.o" "../src/garbage_collection.c"
+'Finished building: ../src/garbage_collection.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nsc_driver.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nsc_driver.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nsc_driver.d" -MT"src/nsc_driver.o" -o "src/nsc_driver.o" "../src/nsc_driver.c"
+../src/nsc_driver.c: In function 'V2FInitializeHandle':
+../src/nsc_driver.c:85:32: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regID = (T4REG_ID*)((unsigned int)t4nscRegisterBaseAddress + 0);
+                                ^
+../src/nsc_driver.c:85:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regID = (T4REG_ID*)((unsigned int)t4nscRegisterBaseAddress + 0);
+                    ^
+../src/nsc_driver.c:86:34: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regCFG = (T4REG_CFG*)((unsigned int)t4nscRegisterBaseAddress + 0x1000);
+                                  ^
+../src/nsc_driver.c:86:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regCFG = (T4REG_CFG*)((unsigned int)t4nscRegisterBaseAddress + 0x1000);
+                     ^
+../src/nsc_driver.c:87:34: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regEXT = (T4REG_EXT*)((unsigned int)t4nscRegisterBaseAddress + 0x2000);
+                                  ^
+../src/nsc_driver.c:87:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regEXT = (T4REG_EXT*)((unsigned int)t4nscRegisterBaseAddress + 0x2000);
+                     ^
+../src/nsc_driver.c:88:32: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regCC = (T4REG_CC*)((unsigned int)t4nscRegisterBaseAddress + 0x3000);
+                                ^
+../src/nsc_driver.c:88:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regCC = (T4REG_CC*)((unsigned int)t4nscRegisterBaseAddress + 0x3000);
+                    ^
+../src/nsc_driver.c:89:32: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regBP = (T4REG_BP*)((unsigned int)t4nscRegisterBaseAddress + 0x3800);
+                                ^
+../src/nsc_driver.c:89:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regBP = (T4REG_BP*)((unsigned int)t4nscRegisterBaseAddress + 0x3800);
+                    ^
+../src/nsc_driver.c:90:32: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regSP = (T4REG_SP*)((unsigned int)t4nscRegisterBaseAddress + 0x4000);
+                                ^
+../src/nsc_driver.c:90:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regSP = (T4REG_SP*)((unsigned int)t4nscRegisterBaseAddress + 0x4000);
+                    ^
+../src/nsc_driver.c: In function 'V2FSetFeaturesT':
+../src/nsc_driver.c:124:34: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  setFeaturesCmd.payloadAddress = (unsigned int)payload;
+                                  ^
+../src/nsc_driver.c: In function 'V2FGetReadyBusy':
+../src/nsc_driver.c:137:34: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  getReadyBusyCmd.reportAddress = (unsigned int)report;
+                                  ^
+../src/nsc_driver.c: In function 'V2FSetFeaturesSync':
+../src/nsc_driver.c:145:35: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  volatile unsigned int* payload = (unsigned int*)payLoadAddr;
+                                   ^
+../src/nsc_driver.c:146:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  volatile unsigned int* status = (unsigned int*)(payLoadAddr + 4);
+                                  ^
+../src/nsc_driver.c:154:27: warning: passing argument 2 of 'V2FGetReadyBusy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   V2FGetReadyBusy(t4regs, status);
+                           ^~~~~~
+../src/nsc_driver.c:131:52: note: expected 'unsigned int *' but argument is of type 'volatile unsigned int *'
+ void V2FGetReadyBusy(T4REGS* t4regs, unsigned int* report)
+                                      ~~~~~~~~~~~~~~^~~~~~
+../src/nsc_driver.c:166:27: warning: passing argument 2 of 'V2FGetReadyBusy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   V2FGetReadyBusy(t4regs, status);
+                           ^~~~~~
+../src/nsc_driver.c:131:52: note: expected 'unsigned int *' but argument is of type 'volatile unsigned int *'
+ void V2FGetReadyBusy(T4REGS* t4regs, unsigned int* report)
+                                      ~~~~~~~~~~~~~~^~~~~~
+../src/nsc_driver.c: In function 'V2FReadPageTransferAsync':
+../src/nsc_driver.c:207:31: warning: assignment to 'unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  readpagepSLC.pageDataAddress = pageDataBuffer;
+                               ^
+../src/nsc_driver.c:208:32: warning: assignment to 'unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  readpagepSLC.spareDataAddress = spareDataBuffer;
+                                ^
+../src/nsc_driver.c:209:32: warning: assignment to 'unsigned int' from 'unsigned int *' makes integer from pointer without a cast [-Wint-conversion]
+  readpagepSLC.errorInfoAddress = errorInformation;
+                                ^
+../src/nsc_driver.c:211:39: warning: assignment to 'unsigned int' from 'unsigned int *' makes integer from pointer without a cast [-Wint-conversion]
+  readpagepSLC.completionReportAddress = completion;
+                                       ^
+../src/nsc_driver.c: In function 'V2FReadPageTransferRawAsync':
+../src/nsc_driver.c:226:38: warning: assignment to 'unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  readPageTransferRaw.pageDataAddress = pageDataBuffer;
+                                      ^
+../src/nsc_driver.c:227:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  readPageTransferRaw.completionReportAddress = (unsigned int)completion;
+                                                ^
+../src/nsc_driver.c: In function 'V2FProgramPageAsync':
+../src/nsc_driver.c:243:31: warning: assignment to 'unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  progPagepSLC.pageDataAddress = pageDataBuffer;
+                               ^
+../src/nsc_driver.c:244:32: warning: assignment to 'unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  progPagepSLC.spareDataAddress = spareDataBuffer;
+                                ^
+../src/nsc_driver.c: In function 'V2FStatusCheckAsync':
+../src/nsc_driver.c:272:32: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  readStatusCmd.reportAddress = (unsigned int)statusReport;
+                                ^
+../src/nsc_driver.c: In function 'V2FStatusCheckSync':
+../src/nsc_driver.c:284:9: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+         while (V2FIsControllerBusy(t4regs));
+         ^~~~~
+../src/nsc_driver.c:285:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+   V2FStatusCheckAsync(t4regs, way, statusReport);
+   ^~~~~~~~~~~~~~~~~~~
+../src/nsc_driver.c:291:9: warning: 'return' with a value, in function returning void
+  return *statusReport;
+         ^~~~~~~~~~~~~
+../src/nsc_driver.c:280:38: note: declared here
+ void __attribute__((optimize("O0"))) V2FStatusCheckSync(T4REGS* t4regs, int way, unsigned int* statusReport)
+                                      ^~~~~~~~~~~~~~~~~~
+../src/nsc_driver.c: In function 'V2FReadIdAsync':
+../src/nsc_driver.c:302:28: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  readIdCmd.reportAddress = (unsigned int)statusReport;
+                            ^
+../src/nsc_driver.c:303:38: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  readIdCmd.completionReportAddress = (unsigned int)completion;
+                                      ^
+'Finished building: ../src/nsc_driver.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:652:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:653:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:866:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:942:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: run-gtfl3.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gtfl3_bsp/psu_cortexa53_0/lib -o "run-gtfl3.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gtfl3.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gtfl3.elf  |tee "run-gtfl3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 170976	  11272	  21576	 203824	  31c30	run-gtfl3.elf
+'Finished building: run-gtfl3.elf.size'
+' '
+16:42:30 **** Incremental Build of configuration Debug for project run-gtfl3 ****
+make all 
+make: Nothing to be done for 'all'.
+17:21:35 **** Auto Build of configuration Debug for project run-gtfl3 ****
+make all 
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:65:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:155:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+../src/address_translation.c: In function 'FindBadBlock':
+../src/address_translation.c:343:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:344:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:381:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:382:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:393:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater= (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                 ^
+../src/address_translation.c: In function 'RecoverBadBlockTable':
+../src/address_translation.c:495:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo]);
+                     ^
+../src/address_translation.c:504:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                       ^
+../src/address_translation.c: In function 'UpdateBadBlockTableForGrownBadBlock':
+../src/address_translation.c:903:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                  ^
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitChCtlReg':
+../src/ftl_config.c:115:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   nfc_install_ucode((unsigned int*)NSC_UCODES[i]);
+                     ^
+../src/ftl_config.c:116:37: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   V2FInitializeHandle(&chCtlReg[i], (void*)NSCS[i]);
+                                     ^
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:173:34: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+   V2FReadIdSync(&chCtlReg[i], 0, idData);
+                                  ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:446:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/ftl_config.c:174:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+../src/ftl_config.c:174:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ftl_config.c:174:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ftl_config.c:54:1:
++#include <stdio.h>
+ #include "nsc_driver.h"
+../src/ftl_config.c:174:3:
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+At top level:
+../src/ftl_config.c:106:21: warning: 'dq_delay' defined but not used [-Wunused-variable]
+ static unsigned int dq_delay[]  = {50, 50, 50, 50};
+                     ^~~~~~~~
+../src/ftl_config.c:105:21: warning: 'dqs_delay' defined but not used [-Wunused-variable]
+ static unsigned int dqs_delay[] = {400, 400, 400, 400};
+                     ^~~~~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/garbage_collection.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/garbage_collection.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/garbage_collection.d" -MT"src/garbage_collection.o" -o "src/garbage_collection.o" "../src/garbage_collection.c"
+'Finished building: ../src/garbage_collection.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:652:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:653:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:866:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:942:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: run-gtfl3.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gtfl3_bsp/psu_cortexa53_0/lib -o "run-gtfl3.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gtfl3.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gtfl3.elf  |tee "run-gtfl3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 170656	  11272	  21448	 203376	  31a70	run-gtfl3.elf
+'Finished building: run-gtfl3.elf.size'
+' '
+17:21:59 **** Incremental Build of configuration Debug for project run-gtfl3 ****
+make all 
+make: Nothing to be done for 'all'.
+17:23:52 **** Incremental Build of configuration Debug for project run-gtfl3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:47:50 **** Incremental Build of configuration Debug for project run-gtfl3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:56:59 **** Build of project test-dataeye_bsp ****
+make -k all 
+"Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/bram_v4_3/src"
+make -C psu_cortexa53_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/clockps_v1_1/src"
+make -C psu_cortexa53_0/libsrc/clockps_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/csudma_v1_4/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/emacps_v3_9/src"
+make -C psu_cortexa53_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_5/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/iicps_v3_9/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/qspipsu_v1_9/src"
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/resetps_v1_2/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_7/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/scugic_v4_0/src"
+make -C psu_cortexa53_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sdps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/standalone_v7_0/src"
+make -C psu_cortexa53_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/uartps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/zdma_v1_7/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling axipmon"
+aarch64-none-elf-ar: creating ../../../lib/libxil.a
+"Running Make libs in psu_cortexa53_0/libsrc/bram_v4_3/src"
+make -C psu_cortexa53_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in psu_cortexa53_0/libsrc/clockps_v1_1/src"
+make -C psu_cortexa53_0/libsrc/clockps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling clockps"
+"Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling cpu_cortexa53"
+"Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_4/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling csudma"
+"Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ddrcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/emacps_v3_9/src"
+make -C psu_cortexa53_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_5/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in psu_cortexa53_0/libsrc/iicps_v3_9/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ipipsu"
+"Running Make libs in psu_cortexa53_0/libsrc/qspipsu_v1_9/src"
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling qspipsu"
+"Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_2/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling resetps"
+"Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_7/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling rtcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/scugic_v4_0/src"
+make -C psu_cortexa53_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in psu_cortexa53_0/libsrc/sdps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in psu_cortexa53_0/libsrc/standalone_v7_0/src"
+make -C psu_cortexa53_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling standalone ARMv8 64 bit"
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:52:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:59:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+translation_table.S:145:2: warning: #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined" [-Wcpp]
+ #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined"
+  ^~~~~~~
+"Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sysmonpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_7/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling zdma"
+'Finished building libraries'
+13:57:54 **** Build of configuration Debug for project test-dataeye ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test-dataeye_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'test_readwrite':
+../src/main.c:86:9: warning: implicit declaration of function 'nfc_set_dq_delay'; did you mean 'nfc_set_dqs_delay'? [-Wimplicit-function-declaration]
+         nfc_set_dq_delay(ch, dqDelay);
+         ^~~~~~~~~~~~~~~~
+         nfc_set_dqs_delay
+../src/main.c:60:20: warning: variable 'dum' set but not used [-Wunused-but-set-variable]
+       volatile int dum;
+                    ^~~
+../src/main.c: In function 'test_read_status':
+../src/main.c:172:10: warning: unused variable 'row' [-Wunused-variable]
+      int row = 0;
+          ^~~
+../src/main.c:171:10: warning: unused variable 'block' [-Wunused-variable]
+      int block = 2;
+          ^~~~~
+../src/main.c:169:9: warning: unused variable 'pat' [-Wunused-variable]
+     int pat = 1234;
+         ^~~
+../src/main.c:145:12: warning: unused variable 'read_errinfo' [-Wunused-variable]
+  uint32_t* read_errinfo = (uint32_t*)0x1400000;
+            ^~~~~~~~~~~~
+../src/main.c:144:12: warning: unused variable 'read_sbuf' [-Wunused-variable]
+  uint32_t* read_sbuf = (uint32_t*)0x1300000;
+            ^~~~~~~~~
+../src/main.c:143:12: warning: unused variable 'read_pbuf' [-Wunused-variable]
+  uint32_t* read_pbuf = (uint32_t*)0x1200000;
+            ^~~~~~~~~
+../src/main.c:142:12: warning: unused variable 'write_sbuf' [-Wunused-variable]
+  uint32_t* write_sbuf = (uint32_t*)0x1100000;
+            ^~~~~~~~~~
+../src/main.c:141:12: warning: unused variable 'write_pbuf' [-Wunused-variable]
+  uint32_t* write_pbuf = (uint32_t*)0x1000000;
+            ^~~~~~~~~~
+../src/main.c:139:6: warning: unused variable 'err' [-Wunused-variable]
+  int err;
+      ^~~
+../src/main.c: In function 'print_usage':
+../src/main.c:211:5: warning: implicit declaration of function 'xil_printf'; did you mean 'viprintf'? [-Wimplicit-function-declaration]
+     xil_printf("1. Enter Channel(0-3).\r\n");
+     ^~~~~~~~~~
+     viprintf
+../src/main.c: In function 'test_design':
+../src/main.c:222:27: warning: unused variable 'dummy' [-Wunused-variable]
+     char ch = 0, way = 0, dummy = 0;
+                           ^~~~~
+At top level:
+../src/main.c:220:12: warning: 'test_design' defined but not used [-Wunused-function]
+ static int test_design(void)
+            ^~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nfc-helper.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nfc-helper.o" -I../../test-dataeye_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nfc-helper.d" -MT"src/nfc-helper.o" -o "src/nfc-helper.o" "../src/nfc-helper.c"
+../src/nfc-helper.c: In function 'nfc_ctrler_assign':
+../src/nfc-helper.c:10:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[0], T4NSC(0));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/psu_cortexa53_0/include/xparameters.h:781:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_0_BASEADDR 0xA0010000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_0_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:10:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[0], T4NSC(0));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'unsigned int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:13:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[1], T4NSC(1));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/psu_cortexa53_0/include/xparameters.h:786:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_1_BASEADDR 0xA0020000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_1_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:13:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[1], T4NSC(1));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'unsigned int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:16:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[2], T4NSC(2));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/psu_cortexa53_0/include/xparameters.h:791:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_2_BASEADDR 0xA0030000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_2_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:16:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[2], T4NSC(2));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'unsigned int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:19:24: warning: passing argument 1 of 'T4NSCInitializeHandle' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCInitializeHandle(&chCtlReg[3], T4NSC(3));
+                        ^~~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:36: note: expected 'T4REGS *' {aka 'struct <anonymous> *'} but argument is of type 'volatile T4REGS *' {aka 'volatile struct <anonymous> *'}
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                            ~~~~~~~~^~~~~~
+In file included from ../src/nfc-helper.h:11,
+                 from ../src/nfc-helper.c:1:
+../../test-dataeye_bsp/psu_cortexa53_0/include/xparameters.h:796:37: warning: passing argument 2 of 'T4NSCInitializeHandle' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_T4NFC_HLPER_3_BASEADDR 0xA0040000
+                                     ^~~~~~~~~~
+../src/nfc-helper.c:5:19: note: in expansion of macro 'XPAR_T4NFC_HLPER_3_BASEADDR'
+ #define T4NSC(ch) XPAR_T4NFC_HLPER_##ch##_BASEADDR
+                   ^~~~~~~~~~~~~~~~~
+../src/nfc-helper.c:19:38: note: in expansion of macro 'T4NSC'
+  T4NSCInitializeHandle(&chCtlReg[3], T4NSC(3));
+                                      ^~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:377:50: note: expected 'void *' but argument is of type 'unsigned int'
+ void T4NSCInitializeHandle(T4REGS* t4regs, void* t4nscRegisterBaseAddress);
+                                            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_init':
+../src/nfc-helper.c:119:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  nfc_install_ucode((unsigned int*)NSC_UCODES[ch]);
+                    ^
+../src/nfc-helper.c:133:5: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+     usleep(1000000);
+     ^~~~~~
+../src/nfc-helper.c:117:24: warning: unused variable 'rep' [-Wunused-variable]
+  volatile unsigned int rep = 0;
+                        ^~~
+../src/nfc-helper.c:116:24: warning: unused variable 'comp' [-Wunused-variable]
+  volatile unsigned int comp = 0;
+                        ^~~~
+../src/nfc-helper.c: In function 'nfc_prog_raw':
+../src/nfc-helper.c:167:55: warning: passing argument 6 of 'T4NSCProgramPageRawAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCProgramPageRawAsync(channel, way, row, 0, 4584, buf, sb, 1);
+                                                       ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:394:152: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCProgramPageRawAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddr, unsigned int colAddr, unsigned int wordLength, unsigned int dataBufAddr, unsigned int sb, int pSlcMode);
+                                                                                                                                           ~~~~~~~~~~~~~^~~~~~~~~~~
+../src/nfc-helper.c:165:24: warning: unused variable 'completion' [-Wunused-variable]
+  volatile unsigned int completion;
+                        ^~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_read_raw':
+../src/nfc-helper.c:201:55: warning: passing argument 5 of 'T4NSCReadPageTransferRawAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCReadPageTransferRawAsync(channel, way, 0, 4584, buf, &completion);
+                                                       ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:393:135: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCReadPageTransferRawAsync(unsigned int chNo, unsigned int wayNo, unsigned int colAddr, unsigned int wordLength, unsigned int dataBufAddr, unsigned int* completion);
+                                                                                                                          ~~~~~~~~~~~~~^~~~~~~~~~~
+../src/nfc-helper.c:201:60: warning: passing argument 6 of 'T4NSCReadPageTransferRawAsync' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  T4NSCReadPageTransferRawAsync(channel, way, 0, 4584, buf, &completion);
+                                                            ^~~~~~~~~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:393:162: note: expected 'unsigned int *' but argument is of type 'volatile unsigned int *'
+ void T4NSCReadPageTransferRawAsync(unsigned int chNo, unsigned int wayNo, unsigned int colAddr, unsigned int wordLength, unsigned int dataBufAddr, unsigned int* completion);
+                                                                                                                                                    ~~~~~~~~~~~~~~^~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_fsprog':
+../src/nfc-helper.c:243:35: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].pageDataAddress = ((char*)buf) + 4096 * i;
+                                   ^
+../src/nfc-helper.c:244:36: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].spareDataAddress = ((char*)sbuf) + 32 * i;
+                                    ^
+../src/nfc-helper.c:279:35: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].pageDataAddress = ((char*)buf) + 4096 * (4 + i);
+                                   ^
+../src/nfc-helper.c:280:36: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].spareDataAddress = ((char*)sbuf) + 32 * (4 + i);
+                                    ^
+../src/nfc-helper.c:314:35: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].pageDataAddress = ((char*)buf) + 4096 * (8 + i);
+                                   ^
+../src/nfc-helper.c:315:36: warning: assignment to 'unsigned int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   fsp.Subpages[i].spareDataAddress = ((char*)sbuf) + 32 * (8 + i);
+                                    ^
+../src/nfc-helper.c:230:24: warning: unused variable 'completion' [-Wunused-variable]
+  volatile unsigned int completion;
+                        ^~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_prog':
+../src/nfc-helper.c:342:47: warning: passing argument 4 of 'T4NSCProgramPagepSLCAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCProgramPagepSLCAsync(channel, way, row, buf, sbuf);
+                                               ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:398:109: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCProgramPagepSLCAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddress, unsigned int dataBufAddr, unsigned int spareDataBufAddr);
+                                                                                                ~~~~~~~~~~~~~^~~~~~~~~~~
+../src/nfc-helper.c:342:52: warning: passing argument 5 of 'T4NSCProgramPagepSLCAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCProgramPagepSLCAsync(channel, way, row, buf, sbuf);
+                                                    ^~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:398:135: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCProgramPagepSLCAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddress, unsigned int dataBufAddr, unsigned int spareDataBufAddr);
+                                                                                                                          ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+../src/nfc-helper.c:339:24: warning: unused variable 'completion' [-Wunused-variable]
+  volatile unsigned int completion;
+                        ^~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_read':
+../src/nfc-helper.c:414:52: warning: passing argument 4 of 'T4NSCReadPageTransferpSLCAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCReadPageTransferpSLCAsync(channel, way, row, buf, sbuf, err, &completion);
+                                                    ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:399:114: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCReadPageTransferpSLCAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddress, unsigned int dataBufAddr, unsigned int spareDataBufAddr, unsigned int errorInfoDataBufAddr, volatile unsigned int* completion);
+                                                                                                     ~~~~~~~~~~~~~^~~~~~~~~~~
+../src/nfc-helper.c:414:57: warning: passing argument 5 of 'T4NSCReadPageTransferpSLCAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCReadPageTransferpSLCAsync(channel, way, row, buf, sbuf, err, &completion);
+                                                         ^~~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:399:140: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCReadPageTransferpSLCAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddress, unsigned int dataBufAddr, unsigned int spareDataBufAddr, unsigned int errorInfoDataBufAddr, volatile unsigned int* completion);
+                                                                                                                               ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+../src/nfc-helper.c:414:63: warning: passing argument 6 of 'T4NSCReadPageTransferpSLCAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCReadPageTransferpSLCAsync(channel, way, row, buf, sbuf, err, &completion);
+                                                               ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:399:171: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCReadPageTransferpSLCAsync(unsigned int chNo, unsigned int wayNo, unsigned int rowAddress, unsigned int dataBufAddr, unsigned int spareDataBufAddr, unsigned int errorInfoDataBufAddr, volatile unsigned int* completion);
+                                                                                                                                                              ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+../src/nfc-helper.c: In function 'nfc_read_id':
+../src/nfc-helper.c:429:38: warning: passing argument 4 of 'T4NSCReadIDAsync' makes integer from pointer without a cast [-Wint-conversion]
+  T4NSCReadIDAsync(channel, way, sel, buf, &completion);
+                                      ^~~
+In file included from ../src/nfc-helper.h:12,
+                 from ../src/nfc-helper.c:1:
+../src/t4nsc_lld.h:387:84: note: expected 'unsigned int' but argument is of type 'void *'
+ void T4NSCReadIDAsync(unsigned int chNo, unsigned int wayNo, int sel, unsigned int dataBufAddr, volatile unsigned int* completion);
+                                                                       ~~~~~~~~~~~~~^~~~~~~~~~~
+'Finished building: ../src/nfc-helper.c'
+' '
+'Building file: ../src/ps-cpu.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ps-cpu.o" -I../../test-dataeye_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ps-cpu.d" -MT"src/ps-cpu.o" -o "src/ps-cpu.o" "../src/ps-cpu.c"
+../src/ps-cpu.c: In function 'cpu_init':
+../src/ps-cpu.c:14:15: warning: unused variable 'u' [-Wunused-variable]
+  unsigned int u;
+               ^
+'Finished building: ../src/ps-cpu.c'
+' '
+'Building file: ../src/t4nsc_lld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/t4nsc_lld.o" -I../../test-dataeye_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/t4nsc_lld.d" -MT"src/t4nsc_lld.o" -o "src/t4nsc_lld.o" "../src/t4nsc_lld.c"
+../src/t4nsc_lld.c: In function 'T4NSCInitializeHandle':
+../src/t4nsc_lld.c:7:32: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regID = (T4REG_ID*)((unsigned int)t4nscRegisterBaseAddress + 0);
+                                ^
+../src/t4nsc_lld.c:7:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regID = (T4REG_ID*)((unsigned int)t4nscRegisterBaseAddress + 0);
+                    ^
+../src/t4nsc_lld.c:8:34: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regCFG = (T4REG_CFG*)((unsigned int)t4nscRegisterBaseAddress + 0x1000);
+                                  ^
+../src/t4nsc_lld.c:8:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regCFG = (T4REG_CFG*)((unsigned int)t4nscRegisterBaseAddress + 0x1000);
+                     ^
+../src/t4nsc_lld.c:9:34: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regEXT = (T4REG_EXT*)((unsigned int)t4nscRegisterBaseAddress + 0x2000);
+                                  ^
+../src/t4nsc_lld.c:9:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regEXT = (T4REG_EXT*)((unsigned int)t4nscRegisterBaseAddress + 0x2000);
+                     ^
+../src/t4nsc_lld.c:10:32: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regCC = (T4REG_CC*)((unsigned int)t4nscRegisterBaseAddress + 0x3000);
+                                ^
+../src/t4nsc_lld.c:10:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regCC = (T4REG_CC*)((unsigned int)t4nscRegisterBaseAddress + 0x3000);
+                    ^
+../src/t4nsc_lld.c:11:32: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regBP = (T4REG_BP*)((unsigned int)t4nscRegisterBaseAddress + 0x3800);
+                                ^
+../src/t4nsc_lld.c:11:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regBP = (T4REG_BP*)((unsigned int)t4nscRegisterBaseAddress + 0x3800);
+                    ^
+../src/t4nsc_lld.c:12:32: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  t4regs->t4regSP = (T4REG_SP*)((unsigned int)t4nscRegisterBaseAddress + 0x4000);
+                                ^
+../src/t4nsc_lld.c:12:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  t4regs->t4regSP = (T4REG_SP*)((unsigned int)t4nscRegisterBaseAddress + 0x4000);
+                    ^
+../src/t4nsc_lld.c: In function 'T4NSCSetFeaturesT':
+../src/t4nsc_lld.c:33:34: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  setFeaturesCmd.payloadAddress = (unsigned int)&payload;
+                                  ^
+../src/t4nsc_lld.c: In function 'T4NSCSetLUNFeaturesT':
+../src/t4nsc_lld.c:46:37: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  setLUNFeaturesCmd.payloadAddress = (unsigned int)&payload;
+                                     ^
+../src/t4nsc_lld.c: In function 'T4NSCGetFeaturesT':
+../src/t4nsc_lld.c:60:33: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  getFeaturesCmd.reportAddress = (unsigned int)report;
+                                 ^
+../src/t4nsc_lld.c:62:37: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  getFeaturesCmd.completionAddress = (unsigned int)completion;
+                                     ^
+../src/t4nsc_lld.c: In function 'T4NSCGetLUNFeaturesT':
+../src/t4nsc_lld.c:74:36: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  getLUNFeaturesCmd.reportAddress = (unsigned int)report;
+                                    ^
+../src/t4nsc_lld.c:76:40: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  getLUNFeaturesCmd.completionAddress = (unsigned int)completion;
+                                        ^
+../src/t4nsc_lld.c: In function 'T4NSCChangeNandInterfaceToggle':
+../src/t4nsc_lld.c:103:33: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  modeChangeCmd.payloadAddress = (unsigned int)payload;
+                                 ^
+../src/t4nsc_lld.c: In function 'T4NSCGetReadyBusy':
+../src/t4nsc_lld.c:115:34: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  getReadyBusyCmd.reportAddress = (unsigned int)report;
+                                  ^
+../src/t4nsc_lld.c: In function 'T4NSCStatusCheck':
+../src/t4nsc_lld.c:127:32: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  readStatusCmd.reportAddress = (unsigned int)statusReport;
+                                ^
+../src/t4nsc_lld.c: In function 'T4NSCReadIDAsync':
+../src/t4nsc_lld.c:143:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  readPageTransferRaw.completionReportAddress = (unsigned int)completion;
+                                                ^
+../src/t4nsc_lld.c: In function 'T4NSCReadPageTransferRawAsync':
+../src/t4nsc_lld.c:298:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  readPageTransferRaw.completionReportAddress = (unsigned int)completion;
+                                                ^
+../src/t4nsc_lld.c: In function 'T4NSCSetReadLevelACEG':
+../src/t4nsc_lld.c:327:54: warning: passing argument 5 of 'T4NSCSetLUNFeaturesT' makes integer from pointer without a cast [-Wint-conversion]
+     T4NSCSetLUNFeaturesT(chNo, wayNo, lunAddr, 0x89, payloadBuf);
+                                                      ^~~~~~~~~~
+../src/t4nsc_lld.c:40:119: note: expected 'unsigned int' but argument is of type 'volatile unsigned int *'
+ void T4NSCSetLUNFeaturesT(unsigned int chNo, unsigned int wayNo, unsigned int lun, unsigned int address, unsigned int payload)
+                                                                                                          ~~~~~~~~~~~~~^~~~~~~
+../src/t4nsc_lld.c: In function 'T4NSCSetReadLevelBDF':
+../src/t4nsc_lld.c:336:54: warning: passing argument 5 of 'T4NSCSetLUNFeaturesT' makes integer from pointer without a cast [-Wint-conversion]
+     T4NSCSetLUNFeaturesT(chNo, wayNo, lunAddr, 0x8A, payloadBuf);
+                                                      ^~~~~~~~~~
+../src/t4nsc_lld.c:40:119: note: expected 'unsigned int' but argument is of type 'volatile unsigned int *'
+ void T4NSCSetLUNFeaturesT(unsigned int chNo, unsigned int wayNo, unsigned int lun, unsigned int address, unsigned int payload)
+                                                                                                          ~~~~~~~~~~~~~^~~~~~~
+../src/t4nsc_lld.c: In function 'T4NSCReadPageTransferpSLCAsync':
+../src/t4nsc_lld.c:364:39: warning: assignment to 'unsigned int' from 'volatile unsigned int *' makes integer from pointer without a cast [-Wint-conversion]
+  readpagepSLC.completionReportAddress = completion;
+                                       ^
+'Finished building: ../src/t4nsc_lld.c'
+' '
+'Building target: test-dataeye.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test-dataeye_bsp/psu_cortexa53_0/lib -o "test-dataeye.elf"  ./src/main.o ./src/nfc-helper.o ./src/ps-cpu.o ./src/t4nsc_lld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test-dataeye.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size test-dataeye.elf  |tee "test-dataeye.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 132080	   8088	33575648	33715816	2027668	test-dataeye.elf
+'Finished building: test-dataeye.elf.size'
+' '
+13:58:22 **** Incremental Build of configuration Debug for project test-dataeye ****
+make all 
+make: Nothing to be done for 'all'.
+14:00:52 **** Auto Build of configuration Debug for project test-dataeye ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test-dataeye_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'test_readwrite':
+../src/main.c:86:9: warning: implicit declaration of function 'nfc_set_dq_delay'; did you mean 'nfc_set_dqs_delay'? [-Wimplicit-function-declaration]
+         nfc_set_dq_delay(ch, dqDelay);
+         ^~~~~~~~~~~~~~~~
+         nfc_set_dqs_delay
+../src/main.c:60:20: warning: variable 'dum' set but not used [-Wunused-but-set-variable]
+       volatile int dum;
+                    ^~~
+../src/main.c: In function 'test_read_status':
+../src/main.c:172:10: warning: unused variable 'row' [-Wunused-variable]
+      int row = 0;
+          ^~~
+../src/main.c:171:10: warning: unused variable 'block' [-Wunused-variable]
+      int block = 2;
+          ^~~~~
+../src/main.c:169:9: warning: unused variable 'pat' [-Wunused-variable]
+     int pat = 1234;
+         ^~~
+../src/main.c:145:12: warning: unused variable 'read_errinfo' [-Wunused-variable]
+  uint32_t* read_errinfo = (uint32_t*)0x1400000;
+            ^~~~~~~~~~~~
+../src/main.c:144:12: warning: unused variable 'read_sbuf' [-Wunused-variable]
+  uint32_t* read_sbuf = (uint32_t*)0x1300000;
+            ^~~~~~~~~
+../src/main.c:143:12: warning: unused variable 'read_pbuf' [-Wunused-variable]
+  uint32_t* read_pbuf = (uint32_t*)0x1200000;
+            ^~~~~~~~~
+../src/main.c:142:12: warning: unused variable 'write_sbuf' [-Wunused-variable]
+  uint32_t* write_sbuf = (uint32_t*)0x1100000;
+            ^~~~~~~~~~
+../src/main.c:141:12: warning: unused variable 'write_pbuf' [-Wunused-variable]
+  uint32_t* write_pbuf = (uint32_t*)0x1000000;
+            ^~~~~~~~~~
+../src/main.c:139:6: warning: unused variable 'err' [-Wunused-variable]
+  int err;
+      ^~~
+../src/main.c: In function 'print_usage':
+../src/main.c:211:5: warning: implicit declaration of function 'xil_printf'; did you mean 'viprintf'? [-Wimplicit-function-declaration]
+     xil_printf("1. Enter Channel(0-3).\r\n");
+     ^~~~~~~~~~
+     viprintf
+../src/main.c: In function 'test_design':
+../src/main.c:222:27: warning: unused variable 'dummy' [-Wunused-variable]
+     char ch = 0, way = 0, dummy = 0;
+                           ^~~~~
+At top level:
+../src/main.c:220:12: warning: 'test_design' defined but not used [-Wunused-function]
+ static int test_design(void)
+            ^~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: test-dataeye.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test-dataeye_bsp/psu_cortexa53_0/lib -o "test-dataeye.elf"  ./src/main.o ./src/nfc-helper.o ./src/ps-cpu.o ./src/t4nsc_lld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test-dataeye.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size test-dataeye.elf  |tee "test-dataeye.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 132104	   8088	33575624	33715816	2027668	test-dataeye.elf
+'Finished building: test-dataeye.elf.size'
+' '
+14:00:57 **** Incremental Build of configuration Debug for project test-dataeye ****
+make all 
+make: Nothing to be done for 'all'.
+14:02:47 **** Auto Build of configuration Debug for project run-gtfl3 ****
+make all 
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:65:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:155:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+../src/address_translation.c: In function 'FindBadBlock':
+../src/address_translation.c:343:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:344:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:381:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:382:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:393:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater= (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                 ^
+../src/address_translation.c: In function 'RecoverBadBlockTable':
+../src/address_translation.c:495:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo]);
+                     ^
+../src/address_translation.c:504:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                       ^
+../src/address_translation.c: In function 'UpdateBadBlockTableForGrownBadBlock':
+../src/address_translation.c:903:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                  ^
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitChCtlReg':
+../src/ftl_config.c:115:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   nfc_install_ucode((unsigned int*)NSC_UCODES[i]);
+                     ^
+../src/ftl_config.c:116:37: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   V2FInitializeHandle(&chCtlReg[i], (void*)NSCS[i]);
+                                     ^
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:173:34: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+   V2FReadIdSync(&chCtlReg[i], 0, idData);
+                                  ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:446:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/ftl_config.c:174:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+../src/ftl_config.c:174:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ftl_config.c:174:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ftl_config.c:54:1:
++#include <stdio.h>
+ #include "nsc_driver.h"
+../src/ftl_config.c:174:3:
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+At top level:
+../src/ftl_config.c:106:21: warning: 'dq_delay' defined but not used [-Wunused-variable]
+ static unsigned int dq_delay[]  = {50, 50, 50, 50};
+                     ^~~~~~~~
+../src/ftl_config.c:105:21: warning: 'dqs_delay' defined but not used [-Wunused-variable]
+ static unsigned int dqs_delay[] = {400, 400, 400, 400};
+                     ^~~~~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/garbage_collection.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/garbage_collection.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/garbage_collection.d" -MT"src/garbage_collection.o" -o "src/garbage_collection.o" "../src/garbage_collection.c"
+'Finished building: ../src/garbage_collection.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:652:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:653:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:866:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:942:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: run-gtfl3.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gtfl3_bsp/psu_cortexa53_0/lib -o "run-gtfl3.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gtfl3.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gtfl3.elf  |tee "run-gtfl3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 170976	  11272	  21576	 203824	  31c30	run-gtfl3.elf
+'Finished building: run-gtfl3.elf.size'
+' '
+14:03:00 **** Incremental Build of configuration Debug for project run-gtfl3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:04:56 **** Auto Build of configuration Debug for project run-gtfl3 ****
+make all 
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitChCtlReg':
+../src/ftl_config.c:115:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   nfc_install_ucode((unsigned int*)NSC_UCODES[i]);
+                     ^
+../src/ftl_config.c:116:37: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   V2FInitializeHandle(&chCtlReg[i], (void*)NSCS[i]);
+                                     ^
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:173:34: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+   V2FReadIdSync(&chCtlReg[i], 0, idData);
+                                  ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:446:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/ftl_config.c:174:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+../src/ftl_config.c:174:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ftl_config.c:174:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ftl_config.c:54:1:
++#include <stdio.h>
+ #include "nsc_driver.h"
+../src/ftl_config.c:174:3:
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building target: run-gtfl3.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gtfl3_bsp/psu_cortexa53_0/lib -o "run-gtfl3.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gtfl3.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gtfl3.elf  |tee "run-gtfl3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 171040	  11256	  21656	 203952	  31cb0	run-gtfl3.elf
+'Finished building: run-gtfl3.elf.size'
+' '
+14:05:02 **** Incremental Build of configuration Debug for project run-gtfl3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:44:10 **** Auto Build of configuration Debug for project run-gtfl3 ****
+make all 
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:65:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:155:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+../src/address_translation.c: In function 'FindBadBlock':
+../src/address_translation.c:343:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:344:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:381:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:382:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:393:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater= (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                 ^
+../src/address_translation.c: In function 'RecoverBadBlockTable':
+../src/address_translation.c:495:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo]);
+                     ^
+../src/address_translation.c:504:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                       ^
+../src/address_translation.c: In function 'UpdateBadBlockTableForGrownBadBlock':
+../src/address_translation.c:903:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                  ^
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitChCtlReg':
+../src/ftl_config.c:115:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   nfc_install_ucode((unsigned int*)NSC_UCODES[i]);
+                     ^
+../src/ftl_config.c:116:37: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   V2FInitializeHandle(&chCtlReg[i], (void*)NSCS[i]);
+                                     ^
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:173:34: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+   V2FReadIdSync(&chCtlReg[i], 0, idData);
+                                  ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:446:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/ftl_config.c:174:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+../src/ftl_config.c:174:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ftl_config.c:174:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ftl_config.c:54:1:
++#include <stdio.h>
+ #include "nsc_driver.h"
+../src/ftl_config.c:174:3:
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/garbage_collection.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/garbage_collection.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/garbage_collection.d" -MT"src/garbage_collection.o" -o "src/garbage_collection.o" "../src/garbage_collection.c"
+'Finished building: ../src/garbage_collection.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:652:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:653:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:866:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:942:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: run-gtfl3.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gtfl3_bsp/psu_cortexa53_0/lib -o "run-gtfl3.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gtfl3.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gtfl3.elf  |tee "run-gtfl3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 170720	  11256	  21464	 203440	  31ab0	run-gtfl3.elf
+'Finished building: run-gtfl3.elf.size'
+' '
+14:44:25 **** Incremental Build of configuration Debug for project run-gtfl3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:47:33 **** Incremental Build of configuration Debug for project run-gtfl3 ****
+make all 
+make: Nothing to be done for 'all'.
+14:48:50 **** Incremental Build of configuration Debug for project run-gtfl3 ****
+make all 
+make: Nothing to be done for 'all'.
+15:49:36 **** Auto Build of configuration Debug for project run-gtfl3 ****
+make all 
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:65:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:155:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+../src/address_translation.c: In function 'FindBadBlock':
+../src/address_translation.c:343:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:344:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:381:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:382:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:393:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater= (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                 ^
+../src/address_translation.c: In function 'RecoverBadBlockTable':
+../src/address_translation.c:495:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo]);
+                     ^
+../src/address_translation.c:504:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                       ^
+../src/address_translation.c: In function 'UpdateBadBlockTableForGrownBadBlock':
+../src/address_translation.c:903:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                  ^
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitChCtlReg':
+../src/ftl_config.c:115:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   nfc_install_ucode((unsigned int*)NSC_UCODES[i]);
+                     ^
+../src/ftl_config.c:116:37: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   V2FInitializeHandle(&chCtlReg[i], (void*)NSCS[i]);
+                                     ^
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:173:34: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+   V2FReadIdSync(&chCtlReg[i], 0, idData);
+                                  ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:446:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/ftl_config.c:174:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+../src/ftl_config.c:174:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ftl_config.c:174:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ftl_config.c:54:1:
++#include <stdio.h>
+ #include "nsc_driver.h"
+../src/ftl_config.c:174:3:
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/garbage_collection.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/garbage_collection.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/garbage_collection.d" -MT"src/garbage_collection.o" -o "src/garbage_collection.o" "../src/garbage_collection.c"
+'Finished building: ../src/garbage_collection.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:652:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:653:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:866:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:942:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: run-gtfl3.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gtfl3_bsp/psu_cortexa53_0/lib -o "run-gtfl3.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gtfl3.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gtfl3.elf  |tee "run-gtfl3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 170720	  11256	  21464	 203440	  31ab0	run-gtfl3.elf
+'Finished building: run-gtfl3.elf.size'
+' '
+15:49:49 **** Incremental Build of configuration Debug for project run-gtfl3 ****
+make all 
+make: Nothing to be done for 'all'.
+15:59:03 **** Auto Build of configuration Debug for project run-gtfl3 ****
+make all 
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:65:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:155:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+../src/address_translation.c: In function 'FindBadBlock':
+../src/address_translation.c:343:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:344:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:381:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:382:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:393:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater= (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                 ^
+../src/address_translation.c: In function 'RecoverBadBlockTable':
+../src/address_translation.c:495:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo]);
+                     ^
+../src/address_translation.c:504:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                       ^
+../src/address_translation.c: In function 'UpdateBadBlockTableForGrownBadBlock':
+../src/address_translation.c:903:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                  ^
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitChCtlReg':
+../src/ftl_config.c:115:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   nfc_install_ucode((unsigned int*)NSC_UCODES[i]);
+                     ^
+../src/ftl_config.c:116:37: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   V2FInitializeHandle(&chCtlReg[i], (void*)NSCS[i]);
+                                     ^
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:173:34: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+   V2FReadIdSync(&chCtlReg[i], 0, idData);
+                                  ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:446:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/ftl_config.c:174:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+../src/ftl_config.c:174:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ftl_config.c:174:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ftl_config.c:54:1:
++#include <stdio.h>
+ #include "nsc_driver.h"
+../src/ftl_config.c:174:3:
+   printf("Ch %d ReadId: ", i);
+   ^~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/garbage_collection.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/garbage_collection.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/garbage_collection.d" -MT"src/garbage_collection.o" -o "src/garbage_collection.o" "../src/garbage_collection.c"
+'Finished building: ../src/garbage_collection.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:652:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:653:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:866:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:942:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gtfl3_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: run-gtfl3.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gtfl3_bsp/psu_cortexa53_0/lib -o "run-gtfl3.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gtfl3.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gtfl3.elf  |tee "run-gtfl3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 171040	  11256	  21656	 203952	  31cb0	run-gtfl3.elf
+'Finished building: run-gtfl3.elf.size'
+' '
