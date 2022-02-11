@@ -41,11 +41,11 @@ preplace inst t4nfc_hlper_3 -pg 1 -lvl 5 -x 1590 -y 4900 -defaultsOSRD
 preplace inst bch_skes_256B_21B_13b_0 -pg 1 -lvl 10 -x 4240 -y 4890 -defaultsOSRD
 preplace inst iodelay_if_0 -pg 1 -lvl 12 -x 5720 -y 2370 -defaultsOSRD
 preplace inst iodelay_if_0_dqs -pg 1 -lvl 12 -x 5720 -y 720 -defaultsOSRD -resize 220 1336
-preplace inst proc_sys_reset_1 -pg 1 -lvl 3 -x 780 -y 4220 -defaultsOSRD
-preplace inst proc_sys_reset_3 -pg 1 -lvl 3 -x 780 -y 3820 -defaultsOSRD
-preplace inst proc_sys_reset_4 -pg 1 -lvl 3 -x 780 -y 4020 -defaultsOSRD
+preplace inst pll_bank13_psr -pg 1 -lvl 3 -x 780 -y 4220 -defaultsOSRD
+preplace inst pll_bank11_psr -pg 1 -lvl 3 -x 780 -y 3820 -defaultsOSRD
+preplace inst pll_bank12_psr -pg 1 -lvl 3 -x 780 -y 4020 -defaultsOSRD
 preplace inst pll_bank10 -pg 1 -lvl 4 -x 1160 -y 4310 -defaultsOSRD
-preplace inst proc_sys_reset_5 -pg 1 -lvl 5 -x 1590 -y 4320 -defaultsOSRD
+preplace inst pll_bank10_psr -pg 1 -lvl 5 -x 1590 -y 4320 -defaultsOSRD
 preplace inst v2nfc_0 -pg 1 -lvl 11 -x 5030 -y 830 -defaultsOSRD
 preplace inst v2nfc_1 -pg 1 -lvl 11 -x 5030 -y 1560 -defaultsOSRD -resize 266 549
 preplace inst v2nfc_2 -pg 1 -lvl 11 -x 5030 -y 3330 -defaultsOSRD -resize 264 569

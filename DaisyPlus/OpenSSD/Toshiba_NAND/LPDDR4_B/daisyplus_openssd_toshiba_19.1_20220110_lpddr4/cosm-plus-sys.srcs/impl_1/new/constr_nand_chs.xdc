@@ -53,7 +53,7 @@ set_property IODELAY_GROUP BANK_0_IODELAY_GROUP [get_cells sys_top_i/v2nfc_0/ins
 set_property BEL CONTROL [get_cells sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL]
 set_property LOC BITSLICE_CONTROL_X0Y60 [get_cells sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL]
 create_pblock CH0PBLK
-add_cells_to_pblock [get_pblocks CH0PBLK] [get_cells -quiet [list sys_top_i/v2nfc_0 sys_top_i/bch_sccs_256B_21B_13b_0 sys_top_i/pll_bank10 sys_top_i/pll_bank10_reset]]
+add_cells_to_pblock [get_pblocks CH0PBLK] [get_cells -quiet [list sys_top_i/v2nfc_0 sys_top_i/bch_sccs_256B_21B_13b_0 sys_top_i/pll_bank10 sys_top_i/pll_bank10_psr]]
 resize_pblock [get_pblocks CH0PBLK] -add {CLOCKREGION_X2Y7:CLOCKREGION_X2Y7}
 create_pblock CH0PROCPBLK
 add_cells_to_pblock [get_pblocks CH0PROCPBLK] [get_cells -quiet [list sys_top_i/t4nfc_hlper_0]]
@@ -99,7 +99,7 @@ set_property IODELAY_GROUP BANK_1_IODELAY_GROUP [get_cells sys_top_i/v2nfc_1/ins
 set_property BEL CONTROL [get_cells sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL]
 set_property LOC BITSLICE_CONTROL_X0Y44 [get_cells sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL]
 create_pblock CH1PBLK
-add_cells_to_pblock [get_pblocks CH1PBLK] [get_cells -quiet [list sys_top_i/v2nfc_1 sys_top_i/bch_sccs_256B_21B_13b_1 sys_top_i/pll_bank11 sys_top_i/pll_bank11_reset]]
+add_cells_to_pblock [get_pblocks CH1PBLK] [get_cells -quiet [list sys_top_i/v2nfc_1 sys_top_i/bch_sccs_256B_21B_13b_1 sys_top_i/pll_bank11 sys_top_i/pll_bank11_psr]]
 resize_pblock [get_pblocks CH1PBLK] -add {CLOCKREGION_X2Y5:CLOCKREGION_X2Y5}
 create_pblock CH1PROCPBLK
 add_cells_to_pblock [get_pblocks CH1PROCPBLK] [get_cells -quiet [list sys_top_i/t4nfc_hlper_1]]
@@ -145,7 +145,7 @@ set_property IODELAY_GROUP BANK_2_IODELAY_GROUP [get_cells sys_top_i/v2nfc_2/ins
 set_property BEL CONTROL [get_cells sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL]
 set_property LOC BITSLICE_CONTROL_X0Y36 [get_cells sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL]
 create_pblock CH2PBLK
-add_cells_to_pblock [get_pblocks CH2PBLK] [get_cells -quiet [list sys_top_i/v2nfc_2 sys_top_i/bch_sccs_256B_21B_13b_2 sys_top_i/pll_bank12 sys_top_i/pll_bank12_reset]]
+add_cells_to_pblock [get_pblocks CH2PBLK] [get_cells -quiet [list sys_top_i/v2nfc_2 sys_top_i/bch_sccs_256B_21B_13b_2 sys_top_i/pll_bank12 sys_top_i/pll_bank12_psr]]
 resize_pblock [get_pblocks CH2PBLK] -add {CLOCKREGION_X2Y4:CLOCKREGION_X2Y4}
 create_pblock CH2PROCPBLK
 add_cells_to_pblock [get_pblocks CH2PROCPBLK] [get_cells -quiet [list sys_top_i/t4nfc_hlper_2]]
@@ -191,7 +191,7 @@ set_property IODELAY_GROUP BANK_3_IODELAY_GROUP [get_cells sys_top_i/v2nfc_3/ins
 set_property BEL CONTROL [get_cells sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL]
 set_property LOC BITSLICE_CONTROL_X0Y52 [get_cells sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAYCTRL]
 create_pblock CH3PBLK
-add_cells_to_pblock [get_pblocks CH3PBLK] [get_cells -quiet [list sys_top_i/v2nfc_3 sys_top_i/bch_sccs_256B_21B_13b_3 sys_top_i/pll_bank13 sys_top_i/pll_bank13_reset]]
+add_cells_to_pblock [get_pblocks CH3PBLK] [get_cells -quiet [list sys_top_i/v2nfc_3 sys_top_i/bch_sccs_256B_21B_13b_3 sys_top_i/pll_bank13 sys_top_i/pll_bank13_psr]]
 resize_pblock [get_pblocks CH3PBLK] -add {CLOCKREGION_X2Y6:CLOCKREGION_X2Y6}
 create_pblock CH3PROCPBLK
 add_cells_to_pblock [get_pblocks CH3PROCPBLK] [get_cells -quiet [list sys_top_i/t4nfc_hlper_3]]

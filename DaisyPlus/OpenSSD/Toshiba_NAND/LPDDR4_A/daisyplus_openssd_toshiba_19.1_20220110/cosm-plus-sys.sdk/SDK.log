@@ -24810,3 +24810,916 @@ con
 15:58:47 INFO  : Registering command handlers for SDK TCF services
 15:58:47 INFO  : Processing command line option -hwspec D:/sources/daisyplus_openssd_toshiba_2ch_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper.hdf.
 15:58:48 INFO  : Checking for hwspec changes in the project sys_top_wrapper_hw_platform_0.
+13:40:41 INFO  : Launching XSCT server: xsct.bat -interactive D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\temp_xsdb_launch_script.tcl
+13:40:46 INFO  : XSCT server has started successfully.
+13:40:47 INFO  : Successfully done setting XSCT server connection channel  
+13:40:47 INFO  : Successfully done setting SDK workspace  
+13:41:04 INFO  : Registering command handlers for SDK TCF services
+13:41:04 INFO  : Processing command line option -hwspec D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper.hdf.
+13:47:56 INFO  : Launching XSCT server: xsct.bat -interactive D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\temp_xsdb_launch_script.tcl
+13:47:59 INFO  : XSCT server has started successfully.
+13:47:59 INFO  : Successfully done setting XSCT server connection channel  
+13:48:00 INFO  : Successfully done setting SDK workspace  
+13:48:02 INFO  : Registering command handlers for SDK TCF services
+13:48:02 INFO  : Processing command line option -hwspec D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper.hdf.
+13:55:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:55:26 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+13:55:26 INFO  : 'jtag frequency' command is executed.
+13:55:26 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+13:55:26 INFO  : Context for 'APU' is selected.
+13:55:28 INFO  : System reset is completed.
+13:55:31 INFO  : 'after 3000' command is executed.
+13:55:31 INFO  : Context for 'APU' is selected.
+13:55:31 INFO  : Cleared APU and A53 resets
+13:55:31 INFO  : Context for 'RPU' is selected.
+13:55:31 INFO  : Cleared RPU and R5 resets
+13:55:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+13:55:42 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+13:55:48 INFO  : Context for 'APU' is selected.
+13:55:48 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+13:55:48 INFO  : 'configparams force-mem-access 1' command is executed.
+13:55:48 INFO  : Context for 'APU' is selected.
+13:55:48 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+13:55:49 INFO  : 'psu_init' command is executed.
+13:55:50 INFO  : 'after 1000' command is executed.
+13:55:50 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+13:55:51 INFO  : 'after 1000' command is executed.
+13:55:51 INFO  : 'psu_ps_pl_reset_config' command is executed.
+13:55:51 INFO  : 'catch {psu_protection}' command is executed.
+13:55:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:55:52 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+13:55:52 INFO  : 'configparams force-mem-access 0' command is executed.
+13:55:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:55:52 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:55:52 INFO  : 'con' command is executed.
+13:55:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+13:55:52 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+13:57:18 INFO  : Disconnected from the channel tcfchan#1.
+13:57:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:57:20 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+13:57:20 INFO  : 'jtag frequency' command is executed.
+13:57:20 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+13:57:20 INFO  : Context for 'APU' is selected.
+13:57:21 INFO  : System reset is completed.
+13:57:24 INFO  : 'after 3000' command is executed.
+13:57:24 INFO  : Context for 'APU' is selected.
+13:57:24 INFO  : Cleared APU and A53 resets
+13:57:24 INFO  : Context for 'RPU' is selected.
+13:57:24 INFO  : Cleared RPU and R5 resets
+13:57:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+13:57:35 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+13:57:35 INFO  : Context for 'APU' is selected.
+13:57:52 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+13:57:52 INFO  : 'configparams force-mem-access 1' command is executed.
+13:57:52 INFO  : Context for 'APU' is selected.
+13:57:52 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+13:57:53 INFO  : 'psu_init' command is executed.
+13:57:54 INFO  : 'after 1000' command is executed.
+13:57:54 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+13:57:55 INFO  : 'after 1000' command is executed.
+13:57:55 INFO  : 'psu_ps_pl_reset_config' command is executed.
+13:57:55 INFO  : 'catch {psu_protection}' command is executed.
+13:57:55 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:57:56 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+13:57:56 INFO  : 'configparams force-mem-access 0' command is executed.
+13:57:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:57:56 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:57:56 INFO  : 'con' command is executed.
+13:57:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+13:57:56 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+15:03:19 INFO  : Disconnected from the channel tcfchan#2.
+15:03:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:03:20 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+15:03:20 INFO  : 'jtag frequency' command is executed.
+15:03:20 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+15:03:20 INFO  : Context for 'APU' is selected.
+15:03:21 INFO  : System reset is completed.
+15:03:25 INFO  : 'after 3000' command is executed.
+15:03:25 INFO  : Context for 'APU' is selected.
+15:03:25 INFO  : Cleared APU and A53 resets
+15:03:25 INFO  : Context for 'RPU' is selected.
+15:03:25 INFO  : Cleared RPU and R5 resets
+15:03:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+15:03:36 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+15:03:36 INFO  : Context for 'APU' is selected.
+15:03:46 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+15:03:46 INFO  : 'configparams force-mem-access 1' command is executed.
+15:03:46 INFO  : Context for 'APU' is selected.
+15:03:46 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+15:03:47 INFO  : 'psu_init' command is executed.
+15:03:48 INFO  : 'after 1000' command is executed.
+15:03:48 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+15:03:49 INFO  : 'after 1000' command is executed.
+15:03:49 INFO  : 'psu_ps_pl_reset_config' command is executed.
+15:03:49 INFO  : 'catch {psu_protection}' command is executed.
+15:03:49 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:03:50 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:03:50 INFO  : 'configparams force-mem-access 0' command is executed.
+15:03:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:03:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:03:51 INFO  : 'con' command is executed.
+15:03:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+15:03:51 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+16:13:57 INFO  : Disconnected from the channel tcfchan#3.
+16:13:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:58 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+16:13:58 INFO  : 'jtag frequency' command is executed.
+16:13:58 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+16:13:58 INFO  : Context for 'APU' is selected.
+16:14:00 INFO  : System reset is completed.
+16:14:03 INFO  : 'after 3000' command is executed.
+16:14:03 INFO  : Context for 'APU' is selected.
+16:14:03 INFO  : Cleared APU and A53 resets
+16:14:03 INFO  : Context for 'RPU' is selected.
+16:14:03 INFO  : Cleared RPU and R5 resets
+16:14:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+16:14:14 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+16:14:14 INFO  : Context for 'APU' is selected.
+16:14:24 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+16:14:24 INFO  : 'configparams force-mem-access 1' command is executed.
+16:14:24 INFO  : Context for 'APU' is selected.
+16:14:24 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+16:14:25 INFO  : 'psu_init' command is executed.
+16:14:26 INFO  : 'after 1000' command is executed.
+16:14:26 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+16:14:27 INFO  : 'after 1000' command is executed.
+16:14:27 INFO  : 'psu_ps_pl_reset_config' command is executed.
+16:14:27 INFO  : 'catch {psu_protection}' command is executed.
+16:14:27 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:14:29 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+16:14:29 INFO  : 'configparams force-mem-access 0' command is executed.
+16:14:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:14:29 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:14:29 INFO  : 'con' command is executed.
+16:14:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+16:14:29 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+16:44:30 INFO  : Disconnected from the channel tcfchan#4.
+16:44:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:31 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+16:44:31 INFO  : 'jtag frequency' command is executed.
+16:44:31 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+16:44:31 INFO  : Context for 'APU' is selected.
+16:44:33 INFO  : System reset is completed.
+16:44:36 INFO  : 'after 3000' command is executed.
+16:44:36 INFO  : Context for 'APU' is selected.
+16:44:36 INFO  : Cleared APU and A53 resets
+16:44:36 INFO  : Context for 'RPU' is selected.
+16:44:36 INFO  : Cleared RPU and R5 resets
+16:44:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+16:44:47 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+16:44:47 INFO  : Context for 'APU' is selected.
+16:44:57 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+16:44:57 INFO  : 'configparams force-mem-access 1' command is executed.
+16:44:57 INFO  : Context for 'APU' is selected.
+16:44:57 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+16:44:58 INFO  : 'psu_init' command is executed.
+16:44:59 INFO  : 'after 1000' command is executed.
+16:44:59 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+16:45:00 INFO  : 'after 1000' command is executed.
+16:45:00 INFO  : 'psu_ps_pl_reset_config' command is executed.
+16:45:00 INFO  : 'catch {psu_protection}' command is executed.
+16:45:00 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:45:01 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+16:45:01 INFO  : 'configparams force-mem-access 0' command is executed.
+16:45:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:45:02 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:45:02 INFO  : 'con' command is executed.
+16:45:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+16:45:02 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+17:27:43 INFO  : Disconnected from the channel tcfchan#5.
+17:27:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:27:45 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+17:27:45 INFO  : 'jtag frequency' command is executed.
+17:27:45 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+17:27:45 INFO  : Context for 'APU' is selected.
+17:27:46 INFO  : System reset is completed.
+17:27:49 INFO  : 'after 3000' command is executed.
+17:27:49 INFO  : Context for 'APU' is selected.
+17:27:49 INFO  : Cleared APU and A53 resets
+17:27:49 INFO  : Context for 'RPU' is selected.
+17:27:49 INFO  : Cleared RPU and R5 resets
+17:27:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+17:28:00 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+17:28:00 INFO  : Context for 'APU' is selected.
+17:28:10 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+17:28:10 INFO  : 'configparams force-mem-access 1' command is executed.
+17:28:10 INFO  : Context for 'APU' is selected.
+17:28:10 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+17:28:11 INFO  : 'psu_init' command is executed.
+17:28:12 INFO  : 'after 1000' command is executed.
+17:28:12 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+17:28:13 INFO  : 'after 1000' command is executed.
+17:28:13 INFO  : 'psu_ps_pl_reset_config' command is executed.
+17:28:13 INFO  : 'catch {psu_protection}' command is executed.
+17:28:13 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:28:15 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:28:15 INFO  : 'configparams force-mem-access 0' command is executed.
+17:28:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:28:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:28:15 INFO  : 'con' command is executed.
+17:28:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+17:28:15 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+19:32:06 INFO  : Disconnected from the channel tcfchan#6.
+19:32:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:32:07 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+19:32:07 INFO  : 'jtag frequency' command is executed.
+19:32:07 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+19:32:07 INFO  : Context for 'APU' is selected.
+19:32:08 INFO  : System reset is completed.
+19:32:11 INFO  : 'after 3000' command is executed.
+19:32:11 INFO  : Context for 'APU' is selected.
+19:32:12 INFO  : Cleared APU and A53 resets
+19:32:12 INFO  : Context for 'RPU' is selected.
+19:32:12 INFO  : Cleared RPU and R5 resets
+19:32:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+19:32:23 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+19:32:23 INFO  : Context for 'APU' is selected.
+19:32:33 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+19:32:33 INFO  : 'configparams force-mem-access 1' command is executed.
+19:32:33 INFO  : Context for 'APU' is selected.
+19:32:33 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+19:32:34 INFO  : 'psu_init' command is executed.
+19:32:35 INFO  : 'after 1000' command is executed.
+19:32:35 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+19:32:36 INFO  : 'after 1000' command is executed.
+19:32:36 INFO  : 'psu_ps_pl_reset_config' command is executed.
+19:32:36 INFO  : 'catch {psu_protection}' command is executed.
+19:32:36 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:32:37 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:32:37 INFO  : 'configparams force-mem-access 0' command is executed.
+19:32:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:32:37 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:32:37 INFO  : 'con' command is executed.
+19:32:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+19:32:37 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+19:33:55 INFO  : Disconnected from the channel tcfchan#7.
+19:33:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:33:56 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+19:33:56 INFO  : 'jtag frequency' command is executed.
+19:33:56 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+19:33:56 INFO  : Context for 'APU' is selected.
+19:33:58 INFO  : System reset is completed.
+19:34:01 INFO  : 'after 3000' command is executed.
+19:34:01 INFO  : Context for 'APU' is selected.
+19:34:01 INFO  : Cleared APU and A53 resets
+19:34:01 INFO  : Context for 'RPU' is selected.
+19:34:01 INFO  : Cleared RPU and R5 resets
+19:34:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+19:34:12 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+19:34:12 INFO  : Context for 'APU' is selected.
+19:34:21 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+19:34:21 INFO  : 'configparams force-mem-access 1' command is executed.
+19:34:21 INFO  : Context for 'APU' is selected.
+19:34:21 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+19:34:22 INFO  : 'psu_init' command is executed.
+19:34:23 INFO  : 'after 1000' command is executed.
+19:34:23 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+19:34:24 INFO  : 'after 1000' command is executed.
+19:34:24 INFO  : 'psu_ps_pl_reset_config' command is executed.
+19:34:24 INFO  : 'catch {psu_protection}' command is executed.
+19:34:24 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:34:25 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:34:25 INFO  : 'configparams force-mem-access 0' command is executed.
+19:34:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:34:26 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:34:26 INFO  : 'con' command is executed.
+19:34:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+19:34:26 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+19:34:55 INFO  : Disconnected from the channel tcfchan#8.
+19:34:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:56 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+19:34:56 INFO  : 'jtag frequency' command is executed.
+19:34:56 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+19:34:56 INFO  : Context for 'APU' is selected.
+19:34:57 INFO  : System reset is completed.
+19:35:00 INFO  : 'after 3000' command is executed.
+19:35:00 INFO  : Context for 'APU' is selected.
+19:35:00 INFO  : Cleared APU and A53 resets
+19:35:00 INFO  : Context for 'RPU' is selected.
+19:35:00 INFO  : Cleared RPU and R5 resets
+19:35:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+19:35:11 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+19:35:11 INFO  : Context for 'APU' is selected.
+19:35:22 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+19:35:22 INFO  : 'configparams force-mem-access 1' command is executed.
+19:35:22 INFO  : Context for 'APU' is selected.
+19:35:22 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+19:35:23 INFO  : 'psu_init' command is executed.
+19:35:24 INFO  : 'after 1000' command is executed.
+19:35:24 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+19:35:25 INFO  : 'after 1000' command is executed.
+19:35:25 INFO  : 'psu_ps_pl_reset_config' command is executed.
+19:35:25 INFO  : 'catch {psu_protection}' command is executed.
+19:35:25 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:35:26 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:35:26 INFO  : 'configparams force-mem-access 0' command is executed.
+19:35:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:35:26 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:35:26 INFO  : 'con' command is executed.
+19:35:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+19:35:26 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+19:37:00 INFO  : Disconnected from the channel tcfchan#9.
+19:37:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:37:01 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+19:37:01 INFO  : 'jtag frequency' command is executed.
+19:37:01 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+19:37:01 INFO  : Context for 'APU' is selected.
+19:37:02 INFO  : System reset is completed.
+19:37:05 INFO  : 'after 3000' command is executed.
+19:37:05 INFO  : Context for 'APU' is selected.
+19:37:06 INFO  : Cleared APU and A53 resets
+19:37:06 INFO  : Context for 'RPU' is selected.
+19:37:06 INFO  : Cleared RPU and R5 resets
+19:37:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+19:37:17 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+19:37:17 INFO  : Context for 'APU' is selected.
+19:37:27 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+19:37:27 INFO  : 'configparams force-mem-access 1' command is executed.
+19:37:27 INFO  : Context for 'APU' is selected.
+19:37:27 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+19:37:28 INFO  : 'psu_init' command is executed.
+19:37:29 INFO  : 'after 1000' command is executed.
+19:37:29 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+19:37:30 INFO  : 'after 1000' command is executed.
+19:37:30 INFO  : 'psu_ps_pl_reset_config' command is executed.
+19:37:30 INFO  : 'catch {psu_protection}' command is executed.
+19:37:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:37:31 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:37:31 INFO  : 'configparams force-mem-access 0' command is executed.
+19:37:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:37:32 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:37:32 INFO  : 'con' command is executed.
+19:37:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+19:37:32 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+10:17:50 INFO  : Disconnected from the channel tcfchan#10.
+10:17:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:17:51 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+10:17:51 INFO  : 'jtag frequency' command is executed.
+10:17:51 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+10:17:51 INFO  : Context for 'APU' is selected.
+10:17:52 INFO  : System reset is completed.
+10:17:55 INFO  : 'after 3000' command is executed.
+10:17:55 INFO  : Context for 'APU' is selected.
+10:17:56 INFO  : Cleared APU and A53 resets
+10:17:56 INFO  : Context for 'RPU' is selected.
+10:17:56 INFO  : Cleared RPU and R5 resets
+10:17:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+10:18:07 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+10:18:07 INFO  : Context for 'APU' is selected.
+10:18:19 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+10:18:19 INFO  : 'configparams force-mem-access 1' command is executed.
+10:18:19 INFO  : Context for 'APU' is selected.
+10:18:19 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+10:18:21 INFO  : 'psu_init' command is executed.
+10:18:22 INFO  : 'after 1000' command is executed.
+10:18:22 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+10:18:23 INFO  : 'after 1000' command is executed.
+10:18:23 INFO  : 'psu_ps_pl_reset_config' command is executed.
+10:18:23 INFO  : 'catch {psu_protection}' command is executed.
+10:18:23 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:18:24 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+10:18:24 INFO  : 'configparams force-mem-access 0' command is executed.
+10:18:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:18:24 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:18:24 INFO  : 'con' command is executed.
+10:18:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+10:18:25 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+10:18:40 INFO  : Disconnected from the channel tcfchan#11.
+10:18:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:42 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+10:18:42 INFO  : 'jtag frequency' command is executed.
+10:18:42 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+10:18:42 INFO  : Context for 'APU' is selected.
+10:18:43 INFO  : System reset is completed.
+10:18:46 INFO  : 'after 3000' command is executed.
+10:18:46 INFO  : Context for 'APU' is selected.
+10:18:46 INFO  : Cleared APU and A53 resets
+10:18:46 INFO  : Context for 'RPU' is selected.
+10:18:46 INFO  : Cleared RPU and R5 resets
+10:18:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+10:18:57 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+10:18:57 INFO  : Context for 'APU' is selected.
+10:19:11 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+10:19:11 INFO  : 'configparams force-mem-access 1' command is executed.
+10:19:11 INFO  : Context for 'APU' is selected.
+10:19:11 INFO  : Sourcing of 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+10:19:13 INFO  : 'psu_init' command is executed.
+10:19:14 INFO  : 'after 1000' command is executed.
+10:19:14 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+10:19:15 INFO  : 'after 1000' command is executed.
+10:19:15 INFO  : 'psu_ps_pl_reset_config' command is executed.
+10:19:15 INFO  : 'catch {psu_protection}' command is executed.
+10:19:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:19:16 INFO  : The application 'D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+10:19:16 INFO  : 'configparams force-mem-access 0' command is executed.
+10:19:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:19:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:19:16 INFO  : 'con' command is executed.
+10:19:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+10:19:16 INFO  : Launch script is exported to file 'D:\sources\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+10:22:01 INFO  : Disconnected from the channel tcfchan#12.
+11:32:29 INFO  : Launching XSCT server: xsct.bat -interactive D:\sources\daisyplus\openssd_toshiba_2ch\good\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\temp_xsdb_launch_script.tcl
+11:32:32 INFO  : XSCT server has started successfully.
+11:32:49 INFO  : Successfully done setting XSCT server connection channel  
+11:32:49 INFO  : Successfully done setting SDK workspace  
+11:32:58 INFO  : Registering command handlers for SDK TCF services
+11:33:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:33:32 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+11:33:32 INFO  : 'jtag frequency' command is executed.
+11:33:32 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+11:33:32 INFO  : Context for 'APU' is selected.
+11:33:33 INFO  : System reset is completed.
+11:33:36 INFO  : 'after 3000' command is executed.
+11:33:36 INFO  : Context for 'APU' is selected.
+11:33:36 INFO  : Cleared APU and A53 resets
+11:33:36 INFO  : Context for 'RPU' is selected.
+11:33:37 INFO  : Cleared RPU and R5 resets
+11:33:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+11:33:48 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+11:33:48 INFO  : Context for 'APU' is selected.
+11:33:48 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+11:33:48 INFO  : 'configparams force-mem-access 1' command is executed.
+11:33:48 INFO  : Context for 'APU' is selected.
+11:33:48 INFO  : Sourcing of 'D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+11:33:50 INFO  : 'psu_init' command is executed.
+11:33:51 INFO  : 'after 1000' command is executed.
+11:33:51 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+11:33:52 INFO  : 'after 1000' command is executed.
+11:33:52 INFO  : 'psu_ps_pl_reset_config' command is executed.
+11:33:52 INFO  : 'catch {psu_protection}' command is executed.
+11:33:52 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:33:53 INFO  : The application 'D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:33:53 INFO  : 'configparams force-mem-access 0' command is executed.
+11:33:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:33:53 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:33:53 INFO  : 'con' command is executed.
+11:33:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+11:33:53 INFO  : Launch script is exported to file 'D:\sources\daisyplus\openssd_toshiba_2ch\good\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+13:24:58 INFO  : Disconnected from the channel tcfchan#1.
+13:24:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:24:59 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308B09D30' is selected.
+13:24:59 INFO  : 'jtag frequency' command is executed.
+13:24:59 INFO  : Sourcing of 'C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+13:24:59 INFO  : Context for 'APU' is selected.
+13:25:00 INFO  : System reset is completed.
+13:25:03 INFO  : 'after 3000' command is executed.
+13:25:04 INFO  : Context for 'APU' is selected.
+13:25:04 INFO  : Cleared APU and A53 resets
+13:25:04 INFO  : Context for 'RPU' is selected.
+13:25:04 INFO  : Cleared RPU and R5 resets
+13:25:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0' command is executed.
+13:25:15 INFO  : FPGA configured successfully with bitstream "D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit"
+13:25:15 INFO  : Context for 'APU' is selected.
+13:25:26 INFO  : Hardware design information is loaded from 'D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf'.
+13:25:26 INFO  : 'configparams force-mem-access 1' command is executed.
+13:25:26 INFO  : Context for 'APU' is selected.
+13:25:26 INFO  : Sourcing of 'D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl' is done.
+13:25:27 INFO  : 'psu_init' command is executed.
+13:25:28 INFO  : 'after 1000' command is executed.
+13:25:28 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+13:25:29 INFO  : 'after 1000' command is executed.
+13:25:29 INFO  : 'psu_ps_pl_reset_config' command is executed.
+13:25:30 INFO  : 'catch {psu_protection}' command is executed.
+13:25:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:25:31 INFO  : The application 'D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf' is downloaded to processor 'psu_cortexa53_0'.
+13:25:31 INFO  : 'configparams force-mem-access 0' command is executed.
+13:25:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30" && level==0} -index 0
+fpga -file D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/sys_top_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+loadhw -hw D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+source D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+dow D:/sources/daisyplus/openssd_toshiba_2ch/good/daisyplus_openssd_toshiba_19.1_20220110_lpddr4/cosm-plus-sys.sdk/run-gtfl3/Debug/run-gtfl3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:25:31 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:25:31 INFO  : 'con' command is executed.
+13:25:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308B09D30"} -index 1
+con
+----------------End of Script----------------
+
+13:25:31 INFO  : Launch script is exported to file 'D:\sources\daisyplus\openssd_toshiba_2ch\good\daisyplus_openssd_toshiba_19.1_20220110_lpddr4\cosm-plus-sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_run-gtfl3.elf_on_local.tcl'
+13:27:47 INFO  : Disconnected from the channel tcfchan#2.

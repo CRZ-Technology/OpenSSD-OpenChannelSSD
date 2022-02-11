@@ -1,4 +1,4 @@
-16:39:36 **** Build of project run-gtfl3_bsp ****
+13:49:11 **** Build of project run-gtfl3_bsp ****
 make -k all 
 "Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
 make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
@@ -118,5 +118,5 @@ make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarc
 "Compiling zdma"
 'Finished building libraries'
 
-16:40:35 Build Finished (took 58s.706ms)
+13:50:07 Build Finished (took 55s.771ms)
 
