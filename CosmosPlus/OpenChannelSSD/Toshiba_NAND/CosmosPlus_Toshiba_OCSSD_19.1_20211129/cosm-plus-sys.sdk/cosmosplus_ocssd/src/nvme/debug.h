@@ -80,12 +80,6 @@ if (!(X))																\
 #define PRINT(FORMAT, ...)
 #endif
 
-#if __DEBUG
-#define PRINT(FORMAT, ...)	xil_printf(FORMAT, ## __VA_ARGS__)
-#else
-#define PRINT(FORMAT, ...)
-#endif
-
 void PRINT_PPAS(int mode, OCSSD_PHYSICAL_PAGE_ADDRESS * ppa, int numOfPPAs);
 void PRINT_PPA(int mode, OCSSD_PHYSICAL_PAGE_ADDRESS * ppa);
 void PRINT_PPA_MANUAL(int mode, unsigned int channel, unsigned int lun, unsigned int plane,

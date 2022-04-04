@@ -210,7 +210,7 @@ void InitBadBlockTable()
 				ocssdBBT[dieNo].numberOfFactoryBadBlocks += 1;
 
 			//lun1
-			remappedPhyBlock = phyBlockMapPtr->phyBlock[dieNo][blockNo+TOTAL_BLOCKS_PER_LUN].remappedPhyBlock;
+			remappedPhyBlock = phyBlockMapPtr->phyBlock[dieNo][blockNo+USER_BLOCKS_PER_LUN].remappedPhyBlock;
 			ocssdBBT[dieNo].badBlocksTableEntry[2*blockNo+1].factoryBadBlock = phyBlockMapPtr->phyBlock[dieNo][remappedPhyBlock].bad;
 			if(phyBlockMapPtr->phyBlock[dieNo][remappedPhyBlock].bad)
 				ocssdBBT[dieNo].numberOfFactoryBadBlocks += 1;
