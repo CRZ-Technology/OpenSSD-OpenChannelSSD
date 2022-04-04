@@ -86,11 +86,11 @@ void RemapBadBlock()
 
 	for(dieNo=0 ; dieNo<USER_DIES ; dieNo++)
 	{
-		reservedBlockOfLun0[dieNo] = USER_BLOCKS_PER_LUN;
+		reservedBlockOfLun0[dieNo] = NUMBER_OF_BLOCKS_PER_LUN;
 		reservedBlockOfLun1[dieNo] = TOTAL_BLOCKS_PER_LUN + USER_BLOCKS_PER_LUN;
 	}
 
-	for(blockNo=0 ; blockNo<USER_BLOCKS_PER_LUN ; blockNo++)
+	for(blockNo=0 ; blockNo<NUMBER_OF_BLOCKS_PER_LUN ; blockNo++)
 	{
 		for(dieNo=0 ; dieNo<USER_DIES ; dieNo++)
 		{
