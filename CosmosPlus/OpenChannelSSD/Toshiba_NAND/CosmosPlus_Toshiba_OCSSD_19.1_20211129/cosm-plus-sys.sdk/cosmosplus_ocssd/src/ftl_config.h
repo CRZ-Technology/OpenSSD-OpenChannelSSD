@@ -200,7 +200,7 @@
 
 //************************************************************************
 #define	BITS_PER_FLASH_CELL		(NUMBER_OF_PAGES_PER_BLOCK / PAGES_PER_SLC_BLOCK)	//user configurable factor
-#define	USER_BLOCKS_PER_LUN		NUMBER_OF_BLOCKS_PER_PLANE				//user configurable factor
+#define	USER_BLOCKS_PER_LUN		NUMBER_OF_BLOCKS_PER_LUN				//user configurable factor
 #define	USER_CHANNELS			NUMBER_OF_CHANNELS_ON_DEVICE			//user configurable factor
 #define	USER_WAYS				NUMBER_OF_LUNS_PER_CHANNEL				//user configurable factor
 //************************************************************************

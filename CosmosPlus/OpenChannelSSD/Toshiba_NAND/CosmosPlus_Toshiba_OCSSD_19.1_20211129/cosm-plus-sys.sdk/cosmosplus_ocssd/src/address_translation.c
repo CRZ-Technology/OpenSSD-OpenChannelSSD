@@ -86,11 +86,11 @@ void RemapBadBlock()
 
 	for(dieNo=0 ; dieNo<USER_DIES ; dieNo++)
 	{
-		reservedBlockOfLun0[dieNo] = NUMBER_OF_BLOCKS_PER_LUN;
+		reservedBlockOfLun0[dieNo] = USER_BLOCKS_PER_LUN;
 		reservedBlockOfLun1[dieNo] = TOTAL_BLOCKS_PER_LUN + USER_BLOCKS_PER_LUN;
 	}
 
-	for(blockNo=0 ; blockNo<NUMBER_OF_BLOCKS_PER_LUN ; blockNo++)
+	for(blockNo=0 ; blockNo<USER_BLOCKS_PER_LUN ; blockNo++)
 	{
 		for(dieNo=0 ; dieNo<USER_DIES ; dieNo++)
 		{
@@ -205,15 +205,25 @@ void InitBadBlockTable()
 		{
 			//lun0
 			remappedPhyBlock = phyBlockMapPtr->phyBlock[dieNo][blockNo].remappedPhyBlock;
-			ocssdBBT[dieNo].badBlocksTableEntry[2*blockNo].factoryBadBlock = phyBlockMapPtr->phyBlock[dieNo][remappedPhyBlock].bad;
+			if (LUNS_PER_DIE > 1)
+			{
+	    		ocssdBBT[dieNo].badBlocksTableEntry[2*blockNo].factoryBadBlock = phyBlockMapPtr->phyBlock[dieNo][remappedPhyBlock].bad;
+            }
+            else
+            {
+	    		ocssdBBT[dieNo].badBlocksTableEntry[blockNo].factoryBadBlock = phyBlockMapPtr->phyBlock[dieNo][remappedPhyBlock].bad;
+            }
 			if(phyBlockMapPtr->phyBlock[dieNo][remappedPhyBlock].bad)
 				ocssdBBT[dieNo].numberOfFactoryBadBlocks += 1;
 
-			//lun1
-			remappedPhyBlock = phyBlockMapPtr->phyBlock[dieNo][blockNo+USER_BLOCKS_PER_LUN].remappedPhyBlock;
-			ocssdBBT[dieNo].badBlocksTableEntry[2*blockNo+1].factoryBadBlock = phyBlockMapPtr->phyBlock[dieNo][remappedPhyBlock].bad;
-			if(phyBlockMapPtr->phyBlock[dieNo][remappedPhyBlock].bad)
-				ocssdBBT[dieNo].numberOfFactoryBadBlocks += 1;
+			if (LUNS_PER_DIE > 1)
+			{
+    			//lun1
+    			remappedPhyBlock = phyBlockMapPtr->phyBlock[dieNo][blockNo+USER_BLOCKS_PER_LUN].remappedPhyBlock;
+    			ocssdBBT[dieNo].badBlocksTableEntry[2*blockNo+1].factoryBadBlock = phyBlockMapPtr->phyBlock[dieNo][remappedPhyBlock].bad;
+    			if(phyBlockMapPtr->phyBlock[dieNo][remappedPhyBlock].bad)
+    				ocssdBBT[dieNo].numberOfFactoryBadBlocks += 1;
+            }
 		}
 	}
 

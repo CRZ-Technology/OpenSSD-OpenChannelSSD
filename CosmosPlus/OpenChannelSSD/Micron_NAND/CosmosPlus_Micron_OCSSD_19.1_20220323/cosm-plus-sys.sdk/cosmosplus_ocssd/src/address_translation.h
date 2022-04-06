@@ -80,7 +80,7 @@
 #define PlsbPage2VPageTranslation(pageNo) ((pageNo) > (0) ? ( ((pageNo) + 1) / 2): (0))
 
 // OCSSD physical organization to physical organization translation
-#define OcpOrgPlaneBlock2PorgBlockTranslation(planeNo, blockNo)	 ((planeNo)*(USER_BLOCKS_PER_LUN) + (blockNo))
+#define OcpOrgPlaneBlock2PorgBlockTranslation(planeNo, blockNo)	 ((planeNo)*(NUMBER_OF_BLOCKS_PER_PLANE) + (blockNo))
 
 typedef struct _BAD_BLOCK_TABLE_INFO_ENTRY{
 	unsigned int phyBlock : 16;
