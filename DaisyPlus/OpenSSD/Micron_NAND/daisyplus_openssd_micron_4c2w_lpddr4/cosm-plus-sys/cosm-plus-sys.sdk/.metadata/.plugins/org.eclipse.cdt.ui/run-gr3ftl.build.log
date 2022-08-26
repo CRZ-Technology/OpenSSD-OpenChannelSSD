@@ -1,0 +1,6 @@
+17:52:23 **** Clean-only build of configuration Debug for project run-gr3ftl ****
+make clean 
+make: *** No rule to make target 'clean'.  Stop.
+
+17:52:24 Build Finished (took 303ms)
+

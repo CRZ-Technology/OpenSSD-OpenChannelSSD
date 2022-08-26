@@ -33,3 +33,5 @@ DaisyPlus Directory
 						 
           - OpenSSD - Toshiba_NAND - LPDDR4_A - OpenSSD project w/ Toshiba NAND module on DaisyPlus board(LPDDR4_A)      
                                    - LPDDR4_B - OpenSSD project w/ Toshiba NAND module on DaisyPlus board(LPDDR4_B)
+								   
+                    - Micron_NAND - daisyplus_openssd_micron_4c2w_lpddr4 - OpenSSD project w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_B)
