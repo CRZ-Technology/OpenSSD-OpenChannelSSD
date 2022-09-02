@@ -204,7 +204,7 @@ void CompleteChildDmaReqOfNvmeIoCmd(unsigned int reqSlotTag, unsigned int cmdSlo
 				ocssdMetadataBuffer = (P_OCSSD_METADATA_BUFFER)OCSSD_METADATA_READ_ADDR;
 				MPTR[0] = reqPoolPtr->reqPool[reqSlotTag].MPTR[0];
 				MPTR[1] = reqPoolPtr->reqPool[reqSlotTag].MPTR[1];
-				set_direct_tx_dma((unsigned int)ocssdMetadataBuffer->d[cmdSlotTag], MPTR[1], MPTR[0], 4096);
+				set_direct_tx_dma((unsigned int)ocssdMetadataBuffer->d[cmdSlotTag], MPTR[1], MPTR[0], NUMBER_OF_UINT32_IN_OCSSD_METADATA * 4 * 16);
 			}
 
 			if(nvmeIoCmdCompleteTablePtr->nvmeIoCmdCompleteEntry[cmdSlotTag].fail)

@@ -181,7 +181,7 @@ void handle_ocssd_io_erase(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd, 
 	unsigned int idxOfPPAs, seqCount;
 	unsigned int fua = 1;//always 1 on Cosmos Mini OpenSSD for CB
 
-	PRINT(1, "Metadata address on host: 0x%08X_%08X\r\n", nvmeIOCmd->MPTR[1], nvmeIOCmd->MPTR[0]);
+	PRINT("Metadata address on host: 0x%08X_%08X\r\n", nvmeIOCmd->MPTR[1], nvmeIOCmd->MPTR[0]);
 	eraseInfo12.dword = nvmeIOCmd->dword12;
 	numOfPPAs = eraseInfo12.numberOfPPAs + 1;
 
@@ -240,7 +240,7 @@ void handle_ocssd_io_write(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd, 
 	unsigned int fua = 1;//always 1 on Cosmos Mini OpenSSD for CB
 	unsigned int * metadataAddr;
 
-	PRINT(1, "Metadata address on host: 0x%08X_%08X\r\n", nvmeIOCmd->MPTR[1], nvmeIOCmd->MPTR[0]);
+	PRINT("Metadata address on host: 0x%08X_%08X\r\n", nvmeIOCmd->MPTR[1], nvmeIOCmd->MPTR[0]);
 	writeInfo12.dword = nvmeIOCmd->dword12;
 	numOfPPAs = writeInfo12.numberOfPPAs + 1;
 	
@@ -308,7 +308,7 @@ void handle_ocssd_io_read(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd, N
 	unsigned int dmaStartIndex, numOfSector, idxOfPPAs, seqCount;
 	unsigned int fua = 1;//always 1 on Cosmos Mini OpenSSD for CB
 	
-	PRINT(1, "Metadata address on host: 0x%08X_%08X\r\n", nvmeIOCmd->MPTR[1], nvmeIOCmd->MPTR[0]);
+	PRINT("Metadata address on host: 0x%08X_%08X\r\n", nvmeIOCmd->MPTR[1], nvmeIOCmd->MPTR[0]);
 	readInfo12.dword = nvmeIOCmd->dword12;
 	numOfPPAs = readInfo12.numberOfPPAs + 1;
 	
@@ -375,7 +375,7 @@ void handle_nvme_io_cmd(NVME_COMMAND *nvmeCmd)
 	{
 		case IO_NVM_FLUSH:
 		{
-			PRINT(1, "IO Flush Command\r\n");
+			PRINT("IO Flush Command\r\n");
 			nvmeCPL.dword[0] = 0;
 			nvmeCPL.specific = 0x0;
 			set_auto_nvme_cpl(nvmeCmd->cmdSlotTag, nvmeCPL.specific, nvmeCPL.statusFieldWord);
@@ -383,31 +383,31 @@ void handle_nvme_io_cmd(NVME_COMMAND *nvmeCmd)
 		}
 		case IO_NVM_WRITE:
 		{
-			PRINT(1, "IO Write Command\r\n");
+			PRINT("IO Write Command\r\n");
 			handle_nvme_io_write(nvmeCmd->cmdSlotTag, nvmeIOCmd, &nvmeCPL);
 			break;
 		}
 		case IO_NVM_READ:
 		{
-			PRINT(1, "IO Read Command\r\n");
+			PRINT("IO Read Command\r\n");
 			handle_nvme_io_read(nvmeCmd->cmdSlotTag, nvmeIOCmd, &nvmeCPL);
 			break;
 		}
 		case IO_OCSSD_PHYSICAL_BLOCK_ERASE:
 		{
-			PRINT(1, "IO_OCSSD_PHYSICAL_BLOCK_ERASE\r\n");
+			PRINT("IO_OCSSD_PHYSICAL_BLOCK_ERASE\r\n");
 			handle_ocssd_io_erase(nvmeCmd->cmdSlotTag, nvmeIOCmd, &nvmeCPL);
 			break;
 		}
 		case IO_OCSSD_PHYSICAL_PAGE_ADDRESS_WRITE:
 		{
-			PRINT(1, "IO_OCSSD_PHYSICAL_PAGE_ADDRESS_WRITE\r\n");
+			PRINT("IO_OCSSD_PHYSICAL_PAGE_ADDRESS_WRITE\r\n");
 			handle_ocssd_io_write(nvmeCmd->cmdSlotTag, nvmeIOCmd, &nvmeCPL);
 			break;
 		}
 		case IO_OCSSD_PHYSICAL_PAGE_ADDRESS_READ:
 		{
-			PRINT(1, "IO_OCSSD_PHYSICAL_PAGE_ADDRESS_READ\r\n");
+			PRINT("IO_OCSSD_PHYSICAL_PAGE_ADDRESS_READ\r\n");
 			handle_ocssd_io_read(nvmeCmd->cmdSlotTag, nvmeIOCmd, &nvmeCPL);
 			break;
 		}

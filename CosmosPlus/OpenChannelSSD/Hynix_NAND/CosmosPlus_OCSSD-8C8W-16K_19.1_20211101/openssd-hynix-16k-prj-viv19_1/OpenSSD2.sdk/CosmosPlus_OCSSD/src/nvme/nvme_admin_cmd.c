@@ -524,7 +524,7 @@ void handle_ocssd_get_bad_blocks_table(NVME_ADMIN_COMMAND *nvmeAdminCmd, NVME_CO
 	prpList.PRP[0].low32 = nvmeAdminCmd->PRP1[0];
 
 	//BI: BBT Info
-	PRINT(1, "BI: PRP1 = 0x%08X_%08X, PRP2 = 0x%08X_%08X\r\n", nvmeAdminCmd->PRP1[1], nvmeAdminCmd->PRP1[0], nvmeAdminCmd->PRP2[1], nvmeAdminCmd->PRP2[0]);
+	PRINT("BI: PRP1 = 0x%08X_%08X, PRP2 = 0x%08X_%08X\r\n", nvmeAdminCmd->PRP1[1], nvmeAdminCmd->PRP1[0], nvmeAdminCmd->PRP2[1], nvmeAdminCmd->PRP2[0]);
 
 	ppa.dword[0] = nvmeAdminCmd->dword10;
 	ppa.dword[1] = nvmeAdminCmd->dword11;

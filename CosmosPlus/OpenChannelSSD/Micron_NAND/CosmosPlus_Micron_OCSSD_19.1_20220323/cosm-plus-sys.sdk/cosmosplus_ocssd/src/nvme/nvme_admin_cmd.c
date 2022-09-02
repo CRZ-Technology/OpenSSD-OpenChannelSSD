@@ -524,7 +524,7 @@ void handle_ocssd_get_bad_blocks_table(NVME_ADMIN_COMMAND *nvmeAdminCmd, NVME_CO
 	prpList.PRP[0].low32 = nvmeAdminCmd->PRP1[0];
 
 	//BI: BBT Info
-	PRINT(1, "BI: PRP1 = 0x%08X_%08X, PRP2 = 0x%08X_%08X\r\n", nvmeAdminCmd->PRP1[1], nvmeAdminCmd->PRP1[0], nvmeAdminCmd->PRP2[1], nvmeAdminCmd->PRP2[0]);
+	PRINT("BI: PRP1 = 0x%08X_%08X, PRP2 = 0x%08X_%08X\r\n", nvmeAdminCmd->PRP1[1], nvmeAdminCmd->PRP1[0], nvmeAdminCmd->PRP2[1], nvmeAdminCmd->PRP2[0]);
 
 	ppa.dword[0] = nvmeAdminCmd->dword10;
 	ppa.dword[1] = nvmeAdminCmd->dword11;
@@ -578,7 +578,7 @@ void handle_nvme_admin_cmd(NVME_COMMAND *nvmeCmd)
 		}
 		case ADMIN_IDENTIFY:
 		{
-			PRINT(1, "ADMIN_IDENTIFY\r\n");
+			PRINT("ADMIN_IDENTIFY\r\n");
 			handle_identify(nvmeAdminCmd, &nvmeCPL);
 			break;
 		}
@@ -612,19 +612,19 @@ void handle_nvme_admin_cmd(NVME_COMMAND *nvmeCmd)
 		}
 		case ADMIN_OCSSD_DEVICE_IDENTIFICATION:
 		{
-			PRINT(1, "ADMIN_OCSSD_DEVICE_IDENTIFICATION\r\n");
+			PRINT("ADMIN_OCSSD_DEVICE_IDENTIFICATION\r\n");
 			handle_ocssd_device_identification(nvmeAdminCmd, &nvmeCPL);
 			break;
 		}
 		case ADMIN_OCSSD_SET_BAD_BLOCKS_TABLE:
 		{
-			PRINT(1, "ADMIN_OCSSD_SET_BAD_BLOCKS_TABLE\r\n");
+			PRINT("ADMIN_OCSSD_SET_BAD_BLOCKS_TABLE\r\n");
 			handle_ocssd_set_bad_blocks_table(nvmeAdminCmd, &nvmeCPL);
 			break;
 		}
 		case ADMIN_OCSSD_GET_BAD_BLOCKS_TABLE:
 		{
-			PRINT(1, "ADMIN_OCSSD_GET_BAD_BLOCKS_TABLE\r\n");
+			PRINT("ADMIN_OCSSD_GET_BAD_BLOCKS_TABLE\r\n");
 			handle_ocssd_get_bad_blocks_table(nvmeAdminCmd, &nvmeCPL);
 			break;
 		}

@@ -48,7 +48,7 @@
 
 typedef struct _OCSSD_METADATA_BUFFER
 {
-	unsigned int d[128][4096 / 4];
+	unsigned int d[1024][4096 / 4];
 } OCSSD_METADATA_BUFFER, *P_OCSSD_METADATA_BUFFER;
 
 OCSSD_PHYSICAL_PAGE_ADDRESS * GetPPAs(NVME_IO_COMMAND *nvmeIOCmd, unsigned int numOfPPAs);

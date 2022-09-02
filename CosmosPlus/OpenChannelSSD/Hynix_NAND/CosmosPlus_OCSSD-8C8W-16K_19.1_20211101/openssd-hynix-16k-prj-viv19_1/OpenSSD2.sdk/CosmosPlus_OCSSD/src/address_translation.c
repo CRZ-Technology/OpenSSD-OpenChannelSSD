@@ -589,6 +589,13 @@ void TotalBlockErase()
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalBlock = blockNo;
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalPage = 0;
 
+			reqPoolPtr->reqPool[reqSlotTag].ppa.channel = reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalCh;
+			reqPoolPtr->reqPool[reqSlotTag].ppa.lun = reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalWay;
+			reqPoolPtr->reqPool[reqSlotTag].ppa.plane = blockNo / MAIN_BLOCKS_PER_LUN;
+			reqPoolPtr->reqPool[reqSlotTag].ppa.block = blockNo % MAIN_BLOCKS_PER_LUN;
+			reqPoolPtr->reqPool[reqSlotTag].ppa.page = 0;
+			reqPoolPtr->reqPool[reqSlotTag].ppa.sector = 0;
+
 			SelectLowLevelReqQ(reqSlotTag);
 		}
 
@@ -620,6 +627,13 @@ void UserBlockErase()
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalWay = Vdie2PwayTranslation(dieNo);
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalBlock = blockNo;
 			reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalPage = 0;
+
+			reqPoolPtr->reqPool[reqSlotTag].ppa.channel = reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalCh;
+			reqPoolPtr->reqPool[reqSlotTag].ppa.lun = reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalWay;
+			reqPoolPtr->reqPool[reqSlotTag].ppa.plane = blockNo / MAIN_BLOCKS_PER_LUN;
+			reqPoolPtr->reqPool[reqSlotTag].ppa.block = blockNo % MAIN_BLOCKS_PER_LUN;
+			reqPoolPtr->reqPool[reqSlotTag].ppa.page = 0;
+			reqPoolPtr->reqPool[reqSlotTag].ppa.sector = 0;
 
 			SelectLowLevelReqQ(reqSlotTag);
 		}
