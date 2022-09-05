@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Mon Sep  5 16:02:36 2022
+# Process ID: 28560
+# Current directory: J:/daisyplus_openssd_micron_4c2w_ns_20220623/cosm-plus-sys/cosm-plus-sys.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: J:/daisyplus_openssd_micron_4c2w_ns_20220623/cosm-plus-sys/cosm-plus-sys.sdk/webtalk/webtalk.log
+# Journal file: J:/daisyplus_openssd_micron_4c2w_ns_20220623/cosm-plus-sys/cosm-plus-sys.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
