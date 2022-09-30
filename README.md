@@ -4,6 +4,8 @@ CRZ Technoloy released OpenSSD / OpenChannelSSD sources on CosmosPlus, Daisy, Da
 
 CosmosPlus Directory
 
+           - DOC - documents about CosmosPlus
+
            - OpenChannelSSD - Hynix_NAND   - OpenChannelSSD source for Hynix NAND module on CosmosPlus board.
                             - Toshiba_NAND - OpenChannelSSD source for Toshiba NAND module on CosmosPlus board.
                             - Micron_NAND  - OpenChannelSSD source for Micron NAND module on CosmosPlus board.
@@ -15,13 +17,17 @@ CosmosPlus Directory
 
 Daisy Directory
 
-          - NVMe - LPDDR4 - NVMe source on Daisy board, PS LPDDR4 DRAM is used for NVMe storage(1GB).
-                 - MIG    - NVMe source on Daisy board, MIG DDR4 DIMM is used for NVMe storage(64GB).
+           - DOC - documents about Daisy
+
+           - NVMe - LPDDR4 - NVMe source on Daisy board, PS LPDDR4 DRAM is used for NVMe storage(1GB).
+                  - MIG    - NVMe source on Daisy board, MIG DDR4 DIMM is used for NVMe storage(64GB).
 		  
-          - M.2_MIG_PCIe - M.2 / MIG / PCIe test project on Daisy board
+           - M.2_MIG_PCIe - M.2 / MIG / PCIe test project on Daisy board
 		  
 		  
 DaisyPlus Directory
+
+          - DOC - documents about DaisyPlus
 
           - NVMe - LPDDR4 - LPDDR4_A - NVMe source on DaisyPlus board(LPDDR4_A), PS LPDDR4 DRAM is used for NVMe storage(1GB).
                           - LPDDR4_B - NVMe source on DaisyPlus board(LPDDR4_B), PS LPDDR4 DRAM is used for NVMe storage(1GB).
