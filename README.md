@@ -43,7 +43,9 @@ DaisyPlus Directory
 
                            - Micron_NAND - daisyplus_OCSSD_micron_4c2w_lpddr4 - OpenChannelSSD project w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_B)
                                          - daisyplus_OCSSD_micron_4c2w        - OpenChannelSSD project w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_A)
-
+                                         - daisyplus_OCSSD_micron_4c8w_lpddr4 - OpenChannelSSD project w/ Micron 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B)
+                                         - daisyplus_OCSSD_micron_4c8w        - OpenChannelSSD project w/ Micron 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_A)
+										 
           - OpenSSD - Toshiba_NAND - daisyplus_openssd_toshiba_4c8w_lpddr4 - OpenSSD project w/ Toshiba 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B)
                                    - daisyplus_openssd_toshiba_4c8w        - OpenSSD project w/ Toshiba 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_A)
                                    - daisyplus_openssd_toshiba_4c8w_ns_lpddr4 - OpenSSD project(multiple namespace) w/ Toshiba 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B)
@@ -53,3 +55,7 @@ DaisyPlus Directory
                                   - daisyplus_openssd_micron_4c2w        - OpenSSD project w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_A)
                                   - daisyplus_openssd_micron_4c2w_ns_lpddr4 - OpenSSD project(multiple namespace) w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_B)
                                   - daisyplus_openssd_micron_4c2w_ns        - OpenSSD project(multiple namespace) w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_A)
+                                  - daisyplus_openssd_micron_4c8w_lpddr4 - OpenSSD project w/ Micron 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B)
+                                  - daisyplus_openssd_micron_4c8w        - OpenSSD project w/ Micron 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_A)
+                                  - daisyplus_openssd_micron_4c8w_ns_lpddr4 - OpenSSD project(multiple namespace) w/ Micron 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B)
+                                  - daisyplus_openssd_micron_4c8w_ns        - OpenSSD project(multiple namespace) w/ Micron 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_A)
