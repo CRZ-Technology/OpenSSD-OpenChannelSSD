@@ -38,6 +38,9 @@ DaisyPlus Directory
                          - LPDDR4_B - M.2 / MIG / PCIe test project on DaisyPlus board(LPDDR4_B)
 
           - OpenChannelSSD - pci.c - patch of drivers/nvme/host/pci.c on linux-kernel-4.16.18 to support OCSSD v1.2
+                           - Toshiba_NAND - daisyplus_OCSSD_toshiba_4c8w_lpddr4 - OpenChannelSSD project w/ Tosihba 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B)
+                                          - daisyplus_OCSSD_toshiba_4c8w        - OpenChannelSSD project w/ Toshiba 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_A)
+
                            - Micron_NAND - daisyplus_OCSSD_micron_4c2w_lpddr4 - OpenChannelSSD project w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_B)
                                          - daisyplus_OCSSD_micron_4c2w        - OpenChannelSSD project w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_A)
 
