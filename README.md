@@ -41,7 +41,8 @@ DaisyPlus Directory
                                      - SI5395P - NVMe source on DaisyPlus board(LPDDR4_B & SI5395P), MIG DDR4 DIMM is used for NVMe storage(64GB).
 
           - M.2_MIG_PCIe - LPDDR4_A - M.2 / MIG / PCIe test project on DaisyPlus board(LPDDR4_A)      
-                         - LPDDR4_B - M.2 / MIG / PCIe test project on DaisyPlus board(LPDDR4_B)
+                         - LPDDR4_B - SI5391B - M.2 / MIG / PCIe test project on DaisyPlus board(LPDDR4_B)
+                                    - SI5395P - M.2 / MIG / PCIe test project on DaisyPlus board(LPDDR4_B)
 
           - OpenChannelSSD - pci.c - patch of drivers/nvme/host/pci.c on linux-kernel-4.16.18 to support OCSSD v1.2
                            - Toshiba_NAND - daisyplus_OCSSD_toshiba_4c8w_lpddr4 - OpenChannelSSD project w/ Tosihba 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B)

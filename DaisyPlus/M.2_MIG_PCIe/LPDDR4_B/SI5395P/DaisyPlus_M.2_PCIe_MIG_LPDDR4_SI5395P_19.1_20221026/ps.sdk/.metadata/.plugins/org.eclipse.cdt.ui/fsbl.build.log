@@ -1,0 +1,7 @@
+17:05:31 **** Clean-only build of configuration Debug for project fsbl ****
+make clean 
+rm -rf  ./src/psu_init.o ./src/xfsbl_authentication.o ./src/xfsbl_board.o ./src/xfsbl_bs.o ./src/xfsbl_csu_dma.o ./src/xfsbl_ddr_init.o ./src/xfsbl_dfu_util.o ./src/xfsbl_exit.o ./src/xfsbl_handoff.o ./src/xfsbl_hooks.o ./src/xfsbl_image_header.o ./src/xfsbl_initialization.o ./src/xfsbl_main.o ./src/xfsbl_misc.o ./src/xfsbl_misc_drivers.o ./src/xfsbl_nand.o ./src/xfsbl_partition_load.o ./src/xfsbl_plpartition_valid.o ./src/xfsbl_qspi.o ./src/xfsbl_rsa_sha.o ./src/xfsbl_sd.o ./src/xfsbl_translation_table.o ./src/xfsbl_usb.o  ./src/xfsbl_exit.d ./src/xfsbl_translation_table.d  ./src/psu_init.d ./src/xfsbl_authentication.d ./src/xfsbl_board.d ./src/xfsbl_bs.d ./src/xfsbl_csu_dma.d ./src/xfsbl_ddr_init.d ./src/xfsbl_dfu_util.d ./src/xfsbl_handoff.d ./src/xfsbl_hooks.d ./src/xfsbl_image_header.d ./src/xfsbl_initialization.d ./src/xfsbl_main.d ./src/xfsbl_misc.d ./src/xfsbl_misc_drivers.d ./src/xfsbl_nand.d ./src/xfsbl_partition_load.d ./src/xfsbl_plpartition_valid.d ./src/xfsbl_qspi.d ./src/xfsbl_rsa_sha.d ./src/xfsbl_sd.d ./src/xfsbl_usb.d  fsbl.elf.size  fsbl.elf
+' '
+
+17:05:32 Build Finished (took 416ms)
+

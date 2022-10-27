@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Y:\project\daisy_20191\project-spec\image\QSPI_image" key="dump_restore_files_selection"/>
+	<item value="Y:\uboot_git" key="tcf_debug_app_selection"/>
+	<item value="Y:\project\daisy_20191\project-spec\image\QSPI_image" key="zynq_flash_files_selection"/>
+	<item value="Y:\project\daisy_20191\project-spec\image\QSPI_image" key="last_stored_selection"/>
+</section>

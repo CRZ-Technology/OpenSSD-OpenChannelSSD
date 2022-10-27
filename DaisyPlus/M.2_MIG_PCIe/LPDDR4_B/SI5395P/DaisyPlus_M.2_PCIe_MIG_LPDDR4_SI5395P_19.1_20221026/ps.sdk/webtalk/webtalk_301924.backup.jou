@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Mon Jul 19 18:56:41 2021
+# Process ID: 301924
+# Current directory: C:/Xilinx/DaisyPlus/DaisyPlus_M.2_PCIe_MIG_NEW_LPDDR4_201901_20210719/ps.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Xilinx/DaisyPlus/DaisyPlus_M.2_PCIe_MIG_NEW_LPDDR4_201901_20210719/ps.sdk/webtalk/webtalk.log
+# Journal file: C:/Xilinx/DaisyPlus/DaisyPlus_M.2_PCIe_MIG_NEW_LPDDR4_201901_20210719/ps.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
