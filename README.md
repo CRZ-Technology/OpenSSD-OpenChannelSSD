@@ -37,7 +37,8 @@ DaisyPlus Directory
           - NVMe - LPDDR4 - LPDDR4_A - NVMe source on DaisyPlus board(LPDDR4_A), PS LPDDR4 DRAM is used for NVMe storage(1GB).
                           - LPDDR4_B - NVMe source on DaisyPlus board(LPDDR4_B), PS LPDDR4 DRAM is used for NVMe storage(1GB).
                  - MIG    - LPDDR4_A - NVMe source on DaisyPlus board(LPDDR4_A), MIG DDR4 DIMM is used for NVMe storage(64GB).
-                          - LPDDR4_B - NVMe source on DaisyPlus board(LPDDR4_B), MIG DDR4 DIMM is used for NVMe storage(64GB).
+                          - LPDDR4_B - SI5391B - NVMe source on DaisyPlus board(LPDDR4_B & SI5391B), MIG DDR4 DIMM is used for NVMe storage(64GB).
+                                     - SI5395P - NVMe source on DaisyPlus board(LPDDR4_B & SI5395P), MIG DDR4 DIMM is used for NVMe storage(64GB).
 
           - M.2_MIG_PCIe - LPDDR4_A - M.2 / MIG / PCIe test project on DaisyPlus board(LPDDR4_A)      
                          - LPDDR4_B - M.2 / MIG / PCIe test project on DaisyPlus board(LPDDR4_B)
