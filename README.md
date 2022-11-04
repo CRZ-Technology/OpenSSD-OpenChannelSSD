@@ -50,6 +50,8 @@ DaisyPlus Directory
 										 
           - OpenSSD - Hynix_NAND   - daisyplus_openssd_hynix_4c8w_lpddr4 - OpenSSD project w/ Hynix 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B) 
                                    - daisyplus_openssd_hynix_4c8w        - OpenSSD project w/ Hynix 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_A) 
+                                   - daisyplus_openssd_hynix_4c8w_ns_lpddr4 - OpenSSD project(multiple namespace) w/ Hynix 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B)
+                                   - daisyplus_openssd_hynix_4c8w_ns        - OpenSSD project(multiple namespace) w/ Hynix 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_A)
 
                     - Toshiba_NAND - daisyplus_openssd_toshiba_4c8w_lpddr4 - OpenSSD project w/ Toshiba 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B)
                                    - daisyplus_openssd_toshiba_4c8w        - OpenSSD project w/ Toshiba 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_A)

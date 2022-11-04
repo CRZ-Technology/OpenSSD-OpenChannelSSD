@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/cosm-plus-sys/cosm-plus-sys.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1024001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="248"></NameColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="u_ila_0_rDQI_cur_state_reg[1]_0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_rDQI_cur_state_reg[1]_0[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_rDQI_cur_state_reg[1]_0[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_rDQI_nxt_state__0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_rDQI_nxt_state__0[8:1]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_rDQI_nxt_state__0[8:1]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_rDQI_cur_state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_rDQI_cur_state[8:2]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_rDQI_cur_state[8:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_rDQO_cur_state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_rDQO_cur_state[6:1]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_rDQO_cur_state[6:1]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_rDQO_nxt_state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_rDQO_nxt_state[4:4]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_rDQO_nxt_state[4:4]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_rDQO_nxt_state__0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_rDQO_nxt_state__0[6:1]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_rDQO_nxt_state__0[6:1]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_rREC_cur_state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_rREC_cur_state[7:2]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_rREC_cur_state[7:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/rPI_ValidFlag" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/rPI_ValidFlag[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rPI_ValidFlag[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_rREC_cur_state_reg[1]_0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_rREC_cur_state_reg[1]_0[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_rREC_cur_state_reg[1]_0[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_rREC_nxt_state__0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_rREC_nxt_state__0[7:1]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_rREC_nxt_state__0[7:1]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/PM_DI_DQ_Buffer/wea" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/PM_DI_DQ_Buffer/wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/wPO_DQ_PM_PHY" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/wPO_DQ_PM_PHY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wPO_DQ_PM_PHY[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[3]" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[3][0:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_CE[3][0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_ALE" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_ALE[0:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_ALE[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_WE" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_WE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_WE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[6]" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[6][0:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_CE[6][0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_RE_P" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_RE_P[2:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_RE_P[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSIOBUFDS" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSIOBUFDS[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Inst_DQSIOBUFDS[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[4]" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[4][0:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_CE[4][0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[5]" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[5][0:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_CE[5][0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[0]" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[0][0:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_CE[0][0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[7]" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[7][0:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_CE[7][0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[2]" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[2][0:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_CE[2][0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[1]" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[1][0:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_CE[1][0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CLE" type="array">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CLE[0:0]</obj_property>
+      <obj_property name="ObjectShortName">O_NAND_CLE[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/rDQSOut_IOBUF_T" type="logic">
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/rDQSOut_IOBUF_T</obj_property>
+      <obj_property name="ObjectShortName">rDQSOut_IOBUF_T</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_wDQOutEnable_PM_PHY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_wDQOutEnable_PM_PHY</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_wDQOutEnable_PM_PHY</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/wPI_BUFF_WE_PM_PHY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/wPI_BUFF_WE_PM_PHY</obj_property>
+      <obj_property name="ObjectShortName">wPI_BUFF_WE_PM_PHY</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/rIn_Counter_Sync" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/rIn_Counter_Sync[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rIn_Counter_Sync[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>
