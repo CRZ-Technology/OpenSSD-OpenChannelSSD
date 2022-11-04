@@ -49,6 +49,7 @@ DaisyPlus Directory
                                          - daisyplus_OCSSD_micron_4c2w        - OpenChannelSSD project w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_A)
 										 
           - OpenSSD - Hynix_NAND   - daisyplus_openssd_hynix_4c8w_lpddr4 - OpenSSD project w/ Hynix 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B) 
+                                   - daisyplus_openssd_hynix_4c8w        - OpenSSD project w/ Hynix 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_A) 
 
                     - Toshiba_NAND - daisyplus_openssd_toshiba_4c8w_lpddr4 - OpenSSD project w/ Toshiba 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_B)
                                    - daisyplus_openssd_toshiba_4c8w        - OpenSSD project w/ Toshiba 4Channel 8Way NAND module on DaisyPlus board(LPDDR4_A)
