@@ -9,7 +9,6 @@ CosmosPlus Directory
            - OpenChannelSSD - Hynix_NAND   - CosmosPlus_OCSSD_Hynix_8C8W_19.1   - OpenChannelSSD project w/ Hynix 8Channel 8Way NAND module on CosmosPlus board.
                             - Toshiba_NAND - CosmosPlus_OCSSD_Toshiba_8C8W_19.1 - OpenChannelSSD project w/ Toshiba 8Channel 8Way NAND module on CosmosPlus board.
                             - Micron_NAND  - CosmosPlus_OCSSD_Micron_8C2W_19.1  - OpenChannelSSD project w/ Micron 8Channel 2Way NAND module on CosmosPlus board.
-                                           - CosmosPlus_OCSSD_Micron_8C8W_19.1  - OpenChannelSSD project w/ Micron 8Channel 8Way NAND module on CosmosPlus board.
 
            - OpenSSD - Hynix_NAND   - CosmosPlus_OpenSSD_Hynix_8C8W_19.1      - OpenSSD project w/ Hynix 8Channel 8Way NAND module on CosmosPlus board.
                                     - CosmosPlus_OpenSSD_Hynix_8C8W_19.1_ns   - OpenSSD project(multiple namespace) w/ Hynix 8Channel 8Way NAND module on CosmosPlus board.
