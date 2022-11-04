@@ -1,6 +1,0 @@
-15:05:30 **** Clean-only build of configuration Debug for project cosmosplus_ocssd ****
-make clean 
-make: *** No rule to make target 'clean'.  Stop.
-
-15:05:31 Build Finished (took 432ms)
-

@@ -1,6 +1,0 @@
-15:23:43 **** Clean-only build of configuration Debug for project run-gftl3 ****
-make clean 
-make: *** No rule to make target 'clean'.  Stop.
-
-15:23:44 Build Finished (took 482ms)
-
