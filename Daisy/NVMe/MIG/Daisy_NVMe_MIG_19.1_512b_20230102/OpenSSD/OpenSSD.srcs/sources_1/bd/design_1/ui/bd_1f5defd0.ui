@@ -1,0 +1,68 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port pci_exp_0 -pg 1 -lvl 6 -x 2210 -y 420 -defaultsOSRD
+preplace port pcie_ref -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port ddr4_rtl_0 -pg 1 -lvl 6 -x 2210 -y 620 -defaultsOSRD
+preplace port ddr4_rtl_1 -pg 1 -lvl 6 -x 2210 -y 860 -defaultsOSRD
+preplace port diff_clock_rtl_2 -pg 1 -lvl 0 -x 0 -y 640 -defaultsOSRD
+preplace port diff_clock_rtl_3 -pg 1 -lvl 0 -x 0 -y 880 -defaultsOSRD
+preplace port user_lnk_up_0 -pg 1 -lvl 6 -x 2210 -y 460 -defaultsOSRD
+preplace port pcie_perst_n -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace port c0_init_calib_complete_0 -pg 1 -lvl 6 -x 2210 -y 650 -defaultsOSRD
+preplace port c0_init_calib_complete_1 -pg 1 -lvl 6 -x 2210 -y 890 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 4 -x 1580 -y 200 -defaultsOSRD
+preplace inst rst_ps8_0_187M -pg 1 -lvl 3 -x 1040 -y 200 -defaultsOSRD
+preplace inst rst_ps8_0_249M -pg 1 -lvl 1 -x 200 -y 780 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 560 -y 510 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 3 -x 1040 -y 480 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 2 -x 560 -y 720 -defaultsOSRD
+preplace inst ddr4_0 -pg 1 -lvl 5 -x 1980 -y 680 -defaultsOSRD
+preplace inst ddr4_1 -pg 1 -lvl 5 -x 1980 -y 920 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 1040 -y 1160 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 560 -y 1140 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 3 -x 1040 -y 1360 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 2 -x 560 -y 1340 -defaultsOSRD
+preplace inst nvme_ctrl_0 -pg 1 -lvl 5 -x 1980 -y 430 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk2 1 2 3 750 650 1350 420 1780J
+preplace netloc zynq_ultra_ps_e_0_pl_clk3 1 0 5 30 680 390 590 740 660 1430 450 N
+preplace netloc nvme_ctrl_0_dev_irq_assert 1 1 5 400 580 710J 680 NJ 680 1730J 310 2170
+preplace netloc xlconcat_0_dout 1 2 1 NJ 510
+preplace netloc nvme_ctrl_0_user_lnk_up 1 5 1 NJ 460
+preplace netloc rst_ps8_0_187M_peripheral_aresetn 1 3 2 1380 430 NJ
+preplace netloc rst_ps8_0_249M_peripheral_aresetn 1 1 4 380 610 730J 630 1410J 470 N
+preplace netloc pcie_perst_n_0_1 1 0 5 NJ 310 NJ 310 NJ 310 1370J 490 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_resetn2 1 2 2 700 90 1330
+preplace netloc zynq_ultra_ps_e_0_pl_resetn3 1 0 4 20 600 NJ 600 700J 670 1330
+preplace netloc ddr4_0_c0_init_calib_complete 1 5 1 2190J 640n
+preplace netloc ddr4_1_c0_init_calib_complete 1 5 1 2190J 880n
+preplace netloc rst_ps8_0_249M_peripheral_reset 1 1 4 370 800 NJ 800 NJ 800 1790
+preplace netloc ddr4_0_c0_ddr4_ui_clk 1 2 4 750 700 1390 410 1740J 300 2180
+preplace netloc ddr4_1_c0_ddr4_ui_clk_sync_rst 1 1 5 400 1260 NJ 1260 NJ 1260 NJ 1260 2160
+preplace netloc util_vector_logic_0_Res 1 2 1 NJ 1140
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 2 1420 700 NJ
+preplace netloc ddr4_1_c0_ddr4_ui_clk 1 2 4 740 690 1400 550 NJ 550 2170
+preplace netloc util_vector_logic_1_Res 1 2 1 NJ 1340
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 3 2 1440 940 NJ
+preplace netloc C0_SYS_CLK_0_1 1 0 5 NJ 640 NJ 640 NJ 640 NJ 640 NJ
+preplace netloc nvme_ctrl_0_pci_exp 1 5 1 NJ 420
+preplace netloc C0_SYS_CLK_1_1 1 0 5 NJ 880 NJ 880 NJ 880 NJ 880 NJ
+preplace netloc ps8_0_axi_periph_M02_AXI 1 4 1 1770 200n
+preplace netloc nvme_ctrl_0_m0_axi 1 1 5 400 620 NJ 620 NJ 620 1800J 560 2160
+preplace netloc ps8_0_axi_periph_M00_AXI 1 4 1 1800 160n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 3 1 1340 60n
+preplace netloc ddr4_1_C0_DDR4 1 5 1 NJ 860
+preplace netloc smartconnect_0_M00_AXI 1 2 1 720 450n
+preplace netloc ddr4_0_C0_DDR4 1 5 1 NJ 620
+preplace netloc pcie_ref_0_1 1 0 5 NJ 100 NJ 100 NJ 100 1360J 400 1750J
+preplace netloc ps8_0_axi_periph_M04_AXI 1 4 1 1720 240n
+preplace netloc ps8_0_axi_periph_M01_AXI 1 4 1 1790 180n
+preplace netloc ps8_0_axi_periph_M03_AXI 1 4 1 1760 220n
+levelinfo -pg 1 0 200 560 1040 1580 1980 2210
+pagesize -pg 1 -db -bbox -sgen -150 0 2420 1460
+"
+}
+{
+   "da_axi4_cnt":"2"
+}
