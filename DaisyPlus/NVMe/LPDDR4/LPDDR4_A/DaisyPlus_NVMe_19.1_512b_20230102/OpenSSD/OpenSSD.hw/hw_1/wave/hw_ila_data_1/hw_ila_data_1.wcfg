@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/sources/DaisyPlus/NVMe/DaisyPlus_NVMe_19.1_20221115_512bit/OpenSSD/OpenSSD.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2258450fs"></ZoomStartTime>
+      <ZoomEndTime time="2281271fs"></ZoomEndTime>
+      <Cursor1Time time="2283000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="274"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="117" />
+   <wave_markers>
+      <marker time="4011000" label="" />
+      <marker time="2745000" label="" />
+      <marker time="3187000" label="" />
+      <marker time="3490000" label="" />
+      <marker time="3737000" label="" />
+      <marker time="3861000" label="" />
+      <marker time="1617000" label="" />
+      <marker time="516000" label="" />
+      <marker time="1725000" label="" />
+      <marker time="1732000" label="" />
+      <marker time="1733000" label="" />
+      <marker time="1173000" label="" />
+      <marker time="1063000" label="" />
+      <marker time="623000" label="" />
+   </wave_markers>
+   <wvobject fp_name="m_axis_rc_tdata2" type="array">
+      <obj_property name="ElementShortName">m_axis_rc_tdata2[511:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rc_tdata2[511:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/m_axis_rc_tkeep" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/m_axis_rc_tkeep[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rc_tkeep[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/m_axis_rc_tvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/m_axis_rc_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rc_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/m_axis_rc_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/m_axis_rc_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rc_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/m_axis_rc_tready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/m_axis_rc_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rc_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="s_axis_rq_tdata1" type="array">
+      <obj_property name="ElementShortName">s_axis_rq_tdata1[511:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_rq_tdata1[511:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="s_axis_rq_tkeep1" type="array">
+      <obj_property name="ElementShortName">s_axis_rq_tkeep1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_rq_tkeep1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_s_axis_rq_tvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_s_axis_rq_tvalid</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_s_axis_rq_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_s_axis_rq_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_s_axis_rq_tlast</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_s_axis_rq_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_s_axis_rq_tready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_s_axis_rq_tready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_s_axis_rq_tready[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/cur_state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/cur_state[19:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_state[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_1st_4b_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_1st_4b_len[12:2]</obj_property>
+      <obj_property name="ObjectShortName">r_1st_4b_len[12:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_1st_mrd_need" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_1st_mrd_need</obj_property>
+      <obj_property name="ObjectShortName">r_1st_mrd_need</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_1st_prp_4b_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_1st_prp_4b_len[12:2]</obj_property>
+      <obj_property name="ObjectShortName">r_1st_prp_4b_len[12:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_2nd_4b_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_2nd_4b_len[12:2]</obj_property>
+      <obj_property name="ObjectShortName">r_2nd_4b_len[12:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_2nd_mrd_need" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_2nd_mrd_need</obj_property>
+      <obj_property name="ObjectShortName">r_2nd_mrd_need</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_2nd_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_2nd_valid</obj_property>
+      <obj_property name="ObjectShortName">r_2nd_valid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_addr[31:2]</obj_property>
+      <obj_property name="ObjectShortName">r_dev_addr[31:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_cmd_wr_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_cmd_wr_data[29:0]</obj_property>
+      <obj_property name="ObjectShortName">r_dev_cmd_wr_data[29:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_cmd_wr_data_sel" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_cmd_wr_data_sel[3:2]</obj_property>
+      <obj_property name="ObjectShortName">r_dev_cmd_wr_data_sel[3:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_dma_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_dma_len[12:2]</obj_property>
+      <obj_property name="ObjectShortName">r_dev_dma_len[12:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_rx_cmd_wr_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_rx_cmd_wr_en</obj_property>
+      <obj_property name="ObjectShortName">r_dev_rx_cmd_wr_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_tx_cmd_wr_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dev_tx_cmd_wr_en</obj_property>
+      <obj_property name="ObjectShortName">r_dev_tx_cmd_wr_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dma_cmd_auto_cpl" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dma_cmd_auto_cpl</obj_property>
+      <obj_property name="ObjectShortName">r_dma_cmd_auto_cpl</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dma_cmd_dir" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dma_cmd_dir</obj_property>
+      <obj_property name="ObjectShortName">r_dma_cmd_dir</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dma_cmd_rd_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dma_cmd_rd_en</obj_property>
+      <obj_property name="ObjectShortName">r_dma_cmd_rd_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dma_cmd_type" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_dma_cmd_type</obj_property>
+      <obj_property name="ObjectShortName">r_dma_cmd_type</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_hcmd_nlb" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_hcmd_nlb[8:0]</obj_property>
+      <obj_property name="ObjectShortName">r_hcmd_nlb[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_hcmd_prp_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_hcmd_prp_1[47:12]</obj_property>
+      <obj_property name="ObjectShortName">r_hcmd_prp_1[47:12]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_hcmd_prp_2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_hcmd_prp_2[47:2]</obj_property>
+      <obj_property name="ObjectShortName">r_hcmd_prp_2[47:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_hcmd_prp_rd_sel" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_hcmd_prp_rd_sel</obj_property>
+      <obj_property name="ObjectShortName">r_hcmd_prp_rd_sel</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_hcmd_slot_tag" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_hcmd_slot_tag[9:0]</obj_property>
+      <obj_property name="ObjectShortName">r_hcmd_slot_tag[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_mrd_tag_update" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_mrd_tag_update</obj_property>
+      <obj_property name="ObjectShortName">r_mrd_tag_update</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_cmd_wr_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_cmd_wr_data[45:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_cmd_wr_data[45:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_cmd_wr_data_sel" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_cmd_wr_data_sel[3:2]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_cmd_wr_data_sel[3:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_cmd_wr_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_cmd_wr_en</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_cmd_wr_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_mrd_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_mrd_len[4:3]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_mrd_len[4:3]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_rcb" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_rcb</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_rcb</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_rcb_cross" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_pcie_rcb_cross</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_rcb_cross</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_prp2_type" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_prp2_type</obj_property>
+      <obj_property name="ObjectShortName">r_prp2_type</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_prp_4b_offset" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_prp_4b_offset[11:2]</obj_property>
+      <obj_property name="ObjectShortName">r_prp_4b_offset[11:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_prp_offset" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_prp_offset[8:0]</obj_property>
+      <obj_property name="ObjectShortName">r_prp_offset[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_prp_offset_is_0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_prp_offset_is_0</obj_property>
+      <obj_property name="ObjectShortName">r_prp_offset_is_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_tx_prp_mrd_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_tx_prp_mrd_addr[47:2]</obj_property>
+      <obj_property name="ObjectShortName">r_tx_prp_mrd_addr[47:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_tx_prp_mrd_tag" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/r_tx_prp_mrd_tag[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_tx_prp_mrd_tag[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/w_2nd_mrd_need" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/w_2nd_mrd_need</obj_property>
+      <obj_property name="ObjectShortName">w_2nd_mrd_need</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/w_dev_cmd_full_n" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/w_dev_cmd_full_n</obj_property>
+      <obj_property name="ObjectShortName">w_dev_cmd_full_n</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/w_dma_cmd_rd_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/w_dma_cmd_rd_data[55:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dma_cmd_rd_data[55:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/w_tx_mrd1_req_ack" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/dma_cmd_gen_inst0/w_tx_mrd1_req_ack</obj_property>
+      <obj_property name="ObjectShortName">w_tx_mrd1_req_ack</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/cur_state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/cur_state[14:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_state[14:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_1st_4b_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_1st_4b_len[12:2]</obj_property>
+      <obj_property name="ObjectShortName">r_1st_4b_len[12:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_1st_mrd_need" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_1st_mrd_need</obj_property>
+      <obj_property name="ObjectShortName">r_1st_mrd_need</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_2nd_4b_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_2nd_4b_len[12:2]</obj_property>
+      <obj_property name="ObjectShortName">r_2nd_4b_len[12:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_2nd_mrd_need" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_2nd_mrd_need</obj_property>
+      <obj_property name="ObjectShortName">r_2nd_mrd_need</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_2nd_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_2nd_valid</obj_property>
+      <obj_property name="ObjectShortName">r_2nd_valid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_dma_cmd_auto_cpl" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_dma_cmd_auto_cpl</obj_property>
+      <obj_property name="ObjectShortName">r_dma_cmd_auto_cpl</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_dma_cmd_dir" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_dma_cmd_dir</obj_property>
+      <obj_property name="ObjectShortName">r_dma_cmd_dir</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_dma_cmd_type" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_dma_cmd_type</obj_property>
+      <obj_property name="ObjectShortName">r_dma_cmd_type</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_hcmd_prp_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_hcmd_prp_1[47:2]</obj_property>
+      <obj_property name="ObjectShortName">r_hcmd_prp_1[47:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_hcmd_prp_2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_hcmd_prp_2[47:2]</obj_property>
+      <obj_property name="ObjectShortName">r_hcmd_prp_2[47:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_hcmd_slot_tag" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_hcmd_slot_tag[9:0]</obj_property>
+      <obj_property name="ObjectShortName">r_hcmd_slot_tag[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_cmd_rd_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_cmd_rd_en</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_cmd_rd_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_cmd_wr_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_cmd_wr_data[45:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_cmd_wr_data[45:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_cmd_wr_data_sel" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_cmd_wr_data_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_cmd_wr_data_sel[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_rcb_cross" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_rcb_cross</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_rcb_cross</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_rx_cmd_wr_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_rx_cmd_wr_en</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_rx_cmd_wr_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_tx_cmd_wr_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_pcie_tx_cmd_wr_en</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_tx_cmd_wr_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_prp_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_prp_1[63:2]</obj_property>
+      <obj_property name="ObjectShortName">r_prp_1[63:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_prp_2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_prp_2[63:2]</obj_property>
+      <obj_property name="ObjectShortName">r_prp_2[63:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_prp_fifo_free_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_prp_fifo_free_en</obj_property>
+      <obj_property name="ObjectShortName">r_prp_fifo_free_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_prp_fifo_rd_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/r_prp_fifo_rd_en</obj_property>
+      <obj_property name="ObjectShortName">r_prp_fifo_rd_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/w_pcie_cmd_full_n" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/w_pcie_cmd_full_n</obj_property>
+      <obj_property name="ObjectShortName">w_pcie_cmd_full_n</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/w_pcie_cmd_rd_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_dma_cmd_gen_inst0/w_pcie_cmd_rd_data[45:0]</obj_property>
+      <obj_property name="ObjectShortName">w_pcie_cmd_rd_data[45:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/r_front_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/r_front_addr[5:5]</obj_property>
+      <obj_property name="ObjectShortName">r_front_addr[5:5]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/r_front_addr_p1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/r_front_addr_p1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_front_addr_p1[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/r_front_empty_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/r_front_empty_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_front_empty_addr[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/w_front_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/w_front_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_front_addr[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/w_invalid_space" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/w_invalid_space[5:0]</obj_property>
+      <obj_property name="ObjectShortName">w_invalid_space[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/w_valid_space" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_fifo_inst0/w_valid_space[5:0]</obj_property>
+      <obj_property name="ObjectShortName">w_valid_space[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_alloc_base_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_alloc_base_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_alloc_base_addr[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_cpld_fifo_tag_last" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_cpld_fifo_tag_last</obj_property>
+      <obj_property name="ObjectShortName">r_cpld_fifo_tag_last</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_cpld_fifo_wr_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_cpld_fifo_wr_data[511:0]</obj_property>
+      <obj_property name="ObjectShortName">r_cpld_fifo_wr_data[511:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_cpld_fifo_wr_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_cpld_fifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">r_cpld_fifo_wr_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_fifo_wr_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_fifo_wr_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_fifo_wr_addr[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_alloc_mask" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_alloc_mask[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_tag_alloc_mask[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_free_mask" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_free_mask[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_tag_free_mask[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_front" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_front[6:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_tag_front[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_hit" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_hit[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_tag_hit[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_invalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_invalid[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_tag_invalid[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_invalid_mask" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_invalid_mask[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_tag_invalid_mask[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_rear" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_rear[6:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_tag_rear[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_update_mask" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_update_mask[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_tag_update_mask[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_valid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_pcie_tag_valid[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_tag_valid[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_rear_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/r_rear_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_rear_addr[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/w_cpld1_fifo_tag_last" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/w_cpld1_fifo_tag_last</obj_property>
+      <obj_property name="ObjectShortName">w_cpld1_fifo_tag_last</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/w_cpld1_fifo_wr_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/w_cpld1_fifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">w_cpld1_fifo_wr_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/w_pcie_tag_hit" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/dma_if_inst0/dma_cmd_inst0/pcie_prp_rx_tag_inst0/w_pcie_tag_hit[5:0]</obj_property>
+      <obj_property name="ObjectShortName">w_pcie_tag_hit[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/pcie_tans_if_inst0/pcie_rx_inst0/pcie_rx_recv_inst0/r_pcie_cpld_err" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/nvme_ctrl_0/inst/user_top_inst0/nvme_pcie_inst0/pcie_tans_if_inst0/pcie_rx_inst0/pcie_rx_recv_inst0/r_pcie_cpld_err</obj_property>
+      <obj_property name="ObjectShortName">r_pcie_cpld_err</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_4k_offset" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_4k_offset[8:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_4k_offset[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_dev_cmd_wr_data_sel" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_dev_cmd_wr_data_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_dev_cmd_wr_data_sel[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_front_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_front_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_front_addr[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_hcmd_prp_1[2]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_hcmd_prp_1[2]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_hcmd_prp_1[2]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_hcmd_prp_1[3]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_hcmd_prp_1[3]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_hcmd_prp_1[3]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_hcmd_prp_1[4]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_hcmd_prp_1[4]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_hcmd_prp_1[4]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_hcmd_prp_1[5]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_hcmd_prp_1[5]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_hcmd_prp_1[5]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_hcmd_prp_1[6]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_hcmd_prp_1[6]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_hcmd_prp_1[6]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_hcmd_prp_1[7]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_hcmd_prp_1[7]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_hcmd_prp_1[7]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_hcmd_prp_1[8]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_hcmd_prp_1[8]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_hcmd_prp_1[8]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_hcmd_prp_1[9]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_hcmd_prp_1[9]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_hcmd_prp_1[9]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_hcmd_prp_1[10]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_hcmd_prp_1[10]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_hcmd_prp_1[10]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_hcmd_prp_1[11]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_hcmd_prp_1[11]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_hcmd_prp_1[11]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_pcie_cmd_wr_data_sel[0]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_pcie_cmd_wr_data_sel[0]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_pcie_cmd_wr_data_sel[0]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_pcie_cmd_wr_data_sel[1]_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_pcie_cmd_wr_data_sel[1]_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_pcie_cmd_wr_data_sel[1]_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_prp_pcie_alloc" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_prp_pcie_alloc</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_prp_pcie_alloc</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_r_tx_prp_mrd_req" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_r_tx_prp_mrd_req</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_r_tx_prp_mrd_req</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_w_4b_offset" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_w_4b_offset[20:2]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_w_4b_offset[20:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_w_invalid_front_addr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_w_invalid_front_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_w_invalid_front_addr[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

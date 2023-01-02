@@ -1,0 +1,6 @@
+02:16:05 **** Auto Build of configuration Debug for project fsbl ****
+make all 
+make: *** No rule to make target 'C:/project/DaisyPlus/NVMe/DaisyPlus_NVMe_19.1_20230102_512bit/OpenSSD/OpenSSD.sdk/design_1_wrapper_hw_platform_0/psu_init.c', needed by 'src/psu_init.o'.  Stop.
+
+02:16:06 Build Finished (took 483ms)
+
