@@ -1,0 +1,38 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port pci_exp_0 -pg 1 -lvl 6 -x 1920 -y 730 -defaultsOSRD
+preplace port pcie_ref -pg 1 -lvl 0 -x 0 -y 700 -defaultsOSRD
+preplace port user_lnk_up_0 -pg 1 -lvl 6 -x 1920 -y 770 -defaultsOSRD
+preplace port pcie_perst_n -pg 1 -lvl 0 -x 0 -y 800 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 4 -x 1450 -y 330 -defaultsOSRD
+preplace inst rst_ps8_0_187M -pg 1 -lvl 3 -x 1000 -y 110 -defaultsOSRD
+preplace inst rst_ps8_0_249M -pg 1 -lvl 1 -x 200 -y 600 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 540 -y 380 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 3 -x 1000 -y 350 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 2 -x 540 -y 580 -defaultsOSRD
+preplace inst nvme_ctrl_0 -pg 1 -lvl 5 -x 1760 -y 740 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk2 1 2 3 710 210 1300 210 1620
+preplace netloc zynq_ultra_ps_e_0_pl_clk3 1 0 5 30 500 370 490 700 500 1300 500 1600J
+preplace netloc nvme_ctrl_0_dev_irq_assert 1 1 5 370 470 690J 510 NJ 510 NJ 510 1900
+preplace netloc xlconcat_0_dout 1 2 1 NJ 380
+preplace netloc nvme_ctrl_0_user_lnk_up 1 5 1 NJ 770
+preplace netloc rst_ps8_0_187M_peripheral_aresetn 1 3 2 1310 200 1630
+preplace netloc rst_ps8_0_249M_peripheral_aresetn 1 1 4 380 500 670J 520 NJ 520 1590
+preplace netloc pcie_perst_n_0_1 1 0 5 NJ 800 NJ 800 NJ 800 NJ 800 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_resetn2 1 2 2 680 10 1290
+preplace netloc zynq_ultra_ps_e_0_pl_resetn3 1 0 4 20 480 NJ 480 710J 490 1290
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 3 1 N 270
+preplace netloc nvme_ctrl_0_pci_exp 1 5 1 NJ 730
+preplace netloc ps8_0_axi_periph_M00_AXI 1 4 1 1610 330n
+preplace netloc smartconnect_0_M00_AXI 1 2 1 680 320n
+preplace netloc pcie_ref_0_1 1 0 5 NJ 700 NJ 700 NJ 700 NJ 700 NJ
+preplace netloc nvme_ctrl_0_m0_axi 1 1 5 390 860 NJ 860 NJ 860 NJ 860 1890
+levelinfo -pg 1 0 200 540 1000 1450 1760 1920
+pagesize -pg 1 -db -bbox -sgen -130 0 2060 870
+"
+}
+{
+   "da_axi4_cnt":"2"
+}
