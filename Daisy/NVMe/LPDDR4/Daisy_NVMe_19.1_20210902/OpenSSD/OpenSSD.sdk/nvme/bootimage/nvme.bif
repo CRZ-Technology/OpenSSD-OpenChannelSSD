@@ -1,8 +1,0 @@
-//arch = zynqmp; split = false; format = BIN
-the_ROM_image:
-{
-	[fsbl_config]a53_x64
-	[bootloader]D:\sources\DaisyPlus_NVMe_19.1_20210421\OpenSSD\OpenSSD.sdk\fsbl\Debug\fsbl.elf
-	[destination_device = pl]D:\sources\DaisyPlus_NVMe_19.1_20210421\OpenSSD\OpenSSD.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
-	[destination_cpu = a53-0]D:\sources\DaisyPlus_NVMe_19.1_20210421\OpenSSD\OpenSSD.sdk\nvme\Debug\nvme.elf
-}
