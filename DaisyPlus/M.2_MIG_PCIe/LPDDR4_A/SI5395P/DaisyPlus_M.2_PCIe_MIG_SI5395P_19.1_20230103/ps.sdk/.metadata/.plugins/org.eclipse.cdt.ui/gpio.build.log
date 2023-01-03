@@ -1,0 +1,7 @@
+17:33:04 **** Clean-only build of configuration Debug for project gpio ****
+make clean 
+rm -rf  ./src/main.o ./src/xiicps_polled_master_example.o  ./src/main.d ./src/xiicps_polled_master_example.d  gpio.elf.size  gpio.elf
+' '
+
+17:33:04 Build Finished (took 545ms)
+

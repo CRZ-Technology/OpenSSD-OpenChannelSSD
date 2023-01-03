@@ -1,0 +1,7 @@
+17:33:04 **** Clean-only build of configuration Debug for project pcie_test ****
+make clean 
+rm -rf  ./src/platform.o ./src/xdmapcie_rc_enumerate_example.o  ./src/platform.d ./src/xdmapcie_rc_enumerate_example.d  pcie_test.elf.size  pcie_test.elf
+' '
+
+17:33:05 Build Finished (took 420ms)
+

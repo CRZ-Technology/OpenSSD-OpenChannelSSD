@@ -1,0 +1,7 @@
+17:33:02 **** Clean-only build of configuration Debug for project MemTest ****
+make clean 
+rm -rf  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o  ./src/memory_config_g.d ./src/memorytest.d ./src/platform.d  MemTest.elf.size  MemTest.elf
+' '
+
+17:33:03 Build Finished (took 609ms)
+
