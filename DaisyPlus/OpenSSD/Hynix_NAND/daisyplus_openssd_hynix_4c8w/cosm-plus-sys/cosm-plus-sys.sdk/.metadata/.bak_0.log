@@ -29681,57 +29681,57 @@ java.lang.NullPointerException
 
 !ENTRY com.xilinx.sdk.utils 1 0 2022-11-04 13:45:20.861
 !MESSAGE Executed Webtalk command
-!SESSION 2022-11-04 13:51:54.868 -----------------------------------------------
+!SESSION 2023-01-04 17:41:17.481 -----------------------------------------------
 eclipse.buildId=2019.1
 java.version=1.8.0_112
 java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk
 
-!ENTRY org.eclipse.ui 2 0 2022-11-04 13:52:00.468
+!ENTRY org.eclipse.ui 2 0 2023-01-04 17:41:20.643
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2022-11-04 13:52:00.468
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-01-04 17:41:20.643
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY org.eclipse.ui 2 0 2022-11-04 13:52:01.139
+!ENTRY org.eclipse.ui 2 0 2023-01-04 17:41:21.321
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2022-11-04 13:52:01.139
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-01-04 17:41:21.321
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:07.370
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:27.720
+!MESSAGE XSCT Command: [::hsi::utils::openhw F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:27.720
 !MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-12
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:07.371
-!MESSAGE XSCT Command: [::hsi::utils::openhw D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:07.380
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:27.731
 !MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-12
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:07.382
-!MESSAGE XSCT Command: [setws D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk], Thread: Thread-12
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:27.733
+!MESSAGE XSCT Command: [setws F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk], Thread: Thread-12
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.126
-!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.270
+!MESSAGE XSCT command with result: [::hsi::utils::openhw F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.127
-!MESSAGE XSCT command with result: [setws D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk], Result: [null, ]. Thread: Thread-12
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.271
+!MESSAGE XSCT command with result: [setws F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk], Result: [null, ]. Thread: Thread-12
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.141
-!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.283
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.144
-!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "xczu17eg",
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.287
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "xczu17eg",
 "family": "zynquplus",
 "timestamp": "Fri Nov  4 11:44:39 2022",
 "vivado_version": "2019.1",
 "part": "xczu17eg-ffvc1760-2-e",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.156
-!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.297
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.200
-!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_bram_ctrl_0": {"hier_name": "axi_bram_ctrl_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.340
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_bram_ctrl_0": {"hier_name": "axi_bram_ctrl_0",
 "type": "axi_bram_ctrl",
 "version": "4.1",
 "ip_type": "MEMORY_CNTLR",
@@ -30543,11 +30543,11 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.209
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexa53_0], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.348
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexa53_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.250
-!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexa53_0], Result: [null, {"t4nfc_hlper_0_nfch_cmd_if": {"name": "t4nfc_hlper_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.388
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexa53_0], Result: [null, {"t4nfc_hlper_0_nfch_cmd_if": {"name": "t4nfc_hlper_0",
 "base": "0xA0010000",
 "high": "0xA001FFFF",
 "size": "65536",
@@ -31616,11 +31616,11 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.350
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexr5_0], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.461
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexr5_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.393
-!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexr5_0], Result: [null, {"t4nfc_hlper_0_nfch_cmd_if": {"name": "t4nfc_hlper_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.501
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexr5_0], Result: [null, {"t4nfc_hlper_0_nfch_cmd_if": {"name": "t4nfc_hlper_0",
 "base": "0xA0010000",
 "high": "0xA001FFFF",
 "size": "65536",
@@ -32722,11 +32722,11 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.470
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexr5_1], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.577
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexr5_1], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2022-11-04 13:52:19.511
-!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/sources/tmp/daisyplus_openssd_hynix_4c8w_20221103/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexr5_1], Result: [null, {"t4nfc_hlper_0_nfch_cmd_if": {"name": "t4nfc_hlper_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2023-01-04 17:41:39.613
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json F:/daisyplus_openssd_hynix_4c8w_512b_20230104/cosm-plus-sys/cosm-plus-sys.sdk/sys_top_wrapper_hw_platform_0/system.hdf psu_cortexr5_1], Result: [null, {"t4nfc_hlper_0_nfch_cmd_if": {"name": "t4nfc_hlper_0",
 "base": "0xA0010000",
 "high": "0xA001FFFF",
 "size": "65536",

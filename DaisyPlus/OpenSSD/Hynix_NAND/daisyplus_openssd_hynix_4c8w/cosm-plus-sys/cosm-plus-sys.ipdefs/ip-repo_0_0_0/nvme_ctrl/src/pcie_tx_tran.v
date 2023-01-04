@@ -52,17 +52,17 @@ http://www.hanyang.ac.kr/
 
 
      module pcie_tx_tran # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 
 	parameter KEEP_WIDTH                                 = C_PCIE_DATA_WIDTH / 32, 
 	parameter TCQ                                        = 1,
 
 	parameter [1:0]  AXISTEN_IF_WIDTH               = (C_PCIE_DATA_WIDTH == 512) ? 2'b11:(C_PCIE_DATA_WIDTH == 256) ? 2'b10 : (C_PCIE_DATA_WIDTH == 128) ? 2'b01 : 2'b00, 
 
-	parameter              AXI4_CQ_TUSER_WIDTH = 88,
-	parameter              AXI4_CC_TUSER_WIDTH = 33,
-	parameter              AXI4_RQ_TUSER_WIDTH = 62,
-	parameter              AXI4_RC_TUSER_WIDTH = 75
+	parameter              AXI4_CQ_TUSER_WIDTH = 183,
+	parameter              AXI4_CC_TUSER_WIDTH = 81,
+	parameter              AXI4_RQ_TUSER_WIDTH = 137,
+	parameter              AXI4_RC_TUSER_WIDTH = 161
 
 )
 (
@@ -117,18 +117,19 @@ http://www.hanyang.ac.kr/
    	output									tx_mwr1_data_last
 );
 
-localparam	S_TX_IDLE						= 9'b000000001;
-localparam	S_TX_CPLD_HEAD					= 9'b000000010;
-localparam	S_TX_CPLD_DATA					= 9'b000000100;
-localparam	S_TX_MRD_HEAD					= 9'b000001000;
-localparam	S_TX_MWR_HEAD					= 9'b000010000;
-localparam	S_TX_MWR_HEAD_WAIT				= 9'b000100000;
-localparam	S_TX_MWR_DATA					= 9'b001000000;
-localparam	S_TX_MWR_WAIT					= 9'b010000000;
-localparam	S_TX_MWR_DATA_LAST				= 9'b100000000;
+localparam	S_TX_IDLE						= 10'b0000000001;
+localparam	S_TX_CPLD_HEAD					= 10'b0000000010;
+localparam	S_TX_MRD_HEAD					= 10'b0000000100;
+localparam	S_TX_MWR_HEAD					= 10'b0000001000;
+localparam	S_TX_MWR_HEAD_DATA				= 10'b0000010000;
+localparam	S_TX_MWR_HEAD_DATA_WAIT			= 10'b0000100000;
+localparam	S_TX_MWR_HEAD_DATA_LAST			= 10'b0001000000;
+localparam	S_TX_MWR_DATA					= 10'b0010000000;
+localparam	S_TX_MWR_WAIT					= 10'b0100000000;
+localparam	S_TX_MWR_DATA_LAST				= 10'b1000000000;
 
-       reg		[8:0]								cur_state;
-       reg		[8:0]								next_state;
+       reg		[9:0]								cur_state;
+       reg		[9:0]								next_state;
     
    reg		[C_PCIE_DATA_WIDTH-1:0]				r_s_axis_cc_tx_tdata;
    reg      [KEEP_WIDTH-1:0]		         	r_s_axis_cc_tx_tkeep;
@@ -145,22 +146,19 @@ localparam	S_TX_MWR_DATA_LAST				= 9'b100000000;
        reg		[5:0]								r_tx_arb_gnt;
    reg		[12:2]								r_tx_pcie_len;
    reg		[12:2]								r_tx_pcie_data_cnt;
-       reg		[C_PCIE_DATA_WIDTH-1:0]				r_tx_pcie_head;
+       reg		[127:0]				r_tx_pcie_head;
        reg		[31:0]								r_tx_cpld_udata;
        reg											r_tx_arb_rdy;
     
        reg		[C_PCIE_DATA_WIDTH-1:0]				r_tx_mwr_rd_data;
        reg		[C_PCIE_DATA_WIDTH-1:0]				r_tx_mwr_data;
       reg		[C_PCIE_DATA_WIDTH-1:0]				r_tx_mwr_data_d1;
+      reg		[C_PCIE_DATA_WIDTH-1:0]				r_tx_mwr_data_d2;
     
        reg											r_tx_mwr0_rd_en;
        reg											r_tx_mwr0_data_last;
        reg											r_tx_mwr1_rd_en;
        reg											r_tx_mwr1_data_last;
-       reg											r_1st_misaligned;
-       reg		[C_PCIE_DATA_WIDTH-1:0]				r_backup_data;
-       reg		[C_PCIE_DATA_WIDTH-1:0]				r_backup_data_dl;
-       reg		[3:0]								r_data_width;
 
 (* KEEP = "TRUE", SHIFT_EXTRACT = "NO" *)   reg       [9:0]                               r_tlp_count =10'b0;
 
@@ -210,23 +208,6 @@ begin
 		end
 		S_TX_CPLD_HEAD: begin
 			if(s_axis_cc_tready == 1) begin
-				if(r_tx_pcie_len[3] == 1)
-					next_state <= S_TX_CPLD_DATA;
-				else if(tx_arb_valid == 1) begin
-					case(tx_arb_type) // synthesis parallel_case full_case
-						3'b001: next_state <= S_TX_CPLD_HEAD;
-						3'b010: next_state <= S_TX_MRD_HEAD;
-						3'b100: next_state <= S_TX_MWR_HEAD;
-					endcase
-				end
-				else
-					next_state <= S_TX_IDLE;
-			end
-			else
-				next_state <= S_TX_CPLD_HEAD;
-		end
-		S_TX_CPLD_DATA: begin
-			if(s_axis_cc_tready == 1) begin
 				if(tx_arb_valid == 1) begin
 					case(tx_arb_type) // synthesis parallel_case full_case
 						3'b001: next_state <= S_TX_CPLD_HEAD;
@@ -238,7 +219,7 @@ begin
 					next_state <= S_TX_IDLE;
 			end
 			else
-				next_state <= S_TX_CPLD_DATA;
+				next_state <= S_TX_CPLD_HEAD;
 		end
 		S_TX_MRD_HEAD: begin
 			if(s_axis_rq_tready == 1) begin
@@ -256,28 +237,49 @@ begin
 				next_state <= S_TX_MRD_HEAD;
 		end
 		S_TX_MWR_HEAD: begin
-			if(s_axis_rq_tready == 1) begin
-				if(r_tx_pcie_len <= 4)
-					next_state <= S_TX_MWR_DATA_LAST;
-				else
-					next_state <= S_TX_MWR_DATA;
-			end
+			if(r_tx_pcie_len <= 12)
+				next_state <= S_TX_MWR_HEAD_DATA_LAST;
 			else
-				next_state <= S_TX_MWR_HEAD_WAIT;
+				next_state <= S_TX_MWR_HEAD_DATA;
 		end
-		S_TX_MWR_HEAD_WAIT: begin
+		S_TX_MWR_HEAD_DATA: begin
 			if(s_axis_rq_tready == 1) begin
-				if(r_tx_pcie_data_cnt <= 4)
+				if(r_tx_pcie_data_cnt <= 28)
 					next_state <= S_TX_MWR_DATA_LAST;
 				else
 					next_state <= S_TX_MWR_DATA;
 			end
 			else
-				next_state <= S_TX_MWR_HEAD_WAIT;
+				next_state <= S_TX_MWR_HEAD_DATA_WAIT;
+		end
+		S_TX_MWR_HEAD_DATA_WAIT: begin
+			if(s_axis_rq_tready == 1) begin
+				if(r_tx_pcie_data_cnt <= 16)
+					next_state <= S_TX_MWR_DATA_LAST;
+				else
+					next_state <= S_TX_MWR_DATA;
+			end
+			else
+				next_state <= S_TX_MWR_HEAD_DATA_WAIT;
+		end
+		S_TX_MWR_HEAD_DATA_LAST: begin
+			if(s_axis_rq_tready == 1) begin
+				if(tx_arb_valid == 1) begin
+					case(tx_arb_type) // synthesis parallel_case full_case
+						3'b001: next_state <= S_TX_CPLD_HEAD;
+						3'b010: next_state <= S_TX_MRD_HEAD;
+						3'b100: next_state <= S_TX_MWR_HEAD;
+					endcase
+				end
+				else
+					next_state <= S_TX_IDLE;
+			end
+			else
+				next_state <= S_TX_MWR_HEAD_DATA_LAST;
 		end
 		S_TX_MWR_DATA: begin
 			if(s_axis_rq_tready == 1) begin
-				if(r_tx_pcie_data_cnt <= 8)
+				if(r_tx_pcie_data_cnt <= 32)
 					next_state <= S_TX_MWR_DATA_LAST;
 				else
 					next_state <= S_TX_MWR_DATA;
@@ -287,7 +289,7 @@ begin
 		end
 		S_TX_MWR_WAIT: begin
 			if(s_axis_rq_tready == 1) begin
-				if(r_tx_pcie_data_cnt <= 4)
+				if(r_tx_pcie_data_cnt <= 16)
 					next_state <= S_TX_MWR_DATA_LAST;
 				else
 					next_state <= S_TX_MWR_DATA;
@@ -320,16 +322,10 @@ always @ (*)
 begin
 	case(r_tx_arb_gnt[5:4]) // synthesis parallel_case full_case
 		2'b01: begin
-			r_tx_mwr_rd_data[31:0]   <= tx_mwr0_rd_data[31:0];
-			r_tx_mwr_rd_data[63:32]  <= tx_mwr0_rd_data[63:32];
-			r_tx_mwr_rd_data[95:64]  <= tx_mwr0_rd_data[95:64];
-			r_tx_mwr_rd_data[127:96] <= tx_mwr0_rd_data[127:96];
+			r_tx_mwr_rd_data		  <= tx_mwr0_rd_data; 
 		end
 		2'b10: begin
-			r_tx_mwr_rd_data[31:0]   <= tx_mwr1_rd_data[31:0];
-			r_tx_mwr_rd_data[63:32]  <= tx_mwr1_rd_data[63:32];
-			r_tx_mwr_rd_data[95:64]  <= tx_mwr1_rd_data[95:64];
-			r_tx_mwr_rd_data[127:96] <= tx_mwr1_rd_data[127:96];
+			r_tx_mwr_rd_data  		  <= tx_mwr1_rd_data;
 		end
 	endcase
 end
@@ -348,12 +344,9 @@ always @ (posedge pcie_user_clk)
 begin
 	case(cur_state)
 		S_TX_IDLE: begin
-			r_data_width <= 4'b1000;
-		end
-		S_TX_CPLD_HEAD: begin
 
 		end
-		S_TX_CPLD_DATA: begin
+		S_TX_CPLD_HEAD: begin
 
 		end
 		S_TX_MRD_HEAD: begin
@@ -364,51 +357,37 @@ begin
 		end
 		S_TX_MWR_HEAD: begin
 			r_tx_pcie_data_cnt <= r_tx_pcie_len;
-			r_tx_mwr_data <= r_tx_mwr_rd_data;
+			r_tx_mwr_data      <= r_tx_mwr_rd_data;
+			r_tx_mwr_data_d1   <= r_tx_mwr_data;
+			r_tx_mwr_data_d2   <= r_tx_mwr_data_d1;
 		    if(s_axis_rq_tready == 1)
                 r_tlp_count <= r_tlp_count + 1;
             else
                 r_tlp_count <= r_tlp_count;
 		end
-		S_TX_MWR_HEAD_WAIT: begin
+		S_TX_MWR_HEAD_DATA: begin
+			r_tx_pcie_data_cnt <= r_tx_pcie_data_cnt - 12;
+			r_tx_mwr_data    <= r_tx_mwr_rd_data;
+			r_tx_mwr_data_d1 <= r_tx_mwr_data;
+			r_tx_mwr_data_d2 <= r_tx_mwr_data_d1;
+		end
+		S_TX_MWR_HEAD_DATA_WAIT: begin
+
+		end
+		S_TX_MWR_HEAD_DATA_LAST: begin
 
 		end
 		S_TX_MWR_DATA: begin
-		if(r_1st_misaligned == 1) 
-              begin
-              r_tx_pcie_data_cnt <= r_tx_pcie_data_cnt - 4;
-              r_backup_data <= r_tx_mwr_data;
-			  r_tx_mwr_data <= r_tx_mwr_rd_data;
-			  r_backup_data_dl <= r_backup_data;
-              end
-        else 
-            begin
-			r_tx_pcie_data_cnt <= r_tx_pcie_data_cnt - 4;
+			r_tx_pcie_data_cnt <= r_tx_pcie_data_cnt - 16;
 			r_tx_mwr_data <= r_tx_mwr_rd_data;
 			r_tx_mwr_data_d1 <= r_tx_mwr_data;
-			end
+			r_tx_mwr_data_d2 <= r_tx_mwr_data_d1;
 		end
 		S_TX_MWR_WAIT: begin
 
 		end
 		S_TX_MWR_DATA_LAST: begin
-        if (r_tx_pcie_data_cnt  <= 3 && r_1st_misaligned ==0) 
-			begin
-            r_1st_misaligned <= 1'b1;
-            r_backup_data <= r_tx_mwr_data;
-			if(r_tx_pcie_data_cnt == 1)
-				r_data_width <= 4'b0100;
-			else if(r_tx_pcie_data_cnt == 2)
-				r_data_width <= 4'b0010;
-			else if(r_tx_pcie_data_cnt == 3)
-				r_data_width <= 4'b0001;
-			else
-				r_data_width <= 4'b1000;
-			end
-		else 
-			begin
-			r_1st_misaligned <= 1'b0;
-			end
+
 		end
 		default: begin
 		end
@@ -437,27 +416,16 @@ begin
 			r_tx_mwr1_data_last <= 0;
 		end
 		S_TX_CPLD_HEAD: begin
-			r_s_axis_cc_tx_tdata  <= r_tx_pcie_head;
-			r_s_axis_cc_tx_tkeep  <= 4'hF;
-			r_s_axis_cc_tx_tuser  <= {AXI4_CC_TUSER_WIDTH{1'b0}};
-			r_s_axis_cc_tx_tlast  <= r_tx_pcie_len[2];
-			r_s_axis_cc_tx_tvalid <= 1;
-			r_s_axis_rq_tx_tdata  <= {C_PCIE_DATA_WIDTH{1'b0}};
-			r_s_axis_rq_tx_tkeep  <= {KEEP_WIDTH{1'b0}};
-			r_s_axis_rq_tx_tuser  <= {AXI4_RQ_TUSER_WIDTH{1'b0}};
-			r_s_axis_rq_tx_tlast  <= 0;
-			r_s_axis_rq_tx_tvalid <= 0;
-			r_tx_arb_rdy <= r_tx_pcie_len[2] & s_axis_cc_tready;
-			r_tx_mwr0_rd_en <= 0;
-			r_tx_mwr0_data_last <= 0;
-			r_tx_mwr1_rd_en <= 0;
-			r_tx_mwr1_data_last <= 0;
-		end
-		S_TX_CPLD_DATA: begin
-			r_s_axis_cc_tx_tdata <= {96'h0, r_tx_cpld_udata};
-			r_s_axis_cc_tx_tkeep <= 4'h1;
-			r_s_axis_cc_tx_tuser <= {AXI4_CC_TUSER_WIDTH{1'b0}};
-			r_s_axis_cc_tx_tlast <= 1;
+			if(r_tx_pcie_len[3] == 1) begin
+				r_s_axis_cc_tx_tdata  <= {352'b0, r_tx_cpld_udata, r_tx_pcie_head};
+				r_s_axis_cc_tx_tkeep  <= 16'h1F;
+			end
+			else begin
+				r_s_axis_cc_tx_tdata  <= {384'b0, r_tx_pcie_head};
+				r_s_axis_cc_tx_tkeep  <= 16'hF;
+			end
+			r_s_axis_cc_tx_tuser  <= {80'b0, 1'b1};
+			r_s_axis_cc_tx_tlast  <= 1;
 			r_s_axis_cc_tx_tvalid <= 1;
 			r_s_axis_rq_tx_tdata  <= {C_PCIE_DATA_WIDTH{1'b0}};
 			r_s_axis_rq_tx_tkeep  <= {KEEP_WIDTH{1'b0}};
@@ -476,9 +444,9 @@ begin
 			r_s_axis_cc_tx_tuser <= {AXI4_CC_TUSER_WIDTH{1'b0}};
 			r_s_axis_cc_tx_tlast <= 0;
 			r_s_axis_cc_tx_tvalid <= 0;
-			r_s_axis_rq_tx_tdata <= r_tx_pcie_head;
-			r_s_axis_rq_tx_tkeep <= 4'hF;
-			r_s_axis_rq_tx_tuser <= {2'b0,32'b0,4'b1010,8'h00,1'b0,2'b0,1'b0,1'b0,3'b000,`D_MRD_LAST_BE,`D_MRD_1ST_BE};
+			r_s_axis_rq_tx_tdata <= {384'b0, r_tx_pcie_head};
+			r_s_axis_rq_tx_tkeep <= 16'hF;
+			r_s_axis_rq_tx_tuser <= {115'b0,2'b01,4'b0,`D_MRD_LAST_BE,`D_MRD_1ST_BE};
 			r_s_axis_rq_tx_tlast <= 1;
 			r_s_axis_rq_tx_tvalid <= 1;
 			r_tx_arb_rdy <= s_axis_rq_tready;
@@ -493,26 +461,43 @@ begin
 			r_s_axis_cc_tx_tuser <= {AXI4_CC_TUSER_WIDTH{1'b0}};
 			r_s_axis_cc_tx_tlast <= 0;
 			r_s_axis_cc_tx_tvalid <= 0;
-			r_s_axis_rq_tx_tdata <= r_tx_pcie_head;
-			r_s_axis_rq_tx_tkeep <= 4'hF;
-			r_s_axis_rq_tx_tuser <= {2'b0,32'b0,4'b1010,8'h00,1'b0,2'b0,1'b0,1'b0,3'b000,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
+			r_s_axis_rq_tx_tdata <= {C_PCIE_DATA_WIDTH{1'b0}};
+			r_s_axis_rq_tx_tkeep <= {KEEP_WIDTH{1'b0}};
+			r_s_axis_rq_tx_tuser <= {AXI4_RQ_TUSER_WIDTH{1'b0}};
 			r_s_axis_rq_tx_tlast <= 0;
-			r_s_axis_rq_tx_tvalid <= 1;
+			r_s_axis_rq_tx_tvalid <= 0;
 			r_tx_arb_rdy <= 0;
 			r_tx_mwr0_rd_en <= r_tx_arb_gnt[4];
 			r_tx_mwr0_data_last <= 0;
-			r_tx_mwr1_rd_en <= (r_tx_pcie_len < 4 && r_1st_misaligned == 1'b1) ? 0 : r_tx_arb_gnt[5]; 
+			r_tx_mwr1_rd_en <= r_tx_arb_gnt[5]; 
 			r_tx_mwr1_data_last <= 0;
 		end
-		S_TX_MWR_HEAD_WAIT: begin
+		S_TX_MWR_HEAD_DATA: begin
 			r_s_axis_cc_tx_tdata <= {C_PCIE_DATA_WIDTH{1'b0}};
 			r_s_axis_cc_tx_tkeep <= {KEEP_WIDTH{1'b0}};
 			r_s_axis_cc_tx_tuser <= {AXI4_CC_TUSER_WIDTH{1'b0}};
 			r_s_axis_cc_tx_tlast <= 0;
 			r_s_axis_cc_tx_tvalid <= 0;
-			r_s_axis_rq_tx_tdata <= r_tx_pcie_head;
-			r_s_axis_rq_tx_tkeep <= 4'hF;
-			r_s_axis_rq_tx_tuser <= {2'b0,32'b0,4'b1010,8'h00,1'b0,2'b0,1'b0,1'b0,3'b000,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
+			r_s_axis_rq_tx_tdata <= {r_tx_mwr_data[383:0], r_tx_pcie_head};
+			r_s_axis_rq_tx_tkeep <= 16'hFFFF;
+			r_s_axis_rq_tx_tuser <= {115'b0,2'b01,4'b0,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
+			r_s_axis_rq_tx_tlast <= 0;
+			r_s_axis_rq_tx_tvalid <= 1;
+			r_tx_arb_rdy <= 0;
+			r_tx_mwr0_rd_en <= r_tx_arb_gnt[4];
+			r_tx_mwr0_data_last <= 0;
+			r_tx_mwr1_rd_en <= (r_tx_pcie_data_cnt <= 16) ? 0 : r_tx_arb_gnt[5]; 
+			r_tx_mwr1_data_last <= 0;
+		end
+		S_TX_MWR_HEAD_DATA_WAIT: begin
+			r_s_axis_cc_tx_tdata <= {C_PCIE_DATA_WIDTH{1'b0}};
+			r_s_axis_cc_tx_tkeep <= {KEEP_WIDTH{1'b0}};
+			r_s_axis_cc_tx_tuser <= {AXI4_CC_TUSER_WIDTH{1'b0}};
+			r_s_axis_cc_tx_tlast <= 0;
+			r_s_axis_cc_tx_tvalid <= 0;
+			r_s_axis_rq_tx_tdata <= {r_tx_mwr_data_d1[383:0], r_tx_pcie_head};
+			r_s_axis_rq_tx_tkeep <= 16'hFFFF;
+			r_s_axis_rq_tx_tuser <= {115'b0,2'b01,4'b0,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
 			r_s_axis_rq_tx_tlast <= 0;
 			r_s_axis_rq_tx_tvalid <= 1;
 			r_tx_arb_rdy <= 0;
@@ -521,29 +506,61 @@ begin
 			r_tx_mwr1_rd_en <= 0;
 			r_tx_mwr1_data_last <= 0;
 		end
+		S_TX_MWR_HEAD_DATA_LAST: begin
+			r_s_axis_cc_tx_tdata <= {C_PCIE_DATA_WIDTH{1'b0}};
+			r_s_axis_cc_tx_tkeep <= {KEEP_WIDTH{1'b0}};
+			r_s_axis_cc_tx_tuser <= {AXI4_CC_TUSER_WIDTH{1'b0}};
+			r_s_axis_cc_tx_tlast <= 0;
+			r_s_axis_cc_tx_tvalid <= 0;
+			r_s_axis_rq_tx_tdata <= {r_tx_mwr_data[383:0], r_tx_pcie_head};
+			if(r_tx_pcie_data_cnt == 1)
+				r_s_axis_rq_tx_tkeep <= 16'h1F;
+			else if(r_tx_pcie_data_cnt == 2)
+				r_s_axis_rq_tx_tkeep <= 16'h3F;
+			else if(r_tx_pcie_data_cnt == 3)
+				r_s_axis_rq_tx_tkeep <= 16'h7F;
+			else if(r_tx_pcie_data_cnt == 4)
+				r_s_axis_rq_tx_tkeep <= 16'hFF;
+			else if(r_tx_pcie_data_cnt == 5)
+				r_s_axis_rq_tx_tkeep <= 16'h1FF;
+			else if(r_tx_pcie_data_cnt == 6)
+				r_s_axis_rq_tx_tkeep <= 16'h3FF;
+			else if(r_tx_pcie_data_cnt == 7)
+				r_s_axis_rq_tx_tkeep <= 16'h7FF;
+			else if(r_tx_pcie_data_cnt == 8)
+				r_s_axis_rq_tx_tkeep <= 16'hFFF;
+			else if(r_tx_pcie_data_cnt == 9)
+				r_s_axis_rq_tx_tkeep <= 16'h1FFF;
+			else if(r_tx_pcie_data_cnt == 10)
+				r_s_axis_rq_tx_tkeep <= 16'h3FFF;
+			else if(r_tx_pcie_data_cnt == 11)
+				r_s_axis_rq_tx_tkeep <= 16'h7FFF;
+			else
+				r_s_axis_rq_tx_tkeep <= 16'hFFFF;
+			r_s_axis_rq_tx_tuser <= {115'b0,2'b01,4'b0,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
+			r_s_axis_rq_tx_tlast <= 1;
+			r_s_axis_rq_tx_tvalid <= 1;
+			r_tx_arb_rdy <= s_axis_rq_tready;
+			r_tx_mwr0_rd_en <= 0;
+			r_tx_mwr0_data_last <= r_tx_arb_gnt[4] & s_axis_rq_tready;
+			r_tx_mwr1_rd_en <= 0;
+			r_tx_mwr1_data_last <= r_tx_arb_gnt[5] & s_axis_rq_tready;
+		end
 		S_TX_MWR_DATA: begin
 			r_s_axis_cc_tx_tdata <= {C_PCIE_DATA_WIDTH{1'b0}};
 			r_s_axis_cc_tx_tkeep <= {KEEP_WIDTH{1'b0}};
 			r_s_axis_cc_tx_tuser <= {AXI4_CC_TUSER_WIDTH{1'b0}};
 			r_s_axis_cc_tx_tlast <= 0;
 			r_s_axis_cc_tx_tvalid <= 0;
-			if(r_data_width == 4'b0001)
-				r_s_axis_rq_tx_tdata <=  {r_backup_data[95:0] ,r_backup_data[127:96]};
-			else if(r_data_width == 4'b0010)
-				r_s_axis_rq_tx_tdata <=  {r_backup_data[63:0] ,r_backup_data[127:64]};
-			else if(r_data_width == 4'b0100)
-				r_s_axis_rq_tx_tdata <=  {r_backup_data[31:0] ,r_backup_data[127:32]};
-			else
-				r_s_axis_rq_tx_tdata <= r_tx_mwr_data;
-			
-			r_s_axis_rq_tx_tkeep <= 4'hF;
-			r_s_axis_rq_tx_tuser <= {2'b0,32'b0,4'b1010,8'h00,1'b0,2'b0,1'b0,1'b0,3'b000,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
+			r_s_axis_rq_tx_tdata <= {r_tx_mwr_data[383:0], r_tx_mwr_data_d1[511:384]};
+			r_s_axis_rq_tx_tkeep <= 16'hFFFF;
+			r_s_axis_rq_tx_tuser <= {121'b0,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
 			r_s_axis_rq_tx_tlast <= 0;
 			r_s_axis_rq_tx_tvalid <= 1;
 			r_tx_arb_rdy <= 0;
 			r_tx_mwr0_rd_en <= r_tx_arb_gnt[4];
 			r_tx_mwr0_data_last <= 0;
-			r_tx_mwr1_rd_en <= (r_tx_pcie_data_cnt < 8 && r_1st_misaligned == 1'b1) ? 0 : r_tx_arb_gnt[5];
+			r_tx_mwr1_rd_en <= (r_tx_pcie_data_cnt <= 20) ? 0 : r_tx_arb_gnt[5];
 			r_tx_mwr1_data_last <= 0;
 		end
 		S_TX_MWR_WAIT: begin
@@ -552,17 +569,9 @@ begin
 			r_s_axis_cc_tx_tuser <= {AXI4_CC_TUSER_WIDTH{1'b0}};
 			r_s_axis_cc_tx_tlast <= 0;
 			r_s_axis_cc_tx_tvalid <= 0;
-			if(r_data_width == 4'b0001)
-				r_s_axis_rq_tx_tdata <=  {r_backup_data[95:0] ,r_backup_data_dl[127:96]};
-			else if(r_data_width == 4'b0010)
-				r_s_axis_rq_tx_tdata <=  {r_backup_data[63:0] ,r_backup_data_dl[127:64]};
-			else if(r_data_width == 4'b0100)
-				r_s_axis_rq_tx_tdata <=  {r_backup_data[31:0] ,r_backup_data_dl[127:32]};
-			else
-				r_s_axis_rq_tx_tdata <= r_tx_mwr_data_d1;
-			
-			r_s_axis_rq_tx_tkeep <= 4'hF;
-			r_s_axis_rq_tx_tuser <= {2'b0,32'b0,4'b1010,8'h00,1'b0,2'b0,1'b0,1'b0,3'b000,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
+			r_s_axis_rq_tx_tdata <= {r_tx_mwr_data_d1[383:0], r_tx_mwr_data_d2[511:384]};
+			r_s_axis_rq_tx_tkeep <= 16'hFFFF;
+			r_s_axis_rq_tx_tuser <= {121'b0,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
 			r_s_axis_rq_tx_tlast <= 0;
 			r_s_axis_rq_tx_tvalid <= 1;
 			r_tx_arb_rdy <= 0;
@@ -577,23 +586,40 @@ begin
 			r_s_axis_cc_tx_tuser <= {AXI4_CC_TUSER_WIDTH{1'b0}};
 			r_s_axis_cc_tx_tlast <= 0;
 			r_s_axis_cc_tx_tvalid <= 0;
-			if(r_tx_pcie_data_cnt == 1) begin
-				r_s_axis_rq_tx_tdata <= (r_1st_misaligned == 1'b1) ? {96'b0 ,r_backup_data[127:96]}: r_tx_mwr_data;
-				r_s_axis_rq_tx_tkeep <= 4'h1;
-			end
-			else if(r_tx_pcie_data_cnt == 2) begin
-				r_s_axis_rq_tx_tdata <= (r_1st_misaligned == 1'b1) ? {64'b0 ,r_backup_data[127:64]}: r_tx_mwr_data;
-				r_s_axis_rq_tx_tkeep <= 4'h3;
-			end
-			else if(r_tx_pcie_data_cnt == 3) begin
-				r_s_axis_rq_tx_tdata <= (r_1st_misaligned == 1'b1) ? {32'b0 ,r_backup_data[127:32]}: r_tx_mwr_data;
-				r_s_axis_rq_tx_tkeep <= 4'h7;
-			end
-			else begin
-				r_s_axis_rq_tx_tdata <= r_tx_mwr_data;
-				r_s_axis_rq_tx_tkeep <= 4'hF;
-			end
-			r_s_axis_rq_tx_tuser <= {2'b0,32'b0,4'b1010,8'h00,1'b0,2'b0,1'b0,1'b0,3'b000,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
+			r_s_axis_rq_tx_tdata <= {r_tx_mwr_data[383:0], r_tx_mwr_data_d1[511:384]};
+			if(r_tx_pcie_data_cnt == 1)
+				r_s_axis_rq_tx_tkeep <= 16'h1;
+			else if(r_tx_pcie_data_cnt == 2)
+				r_s_axis_rq_tx_tkeep <= 16'h3;
+			else if(r_tx_pcie_data_cnt == 3)
+				r_s_axis_rq_tx_tkeep <= 16'h7;
+			else if(r_tx_pcie_data_cnt == 4)
+				r_s_axis_rq_tx_tkeep <= 16'hF;
+			else if(r_tx_pcie_data_cnt == 5)
+				r_s_axis_rq_tx_tkeep <= 16'h1F;
+			else if(r_tx_pcie_data_cnt == 6)
+				r_s_axis_rq_tx_tkeep <= 16'h3F;
+			else if(r_tx_pcie_data_cnt == 7)
+				r_s_axis_rq_tx_tkeep <= 16'h7F;
+			else if(r_tx_pcie_data_cnt == 8)
+				r_s_axis_rq_tx_tkeep <= 16'hFF;
+			else if(r_tx_pcie_data_cnt == 9)
+				r_s_axis_rq_tx_tkeep <= 16'h1FF;
+			else if(r_tx_pcie_data_cnt == 10)
+				r_s_axis_rq_tx_tkeep <= 16'h3FF;
+			else if(r_tx_pcie_data_cnt == 11)
+				r_s_axis_rq_tx_tkeep <= 16'h7FF;
+			else if(r_tx_pcie_data_cnt == 12)
+				r_s_axis_rq_tx_tkeep <= 16'hFFF;
+			else if(r_tx_pcie_data_cnt == 13)
+				r_s_axis_rq_tx_tkeep <= 16'h1FFF;
+			else if(r_tx_pcie_data_cnt == 14)
+				r_s_axis_rq_tx_tkeep <= 16'h3FFF;
+			else if(r_tx_pcie_data_cnt == 15)
+				r_s_axis_rq_tx_tkeep <= 16'h7FFF;
+			else
+				r_s_axis_rq_tx_tkeep <= 16'hFFFF;
+			r_s_axis_rq_tx_tuser <= {121'b0,`D_MWR_LAST_BE,`D_MWR_1ST_BE};
 			r_s_axis_rq_tx_tlast <= 1;
 			r_s_axis_rq_tx_tvalid <= 1;
 			r_tx_arb_rdy <= s_axis_rq_tready;

@@ -97,7 +97,7 @@ module m_axi_read # (
  	input									dev_tx_cmd_empty_n,
 
  	output									pcie_tx_fifo_alloc_en,
-     output	[9:4]							pcie_tx_fifo_alloc_len,
+    output	[10:6]							pcie_tx_fifo_alloc_len,
  	output									pcie_tx_fifo_wr_en,
  	output	[C_M_AXI_DATA_WIDTH-1:0]		pcie_tx_fifo_wr_data,
  	input									pcie_tx_fifo_full_n
@@ -105,22 +105,24 @@ module m_axi_read # (
 
 localparam	LP_AR_DELAY						= 7;
 
-localparam	S_IDLE							= 8'b00000001;
-localparam	S_CMD_0							= 8'b00000010;
-localparam	S_CMD_1							= 8'b00000100;
-localparam	S_WAIT_FULL_N					= 8'b00001000;
-localparam	S_AR_REQ						= 8'b00010000;
-localparam	S_AR_WAIT						= 8'b00100000;
-localparam	S_AR_DONE						= 8'b01000000;
-localparam	S_AR_DELAY						= 8'b10000000;
+localparam	S_IDLE							= 9'b000000001;
+localparam	S_CMD_0							= 9'b000000010;
+localparam	S_CMD_1							= 9'b000000100;
+localparam	S_WAIT_FULL_N					= 9'b000001000;
+localparam	S_AR_REQ						= 9'b000010000;
+localparam	S_AR_WAIT						= 9'b000100000;
+localparam	S_AR_DONE						= 9'b001000000;
+localparam	S_AR_DELAY						= 9'b010000000;
+localparam	S_DUMMY_RD						= 9'b100000000;
 
-    reg		[7:0]								cur_state;
-     reg		[7:0]								next_state;
+    reg		[8:0]								cur_state;
+     reg		[8:0]								next_state;
     
      reg		[31:2]								r_dev_addr;
     reg		[12:2]								r_dev_dma_len;
-     reg		[9:2]								r_dev_cur_len;
-     reg		[9:2]								r_m_axi_arlen;
+     reg		[12:2]								r_dev_dma_orig_len;
+     reg		[10:2]								r_dev_cur_len;
+     reg		[10:2]								r_m_axi_arlen;
      reg		[4:0]								r_ar_delay;
     
      reg											r_dev_tx_cmd_rd_en;
@@ -141,12 +143,14 @@ localparam	S_AR_DELAY						= 8'b10000000;
       reg											r_m_axi_rresp_err;
       reg											r_m_axi_rresp_err_d1;
       reg											r_m_axi_rresp_err_d2;
-      reg                                           r_dma_cmd_type; 
-      reg                                           r_2nd_dma;
+
+	reg			[2:0]                               r_rd_count;
+	reg                                             r_dummy_read;
+	reg			[10:6]								r_pcie_tx_fifo_alloc_len;
 
 assign m_axi_arid = 0;
 assign m_axi_araddr = {r_dev_addr, 2'b0};
-assign m_axi_arlen = {1'b0, r_m_axi_arlen[9:3]};
+assign m_axi_arlen = r_m_axi_arlen[10:3];
 assign m_axi_arsize = `D_AXSIZE_008_BYTES;
 assign m_axi_arburst = `D_AXBURST_INCR;
 assign m_axi_arlock = `D_AXLOCK_NORMAL;
@@ -162,7 +166,7 @@ assign m_axi_rresp_err = r_m_axi_rresp_err_d2;
 
 assign dev_tx_cmd_rd_en = r_dev_tx_cmd_rd_en;
 assign pcie_tx_fifo_alloc_en = r_pcie_tx_fifo_alloc_en;
-assign pcie_tx_fifo_alloc_len = r_dev_cur_len[9:4];//len
+assign pcie_tx_fifo_alloc_len = r_pcie_tx_fifo_alloc_len;
 
 assign pcie_tx_fifo_wr_en = r_m_axi_rvalid;
 assign pcie_tx_fifo_wr_data = r_m_axi_rdata;
@@ -193,9 +197,9 @@ begin
 		end
 		S_WAIT_FULL_N: begin
 			if(pcie_tx_fifo_full_n == 1 && w_axi_ar_req_gnt == 1)
-					next_state <= S_AR_REQ;
-				else
-					next_state <= S_WAIT_FULL_N;
+				next_state <= S_AR_REQ;
+			else
+				next_state <= S_WAIT_FULL_N;
 		end
 		S_AR_REQ: begin
 			if(m_axi_arready == 1)
@@ -210,8 +214,12 @@ begin
 				next_state <= S_AR_WAIT;
 		end
 		S_AR_DONE: begin
-			if(r_dev_dma_len == 0)
-				next_state <= S_IDLE;
+			if(r_dev_dma_len == 0) begin
+				if(r_rd_count > 0)
+					next_state <= S_DUMMY_RD;
+				else
+					next_state <= S_IDLE;
+			end
 			else
 				next_state <= S_AR_DELAY;
 		end
@@ -220,6 +228,9 @@ begin
 				next_state <= S_WAIT_FULL_N;
 			else
 				next_state <= S_AR_DELAY;
+		end
+		S_DUMMY_RD: begin
+			next_state <= S_AR_DELAY;
 		end
 		default: begin
 			next_state <= S_IDLE;
@@ -235,73 +246,79 @@ begin
 		end
 		S_CMD_0: begin
 			r_dev_dma_len <= dev_tx_cmd_rd_data[10:0];
-			r_dma_cmd_type <= dev_tx_cmd_rd_data[P_SLOT_TAG_WIDTH+12]; //slot_modified
 		end
 		S_CMD_1: begin
-		if(r_dev_dma_len[3:2] != 0 && r_2nd_dma == 1)
-		begin
-		    r_dev_cur_len[9:2] <=  {1'b0, r_dev_dma_len[8:4],2'b0};
-			r_2nd_dma <= 1'b0;
-			if(r_dma_cmd_type == 1)
-                    r_dev_addr <= dev_tx_cmd_rd_data[29:0] + r_dev_dma_len[3:2];
-            else
-                    r_dev_addr <= dev_tx_cmd_rd_data[29:0]; 			
-		end
-		else if(r_dev_dma_len[12:2] >= 8'b10000000) 
-		    begin
-            r_dev_cur_len[9:2] <= 8'b10000000;
-			r_dev_addr <= dev_tx_cmd_rd_data[29:0];
+			r_dev_dma_orig_len <= r_dev_dma_len;
+			if(r_dev_dma_len[12:2] >= 9'h100) begin
+	            r_dev_cur_len[10:2]            <= 9'h100;
+				r_pcie_tx_fifo_alloc_len[10:6] <= 5'h10;
+	        end
+	        else if(r_dev_dma_len[9:6] != 0) begin
+	            r_dev_cur_len[10:2]            <= {1'b0, r_dev_dma_len[9:6], 4'b0};
+				r_pcie_tx_fifo_alloc_len[10:6] <= {1'b0, r_dev_dma_len[9:6]};
+	        end
+	        else if(r_dev_dma_len[5:3] != 0) begin
+				r_dev_cur_len[10:2]            <= {5'b0, r_dev_dma_len[5:3], 1'b0};
+				r_pcie_tx_fifo_alloc_len[10:6] <= 6'b1;
 			end
-        else
-        begin
-			if(r_dev_dma_len[3:2] != 0)
-			begin
-				r_dev_cur_len[9:2] <=  {r_dev_dma_len[9:4]+1,2'b0};
-				r_dev_addr <= dev_tx_cmd_rd_data[29:0]; 
-				r_2nd_dma <= 1'b1;	
+			else begin
+				r_dev_cur_len[10:2]            <= {8'b0, r_dev_dma_len[2]};
+				r_pcie_tx_fifo_alloc_len[10:6] <= 6'b1;
 			end
+			r_dev_addr   <= dev_tx_cmd_rd_data[29:0];
+			if(r_dev_dma_len[5:2] != 0)
+				r_rd_count   <= 4'h8 - r_dev_dma_len[5:3] - r_dev_dma_len[2];
 			else
-			begin
-            r_dev_cur_len[9:2] <= r_dev_dma_len[9:2];
-			r_dev_addr <= dev_tx_cmd_rd_data[29:0]; 
-			r_2nd_dma <= 1'b0;
-			end
-		end
+				r_rd_count   <= 0;			
+			r_dummy_read <= 0;
         end
 		S_WAIT_FULL_N: begin
-			    if (r_dev_cur_len < 2)
-                    r_m_axi_arlen <= 1'b0;
-                else
-                    r_m_axi_arlen <= r_dev_cur_len - 2;
+		    if (r_dev_cur_len < 2)
+	            r_m_axi_arlen <= 1'b0;
+	        else
+		        r_m_axi_arlen <= r_dev_cur_len - 2;
 		end
 		S_AR_REQ: begin
-		if( r_dev_cur_len - r_dev_dma_len <= 2 || r_dev_dma_len - r_dev_cur_len  <= 2 )
-		      r_dev_dma_len <= 11'b0;
-		else
-		      r_dev_dma_len <= r_dev_dma_len - r_dev_cur_len;
-		end
+	      r_dev_dma_len <= r_dev_dma_len - r_dev_cur_len;
+	    end
 		S_AR_WAIT: begin
 
 		end
 		S_AR_DONE: begin
-		if(r_dev_dma_len[12:2] >= 8'b10000000) 
-            r_dev_cur_len[9:2] <= 8'b10000000;
-        else
-        begin
-            if(r_dev_dma_len[3:2] != 2'b0 && r_2nd_dma == 0)
-            begin
-                r_dev_cur_len[9:2] <= {r_dev_dma_len[9:4]+1,2'b0}; 
-				r_2nd_dma <= 1'b1;
+			if(r_dev_dma_len[12:2] >= 9'h100) begin
+	            r_dev_cur_len[10:2]            <= 9'h100;
+				r_pcie_tx_fifo_alloc_len[10:6] <= 5'h10;
+	        end
+	        else if(r_dev_dma_len[9:6] != 0) begin
+	            r_dev_cur_len[10:2]            <= {1'b0, r_dev_dma_len[9:6], 4'b0};
+				r_pcie_tx_fifo_alloc_len[10:6] <= {1'b0, r_dev_dma_len[9:6]};
+	        end
+	        else if(r_dev_dma_len[5:3] != 0) begin
+				r_dev_cur_len[10:2]            <= {5'b0, r_dev_dma_len[5:3], 1'b0};
+				r_pcie_tx_fifo_alloc_len[10:6] <= 6'b1;
 			end
-			else 
-				r_dev_cur_len[9:2] <= r_dev_dma_len[9:2];
-		   
-        end    
-	    r_dev_addr <= r_dev_addr + r_dev_cur_len;
-	    r_ar_delay <= LP_AR_DELAY;
+			else begin
+				r_dev_cur_len[10:2] <= {8'b0, r_dev_dma_len[2]};
+				if(r_dev_dma_orig_len[5:3] == 0)
+					r_pcie_tx_fifo_alloc_len[10:6] <= 6'b1;
+				else
+					r_pcie_tx_fifo_alloc_len[10:6] <= 6'b0;
+			end
+			   
+		    r_dev_addr <= r_dev_addr + r_dev_cur_len;
+		    r_ar_delay <= LP_AR_DELAY;
 		end
 		S_AR_DELAY: begin
 			r_ar_delay <= r_ar_delay - 1;
+		end
+		S_DUMMY_RD: begin
+			r_dummy_read             <= 1;
+		    r_ar_delay               <= LP_AR_DELAY;
+		    r_dev_addr               <= 30'h1FFFF000;
+			r_dev_dma_len[12:2]      <= r_rd_count * 2'b10;
+			r_dev_cur_len[10:2]      <= r_rd_count * 2'b10;
+			r_rd_count               <= 0;
+			r_pcie_tx_fifo_alloc_len <= 0;
 		end
 		default: begin
 
@@ -337,13 +354,13 @@ begin
 			r_axi_ar_req <= 0;
 		end
 		S_AR_REQ: begin
-            r_m_axi_arvalid <= (r_dev_cur_len < 4'b0010) ? 0 : 1;
+            r_m_axi_arvalid <= 1;
             r_dev_tx_cmd_rd_en <= 0;
-            r_pcie_tx_fifo_alloc_en <= (r_dev_cur_len < 4'b0010) ? 0 : 1;
-            r_axi_ar_req <= (r_dev_cur_len < 4'b0010) ? 0 : 1;
+            r_pcie_tx_fifo_alloc_en <= 1;
+            r_axi_ar_req <= 1;
         end
         S_AR_WAIT: begin
-            r_m_axi_arvalid <= (r_dev_cur_len < 4'b0010) ? 0 : 1;
+            r_m_axi_arvalid <= 1;
             r_dev_tx_cmd_rd_en <= 0;
             r_pcie_tx_fifo_alloc_en <= 0;
             r_axi_ar_req <= 0;
@@ -355,6 +372,12 @@ begin
 			r_axi_ar_req <= 0;
 		end
 		S_AR_DELAY: begin
+			r_m_axi_arvalid <= 0;
+			r_dev_tx_cmd_rd_en <= 0;
+			r_pcie_tx_fifo_alloc_en <= 0;
+			r_axi_ar_req <= 0;
+		end
+		S_DUMMY_RD: begin
 			r_m_axi_arvalid <= 0;
 			r_dev_tx_cmd_rd_en <= 0;
 			r_pcie_tx_fifo_alloc_en <= 0;
