@@ -52,7 +52,7 @@ http://www.hanyang.ac.kr/
 
 
 module pcie_prp_rx_tag # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	P_FIFO_DEPTH_WIDTH			= 5
 )
 (
@@ -61,7 +61,7 @@ module pcie_prp_rx_tag # (
 
 	input									pcie_tag_alloc,
 	input	[7:0]							pcie_alloc_tag,
-	input	[5:4]							pcie_tag_alloc_len,
+	input	[7:6]							pcie_tag_alloc_len,
 	output									pcie_tag_full_n,
 
 	input	[7:0]							cpld_fifo_tag,

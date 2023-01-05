@@ -54,8 +54,8 @@ module s_axi_top # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
 	parameter	C_S0_AXI_ADDR_WIDTH			= 32,
 	parameter	C_S0_AXI_DATA_WIDTH			= 32,
-	parameter	C_S0_AXI_BASEADDR			= 32'h80000000,
-	parameter	C_S0_AXI_HIGHADDR			= 32'h80010000,
+	parameter	C_S0_AXI_BASEADDR			= 32'hA0000000,
+	parameter	C_S0_AXI_HIGHADDR			= 32'hA001FFFF,
 
 	parameter	C_M0_AXI_ADDR_WIDTH			= 32,
 	parameter	C_M0_AXI_DATA_WIDTH			= 64,
@@ -249,11 +249,11 @@ module s_axi_top # (
 	output									pcie_rx_fifo_rd_en,
 	input	[C_M0_AXI_DATA_WIDTH-1:0]		pcie_rx_fifo_rd_data,
 	output									pcie_rx_fifo_free_en,
-	output	[9:4]							pcie_rx_fifo_free_len,
+	output	[10:6]							pcie_rx_fifo_free_len,
 	input									pcie_rx_fifo_empty_n,
 
 	output									pcie_tx_fifo_alloc_en,
-	output	[9:4]							pcie_tx_fifo_alloc_len,
+	output	[10:6]							pcie_tx_fifo_alloc_len,
 	output									pcie_tx_fifo_wr_en,
 	output	[C_M0_AXI_DATA_WIDTH-1:0]		pcie_tx_fifo_wr_data,
 	input									pcie_tx_fifo_full_n,

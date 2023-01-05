@@ -51,9 +51,10 @@ http://www.hanyang.ac.kr/
 `timescale 1ns / 1ps
 
 module pcie_hcmd_sq # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48, //modified
-	parameter 	P_SLOT_TAG_WIDTH			=  10 //slot_modified
+	parameter 	P_SLOT_TAG_WIDTH			= 10, //slot_modified
+	parameter	P_FIFO_DATA_WIDTH			= 128
 )
 (
 	input									pcie_user_clk,
@@ -99,7 +100,7 @@ module pcie_hcmd_sq # (
 
 	output									hcmd_table_wr_en,
 	output	[(P_SLOT_TAG_WIDTH+2)-1:0]		hcmd_table_wr_addr, //slot_modified
-	output	[C_PCIE_DATA_WIDTH-1:0]			hcmd_table_wr_data, 
+	output	[P_FIFO_DATA_WIDTH-1:0]			hcmd_table_wr_data, 
 
 	output									hcmd_cid_wr_en,
 	output	[P_SLOT_TAG_WIDTH-1:0]			hcmd_cid_wr_addr, //slot_modified
@@ -160,7 +161,7 @@ wire										w_pcie_sq_cmd_fifo_empty_n;
 
 wire										w_pcie_sq_rx_tag_alloc;
 wire	[7:0]								w_pcie_sq_rx_alloc_tag;
-wire	[6:4]								w_pcie_sq_rx_tag_alloc_len;
+wire									w_pcie_sq_rx_tag_alloc_len;
 wire										w_pcie_sq_rx_tag_full_n;
 
 wire										w_pcie_sq_rx_fifo_wr_en;
@@ -173,7 +174,7 @@ wire										w_pcie_sq_rx_fifo_full_n;
 wire										w_pcie_sq_rx_fifo_rd_en;
 wire	[C_PCIE_DATA_WIDTH-1:0]				w_pcie_sq_rx_fifo_rd_data;
 wire										w_pcie_sq_rx_fifo_free_en;
-wire	[6:4]								w_pcie_sq_rx_fifo_free_len;
+wire									w_pcie_sq_rx_fifo_free_len;
 wire										w_pcie_sq_rx_fifo_empty_n;
 
 

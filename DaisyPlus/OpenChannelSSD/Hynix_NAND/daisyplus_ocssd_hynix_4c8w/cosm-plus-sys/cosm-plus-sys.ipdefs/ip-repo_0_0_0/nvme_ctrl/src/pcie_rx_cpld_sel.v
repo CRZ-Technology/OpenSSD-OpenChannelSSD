@@ -52,7 +52,7 @@ http://www.hanyang.ac.kr/
 
 
 module pcie_rx_cpld_sel# (
-	parameter	C_PCIE_DATA_WIDTH			= 128
+	parameter	C_PCIE_DATA_WIDTH			= 512
 )
 (
 	input									pcie_user_clk,

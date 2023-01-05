@@ -53,7 +53,7 @@ http://www.hanyang.ac.kr/
 
  module pcie_hcmd_cq_req # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48 //modified
 )
 (
@@ -215,7 +215,7 @@ assign tx_cq_mwr_req = r_tx_cq_mwr_req;
 assign tx_cq_mwr_tag = LP_CPL_PCIE_TAG_PREFIX;
 assign tx_cq_mwr_len = LP_CPL_SIZE;
 assign tx_cq_mwr_addr = r_tx_cq_mwr_addr;
-assign tx_cq_mwr_rd_data = {w_cpl_dw3, w_cpl_dw2, w_cpl_dw1, w_cpl_dw0};
+assign tx_cq_mwr_rd_data = {384'b0, w_cpl_dw3, w_cpl_dw2, w_cpl_dw1, w_cpl_dw0};
 
 always @ (posedge pcie_user_clk or negedge pcie_user_rst_n)
 begin

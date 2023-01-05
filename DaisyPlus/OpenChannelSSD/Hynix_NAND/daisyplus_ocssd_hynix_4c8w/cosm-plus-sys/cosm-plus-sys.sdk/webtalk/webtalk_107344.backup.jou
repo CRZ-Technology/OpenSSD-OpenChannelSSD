@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Thu Jan  5 10:54:35 2023
+# Process ID: 107344
+# Current directory: D:/sources/DaisyPlus/NAND/Hynix/OCSSD/512bit/tmp/daisyplus_ocssd_hynix_4c8w_512b_20230105/cosm-plus-sys/cosm-plus-sys.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/sources/DaisyPlus/NAND/Hynix/OCSSD/512bit/tmp/daisyplus_ocssd_hynix_4c8w_512b_20230105/cosm-plus-sys/cosm-plus-sys.sdk/webtalk/webtalk.log
+# Journal file: D:/sources/DaisyPlus/NAND/Hynix/OCSSD/512bit/tmp/daisyplus_ocssd_hynix_4c8w_512b_20230105/cosm-plus-sys/cosm-plus-sys.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

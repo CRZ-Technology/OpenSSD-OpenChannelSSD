@@ -53,7 +53,7 @@ http://www.hanyang.ac.kr/
 
 module dma_cmd # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48, //modified
 	parameter	C_M_AXI_DATA_WIDTH			= 64
 )
@@ -150,7 +150,7 @@ wire										w_dma_done_empty_n;
 
 wire										w_prp_pcie_alloc;
 wire	[7:0]								w_prp_pcie_alloc_tag;
-wire	[5:4]								w_prp_pcie_tag_alloc_len;
+wire	[7:6]								w_prp_pcie_tag_alloc_len;
 wire										w_pcie_tag_full_n;
 
 wire										w_prp_fifo_wr_en;
@@ -164,7 +164,7 @@ wire										w_prp_fifo_full_n;
 wire										w_prp_fifo_rd_en;
 wire	[C_PCIE_DATA_WIDTH-1:0]				w_prp_fifo_rd_data;
 wire										w_prp_fifo_free_en;
-wire	[5:4]								w_prp_fifo_free_len;
+wire	[7:6]								w_prp_fifo_free_len;
 wire										w_prp_fifo_empty_n;
 
 
