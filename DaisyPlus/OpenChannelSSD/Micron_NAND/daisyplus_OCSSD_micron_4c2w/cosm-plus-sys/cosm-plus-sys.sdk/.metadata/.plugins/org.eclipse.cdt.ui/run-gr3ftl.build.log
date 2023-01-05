@@ -1,7 +1,7 @@
-18:08:11 **** Clean-only build of configuration Debug for project run-gr3ftl ****
+14:19:32 **** Clean-only build of configuration Debug for project run-gr3ftl ****
 make clean 
 rm -rf  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/ocssd_lld.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o  ./src/nvme/debug.d ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d ./src/nvme/ocssd_lld.d  ./src/address_translation.d ./src/data_buffer.d ./src/ftl_config.d ./src/main.d ./src/nsc_driver.d ./src/nvme_io_cmd_completion.d ./src/request_allocation.d ./src/request_schedule.d ./src/request_transform.d  run-gr3ftl.elf.size  run-gr3ftl.elf
 ' '
 
-18:08:12 Build Finished (took 465ms)
+14:19:33 Build Finished (took 544ms)
 

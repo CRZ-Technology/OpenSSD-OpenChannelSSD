@@ -51,7 +51,7 @@ http://www.hanyang.ac.kr/
 `timescale 1ns / 1ps
 
 module pcie_hcmd # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48, //modified
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
 	parameter 	P_SLOT_WIDTH				= 1024 //slot_modified

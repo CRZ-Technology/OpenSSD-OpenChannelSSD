@@ -633,47 +633,7 @@ module pcie4_uscale_plus_0_phy_top #(
    // Mask invalid RXSTATUS for Gen1/2 after EIOS, can be removed once GT fixes it
    //--------------------------------------------------------------------------
 
-   genvar         lane;
-
-generate
-   for (lane = 0; lane < PHY_LANE; lane = lane + 1) begin: per_lane_rxstatus_mask
-   assign com_det_lower[lane] = phy_rxdatak_pl[(lane* 2)]   & (phy_rxdata_pl[(lane* 64)+:8]                 == 8'hBC);
-   assign idl_det_lower[lane] = phy_rxdatak_pl[(lane* 2)]   & (phy_rxdata_pl[(lane* 64)+:8]                 == 8'h7C);
-   assign com_det_upper[lane] = phy_rxdatak_pl[(lane* 2)+1] & (phy_rxdata_pl[(lane* 64)+ 15: (lane* 64)+ 8] == 8'hBC);
-   assign idl_det_upper[lane] = phy_rxdatak_pl[(lane* 2)+1] & (phy_rxdata_pl[(lane* 64)+ 15: (lane* 64)+ 8] == 8'h7C);
-
-   assign eios_det_c0[lane]   = com_det_lower[lane] & idl_det_upper[lane];       // {IDL, COM}
-   assign eios_det_c1[lane]   = saved_com_det_lower[lane] & idl_det_lower[lane]; // {XXX, COM}, {XXX, IDL}
-   assign eios_det_c2[lane]   = saved_com_det_upper[lane] & idl_det_lower[lane]; // {COM, XXX}, {XXX, IDL}
-   assign eios_det_c3[lane]   = saved_com_det_upper[lane] & idl_det_upper[lane]; // {COM, XXX}, {IDL, XXX}
-
-      always @(*) begin
-      if (phy_rxvalid_pl[lane] & phy_rxelecidle_pl[lane] & ~phy_txdetectrx_pl & ~start_mask_mon[lane]) begin
-         phy_rxstatus_mask_wire[lane]     = eios_det_c0[lane] | eios_det_c1[lane] | eios_det_c2[lane]  | eios_det_c3[lane] | phy_rxstatus_mask[lane];
-         saved_com_det_lower_wire[lane]   = com_det_lower[lane];
-         saved_com_det_upper_wire[lane]   = com_det_upper[lane];
-         start_mask_mon_wire[lane]        = 1'b1;
-      end else if (start_mask_mon[lane]) begin
-         phy_rxstatus_mask_wire[lane]     = eios_det_c0[lane] | eios_det_c1[lane] | eios_det_c2[lane]  | eios_det_c3[lane] | phy_rxstatus_mask[lane];
-         saved_com_det_lower_wire[lane]   = com_det_lower[lane];
-         saved_com_det_upper_wire[lane]   = com_det_upper[lane];
-         start_mask_mon_wire[lane]        = phy_rxvalid_pl[lane];
-      end else begin
-         phy_rxstatus_mask_wire[lane]     = 1'b0;
-         saved_com_det_lower_wire[lane]   = 1'b0;
-         saved_com_det_upper_wire[lane]   = 1'b0;
-         start_mask_mon_wire[lane]        = 1'b0;
-      end
-   end
- 
-   `PHYREG(PHY_PCLK, PHY_PHYSTATUS_RST, phy_rxstatus_mask[lane], phy_rxstatus_mask_wire[lane], 1'b0)
-   `PHYREG(PHY_PCLK, PHY_PHYSTATUS_RST, saved_com_det_lower[lane], saved_com_det_lower_wire[lane], 1'b0)
-   `PHYREG(PHY_PCLK, PHY_PHYSTATUS_RST, saved_com_det_upper[lane], saved_com_det_upper_wire[lane], 1'b0)
-   `PHYREG(PHY_PCLK, PHY_PHYSTATUS_RST, start_mask_mon[lane], start_mask_mon_wire[lane], 1'b0)
-
-   assign phy_rxstatus_pl[(lane* 3)+:3]   = (~phy_rate_32b[1] & phy_rxstatus_mask[lane])? 3'd0: phy_rxstatus_raw[(lane* 3)+:3];
-   end
-endgenerate
+   assign phy_rxstatus_pl = phy_rxstatus_raw;
 
 
    //--------------------------------------------------------------------------

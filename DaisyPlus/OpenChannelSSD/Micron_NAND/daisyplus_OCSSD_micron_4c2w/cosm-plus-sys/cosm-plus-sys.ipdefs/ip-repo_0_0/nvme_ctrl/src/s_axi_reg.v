@@ -56,8 +56,8 @@ module s_axi_reg # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
 	parameter	C_S_AXI_ADDR_WIDTH			= 32,
 	parameter	C_S_AXI_DATA_WIDTH			= 32,
-	parameter	C_S_AXI_BASEADDR			= 32'h80000000,
-	parameter	C_S_AXI_HIGHADDR			= 32'h80010000,
+	parameter	C_S_AXI_BASEADDR			= 32'hA0000000,
+	parameter	C_S_AXI_HIGHADDR			= 32'hA001FFFF,
 	parameter	C_PCIE_ADDR_WIDTH			= 48 //modified
 )
 (
