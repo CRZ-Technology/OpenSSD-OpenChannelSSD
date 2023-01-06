@@ -53,7 +53,7 @@ http://www.hanyang.ac.kr/
 `include	"def_pcie.vh"
 
  module pcie_tx_arb # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48 //modified
 )
 (

@@ -51,7 +51,7 @@ http://www.hanyang.ac.kr/
 `timescale 1ns / 1ps
 
 module pcie_irq_gen # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48 //modified
 )
 (
