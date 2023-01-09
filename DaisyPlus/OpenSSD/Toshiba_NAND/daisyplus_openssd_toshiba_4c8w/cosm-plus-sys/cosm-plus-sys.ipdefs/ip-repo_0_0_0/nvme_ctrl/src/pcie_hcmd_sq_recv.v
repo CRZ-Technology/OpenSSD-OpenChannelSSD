@@ -52,9 +52,10 @@ http://www.hanyang.ac.kr/
 
 
  module pcie_hcmd_sq_recv # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48, //modified
-	parameter 	P_SLOT_TAG_WIDTH			=  10 //slot_modified
+	parameter 	P_SLOT_TAG_WIDTH			= 10, //slot_modified
+	parameter	P_DATA_WIDTH				= 128
 )
 (
  	input									pcie_user_clk,
@@ -67,12 +68,12 @@ http://www.hanyang.ac.kr/
  	output									pcie_sq_rx_fifo_rd_en,
  	input	[C_PCIE_DATA_WIDTH-1:0]			pcie_sq_rx_fifo_rd_data,
  	output									pcie_sq_rx_fifo_free_en,
- 	output	[6:4]							pcie_sq_rx_fifo_free_len,
+ 	output								pcie_sq_rx_fifo_free_len,
  	input									pcie_sq_rx_fifo_empty_n,
 
  	output									hcmd_table_wr_en,
  	output	[(P_SLOT_TAG_WIDTH+2)-1:0]		hcmd_table_wr_addr, //slot_modified
- 	output	[C_PCIE_DATA_WIDTH-1:0]			hcmd_table_wr_data,
+ 	output	[P_DATA_WIDTH-1:0]				hcmd_table_wr_data,
 
  	output									hcmd_cid_wr_en,
  	output	[P_SLOT_TAG_WIDTH-1:0]			hcmd_cid_wr_addr, //slot_modified
@@ -168,16 +169,18 @@ localparam	S_PCIE_HCMD_DONE				= 10'b1000000000;
      reg		[7:0]								r_io_sq7_head_ptr;
      reg		[7:0]								r_io_sq8_head_ptr;
 
+     reg		[P_DATA_WIDTH-1:0]					r_hcmd_table_wr_data;
+
 assign pcie_sq_cmd_fifo_rd_en = r_pcie_sq_cmd_fifo_rd_en;
 
 assign pcie_sq_rx_fifo_rd_en = r_pcie_sq_rx_fifo_rd_en;
 assign pcie_sq_rx_fifo_free_en = r_pcie_sq_rx_fifo_free_en;
-assign pcie_sq_rx_fifo_free_len = 3'b100;
+assign pcie_sq_rx_fifo_free_len = 1'b1;
 
 //assign hcmd_table_wr_en = cpld_fifo_wr_en;
 assign hcmd_table_wr_en = r_hcmd_table_wr_en;
 assign hcmd_table_wr_addr = {r_hcmd_slot_tag, r_hcmd_table_addr}; // slot_modified
-assign hcmd_table_wr_data = r_pcie_sq_rx_fifo_rd_data;
+assign hcmd_table_wr_data = r_hcmd_table_wr_data;
 
 assign hcmd_sq_wr_en = r_hcmd_sq_wr_en;
 assign hcmd_sq_wr_data = {r_hcmd_num, r_hcmd_slot_tag, r_sq_qid}; //slot_modified
@@ -313,14 +316,14 @@ begin
 
 		end
 		S_PCIE_HCMD_1: begin
-			r_hcmd_prp1[63:2] <= pcie_sq_rx_fifo_rd_data[127:66];
+			r_hcmd_prp1[63:2] <= r_pcie_sq_rx_fifo_rd_data[255:194];
 		end
 		S_PCIE_HCMD_2: begin
-			r_hcmd_prp2[63:2] <= pcie_sq_rx_fifo_rd_data[63:2];
-			r_hcmd_slba <= pcie_sq_rx_fifo_rd_data[66:64];
+			r_hcmd_prp2[63:2] <= r_pcie_sq_rx_fifo_rd_data[319:258];
+			r_hcmd_slba <= r_pcie_sq_rx_fifo_rd_data[322:320];
 		end
 		S_PCIE_HCMD_3: begin
-			r_hcmd_nlb <= {1'b0, pcie_sq_rx_fifo_rd_data[7:0]};
+			r_hcmd_nlb <= {1'b0, r_pcie_sq_rx_fifo_rd_data[391:384]};
 		end
 		S_PCIE_NLB: begin
 			r_hcmd_nlb <= r_hcmd_nlb + 1;
@@ -349,7 +352,38 @@ end
 
 always @ (posedge pcie_user_clk)
 begin
-	r_pcie_sq_rx_fifo_rd_data <= pcie_sq_rx_fifo_rd_data;
+	case(cur_state)
+		S_IDLE: begin
+		end
+		S_SQ_CMD: begin
+		end
+		S_CHECK_FIFO: begin
+		end
+		S_PCIE_HCMD_0: begin
+			r_pcie_sq_rx_fifo_rd_data <= pcie_sq_rx_fifo_rd_data;
+			r_hcmd_table_wr_data      <= pcie_sq_rx_fifo_rd_data[127:0];
+		end
+		S_PCIE_HCMD_1: begin
+			r_pcie_sq_rx_fifo_rd_data <= r_pcie_sq_rx_fifo_rd_data;
+			r_hcmd_table_wr_data      <= r_pcie_sq_rx_fifo_rd_data[255:128];
+		end
+		S_PCIE_HCMD_2: begin
+			r_pcie_sq_rx_fifo_rd_data <= r_pcie_sq_rx_fifo_rd_data;
+			r_hcmd_table_wr_data      <= r_pcie_sq_rx_fifo_rd_data[383:256];
+		end
+		S_PCIE_HCMD_3: begin
+			r_pcie_sq_rx_fifo_rd_data <= r_pcie_sq_rx_fifo_rd_data;
+			r_hcmd_table_wr_data      <= r_pcie_sq_rx_fifo_rd_data[511:384];
+		end
+		S_PCIE_NLB: begin
+		end
+		S_PCIE_NLB_WAIT: begin
+		end
+		S_PCIE_HCMD_DONE: begin
+		end
+		default: begin
+		end
+	endcase	
 end
 
 always @ (*)
@@ -409,7 +443,7 @@ begin
 		end
 		S_PCIE_HCMD_1: begin
 			r_pcie_sq_cmd_fifo_rd_en <= 0;
-			r_pcie_sq_rx_fifo_rd_en <= 1;
+			r_pcie_sq_rx_fifo_rd_en <= 0;
 			r_pcie_sq_rx_fifo_free_en <= 0;
 			r_hcmd_table_wr_en <= 1;
 			r_hcmd_table_addr <= 2'b00;
@@ -422,7 +456,7 @@ begin
 		end
 		S_PCIE_HCMD_2: begin
 			r_pcie_sq_cmd_fifo_rd_en <= 0;
-			r_pcie_sq_rx_fifo_rd_en <= 1;
+			r_pcie_sq_rx_fifo_rd_en <= 0;
 			r_pcie_sq_rx_fifo_free_en <= 0;
 			r_hcmd_table_wr_en <= 1;
 			r_hcmd_table_addr <= 2'b01;
@@ -435,7 +469,7 @@ begin
 		end
 		S_PCIE_HCMD_3: begin
 			r_pcie_sq_cmd_fifo_rd_en <= 0;
-			r_pcie_sq_rx_fifo_rd_en <= 1;
+			r_pcie_sq_rx_fifo_rd_en <= 0;
 			r_pcie_sq_rx_fifo_free_en <= 0;
 			r_hcmd_table_wr_en <= 1;
 			r_hcmd_table_addr <= 2'b10;

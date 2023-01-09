@@ -582,8 +582,8 @@ endgenerate
     wire [((((PHY_LANE-1)>>2)+1)* 5)-1:0] qpllrsvd3_in;
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    assign qpll0lock_all   = 0;  // CPLL
-    assign qpll1lock_all   = 0;  // CPLL
+    assign qpll0lock_all   = &qpll0lock_out;
+    assign qpll1lock_all   = &qpll1lock_out;
     assign txsyncallin_all = &txphaligndone_out;    
     
     assign gtwiz_userclk_tx_active_in = GT_TXUSERRDY[PHY_LANE-1];                                                
@@ -606,11 +606,10 @@ endgenerate
     assign txdlyupdown_in        = ({PHY_LANE{1'd0}});                                                
     assign txphalign_in          = ({PHY_LANE{1'd0}});                                                
     assign txphalignen_in        = ({PHY_LANE{1'd0}});                                                
+    assign txdlybypass_in        = ({PHY_LANE{1'd0}});                                                
  
 
     assign txphdlypd_in          = {1'b0, !txpmaresetdone_out[1], !txpmaresetdone_out[2], !txpmaresetdone_out[3], !txpmaresetdone_out[4], !txpmaresetdone_out[5], !txpmaresetdone_out[6], !txpmaresetdone_out[7], !txpmaresetdone_out[8], !txpmaresetdone_out[9], !txpmaresetdone_out[10], !txpmaresetdone_out[11], !txpmaresetdone_out[12], !txpmaresetdone_out[13], !txpmaresetdone_out[14], !txpmaresetdone_out[15] };
-    assign txdlybypass_in        = 16'h7FFF;                                                
-    //assign txdlybypass_in        = ({PHY_LANE{1'd0}});                                                
  
  
  
@@ -641,13 +640,20 @@ endgenerate
    .dmonfiforeset_in(dmonfiforeset_in),
    .dmonitorclk_in(dmonitorclk_in),
    .dmonitorout_out(dmonitorout_out),
+   .drpaddr_common_in(drpaddr_common_in),
    .drpaddr_in(drpaddr_in),
+   .drpclk_common_in(drpclk_common_in),
    .drpclk_in(drpclk_in),
+   .drpdi_common_in(drpdi_common_in),
    .drpdi_in(drpdi_in),
+   .drpdo_common_out(drpdo_common_out),
    .drpdo_out(drpdo_out),
+   .drpen_common_in(drpen_common_in),
    .drpen_in(drpen_in),
+   .drprdy_common_out(drprdy_common_out),
    .drprdy_out(drprdy_out),
    .drprst_in(drprst_in),
+   .drpwe_common_in(drpwe_common_in),
    .drpwe_in(drpwe_in),
    .eyescanreset_in(eyescanreset_in),
    .gthrxn_in(gthrxn_in),
@@ -655,6 +661,8 @@ endgenerate
    .gthtxn_out(gthtxn_out),
    .gthtxp_out(gthtxp_out),
    .gtpowergood_out(gtpowergood_out),
+   .gtrefclk00_in(gtrefclk00_in),
+   .gtrefclk01_in(gtrefclk01_in),
    .gtrefclk0_in(gtrefclk0_in),
    .gtrxreset_in(gtrxreset_in),
    .gttxreset_in(gttxreset_in),
@@ -670,6 +678,10 @@ endgenerate
    .pcieeqrxeqadaptdone_in(pcieeqrxeqadaptdone_in),
    .pcierategen3_out(pcierategen3_out),
    .pcierateidle_out(pcierateidle_out),
+   .pcierateqpll0_in(pcierateqpll0_in),
+   .pcierateqpll1_in(pcierateqpll1_in),
+   .pcierateqpllpd_out(pcierateqpllpd_out),
+   .pcierateqpllreset_out(pcierateqpllreset_out),
    .pcierstidle_in(pcierstidle_in),
    .pciersttxsyncstart_in(pciersttxsyncstart_in),
    .pciesynctxsyncdone_out(pciesynctxsyncdone_out),
@@ -678,6 +690,19 @@ endgenerate
    .pcieuserratedone_in(pcieuserratedone_in),
    .pcieuserratestart_out(pcieuserratestart_out),
    .phystatus_out(phystatus_out),
+   .qpll0freqlock_in(qpll0freqlock_in),
+   .qpll0lock_out(qpll0lock_out),
+   .qpll0outclk_out(qpll0outclk_out),
+   .qpll0outrefclk_out(qpll0outrefclk_out),
+   .qpll0pd_in(qpll0pd_in),
+   .qpll0reset_in(qpll0reset_in),
+   .qpll1freqlock_in(qpll1freqlock_in),
+   .qpll1lock_out(qpll1lock_out),
+   .qpll1outclk_out(qpll1outclk_out),
+   .qpll1outrefclk_out(qpll1outrefclk_out),
+   .qpll1pd_in(qpll1pd_in),
+   .qpll1reset_in(qpll1reset_in),
+   .rcalenb_in(rcalenb_in),
    .resetovrd_in(resetovrd_in),
    .rx8b10ben_in(rx8b10ben_in),
    .rxbufreset_in(rxbufreset_in),
@@ -992,12 +1017,12 @@ generate for (i=0; i<PHY_LANE; i=i+1)
 endgenerate
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    assign GTCOM_QPLL0LOCK      = 0;
-    assign GTCOM_QPLL0OUTCLK    = 0;
-    assign GTCOM_QPLL0OUTREFCLK = 0;
-    assign GTCOM_QPLL1LOCK      = 0;
-    assign GTCOM_QPLL1OUTCLK    = 0;
-    assign GTCOM_QPLL1OUTREFCLK = 0;
+    assign GTCOM_QPLL0LOCK      = qpll0lock_out;
+    assign GTCOM_QPLL0OUTCLK    = qpll0outclk_out;
+    assign GTCOM_QPLL0OUTREFCLK = qpll0outrefclk_out;
+    assign GTCOM_QPLL1LOCK      = qpll1lock_out;
+    assign GTCOM_QPLL1OUTCLK    = qpll1outclk_out;
+    assign GTCOM_QPLL1OUTREFCLK = qpll1outrefclk_out;
 
 genvar k;                                                                                                      
                                                                                                                

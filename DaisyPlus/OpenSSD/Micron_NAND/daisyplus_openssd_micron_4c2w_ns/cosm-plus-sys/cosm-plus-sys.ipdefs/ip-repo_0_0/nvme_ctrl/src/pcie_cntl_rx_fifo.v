@@ -51,7 +51,7 @@ http://www.hanyang.ac.kr/
 `timescale 1ns / 1ps
 
 module pcie_cntl_rx_fifo # (
-	parameter	P_FIFO_DATA_WIDTH			= 128,
+	parameter	P_FIFO_DATA_WIDTH			= 512,
 	parameter	P_FIFO_DEPTH_WIDTH			= 5
 )
 (
@@ -124,8 +124,8 @@ assign w_front_addr = (rd_en == 1) ? r_front_addr_p1[P_FIFO_DEPTH_WIDTH-1:0]
 localparam LP_DEVICE = "7SERIES";
 localparam LP_BRAM_SIZE = "36Kb";
 localparam LP_DOB_REG = 0;
-localparam LP_READ_WIDTH = P_FIFO_DATA_WIDTH/2;
-localparam LP_WRITE_WIDTH = P_FIFO_DATA_WIDTH/2;
+localparam LP_READ_WIDTH = P_FIFO_DATA_WIDTH/8;
+localparam LP_WRITE_WIDTH = P_FIFO_DATA_WIDTH/8;
 localparam LP_WRITE_MODE = "READ_FIRST";
 localparam LP_WE_WIDTH = 8;
 localparam LP_ADDR_TOTAL_WITDH = 9;
@@ -179,8 +179,8 @@ BRAM_SDP_MACRO #(
 	.WRITE_MODE								(LP_WRITE_MODE)
 )
 ramb36sdp_1(
-	.DO										(rd_data[P_FIFO_DATA_WIDTH-1:LP_READ_WIDTH]),
-	.DI										(wr_data[P_FIFO_DATA_WIDTH-1:LP_WRITE_WIDTH]),
+	.DO										(rd_data[(LP_READ_WIDTH*2)-1:LP_READ_WIDTH]),
+	.DI										(wr_data[(LP_WRITE_WIDTH*2)-1:LP_WRITE_WIDTH]),
 	.RDADDR									(rdaddr),
 	.RDCLK									(clk),
 	.RDEN									(1'b1),
@@ -191,6 +191,139 @@ ramb36sdp_1(
 	.WRCLK									(clk),
 	.WREN									(wr_en)
 );
+
+BRAM_SDP_MACRO #(
+	.DEVICE									(LP_DEVICE),
+	.BRAM_SIZE								(LP_BRAM_SIZE),
+	.DO_REG									(LP_DOB_REG),
+	.READ_WIDTH								(LP_READ_WIDTH),
+	.WRITE_WIDTH							(LP_WRITE_WIDTH),
+	.WRITE_MODE								(LP_WRITE_MODE)
+)
+ramb36sdp_2(
+	.DO										(rd_data[(LP_READ_WIDTH*3)-1:(LP_READ_WIDTH*2)]),
+	.DI										(wr_data[(LP_WRITE_WIDTH*3)-1:(LP_WRITE_WIDTH*2)]),
+	.RDADDR									(rdaddr),
+	.RDCLK									(clk),
+	.RDEN									(1'b1),
+	.REGCE									(1'b1),
+	.RST									(1'b0),
+	.WE										({LP_WE_WIDTH{1'b1}}),
+	.WRADDR									(wraddr),
+	.WRCLK									(clk),
+	.WREN									(wr_en)
+);
+
+BRAM_SDP_MACRO #(
+	.DEVICE									(LP_DEVICE),
+	.BRAM_SIZE								(LP_BRAM_SIZE),
+	.DO_REG									(LP_DOB_REG),
+	.READ_WIDTH								(LP_READ_WIDTH),
+	.WRITE_WIDTH							(LP_WRITE_WIDTH),
+	.WRITE_MODE								(LP_WRITE_MODE)
+)
+ramb36sdp_3(
+	.DO										(rd_data[(LP_READ_WIDTH*4)-1:(LP_READ_WIDTH*3)]),
+	.DI										(wr_data[(LP_WRITE_WIDTH*4)-1:(LP_WRITE_WIDTH*3)]),
+	.RDADDR									(rdaddr),
+	.RDCLK									(clk),
+	.RDEN									(1'b1),
+	.REGCE									(1'b1),
+	.RST									(1'b0),
+	.WE										({LP_WE_WIDTH{1'b1}}),
+	.WRADDR									(wraddr),
+	.WRCLK									(clk),
+	.WREN									(wr_en)
+);
+
+BRAM_SDP_MACRO #(
+	.DEVICE									(LP_DEVICE),
+	.BRAM_SIZE								(LP_BRAM_SIZE),
+	.DO_REG									(LP_DOB_REG),
+	.READ_WIDTH								(LP_READ_WIDTH),
+	.WRITE_WIDTH							(LP_WRITE_WIDTH),
+	.WRITE_MODE								(LP_WRITE_MODE)
+)
+ramb36sdp_4(
+	.DO										(rd_data[(LP_READ_WIDTH*5)-1:(LP_READ_WIDTH*4)]),
+	.DI										(wr_data[(LP_WRITE_WIDTH*5)-1:(LP_WRITE_WIDTH*4)]),
+	.RDADDR									(rdaddr),
+	.RDCLK									(clk),
+	.RDEN									(1'b1),
+	.REGCE									(1'b1),
+	.RST									(1'b0),
+	.WE										({LP_WE_WIDTH{1'b1}}),
+	.WRADDR									(wraddr),
+	.WRCLK									(clk),
+	.WREN									(wr_en)
+);
+
+BRAM_SDP_MACRO #(
+	.DEVICE									(LP_DEVICE),
+	.BRAM_SIZE								(LP_BRAM_SIZE),
+	.DO_REG									(LP_DOB_REG),
+	.READ_WIDTH								(LP_READ_WIDTH),
+	.WRITE_WIDTH							(LP_WRITE_WIDTH),
+	.WRITE_MODE								(LP_WRITE_MODE)
+)
+ramb36sdp_5(
+	.DO										(rd_data[(LP_READ_WIDTH*6)-1:(LP_READ_WIDTH*5)]),
+	.DI										(wr_data[(LP_WRITE_WIDTH*6)-1:(LP_WRITE_WIDTH*5)]),
+	.RDADDR									(rdaddr),
+	.RDCLK									(clk),
+	.RDEN									(1'b1),
+	.REGCE									(1'b1),
+	.RST									(1'b0),
+	.WE										({LP_WE_WIDTH{1'b1}}),
+	.WRADDR									(wraddr),
+	.WRCLK									(clk),
+	.WREN									(wr_en)
+);
+
+BRAM_SDP_MACRO #(
+	.DEVICE									(LP_DEVICE),
+	.BRAM_SIZE								(LP_BRAM_SIZE),
+	.DO_REG									(LP_DOB_REG),
+	.READ_WIDTH								(LP_READ_WIDTH),
+	.WRITE_WIDTH							(LP_WRITE_WIDTH),
+	.WRITE_MODE								(LP_WRITE_MODE)
+)
+ramb36sdp_6(
+	.DO										(rd_data[(LP_READ_WIDTH*7)-1:(LP_READ_WIDTH*6)]),
+	.DI										(wr_data[(LP_WRITE_WIDTH*7)-1:(LP_WRITE_WIDTH*6)]),
+	.RDADDR									(rdaddr),
+	.RDCLK									(clk),
+	.RDEN									(1'b1),
+	.REGCE									(1'b1),
+	.RST									(1'b0),
+	.WE										({LP_WE_WIDTH{1'b1}}),
+	.WRADDR									(wraddr),
+	.WRCLK									(clk),
+	.WREN									(wr_en)
+);
+
+BRAM_SDP_MACRO #(
+	.DEVICE									(LP_DEVICE),
+	.BRAM_SIZE								(LP_BRAM_SIZE),
+	.DO_REG									(LP_DOB_REG),
+	.READ_WIDTH								(LP_READ_WIDTH),
+	.WRITE_WIDTH							(LP_WRITE_WIDTH),
+	.WRITE_MODE								(LP_WRITE_MODE)
+)
+ramb36sdp_7(
+	.DO										(rd_data[(LP_READ_WIDTH*8)-1:(LP_READ_WIDTH*7)]),
+	.DI										(wr_data[(LP_WRITE_WIDTH*8)-1:(LP_WRITE_WIDTH*7)]),
+	.RDADDR									(rdaddr),
+	.RDCLK									(clk),
+	.RDEN									(1'b1),
+	.REGCE									(1'b1),
+	.RST									(1'b0),
+	.WE										({LP_WE_WIDTH{1'b1}}),
+	.WRADDR									(wraddr),
+	.WRCLK									(clk),
+	.WREN									(wr_en)
+);
+
 
 endmodule
 

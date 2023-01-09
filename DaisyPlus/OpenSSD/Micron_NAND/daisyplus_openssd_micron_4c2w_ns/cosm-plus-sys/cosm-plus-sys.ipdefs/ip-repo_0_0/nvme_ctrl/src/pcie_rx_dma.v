@@ -52,7 +52,7 @@ http://www.hanyang.ac.kr/
 
 
 module pcie_rx_dma # (
-	parameter	P_PCIE_DATA_WIDTH			= 128,
+	parameter	P_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48, //modified
 	parameter	C_M_AXI_DATA_WIDTH			= 64
 )
@@ -83,7 +83,7 @@ module pcie_rx_dma # (
 	input									pcie_rx_fifo_rd_en,
 	output	[C_M_AXI_DATA_WIDTH-1:0]		pcie_rx_fifo_rd_data,
 	input									pcie_rx_fifo_free_en,
-	input	[9:4]							pcie_rx_fifo_free_len, 
+	input	[10:6]							pcie_rx_fifo_free_len, 
 	output									pcie_rx_fifo_empty_n
 );
 
@@ -93,13 +93,13 @@ wire										w_pcie_rx_cmd_empty_n;
 
 wire										w_pcie_tag_alloc;
 wire	[7:0]								w_pcie_alloc_tag;
-wire	[9:4]								w_pcie_tag_alloc_len; 
+wire	[10:6]								w_pcie_tag_alloc_len; 
 wire										w_pcie_tag_full_n;
 wire										w_pcie_rx_fifo_full_n;
 
 wire										w_fifo_wr_en;
 wire	[8:0]								w_fifo_wr_addr;
-wire	[127:0]								w_fifo_wr_data;
+wire	[P_PCIE_DATA_WIDTH - 1:0]	        w_fifo_wr_data;
 wire	[9:0]								w_rear_full_addr;
 wire	[9:0]								w_rear_addr;
 

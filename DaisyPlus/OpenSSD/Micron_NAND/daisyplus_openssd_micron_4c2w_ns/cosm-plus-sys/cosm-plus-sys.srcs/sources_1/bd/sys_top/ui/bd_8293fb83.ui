@@ -3,235 +3,235 @@
    "PinnedBlocks":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port nand_if_0 -pg 1 -lvl 13 -x 6300 -y 30 -defaultsOSRD
-preplace port nand_if_1 -pg 1 -lvl 13 -x 6300 -y 1550 -defaultsOSRD
-preplace port nand_if_2 -pg 1 -lvl 13 -x 6300 -y 3310 -defaultsOSRD
-preplace port nand_if_3 -pg 1 -lvl 13 -x 6300 -y 3980 -defaultsOSRD
-preplace port pci_exp_0 -pg 1 -lvl 13 -x 6300 -y 5640 -defaultsOSRD
+preplace port nand_if_0 -pg 1 -lvl 13 -x 6410 -y 30 -defaultsOSRD
+preplace port nand_if_1 -pg 1 -lvl 13 -x 6410 -y 1550 -defaultsOSRD
+preplace port nand_if_2 -pg 1 -lvl 13 -x 6410 -y 3310 -defaultsOSRD
+preplace port nand_if_3 -pg 1 -lvl 13 -x 6410 -y 3980 -defaultsOSRD
+preplace port pci_exp_0 -pg 1 -lvl 13 -x 6410 -y 5640 -defaultsOSRD
 preplace port pcie_ref -pg 1 -lvl 0 -x 0 -y 5610 -defaultsOSRD
-preplace port user_lnk_up_0 -pg 1 -lvl 13 -x 6300 -y 5680 -defaultsOSRD
+preplace port user_lnk_up_0 -pg 1 -lvl 13 -x 6410 -y 5680 -defaultsOSRD
 preplace port pcie_perst_n -pg 1 -lvl 0 -x 0 -y 5710 -defaultsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 7 -x 2650 -y 5210 -defaultsOSRD
-preplace inst axi_bram_ctrl_0 -pg 1 -lvl 10 -x 4240 -y 3990 -defaultsOSRD
-preplace inst axi_bram_ctrl_1 -pg 1 -lvl 10 -x 4240 -y 3590 -defaultsOSRD
-preplace inst axi_bram_ctrl_2 -pg 1 -lvl 10 -x 4240 -y 4160 -defaultsOSRD
-preplace inst axi_bram_ctrl_3 -pg 1 -lvl 10 -x 4240 -y 4300 -defaultsOSRD
-preplace inst bch_sccs_256B_21B_13b_0 -pg 1 -lvl 9 -x 3700 -y 4210 -defaultsOSRD
-preplace inst bch_sccs_256B_21B_13b_1 -pg 1 -lvl 4 -x 1160 -y 3940 -defaultsOSRD
-preplace inst bch_sccs_256B_21B_13b_2 -pg 1 -lvl 4 -x 1160 -y 4520 -defaultsOSRD
-preplace inst bch_sccs_256B_21B_13b_3 -pg 1 -lvl 4 -x 1160 -y 4930 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 11 -x 5030 -y 4450 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 11 -x 5030 -y 4650 -defaultsOSRD -resize 160 96
-preplace inst blk_mem_gen_2 -pg 1 -lvl 11 -x 5030 -y 4770 -defaultsOSRD -resize 160 96
-preplace inst blk_mem_gen_3 -pg 1 -lvl 11 -x 5030 -y 4910 -defaultsOSRD -resize 160 96
-preplace inst gpic_0 -pg 1 -lvl 8 -x 3170 -y 5280 -defaultsOSRD
-preplace inst gpic_0_sub_0 -pg 1 -lvl 9 -x 3700 -y 3840 -defaultsOSRD
-preplace inst gpic_1 -pg 1 -lvl 10 -x 4240 -y 5280 -defaultsOSRD -resize 260 388
-preplace inst gpic_0_sub -pg 1 -lvl 11 -x 5030 -y 5250 -defaultsOSRD -resize 262 450
-preplace inst hpic_0 -pg 1 -lvl 6 -x 2150 -y 4640 -defaultsOSRD
-preplace inst pll_bank11 -pg 1 -lvl 2 -x 480 -y 3790 -defaultsOSRD
-preplace inst pll_bank12 -pg 1 -lvl 2 -x 480 -y 4048 -defaultsOSRD -resize 140 103
-preplace inst pll_bank13 -pg 1 -lvl 2 -x 480 -y 4333 -defaultsOSRD -resize 140 103
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 7 -x 2720 -y 5210 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 10 -x 4340 -y 3990 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 10 -x 4340 -y 3590 -defaultsOSRD
+preplace inst axi_bram_ctrl_2 -pg 1 -lvl 10 -x 4340 -y 4160 -defaultsOSRD
+preplace inst axi_bram_ctrl_3 -pg 1 -lvl 10 -x 4340 -y 4300 -defaultsOSRD
+preplace inst bch_sccs_256B_21B_13b_0 -pg 1 -lvl 9 -x 3800 -y 4210 -defaultsOSRD
+preplace inst bch_sccs_256B_21B_13b_1 -pg 1 -lvl 4 -x 1210 -y 3940 -defaultsOSRD
+preplace inst bch_sccs_256B_21B_13b_2 -pg 1 -lvl 4 -x 1210 -y 4520 -defaultsOSRD
+preplace inst bch_sccs_256B_21B_13b_3 -pg 1 -lvl 4 -x 1210 -y 4930 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 11 -x 5130 -y 4450 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 11 -x 5130 -y 4650 -defaultsOSRD -resize 160 96
+preplace inst blk_mem_gen_2 -pg 1 -lvl 11 -x 5130 -y 4770 -defaultsOSRD -resize 160 96
+preplace inst blk_mem_gen_3 -pg 1 -lvl 11 -x 5130 -y 4910 -defaultsOSRD -resize 160 96
+preplace inst gpic_0 -pg 1 -lvl 8 -x 3280 -y 5280 -defaultsOSRD
+preplace inst gpic_0_sub_0 -pg 1 -lvl 9 -x 3800 -y 3840 -defaultsOSRD
+preplace inst gpic_1 -pg 1 -lvl 10 -x 4340 -y 5280 -defaultsOSRD -resize 260 388
+preplace inst gpic_0_sub -pg 1 -lvl 11 -x 5130 -y 5250 -defaultsOSRD -resize 262 450
+preplace inst hpic_0 -pg 1 -lvl 6 -x 2210 -y 4640 -defaultsOSRD
+preplace inst pll_bank11 -pg 1 -lvl 2 -x 490 -y 3790 -defaultsOSRD
+preplace inst pll_bank12 -pg 1 -lvl 2 -x 490 -y 4048 -defaultsOSRD -resize 140 103
+preplace inst pll_bank13 -pg 1 -lvl 2 -x 490 -y 4333 -defaultsOSRD -resize 140 103
 preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 200 -y 4383 -defaultsOSRD
-preplace inst proc_sys_reset_2 -pg 1 -lvl 5 -x 1590 -y 5240 -defaultsOSRD -resize 300 156
-preplace inst t4nfc_hlper_0 -pg 1 -lvl 10 -x 4240 -y 3790 -defaultsOSRD
-preplace inst t4nfc_hlper_1 -pg 1 -lvl 5 -x 1590 -y 3610 -defaultsOSRD
-preplace inst t4nfc_hlper_2 -pg 1 -lvl 5 -x 1590 -y 4520 -defaultsOSRD
-preplace inst t4nfc_hlper_3 -pg 1 -lvl 5 -x 1590 -y 4900 -defaultsOSRD
-preplace inst bch_skes_256B_21B_13b_0 -pg 1 -lvl 10 -x 4240 -y 4890 -defaultsOSRD
-preplace inst iodelay_if_0 -pg 1 -lvl 12 -x 5720 -y 2370 -defaultsOSRD
-preplace inst iodelay_if_0_dqs -pg 1 -lvl 12 -x 5720 -y 720 -defaultsOSRD -resize 220 1336
-preplace inst pll_bank13_psr -pg 1 -lvl 3 -x 780 -y 4220 -defaultsOSRD
-preplace inst pll_bank11_psr -pg 1 -lvl 3 -x 780 -y 3820 -defaultsOSRD
-preplace inst pll_bank12_psr -pg 1 -lvl 3 -x 780 -y 4020 -defaultsOSRD
-preplace inst pll_bank10 -pg 1 -lvl 4 -x 1160 -y 4310 -defaultsOSRD
-preplace inst pll_bank10_psr -pg 1 -lvl 5 -x 1590 -y 4320 -defaultsOSRD
-preplace inst nvme_ctrl_0 -pg 1 -lvl 11 -x 5030 -y 5650 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 6 -x 2150 -y 5270 -defaultsOSRD
-preplace inst smartconnect_0 -pg 1 -lvl 6 -x 2150 -y 5450 -defaultsOSRD
-preplace inst proc_sys_reset_6 -pg 1 -lvl 5 -x 1590 -y 5450 -defaultsOSRD
-preplace inst proc_sys_reset_7 -pg 1 -lvl 9 -x 3700 -y 5400 -defaultsOSRD
-preplace inst v2nfc_0 -pg 1 -lvl 11 -x 5030 -y 830 -defaultsOSRD
-preplace inst v2nfc_1 -pg 1 -lvl 11 -x 5030 -y 1560 -defaultsOSRD -resize 266 549
-preplace inst v2nfc_2 -pg 1 -lvl 11 -x 5030 -y 3330 -defaultsOSRD -resize 264 569
-preplace inst v2nfc_3 -pg 1 -lvl 11 -x 5030 -y 4020 -defaultsOSRD -resize 258 603
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 12 20 4483 380 4413 NJ 4413 1030 5080 NJ 5080 2010J 5050 NJ 5050 2960 5140 3440 4890 4080 4770 4420 4840 5410
-preplace netloc processing_system7_0_FCLK_CLK2 1 4 7 1410 5130 1930 5130 2350 5370 3000 5510 NJ 5510 3910 5040 4410
-preplace netloc ARESETN_1 1 1 8 NJ 4403 NJ 4403 1020J 4220 NJ 4220 NJ 4220 NJ 4220 NJ 4220 3350
-preplace netloc proc_sys_reset_2_interconnect_aresetn 1 5 6 1950 5060 NJ 5060 3010 5160 3530J 5140 4070 5050 4390J
-preplace netloc S00_ARESETN_1 1 1 11 370J 4650 NJ 4650 NJ 4650 NJ 4650 1800J 4850 NJ 4850 3020 5150 3500 5150 4000J 5060 4870 5000 5440
-preplace netloc M00_ARESETN_1 1 5 6 1990 5340 2310J 5390 3030 5400 3370J 5300 4050 5500 4790J
-preplace netloc proc_sys_reset_0_peripheral_reset 1 1 9 390 4610 NJ 4610 970 5030 1280J 5000 1880J 4990 NJ 4990 NJ 4990 NJ 4990 4080J
-preplace netloc v2nfc_0_oReadyBusy 1 9 3 4090 1120 NJ 1120 5210
-preplace netloc v2nfc_1_oReadyBusy 1 4 8 1350 3730 NJ 3730 NJ 3730 NJ 3730 3320J 3560 4070J 3680 4450J 3660 5210
-preplace netloc v2nfc_2_oReadyBusy 1 4 8 1410 5050 1980J 5020 NJ 5020 NJ 5020 NJ 5020 NJ 5020 4850J 4980 5200
-preplace netloc v2nfc_3_oReadyBusy 1 4 8 1420 5060 1940J 5030 NJ 5030 NJ 5030 NJ 5030 NJ 5030 4860J 4990 5190
-preplace netloc iodelay_if_0_iodly_00__tap 1 10 3 4630 1200 5510J 1480 5940
-preplace netloc iodelay_if_0_iodly_00__tap_load 1 10 3 4810 1190 5520J 1470 6190
-preplace netloc iodelay_if_0_iodly_01__tap 1 10 3 4640 1220 5490J 1500 5880
-preplace netloc iodelay_if_0_iodly_01__tap_load 1 10 3 4820 1210 5500J 1490 6180
-preplace netloc iodelay_if_0_iodly_02__tap 1 10 3 4650 1240 5470J 1520 5870
-preplace netloc iodelay_if_0_iodly_02__tap_load 1 10 3 4830 1230 5480J 1510 6170
-preplace netloc iodelay_if_0_iodly_03__tap 1 10 3 4660 1260 5450J 1540 5860
-preplace netloc iodelay_if_0_iodly_03__tap_load 1 10 3 4840 1250 5460J 1530 6160
-preplace netloc iodelay_if_0_iodly_04__tap 1 10 3 4600 2790 5520J 3070 6190
-preplace netloc iodelay_if_0_iodly_04__tap_load 1 10 3 4620 2780 5560J 3060 5940
-preplace netloc iodelay_if_0_iodly_05__tap 1 10 3 4670 1860 5220J 1560 6010
-preplace netloc iodelay_if_0_iodly_05__tap_load 1 10 3 4680 1870 5230J 1570 6000
-preplace netloc iodelay_if_0_iodly_06__tap 1 10 3 4690 1880 5240J 1580 5990
-preplace netloc iodelay_if_0_iodly_06__tap_load 1 10 3 4700 1890 5250J 1590 5980
-preplace netloc iodelay_if_0_iodly_07__tap 1 10 3 4710 1900 5260J 1600 5970
-preplace netloc iodelay_if_0_iodly_07__tap_load 1 10 3 4720 1910 5270J 1610 5960
-preplace netloc iodelay_if_0_iodly_08__tap 1 10 3 4810 1920 5420J 1620 5950
-preplace netloc iodelay_if_0_iodly_08__tap_load 1 10 3 4870 1180 5530J 1460 6270
-preplace netloc iodelay_if_0_iodly_09__tap 1 10 3 4820 1930 5450J 1630 6150
-preplace netloc iodelay_if_0_iodly_09__tap_load 1 10 3 4830 1940 5460J 1640 6140
-preplace netloc iodelay_if_0_iodly_10__tap 1 10 3 4840 1950 5470J 1650 6130
-preplace netloc iodelay_if_0_iodly_10__tap_load 1 10 3 4850 1960 5490J 1660 6120
-preplace netloc iodelay_if_0_iodly_11__tap 1 10 3 4860 1970 5530J 1670 6110
-preplace netloc iodelay_if_0_iodly_11__tap_load 1 10 3 4870 1980 5570J 1680 6020
-preplace netloc iodelay_if_0_iodly_12__tap 1 10 3 4730 2810 5460J 3090 6180
-preplace netloc iodelay_if_0_iodly_12__tap_load 1 10 3 4770 2800 5480J 3080 5930
-preplace netloc iodelay_if_0_iodly_13__tap 1 10 3 4740 2830 5420J 3110 6170
-preplace netloc iodelay_if_0_iodly_13__tap_load 1 10 3 4780 2820 5450J 3100 5920
-preplace netloc iodelay_if_0_iodly_14__tap 1 10 3 4750 2850 5390J 3130 6160
-preplace netloc iodelay_if_0_iodly_14__tap_load 1 10 3 4790 2840 5400J 3120 5910
-preplace netloc iodelay_if_0_iodly_15__tap 1 10 3 4760 2870 5370J 3150 6150
-preplace netloc iodelay_if_0_iodly_15__tap_load 1 10 3 4800 2860 5380J 3140 5900
-preplace netloc iodelay_if_0_iodly_16__tap 1 10 3 4780 2890 5350J 3170 6140
-preplace netloc iodelay_if_0_iodly_16__tap_load 1 10 3 4790 2900 5340J 3180 6130
-preplace netloc iodelay_if_0_iodly_17__tap 1 10 3 4800 2910 5330J 3190 6120
-preplace netloc iodelay_if_0_iodly_17__tap_load 1 10 3 4810 2920 5320J 3200 6110
-preplace netloc iodelay_if_0_iodly_18__tap 1 10 3 4830 2940 5300J 3220 6240
-preplace netloc iodelay_if_0_iodly_18__tap_load 1 10 3 4730 2930 5310J 3210 5990
-preplace netloc iodelay_if_0_iodly_19__tap 1 10 3 4840 2960 5280J 3240 6230
-preplace netloc iodelay_if_0_iodly_19__tap_load 1 10 3 4740 2950 5290J 3230 5980
-preplace netloc iodelay_if_0_iodly_20__tap 1 10 3 4850 2980 5260J 3260 6220
-preplace netloc iodelay_if_0_iodly_20__tap_load 1 10 3 4750 2970 5270J 3250 5970
-preplace netloc iodelay_if_0_iodly_21__tap 1 10 3 4860 3000 5240J 3280 6210
-preplace netloc iodelay_if_0_iodly_21__tap_load 1 10 3 4760 2990 5250J 3270 5960
-preplace netloc iodelay_if_0_iodly_22__tap 1 10 3 4870 3020 5220J 3300 6200
-preplace netloc iodelay_if_0_iodly_22__tap_load 1 10 3 4770 3010 5230J 3290 5950
-preplace netloc iodelay_if_0_iodly_23__tap 1 10 3 4860 3640 NJ 3640 6100
-preplace netloc iodelay_if_0_iodly_23__tap_load 1 10 3 4870 3650 NJ 3650 6090
-preplace netloc iodelay_if_0_iodly_24__tap 1 10 3 4840 3670 NJ 3670 6080
-preplace netloc iodelay_if_0_iodly_24__tap_load 1 10 3 4850 3680 NJ 3680 6070
-preplace netloc iodelay_if_0_iodly_25__tap 1 10 3 4860 3690 NJ 3690 6060
-preplace netloc iodelay_if_0_iodly_25__tap_load 1 10 3 4870 3700 NJ 3700 6050
-preplace netloc iodelay_if_0_iodly_26__tap 1 10 3 4790 4340 NJ 4340 6040
-preplace netloc iodelay_if_0_iodly_26__tap_load 1 10 3 4800 4350 NJ 4350 6030
-preplace netloc iodelay_if_0_iodly_27__tap 1 10 3 4810 4360 NJ 4360 6020
-preplace netloc iodelay_if_0_iodly_27__tap_load 1 10 3 4820 4370 NJ 4370 6010
-preplace netloc iodelay_if_0_iodly_28__tap 1 10 3 4830 4380 NJ 4380 6000
-preplace netloc iodelay_if_0_iodly_28__tap_load 1 10 3 4770 4560 NJ 4560 6260
-preplace netloc iodelay_if_0_iodly_29__tap 1 10 3 4760 4580 NJ 4580 6270
-preplace netloc iodelay_if_0_iodly_29__tap_load 1 10 3 4780 4570 NJ 4570 6250
-preplace netloc iodelay_if_0_iodly_30__tap 1 10 3 4840 4530 NJ 4530 5890
-preplace netloc iodelay_if_0_iodly_30__tap_load 1 10 3 4870 4520 NJ 4520 5860
-preplace netloc iodelay_if_0_iodly_31__tap 1 10 3 4850 4540 NJ 4540 5880
-preplace netloc iodelay_if_0_iodly_31__tap_load 1 10 3 4860 4550 NJ 4550 5870
-preplace netloc iodelay_if_0_dqs_iodly_00__tap 1 10 3 4720 10 NJ 10 6280
-preplace netloc iodelay_if_0_dqs_iodly_00__tap_load 1 10 3 4870 20 NJ 20 5860
-preplace netloc iodelay_if_0_dqs_iodly_01__tap 1 10 3 4860 1140 5570J 1420 6270
-preplace netloc iodelay_if_0_dqs_iodly_01__tap_load 1 10 3 4850 1130 5580J 1410 5880
-preplace netloc iodelay_if_0_dqs_iodly_02__tap 1 10 3 4820 2880 5360J 3160 6280
-preplace netloc iodelay_if_0_dqs_iodly_02__tap_load 1 10 3 4610 1150 5560J 1430 5870
-preplace netloc iodelay_if_0_dqs_iodly_03__tap 1 10 3 4590 1170 5540J 1450 5950
-preplace netloc iodelay_if_0_dqs_iodly_03__tap_load 1 10 3 4580 1160 5550J 1440 5860
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 8 30 4620 NJ 4620 590 4600 NJ 4600 1380 5070 2000J 5040 NJ 5040 2940
-preplace netloc zynq_ultra_ps_e_0_pl_resetn1 1 4 4 1420 5140 1780J 5330 2330J 5380 2950
-preplace netloc pll_bank11_clk_out2 1 2 9 600 3720 1020 3720 1330 3720 1920 3760 NJ 3760 NJ 3760 3340 3540 4080 1350 NJ
-preplace netloc pll_bank12_clk_out2 1 2 9 600 4423 980 4610 1400 4640 2000 4430 NJ 4430 NJ 4430 3450 4340 3950 3670 4420J
-preplace netloc pll_bank13_clk_out2 1 2 9 610 4330 950 5010 1340 5020 1860 4860 NJ 4860 NJ 4860 3400 4350 4000 3910 4470
-preplace netloc proc_sys_reset_1_peripheral_reset 1 3 8 960 5020 1310 5030 1920J 5010 NJ 5010 NJ 5010 NJ 5010 NJ 5010 4560
-preplace netloc proc_sys_reset_3_peripheral_reset 1 3 8 1030 3730 1280 1430 NJ 1430 NJ 1430 NJ 1430 NJ 1430 NJ 1430 NJ
-preplace netloc proc_sys_reset_4_peripheral_reset 1 3 8 990 4620 1390 4620 1820J 4390 NJ 4390 NJ 4390 NJ 4390 NJ 4390 4480
-preplace netloc pll_bank10_clk_out2 1 4 7 1370 4210 1860 4150 NJ 4150 NJ 4150 3510 3580 4060 620 NJ
-preplace netloc proc_sys_reset_5_peripheral_reset 1 5 6 1910 4160 NJ 4160 NJ 4160 3520 4110 3890 700 NJ
-preplace netloc proc_sys_reset_5_peripheral_aresetn 1 5 5 NJ 4360 NJ 4360 NJ 4360 NJ 4360 4030
-preplace netloc M00_ARESETN_2 1 5 4 1990 4230 NJ 4230 NJ 4230 3370
-preplace netloc proc_sys_reset_3_peripheral_aresetn 1 3 7 NJ 3860 1300J 3750 NJ 3750 NJ 3750 NJ 3750 3330J 3570 3880
-preplace netloc M02_ARESETN_1 1 3 6 1010J 4020 NJ 4020 1940 4010 NJ 4010 NJ 4010 3360
-preplace netloc proc_sys_reset_4_peripheral_aresetn 1 3 7 1020J 4150 NJ 4150 1850J 4170 NJ 4170 NJ 4170 3490J 4290 4010
-preplace netloc M04_ARESETN_1 1 3 6 NJ 4040 NJ 4040 1960 4020 NJ 4020 NJ 4020 3390
-preplace netloc proc_sys_reset_1_peripheral_aresetn 1 3 7 980J 4190 1340J 4180 1890J 4190 NJ 4190 NJ 4190 3390J 4310 3980
-preplace netloc M06_ARESETN_1 1 3 6 970J 4180 1330J 4170 1840 4420 NJ 4420 NJ 4420 3480
-preplace netloc pll_bank10_locked 1 4 1 1330 4340n
-preplace netloc CH0C133BUF_BUFGCE_O 1 4 7 1310 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 4400
-preplace netloc pll_bank11_locked 1 2 1 600 3820n
-preplace netloc CH1C133BUF_BUFGCE_O 1 2 9 590 1420 NJ 1420 NJ 1420 NJ 1420 NJ 1420 NJ 1420 NJ 1420 NJ 1420 4400
+preplace inst proc_sys_reset_2 -pg 1 -lvl 5 -x 1630 -y 5240 -defaultsOSRD -resize 300 156
+preplace inst t4nfc_hlper_0 -pg 1 -lvl 10 -x 4340 -y 3790 -defaultsOSRD
+preplace inst t4nfc_hlper_1 -pg 1 -lvl 5 -x 1630 -y 3610 -defaultsOSRD
+preplace inst t4nfc_hlper_2 -pg 1 -lvl 5 -x 1630 -y 4520 -defaultsOSRD
+preplace inst t4nfc_hlper_3 -pg 1 -lvl 5 -x 1630 -y 4900 -defaultsOSRD
+preplace inst bch_skes_256B_21B_13b_0 -pg 1 -lvl 10 -x 4340 -y 4890 -defaultsOSRD
+preplace inst iodelay_if_0 -pg 1 -lvl 12 -x 5820 -y 2370 -defaultsOSRD
+preplace inst iodelay_if_0_dqs -pg 1 -lvl 12 -x 5820 -y 720 -defaultsOSRD -resize 220 1336
+preplace inst pll_bank13_psr -pg 1 -lvl 3 -x 840 -y 4220 -defaultsOSRD
+preplace inst pll_bank11_psr -pg 1 -lvl 3 -x 840 -y 3820 -defaultsOSRD
+preplace inst pll_bank12_psr -pg 1 -lvl 3 -x 840 -y 4020 -defaultsOSRD
+preplace inst pll_bank10 -pg 1 -lvl 4 -x 1210 -y 4310 -defaultsOSRD
+preplace inst pll_bank10_psr -pg 1 -lvl 5 -x 1630 -y 4320 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -x 2210 -y 5270 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 6 -x 2210 -y 5450 -defaultsOSRD
+preplace inst proc_sys_reset_6 -pg 1 -lvl 5 -x 1630 -y 5450 -defaultsOSRD
+preplace inst proc_sys_reset_7 -pg 1 -lvl 9 -x 3800 -y 5400 -defaultsOSRD
+preplace inst v2nfc_0 -pg 1 -lvl 11 -x 5130 -y 830 -defaultsOSRD
+preplace inst v2nfc_1 -pg 1 -lvl 11 -x 5130 -y 1560 -defaultsOSRD -resize 266 549
+preplace inst v2nfc_2 -pg 1 -lvl 11 -x 5130 -y 3330 -defaultsOSRD -resize 264 569
+preplace inst v2nfc_3 -pg 1 -lvl 11 -x 5130 -y 4020 -defaultsOSRD -resize 258 603
+preplace inst nvme_ctrl_0 -pg 1 -lvl 11 -x 5130 -y 5650 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 12 20 4483 390 4433 NJ 4433 1050 4440 1330J 4670 1850J 4430 NJ 4430 3080 4430 3570 4430 4170 4430 4570 2870 5400
+preplace netloc processing_system7_0_FCLK_CLK2 1 4 7 1450 5140 2010 5140 2390 5380 3100 5120 NJ 5120 4150 5060 4500
+preplace netloc ARESETN_1 1 1 8 370J 3700 NJ 3700 1070J 3800 1380J 3810 2000J 4070 NJ 4070 NJ 4070 3450
+preplace netloc proc_sys_reset_2_interconnect_aresetn 1 5 6 2030 5350 2380J 5370 3120 5140 NJ 5140 4080 5500 4590J
+preplace netloc S00_ARESETN_1 1 1 11 NJ 4423 NJ 4423 1060J 4430 1380J 4640 1880J 4380 NJ 4380 3110 4380 3580 4380 4020J 4410 4580 2880 5420
+preplace netloc M00_ARESETN_1 1 5 6 2040 5360 NJ 5360 3070 5110 NJ 5110 4110 5050 4510J
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 9 380 4410 NJ 4410 1080 4420 NJ 4420 NJ 4420 NJ 4420 NJ 4420 NJ 4420 3980J
+preplace netloc v2nfc_0_oReadyBusy 1 9 3 4180 1230 NJ 1230 5290
+preplace netloc v2nfc_1_oReadyBusy 1 4 8 1410 1250 NJ 1250 NJ 1250 NJ 1250 NJ 1250 NJ 1250 NJ 1250 5290
+preplace netloc v2nfc_2_oReadyBusy 1 4 8 1450 4650 1920J 4400 NJ 4400 NJ 4400 NJ 4400 NJ 4400 4600J 4380 5310
+preplace netloc v2nfc_3_oReadyBusy 1 4 8 1450 5020 NJ 5020 NJ 5020 NJ 5020 NJ 5020 NJ 5020 4600J 5000 5290
+preplace netloc iodelay_if_0_iodly_00__tap 1 10 3 4950 1220 5540J 1430 6080
+preplace netloc iodelay_if_0_iodly_00__tap_load 1 10 3 4740 1860 5300J 1450 6030
+preplace netloc iodelay_if_0_iodly_01__tap 1 10 3 4750 1870 5310J 1460 6020
+preplace netloc iodelay_if_0_iodly_01__tap_load 1 10 3 4960 1240 5450J 1440 6180
+preplace netloc iodelay_if_0_iodly_02__tap 1 10 3 4760 1890 5320J 1470 6070
+preplace netloc iodelay_if_0_iodly_02__tap_load 1 10 3 4830 1880 5380J 1630 5960
+preplace netloc iodelay_if_0_iodly_03__tap 1 10 3 4770 1910 5340J 1490 6060
+preplace netloc iodelay_if_0_iodly_03__tap_load 1 10 3 4840 1900 5330J 1480 6140
+preplace netloc iodelay_if_0_iodly_04__tap 1 10 3 4780 1930 5360J 1510 6050
+preplace netloc iodelay_if_0_iodly_04__tap_load 1 10 3 4850 1920 5350J 1500 6100
+preplace netloc iodelay_if_0_iodly_05__tap 1 10 3 4790 1950 5460J 1640 5980
+preplace netloc iodelay_if_0_iodly_05__tap_load 1 10 3 4860 1940 5370J 1520 6090
+preplace netloc iodelay_if_0_iodly_06__tap 1 10 3 4800 1970 5510J 1660 5970
+preplace netloc iodelay_if_0_iodly_06__tap_load 1 10 3 4870 1960 5480J 1650 5990
+preplace netloc iodelay_if_0_iodly_07__tap 1 10 3 4810 1990 5440J 1580 6040
+preplace netloc iodelay_if_0_iodly_07__tap_load 1 10 3 4880 1980 5390J 1530 6280
+preplace netloc iodelay_if_0_iodly_08__tap 1 10 3 4520 2840 5520J 3080 6180
+preplace netloc iodelay_if_0_iodly_08__tap_load 1 10 3 4890 2000 5430J 1560 6240
+preplace netloc iodelay_if_0_iodly_09__tap 1 10 3 4580 2810 5540J 3100 6200
+preplace netloc iodelay_if_0_iodly_09__tap_load 1 10 3 4700 2820 5530J 3090 6150
+preplace netloc iodelay_if_0_iodly_10__tap 1 10 3 4530 2850 5470J 3120 6190
+preplace netloc iodelay_if_0_iodly_10__tap_load 1 10 3 4710 2830 5510J 3110 6140
+preplace netloc iodelay_if_0_iodly_11__tap 1 10 3 4570 2860 5450J 3130 6170
+preplace netloc iodelay_if_0_iodly_11__tap_load 1 10 3 4820 2080 5490J 1540 6290
+preplace netloc iodelay_if_0_iodly_12__tap 1 10 3 4900 2010 5450J 1570 6270
+preplace netloc iodelay_if_0_iodly_12__tap_load 1 10 3 4730 2890 5430J 3140 6160
+preplace netloc iodelay_if_0_iodly_13__tap 1 10 3 4910 2030 5500J 1600 6230
+preplace netloc iodelay_if_0_iodly_13__tap_load 1 10 3 4940 2020 5470J 1590 6260
+preplace netloc iodelay_if_0_iodly_14__tap 1 10 3 4920 2050 5550J 1680 6000
+preplace netloc iodelay_if_0_iodly_14__tap_load 1 10 3 4950 2040 5540J 1670 6010
+preplace netloc iodelay_if_0_iodly_15__tap 1 10 3 4930 2070 5530J 1620 6250
+preplace netloc iodelay_if_0_iodly_15__tap_load 1 10 3 4960 2060 5520J 1610 6300
+preplace netloc iodelay_if_0_iodly_16__tap 1 10 3 4680 4350 NJ 4350 6280
+preplace netloc iodelay_if_0_iodly_16__tap_load 1 10 3 4670 4370 NJ 4370 6290
+preplace netloc iodelay_if_0_iodly_17__tap 1 10 3 4630 4840 NJ 4840 6340
+preplace netloc iodelay_if_0_iodly_17__tap_load 1 10 3 4640 4980 NJ 4980 6330
+preplace netloc iodelay_if_0_iodly_18__tap 1 10 3 4620 5510 NJ 5510 6360
+preplace netloc iodelay_if_0_iodly_18__tap_load 1 10 3 4650 5500 NJ 5500 6320
+preplace netloc iodelay_if_0_iodly_19__tap 1 10 3 4730 4360 NJ 4360 6240
+preplace netloc iodelay_if_0_iodly_19__tap_load 1 10 3 4660 4990 NJ 4990 6300
+preplace netloc iodelay_if_0_iodly_20__tap 1 10 3 4690 4570 NJ 4570 6270
+preplace netloc iodelay_if_0_iodly_20__tap_load 1 10 3 4710 4560 NJ 4560 6260
+preplace netloc iodelay_if_0_iodly_21__tap 1 10 3 4800 4520 NJ 4520 6220
+preplace netloc iodelay_if_0_iodly_21__tap_load 1 10 3 4740 4540 NJ 4540 6230
+preplace netloc iodelay_if_0_iodly_22__tap 1 10 3 4720 4580 NJ 4580 6250
+preplace netloc iodelay_if_0_iodly_22__tap_load 1 10 3 4870 4340 NJ 4340 6210
+preplace netloc iodelay_if_0_iodly_23__tap 1 10 3 4820 2930 5380J 3160 6110
+preplace netloc iodelay_if_0_iodly_23__tap_load 1 10 3 4750 2920 5390J 3150 6040
+preplace netloc iodelay_if_0_iodly_24__tap 1 10 3 4830 2950 5360J 3180 6100
+preplace netloc iodelay_if_0_iodly_24__tap_load 1 10 3 4760 2940 5370J 3170 6030
+preplace netloc iodelay_if_0_iodly_25__tap 1 10 3 4850 2980 5310J 3250 6120
+preplace netloc iodelay_if_0_iodly_25__tap_load 1 10 3 4770 2960 5350J 3190 6020
+preplace netloc iodelay_if_0_iodly_26__tap 1 10 3 4860 3020 5300J 3210 6090
+preplace netloc iodelay_if_0_iodly_26__tap_load 1 10 3 4810 2990 5340J 3200 6010
+preplace netloc iodelay_if_0_iodly_27__tap 1 10 3 4840 3010 5290J 3230 6080
+preplace netloc iodelay_if_0_iodly_27__tap_load 1 10 3 4780 3000 5320J 3220 6000
+preplace netloc iodelay_if_0_iodly_28__tap 1 10 3 4960 3700 NJ 3700 6130
+preplace netloc iodelay_if_0_iodly_28__tap_load 1 10 3 4700 2970 5330J 3240 5990
+preplace netloc iodelay_if_0_iodly_29__tap 1 10 3 4930 3650 NJ 3650 6070
+preplace netloc iodelay_if_0_iodly_29__tap_load 1 10 3 4900 3640 NJ 3640 5980
+preplace netloc iodelay_if_0_iodly_30__tap 1 10 3 4940 3670 NJ 3670 6060
+preplace netloc iodelay_if_0_iodly_30__tap_load 1 10 3 4910 3660 NJ 3660 5970
+preplace netloc iodelay_if_0_iodly_31__tap 1 10 3 4950 3690 NJ 3690 6050
+preplace netloc iodelay_if_0_iodly_31__tap_load 1 10 3 4920 3680 NJ 3680 5960
+preplace netloc iodelay_if_0_dqs_iodly_00__tap 1 10 3 4960 20 NJ 20 6300
+preplace netloc iodelay_if_0_dqs_iodly_00__tap_load 1 10 3 4880 10 NJ 10 6380
+preplace netloc iodelay_if_0_dqs_iodly_01__tap 1 10 3 4960 1260 5490J 1420 6300
+preplace netloc iodelay_if_0_dqs_iodly_01__tap_load 1 10 3 4730 30 NJ 30 6370
+preplace netloc iodelay_if_0_dqs_iodly_02__tap 1 10 3 4790 2900 5500J 3070 6350
+preplace netloc iodelay_if_0_dqs_iodly_02__tap_load 1 10 3 4800 2910 5490J 3060 6310
+preplace netloc iodelay_if_0_dqs_iodly_03__tap 1 10 3 4890 4530 NJ 4530 6370
+preplace netloc iodelay_if_0_dqs_iodly_03__tap_load 1 10 3 4880 4550 NJ 4550 6380
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 8 30 4493 NJ 4493 650 4400 NJ 4400 1410 4660 1910J 4370 NJ 4370 3040
+preplace netloc zynq_ultra_ps_e_0_pl_resetn1 1 4 4 1430 5050 NJ 5050 NJ 5050 3030
+preplace netloc pll_bank11_clk_out2 1 2 9 650 3710 1040 3810 1340 3830 1930 4080 NJ 4080 NJ 4080 3430 3550 4170 1350 NJ
+preplace netloc pll_bank12_clk_out2 1 2 9 640 3920 1020 4600 1420 4680 1990 4140 NJ 4140 NJ 4140 3440 3530 4160 3450 4530J
+preplace netloc pll_bank13_clk_out2 1 2 9 630 3720 1030 4730 1340 4730 1940 4330 NJ 4330 NJ 4330 3590 4300 4090 3690 4600
+preplace netloc proc_sys_reset_1_peripheral_reset 1 3 8 1070 4220 1370 4220 NJ 4220 NJ 4220 NJ 4220 3480J 3580 4140J 3890 4520
+preplace netloc proc_sys_reset_3_peripheral_reset 1 3 8 1080 3790 1330 1430 NJ 1430 NJ 1430 NJ 1430 NJ 1430 NJ 1430 NJ
+preplace netloc proc_sys_reset_4_peripheral_reset 1 3 8 1010 4050 1400 3470 NJ 3470 NJ 3470 NJ 3470 NJ 3470 4000J 3480 4560
+preplace netloc pll_bank10_clk_out2 1 4 7 1380 4210 1960 4210 NJ 4210 NJ 4210 3510 3560 4150 620 NJ
+preplace netloc proc_sys_reset_5_peripheral_reset 1 5 6 N 4320 NJ 4320 NJ 4320 3470 3570 4020 700 NJ
+preplace netloc proc_sys_reset_5_peripheral_aresetn 1 5 5 1820J 3540 NJ 3540 NJ 3540 NJ 3540 4130
+preplace netloc M00_ARESETN_2 1 5 4 2000 4090 NJ 4090 NJ 4090 3460
+preplace netloc proc_sys_reset_3_peripheral_aresetn 1 3 7 NJ 3860 NJ 3860 1960J 4110 NJ 4110 NJ 4110 NJ 4110 4050
+preplace netloc M02_ARESETN_1 1 3 6 NJ 3840 NJ 3840 1900 4100 NJ 4100 NJ 4100 3490
+preplace netloc proc_sys_reset_4_peripheral_aresetn 1 3 7 NJ 4060 NJ 4060 1940J 4160 NJ 4160 NJ 4160 3520J 4290 4170
+preplace netloc M04_ARESETN_1 1 3 6 NJ 4040 NJ 4040 1830 4120 NJ 4120 NJ 4120 3500
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 3 7 1090J 4200 NJ 4200 NJ 4200 NJ 4200 NJ 4200 3490J 4320 N
+preplace netloc M06_ARESETN_1 1 3 6 1080J 4190 NJ 4190 1980 4150 NJ 4150 NJ 4150 3550
+preplace netloc pll_bank10_locked 1 4 1 1380 4340n
+preplace netloc CH0C133BUF_BUFGCE_O 1 4 7 1350 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 4500
+preplace netloc pll_bank11_locked 1 2 1 620 3820n
+preplace netloc CH1C133BUF_BUFGCE_O 1 2 9 590 1420 NJ 1420 NJ 1420 NJ 1420 NJ 1420 NJ 1420 NJ 1420 NJ 1420 4500
 preplace netloc pll_bank12_locked 1 2 1 N 4060
-preplace netloc CH2C133BUF_BUFGCE_O 1 2 9 570J 3920 1000J 4030 NJ 4030 NJ 4030 NJ 4030 NJ 4030 3490J 4100 3920J 3690 4430
-preplace netloc pll_bank13_locked 1 2 1 570 4260n
-preplace netloc CH3C133BUF_BUFGCE_O 1 2 9 NJ 4320 1000J 4200 1350J 4190 1880J 4200 NJ 4200 NJ 4200 3380J 4320 3970J 4070 4500
-preplace netloc pll_bank10_clk_out3 1 4 7 1320 640 NJ 640 NJ 640 NJ 640 NJ 640 NJ 640 NJ
-preplace netloc pll_bank11_clk_out3 1 2 9 570 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ
-preplace netloc pll_bank12_clk_out3 1 2 9 570J 4120 NJ 4120 NJ 4120 NJ 4120 NJ 4120 NJ 4120 NJ 4120 3930J 3890 4440
-preplace netloc pll_bank13_clk_out3 1 2 9 580J 4340 1010J 4210 1360J 4200 1870J 4210 NJ 4210 NJ 4210 3360J 4330 4020J 4080 4490
+preplace netloc CH2C133BUF_BUFGCE_O 1 2 9 600J 3460 NJ 3460 NJ 3460 NJ 3460 NJ 3460 NJ 3460 NJ 3460 4010J 3470 4550
+preplace netloc pll_bank13_locked 1 2 1 670 4260n
+preplace netloc CH3C133BUF_BUFGCE_O 1 2 9 NJ 4320 1040J 4180 NJ 4180 NJ 4180 NJ 4180 NJ 4180 3600J 4130 4140J 4070 4530
+preplace netloc pll_bank10_clk_out3 1 4 7 1360 640 NJ 640 NJ 640 NJ 640 NJ 640 NJ 640 NJ
+preplace netloc pll_bank11_clk_out3 1 2 9 580 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ
+preplace netloc pll_bank12_clk_out3 1 2 9 610J 3450 NJ 3450 NJ 3450 NJ 3450 NJ 3450 NJ 3450 NJ 3450 4140J 3460 4540
+preplace netloc pll_bank13_clk_out3 1 2 9 660J 4120 NJ 4120 NJ 4120 1800J 4170 NJ 4170 NJ 4170 3560J 4120 4070J 3910 4510
 preplace netloc nvme_ctrl_0_user_lnk_up 1 11 2 NJ 5680 NJ
 preplace netloc xlconcat_0_dout 1 6 1 NJ 5270
-preplace netloc nvme_ctrl_0_dev_irq_assert 1 5 7 2010 5370 2290J 5410 2940J 5520 NJ 5520 NJ 5520 NJ 5520 5200
+preplace netloc nvme_ctrl_0_dev_irq_assert 1 5 7 2050 5540 2380J 5520 NJ 5520 NJ 5520 NJ 5520 NJ 5520 5470
 preplace netloc pcie_perst_n_0_1 1 0 11 NJ 5710 NJ 5710 NJ 5710 NJ 5710 NJ 5710 NJ 5710 NJ 5710 NJ 5710 NJ 5710 NJ 5710 NJ
-preplace netloc zynq_ultra_ps_e_0_pl_clk3 1 4 7 1410 5340 1810 5360 2340 5360 2970 5670 NJ 5670 NJ 5670 NJ
-preplace netloc zynq_ultra_ps_e_0_pl_resetn3 1 4 4 1420 5350 NJ 5350 2300J 5400 2940
-preplace netloc proc_sys_reset_6_peripheral_aresetn 1 5 6 1800 5690 NJ 5690 NJ 5690 NJ 5690 NJ 5690 NJ
-preplace netloc zynq_ultra_ps_e_0_pl_clk2 1 7 4 2980 5410 3510 5500 3990 5630 NJ
-preplace netloc zynq_ultra_ps_e_0_pl_resetn2 1 7 2 2990 5420 3460J
-preplace netloc proc_sys_reset_7_peripheral_aresetn 1 9 2 4090 5510 4390
+preplace netloc zynq_ultra_ps_e_0_pl_clk3 1 4 7 1450 5550 1880 5370 2370 5390 3060 5150 NJ 5150 4040J 5670 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_resetn3 1 4 4 1440 5060 NJ 5060 NJ 5060 3020
+preplace netloc proc_sys_reset_6_peripheral_aresetn 1 5 6 2020 5600 NJ 5600 NJ 5600 NJ 5600 NJ 5600 4490J
+preplace netloc zynq_ultra_ps_e_0_pl_clk2 1 7 4 3020 5400 3570 5300 3990 5630 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_resetn2 1 7 2 3130 5160 3440J
+preplace netloc proc_sys_reset_7_peripheral_aresetn 1 9 2 4170 5510 4500
 preplace netloc v2nfc_2_nand_if 1 11 2 NJ 3310 NJ
-preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 10 1 4490 4300n
-preplace netloc pcie_ref_0_1 1 0 11 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ
-preplace netloc t4nfc_hlper_0_ucode_if 1 10 1 4570 3790n
-preplace netloc gpic_0_M05_AXI 1 9 1 4040 3870n
-preplace netloc S00_AXI_1 1 7 3 2950J 5130 NJ 5130 N
-preplace netloc gpic_0_sub_0_M06_AXI 1 4 6 1420 4800 1780J 4900 NJ 4900 NJ 4900 NJ 4900 3870
-preplace netloc t4nfc_hlper_0_to_ecc_if 1 8 3 3530 4130 3960J 3900 4390
-preplace netloc gpic_0_sub_0_M02_AXI 1 4 6 1340 3710 NJ 3710 NJ 3710 NJ 3710 3310J 3550 3870
-preplace netloc gpic_0_M01_AXI 1 9 1 4050 3790n
-preplace netloc t4nfc_hlper_2_ucode_if 1 5 6 1810 4870 NJ 4870 NJ 4870 3410J 4860 3880J 4760 NJ
-preplace netloc gpic_0_sub_M00_AXI 1 11 1 5580 2350n
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 7 1 3000 5120n
-preplace netloc t4nfc_hlper_3_to_ecc_if 1 3 3 1040 5040 NJ 5040 1760
-preplace netloc gpic_0_sub_0_M04_AXI 1 4 6 1400 4420 1800J 4370 NJ 4370 NJ 4370 NJ 4370 3880
-preplace netloc S01_AXI_1 1 5 1 1980 3570n
-preplace netloc gpic_1_M00_AXI 1 10 1 4400 5070n
-preplace netloc bch_sccs_256B_21B_13b_3_from_ecc_if 1 4 1 1290 4880n
-preplace netloc bch_sccs_256B_21B_13b_1_from_ecc_if 1 4 1 1290 3590n
-preplace netloc v2nfc_3_nand_if 1 11 2 NJ 3980 NJ
-preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 10 1 4550 3590n
-preplace netloc bch_sccs_256B_21B_13b_0_bch_skes_if 1 9 1 3990 4220n
-preplace netloc t4nfc_hlper_1_to_ecc_if 1 3 3 1040 3740 NJ 3740 1840
-preplace netloc t4nfc_hlper_3_ucode_if 1 5 6 1770J 4980 NJ 4980 NJ 4980 NJ 4980 4050J 5000 4790
-preplace netloc gpic_0_sub_M01_AXI 1 11 1 5430 700n
-preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 10 1 4530 4160n
+preplace netloc bch_sccs_256B_21B_13b_0_bch_skes_if 1 9 1 4040 4220n
+preplace netloc t4nfc_hlper_3_ucode_if 1 5 6 1910J 4910 NJ 4910 NJ 4910 NJ 4910 3970J 5000 4590
+preplace netloc t4nfc_hlper_0_to_ecc_if 1 8 3 3610 3520 4140J 3510 4500
+preplace netloc gpic_0_sub_M01_AXI 1 11 1 5410 700n
+preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 10 1 4520 4160n
 preplace netloc nvme_ctrl_0_pci_exp 1 11 2 NJ 5640 NJ
-preplace netloc bch_sccs_256B_21B_13b_1_bch_skes_if 1 4 6 1350J 4160 1900J 4180 NJ 4180 NJ 4180 3460J 4300 3960
-preplace netloc smartconnect_0_M00_AXI 1 6 1 2320 5170n
-preplace netloc gpic_0_M03_AXI 1 9 1 3900 3570n
-preplace netloc t4nfc_hlper_2_v2nfc_if 1 5 6 1810J 4380 NJ 4380 NJ 4380 NJ 4380 NJ 4380 4460
-preplace netloc t4nfc_hlper_0_nfch_data_if 1 5 6 2010 4410 NJ 4410 NJ 4410 NJ 4410 NJ 4410 4400
-preplace netloc S02_AXI_1 1 5 1 1890 4480n
-preplace netloc bch_sccs_256B_21B_13b_2_bch_skes_if 1 4 6 1320 4790 1790J 4890 NJ 4890 NJ 4890 3430J 4880 NJ
-preplace netloc gpic_0_sub_0_M00_AXI 1 9 1 3910 3750n
-preplace netloc gpic_0_M07_AXI 1 9 1 3900 3910n
-preplace netloc axi_interconnect_0_M00_AXI 1 8 1 3470 3640n
-preplace netloc v2nfc_0_nand_if 1 11 2 5210J 30 NJ
-preplace netloc nvme_ctrl_0_m0_axi 1 5 7 1990 5530 NJ 5530 NJ 5530 NJ 5530 NJ 5530 NJ 5530 5190
-preplace netloc gpic_1_M01_AXI 1 10 1 4400 5360n
-preplace netloc t4nfc_hlper_3_v2nfc_if 1 5 6 NJ 4880 NJ 4880 NJ 4880 3420J 4870 4060J 4780 4510
-preplace netloc t4nfc_hlper_1_ucode_if 1 5 6 1970 4400 NJ 4400 NJ 4400 NJ 4400 NJ 4400 4520J
-preplace netloc t4nfc_hlper_2_to_ecc_if 1 3 3 1040 4630 NJ 4630 1800
-preplace netloc t4nfc_hlper_1_v2nfc_if 1 5 6 1970 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ
+preplace netloc gpic_0_sub_M00_AXI 1 11 1 5550 2350n
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 10 1 4590 3590n
+preplace netloc t4nfc_hlper_1_to_ecc_if 1 3 3 1090 3820 NJ 3820 1800
+preplace netloc gpic_0_M05_AXI 1 9 1 4110 3870n
+preplace netloc S01_AXI_1 1 5 1 1970 3570n
+preplace netloc t4nfc_hlper_2_ucode_if 1 5 6 1890 4410 NJ 4410 NJ 4410 NJ 4410 4000J 4420 4510J
+preplace netloc v2nfc_3_nand_if 1 11 2 NJ 3980 NJ
+preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 10 1 4500 4300n
+preplace netloc gpic_0_sub_0_M02_AXI 1 4 6 1450 3480 NJ 3480 NJ 3480 NJ 3480 NJ 3480 3990
+preplace netloc t4nfc_hlper_3_to_ecc_if 1 3 3 1090 5010 NJ 5010 1800
+preplace netloc S00_AXI_1 1 7 3 3090J 5130 NJ 5130 N
+preplace netloc gpic_0_sub_0_M04_AXI 1 4 6 1440 3490 NJ 3490 NJ 3490 NJ 3490 NJ 3490 3980
+preplace netloc gpic_0_sub_0_M06_AXI 1 4 6 1430 3500 NJ 3500 NJ 3500 NJ 3500 NJ 3500 3970
+preplace netloc pcie_ref_0_1 1 0 11 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ
+preplace netloc bch_sccs_256B_21B_13b_3_from_ecc_if 1 4 1 1330 4880n
+preplace netloc bch_sccs_256B_21B_13b_1_from_ecc_if 1 4 1 1370 3590n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 7 1 3050 5120n
+preplace netloc t4nfc_hlper_0_ucode_if 1 10 1 4610 3790n
+preplace netloc gpic_0_M01_AXI 1 9 1 4120 3790n
+preplace netloc gpic_1_M00_AXI 1 10 1 4490 5070n
+preplace netloc nvme_ctrl_0_m0_axi 1 5 7 2060 5530 NJ 5530 NJ 5530 NJ 5530 NJ 5530 NJ 5530 5290
+preplace netloc t4nfc_hlper_2_to_ecc_if 1 3 3 1090 4630 NJ 4630 1800
+preplace netloc t4nfc_hlper_1_ucode_if 1 5 6 2030 4060 NJ 4060 NJ 4060 3560J 4100 4080J 4080 4530J
+preplace netloc gpic_0_M03_AXI 1 9 1 4030 3570n
 preplace netloc v2nfc_1_nand_if 1 11 2 NJ 1550 NJ
+preplace netloc t4nfc_hlper_2_v2nfc_if 1 5 6 1810J 3440 NJ 3440 NJ 3440 NJ 3440 NJ 3440 4520
+preplace netloc bch_sccs_256B_21B_13b_2_bch_skes_if 1 4 6 1350 4620 1860J 4360 NJ 4360 NJ 4360 NJ 4360 3990J
+preplace netloc v2nfc_0_nand_if 1 11 2 5550J 1410 6390J
+preplace netloc gpic_0_sub_0_M00_AXI 1 9 1 4040 3750n
+preplace netloc S02_AXI_1 1 5 1 1870 4480n
+preplace netloc axi_interconnect_0_M00_AXI 1 8 1 3540 3640n
+preplace netloc t4nfc_hlper_3_v2nfc_if 1 5 6 1840J 3510 NJ 3510 NJ 3510 NJ 3510 4010J 3500 4610
+preplace netloc gpic_0_M07_AXI 1 9 1 4060 3910n
+preplace netloc t4nfc_hlper_0_nfch_data_if 1 5 6 2030 4390 NJ 4390 NJ 4390 NJ 4390 NJ 4390 4490
+preplace netloc t4nfc_hlper_1_v2nfc_if 1 5 6 1800 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ
+preplace netloc gpic_1_M01_AXI 1 10 1 4510 5360n
+preplace netloc smartconnect_0_M00_AXI 1 6 1 2360 5170n
+preplace netloc bch_sccs_256B_21B_13b_1_bch_skes_if 1 4 6 NJ 3950 1950J 4130 NJ 4130 NJ 4130 3530J 4310 4010
+preplace netloc S03_AXI_1 1 5 1 1950 4550n
+preplace netloc bch_sccs_256B_21B_13b_2_from_ecc_if 1 4 1 1390 4500n
+preplace netloc t4nfc_hlper_0_v2nfc_if 1 10 1 4510 600n
+preplace netloc bch_sccs_256B_21B_13b_3_bch_skes_if 1 4 6 1370 5000 2020J 4900 NJ 4900 NJ 4900 NJ 4900 NJ
 preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 10 1 4540 3990n
-preplace netloc bch_sccs_256B_21B_13b_0_from_ecc_if 1 9 1 3940 3770n
-preplace netloc t4nfc_hlper_0_v2nfc_if 1 10 1 4410 600n
-preplace netloc hpic_0_M00_AXI 1 6 1 2360 4640n
-preplace netloc S03_AXI_1 1 5 1 1830 4550n
-preplace netloc bch_sccs_256B_21B_13b_2_from_ecc_if 1 4 1 1290 4500n
-preplace netloc bch_sccs_256B_21B_13b_3_bch_skes_if 1 4 6 1360 5010 1900J 5000 NJ 5000 NJ 5000 NJ 5000 3960J
-levelinfo -pg 1 0 200 480 780 1160 1590 2150 2650 3170 3700 4240 5030 5720 6300
-pagesize -pg 1 -db -bbox -sgen -130 0 6440 5770
+preplace netloc hpic_0_M00_AXI 1 6 1 2400 4640n
+preplace netloc bch_sccs_256B_21B_13b_0_from_ecc_if 1 9 1 4100 3770n
+levelinfo -pg 1 0 200 490 840 1210 1630 2210 2720 3280 3800 4340 5130 5820 6410
+pagesize -pg 1 -db -bbox -sgen -140 0 6560 5770
 "
 }
 {

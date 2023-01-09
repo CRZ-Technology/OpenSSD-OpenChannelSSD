@@ -65,7 +65,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_CQ.TDATA_NUM_BYTES">16</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_CQ.TDATA_NUM_BYTES">64</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -92,7 +92,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_CQ.TUSER_WIDTH">88</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_CQ.TUSER_WIDTH">183</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -242,7 +242,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_CC.TDATA_NUM_BYTES">16</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_CC.TDATA_NUM_BYTES">64</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -269,7 +269,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_CC.TUSER_WIDTH">33</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_CC.TUSER_WIDTH">81</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -419,7 +419,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_RQ.TDATA_NUM_BYTES">16</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_RQ.TDATA_NUM_BYTES">64</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -446,7 +446,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_RQ.TUSER_WIDTH">62</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_RQ.TUSER_WIDTH">137</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -596,7 +596,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_RC.TDATA_NUM_BYTES">16</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_RC.TDATA_NUM_BYTES">64</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -623,7 +623,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_RC.TUSER_WIDTH">75</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_RC.TUSER_WIDTH">161</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -7486,6 +7486,24 @@
   <spirit:model>
     <spirit:views>
       <spirit:view>
+        <spirit:name>xilinx_elaboratesubcores</spirit:name>
+        <spirit:displayName>Elaborate Sub-Cores</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:elaborate.subcores</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_elaboratesubcores_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Feb 16 06:49:12 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:eaca0565</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
         <spirit:name>xilinx_veriloginstantiationtemplate</spirit:name>
         <spirit:displayName>Verilog Instantiation Template</spirit:displayName>
         <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.template</spirit:envIdentifier>
@@ -7496,87 +7514,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 30 07:30:10 UTC 2021</spirit:value>
+            <spirit:value>Fri Jan 06 21:49:39 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bb2d8b68</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
-        <spirit:displayName>Verilog Simulation</spirit:displayName>
-        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
-        <spirit:language>verilog</spirit:language>
-        <spirit:modelName>pcie4_uscale_plus_0_pcie4_uscale_core_top</spirit:modelName>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 30 07:30:14 UTC 2021</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:58e3fafe</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
-        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
-        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
-        <spirit:language>verilog</spirit:language>
-        <spirit:modelName>pcie4_uscale_plus_0</spirit:modelName>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 30 07:30:16 UTC 2021</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:58e3fafe</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_versioninformation</spirit:name>
-        <spirit:displayName>Version Information</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:docs.versioninfo</spirit:envIdentifier>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_versioninformation_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 30 07:30:16 UTC 2021</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bb2d8b68</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_elaboratesubcores</spirit:name>
-        <spirit:displayName>Elaborate Sub-Cores</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:elaborate.subcores</spirit:envIdentifier>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_elaboratesubcores_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 30 07:30:21 UTC 2021</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:04749585</spirit:value>
+            <spirit:value>9:15214ff3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -7592,11 +7534,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 27 10:25:36 UTC 2021</spirit:value>
+            <spirit:value>Fri Jan 06 21:49:45 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8e80a7b8</spirit:value>
+            <spirit:value>9:15214ff3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -7607,7 +7549,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8e80a7b8</spirit:value>
+            <spirit:value>9:15214ff3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -7623,11 +7565,51 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 27 10:25:36 UTC 2021</spirit:value>
+            <spirit:value>Fri Jan 06 21:49:46 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8e80a7b8</spirit:value>
+            <spirit:value>9:15214ff3</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>pcie4_uscale_plus_0_pcie4_uscale_core_top</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Jan 06 21:49:45 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:b82fde45</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>pcie4_uscale_plus_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Jan 06 21:49:47 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:b82fde45</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -7641,11 +7623,29 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 27 10:25:36 UTC 2021</spirit:value>
+            <spirit:value>Fri Jan 06 21:49:47 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8e80a7b8</spirit:value>
+            <spirit:value>9:15214ff3</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_versioninformation</spirit:name>
+        <spirit:displayName>Version Information</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:docs.versioninfo</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_versioninformation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Jan 06 21:49:47 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:15214ff3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -7837,7 +7837,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_DATA_WIDTH&apos;)) - 1)">127</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_DATA_WIDTH&apos;)) - 1)">511</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -7857,7 +7857,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_TKEEP_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_TKEEP_WIDTH&apos;)) - 1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -7910,7 +7910,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_RQ_TUSER_WIDTH&apos;)) - 1)">61</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_RQ_TUSER_WIDTH&apos;)) - 1)">136</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -7946,7 +7946,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_DATA_WIDTH&apos;)) - 1)">127</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_DATA_WIDTH&apos;)) - 1)">511</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -7963,7 +7963,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_TKEEP_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_TKEEP_WIDTH&apos;)) - 1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -8009,7 +8009,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_RC_TUSER_WIDTH&apos;)) - 1)">74</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_RC_TUSER_WIDTH&apos;)) - 1)">160</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -8039,7 +8039,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_DATA_WIDTH&apos;)) - 1)">127</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_DATA_WIDTH&apos;)) - 1)">511</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -8056,7 +8056,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_TKEEP_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_TKEEP_WIDTH&apos;)) - 1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -8102,7 +8102,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_CQ_TUSER_WIDTH&apos;)) - 1)">87</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_CQ_TUSER_WIDTH&apos;)) - 1)">182</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -8132,7 +8132,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_DATA_WIDTH&apos;)) - 1)">127</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_DATA_WIDTH&apos;)) - 1)">511</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -8152,7 +8152,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_TKEEP_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_TKEEP_WIDTH&apos;)) - 1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -8205,7 +8205,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_CC_TUSER_WIDTH&apos;)) - 1)">32</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_CC_TUSER_WIDTH&apos;)) - 1)">80</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -11288,7 +11288,7 @@
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
-            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PF0_DEVICE_ID&apos;))" spirit:bitStringLength="16">0x901F</spirit:defaultValue>
+            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PF0_DEVICE_ID&apos;))" spirit:bitStringLength="16">0x903F</spirit:defaultValue>
           </spirit:driver>
         </spirit:wire>
         <spirit:vendorExtensions>
@@ -11342,7 +11342,7 @@
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
-            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PF2_DEVICE_ID&apos;))" spirit:bitStringLength="16">0x941F</spirit:defaultValue>
+            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PF2_DEVICE_ID&apos;))" spirit:bitStringLength="16">0x943F</spirit:defaultValue>
           </spirit:driver>
         </spirit:wire>
         <spirit:vendorExtensions>
@@ -11369,7 +11369,7 @@
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
-            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PF3_DEVICE_ID&apos;))" spirit:bitStringLength="16">0x961F</spirit:defaultValue>
+            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.PF3_DEVICE_ID&apos;))" spirit:bitStringLength="16">0x963F</spirit:defaultValue>
           </spirit:driver>
         </spirit:wire>
         <spirit:vendorExtensions>
@@ -20389,7 +20389,7 @@
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
         <spirit:name>PL_LINK_CAP_MAX_LINK_SPEED</spirit:name>
         <spirit:displayName>Pl Link Cap Max Link Speed</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PL_LINK_CAP_MAX_LINK_SPEED">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PL_LINK_CAP_MAX_LINK_SPEED">4</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>PL_LINK_CAP_MAX_LINK_WIDTH</spirit:name>
@@ -20399,17 +20399,17 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>CRM_USER_CLK_FREQ</spirit:name>
         <spirit:displayName>User Clk Freq</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CRM_USER_CLK_FREQ">2</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CRM_USER_CLK_FREQ">3</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>CRM_CORE_CLK_FREQ_500</spirit:name>
         <spirit:displayName>Core Clk Freq</spirit:displayName>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CRM_CORE_CLK_FREQ_500">FALSE</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CRM_CORE_CLK_FREQ_500">TRUE</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>PLL_TYPE</spirit:name>
         <spirit:displayName>PLL Type</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PLL_TYPE">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PLL_TYPE">2</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>PF0_LINK_CAP_ASPM_SUPPORT</spirit:name>
@@ -20419,7 +20419,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>AXI4_DATA_WIDTH</spirit:name>
         <spirit:displayName>C Data Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI4_DATA_WIDTH">128</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI4_DATA_WIDTH">512</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>PHY_REFCLK_FREQ</spirit:name>
@@ -20429,27 +20429,27 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>AXI4_TKEEP_WIDTH</spirit:name>
         <spirit:displayName>Keep Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.AXI4_TKEEP_WIDTH" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_DATA_WIDTH&apos;)) div 32)">4</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.AXI4_TKEEP_WIDTH" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI4_DATA_WIDTH&apos;)) div 32)">16</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>AXI4_RQ_TUSER_WIDTH</spirit:name>
         <spirit:displayName>RQ User Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI4_RQ_TUSER_WIDTH">62</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI4_RQ_TUSER_WIDTH">137</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>AXI4_CQ_TUSER_WIDTH</spirit:name>
         <spirit:displayName>CQ User Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI4_CQ_TUSER_WIDTH">88</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI4_CQ_TUSER_WIDTH">183</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>AXI4_RC_TUSER_WIDTH</spirit:name>
         <spirit:displayName>RC User Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI4_RC_TUSER_WIDTH">75</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI4_RC_TUSER_WIDTH">161</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>AXI4_CC_TUSER_WIDTH</spirit:name>
         <spirit:displayName>CC User Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI4_CC_TUSER_WIDTH">33</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI4_CC_TUSER_WIDTH">81</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>ARI_CAP_ENABLE</spirit:name>
@@ -20519,7 +20519,7 @@
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE</spirit:name>
         <spirit:displayName>Axisten If 512 4TLP/2TLP Rc Straddle</spirit:displayName>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE">FALSE</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE">TRUE</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>AXISTEN_IF_RC_STRADDLE</spirit:name>
@@ -20534,12 +20534,12 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF0_AER_CAP_NEXTPTR</spirit:name>
         <spirit:displayName>Pf0 Aer Cap Nextptr</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_AER_CAP_NEXTPTR" spirit:bitStringLength="12">0x000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_AER_CAP_NEXTPTR" spirit:bitStringLength="12">0x1C0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF0_ARI_CAP_NEXTPTR</spirit:name>
         <spirit:displayName>Pf0 Ari Cap Nextptr</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_ARI_CAP_NEXTPTR" spirit:bitStringLength="12">0x000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_ARI_CAP_NEXTPTR" spirit:bitStringLength="12">0x1C0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF0_BAR0_APERTURE_SIZE</spirit:name>
@@ -20619,7 +20619,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF0_DEVICE_ID</spirit:name>
         <spirit:displayName>Pf0 Device Id</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEVICE_ID" spirit:bitStringLength="16">0x901F</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEVICE_ID" spirit:bitStringLength="16">0x903F</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT</spirit:name>
@@ -20654,7 +20654,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF0_DEV_CAP_MAX_PAYLOAD_SIZE</spirit:name>
         <spirit:displayName>Pf0 Dev Cap Max Payload Size</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP_MAX_PAYLOAD_SIZE" spirit:bitStringLength="3">0x2</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DEV_CAP_MAX_PAYLOAD_SIZE" spirit:bitStringLength="3">0x3</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>DSN_CAP_ENABLE</spirit:name>
@@ -20669,7 +20669,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF0_DSN_CAP_NEXTPTR</spirit:name>
         <spirit:displayName>Pf0 Dsn Cap Nextptr</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DSN_CAP_NEXTPTR" spirit:bitStringLength="12">0x000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF0_DSN_CAP_NEXTPTR" spirit:bitStringLength="12">0x1C0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF0_EXPANSION_ROM_APERTURE_SIZE</spirit:name>
@@ -21034,7 +21034,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF1_DEV_CAP_MAX_PAYLOAD_SIZE</spirit:name>
         <spirit:displayName>Pf1 Dev Cap Max Payload Size</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DEV_CAP_MAX_PAYLOAD_SIZE" spirit:bitStringLength="3">0x2</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF1_DEV_CAP_MAX_PAYLOAD_SIZE" spirit:bitStringLength="3">0x3</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF1_DSN_CAP_NEXTPTR</spirit:name>
@@ -21299,12 +21299,12 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF2_DEVICE_ID</spirit:name>
         <spirit:displayName>Pf2 Device Id</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF2_DEVICE_ID" spirit:bitStringLength="16">0x941F</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF2_DEVICE_ID" spirit:bitStringLength="16">0x943F</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF2_DEV_CAP_MAX_PAYLOAD_SIZE</spirit:name>
         <spirit:displayName>Pf2 Dev Cap Max Payload Size</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF2_DEV_CAP_MAX_PAYLOAD_SIZE" spirit:bitStringLength="3">0x2</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF2_DEV_CAP_MAX_PAYLOAD_SIZE" spirit:bitStringLength="3">0x3</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF2_DSN_CAP_NEXTPTR</spirit:name>
@@ -21569,12 +21569,12 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF3_DEVICE_ID</spirit:name>
         <spirit:displayName>Pf3 Device Id</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF3_DEVICE_ID" spirit:bitStringLength="16">0x961F</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF3_DEVICE_ID" spirit:bitStringLength="16">0x963F</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF3_DEV_CAP_MAX_PAYLOAD_SIZE</spirit:name>
         <spirit:displayName>Pf3 Dev Cap Max Payload Size</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF3_DEV_CAP_MAX_PAYLOAD_SIZE" spirit:bitStringLength="3">0x2</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PF3_DEV_CAP_MAX_PAYLOAD_SIZE" spirit:bitStringLength="3">0x3</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>PF3_DSN_CAP_NEXTPTR</spirit:name>
@@ -22625,12 +22625,6 @@
       <spirit:enumeration>Advanced</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_2587174c</spirit:name>
-      <spirit:enumeration>No_ASPM</spirit:enumeration>
-      <spirit:enumeration>L0s_Supported</spirit:enumeration>
-      <spirit:enumeration>L1_Supported</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_list_34d65ff4</spirit:name>
       <spirit:enumeration>128</spirit:enumeration>
     </spirit:choice>
@@ -22803,13 +22797,13 @@
       <spirit:enumeration>1024_bytes</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_7e1e2923</spirit:name>
+      <spirit:enumeration>512_bit</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_81a1639d</spirit:name>
       <spirit:enumeration>DWORD_Aligned</spirit:enumeration>
       <spirit:enumeration>Address_Aligned</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_822b7946</spirit:name>
-      <spirit:enumeration>CPLL</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_847d868a</spirit:name>
@@ -22821,6 +22815,10 @@
       <spirit:enumeration>6</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_86c5d341</spirit:name>
+      <spirit:enumeration>500</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_87d07b18</spirit:name>
       <spirit:enumeration>X0Y2</spirit:enumeration>
       <spirit:enumeration>X0Y3</spirit:enumeration>
@@ -22829,8 +22827,9 @@
       <spirit:enumeration>X1Y2</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_8a3741a1</spirit:name>
-      <spirit:enumeration>128_bit</spirit:enumeration>
+      <spirit:name>choice_list_88156f2e</spirit:name>
+      <spirit:enumeration>QPLL1</spirit:enumeration>
+      <spirit:enumeration>QPLL0</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_8b5e4915</spirit:name>
@@ -22913,6 +22912,11 @@
     <spirit:choice>
       <spirit:name>choice_list_c3d223d9</spirit:name>
       <spirit:enumeration>Memory</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_ca005b72</spirit:name>
+      <spirit:enumeration>No_ASPM</spirit:enumeration>
+      <spirit:enumeration>L1_Supported</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_d123c74c</spirit:name>
@@ -23004,165 +23008,6 @@
   </spirit:choices>
   <spirit:fileSets>
     <spirit:fileSet>
-      <spirit:name>xilinx_veriloginstantiationtemplate_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>pcie4_uscale_plus_0.vho</spirit:name>
-        <spirit:userFileType>vhdlTemplate</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>pcie4_uscale_plus_0.veo</spirit:name>
-        <spirit:userFileType>verilogTemplate</spirit:userFileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_gtwizard_top.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_phy_ff_chain.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_phy_pipeline.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_bram_16k_int.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_bram_16k.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_bram_32k.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_bram_4k_int.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_bram_msix.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_bram_rep_int.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_bram_rep.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_bram_tph.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_bram.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_gt_gt_channel.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_gt_gt_common.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_gt_phy_clk.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_gt_phy_rst.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_gt_phy_rxeq.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_gt_phy_txeq.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_sync_cell.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_sync.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_gt_cdr_ctrl_on_eidle.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_gt_receiver_detect_rxterm.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_gt_phy_wrapper.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_init_ctrl.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_pl_eq.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_vf_decode.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_pipe.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:exportedName>pcie4_uscale_plus_0_pipe</spirit:exportedName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/gen4_phy_defines.vh</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_phy_top.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_seqnum_fifo.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_sys_clk_gen_ps.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>source/pcie4_uscale_plus_0_pcie4_uscale_core_top.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:exportedName>pcie4_uscale_plus_0_pcie4_uscale_core_top</spirit:exportedName>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>sim/pcie4_uscale_plus_0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_versioninformation_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>doc/pcie4_uscale_plus_v1_3_changelog.txt</spirit:name>
-        <spirit:userFileType>text</spirit:userFileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
       <spirit:name>xilinx_elaboratesubcores_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>ip_0/pcie4_uscale_plus_0_gt.xci</spirit:name>
@@ -23171,6 +23016,17 @@
       <spirit:file>
         <spirit:name>ip_0/pcie4_uscale_plus_0_gt.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_veriloginstantiationtemplate_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>pcie4_uscale_plus_0.vho</spirit:name>
+        <spirit:userFileType>vhdlTemplate</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>pcie4_uscale_plus_0.veo</spirit:name>
+        <spirit:userFileType>verilogTemplate</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -23204,6 +23060,54 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>source/pcie4_uscale_plus_0_phy_pipeline.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_async_fifo.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_cc_intfc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_cc_output_mux.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_cq_intfc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_cq_output_mux.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_intfc_int.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_intfc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_rc_intfc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_rc_output_mux.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_rq_intfc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_rq_output_mux.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_sync_fifo.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -23334,6 +23238,195 @@
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_gtwizard_top.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_phy_ff_chain.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_phy_pipeline.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_async_fifo.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_cc_intfc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_cc_output_mux.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_cq_intfc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_cq_output_mux.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_intfc_int.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_intfc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_rc_intfc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_rc_output_mux.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_rq_intfc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_rq_output_mux.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_512b_sync_fifo.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_bram_16k_int.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_bram_16k.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_bram_32k.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_bram_4k_int.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_bram_msix.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_bram_rep_int.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_bram_rep.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_bram_tph.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_bram.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_gt_gt_channel.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_gt_gt_common.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_gt_phy_clk.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_gt_phy_rst.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_gt_phy_rxeq.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_gt_phy_txeq.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_sync_cell.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_sync.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_gt_cdr_ctrl_on_eidle.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_gt_receiver_detect_rxterm.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_gt_phy_wrapper.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_init_ctrl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_pl_eq.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_vf_decode.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_pipe.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:exportedName>pcie4_uscale_plus_0_pipe</spirit:exportedName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/gen4_phy_defines.vh</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_phy_top.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_seqnum_fifo.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_sys_clk_gen_ps.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>source/pcie4_uscale_plus_0_pcie4_uscale_core_top.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:exportedName>pcie4_uscale_plus_0_pcie4_uscale_core_top</spirit:exportedName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/pcie4_uscale_plus_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
       <spirit:name>xilinx_implementation_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>pcie4_uscale_plus_0_board.xdc</spirit:name>
@@ -23345,6 +23438,13 @@
           <spirit:name>processing_order</spirit:name>
           <spirit:value>late</spirit:value>
         </spirit:define>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_versioninformation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>doc/pcie4_uscale_plus_v1_3_changelog.txt</spirit:name>
+        <spirit:userFileType>text</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
@@ -23370,7 +23470,7 @@
     <spirit:parameter>
       <spirit:name>PL_LINK_CAP_MAX_LINK_SPEED</spirit:name>
       <spirit:displayName>Pl Link Cap Max Link Speed</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PL_LINK_CAP_MAX_LINK_SPEED" spirit:choiceRef="choice_list_574f38f3" spirit:order="13">2.5_GT/s</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PL_LINK_CAP_MAX_LINK_SPEED" spirit:choiceRef="choice_list_574f38f3" spirit:order="13">8.0_GT/s</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PL_LINK_CAP_MAX_LINK_WIDTH</spirit:name>
@@ -23387,13 +23487,6 @@
       <spirit:name>AXISTEN_IF_EXT_512_CQ_STRADDLE</spirit:name>
       <spirit:displayName>Axisten If Rc Straddle</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.AXISTEN_IF_EXT_512_CQ_STRADDLE" spirit:choiceRef="choice_list_7a7dde49" spirit:order="289">false</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.AXISTEN_IF_EXT_512_CQ_STRADDLE">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>AXISTEN_IF_EXT_512_CC_STRADDLE</spirit:name>
@@ -23404,13 +23497,6 @@
       <spirit:name>AXISTEN_IF_EXT_512_RQ_STRADDLE</spirit:name>
       <spirit:displayName>Axisten If Rc Straddle</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.AXISTEN_IF_EXT_512_RQ_STRADDLE" spirit:choiceRef="choice_list_7a7dde49" spirit:order="291">false</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.AXISTEN_IF_EXT_512_RQ_STRADDLE">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>AXISTEN_IF_EXT_512_RC_STRADDLE</spirit:name>
@@ -23420,7 +23506,7 @@
     <spirit:parameter>
       <spirit:name>AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE</spirit:name>
       <spirit:displayName>Axisten If 512 4TLP/2TLP Rc Straddle</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE" spirit:choiceRef="choice_list_7a7dde49" spirit:order="291.1">false</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE" spirit:choiceRef="choice_list_7a7dde49" spirit:order="291.1">true</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -23476,7 +23562,7 @@
     <spirit:parameter>
       <spirit:name>PF0_DEVICE_ID</spirit:name>
       <spirit:displayName>Pf0 Device Id</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEVICE_ID" spirit:order="25">901F</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF0_DEVICE_ID" spirit:order="25">903F</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT</spirit:name>
@@ -23789,7 +23875,7 @@
     <spirit:parameter>
       <spirit:name>PF2_DEVICE_ID</spirit:name>
       <spirit:displayName>Pf2 Device Id</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF2_DEVICE_ID" spirit:order="25.2">941F</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF2_DEVICE_ID" spirit:order="25.2">943F</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PF2_INTERRUPT_PIN</spirit:name>
@@ -23923,7 +24009,7 @@
     <spirit:parameter>
       <spirit:name>PF3_DEVICE_ID</spirit:name>
       <spirit:displayName>Pf3 Device Id</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF3_DEVICE_ID" spirit:order="25.3">961F</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PF3_DEVICE_ID" spirit:order="25.3">963F</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PF3_INTERRUPT_PIN</spirit:name>
@@ -25416,7 +25502,7 @@
     <spirit:parameter>
       <spirit:name>pf0_dev_cap_max_payload</spirit:name>
       <spirit:displayName>Pf0 Dev Cap Max Payload</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_dev_cap_max_payload" spirit:choiceRef="choice_list_7d45a81a" spirit:order="19">512_bytes</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.pf0_dev_cap_max_payload" spirit:choiceRef="choice_list_7d45a81a" spirit:order="19">1024_bytes</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>gen_x0y0</spirit:name>
@@ -26217,7 +26303,7 @@
     <spirit:parameter>
       <spirit:name>axisten_if_width</spirit:name>
       <spirit:displayName>Axisten If Width</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.axisten_if_width" spirit:choiceRef="choice_list_8a3741a1" spirit:order="14">128_bit</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.axisten_if_width" spirit:choiceRef="choice_list_7e1e2923" spirit:order="14">512_bit</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>pf0_sriov_bar4_enabled</spirit:name>
@@ -27844,7 +27930,7 @@
     <spirit:parameter>
       <spirit:name>coreclk_freq</spirit:name>
       <spirit:displayName>CORE CLOCK FREQ</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.coreclk_freq" spirit:choiceRef="choice_list_6b979ebc" spirit:order="333">250</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.coreclk_freq" spirit:choiceRef="choice_list_86c5d341" spirit:order="333">500</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -27856,14 +27942,7 @@
     <spirit:parameter>
       <spirit:name>plltype</spirit:name>
       <spirit:displayName>PLL TYPE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.plltype" spirit:choiceRef="choice_list_822b7946" spirit:order="334">CPLL</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.plltype">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.plltype" spirit:choiceRef="choice_list_88156f2e" spirit:order="334">QPLL1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>axisten_freq</spirit:name>
@@ -27873,7 +27952,7 @@
     <spirit:parameter>
       <spirit:name>aspm_support</spirit:name>
       <spirit:displayName>ASPM Support</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.aspm_support" spirit:choiceRef="choice_list_2587174c" spirit:order="298">No_ASPM</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.aspm_support" spirit:choiceRef="choice_list_ca005b72" spirit:order="298">No_ASPM</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SRIOV_CAP_ENABLE_EXT</spirit:name>
@@ -27947,13 +28026,6 @@
     <spirit:parameter>
       <spirit:name>dbg_checker</spirit:name>
       <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.dbg_checker" spirit:order="13.1">false</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.dbg_checker">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>enable_ibert</spirit:name>
@@ -28023,13 +28095,6 @@
     <spirit:parameter>
       <spirit:name>gtcom_in_core</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.gtcom_in_core" spirit:choiceRef="choice_pairs_6f00a734" spirit:order="350.2">2</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.gtcom_in_core">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>dedicate_perst</spirit:name>
@@ -28114,13 +28179,6 @@
     <spirit:parameter>
       <spirit:name>en_dbg_descramble</spirit:name>
       <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.en_dbg_descramble" spirit:order="437">false</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.en_dbg_descramble">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>enable_jtag_dbg</spirit:name>

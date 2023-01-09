@@ -52,17 +52,17 @@ http://www.hanyang.ac.kr/
 
 
 module pcie_rx # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 
 	parameter KEEP_WIDTH                                 = C_PCIE_DATA_WIDTH / 32, 
 	parameter TCQ                                        = 1,
 
 	parameter [1:0]  AXISTEN_IF_WIDTH               = (C_PCIE_DATA_WIDTH == 512) ? 2'b11:(C_PCIE_DATA_WIDTH == 256) ? 2'b10 : (C_PCIE_DATA_WIDTH == 128) ? 2'b01 : 2'b00, 
 
-	parameter              AXI4_CQ_TUSER_WIDTH = 88,
-	parameter              AXI4_CC_TUSER_WIDTH = 33,
-	parameter              AXI4_RQ_TUSER_WIDTH = 62,
-	parameter              AXI4_RC_TUSER_WIDTH = 75
+	parameter              AXI4_CQ_TUSER_WIDTH = 183,
+	parameter              AXI4_CC_TUSER_WIDTH = 81,
+	parameter              AXI4_RQ_TUSER_WIDTH = 137,
+	parameter              AXI4_RC_TUSER_WIDTH = 161
 )
 (
 	input									pcie_user_clk,

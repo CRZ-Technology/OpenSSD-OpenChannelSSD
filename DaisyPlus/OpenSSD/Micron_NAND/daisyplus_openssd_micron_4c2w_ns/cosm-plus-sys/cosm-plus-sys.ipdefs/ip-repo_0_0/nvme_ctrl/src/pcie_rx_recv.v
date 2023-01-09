@@ -52,17 +52,17 @@ http://www.hanyang.ac.kr/
 
 
   module pcie_rx_recv # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 
 	parameter KEEP_WIDTH                                 = C_PCIE_DATA_WIDTH / 32, 
 	parameter TCQ                                        = 1,
 
 	parameter [1:0]  AXISTEN_IF_WIDTH               = (C_PCIE_DATA_WIDTH == 512) ? 2'b11:(C_PCIE_DATA_WIDTH == 256) ? 2'b10 : (C_PCIE_DATA_WIDTH == 128) ? 2'b01 : 2'b00, 
 
-	parameter              AXI4_CQ_TUSER_WIDTH = 88,
-	parameter              AXI4_CC_TUSER_WIDTH = 33,
-	parameter              AXI4_RQ_TUSER_WIDTH = 62,
-	parameter              AXI4_RC_TUSER_WIDTH = 75
+	parameter              AXI4_CQ_TUSER_WIDTH = 183,
+	parameter              AXI4_CC_TUSER_WIDTH = 81,
+	parameter              AXI4_RQ_TUSER_WIDTH = 137,
+	parameter              AXI4_RC_TUSER_WIDTH = 161
 )
 (
 	input									pcie_user_clk,
@@ -119,11 +119,11 @@ localparam	S_CQ_RX_DATA						= 2'b10;
     
      reg											r_mem_req_en;
 
-	reg		[127:0]								r_m_axis_cq_rx_tdata; 
+	reg		[C_PCIE_DATA_WIDTH-1:0]				r_m_axis_cq_rx_tdata; 
 	reg                                         r_m_axis_cq_tready;
 
-     reg											r_mreq_fifo_wr_en;
-     reg		[127:0]								r_mreq_fifo_wr_data;
+     reg										r_mreq_fifo_wr_en;
+     reg		[C_PCIE_DATA_WIDTH-1:0]			r_mreq_fifo_wr_data;
     
 (* KEEP = "TRUE", SHIFT_EXTRACT = "NO" *)      reg		[9:0]									r_mreq_tlp_count;
 
@@ -136,8 +136,8 @@ assign pcie_mreq_err = r_pcie_mreq_err;
 assign mreq_fifo_wr_en = r_mreq_fifo_wr_en;
 assign mreq_fifo_wr_data = r_mreq_fifo_wr_data;
 
-assign w_cq_rx_is_sof = m_axis_cq_tuser[40];
-assign w_req_be[7:0] = m_axis_cq_tuser[7:0];
+assign w_cq_rx_is_sof = m_axis_cq_tuser[80];
+assign w_req_be[7:0] = {m_axis_cq_tuser[11:8], m_axis_cq_tuser[3:0]};
 
 assign req_be = r_req_be;
 
@@ -153,9 +153,8 @@ end
 
 always @ (posedge pcie_user_clk or negedge pcie_user_rst_n)
 begin
-	if(pcie_user_rst_n == 0) begin
+	if(pcie_user_rst_n == 0)
 		r_mreq_tlp_count <= 10'b0;
-    end
 	else begin
 	   if(r_mreq_fifo_wr_en == 1)
 		    r_mreq_tlp_count <= r_mreq_tlp_count + 1;
@@ -170,9 +169,8 @@ begin
 		S_CQ_RX_IDLE_SOF: begin
 			pcie_cq_np_req   <= 1'b1;
 			if(m_axis_cq_tvalid == 1 && w_cq_rx_is_sof == 1) begin
-				if(m_axis_cq_tlast == 1) begin
+				if(m_axis_cq_tlast == 1)
 					cq_next_state <= S_CQ_RX_IDLE_SOF;
-				end
 				else
 					cq_next_state <= S_CQ_RX_DATA;
 			end
@@ -180,13 +178,11 @@ begin
 				cq_next_state <= S_CQ_RX_IDLE_SOF;
 		end
 		S_CQ_RX_DATA: begin
-			if(m_axis_cq_tvalid == 1 && m_axis_cq_tlast == 1) begin
+			if(m_axis_cq_tvalid == 1 && m_axis_cq_tlast == 1)
 				cq_next_state <= S_CQ_RX_IDLE_SOF;
-			end
 			else
 				cq_next_state <= S_CQ_RX_DATA;				
 		end
-
 		default: begin
 			cq_next_state <= S_CQ_RX_IDLE_SOF;
 		end
@@ -195,17 +191,15 @@ end
 
 always @ (posedge pcie_user_clk)
 begin
-	if(m_axis_cq_tvalid == 1 && w_cq_rx_is_sof == 1) begin
+	if(m_axis_cq_tvalid == 1 && w_cq_rx_is_sof == 1)
 		r_req_be <= w_req_be;
-	end
 end
 
 
 always @ (posedge pcie_user_clk or negedge pcie_user_rst_n)
 begin
-	if(pcie_user_rst_n == 0) begin
+	if(pcie_user_rst_n == 0)
 		r_pcie_mreq_err <= 0;
-	end
 end
 
 
@@ -221,7 +215,7 @@ begin
 			r_mem_req_en <= m_axis_cq_tvalid;
 		end
 		default: begin
-			r_m_axis_cq_tready <= 1'b1;
+			r_m_axis_cq_tready   <= 1'b0;
 			r_mem_req_en <= 0;
 		end
 	endcase
@@ -241,11 +235,12 @@ begin
 	r_mreq_fifo_wr_data <= r_m_axis_cq_rx_tdata;
 end
 
-localparam	S_RC_RX_IDLE_SOF					= 2'b01;
-localparam	S_RC_RX_DATA						= 2'b10;
+localparam	S_RC_RX_IDLE_SOF					= 3'b001;
+localparam	S_RC_RX_HEAD						= 3'b010;
+localparam	S_RC_RX_DATA						= 3'b100;
 
-     reg		[1:0]								rc_cur_state;
-     reg		[1:0]								rc_next_state;
+     reg		[2:0]								rc_cur_state;
+     reg		[2:0]								rc_next_state;
     
      wire									        w_rc_rx_is_sof;
 
@@ -269,14 +264,15 @@ localparam	S_RC_RX_DATA						= 2'b10;
      reg											r_cpld_data_en;
      reg											r_cpld_tag_last;
 
-     reg		[127:0]								r_m_axis_rc_rx_tdata;
-     reg		[127:0]								r_m_axis_rc_rx_tdata_d1;
+     reg		[C_PCIE_DATA_WIDTH-1:0]								r_m_axis_rc_rx_tdata;
+     reg		[C_PCIE_DATA_WIDTH-1:0]								r_m_axis_rc_rx_tdata_d1;
 	 reg                                            r_m_axis_rc_tready;
 
      reg											r_cpld_fifo_tag_en;
      reg											r_cpld_fifo_wr_en;
-     reg		[127:0]								r_cpld_fifo_wr_data;
+     reg		[C_PCIE_DATA_WIDTH-1:0]								r_cpld_fifo_wr_data;
      reg											r_cpld_fifo_tag_last;
+	 reg     	[10:0]								r_cpld_head_len;
 
 (* KEEP = "TRUE", SHIFT_EXTRACT = "NO" *)      reg        [9:0]                                    r_cpld_tlp_count;
 
@@ -286,14 +282,10 @@ assign pcie_cpld_len_err = r_pcie_cpld_len_err;
 assign cpld_fifo_tag = r_cpld_tag;
 assign cpld_fifo_wr_en = r_cpld_fifo_wr_en;
 
-assign cpld_fifo_wr_data[31:0]   = r_cpld_fifo_wr_data[31:0];
-assign cpld_fifo_wr_data[63:32]  = r_cpld_fifo_wr_data[63:32];
-assign cpld_fifo_wr_data[95:64]  = r_cpld_fifo_wr_data[95:64];
-assign cpld_fifo_wr_data[127:96] = r_cpld_fifo_wr_data[127:96];
-
+assign cpld_fifo_wr_data = r_cpld_fifo_wr_data;
 assign cpld_fifo_tag_last = r_cpld_fifo_tag_last;
 
-assign w_rc_rx_is_sof = m_axis_rc_tuser[32];
+assign w_rc_rx_is_sof = m_axis_rc_tuser[64];
 
 always @ (*)
 begin
@@ -323,9 +315,8 @@ end
 
 always @ (posedge pcie_user_clk or negedge pcie_user_rst_n)
 begin
-	if(pcie_user_rst_n == 0) begin
+	if(pcie_user_rst_n == 0)
 		r_cpld_tlp_count <= 10'b0;
-    end
 	else begin
 	   if(r_cpld_fifo_wr_en == 1)
 		    r_cpld_tlp_count <= r_cpld_tlp_count + 1;
@@ -339,19 +330,20 @@ begin
 	case(rc_cur_state)
 		S_RC_RX_IDLE_SOF: begin
 			if(m_axis_rc_tvalid == 1 && w_rc_rx_is_sof == 1) begin
-				if(m_axis_rc_tlast == 1) begin
-					rc_next_state <= S_RC_RX_IDLE_SOF;
-				end
+				if(m_axis_rc_tlast == 1)
+					rc_next_state <= S_RC_RX_HEAD;
 				else
 					rc_next_state <= S_RC_RX_DATA;
 			end
 			else
 				rc_next_state <= S_RC_RX_IDLE_SOF;
 		end
-		S_RC_RX_DATA: begin
-			if(m_axis_rc_tvalid == 1 && m_axis_rc_tlast == 1) begin
+		S_RC_RX_HEAD: begin
 				rc_next_state <= S_RC_RX_IDLE_SOF;
-			end
+		end
+		S_RC_RX_DATA: begin
+			if(m_axis_rc_tvalid == 1 && m_axis_rc_tlast == 1)
+				rc_next_state <= S_RC_RX_IDLE_SOF;
 			else
 				rc_next_state <= S_RC_RX_DATA;
 		end
@@ -382,6 +374,10 @@ begin
 		S_RC_RX_IDLE_SOF: begin
 			r_cpld_tag <= w_cpld_head_tag;
 			r_cpld_rc  <= w_cpld_head_rc;
+			r_cpld_head_len <= w_cpld_head_len;
+		end
+		S_RC_RX_HEAD: begin
+
 		end
 		S_RC_RX_DATA: begin
 
@@ -400,13 +396,18 @@ begin
 			r_cpld_data_en <= 0;
 			r_cpld_tag_last <= 0;
 		end
+		S_RC_RX_HEAD: begin
+			r_m_axis_rc_tready <= 1'b0;
+			r_cpld_data_en <= 1'b1;
+			r_cpld_tag_last <= r_cpld_rc;
+		end
 		S_RC_RX_DATA: begin
 			r_m_axis_rc_tready <= 1'b1;
 			r_cpld_data_en <= m_axis_rc_tvalid;
 			r_cpld_tag_last <= (r_cpld_rc & m_axis_rc_tvalid & m_axis_rc_tlast);
 		end
 		default: begin
-			r_m_axis_rc_tready <= 1'b1;
+			r_m_axis_rc_tready <= 1'b0;
 			r_cpld_data_en <= 0;
 			r_cpld_tag_last <= 0;
 		end
@@ -418,7 +419,7 @@ begin
 	r_cpld_fifo_wr_en    <= r_cpld_data_en;
 	r_cpld_fifo_tag_last <= r_cpld_tag_last;
 
-	if(m_axis_rc_tvalid == 1) begin
+	if(m_axis_rc_tvalid == 1 && r_m_axis_rc_tready == 1) begin
 		r_m_axis_rc_rx_tdata    <= m_axis_rc_tdata;
 		r_m_axis_rc_rx_tdata_d1 <= r_m_axis_rc_rx_tdata;
 	end
@@ -426,7 +427,10 @@ end
 
 always @ (*)
 begin
-	r_cpld_fifo_wr_data <= {r_m_axis_rc_rx_tdata[95:0], r_m_axis_rc_rx_tdata_d1[127:96]};
+	if(r_cpld_head_len <= 13)
+		r_cpld_fifo_wr_data <= {96'b0, r_m_axis_rc_rx_tdata[511:96]};
+	else
+		r_cpld_fifo_wr_data <= {r_m_axis_rc_rx_tdata[95:0], r_m_axis_rc_rx_tdata_d1[511:96]};
 end
-
+ 
 endmodule
