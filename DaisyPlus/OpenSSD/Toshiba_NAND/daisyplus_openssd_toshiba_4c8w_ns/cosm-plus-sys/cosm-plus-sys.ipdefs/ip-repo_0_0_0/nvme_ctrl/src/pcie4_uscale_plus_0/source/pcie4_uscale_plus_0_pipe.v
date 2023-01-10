@@ -3024,43 +3024,143 @@ endgenerate
 
   );
 
+  // AXI4ST 256b/512b Bridge Module
+  pcie4_uscale_plus_0_512b_intfc
+ #(
+        .TCQ(TCQ),
+        .IMPL_TARGET(IMPL_TARGET),
+        .AXISTEN_IF_EXT_512_INTFC_RAM_STYLE(AXISTEN_IF_EXT_512_INTFC_RAM_STYLE),
+        .AXI4_USER_DATA_WIDTH(AXI4_DATA_WIDTH),
+        .AXI4_CORE_DATA_WIDTH(256),
+        .AXI4_USER_CQ_TUSER_WIDTH(AXI4_CQ_TUSER_WIDTH),
+        .AXI4_USER_CC_TUSER_WIDTH(AXI4_CC_TUSER_WIDTH),
+        .AXI4_USER_RQ_TUSER_WIDTH(AXI4_RQ_TUSER_WIDTH),
+        .AXI4_USER_RC_TUSER_WIDTH(AXI4_RC_TUSER_WIDTH),
+        .AXI4_CORE_CQ_TUSER_WIDTH(88),
+        .AXI4_CORE_CC_TUSER_WIDTH(33),
+        .AXI4_CORE_RQ_TUSER_WIDTH(62),
+        .AXI4_CORE_RC_TUSER_WIDTH(75),
+        .AXI4_USER_CQ_TKEEP_WIDTH(AXI4_TKEEP_WIDTH),
+        .AXI4_USER_CC_TKEEP_WIDTH(AXI4_TKEEP_WIDTH),
+        .AXI4_USER_RQ_TKEEP_WIDTH(AXI4_TKEEP_WIDTH),
+        .AXI4_USER_RC_TKEEP_WIDTH(AXI4_TKEEP_WIDTH),
+        .AXI4_CORE_CQ_TKEEP_WIDTH(8),
+        .AXI4_CORE_CC_TKEEP_WIDTH(8),
+        .AXI4_CORE_RQ_TKEEP_WIDTH(8),
+        .AXI4_CORE_RC_TKEEP_WIDTH(8),
+        .AXI4_CORE_CQ_TREADY_WIDTH(22),
+        .AXI4_CORE_RC_TREADY_WIDTH(22),
 
-      assign pcie_compl_delivered = 1'b0;
-      assign pcie_compl_delivered_tag0 = 8'b0;
-      assign pcie_compl_delivered_tag1 = 8'b0;
-      assign pcie_posted_req_delivered = 1'b0;
-      assign pcie_cq_pipeline_empty = 1'b0;
-      assign pcie_cq_np_user_credit_rcvd = 1'b0;
+        .AXISTEN_IF_EXT_512_CQ_STRADDLE(AXISTEN_IF_EXT_512_CQ_STRADDLE),
+        .AXISTEN_IF_EXT_512_CC_STRADDLE(AXISTEN_IF_EXT_512_CC_STRADDLE),
+        .AXISTEN_IF_EXT_512_RQ_STRADDLE(AXISTEN_IF_EXT_512_RQ_STRADDLE),
+        .AXISTEN_IF_EXT_512_RC_STRADDLE(AXISTEN_IF_EXT_512_RC_STRADDLE),
+        .AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE(AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE),
+        .AXISTEN_IF_CQ_ALIGNMENT_MODE(AXISTEN_IF_CQ_ALIGNMENT_MODE),
+        .AXISTEN_IF_CC_ALIGNMENT_MODE(AXISTEN_IF_CC_ALIGNMENT_MODE),
+        .AXISTEN_IF_RQ_ALIGNMENT_MODE(AXISTEN_IF_RQ_ALIGNMENT_MODE),
+        .AXISTEN_IF_RC_ALIGNMENT_MODE(AXISTEN_IF_RC_ALIGNMENT_MODE),
+        .AXISTEN_IF_RQ_CC_REGISTERED_TREADY(AXISTEN_IF_RQ_CC_REGISTERED_TREADY),
+        .AXISTEN_IF_RX_PARITY_EN(AXISTEN_IF_RX_PARITY_EN),
+        .AXISTEN_IF_TX_PARITY_EN(AXISTEN_IF_TX_PARITY_EN)
 
-      assign m_axis_cq_tdata = m_axis_cq_tdata_int;
-      assign m_axis_cq_tvalid = m_axis_cq_tvalid_int;
-      assign m_axis_cq_tuser = m_axis_cq_tuser_int[84:0];
-      assign m_axis_cq_tlast = m_axis_cq_tlast_int;
-      assign m_axis_cq_tkeep = m_axis_cq_tkeep_int;
-      
-      assign m_axis_rc_tdata = m_axis_rc_tdata_int;
-      assign m_axis_rc_tvalid = m_axis_rc_tvalid_int;
-      assign m_axis_rc_tuser = m_axis_rc_tuser_int;
-      assign m_axis_rc_tlast = m_axis_rc_tlast_int;
-      assign m_axis_rc_tkeep = m_axis_rc_tkeep_int;
-      
-      assign s_axis_cc_tdata_int = s_axis_cc_tdata;
-      assign s_axis_cc_tvalid_int = s_axis_cc_tvalid;
-      assign s_axis_cc_tuser_int = s_axis_cc_tuser;
-      assign s_axis_cc_tlast_int = s_axis_cc_tlast;
-      assign s_axis_cc_tkeep_int = s_axis_cc_tkeep;
-      
-      assign s_axis_rq_tdata_int = s_axis_rq_tdata;
-      assign s_axis_rq_tvalid_int = s_axis_rq_tvalid;
-      assign s_axis_rq_tuser_int = {2'b00,s_axis_rq_tuser};
-      assign s_axis_rq_tlast_int = s_axis_rq_tlast;
-      assign s_axis_rq_tkeep_int = s_axis_rq_tkeep;
+     ) pcie4_0_512b_intfc_mod (
 
-   assign m_axis_cq_tready_int[21:0] = m_axis_cq_tready;
-   assign m_axis_rc_tready_int[21:0] = m_axis_rc_tready;
-   assign s_axis_cc_tready = s_axis_cc_tready_int;
-   assign s_axis_rq_tready = s_axis_rq_tready_int;
-   assign pcie_cq_np_req_count = pcie_cq_np_req_count_int;
+        .user_clk_i         (user_clk),
+        .user_clk2_i        (user_clk2),
+        .user_clk_en_i      (user_clk_en),
+        .reset_n_user_clk_i (reset_n),
+        .reset_n_user_clk2_i(core_reset_n),
+        .link_down_reset_i  (cfg_phy_link_down_user_clk),
+        //-----------------------------------
+        // Client-side signals
+        //-----------------------------------
+        // CQ Interface
+        .m_axis_cq_tdata_o  (m_axis_cq_tdata),
+        .m_axis_cq_tvalid_o (m_axis_cq_tvalid),
+        .m_axis_cq_tuser_o  (m_axis_cq_tuser),
+        .m_axis_cq_tlast_o  (m_axis_cq_tlast),
+        .m_axis_cq_tkeep_o  (m_axis_cq_tkeep),
+        .m_axis_cq_tready_i (m_axis_cq_tready[0]),
+        .pcie_cq_np_req_i   (pcie_cq_np_req),
+        .pcie_cq_np_req_count_o(pcie_cq_np_req_count_axi512),
+        // CC Interface
+        .s_axis_cc_tdata_i  (s_axis_cc_tdata),
+        .s_axis_cc_tvalid_i (s_axis_cc_tvalid),
+        .s_axis_cc_tuser_i  (s_axis_cc_tuser),
+        .s_axis_cc_tlast_i  (s_axis_cc_tlast),
+        .s_axis_cc_tkeep_i  (s_axis_cc_tkeep),
+        .s_axis_cc_tready_o (s_axis_cc_tready_axi512),
+        // RQ Interface
+        .s_axis_rq_tdata_i  (s_axis_rq_tdata),
+        .s_axis_rq_tvalid_i (s_axis_rq_tvalid),
+        .s_axis_rq_tuser_i  (s_axis_rq_tuser),
+        .s_axis_rq_tlast_i  (s_axis_rq_tlast),
+        .s_axis_rq_tkeep_i  (s_axis_rq_tkeep),
+        .s_axis_rq_tready_o (s_axis_rq_tready_axi512),
+        // RC Interface
+        .m_axis_rc_tdata_o  (m_axis_rc_tdata),
+        .m_axis_rc_tvalid_o (m_axis_rc_tvalid),
+        .m_axis_rc_tuser_o  (m_axis_rc_tuser),
+        .m_axis_rc_tlast_o  (m_axis_rc_tlast),
+        .m_axis_rc_tkeep_o  (m_axis_rc_tkeep),
+        .m_axis_rc_tready_i (m_axis_rc_tready[0]),
+        //-----------------------------------
+        // Core-side signals
+        //-----------------------------------
+        // CQ Interface
+        .core_cq_tdata_i    (m_axis_cq_tdata_int),
+        .core_cq_tvalid_i   (m_axis_cq_tvalid_int),
+        .core_cq_tuser_i    (m_axis_cq_tuser_int),
+        .core_cq_tlast_i    (m_axis_cq_tlast_int),
+        .core_cq_tkeep_i    (m_axis_cq_tkeep_int),
+        .core_cq_tready_o   (m_axis_cq_tready_axi512),
+        .posted_req_delivered_o(pcie_posted_req_delivered),
+        .cq_pipeline_empty_o(pcie_cq_pipeline_empty),
+        .cq_np_user_credit_rcvd_o(pcie_cq_np_user_credit_rcvd),
+        // CC Interface
+        .core_cc_tdata_o    (s_axis_cc_tdata_axi512),
+        .core_cc_tvalid_o   (s_axis_cc_tvalid_axi512),
+        .core_cc_tuser_o    (s_axis_cc_tuser_axi512),
+        .core_cc_tlast_o    (s_axis_cc_tlast_axi512),
+        .core_cc_tkeep_o    (s_axis_cc_tkeep_axi512),
+        .core_cc_tready_i   (s_axis_cc_tready_int),
+        // RQ Interface
+        .core_rq_tdata_o    (s_axis_rq_tdata_axi512),
+        .core_rq_tvalid_o   (s_axis_rq_tvalid_axi512),
+        .core_rq_tuser_o    (s_axis_rq_tuser_axi512),
+        .core_rq_tlast_o    (s_axis_rq_tlast_axi512),
+        .core_rq_tkeep_o    (s_axis_rq_tkeep_axi512),
+        .core_rq_tready_i   (s_axis_rq_tready_int),
+        // RC Interface
+        .core_rc_tdata_i    (m_axis_rc_tdata_int),
+        .core_rc_tvalid_i   (m_axis_rc_tvalid_int),
+        .core_rc_tuser_i    (m_axis_rc_tuser_int),
+        .core_rc_tlast_i    (m_axis_rc_tlast_int),
+        .core_rc_tkeep_i    (m_axis_rc_tkeep_int),
+        .core_rc_tready_o   (m_axis_rc_tready_axi512),
+        .compl_delivered_o  (pcie_compl_delivered),
+        .compl_delivered_tag0_o(pcie_compl_delivered_tag0),
+        .compl_delivered_tag1_o(pcie_compl_delivered_tag1)
+        );
+
+      assign s_axis_cc_tdata_int = s_axis_cc_tdata_axi512;
+      assign s_axis_cc_tvalid_int = s_axis_cc_tvalid_axi512;
+      assign s_axis_cc_tuser_int = s_axis_cc_tuser_axi512;
+      assign s_axis_cc_tlast_int = s_axis_cc_tlast_axi512;
+      assign s_axis_cc_tkeep_int = s_axis_cc_tkeep_axi512;
+      
+      assign s_axis_rq_tdata_int = s_axis_rq_tdata_axi512;
+      assign s_axis_rq_tvalid_int = s_axis_rq_tvalid_axi512;
+      assign s_axis_rq_tuser_int = s_axis_rq_tuser_axi512;
+      assign s_axis_rq_tlast_int = s_axis_rq_tlast_axi512;
+      assign s_axis_rq_tkeep_int = s_axis_rq_tkeep_axi512;
+
+   assign m_axis_cq_tready_int[21:0] = m_axis_cq_tready_axi512;
+   assign m_axis_rc_tready_int[21:0] = m_axis_rc_tready_axi512;
+   assign s_axis_cc_tready = {4{s_axis_cc_tready_axi512}};
+   assign pcie_cq_np_req_count = pcie_cq_np_req_count_axi512;
+   assign s_axis_rq_tready = {4{s_axis_rq_tready_axi512}}; 
 
     
 

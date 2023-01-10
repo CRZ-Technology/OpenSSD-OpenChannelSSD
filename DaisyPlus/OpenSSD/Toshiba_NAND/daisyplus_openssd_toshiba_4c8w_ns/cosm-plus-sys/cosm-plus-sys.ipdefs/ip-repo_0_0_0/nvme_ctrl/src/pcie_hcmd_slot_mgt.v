@@ -98,7 +98,7 @@ localparam	S_VAILD_SLOT					= 6'b100000;
     reg		[P_SLOT_WIDTH-1:0]					r_slot_invalid_mask; //slot_modified
     wire	[P_SLOT_WIDTH-1:0]					w_slot_invalid_mask; //slot_modified
  	  reg 	[3:0]								r_1st_group_cnt;
- 	  reg 	[3:0]								r_2st_group_cnt;
+ 	  reg 	[3:0]								r_2nd_group_cnt;
  	  wire 	[P_SLOT_TAG_WIDTH-1:0]	            w_slot_valid2;
   	  reg 	[3:0]								r_slot_valid3;
 assign hcmd_slot_rdy = r_slot_rdy;
@@ -147,7 +147,7 @@ end
 assign r_slot_l1_ok = (r_slot_l1_valid != 64'hFFFFFFFFFFFFFFFF);
 
 assign w_slot_l2_mask = {r_slot_search_mask[P_SLOT_WIDTH-5:0], r_slot_search_mask[P_SLOT_WIDTH-1:P_SLOT_WIDTH-4]}; 
-assign w_slot_valid2 = r_slot_valid>>(64*r_1st_group_cnt+4*r_2st_group_cnt);
+assign w_slot_valid2 = r_slot_valid>>(64*r_1st_group_cnt+4*r_2nd_group_cnt);
 assign w_slot_l2_ok = (w_slot_valid2[3:0]!= 4'b1111);
 
 always @ (posedge pcie_user_clk or negedge pcie_user_rst_n)
@@ -203,7 +203,7 @@ begin
 			r_slot_search_mask[955:0] <= 0;
 			r_slot_tag <= 10'h3BC;
 			r_1st_group_cnt <= 4'hF;
-			r_2st_group_cnt <= 4'h0;
+			r_2nd_group_cnt <= 4'h0;
 		end
 		S_SEARCH_L1_SLOT: begin
 			r_slot_search_mask[956] <= w_slot_l1_mask[15];
@@ -228,7 +228,7 @@ begin
 		S_SEARCH_L2_SLOT: begin
 			r_slot_search_mask <= w_slot_l2_mask;
 			r_slot_tag <= r_slot_tag + 4;
-			r_2st_group_cnt <= r_2st_group_cnt +1;
+			r_2nd_group_cnt <= r_2nd_group_cnt +1;
 			r_slot_valid3 <= w_slot_valid2[3:0];
 		end
 		S_SEARCH_L3_SLOT: begin

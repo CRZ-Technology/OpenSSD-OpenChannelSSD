@@ -210,35 +210,35 @@ module NPhy_Toggle_Physical_Input_DDR100
         // 2: BUFR
         if (InputClockBufferType == 0)
         begin
-            IDELAYE3
+    IDELAYE3
             #
             (
-        //        .DELAY_TYPE         ("FIXED" ),
-                .DELAY_TYPE         ("VAR_LOAD" ),
-                .DELAY_SRC          ("IDATAIN"  ),
-                .DELAY_VALUE        (IDelayValue),
-                .DELAY_FORMAT       ("TIME"     ),
-                .REFCLK_FREQUENCY   (200        ),
-                .SIM_DEVICE         ("ULTRASCALE_PLUS"),
-                .CASCADE            ("NONE")
-            )
-            Inst_DQSIDELAY
-            (
-                .CNTVALUEOUT    (                   ),
-                .DATAOUT        (wDelayedDQS        ),
-                .CLK            (iSystemClock       ),
-                .CE             (0                  ),
+//        .DELAY_TYPE         ("FIXED" ),
+        .DELAY_TYPE         ("VAR_LOAD" ),
+        .DELAY_SRC          ("IDATAIN"  ),
+        .DELAY_VALUE        (IDelayValue),
+        .DELAY_FORMAT       ("TIME"     ),
+        .REFCLK_FREQUENCY   (200        ),
+        .SIM_DEVICE         ("ULTRASCALE_PLUS"),
+        .CASCADE            ("NONE")
+    )
+    Inst_DQSIDELAY
+    (
+        .CNTVALUEOUT    (                   ),
+        .DATAOUT        (wDelayedDQS        ),
+        .CLK            (iSystemClock       ),
+        .CE             (0                  ),
                 .CNTVALUEIN     (iDQSIDelayTap      ),
-                .DATAIN         (0                  ),
-                .IDATAIN        (iDQSFromNAND       ),
-                .INC            (0                  ),
-                .LOAD           (iDQSIDelayTapLoad[0]   ),
-                .EN_VTC         (~iDQSIDelayTapLoad[1]  ),
-                .RST            (iModuleReset       ),
-                .CASC_RETURN    (                   ),
-                .CASC_IN        (                   ),
-                .CASC_OUT       (                   )
-            );
+        .DATAIN         (0                  ),
+        .IDATAIN        (iDQSFromNAND       ),
+        .INC            (0                  ),
+                .LOAD             (iDQSIDelayTapLoad[0]  ),
+        .EN_VTC         (~iDQSIDelayTapLoad[1]               ),
+        .RST            (iModuleReset       ),
+        .CASC_RETURN    (                   ),
+        .CASC_IN        (                   ),
+        .CASC_OUT       (                   )
+    );
             
             IBUFG
             Inst_DQSCLOCK
@@ -249,35 +249,35 @@ module NPhy_Toggle_Physical_Input_DDR100
         end
         else if (InputClockBufferType == 1)
         begin
-            IDELAYE3
+    IDELAYE3
             #
             (
-        //        .DELAY_TYPE         ("FIXED" ),
-                .DELAY_TYPE         ("VAR_LOAD" ),
-                .DELAY_SRC          ("IDATAIN"  ),
-                .DELAY_VALUE        (IDelayValue),
-                .DELAY_FORMAT       ("TIME"     ),
-                .REFCLK_FREQUENCY   (200        ),
-                .SIM_DEVICE         ("ULTRASCALE_PLUS"),
-                .CASCADE            ("NONE")
-            )
-            Inst_DQSIDELAY
-            (
-                .CNTVALUEOUT    (                   ),
-                .DATAOUT        (wDelayedDQS        ),
-                .CLK            (iSystemClock       ),
-                .CE             (0                  ),
+//        .DELAY_TYPE         ("FIXED" ),
+        .DELAY_TYPE         ("VAR_LOAD" ),
+        .DELAY_SRC          ("IDATAIN"  ),
+        .DELAY_VALUE        (IDelayValue),
+        .DELAY_FORMAT       ("TIME"     ),
+        .REFCLK_FREQUENCY   (200        ),
+        .SIM_DEVICE         ("ULTRASCALE_PLUS"),
+        .CASCADE            ("NONE")
+    )
+    Inst_DQSIDELAY
+    (
+        .CNTVALUEOUT    (                   ),
+        .DATAOUT        (wDelayedDQS        ),
+        .CLK            (iSystemClock       ),
+        .CE             (0                  ),
                 .CNTVALUEIN     (iDQSIDelayTap      ),
-                .DATAIN         (0                  ),
-                .IDATAIN        (iDQSFromNAND       ),
-                .INC            (0                  ),
-                .LOAD           (iDQSIDelayTapLoad[0]   ),
-                .EN_VTC         (~iDQSIDelayTapLoad[1]  ),
-                .RST            (iModuleReset       ),
-                .CASC_RETURN    (                   ),
-                .CASC_IN        (                   ),
-                .CASC_OUT       (                   )
-            );
+        .DATAIN         (0                  ),
+        .IDATAIN        (iDQSFromNAND       ),
+        .INC            (0                  ),
+                .LOAD             (iDQSIDelayTapLoad[0]  ),
+        .EN_VTC         (~iDQSIDelayTapLoad[1]               ),
+        .RST            (iModuleReset       ),
+        .CASC_RETURN    (                   ),
+        .CASC_IN        (                   ),
+        .CASC_OUT       (                   )
+    );
             
             wire wIBUFGOut;
             IBUFG
@@ -295,35 +295,35 @@ module NPhy_Toggle_Physical_Input_DDR100
         end
         else if (InputClockBufferType == 3)
         begin
-            IDELAYE3
+    IDELAYE3
             #
             (
-        //        .DELAY_TYPE         ("FIXED" ),
-                .DELAY_TYPE         ("VAR_LOAD" ),
-                .DELAY_SRC          ("IDATAIN"  ),
-                .DELAY_VALUE        (IDelayValue),
-                .DELAY_FORMAT       ("TIME"     ),
-                .REFCLK_FREQUENCY   (200        ),
-                .SIM_DEVICE         ("ULTRASCALE_PLUS"),
-                .CASCADE            ("NONE")
-            )
-            Inst_DQSIDELAY
-            (
-                .CNTVALUEOUT    (                   ),
-                .DATAOUT        (wDelayedDQS        ),
-                .CLK            (iSystemClock       ),
-                .CE             (0                  ),
-                        .CNTVALUEIN     (iDQSIDelayTap      ),
-                .DATAIN         (0                  ),
-                .IDATAIN        (iDQSFromNAND       ),
-                .INC            (0                  ),
-                        .LOAD             (iDQSIDelayTapLoad[0]  ),
-                .EN_VTC         (~iDQSIDelayTapLoad[1]               ),
-                .RST            (iModuleReset       ),
-                .CASC_RETURN    (                   ),
-                .CASC_IN        (                   ),
-                .CASC_OUT       (                   )
-            );
+//        .DELAY_TYPE         ("FIXED" ),
+        .DELAY_TYPE         ("VAR_LOAD" ),
+        .DELAY_SRC          ("IDATAIN"  ),
+        .DELAY_VALUE        (IDelayValue),
+        .DELAY_FORMAT       ("TIME"     ),
+        .REFCLK_FREQUENCY   (200        ),
+        .SIM_DEVICE         ("ULTRASCALE_PLUS"),
+        .CASCADE            ("NONE")
+    )
+    Inst_DQSIDELAY
+    (
+        .CNTVALUEOUT    (                   ),
+        .DATAOUT        (wDelayedDQS        ),
+        .CLK            (iSystemClock       ),
+        .CE             (0                  ),
+                .CNTVALUEIN     (iDQSIDelayTap      ),
+        .DATAIN         (0                  ),
+        .IDATAIN        (iDQSFromNAND       ),
+        .INC            (0                  ),
+                .LOAD             (iDQSIDelayTapLoad[0]  ),
+        .EN_VTC         (~iDQSIDelayTapLoad[1]               ),
+        .RST            (iModuleReset       ),
+        .CASC_RETURN    (                   ),
+        .CASC_IN        (                   ),
+        .CASC_OUT       (                   )
+    );
 
             BUFG
             Inst_DQSCLOCK_BUFG
@@ -334,35 +334,35 @@ module NPhy_Toggle_Physical_Input_DDR100
         end
         else if (InputClockBufferType == 2)
         begin
-            IDELAYE3
+    IDELAYE3
             #
             (
-        //        .DELAY_TYPE         ("FIXED" ),
-                .DELAY_TYPE         ("VAR_LOAD" ),
-                .DELAY_SRC          ("IDATAIN"  ),
-                .DELAY_VALUE        (IDelayValue),
-                .DELAY_FORMAT       ("TIME"     ),
-                .REFCLK_FREQUENCY   (200        ),
-                .SIM_DEVICE         ("ULTRASCALE_PLUS"),
-                .CASCADE            ("NONE")
-            )
-            Inst_DQSIDELAY
-            (
-                .CNTVALUEOUT    (                   ),
-                .DATAOUT        (wDelayedDQS        ),
-                .CLK            (iSystemClock       ),
-                .CE             (0                  ),
-                        .CNTVALUEIN     (iDQSIDelayTap      ),
-                .DATAIN         (0                  ),
-                .IDATAIN        (iDQSFromNAND       ),
-                .INC            (0                  ),
-                        .LOAD             (iDQSIDelayTapLoad[0]  ),
-                .EN_VTC         (~iDQSIDelayTapLoad[1]               ),
-                .RST            (iModuleReset       ),
-                .CASC_RETURN    (                   ),
-                .CASC_IN        (                   ),
-                .CASC_OUT       (                   )
-            );
+//        .DELAY_TYPE         ("FIXED" ),
+        .DELAY_TYPE         ("VAR_LOAD" ),
+        .DELAY_SRC          ("IDATAIN"  ),
+        .DELAY_VALUE        (IDelayValue),
+        .DELAY_FORMAT       ("TIME"     ),
+        .REFCLK_FREQUENCY   (200        ),
+        .SIM_DEVICE         ("ULTRASCALE_PLUS"),
+        .CASCADE            ("NONE")
+    )
+    Inst_DQSIDELAY
+    (
+        .CNTVALUEOUT    (                   ),
+        .DATAOUT        (wDelayedDQS        ),
+        .CLK            (iSystemClock       ),
+        .CE             (0                  ),
+                .CNTVALUEIN     (iDQSIDelayTap      ),
+        .DATAIN         (0                  ),
+        .IDATAIN        (iDQSFromNAND       ),
+        .INC            (0                  ),
+                .LOAD             (iDQSIDelayTapLoad[0]  ),
+        .EN_VTC         (~iDQSIDelayTapLoad[1]               ),
+        .RST            (iModuleReset       ),
+        .CASC_RETURN    (                   ),
+        .CASC_IN        (                   ),
+        .CASC_OUT       (                   )
+    );
 
             
             BUFR
@@ -432,10 +432,10 @@ module NPhy_Toggle_Physical_Input_DDR100
 				.CE             (0                  ),
 				.CNTVALUEIN     (wDQIDelayTaps[c * 9 + 8:c * 9] ),
 				.DATAIN         (0                  ),
-				.IDATAIN        (iDQFromNAND[c]     ),
+				.IDATAIN        (iDQFromNAND[c]                 ),
 				.INC            (0                  ),
-				.LOAD           (  wDQIDelayTapLoads[c] ),
-				.EN_VTC         (wDQIDelayTapVTC[c]     ),
+				.LOAD           (  wDQIDelayTapLoads[c]           ),
+				.EN_VTC         (wDQIDelayTapVTC[c]               ),
 				.RST            (iModuleReset       ),
 				.CASC_RETURN    (                   ),
 				.CASC_IN        (                   ),
@@ -454,7 +454,7 @@ module NPhy_Toggle_Physical_Input_DDR100
                 .Q1 ( wDQAtRising[c]    ),
                 .Q2 (wDQAtFalling[c]    ),
                 .C  (wDelayedDQSClock   ),
-                .CB (!wDelayedDQSClock  ),
+            .CB (!wDelayedDQSClock  ),
                 .D  (wDelayedDQ         ),
                 .R  (0                  )
 //                .S  (0                  )
@@ -488,10 +488,10 @@ module NPhy_Toggle_Physical_Input_DDR100
     );
 
     
-    (* ASYNC_REG = "TRUE" *)
+    (* dont_touch = "true" *)
     reg rIN_FIFO_WE_Latch;
 
-    (* ASYNC_REG = "TRUE" *)
+    (* dont_touch = "true" *)
     reg rIN_FIFO_WE_Latch_Feedback;
     
     /*
@@ -513,7 +513,7 @@ module NPhy_Toggle_Physical_Input_DDR100
         .src_in         (iPI_Buff_WE        )
     );*/
     
-    always @ (posedge wDelayedDQSClock or posedge rBufferReset) begin
+    always @ (posedge wDelayedDQSClock) begin
         if (rBufferReset) begin
             rIN_FIFO_WE_Latch <= 0;
         end else begin
@@ -532,35 +532,32 @@ module NPhy_Toggle_Physical_Input_DDR100
     generate
         if (BufferType == 0)
         begin
-            IN_FIFO_ALT_16x512
-            Inst_DQINFIFO_ALT_16x512
-            (
-                .din    ({
-                            wDQAtRising[3:0]    ,
-                            wDQAtRising[7:4]    ,
-                            wDQAtFalling[3:0]   ,
-                            wDQAtFalling[7:4]
-                        }),
-                .dout   ({
-                            wDQ0[3:0],
-                            wDQ0[7:4],
-                            wDQ1[3:0],
-                            wDQ1[7:4]
-                        }),
-                
-                .rd_clk (iSystemClock                   ),
-                .rd_en  (iPI_Buff_RE && !oPI_Buff_Empty ), // minimum safe guard
-                .empty  (oPI_Buff_Empty                 ),
-                
-                .wr_clk (wDelayedDQSClock               ),
-                .wr_en  (rIN_FIFO_WE_Latch              ),
-                .full   (wtestFULL                      ),
-                
-                .rst   (rBufferReset                   )
-            );
-            
-            assign wDQ2 = 8'b0;
-            assign wDQ3 = 8'b0;
+    IN_FIFO_ALT_16x512
+    Inst_DQINFIFO_ALT_16x512
+    (
+        .din    ({
+                    wDQAtRising[3:0]    ,
+                    wDQAtRising[7:4]    ,
+                    wDQAtFalling[3:0]   ,
+                    wDQAtFalling[7:4]
+                }),
+        .dout   ({
+                    wDQ0[3:0],
+                    wDQ0[7:4],
+                    wDQ1[3:0],
+                    wDQ1[7:4]
+                }),
+        
+        .rd_clk (iSystemClock                   ),
+        .rd_en  (iPI_Buff_RE && !oPI_Buff_Empty ), // minimum safe guard
+        .empty  (oPI_Buff_Empty                 ),
+        
+        .wr_clk (wDelayedDQSClock               ),
+        .wr_en  (rIN_FIFO_WE_Latch              ),
+        .full   (wtestFULL                      ),
+        
+        .srst   (rBufferReset                   )
+    );
         end
         else if (BufferType == 1)
         begin
@@ -624,9 +621,6 @@ module NPhy_Toggle_Physical_Input_DDR100
                 .wr_clk         (wDelayedDQSClock       ),
                 .wr_en          (rIN_FIFO_WE_Latch      )
             );
-            
-            assign wDQ2 = 8'b0;
-            assign wDQ3 = 8'b0;
         end
     endgenerate
     
@@ -636,22 +630,23 @@ module NPhy_Toggle_Physical_Input_DDR100
     reg [15:0]  rNm3_Buffer     ;
     (* dont_touch = "true" *)
     reg [15:0]  rNm4_Buffer     ;
-    
+
     (* dont_touch = "true" *)
+    reg [15:0]  rIn_Counter     ;
+
+    (* dont_touch = "true" *)
+    reg [15:0]  rIn_Counter_Sync;
+
     wire        wNm1_ValidFlag  ;
-    (* dont_touch = "true" *)
     reg         rNm2_ValidFlag  ;
-    (* dont_touch = "true" *)
     reg         rNm3_ValidFlag  ;
-    (* dont_touch = "true" *)
     reg         rNm4_ValidFlag  ;
     
-    (* dont_touch = "true" *)
     reg [31:0]  rPI_DQ          ;
     
     assign wNm1_ValidFlag = rIN_FIFO_WE_Latch;
     
-    always @ (posedge wDelayedDQSClock or posedge rBufferReset) begin
+    always @ (posedge wDelayedDQSClock) begin
         if (rBufferReset) begin
             rNm2_Buffer[15:0] <= 0;
             rNm3_Buffer[15:0] <= 0;
@@ -660,6 +655,8 @@ module NPhy_Toggle_Physical_Input_DDR100
             rNm2_ValidFlag <= 0;
             rNm3_ValidFlag <= 0;
             rNm4_ValidFlag <= 0;
+
+            rIn_Counter <= 0;
         end else begin
             rNm2_Buffer[15:0] <= { wDQAtFalling[7:0], wDQAtRising[7:0] };
             rNm3_Buffer[15:0] <= rNm2_Buffer[15:0];
@@ -668,49 +665,55 @@ module NPhy_Toggle_Physical_Input_DDR100
             rNm2_ValidFlag <= wNm1_ValidFlag;
             rNm3_ValidFlag <= rNm2_ValidFlag;
             rNm4_ValidFlag <= rNm3_ValidFlag;
+
+            rIn_Counter <= rIn_Counter + 1;
         end
     end
-    
+
+    always @ (posedge iSystemClock) begin
+    	rIn_Counter_Sync <= rIn_Counter;
+    end
+
     // 000: IN_FIFO, 001 ~ 011: reserved
     // 100: Nm4+Nm3, 101: Nm3+Nm2, 110: Nm2+Nm1, 111: Nm1+ZERO
     
     always @ (*) begin
         case ( iPI_Buff_OutSel[2:0] )
             3'b000: begin // 000: IN_FIFO
-                rPI_DQ[ 7: 0] = wDQ0[7:0];
-                rPI_DQ[15: 8] = wDQ1[7:0];
-                rPI_DQ[23:16] = wDQ2[7:0];
-                rPI_DQ[31:24] = wDQ3[7:0];
+                rPI_DQ[ 7: 0] <= wDQ0[7:0];
+                rPI_DQ[15: 8] <= wDQ1[7:0];
+                rPI_DQ[23:16] <= wDQ2[7:0];
+                rPI_DQ[31:24] <= wDQ3[7:0];
             end
             3'b100: begin // 100: Nm4+Nm3
-                rPI_DQ[ 7: 0] = rNm4_Buffer[ 7: 0];
-                rPI_DQ[15: 8] = rNm4_Buffer[15: 8];
-                rPI_DQ[23:16] = rNm3_Buffer[ 7: 0];
-                rPI_DQ[31:24] = rNm3_Buffer[15: 8];
+                rPI_DQ[ 7: 0] <= rNm4_Buffer[ 7: 0];
+                rPI_DQ[15: 8] <= rNm4_Buffer[15: 8];
+                rPI_DQ[23:16] <= rNm3_Buffer[ 7: 0];
+                rPI_DQ[31:24] <= rNm3_Buffer[15: 8];
             end
             3'b101: begin // 101: Nm3+Nm2
-                rPI_DQ[ 7: 0] = rNm3_Buffer[ 7: 0];
-                rPI_DQ[15: 8] = rNm3_Buffer[15: 8];
-                rPI_DQ[23:16] = rNm2_Buffer[ 7: 0];
-                rPI_DQ[31:24] = rNm2_Buffer[15: 8];
+                rPI_DQ[ 7: 0] <= rNm3_Buffer[ 7: 0];
+                rPI_DQ[15: 8] <= rNm3_Buffer[15: 8];
+                rPI_DQ[23:16] <= rNm2_Buffer[ 7: 0];
+                rPI_DQ[31:24] <= rNm2_Buffer[15: 8];
             end
             3'b110: begin // 110: Nm2+Nm1
-                rPI_DQ[ 7: 0] = rNm2_Buffer[ 7: 0];
-                rPI_DQ[15: 8] = rNm2_Buffer[15: 8];
-                rPI_DQ[23:16] = wDQAtRising[ 7: 0];
-                rPI_DQ[31:24] = wDQAtFalling[ 7: 0];
+                rPI_DQ[ 7: 0] <= rNm2_Buffer[ 7: 0];
+                rPI_DQ[15: 8] <= rNm2_Buffer[15: 8];
+                rPI_DQ[23:16] <= wDQAtRising[ 7: 0];
+                rPI_DQ[31:24] <= wDQAtFalling[ 7: 0];
             end
             3'b111: begin // 111: Nm1+ZERO
-                rPI_DQ[ 7: 0] = wDQAtRising[ 7: 0];
-                rPI_DQ[15: 8] = wDQAtFalling[ 7: 0];
-                rPI_DQ[23:16] = 0;
-                rPI_DQ[31:24] = 0;
+                rPI_DQ[ 7: 0] <= wDQAtRising[ 7: 0];
+                rPI_DQ[15: 8] <= wDQAtFalling[ 7: 0];
+                rPI_DQ[23:16] <= 0;
+                rPI_DQ[31:24] <= 0;
             end
             default: begin // 001 ~ 011: reserved
-                rPI_DQ[ 7: 0] = wDQ0[7:0];
-                rPI_DQ[15: 8] = wDQ1[7:0];
-                rPI_DQ[23:16] = wDQ2[7:0];
-                rPI_DQ[31:24] = wDQ3[7:0];
+                rPI_DQ[ 7: 0] <= wDQ0[7:0];
+                rPI_DQ[15: 8] <= wDQ1[7:0];
+                rPI_DQ[23:16] <= wDQ2[7:0];
+                rPI_DQ[31:24] <= wDQ3[7:0];
             end
         endcase
     end

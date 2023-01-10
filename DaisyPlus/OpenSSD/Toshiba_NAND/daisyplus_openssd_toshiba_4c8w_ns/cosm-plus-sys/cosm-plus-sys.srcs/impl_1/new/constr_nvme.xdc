@@ -57,23 +57,23 @@
 # Vivado - PCIe GUI / User Configuration
 ###############################################################################
 #
-# Link Speed   - Gen1 - Gb/s
+# Link Speed   - Gen3 - 8.0 Gb/s
 # Link Width   - X16
-# AXIST Width  - 128-bit
+# AXIST Width  - 512-bit
 # AXIST Frequ  - 250 MHz = User Clock
-# Core Clock   - 250 MHz
+# Core Clock   - 500 MHz
 # Pipe Clock   - 125 MHz (Gen1) / 250 MHz (Gen2/Gen3/Gen4)
 #
 # Family       - zynquplus
 # Part         - xczu17eg
-# Package      - ffvb1517
-# Speed grade  - -1
+# Package      - ffvc1760
+# Speed grade  - -2
 # PCIe Block   - X1Y0
 # Xilinx BNo   - 0
 #
 #
 #
-# PLL TYPE     - CPLL
+# PLL TYPE     - QPLL1
 #
 ###############################################################################
 # User Time Names / User Time Groups / Time Specs
@@ -83,9 +83,9 @@ create_clock -period 10.000 -name sys_clk [get_ports pcie_ref_clk_p]
 set_false_path -from [get_ports pcie_perst_n]
 set_property PULLUP true [get_ports pcie_perst_n]
 
-#set_property IOSTANDARD LVCMOS18 [get_ports sys_rst_n]
+#set_property IOSTANDARD LVCMOS18 [get_ports pcie_perst_n]
 #
-#set_property LOC [get_package_pins -filter {PIN_FUNC =~ *_PERSTN0_65}] [get_ports sys_rst_n]
+#set_property LOC [get_package_pins -filter {PIN_FUNC =~ *_PERSTN0_65}] [get_ports pcie_perst_n]
 
 #
 set_property PACKAGE_PIN AH11 [get_ports pcie_ref_clk_n]
@@ -93,6 +93,9 @@ set_property PACKAGE_PIN AH12 [get_ports pcie_ref_clk_p]
 #
 
 #
+
+#set_property LOC [get_package_pins -of_objects [get_bels [get_sites -filter {NAME =~ *COMMON*} -of_objects [get_iobanks -of_objects [get_sites GTHE4_CHANNEL_X0Y7]]]/REFCLK0P]] [get_ports pcie_ref_clk_p]
+#set_property LOC [get_package_pins -of_objects [get_bels [get_sites -filter {NAME =~ *COMMON*} -of_objects [get_iobanks -of_objects [get_sites GTHE4_CHANNEL_X0Y7]]]/REFCLK0N]] [get_ports pcie_ref_clk_n]
 
 
 #
@@ -117,17 +120,21 @@ set_clock_groups -name async19 -asynchronous -group [get_clocks -of_objects [get
 #
 #
 # ASYNC CLOCK GROUPINGS
+# sys_clk vs user_clk
+set_clock_groups -name async5 -asynchronous -group [get_clocks sys_clk] -group [get_clocks -of_objects [get_pins sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_userclk/O]]
+set_clock_groups -name async6 -asynchronous -group [get_clocks -of_objects [get_pins sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_userclk/O]] -group [get_clocks sys_clk]
 # sys_clk vs pclk
 set_clock_groups -name async1 -asynchronous -group [get_clocks sys_clk] -group [get_clocks -of_objects [get_pins sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/O]]
 set_clock_groups -name async2 -asynchronous -group [get_clocks -of_objects [get_pins sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_pclk/O]] -group [get_clocks sys_clk]
 #
 #
 #
-# Timing improvement
-# Add/Edit Pblock slice constraints for init_ctr module to improve timing
-#create_pblock init_ctr_rst; add_cells_to_pblock [get_pblocks init_ctr_rst] [get_cells pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_init_ctrl_inst]
+# Add/Edit Pblock slice constraints for 512b soft logic to improve timing
+create_pblock soft_512b
+add_cells_to_pblock [get_pblocks soft_512b] [get_cells -quiet [list sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie4_0_512b_intfc_mod sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/pcie_4_0_pipe_inst/pcie_4_0_init_ctrl_inst]]
+resize_pblock [get_pblocks soft_512b] -add {SLICE_X90Y0:SLICE_X104Y210}
 # Keep This Logic Left/Right Side Of The PCIe Block (Whichever is near to the FPGA Boundary)
-#resize_pblock [get_pblocks init_ctr_rst] -add {SLICE_X74Y0:SLICE_X85Y59}
+#set_property EXCLUDE_PLACEMENT 1 [get_pblocks soft_512b]
 #
 set_clock_groups -name async24 -asynchronous -group [get_clocks -of_objects [get_pins sys_top_i/nvme_ctrl_0/inst/pcie4_uscale_plus_0_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O]] -group [get_clocks sys_clk]
 #
@@ -144,4 +151,11 @@ set_false_path -from [get_clocks *TXOUTCLK] -to [get_clocks clk_pl_3]
 #set_false_path -from [get_clocks clk_fpga_2] -to [get_clocks clk_250mhz_mux_x0y0]
 set_false_path -from [get_clocks clk_pl_3] -to [get_clocks clk_pl_2]
 set_false_path -from [get_clocks clk_pl_2] -to [get_clocks clk_pl_3]
+set_false_path -from [get_clocks clk_pl_2] -to [get_clocks user_clk_out]
+set_false_path -from [get_clocks user_clk_out] -to [get_clocks clk_pl_2]
+set_false_path -from [get_clocks clk_pl_3] -to [get_clocks user_clk_out]
+set_false_path -from [get_clocks user_clk_out] -to [get_clocks clk_pl_3]
+
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+
 

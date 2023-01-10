@@ -53,7 +53,7 @@ http://www.hanyang.ac.kr/
 
 module pcie_tx_dma # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48, //modified
 	parameter	C_M_AXI_DATA_WIDTH			= 64
 )
@@ -85,7 +85,7 @@ module pcie_tx_dma # (
 	input									dma_bus_rst_n,
 
 	input									pcie_tx_fifo_alloc_en,
-	input	[9:4]							pcie_tx_fifo_alloc_len, 
+	input	[10:6]							pcie_tx_fifo_alloc_len, 
 	input									pcie_tx_fifo_wr_en,
 	input	[C_M_AXI_DATA_WIDTH-1:0]		pcie_tx_fifo_wr_data,
 	output									pcie_tx_fifo_full_n
@@ -96,7 +96,7 @@ wire	[45:0]								w_pcie_tx_cmd_rd_data;
 wire										w_pcie_tx_cmd_empty_n;
 
 wire										w_pcie_tx_fifo_free_en;
-wire	[9:4]								w_pcie_tx_fifo_free_len; 
+wire	[10:6]								w_pcie_tx_fifo_free_len; 
 wire										w_pcie_tx_fifo_empty_n;
 
 
