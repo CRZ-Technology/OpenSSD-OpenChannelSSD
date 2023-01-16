@@ -52,7 +52,7 @@ http://www.hanyang.ac.kr/
 
   module dma_done # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48 //modified
 )
 (
@@ -151,7 +151,7 @@ localparam	S_NLB_DONE						= 11'b10000000000;
       reg		[7:0]								r_dma_tx_direct_done_cnt;
       reg		[7:0]								r_dma_rx_done_cnt;
       reg		[7:0]								r_dma_tx_done_cnt;
-reg 										r_2st_dma_need;
+reg 										r_2nd_dma_need;
 
 assign dma_done_rd_en = r_dma_done_rd_en;
 
@@ -303,7 +303,7 @@ begin
 
 		end
 		S_DMA_INFO: begin
-		    r_dma_cmd_auto_cpl <= (r_2st_dma_need == 1'b1 && r_dma_cmd_auto_cpl == 1'b1) ? 1'b1 : dma_done_rd_data[P_SLOT_TAG_WIDTH+14];//slot_modified
+		    r_dma_cmd_auto_cpl <= (r_2nd_dma_need == 1'b1 && r_dma_cmd_auto_cpl == 1'b1) ? 1'b1 : dma_done_rd_data[P_SLOT_TAG_WIDTH+14];//slot_modified
 			r_dma_cmd_type <= dma_done_rd_data[P_SLOT_TAG_WIDTH+13];//slot_modified
 			r_dma_done_check <= dma_done_rd_data[P_SLOT_TAG_WIDTH+12];//slot_modified
 			r_dma_dir <= dma_done_rd_data[P_SLOT_TAG_WIDTH+11];//slot_modified
@@ -312,13 +312,13 @@ begin
 		end
 		S_NLB_RD_WAIT: begin
         if(r_dma_len[11:2] != 10'b0) begin
-            if(r_2st_dma_need == 1'b1)
-                r_2st_dma_need <= 1'b0;
+            if(r_2nd_dma_need == 1'b1)
+                r_2nd_dma_need <= 1'b0;
             else
-                r_2st_dma_need <= 1'b1;
+                r_2nd_dma_need <= 1'b1;
         end
         else
-            r_2st_dma_need <= 1'b0;
+            r_2nd_dma_need <= 1'b0;
 		end
 		S_NLB_INFO: begin
 			r_hcmd_data_len <= hcmd_nlb_rd_data;

@@ -17,20 +17,20 @@ module s_axi_nvme # (
 	parameter C_M0_AXI_BUSER_WIDTH			= 1,
 	parameter C_M0_AXI_ARUSER_WIDTH			= 1,
 	parameter C_M0_AXI_RUSER_WIDTH			= 1,
-	parameter C_PCIE_DATA_WIDTH				= 128,
+	parameter C_PCIE_DATA_WIDTH				= 512,
 	parameter [4:0]    PL_LINK_CAP_MAX_LINK_WIDTH     = 16,  // 1- X1, 2 - X2, 4 - X4, 8 - X8, 16 - X16
 	parameter          AXISTEN_IF_MC_RX_STRADDLE      = 0,
-	parameter          PL_LINK_CAP_MAX_LINK_SPEED     = 1,  // 1- GEN1, 2 - GEN2, 4 - GEN3, 8 - GEN4
+	parameter          PL_LINK_CAP_MAX_LINK_SPEED     = 4,  // 1- GEN1, 2 - GEN2, 4 - GEN3, 8 - GEN4
 	parameter          KEEP_WIDTH                     = C_PCIE_DATA_WIDTH / 32,
 	parameter          EXT_PIPE_SIM                   = "FALSE",  // This Parameter has effect on selecting Enable External PIPE Interface in GUI.
 	parameter          AXISTEN_IF_CC_ALIGNMENT_MODE   = "FALSE",
 	parameter          AXISTEN_IF_CQ_ALIGNMENT_MODE   = "FALSE",
 	parameter          AXISTEN_IF_RQ_ALIGNMENT_MODE   = "FALSE",
 	parameter          AXISTEN_IF_RC_ALIGNMENT_MODE   = "FALSE",
-	parameter          AXI4_CQ_TUSER_WIDTH            = 88,
-	parameter          AXI4_CC_TUSER_WIDTH            = 33,
-	parameter          AXI4_RQ_TUSER_WIDTH            = 62,
-	parameter          AXI4_RC_TUSER_WIDTH            = 75,
+	parameter          AXI4_CQ_TUSER_WIDTH            = 183,
+	parameter          AXI4_CC_TUSER_WIDTH            = 81,
+	parameter          AXI4_RQ_TUSER_WIDTH            = 137,
+	parameter          AXI4_RC_TUSER_WIDTH            = 161,
 	parameter          AXISTEN_IF_ENABLE_CLIENT_TAG   = 1,
 	parameter          RQ_AVAIL_TAG_IDX               = 8,
 	parameter          RQ_AVAIL_TAG                   = 256,
@@ -320,7 +320,7 @@ module s_axi_nvme # (
 	IBUFDS_GTE4 refclk_ibuf (.O(sys_clk_gt), .ODIV2(sys_clk), .I(pcie_ref_clk_p), .CEB(1'b0), .IB(pcie_ref_clk_n));
 
 	wire [15:0]  cfg_vend_id        = 16'h10EE;   
-    wire [15:0]  cfg_dev_id         = 16'h901F;   
+    wire [15:0]  cfg_dev_id         = 16'h903F;   
 	wire [15:0]  cfg_dev_id_pf1     = 16'h9138;   
 	wire [15:0]  cfg_subsys_id      = 16'h0007;                                
 	wire [7:0]   cfg_rev_id         = 8'h00; 
@@ -685,8 +685,8 @@ user_top_inst0 (
     .pcie_rq_tag_av                                 ( ) ,
     .pcie_rq_tag_vld0                               ( ) ,
     .pcie_rq_tag_vld1                               ( ) ,
-    .pcie_cq_np_req                                 ( {1'b0,pcie_cq_np_req} ),
-    .pcie_cq_np_req_count                           ( pcie_cq_np_req_count ),
+    .pcie_cq_np_req                                 ( {1'b1,pcie_cq_np_req} ), 
+    .pcie_cq_np_req_count                           ( pcie_cq_np_req_count ), 
     .cfg_phy_link_down                              ( cfg_phy_link_down ),
     .cfg_phy_link_status                            ( ),
     .cfg_negotiated_width                           ( cfg_negotiated_width ),

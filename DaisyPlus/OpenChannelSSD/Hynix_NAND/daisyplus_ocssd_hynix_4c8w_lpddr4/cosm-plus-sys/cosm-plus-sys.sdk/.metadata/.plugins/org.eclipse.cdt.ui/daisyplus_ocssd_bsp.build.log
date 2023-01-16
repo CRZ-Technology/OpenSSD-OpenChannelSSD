@@ -1,4 +1,4 @@
-19:08:01 **** Clean-only build of project daisyplus_ocssd_bsp ****
+07:19:15 **** Clean-only build of project daisyplus_ocssd_bsp ****
 make -k clean 
 make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s clean 
 make -C psu_cortexa53_0/libsrc/bram_v4_3/src -s clean 
@@ -22,5 +22,5 @@ make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s clean
 make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s clean 
 rm -f psu_cortexa53_0/lib/libxil.a
 
-19:08:03 Build Finished (took 2s.455ms)
+07:19:19 Build Finished (took 3s.915ms)
 

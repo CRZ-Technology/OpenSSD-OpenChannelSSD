@@ -52,7 +52,7 @@ http://www.hanyang.ac.kr/
 `include "def_nvme.vh"
 
  module pcie_cntl_reg # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48  //modified
 )
 (
@@ -118,19 +118,17 @@ http://www.hanyang.ac.kr/
 
 );
 
-localparam	S_IDLE							= 9'b000000001;
-localparam	S_PCIE_RD_HEAD					= 9'b000000010;
-localparam	S_PCIE_ADDR						= 9'b000000100;
-localparam	S_PCIE_WAIT_WR_DATA				= 9'b000001000;
-localparam	S_PCIE_WR_DATA					= 9'b000010000;
-localparam	S_PCIE_MWR						= 9'b000100000;
-localparam	S_PCIE_MRD						= 9'b001000000;
-localparam	S_PCIE_CPLD_REQ					= 9'b010000000;
-localparam	S_PCIE_CPLD_ACK					= 9'b100000000;
+localparam	S_IDLE							= 7'b0000001;
+localparam	S_PCIE_RD_HEAD					= 7'b0000010;
+localparam	S_PCIE_ADDR						= 7'b0000100;
+localparam	S_PCIE_MWR						= 7'b0001000;
+localparam	S_PCIE_MRD						= 7'b0010000;
+localparam	S_PCIE_CPLD_REQ					= 7'b0100000;
+localparam	S_PCIE_CPLD_ACK					= 7'b1000000;
 
 
-reg		[8:0]								cur_state;
-reg		[8:0]								next_state;
+reg		[6:0]								cur_state;
+reg		[6:0]								next_state;
 
 reg											r_intms_ivms;
 reg											r_intmc_ivmc;
@@ -216,6 +214,8 @@ wire	[31:0]								w_pcie_head3;
     
     wire	[8:0]								w_sq_rst_n;
     wire	[8:0]								w_cq_rst_n;
+
+	reg		[C_PCIE_DATA_WIDTH-1:0]				r_mreq_fifo_rd_data;
 
 //pcie mrd or mwr, memory rd/wr request
 assign w_pcie_head0 = mreq_fifo_rd_data[31:0];
@@ -308,24 +308,10 @@ begin
 			next_state <= S_PCIE_ADDR;
 		end
 		S_PCIE_ADDR: begin
-			if(w_mwr == 1) begin
-				if(mreq_fifo_empty_n == 1)
-					next_state <= S_PCIE_WR_DATA;
-				else
-					next_state <= S_PCIE_WAIT_WR_DATA;
-			end
-			else begin
-				next_state <= S_PCIE_MRD;
-			end
-		end
-		S_PCIE_WAIT_WR_DATA: begin
-			if(mreq_fifo_empty_n == 1)
-				next_state <= S_PCIE_WR_DATA;
+			if(w_mwr == 1)
+				next_state <= S_PCIE_MWR;
 			else
-				next_state <= S_PCIE_WAIT_WR_DATA;
-		end
-		S_PCIE_WR_DATA: begin
-			next_state <= S_PCIE_MWR;
+				next_state <= S_PCIE_MRD;
 		end
 		S_PCIE_MWR: begin
 			next_state <= S_IDLE;
@@ -363,18 +349,13 @@ begin
 			r_mreq_head_attr <= w_mreq_head_attr;
 			r_mreq_head_at <= w_mreq_head_at;
 			r_pcie_head0 <= w_pcie_head0;
+			r_mreq_fifo_rd_data <= mreq_fifo_rd_data;
 		end
 		S_PCIE_ADDR: begin
 			r_mreq_addr[12:2] <= r_pcie_head0[12:2];
 			r_lbytes_en <= ~r_pcie_head0[2] & (r_pcie_head0[11:7] == 0);;
 			r_hbytes_en <= (r_pcie_head0[2] | r_mreq_head_len[1]) & (r_pcie_head0[11:7] == 0);
-		end
-		S_PCIE_WAIT_WR_DATA: begin
-			
-		end
-		S_PCIE_WR_DATA: begin
-			r_mreq_data[31:0] <= mreq_fifo_rd_data[31:0];
-			r_mreq_data[63:32] <= mreq_fifo_rd_data[63:32];
+			r_mreq_data[63:0] <= r_mreq_fifo_rd_data[191:128];
 		end
 		S_PCIE_MWR: begin
 
@@ -382,12 +363,10 @@ begin
 		S_PCIE_MRD: begin
 			if(r_lbytes_en | r_hbytes_en) begin
 				if(r_mreq_addr[12] == 1) begin
-					r_rd_data[31:0]  <= r_rd_doorbell[31:0];
-					r_rd_data[63:32] <= r_rd_doorbell[63:32];
+					r_rd_data[63:0]  <= r_rd_doorbell[63:0];
 				end
 				else begin
-					r_rd_data[31:0]  <= r_rd_reg[31:0];
-					r_rd_data[63:32] <= r_rd_reg[63:32];
+					r_rd_data[63:0]  <= r_rd_reg[63:0];
 				end
 			end
 			else
@@ -422,18 +401,6 @@ begin
 		end
 		S_PCIE_ADDR: begin
 			r_mreq_fifo_rd_en <= 0;
-			r_wr_reg <= 0;
-			r_wr_doorbell <= 0;
-			r_tx_cpld_req <= 0;
-		end
-		S_PCIE_WAIT_WR_DATA: begin
-			r_mreq_fifo_rd_en <= 0;
-			r_wr_reg <= 0;
-			r_wr_doorbell <= 0;
-			r_tx_cpld_req <= 0;
-		end
-		S_PCIE_WR_DATA: begin
-			r_mreq_fifo_rd_en <= 1;
 			r_wr_reg <= 0;
 			r_wr_doorbell <= 0;
 			r_tx_cpld_req <= 0;

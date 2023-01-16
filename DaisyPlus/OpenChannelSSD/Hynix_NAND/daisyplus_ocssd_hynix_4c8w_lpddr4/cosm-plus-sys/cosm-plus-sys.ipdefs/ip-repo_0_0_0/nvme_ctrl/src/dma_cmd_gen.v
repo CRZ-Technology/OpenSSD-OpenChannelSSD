@@ -52,7 +52,7 @@ http://www.hanyang.ac.kr/
 
   module dma_cmd_gen # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
-	parameter	P_PCIE_DATA_WIDTH			= 128,
+	parameter	P_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48 //modified
 )
 (
@@ -82,7 +82,7 @@ http://www.hanyang.ac.kr/
     
        output									prp_pcie_alloc,
        output	[7:0]							prp_pcie_alloc_tag,
-       output	[5:4]							prp_pcie_tag_alloc_len,
+       output	[7:6]							prp_pcie_tag_alloc_len,
       input									pcie_tag_full_n,
       input									prp_fifo_full_n,
     
@@ -95,26 +95,29 @@ http://www.hanyang.ac.kr/
 
 localparam	LP_PRP_PCIE_TAG_PREFIX			= 5'b00001;
 
-localparam	S_IDLE							= 17'b00000000000000001;
-localparam	S_DMA_CMD0						= 17'b00000000000000010;
-localparam	S_DMA_CMD1						= 17'b00000000000000100;
-localparam	S_PRP_INFO0						= 17'b00000000000001000;
-localparam	S_PRP_INFO1						= 17'b00000000000010000;
-localparam	S_CALC_LEN0						= 17'b00000000000100000;
-localparam	S_CALC_LEN1						= 17'b00000000001000000;
-localparam	S_CALC_LEN2						= 17'b00000000010000000;
-localparam	S_CHECK_FIFO					= 17'b00000000100000000;
-localparam	S_CMD0							= 17'b00000001000000000;
-localparam	S_CMD1							= 17'b00000010000000000;
-localparam	S_CMD2							= 17'b00000100000000000;
-localparam	S_CMD3							= 17'b00001000000000000;
-localparam	S_PCIE_MRD_CHECK				= 17'b00010000000000000;
-localparam	S_PCIE_MRD_REQ					= 17'b00100000000000000;
-localparam	S_PCIE_MRD_ACK					= 17'b01000000000000000;
-localparam	S_PCIE_MRD_REQ_DONE				= 17'b10000000000000000;
+localparam	S_IDLE							= 20'b00000000000000000001;
+localparam	S_DMA_CMD0						= 20'b00000000000000000010;
+localparam	S_DMA_CMD1						= 20'b00000000000000000100;
+localparam	S_PRP_INFO0						= 20'b00000000000000001000;
+localparam	S_PRP_INFO1						= 20'b00000000000000010000;
+localparam	S_CALC_LEN0						= 20'b00000000000000100000;
+localparam	S_CALC_LEN1						= 20'b00000000000001000000;
+localparam	S_CALC_LEN2						= 20'b00000000000010000000;
+localparam	S_CHECK_FIFO					= 20'b00000000000100000000;
+localparam	S_CMD0							= 20'b00000000001000000000;
+localparam	S_CMD1							= 20'b00000000010000000000;
+localparam	S_CMD2							= 20'b00000000100000000000;
+localparam	S_CMD3							= 20'b00000001000000000000;
+localparam	S_CHECK_DEV_FIFO				= 20'b00000010000000000000;
+localparam	S_DEV_CMD2						= 20'b00000100000000000000;
+localparam	S_DEV_CMD3						= 20'b00001000000000000000;
+localparam	S_PCIE_MRD_CHECK				= 20'b00010000000000000000;
+localparam	S_PCIE_MRD_REQ					= 20'b00100000000000000000;
+localparam	S_PCIE_MRD_ACK					= 20'b01000000000000000000;
+localparam	S_PCIE_MRD_REQ_DONE				= 20'b10000000000000000000;
     
-      reg		[16:0]								cur_state;
-      reg		[16:0]								next_state;
+      reg		[19:0]								cur_state;
+      reg		[19:0]								next_state;
     
       reg											r_pcie_rcb;
       reg											r_pcie_rcb_cross;
@@ -138,12 +141,12 @@ localparam	S_PCIE_MRD_REQ_DONE				= 17'b10000000000000000;
       reg		[12:2]								r_1st_prp_4b_len;
     
       reg		[12:2]								r_1st_4b_len;
-      reg		[12:2]								r_2st_4b_len;
+      reg		[12:2]								r_2nd_4b_len;
     
-      reg											r_2st_valid;
+      reg											r_2nd_valid;
       reg											r_1st_mrd_need;
-      reg											r_2st_mrd_need;
-      wire										w_2st_mrd_need;
+      reg											r_2nd_mrd_need;
+      wire										w_2nd_mrd_need;
     
       reg		[2:0]								r_tx_prp_mrd_tag;
       reg		[4:3]								r_pcie_mrd_len;
@@ -156,7 +159,7 @@ localparam	S_PCIE_MRD_REQ_DONE				= 17'b10000000000000000;
       reg											r_hcmd_prp_rd_sel;
       reg											r_dev_rx_cmd_wr_en;
       reg											r_dev_tx_cmd_wr_en;
-      reg											r_dev_cmd_wr_data_sel;
+      reg		[3:0]								r_dev_cmd_wr_data_sel;
       reg											r_pcie_cmd_wr_en;
       reg		[3:0]								r_pcie_cmd_wr_data_sel;
       reg											r_prp_pcie_alloc;
@@ -252,7 +255,24 @@ begin
 			next_state <= S_CMD3;
 		end
 		S_CMD3: begin
-			if((r_1st_mrd_need | (r_2st_valid & r_2st_mrd_need)) == 1'b1)
+			if(r_2nd_valid == 1)
+				next_state <= S_CHECK_DEV_FIFO;
+			else if((r_1st_mrd_need | (r_2nd_valid & r_2nd_mrd_need)) == 1'b1)
+				next_state <= S_PCIE_MRD_CHECK;
+			else
+				next_state <= S_IDLE;
+		end
+		S_CHECK_DEV_FIFO: begin
+			if(w_dev_cmd_full_n == 1'b1)
+				next_state <= S_DEV_CMD2;
+			else
+				next_state <= S_CHECK_DEV_FIFO;
+		end
+		S_DEV_CMD2: begin
+			next_state <= S_DEV_CMD3;
+		end
+		S_DEV_CMD3: begin
+			if((r_1st_mrd_need | (r_2nd_valid & r_2nd_mrd_need)) == 1'b1)
 				next_state <= S_PCIE_MRD_CHECK;
 			else
 				next_state <= S_IDLE;
@@ -293,15 +313,15 @@ begin
 end
 
 assign w_4b_offset[20:2] = {r_4k_offset, 10'b0} + r_hcmd_prp_1[11:2];
-assign w_2st_mrd_need = r_2st_valid & r_2st_mrd_need;
+assign w_2nd_mrd_need = r_2nd_valid & r_2nd_mrd_need;
 
 always @ (posedge pcie_user_clk)
 begin
 	case(cur_state)
 		S_IDLE: begin
-			r_2st_valid <= 0;
+			r_2nd_valid <= 0;
 			r_1st_mrd_need <= 0;
-			r_2st_mrd_need <= 0;
+			r_2nd_mrd_need <= 0;
 			r_pcie_rcb_cross <= 0;
 		end
 		S_DMA_CMD0: begin
@@ -344,29 +364,29 @@ begin
 		S_CALC_LEN2: begin
 			if(r_dev_dma_len > r_1st_prp_4b_len) begin
 				r_1st_4b_len <= r_1st_prp_4b_len;
-				r_2st_4b_len <= r_dev_dma_len - r_1st_prp_4b_len;
-				r_2st_valid <= 1;
+				r_2nd_4b_len <= r_dev_dma_len - r_1st_prp_4b_len;
+				r_2nd_valid <= 1;
 			end
 			else begin
 				r_1st_4b_len <= r_dev_dma_len;
-				r_2st_valid <= 0;
+				r_2nd_valid <= 0;
 			end
 
 			if(r_prp_offset_is_0 == 1) begin
 				r_1st_mrd_need <= 0;
-				r_2st_mrd_need <= r_prp2_type;
+				r_2nd_mrd_need <= r_prp2_type;
 			end
 			else begin
 				r_hcmd_prp_1[C_PCIE_ADDR_WIDTH-1:12] <= r_hcmd_prp_2[C_PCIE_ADDR_WIDTH-1:12];
 				r_1st_mrd_need <= r_prp2_type;
-				r_2st_mrd_need <= r_prp2_type;
+				r_2nd_mrd_need <= r_prp2_type;
 				r_prp_offset <= r_prp_offset - 1'b1;
 			end
 			r_hcmd_prp_1[11:2] <= r_prp_4b_offset;
 		end
 		S_CHECK_FIFO: begin
 			r_tx_prp_mrd_addr <= r_hcmd_prp_2 + {r_prp_offset, 1'b0};
-			r_pcie_mrd_len <= r_1st_mrd_need + w_2st_mrd_need;
+			r_pcie_mrd_len <= r_1st_mrd_need + w_2nd_mrd_need;
 		end
 		S_CMD0: begin
 			if(r_pcie_mrd_len == 2 && r_tx_prp_mrd_addr[5:2] == 4'b1110) begin
@@ -387,6 +407,15 @@ begin
 		S_CMD3: begin
 
 		end
+		S_CHECK_DEV_FIFO: begin
+
+		end
+		S_DEV_CMD2: begin
+
+		end
+		S_DEV_CMD3: begin
+
+		end
 		S_PCIE_MRD_CHECK: begin
 
 		end
@@ -407,14 +436,16 @@ end
 
 always @ (*)
 begin
-	if(r_dev_cmd_wr_data_sel == 0)
-		r_dev_cmd_wr_data <= {{(16-P_SLOT_TAG_WIDTH){1'b0}}, r_dma_cmd_auto_cpl, r_dma_cmd_type, 1'b0, r_hcmd_slot_tag, r_dev_dma_len}; //slot_modified
-	else
-		r_dev_cmd_wr_data <= r_dev_addr;
+	case(r_dev_cmd_wr_data_sel)  // synthesis parallel_case full_case
+		4'b00001: r_dev_cmd_wr_data <= {{(16-P_SLOT_TAG_WIDTH){1'b0}}, r_dma_cmd_auto_cpl, r_dma_cmd_type, ~r_2nd_valid, r_hcmd_slot_tag, r_1st_4b_len}; //slot_modified
+		4'b00010: r_dev_cmd_wr_data <= r_dev_addr;
+		4'b00100: r_dev_cmd_wr_data <= {{(16-P_SLOT_TAG_WIDTH){1'b0}}, r_dma_cmd_auto_cpl, r_dma_cmd_type, 1'b1, r_hcmd_slot_tag, r_2nd_4b_len}; //slot_modified
+		4'b01000: r_dev_cmd_wr_data <= r_dev_addr + r_1st_4b_len;
+	endcase
 
 	case(r_pcie_cmd_wr_data_sel)  // synthesis parallel_case full_case
-		4'b0001: r_pcie_cmd_wr_data <= {{(40-P_SLOT_TAG_WIDTH){1'b0}}, r_dma_cmd_auto_cpl, r_dma_cmd_type, r_dma_cmd_dir, r_2st_valid, r_1st_mrd_need, r_2st_mrd_need, r_hcmd_slot_tag}; //slot_modified
-		4'b0010: r_pcie_cmd_wr_data <= {23'b0, r_pcie_rcb_cross, r_1st_4b_len, r_2st_4b_len}; //modified
+		4'b0001: r_pcie_cmd_wr_data <= {{(40-P_SLOT_TAG_WIDTH){1'b0}}, r_dma_cmd_auto_cpl, r_dma_cmd_type, r_dma_cmd_dir, r_2nd_valid, r_1st_mrd_need, r_2nd_mrd_need, r_hcmd_slot_tag}; //slot_modified
+		4'b0010: r_pcie_cmd_wr_data <= {23'b0, r_pcie_rcb_cross, r_1st_4b_len, r_2nd_4b_len}; //modified
 		4'b0100: r_pcie_cmd_wr_data <= r_hcmd_prp_1;
 		4'b1000: r_pcie_cmd_wr_data <= {r_hcmd_prp_2[C_PCIE_ADDR_WIDTH-1:12], 10'b0};
 	endcase
@@ -428,7 +459,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -440,7 +471,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -452,7 +483,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -464,7 +495,7 @@ begin
 			r_hcmd_prp_rd_sel <= 1;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -476,7 +507,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -488,7 +519,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -500,7 +531,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -512,7 +543,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -524,7 +555,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -536,7 +567,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= ~r_dma_cmd_dir;
 			r_dev_tx_cmd_wr_en <= r_dma_cmd_dir;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0001;
 			r_pcie_cmd_wr_en <= 1;
 			r_pcie_cmd_wr_data_sel <= 4'b0001;
 			r_prp_pcie_alloc <= 0;
@@ -548,7 +579,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= ~r_dma_cmd_dir;
 			r_dev_tx_cmd_wr_en <= r_dma_cmd_dir;
-			r_dev_cmd_wr_data_sel <= 1;
+			r_dev_cmd_wr_data_sel <= 4'b0010;
 			r_pcie_cmd_wr_en <= 1;
 			r_pcie_cmd_wr_data_sel <= 4'b0010;
 			r_prp_pcie_alloc <= 0;
@@ -560,7 +591,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 1;
 			r_pcie_cmd_wr_data_sel <= 4'b0100;
 			r_prp_pcie_alloc <= 0;
@@ -572,19 +603,55 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 1;
 			r_pcie_cmd_wr_data_sel <= 4'b1000;
 			r_prp_pcie_alloc <= 0;
 			r_tx_prp_mrd_req <= 0;
 			r_mrd_tag_update <= 0;
 		end
+		S_CHECK_DEV_FIFO: begin
+			r_dma_cmd_rd_en <= 0;
+			r_hcmd_prp_rd_sel <= 0;
+			r_dev_rx_cmd_wr_en <= 0;
+			r_dev_tx_cmd_wr_en <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
+			r_pcie_cmd_wr_en <= 0;
+			r_pcie_cmd_wr_data_sel <= 4'b0;
+			r_prp_pcie_alloc <= 0;
+			r_tx_prp_mrd_req <= 0;
+			r_mrd_tag_update <= 0;
+		end
+		S_DEV_CMD2: begin
+			r_dma_cmd_rd_en <= 0;
+			r_hcmd_prp_rd_sel <= 0;
+			r_dev_rx_cmd_wr_en <= ~r_dma_cmd_dir;
+			r_dev_tx_cmd_wr_en <= r_dma_cmd_dir;
+			r_dev_cmd_wr_data_sel <= 4'b0100;
+			r_pcie_cmd_wr_en <= 0;
+			r_pcie_cmd_wr_data_sel <= 4'b0;
+			r_prp_pcie_alloc <= 0;
+			r_tx_prp_mrd_req <= 0;
+			r_mrd_tag_update <= 0;
+		end
+		S_DEV_CMD3: begin
+			r_dma_cmd_rd_en <= 0;
+			r_hcmd_prp_rd_sel <= 0;
+			r_dev_rx_cmd_wr_en <= ~r_dma_cmd_dir;
+			r_dev_tx_cmd_wr_en <= r_dma_cmd_dir;
+			r_dev_cmd_wr_data_sel <= 4'b1000;
+			r_pcie_cmd_wr_en <= 0;
+			r_pcie_cmd_wr_data_sel <= 4'b0;
+			r_prp_pcie_alloc <= 0;
+			r_tx_prp_mrd_req <= 0;
+			r_mrd_tag_update <= 0;
+		end		
 		S_PCIE_MRD_CHECK: begin
 			r_dma_cmd_rd_en <= 0;
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -596,7 +663,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 1;
@@ -608,7 +675,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -620,7 +687,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;
@@ -632,7 +699,7 @@ begin
 			r_hcmd_prp_rd_sel <= 0;
 			r_dev_rx_cmd_wr_en <= 0;
 			r_dev_tx_cmd_wr_en <= 0;
-			r_dev_cmd_wr_data_sel <= 0;
+			r_dev_cmd_wr_data_sel <= 4'b0;
 			r_pcie_cmd_wr_en <= 0;
 			r_pcie_cmd_wr_data_sel <= 4'b0;
 			r_prp_pcie_alloc <= 0;

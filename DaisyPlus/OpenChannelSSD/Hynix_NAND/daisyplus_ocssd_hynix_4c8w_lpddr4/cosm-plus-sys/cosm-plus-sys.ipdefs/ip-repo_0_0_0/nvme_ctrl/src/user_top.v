@@ -60,8 +60,8 @@ module user_top # (
 	parameter 	P_SLOT_WIDTH				= 1024, //slot_modified
 	parameter	C_S0_AXI_ADDR_WIDTH			= 32,
 	parameter	C_S0_AXI_DATA_WIDTH			= 32,
-	parameter	C_S0_AXI_BASEADDR			= 32'h80000000,
-	parameter	C_S0_AXI_HIGHADDR			= 32'h80010000,
+	parameter	C_S0_AXI_BASEADDR			= 32'hA0000000,
+	parameter	C_S0_AXI_HIGHADDR			= 32'hA001FFFF,
 
 	parameter	C_M0_AXI_ADDR_WIDTH			= 32,
 	parameter	C_M0_AXI_DATA_WIDTH			= 64,
@@ -72,7 +72,7 @@ module user_top # (
 	parameter	C_M0_AXI_ARUSER_WIDTH		= 1,
 	parameter	C_M0_AXI_RUSER_WIDTH		= 1,
 
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48, //modified
 
 	// Do not override parameters below this line
@@ -85,10 +85,10 @@ module user_top # (
 	parameter        AXISTEN_IF_RC_ALIGNMENT_MODE   = "FALSE",
 	parameter        AXISTEN_IF_CC_ALIGNMENT_MODE   = "FALSE",
 	parameter        AXISTEN_IF_CQ_ALIGNMENT_MODE   = "FALSE",
-	parameter              AXI4_CQ_TUSER_WIDTH = 88,
-	parameter              AXI4_CC_TUSER_WIDTH = 33,
-	parameter              AXI4_RQ_TUSER_WIDTH = 62,
-	parameter              AXI4_RC_TUSER_WIDTH = 75,
+	parameter              AXI4_CQ_TUSER_WIDTH = 183,
+	parameter              AXI4_CC_TUSER_WIDTH = 81,
+	parameter              AXI4_RQ_TUSER_WIDTH = 137,
+	parameter              AXI4_RC_TUSER_WIDTH = 161,
 	parameter        AXISTEN_IF_ENABLE_CLIENT_TAG   = 1,
 	parameter        AXISTEN_IF_RQ_PARITY_CHECK     = 0,
 	parameter        AXISTEN_IF_CC_PARITY_CHECK     = 0,
@@ -527,11 +527,11 @@ wire	[7:0]								w_dma_tx_done_cnt;
 wire										w_pcie_rx_fifo_rd_en;
 wire	[C_M0_AXI_DATA_WIDTH-1:0]			w_pcie_rx_fifo_rd_data;
 wire										w_pcie_rx_fifo_free_en;
-wire	[9:4]								w_pcie_rx_fifo_free_len; 
+wire	[10:6]								w_pcie_rx_fifo_free_len; 
 wire										w_pcie_rx_fifo_empty_n;
 
 wire										w_pcie_tx_fifo_alloc_en;
-wire	[9:4]								w_pcie_tx_fifo_alloc_len; 
+wire	[10:6]								w_pcie_tx_fifo_alloc_len; 
 wire										w_pcie_tx_fifo_wr_en;
 wire	[C_M0_AXI_DATA_WIDTH-1:0]			w_pcie_tx_fifo_wr_data;
 wire										w_pcie_tx_fifo_full_n;
@@ -1040,7 +1040,7 @@ reg_cpu_pcie_sync_isnt0
 nvme_pcie # (
 	.P_SLOT_TAG_WIDTH						(P_SLOT_TAG_WIDTH), //slot_modified
 	.P_SLOT_WIDTH							(P_SLOT_WIDTH), //slot_modified
-	.C_PCIE_DATA_WIDTH						(128)
+	.C_PCIE_DATA_WIDTH						(C_PCIE_DATA_WIDTH)
 )
 nvme_pcie_inst0(
 //PCIe user clock
