@@ -52,7 +52,7 @@ http://www.hanyang.ac.kr/
 
 module dev_rx_cmd_fifo # (
 	parameter	P_FIFO_DATA_WIDTH			= 30,
-	parameter	P_FIFO_DEPTH_WIDTH			= 4
+	parameter	P_FIFO_DEPTH_WIDTH			= 5
 )
 (
 	input									wr_clk,
@@ -327,7 +327,7 @@ end
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 localparam LP_DEVICE = "7SERIES";
-localparam LP_BRAM_SIZE = "18Kb";
+localparam LP_BRAM_SIZE = "36Kb";
 localparam LP_DOB_REG = 0;
 localparam LP_READ_WIDTH = P_FIFO_DATA_WIDTH;
 localparam LP_WRITE_WIDTH = P_FIFO_DATA_WIDTH;

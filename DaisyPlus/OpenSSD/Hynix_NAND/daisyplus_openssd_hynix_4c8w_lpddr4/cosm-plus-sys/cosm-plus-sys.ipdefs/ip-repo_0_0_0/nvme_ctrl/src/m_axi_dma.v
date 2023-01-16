@@ -128,11 +128,11 @@ module m_axi_dma # (
 	output									pcie_rx_fifo_rd_en,
 	input	[C_M_AXI_DATA_WIDTH-1:0]		pcie_rx_fifo_rd_data,
 	output									pcie_rx_fifo_free_en,
-	output	[9:4]							pcie_rx_fifo_free_len,
+	output	[10:6]							pcie_rx_fifo_free_len,
 	input									pcie_rx_fifo_empty_n,
 
 	output									pcie_tx_fifo_alloc_en,
-	output	[9:4]							pcie_tx_fifo_alloc_len,
+	output	[10:6]							pcie_tx_fifo_alloc_len,
 	output									pcie_tx_fifo_wr_en,
 	output	[C_M_AXI_DATA_WIDTH-1:0]		pcie_tx_fifo_wr_data,
 	input									pcie_tx_fifo_full_n,
