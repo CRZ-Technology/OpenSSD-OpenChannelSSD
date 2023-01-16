@@ -68,8 +68,8 @@ http://www.hanyang.ac.kr/
 `define		D_MRD_EP					1'b0
 `define		D_MRD_ATTR2					2'b00
 `define		D_MRD_AT					2'b00
-`define		D_MRD_LAST_BE				4'b1111
-`define		D_MRD_1ST_BE				4'b1111
+`define		D_MRD_LAST_BE				8'b00001111
+`define		D_MRD_1ST_BE				8'b00001111
 
 `define		D_MWR_FMT					3'b011
 `define		D_MWR_TYPE					5'b00000
@@ -80,5 +80,5 @@ http://www.hanyang.ac.kr/
 `define		D_MWR_EP					1'b0
 `define		D_MWR_ATTR2					2'b00
 `define		D_MWR_AT					2'b00
-`define		D_MWR_LAST_BE				4'b1111
-`define		D_MWR_1ST_BE				4'b1111
+`define		D_MWR_LAST_BE				8'b00001111
+`define		D_MWR_1ST_BE				8'b00001111

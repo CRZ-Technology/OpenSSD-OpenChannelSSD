@@ -52,7 +52,7 @@ http://www.hanyang.ac.kr/
 
 module pcie_hcmd_cq # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48 //modified
 )
 (

@@ -52,7 +52,7 @@ http://www.hanyang.ac.kr/
 
   module pcie_dma_cmd_gen # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48 //modified
 )
 (
@@ -66,7 +66,7 @@ http://www.hanyang.ac.kr/
   	output									prp_fifo_rd_en,
   	input	[C_PCIE_DATA_WIDTH-1:0]			prp_fifo_rd_data,
   	output									prp_fifo_free_en,
-  	output	[5:4]							prp_fifo_free_len,
+  	output	[7:6]							prp_fifo_free_len,
   	input									prp_fifo_empty_n,
 
   	output									pcie_rx_cmd_wr_en,
@@ -100,13 +100,13 @@ localparam	S_PCIE_CMD3						= 15'b100000000000000;
       reg											r_dma_cmd_type;
       reg											r_dma_cmd_auto_cpl;
       reg											r_dma_cmd_dir;
-      reg											r_2st_valid;
+      reg											r_2nd_valid;
       reg											r_1st_mrd_need;
-      reg											r_2st_mrd_need;
+      reg											r_2nd_mrd_need;
       reg		[P_SLOT_TAG_WIDTH-1:0]				r_hcmd_slot_tag; //slot_modified
       reg											r_pcie_rcb_cross;
       reg		[12:2]								r_1st_4b_len;
-      reg		[12:2]								r_2st_4b_len;
+      reg		[12:2]								r_2nd_4b_len;
      reg		[C_PCIE_ADDR_WIDTH-1:2]				r_hcmd_prp_1;
      reg		[C_PCIE_ADDR_WIDTH-1:2]				r_hcmd_prp_2;
      reg		[63:2]								r_prp_1;
@@ -121,7 +121,7 @@ localparam	S_PCIE_CMD3						= 15'b100000000000000;
           reg											r_pcie_tx_cmd_wr_en;
           reg		[3:0]								r_pcie_cmd_wr_data_sel;
           reg		[45:0]								r_pcie_cmd_wr_data; //modified
-    
+
       wire										w_pcie_cmd_full_n;
 
 assign pcie_cmd_rd_en = r_pcie_cmd_rd_en;
@@ -164,7 +164,7 @@ begin
 			next_state <= S_CMD3;
 		end
 		S_CMD3: begin
-			if((r_1st_mrd_need | (r_2st_valid & r_2st_mrd_need)) == 1'b1)
+			if((r_1st_mrd_need | (r_2nd_valid & r_2nd_mrd_need)) == 1'b1)
 				next_state <= S_CHECK_PRP_FIFO;
 			else
 				next_state <= S_CHECK_PCIE_CMD_FIFO0;
@@ -197,7 +197,7 @@ begin
 			next_state <= S_PCIE_CMD1;
 		end
 		S_PCIE_CMD1: begin
-			if(r_2st_valid == 1'b1)
+			if(r_2nd_valid == 1'b1)
 				next_state <= S_CHECK_PCIE_CMD_FIFO1;
 			else
 				next_state <= S_IDLE;
@@ -230,15 +230,15 @@ begin
 		    r_dma_cmd_auto_cpl <= pcie_cmd_rd_data[P_SLOT_TAG_WIDTH+5];
 			r_dma_cmd_type <= pcie_cmd_rd_data[P_SLOT_TAG_WIDTH+4]; //slot_modified
 			r_dma_cmd_dir <= pcie_cmd_rd_data[P_SLOT_TAG_WIDTH+3]; //slot_modified
-			r_2st_valid <= pcie_cmd_rd_data[P_SLOT_TAG_WIDTH+2]; //slot_modified
+			r_2nd_valid <= pcie_cmd_rd_data[P_SLOT_TAG_WIDTH+2]; //slot_modified
 			r_1st_mrd_need <= pcie_cmd_rd_data[P_SLOT_TAG_WIDTH+1]; //slot_modified
-			r_2st_mrd_need <= pcie_cmd_rd_data[P_SLOT_TAG_WIDTH]; //slot_modified
+			r_2nd_mrd_need <= pcie_cmd_rd_data[P_SLOT_TAG_WIDTH]; //slot_modified
 			r_hcmd_slot_tag <= pcie_cmd_rd_data[P_SLOT_TAG_WIDTH-1:0]; //slot_modified
 		end
 		S_CMD1: begin
 			r_pcie_rcb_cross <= pcie_cmd_rd_data[22];
 			r_1st_4b_len <= pcie_cmd_rd_data[21:11];
-			r_2st_4b_len <= pcie_cmd_rd_data[10:0];
+			r_2nd_4b_len <= pcie_cmd_rd_data[10:0];
 		end
 		S_CMD2: begin
 			r_hcmd_prp_1 <= pcie_cmd_rd_data[45:0]; //modified
@@ -292,9 +292,9 @@ end
 always @ (*)
 begin
 	case(r_pcie_cmd_wr_data_sel)  // synthesis parallel_case full_case
-		4'b0001: r_pcie_cmd_wr_data <= {{(32-P_SLOT_TAG_WIDTH){1'b0}}, r_dma_cmd_auto_cpl, r_dma_cmd_type, ~r_2st_valid, r_hcmd_slot_tag, r_1st_4b_len}; //slot_modified
+		4'b0001: r_pcie_cmd_wr_data <= {{(32-P_SLOT_TAG_WIDTH){1'b0}}, r_dma_cmd_auto_cpl, r_dma_cmd_type, ~r_2nd_valid, r_hcmd_slot_tag, r_1st_4b_len}; //slot_modified
 		4'b0010: r_pcie_cmd_wr_data <= r_hcmd_prp_1;
-		4'b0100: r_pcie_cmd_wr_data <= {{(33-P_SLOT_TAG_WIDTH){1'b0}}, r_dma_cmd_type, 1'b1, r_hcmd_slot_tag, r_2st_4b_len}; //modified
+		4'b0100: r_pcie_cmd_wr_data <= {{(33-P_SLOT_TAG_WIDTH){1'b0}}, r_dma_cmd_type, 1'b1, r_hcmd_slot_tag, r_2nd_4b_len}; //modified
 		4'b1000: r_pcie_cmd_wr_data <= {r_hcmd_prp_2[C_PCIE_ADDR_WIDTH-1:12], 10'b0};
 	endcase
 end
