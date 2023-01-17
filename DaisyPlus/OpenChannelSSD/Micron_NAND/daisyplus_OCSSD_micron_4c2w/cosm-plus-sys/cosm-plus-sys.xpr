@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="D:/sources/DaisyPlus/NAND/Micron/OCSSD/512bit/tmp/daisyplus_OCSSD_micron_4c2w_512b_20230105/cosm-plus-sys/cosm-plus-sys.xpr">
+<Project Version="7" Minor="40" Path="f:/cosm-plus-sys.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="27dd5bc80d6449b6b56f55e74c213e26"/>

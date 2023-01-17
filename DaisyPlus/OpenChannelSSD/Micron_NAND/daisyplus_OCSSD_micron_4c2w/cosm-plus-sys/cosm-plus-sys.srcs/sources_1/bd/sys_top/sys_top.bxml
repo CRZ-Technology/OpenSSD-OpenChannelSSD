@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="sys_top" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1672896160"/>
-    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1672896160"/>
-    <Generation Name="SIMULATION" State="RESET" Timestamp="1672896160"/>
-    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1672896160"/>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1673929502"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1673929502"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1673929502"/>
+    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1673929502"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\sys_top_v2nfc_0_0\sys_top_v2nfc_0_0.xci" Type="IP">
         <Instance HierarchyPath="v2nfc_0"/>
