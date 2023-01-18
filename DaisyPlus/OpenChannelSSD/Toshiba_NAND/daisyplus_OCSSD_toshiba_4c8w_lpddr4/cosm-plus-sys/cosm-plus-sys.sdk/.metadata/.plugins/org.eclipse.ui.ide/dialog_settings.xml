@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="CleanDialogSettings">
-		<item value="581" key="DIALOG_WIDTH"/>
+		<item value="662" key="DIALOG_WIDTH"/>
 		<item value="true" key="BUILD_ALL"/>
 		<item value="false" key="TOGGLE_SELECTED"/>
 		<item value="498" key="DIALOG_HEIGHT"/>
@@ -14,18 +14,10 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\hgcho\Downloads\daisy-sys-toshiba-4c8w.xpr\cosm-plus-sys\cosm-plus-sys.sdk"/>
+			<item value="D:\sources\daisyplus_OCSSD_toshiba_4c8w_20220719\cosm-plus-sys\cosm-plus-sys.sdk"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
-	</section>
-	<section name="WORKBENCH_SETTINGS">
-		<list key="ENABLED_TRANSFERS">
-		</list>
-	</section>
-	<section name="ChooseWorkspaceDialogSettings">
-		<item value="611" key="DIALOG_X_ORIGIN"/>
-		<item value="334" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

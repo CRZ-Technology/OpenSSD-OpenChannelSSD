@@ -54,7 +54,7 @@ http://www.hanyang.ac.kr/
 module nvme_pcie # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
 	parameter 	P_SLOT_WIDTH				= 1024, //slot_modified
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48, //modified
 	parameter	C_M_AXI_DATA_WIDTH			= 64,
 
@@ -63,10 +63,10 @@ module nvme_pcie # (
 
 	parameter [1:0]  AXISTEN_IF_WIDTH               = (C_PCIE_DATA_WIDTH == 512) ? 2'b11:(C_PCIE_DATA_WIDTH == 256) ? 2'b10 : (C_PCIE_DATA_WIDTH == 128) ? 2'b01 : 2'b00, 
 
-	parameter              AXI4_CQ_TUSER_WIDTH = 88,
-	parameter              AXI4_CC_TUSER_WIDTH = 33,
-	parameter              AXI4_RQ_TUSER_WIDTH = 62,
-	parameter              AXI4_RC_TUSER_WIDTH = 75
+	parameter              AXI4_CQ_TUSER_WIDTH = 183,
+	parameter              AXI4_CC_TUSER_WIDTH = 81,
+	parameter              AXI4_RQ_TUSER_WIDTH = 137,
+	parameter              AXI4_RC_TUSER_WIDTH = 161
 )
 (
 //PCIe user clock
@@ -173,11 +173,11 @@ module nvme_pcie # (
 	input									pcie_rx_fifo_rd_en,
 	output	[C_M_AXI_DATA_WIDTH-1:0]		pcie_rx_fifo_rd_data,
 	input									pcie_rx_fifo_free_en,
-	input	[9:4]							pcie_rx_fifo_free_len, 
+	input	[10:6]							pcie_rx_fifo_free_len, 
 	output									pcie_rx_fifo_empty_n,
 
 	input									pcie_tx_fifo_alloc_en,
-	input	[9:4]							pcie_tx_fifo_alloc_len, 
+	input	[10:6]							pcie_tx_fifo_alloc_len, 
 	input									pcie_tx_fifo_wr_en,
 	input	[C_M_AXI_DATA_WIDTH-1:0]		pcie_tx_fifo_wr_data,
 	output									pcie_tx_fifo_full_n,

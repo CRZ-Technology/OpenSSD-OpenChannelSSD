@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -62,29 +62,29 @@ pcie4_uscale_plus_0 your_instance_name (
   .user_clk(user_clk),                                                                            // output wire user_clk
   .user_reset(user_reset),                                                                        // output wire user_reset
   .user_lnk_up(user_lnk_up),                                                                      // output wire user_lnk_up
-  .s_axis_rq_tdata(s_axis_rq_tdata),                                                              // input wire [127 : 0] s_axis_rq_tdata
-  .s_axis_rq_tkeep(s_axis_rq_tkeep),                                                              // input wire [3 : 0] s_axis_rq_tkeep
+  .s_axis_rq_tdata(s_axis_rq_tdata),                                                              // input wire [511 : 0] s_axis_rq_tdata
+  .s_axis_rq_tkeep(s_axis_rq_tkeep),                                                              // input wire [15 : 0] s_axis_rq_tkeep
   .s_axis_rq_tlast(s_axis_rq_tlast),                                                              // input wire s_axis_rq_tlast
   .s_axis_rq_tready(s_axis_rq_tready),                                                            // output wire [3 : 0] s_axis_rq_tready
-  .s_axis_rq_tuser(s_axis_rq_tuser),                                                              // input wire [61 : 0] s_axis_rq_tuser
+  .s_axis_rq_tuser(s_axis_rq_tuser),                                                              // input wire [136 : 0] s_axis_rq_tuser
   .s_axis_rq_tvalid(s_axis_rq_tvalid),                                                            // input wire s_axis_rq_tvalid
-  .m_axis_rc_tdata(m_axis_rc_tdata),                                                              // output wire [127 : 0] m_axis_rc_tdata
-  .m_axis_rc_tkeep(m_axis_rc_tkeep),                                                              // output wire [3 : 0] m_axis_rc_tkeep
+  .m_axis_rc_tdata(m_axis_rc_tdata),                                                              // output wire [511 : 0] m_axis_rc_tdata
+  .m_axis_rc_tkeep(m_axis_rc_tkeep),                                                              // output wire [15 : 0] m_axis_rc_tkeep
   .m_axis_rc_tlast(m_axis_rc_tlast),                                                              // output wire m_axis_rc_tlast
   .m_axis_rc_tready(m_axis_rc_tready),                                                            // input wire m_axis_rc_tready
-  .m_axis_rc_tuser(m_axis_rc_tuser),                                                              // output wire [74 : 0] m_axis_rc_tuser
+  .m_axis_rc_tuser(m_axis_rc_tuser),                                                              // output wire [160 : 0] m_axis_rc_tuser
   .m_axis_rc_tvalid(m_axis_rc_tvalid),                                                            // output wire m_axis_rc_tvalid
-  .m_axis_cq_tdata(m_axis_cq_tdata),                                                              // output wire [127 : 0] m_axis_cq_tdata
-  .m_axis_cq_tkeep(m_axis_cq_tkeep),                                                              // output wire [3 : 0] m_axis_cq_tkeep
+  .m_axis_cq_tdata(m_axis_cq_tdata),                                                              // output wire [511 : 0] m_axis_cq_tdata
+  .m_axis_cq_tkeep(m_axis_cq_tkeep),                                                              // output wire [15 : 0] m_axis_cq_tkeep
   .m_axis_cq_tlast(m_axis_cq_tlast),                                                              // output wire m_axis_cq_tlast
   .m_axis_cq_tready(m_axis_cq_tready),                                                            // input wire m_axis_cq_tready
-  .m_axis_cq_tuser(m_axis_cq_tuser),                                                              // output wire [87 : 0] m_axis_cq_tuser
+  .m_axis_cq_tuser(m_axis_cq_tuser),                                                              // output wire [182 : 0] m_axis_cq_tuser
   .m_axis_cq_tvalid(m_axis_cq_tvalid),                                                            // output wire m_axis_cq_tvalid
-  .s_axis_cc_tdata(s_axis_cc_tdata),                                                              // input wire [127 : 0] s_axis_cc_tdata
-  .s_axis_cc_tkeep(s_axis_cc_tkeep),                                                              // input wire [3 : 0] s_axis_cc_tkeep
+  .s_axis_cc_tdata(s_axis_cc_tdata),                                                              // input wire [511 : 0] s_axis_cc_tdata
+  .s_axis_cc_tkeep(s_axis_cc_tkeep),                                                              // input wire [15 : 0] s_axis_cc_tkeep
   .s_axis_cc_tlast(s_axis_cc_tlast),                                                              // input wire s_axis_cc_tlast
   .s_axis_cc_tready(s_axis_cc_tready),                                                            // output wire [3 : 0] s_axis_cc_tready
-  .s_axis_cc_tuser(s_axis_cc_tuser),                                                              // input wire [32 : 0] s_axis_cc_tuser
+  .s_axis_cc_tuser(s_axis_cc_tuser),                                                              // input wire [80 : 0] s_axis_cc_tuser
   .s_axis_cc_tvalid(s_axis_cc_tvalid),                                                            // input wire s_axis_cc_tvalid
   .pcie_rq_seq_num0(pcie_rq_seq_num0),                                                            // output wire [5 : 0] pcie_rq_seq_num0
   .pcie_rq_seq_num_vld0(pcie_rq_seq_num_vld0),                                                    // output wire pcie_rq_seq_num_vld0

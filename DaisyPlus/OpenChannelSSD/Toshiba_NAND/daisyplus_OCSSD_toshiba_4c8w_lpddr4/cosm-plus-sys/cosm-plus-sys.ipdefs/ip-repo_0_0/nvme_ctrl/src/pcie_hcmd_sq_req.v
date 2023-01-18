@@ -52,7 +52,7 @@ http://www.hanyang.ac.kr/
 
 
  module pcie_hcmd_sq_req # (
-	parameter	C_PCIE_DATA_WIDTH			= 128,
+	parameter	C_PCIE_DATA_WIDTH			= 512,
 	parameter	C_PCIE_ADDR_WIDTH			= 48, //modified
 	parameter 	P_SLOT_TAG_WIDTH			=  10 //slot_modified
 )
@@ -75,7 +75,7 @@ http://www.hanyang.ac.kr/
 
  	output									pcie_sq_rx_tag_alloc,
  	output	[7:0]							pcie_sq_rx_alloc_tag,
- 	output	[6:4]							pcie_sq_rx_tag_alloc_len,
+ 	output								pcie_sq_rx_tag_alloc_len,
  	input									pcie_sq_rx_tag_full_n,
  	input									pcie_sq_rx_fifo_full_n,
 
@@ -123,7 +123,7 @@ assign pcie_sq_cmd_fifo_wr_data = {r_sq_qid, r_hcmd_slot_tag}; //slot_modified
 
 assign pcie_sq_rx_tag_alloc = r_pcie_sq_rx_tag_alloc;
 assign pcie_sq_rx_alloc_tag = {LP_HCMD_PCIE_TAG_PREFIX, r_hcmd_pcie_tag};
-assign pcie_sq_rx_tag_alloc_len = 3'b100;
+assign pcie_sq_rx_tag_alloc_len = 1'b1;
 
 assign tx_mrd_req = r_tx_mrd_req;
 assign tx_mrd_tag = {LP_HCMD_PCIE_TAG_PREFIX, r_hcmd_pcie_tag};

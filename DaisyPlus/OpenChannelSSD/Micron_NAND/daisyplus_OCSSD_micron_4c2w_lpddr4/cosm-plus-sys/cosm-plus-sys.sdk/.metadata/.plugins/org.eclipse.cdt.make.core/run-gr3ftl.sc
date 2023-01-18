@@ -2,11 +2,14 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.arm.a53.exe.debug.826276735;xilinx.gnu.arm.a53.exe.debug.826276735.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __ARM_FEATURE_AES" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_SHA2" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_DOTPROD" removed="true"/>
 <includePath path="#undef __AARCH64_CMODEL_TINY__" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_SHA512" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_SM3" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include"/>
+<includePath path="#undef __ARM_FEATURE_SHA3" removed="true"/>
 <includePath path="#undef __AARCH64_CMODEL_SMALL__" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_SM4" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>

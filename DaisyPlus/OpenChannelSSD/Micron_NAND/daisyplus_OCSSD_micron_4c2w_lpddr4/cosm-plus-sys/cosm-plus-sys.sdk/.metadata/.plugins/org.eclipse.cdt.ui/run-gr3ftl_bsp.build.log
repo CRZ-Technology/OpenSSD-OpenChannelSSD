@@ -1,4 +1,4 @@
-16:33:07 **** Clean-only build of project run-gr3ftl_bsp ****
+11:43:00 **** Clean-only build of project run-gr3ftl_bsp ****
 make -k clean 
 make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s clean 
 make -C psu_cortexa53_0/libsrc/bram_v4_3/src -s clean 
@@ -22,5 +22,5 @@ make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s clean
 make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s clean 
 rm -f psu_cortexa53_0/lib/libxil.a
 
-16:33:09 Build Finished (took 2s.132ms)
+11:43:04 Build Finished (took 4s.539ms)
 

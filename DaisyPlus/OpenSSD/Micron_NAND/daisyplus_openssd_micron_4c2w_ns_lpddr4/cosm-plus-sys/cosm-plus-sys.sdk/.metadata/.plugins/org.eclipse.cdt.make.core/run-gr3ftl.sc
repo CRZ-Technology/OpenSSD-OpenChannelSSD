@@ -2,15 +2,21 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.arm.a53.exe.debug.826276735;xilinx.gnu.arm.a53.exe.debug.826276735.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_SHA512" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_SM3" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include"/>
+<includePath path="#undef __ARM_FEATURE_SVE" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_SM4" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>
+<includePath path="#undef __ARM_FEATURE_SVE_BITS" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_FP16_FML" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
+<includePath path="#undef __ARM_FEATURE_AES" removed="true"/>
 <includePath path="#undef __FLT_EVAL_METHOD__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
+<includePath path="#undef __ARM_FEATURE_SHA2" removed="true"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_VERSION__=201710L"/>
 <definedSymbol symbol="__STDC_UTF_16__=1"/>
@@ -725,10 +731,15 @@
 </instance>
 <instance id="xilinx.gnu.arm.a53.exe.debug.826276735;xilinx.gnu.arm.a53.exe.debug.826276735.;xilinx.gnu.arm.a53.c.toolchain.compiler.debug.950525973;xilinx.gnu.arm.a53.c.compiler.input.463218857">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __ARM_FEATURE_SM3" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_SM4" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include"/>
+<includePath path="#undef __ARM_FEATURE_FP16_FML" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>
+<includePath path="#undef __FLT_EVAL_METHOD__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
+<includePath path="#undef __FLT_EVAL_METHOD_C99__" removed="true"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_VERSION__=201710L"/>
 <definedSymbol symbol="__STDC_UTF_16__=1"/>

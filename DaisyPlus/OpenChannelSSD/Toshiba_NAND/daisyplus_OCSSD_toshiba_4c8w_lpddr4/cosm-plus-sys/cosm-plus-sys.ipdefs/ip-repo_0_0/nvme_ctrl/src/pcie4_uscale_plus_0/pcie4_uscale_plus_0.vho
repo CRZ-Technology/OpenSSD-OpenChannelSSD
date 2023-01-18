@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -61,29 +61,29 @@ COMPONENT pcie4_uscale_plus_0
     user_clk : OUT STD_LOGIC;
     user_reset : OUT STD_LOGIC;
     user_lnk_up : OUT STD_LOGIC;
-    s_axis_rq_tdata : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
-    s_axis_rq_tkeep : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    s_axis_rq_tdata : IN STD_LOGIC_VECTOR(511 DOWNTO 0);
+    s_axis_rq_tkeep : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     s_axis_rq_tlast : IN STD_LOGIC;
     s_axis_rq_tready : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    s_axis_rq_tuser : IN STD_LOGIC_VECTOR(61 DOWNTO 0);
+    s_axis_rq_tuser : IN STD_LOGIC_VECTOR(136 DOWNTO 0);
     s_axis_rq_tvalid : IN STD_LOGIC;
-    m_axis_rc_tdata : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
-    m_axis_rc_tkeep : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    m_axis_rc_tdata : OUT STD_LOGIC_VECTOR(511 DOWNTO 0);
+    m_axis_rc_tkeep : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     m_axis_rc_tlast : OUT STD_LOGIC;
     m_axis_rc_tready : IN STD_LOGIC;
-    m_axis_rc_tuser : OUT STD_LOGIC_VECTOR(74 DOWNTO 0);
+    m_axis_rc_tuser : OUT STD_LOGIC_VECTOR(160 DOWNTO 0);
     m_axis_rc_tvalid : OUT STD_LOGIC;
-    m_axis_cq_tdata : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
-    m_axis_cq_tkeep : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    m_axis_cq_tdata : OUT STD_LOGIC_VECTOR(511 DOWNTO 0);
+    m_axis_cq_tkeep : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     m_axis_cq_tlast : OUT STD_LOGIC;
     m_axis_cq_tready : IN STD_LOGIC;
-    m_axis_cq_tuser : OUT STD_LOGIC_VECTOR(87 DOWNTO 0);
+    m_axis_cq_tuser : OUT STD_LOGIC_VECTOR(182 DOWNTO 0);
     m_axis_cq_tvalid : OUT STD_LOGIC;
-    s_axis_cc_tdata : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
-    s_axis_cc_tkeep : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    s_axis_cc_tdata : IN STD_LOGIC_VECTOR(511 DOWNTO 0);
+    s_axis_cc_tkeep : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     s_axis_cc_tlast : IN STD_LOGIC;
     s_axis_cc_tready : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    s_axis_cc_tuser : IN STD_LOGIC_VECTOR(32 DOWNTO 0);
+    s_axis_cc_tuser : IN STD_LOGIC_VECTOR(80 DOWNTO 0);
     s_axis_cc_tvalid : IN STD_LOGIC;
     pcie_rq_seq_num0 : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
     pcie_rq_seq_num_vld0 : OUT STD_LOGIC;

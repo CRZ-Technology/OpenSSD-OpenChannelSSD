@@ -56,8 +56,8 @@ module s_axi_reg # (
 	parameter 	P_SLOT_TAG_WIDTH			=  10, //slot_modified
 	parameter	C_S_AXI_ADDR_WIDTH			= 32,
 	parameter	C_S_AXI_DATA_WIDTH			= 32,
-	parameter	C_S_AXI_BASEADDR			= 32'h80000000,
-	parameter	C_S_AXI_HIGHADDR			= 32'h80010000,
+	parameter	C_S_AXI_BASEADDR			= 32'hA0000000,
+	parameter	C_S_AXI_HIGHADDR			= 32'hA001FFFF,
 	parameter	C_PCIE_ADDR_WIDTH			= 48 //modified
 )
 (
@@ -1129,7 +1129,6 @@ begin
 	case(r_s_axi_araddr[7:2]) // synthesis parallel_case full_case
 		6'h01: r_cntl_reg_rdata <= {20'b0, r_irq_mask};
 		6'h03: r_cntl_reg_rdata <= {20'b0, r_irq_set};
-        default: r_cntl_reg_rdata <= 'b0;
 	endcase
 end
 
@@ -1138,7 +1137,6 @@ begin
 	case(r_s_axi_araddr[7:2]) // synthesis parallel_case full_case
 		6'h00: r_pcie_reg_rdata <= {23'b0, r_pcie_link_up, 2'b0, pl_ltssm_state};
 		6'h01: r_pcie_reg_rdata <= {25'b0, r_cfg_interrupt_mmenable, ~r_cfg_command[3], r_cfg_interrupt_msixenable, r_cfg_interrupt_msienable, r_cfg_command[2]};
-        default: r_pcie_reg_rdata <= 'b0;
 	endcase
 end
 
@@ -1180,7 +1178,6 @@ begin
 		6'h25: r_nvme_reg_rdata <= {r_io_cq7_size, 3'b0, r_io_cq_irq_en[7], r_io_cq7_iv, r_cq_valid[7], r_io_cq7_bs_addr[C_PCIE_ADDR_WIDTH-1:32]};
 		6'h26: r_nvme_reg_rdata <= {r_io_cq8_bs_addr[31:2], 2'b0};
 		6'h27: r_nvme_reg_rdata <= {r_io_cq8_size, 3'b0, r_io_cq_irq_en[8], r_io_cq8_iv, r_cq_valid[8], r_io_cq8_bs_addr[C_PCIE_ADDR_WIDTH-1:32]};
-        default: r_nvme_reg_rdata <= 'b0;
 	endcase
 end
 
@@ -1196,7 +1193,6 @@ begin
 		6'h06: r_nvme_fifo_rdata <= {r_dma_cmd_pcie_addr[31:2], 2'b0};
 		6'h07: r_nvme_fifo_rdata <= {r_dma_cmd_type, r_dma_cmd_dir, 7'b0, r_dma_cmd_4k_offset, r_dma_cmd_auto_cpl, r_dma_cmd_dev_len, 2'b0};
 		6'h08: r_nvme_fifo_rdata <= {{(32-P_SLOT_TAG_WIDTH){1'b0}}, r_dma_cmd_hcmd_slot_tag}; //slot_modified
-        default: r_nvme_fifo_rdata <= 'b0;
 	endcase
 end
 

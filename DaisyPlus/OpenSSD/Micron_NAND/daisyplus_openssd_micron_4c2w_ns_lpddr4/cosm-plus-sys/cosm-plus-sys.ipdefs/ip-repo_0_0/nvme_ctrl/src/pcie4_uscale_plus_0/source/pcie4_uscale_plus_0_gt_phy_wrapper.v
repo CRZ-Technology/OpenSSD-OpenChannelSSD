@@ -649,7 +649,7 @@ phy_clk_i
 pcie4_uscale_plus_0_gt_phy_rst #
 (
     .PHY_LANE                           (PHY_LANE),
-    .PHY_MAX_SPEED                      (2)            
+    .PHY_MAX_SPEED                      (PHY_MAX_SPEED)            
 )
 phy_rst_i
 (

@@ -1,5 +1,0 @@
-17:51:57 INFO  : Registering command handlers for SDK TCF services
-17:51:58 INFO  : Launching XSCT server: xsct.bat -interactive D:\tmp\daisyplus_openssd_micron_4c2w_20220621_lpddr4\cosm-plus-sys\cosm-plus-sys.sdk\temp_xsdb_launch_script.tcl
-17:52:01 INFO  : XSCT server has started successfully.
-17:52:02 INFO  : Successfully done setting XSCT server connection channel  
-17:52:02 INFO  : Successfully done setting SDK workspace  

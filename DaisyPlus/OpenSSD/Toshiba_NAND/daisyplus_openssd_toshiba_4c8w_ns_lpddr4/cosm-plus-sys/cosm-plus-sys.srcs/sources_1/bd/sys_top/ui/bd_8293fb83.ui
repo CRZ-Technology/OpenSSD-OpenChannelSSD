@@ -1,7 +1,7 @@
 {
    "ExpandedHierarchyInLayout":"",
    "PinnedBlocks":"",
-   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
 preplace port nand_if_0 -pg 1 -lvl 13 -x 6430 -y 30 -defaultsOSRD
 preplace port nand_if_1 -pg 1 -lvl 13 -x 6430 -y 1550 -defaultsOSRD
@@ -50,11 +50,11 @@ preplace inst xlconcat_0 -pg 1 -lvl 6 -x 2230 -y 5270 -defaultsOSRD
 preplace inst smartconnect_0 -pg 1 -lvl 6 -x 2230 -y 5450 -defaultsOSRD
 preplace inst proc_sys_reset_6 -pg 1 -lvl 5 -x 1650 -y 5450 -defaultsOSRD
 preplace inst proc_sys_reset_7 -pg 1 -lvl 9 -x 3800 -y 5400 -defaultsOSRD
-preplace inst nvme_ctrl_0 -pg 1 -lvl 11 -x 5130 -y 5650 -defaultsOSRD
 preplace inst v2nfc_0 -pg 1 -lvl 11 -x 5130 -y 830 -defaultsOSRD
 preplace inst v2nfc_1 -pg 1 -lvl 11 -x 5130 -y 1560 -defaultsOSRD -resize 266 549
 preplace inst v2nfc_2 -pg 1 -lvl 11 -x 5130 -y 3330 -defaultsOSRD -resize 264 569
 preplace inst v2nfc_3 -pg 1 -lvl 11 -x 5130 -y 4020 -defaultsOSRD -resize 258 603
+preplace inst nvme_ctrl_0 -pg 1 -lvl 11 -x 5130 -y 5650 -defaultsOSRD
 preplace netloc processing_system7_0_FCLK_CLK0 1 0 12 20 4483 390 4433 NJ 4433 1060 4440 1350J 4670 1870J 4430 NJ 4430 3070 4430 3560 4430 4170 4430 4570 2870 5400
 preplace netloc processing_system7_0_FCLK_CLK2 1 4 7 1470 5140 2030 5140 2400 5380 3090 5120 NJ 5120 4150 5060 4500
 preplace netloc ARESETN_1 1 1 8 370J 3700 NJ 3700 1080J 3800 1400J 3810 2020J 4070 NJ 4070 NJ 4070 3440
@@ -178,58 +178,58 @@ preplace netloc proc_sys_reset_6_peripheral_aresetn 1 5 6 2040 5600 NJ 5600 NJ 5
 preplace netloc zynq_ultra_ps_e_0_pl_clk2 1 7 4 3010 5400 3560 5300 3990 5630 NJ
 preplace netloc zynq_ultra_ps_e_0_pl_resetn2 1 7 2 3120 5160 3430J
 preplace netloc proc_sys_reset_7_peripheral_aresetn 1 9 2 4170 5510 4500
-preplace netloc smartconnect_0_M00_AXI 1 6 1 2370 5170n
-preplace netloc v2nfc_2_nand_if 1 11 2 NJ 3310 NJ
-preplace netloc bch_sccs_256B_21B_13b_2_bch_skes_if 1 4 6 1370 4620 1880J 4360 NJ 4360 NJ 4360 NJ 4360 3990J
-preplace netloc t4nfc_hlper_0_nfch_data_if 1 5 6 2050 4390 NJ 4390 NJ 4390 NJ 4390 NJ 4390 4490
-preplace netloc S01_AXI_1 1 5 1 1990 3570n
-preplace netloc gpic_0_sub_M01_AXI 1 11 1 5410 700n
-preplace netloc t4nfc_hlper_3_to_ecc_if 1 3 3 1100 5010 NJ 5010 1820
-preplace netloc pcie_ref_0_1 1 0 11 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ
-preplace netloc bch_sccs_256B_21B_13b_0_bch_skes_if 1 9 1 4040 4220n
+preplace netloc nvme_ctrl_0_pci_exp 1 11 2 NJ 5640 NJ
+preplace netloc v2nfc_3_nand_if 1 11 2 NJ 3980 NJ
 preplace netloc S00_AXI_1 1 7 3 3080J 5130 NJ 5130 N
 preplace netloc gpic_0_M01_AXI 1 9 1 4120 3790n
-preplace netloc v2nfc_1_nand_if 1 11 2 NJ 1550 NJ
-preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 10 1 4520 4160n
-preplace netloc nvme_ctrl_0_pci_exp 1 11 2 NJ 5640 NJ
-preplace netloc t4nfc_hlper_0_ucode_if 1 10 1 4610 3790n
-preplace netloc bch_sccs_256B_21B_13b_3_from_ecc_if 1 4 1 1350 4880n
-preplace netloc t4nfc_hlper_2_v2nfc_if 1 5 6 1830J 3440 NJ 3440 NJ 3440 NJ 3440 NJ 3440 4520
-preplace netloc t4nfc_hlper_2_to_ecc_if 1 3 3 1100 4630 NJ 4630 1820
-preplace netloc gpic_0_sub_0_M00_AXI 1 9 1 4040 3750n
-preplace netloc nvme_ctrl_0_m0_axi 1 5 7 2080 5530 NJ 5530 NJ 5530 NJ 5530 NJ 5530 NJ 5530 5290
-preplace netloc gpic_0_sub_0_M04_AXI 1 4 6 1460 3490 NJ 3490 NJ 3490 NJ 3490 NJ 3490 3980
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 7 1 3040 5120n
-preplace netloc t4nfc_hlper_0_to_ecc_if 1 8 3 3600 3520 4140J 3510 4500
-preplace netloc t4nfc_hlper_2_ucode_if 1 5 6 1910 4410 NJ 4410 NJ 4410 NJ 4410 4000J 4420 4510J
-preplace netloc gpic_0_sub_0_M02_AXI 1 4 6 1470 3480 NJ 3480 NJ 3480 NJ 3480 NJ 3480 3990
-preplace netloc t4nfc_hlper_3_ucode_if 1 5 6 1930J 4910 NJ 4910 NJ 4910 NJ 4910 3970J 5000 4590
-preplace netloc hpic_0_M00_AXI 1 6 1 2410 4640n
-preplace netloc axi_interconnect_0_M00_AXI 1 8 1 3530 3640n
-preplace netloc bch_sccs_256B_21B_13b_1_from_ecc_if 1 4 1 1390 3590n
-preplace netloc bch_sccs_256B_21B_13b_1_bch_skes_if 1 4 6 NJ 3950 1970J 4130 NJ 4130 NJ 4130 3520J 4310 4010
-preplace netloc v2nfc_3_nand_if 1 11 2 NJ 3980 NJ
-preplace netloc t4nfc_hlper_1_to_ecc_if 1 3 3 1100 3820 NJ 3820 1820
-preplace netloc S02_AXI_1 1 5 1 1890 4480n
-preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 10 1 4500 4300n
-preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 10 1 4590 3590n
-preplace netloc gpic_0_sub_0_M06_AXI 1 4 6 1450 3500 NJ 3500 NJ 3500 NJ 3500 NJ 3500 3970
-preplace netloc gpic_1_M00_AXI 1 10 1 4490 5070n
 preplace netloc gpic_0_M07_AXI 1 9 1 4060 3910n
-preplace netloc gpic_0_M05_AXI 1 9 1 4110 3870n
-preplace netloc v2nfc_0_nand_if 1 11 2 5550J 1410 6400J
-preplace netloc gpic_0_M03_AXI 1 9 1 4030 3570n
-preplace netloc t4nfc_hlper_1_ucode_if 1 5 6 2050 4060 NJ 4060 NJ 4060 3550J 4100 4080J 4080 4530J
+preplace netloc S02_AXI_1 1 5 1 1890 4480n
+preplace netloc v2nfc_1_nand_if 1 11 2 NJ 1550 NJ
+preplace netloc nvme_ctrl_0_m0_axi 1 5 7 2080 5530 NJ 5530 NJ 5530 NJ 5530 NJ 5530 NJ 5530 5290
+preplace netloc hpic_0_M00_AXI 1 6 1 2410 4640n
+preplace netloc gpic_0_sub_0_M00_AXI 1 9 1 4040 3750n
 preplace netloc S03_AXI_1 1 5 1 1970 4550n
-preplace netloc bch_sccs_256B_21B_13b_3_bch_skes_if 1 4 6 1390 5000 2040J 4900 NJ 4900 NJ 4900 NJ 4900 NJ
-preplace netloc t4nfc_hlper_1_v2nfc_if 1 5 6 1820 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ
-preplace netloc bch_sccs_256B_21B_13b_2_from_ecc_if 1 4 1 1410 4500n
+preplace netloc t4nfc_hlper_1_ucode_if 1 5 6 2050 4060 NJ 4060 NJ 4060 3550J 4100 4080J 4080 4530J
 preplace netloc bch_sccs_256B_21B_13b_0_from_ecc_if 1 9 1 4100 3770n
 preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 10 1 4540 3990n
-preplace netloc t4nfc_hlper_3_v2nfc_if 1 5 6 1860J 3510 NJ 3510 NJ 3510 NJ 3510 4010J 3500 4610
+preplace netloc t4nfc_hlper_0_to_ecc_if 1 8 3 3600 3520 4140J 3510 4500
+preplace netloc gpic_0_sub_0_M02_AXI 1 4 6 1470 3480 NJ 3480 NJ 3480 NJ 3480 NJ 3480 3990
+preplace netloc bch_sccs_256B_21B_13b_0_bch_skes_if 1 9 1 4040 4220n
 preplace netloc gpic_0_sub_M00_AXI 1 11 1 5550 2350n
+preplace netloc t4nfc_hlper_3_ucode_if 1 5 6 1930J 4910 NJ 4910 NJ 4910 NJ 4910 3970J 5000 4590
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 7 1 3040 5120n
+preplace netloc gpic_0_sub_0_M04_AXI 1 4 6 1460 3490 NJ 3490 NJ 3490 NJ 3490 NJ 3490 3980
+preplace netloc bch_sccs_256B_21B_13b_1_from_ecc_if 1 4 1 1390 3590n
+preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 10 1 4520 4160n
+preplace netloc bch_sccs_256B_21B_13b_3_from_ecc_if 1 4 1 1350 4880n
+preplace netloc t4nfc_hlper_2_ucode_if 1 5 6 1910 4410 NJ 4410 NJ 4410 NJ 4410 4000J 4420 4510J
+preplace netloc pcie_ref_0_1 1 0 11 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ 5610 NJ
 preplace netloc t4nfc_hlper_0_v2nfc_if 1 10 1 4510 600n
+preplace netloc t4nfc_hlper_3_to_ecc_if 1 3 3 1100 5010 NJ 5010 1820
+preplace netloc v2nfc_0_nand_if 1 11 2 5550J 1410 6400J
+preplace netloc gpic_0_sub_0_M06_AXI 1 4 6 1450 3500 NJ 3500 NJ 3500 NJ 3500 NJ 3500 3970
+preplace netloc gpic_1_M00_AXI 1 10 1 4490 5070n
+preplace netloc t4nfc_hlper_1_v2nfc_if 1 5 6 1820 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ
+preplace netloc axi_interconnect_0_M00_AXI 1 8 1 3530 3640n
+preplace netloc t4nfc_hlper_0_nfch_data_if 1 5 6 2050 4390 NJ 4390 NJ 4390 NJ 4390 NJ 4390 4490
+preplace netloc S01_AXI_1 1 5 1 1990 3570n
+preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 10 1 4500 4300n
+preplace netloc gpic_0_M03_AXI 1 9 1 4030 3570n
+preplace netloc smartconnect_0_M00_AXI 1 6 1 2370 5170n
+preplace netloc bch_sccs_256B_21B_13b_3_bch_skes_if 1 4 6 1390 5000 2040J 4900 NJ 4900 NJ 4900 NJ 4900 NJ
+preplace netloc t4nfc_hlper_3_v2nfc_if 1 5 6 1860J 3510 NJ 3510 NJ 3510 NJ 3510 4010J 3500 4610
+preplace netloc gpic_0_M05_AXI 1 9 1 4110 3870n
+preplace netloc t4nfc_hlper_0_ucode_if 1 10 1 4610 3790n
+preplace netloc v2nfc_2_nand_if 1 11 2 NJ 3310 NJ
+preplace netloc t4nfc_hlper_2_v2nfc_if 1 5 6 1830J 3440 NJ 3440 NJ 3440 NJ 3440 NJ 3440 4520
 preplace netloc gpic_1_M01_AXI 1 10 1 4510 5360n
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 10 1 4590 3590n
+preplace netloc bch_sccs_256B_21B_13b_1_bch_skes_if 1 4 6 NJ 3950 1970J 4130 NJ 4130 NJ 4130 3520J 4310 4010
+preplace netloc t4nfc_hlper_2_to_ecc_if 1 3 3 1100 4630 NJ 4630 1820
+preplace netloc gpic_0_sub_M01_AXI 1 11 1 5410 700n
+preplace netloc t4nfc_hlper_1_to_ecc_if 1 3 3 1100 3820 NJ 3820 1820
+preplace netloc bch_sccs_256B_21B_13b_2_from_ecc_if 1 4 1 1410 4500n
+preplace netloc bch_sccs_256B_21B_13b_2_bch_skes_if 1 4 6 1370 4620 1880J 4360 NJ 4360 NJ 4360 NJ 4360 3990J
 levelinfo -pg 1 0 200 490 850 1230 1650 2230 2720 3280 3800 4340 5130 5830 6430
 pagesize -pg 1 -db -bbox -sgen -130 0 6570 5770
 "

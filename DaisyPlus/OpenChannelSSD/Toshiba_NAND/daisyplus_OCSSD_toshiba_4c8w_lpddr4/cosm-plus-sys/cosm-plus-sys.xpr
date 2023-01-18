@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="F:/tmp/daisyplus_OCSSD_toshiba_4c8w_20220719_lpddr4/cosm-plus-sys/cosm-plus-sys.xpr">
+<Project Version="7" Minor="40" Path="D:/sources/tmp/daisyplus_OCSSD_toshiba_4c8w_512b_lpddr4_20230117/cosm-plus-sys/cosm-plus-sys.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="27dd5bc80d6449b6b56f55e74c213e26"/>
@@ -169,14 +169,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/impl_1/new/constr.xdc">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Projects/Public/daisyplus_openssd_toshiba_19.1_lpddr4/cosm-plus-sys.srcs/impl_1/new/constr.xdc"/>
-          <Attr Name="ImportTime" Val="1650515924"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/impl_1/new/constr_nvme.xdc">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Projects/Public/daisyplus_openssd_toshiba_19.1_lpddr4/cosm-plus-sys.srcs/impl_1/new/constr_nvme.xdc"/>
@@ -189,6 +181,14 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Projects/Public/daisyplus_openssd_toshiba_19.1_lpddr4/cosm-plus-sys.srcs/impl_1/new/pinmap_nvme.xdc"/>
           <Attr Name="ImportTime" Val="1645926462"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/impl_1/new/constr.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../Projects/Public/daisyplus_openssd_toshiba_19.1_lpddr4/cosm-plus-sys.srcs/impl_1/new/constr.xdc"/>
+          <Attr Name="ImportTime" Val="1650515924"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

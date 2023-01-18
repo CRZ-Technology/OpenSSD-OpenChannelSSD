@@ -108,4 +108,6 @@
 
 #define DRAM_END_ADDR						0x7FFFFFFF
 
+#define DUMMY_RD_WR_ADDR                    (DRAM_END_ADDR + 1 - 0x4000) // Reserved for NVMe IP.
+
 #endif /* MEMORY_MAP_H_ */

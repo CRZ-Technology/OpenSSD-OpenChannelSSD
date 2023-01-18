@@ -137,6 +137,24 @@ proc validate_PARAM_VALUE.C_S0_AXI_HIGHADDR { PARAM_VALUE.C_S0_AXI_HIGHADDR } {
 	return true
 }
 
+proc update_PARAM_VALUE.P_SLOT_TAG_WIDTH { PARAM_VALUE.P_SLOT_TAG_WIDTH } {
+	# Procedure called to update P_SLOT_TAG_WIDTH when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.P_SLOT_TAG_WIDTH { PARAM_VALUE.P_SLOT_TAG_WIDTH } {
+	# Procedure called to validate P_SLOT_TAG_WIDTH
+	return true
+}
+
+proc update_PARAM_VALUE.P_SLOT_WIDTH { PARAM_VALUE.P_SLOT_WIDTH } {
+	# Procedure called to update P_SLOT_WIDTH when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.P_SLOT_WIDTH { PARAM_VALUE.P_SLOT_WIDTH } {
+	# Procedure called to validate P_SLOT_WIDTH
+	return true
+}
+
 
 proc update_MODELPARAM_VALUE.C_S0_AXI_ADDR_WIDTH { MODELPARAM_VALUE.C_S0_AXI_ADDR_WIDTH PARAM_VALUE.C_S0_AXI_ADDR_WIDTH } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
@@ -218,13 +236,13 @@ set_property value 0 ${MODELPARAM_VALUE.AXISTEN_IF_MC_RX_STRADDLE}
 proc update_MODELPARAM_VALUE.PL_LINK_CAP_MAX_LINK_SPEED { MODELPARAM_VALUE.PL_LINK_CAP_MAX_LINK_SPEED } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	# WARNING: There is no corresponding user parameter named "PL_LINK_CAP_MAX_LINK_SPEED". Setting updated value from the model parameter.
-set_property value 1 ${MODELPARAM_VALUE.PL_LINK_CAP_MAX_LINK_SPEED}
+set_property value 4 ${MODELPARAM_VALUE.PL_LINK_CAP_MAX_LINK_SPEED}
 }
 
 proc update_MODELPARAM_VALUE.KEEP_WIDTH { MODELPARAM_VALUE.KEEP_WIDTH } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	# WARNING: There is no corresponding user parameter named "KEEP_WIDTH". Setting updated value from the model parameter.
-set_property value 4 ${MODELPARAM_VALUE.KEEP_WIDTH}
+set_property value 16 ${MODELPARAM_VALUE.KEEP_WIDTH}
 }
 
 proc update_MODELPARAM_VALUE.EXT_PIPE_SIM { MODELPARAM_VALUE.EXT_PIPE_SIM } {
@@ -260,25 +278,25 @@ set_property value FALSE ${MODELPARAM_VALUE.AXISTEN_IF_RC_ALIGNMENT_MODE}
 proc update_MODELPARAM_VALUE.AXI4_CQ_TUSER_WIDTH { MODELPARAM_VALUE.AXI4_CQ_TUSER_WIDTH } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	# WARNING: There is no corresponding user parameter named "AXI4_CQ_TUSER_WIDTH". Setting updated value from the model parameter.
-set_property value 88 ${MODELPARAM_VALUE.AXI4_CQ_TUSER_WIDTH}
+set_property value 183 ${MODELPARAM_VALUE.AXI4_CQ_TUSER_WIDTH}
 }
 
 proc update_MODELPARAM_VALUE.AXI4_CC_TUSER_WIDTH { MODELPARAM_VALUE.AXI4_CC_TUSER_WIDTH } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	# WARNING: There is no corresponding user parameter named "AXI4_CC_TUSER_WIDTH". Setting updated value from the model parameter.
-set_property value 33 ${MODELPARAM_VALUE.AXI4_CC_TUSER_WIDTH}
+set_property value 81 ${MODELPARAM_VALUE.AXI4_CC_TUSER_WIDTH}
 }
 
 proc update_MODELPARAM_VALUE.AXI4_RQ_TUSER_WIDTH { MODELPARAM_VALUE.AXI4_RQ_TUSER_WIDTH } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	# WARNING: There is no corresponding user parameter named "AXI4_RQ_TUSER_WIDTH". Setting updated value from the model parameter.
-set_property value 62 ${MODELPARAM_VALUE.AXI4_RQ_TUSER_WIDTH}
+set_property value 137 ${MODELPARAM_VALUE.AXI4_RQ_TUSER_WIDTH}
 }
 
 proc update_MODELPARAM_VALUE.AXI4_RC_TUSER_WIDTH { MODELPARAM_VALUE.AXI4_RC_TUSER_WIDTH } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	# WARNING: There is no corresponding user parameter named "AXI4_RC_TUSER_WIDTH". Setting updated value from the model parameter.
-set_property value 75 ${MODELPARAM_VALUE.AXI4_RC_TUSER_WIDTH}
+set_property value 161 ${MODELPARAM_VALUE.AXI4_RC_TUSER_WIDTH}
 }
 
 proc update_MODELPARAM_VALUE.AXISTEN_IF_ENABLE_CLIENT_TAG { MODELPARAM_VALUE.AXISTEN_IF_ENABLE_CLIENT_TAG } {
@@ -333,5 +351,15 @@ proc update_MODELPARAM_VALUE.AXISTEN_IF_ENABLE_MSG_ROUTE { MODELPARAM_VALUE.AXIS
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	# WARNING: There is no corresponding user parameter named "AXISTEN_IF_ENABLE_MSG_ROUTE". Setting updated value from the model parameter.
 set_property value "101111111111111111" ${MODELPARAM_VALUE.AXISTEN_IF_ENABLE_MSG_ROUTE}
+}
+
+proc update_MODELPARAM_VALUE.P_SLOT_TAG_WIDTH { MODELPARAM_VALUE.P_SLOT_TAG_WIDTH PARAM_VALUE.P_SLOT_TAG_WIDTH } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.P_SLOT_TAG_WIDTH}] ${MODELPARAM_VALUE.P_SLOT_TAG_WIDTH}
+}
+
+proc update_MODELPARAM_VALUE.P_SLOT_WIDTH { MODELPARAM_VALUE.P_SLOT_WIDTH PARAM_VALUE.P_SLOT_WIDTH } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.P_SLOT_WIDTH}] ${MODELPARAM_VALUE.P_SLOT_WIDTH}
 }
 

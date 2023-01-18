@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -210,55 +210,55 @@ output wire user_clk;
 output wire user_reset;
 output wire user_lnk_up;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TDATA" *)
-input wire [127 : 0] s_axis_rq_tdata;
+input wire [511 : 0] s_axis_rq_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TKEEP" *)
-input wire [3 : 0] s_axis_rq_tkeep;
+input wire [15 : 0] s_axis_rq_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TLAST" *)
 input wire s_axis_rq_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TREADY" *)
 output wire [3 : 0] s_axis_rq_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TUSER" *)
-input wire [61 : 0] s_axis_rq_tuser;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_rq, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 62, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
+input wire [136 : 0] s_axis_rq_tuser;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_rq, TDATA_NUM_BYTES 64, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 137, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TVALID" *)
 input wire s_axis_rq_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TDATA" *)
-output wire [127 : 0] m_axis_rc_tdata;
+output wire [511 : 0] m_axis_rc_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TKEEP" *)
-output wire [3 : 0] m_axis_rc_tkeep;
+output wire [15 : 0] m_axis_rc_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TLAST" *)
 output wire m_axis_rc_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TREADY" *)
 input wire m_axis_rc_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TUSER" *)
-output wire [74 : 0] m_axis_rc_tuser;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_rc, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 75, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
+output wire [160 : 0] m_axis_rc_tuser;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_rc, TDATA_NUM_BYTES 64, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 161, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TVALID" *)
 output wire m_axis_rc_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TDATA" *)
-output wire [127 : 0] m_axis_cq_tdata;
+output wire [511 : 0] m_axis_cq_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TKEEP" *)
-output wire [3 : 0] m_axis_cq_tkeep;
+output wire [15 : 0] m_axis_cq_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TLAST" *)
 output wire m_axis_cq_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TREADY" *)
 input wire m_axis_cq_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TUSER" *)
-output wire [87 : 0] m_axis_cq_tuser;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_cq, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 88, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
+output wire [182 : 0] m_axis_cq_tuser;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_cq, TDATA_NUM_BYTES 64, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 183, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TVALID" *)
 output wire m_axis_cq_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TDATA" *)
-input wire [127 : 0] s_axis_cc_tdata;
+input wire [511 : 0] s_axis_cc_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TKEEP" *)
-input wire [3 : 0] s_axis_cc_tkeep;
+input wire [15 : 0] s_axis_cc_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TLAST" *)
 input wire s_axis_cc_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TREADY" *)
 output wire [3 : 0] s_axis_cc_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TUSER" *)
-input wire [32 : 0] s_axis_cc_tuser;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_cc, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 33, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
+input wire [80 : 0] s_axis_cc_tuser;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_cc, TDATA_NUM_BYTES 64, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 81, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TVALID" *)
 input wire s_axis_cc_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:display_pcie4:pcie4_cfg_status:1.0 pcie4_cfg_status rq_seq_num0" *)
@@ -477,19 +477,19 @@ input wire sys_reset;
 output wire phy_rdy_out;
 
   pcie4_uscale_plus_0_pcie4_uscale_core_top #(
-    .PL_LINK_CAP_MAX_LINK_SPEED(1),
+    .PL_LINK_CAP_MAX_LINK_SPEED(4),
     .PL_LINK_CAP_MAX_LINK_WIDTH(16),
-    .CRM_USER_CLK_FREQ(2),
-    .CRM_CORE_CLK_FREQ_500("FALSE"),
-    .PLL_TYPE(0),
+    .CRM_USER_CLK_FREQ(3),
+    .CRM_CORE_CLK_FREQ_500("TRUE"),
+    .PLL_TYPE(2),
     .PF0_LINK_CAP_ASPM_SUPPORT(0),
-    .AXI4_DATA_WIDTH(128),
+    .AXI4_DATA_WIDTH(512),
     .PHY_REFCLK_FREQ(0),
-    .AXI4_TKEEP_WIDTH(4),
-    .AXI4_RQ_TUSER_WIDTH(62),
-    .AXI4_CQ_TUSER_WIDTH(88),
-    .AXI4_RC_TUSER_WIDTH(75),
-    .AXI4_CC_TUSER_WIDTH(33),
+    .AXI4_TKEEP_WIDTH(16),
+    .AXI4_RQ_TUSER_WIDTH(137),
+    .AXI4_CQ_TUSER_WIDTH(183),
+    .AXI4_RC_TUSER_WIDTH(161),
+    .AXI4_CC_TUSER_WIDTH(81),
     .ARI_CAP_ENABLE("FALSE"),
     .PF0_ARI_CAP_NEXT_FUNC('H00),
     .PF1_ARI_CAP_NEXT_FUNC('H00),
@@ -503,12 +503,12 @@ output wire phy_rdy_out;
     .AXISTEN_IF_EXT_512_CC_STRADDLE("FALSE"),
     .AXISTEN_IF_EXT_512_RQ_STRADDLE("FALSE"),
     .AXISTEN_IF_EXT_512_RC_STRADDLE("FALSE"),
-    .AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE("FALSE"),
+    .AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE("TRUE"),
     .AXISTEN_IF_RC_STRADDLE("FALSE"),
     .PF0_AER_CAP_ECRC_GEN_AND_CHECK_CAPABLE("FALSE"),
-    .PF0_AER_CAP_NEXTPTR('H000),
-    .PF0_ARI_CAP_NEXTPTR('H000),
-    .PF0_BAR0_APERTURE_SIZE('H00A),
+    .PF0_AER_CAP_NEXTPTR('H1C0),
+    .PF0_ARI_CAP_NEXTPTR('H1C0),
+    .PF0_BAR0_APERTURE_SIZE('H006),
     .PF0_BAR0_CONTROL('H4),
     .PF0_BAR1_APERTURE_SIZE('H000),
     .PF0_BAR1_CONTROL('H0),
@@ -521,19 +521,19 @@ output wire phy_rdy_out;
     .PF0_BAR5_APERTURE_SIZE('H000),
     .PF0_BAR5_CONTROL('H0),
     .PF0_CAPABILITY_POINTER('H40),
-    .PF0_CLASS_CODE('H018000),
+    .PF0_CLASS_CODE('H010802),
     .PF0_VENDOR_ID('H10EE),
-    .PF0_DEVICE_ID('H901F),
+    .PF0_DEVICE_ID('H903F),
     .PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT("FALSE"),
     .PF0_DEV_CAP2_32B_ATOMIC_COMPLETER_SUPPORT("FALSE"),
     .PF0_DEV_CAP2_64B_ATOMIC_COMPLETER_SUPPORT("FALSE"),
     .PF0_DEV_CAP2_TPH_COMPLETER_SUPPORT("FALSE"),
     .PF0_DEV_CAP_EXT_TAG_SUPPORTED("TRUE"),
     .PF0_DEV_CAP_FUNCTION_LEVEL_RESET_CAPABLE("FALSE"),
-    .PF0_DEV_CAP_MAX_PAYLOAD_SIZE('H2),
+    .PF0_DEV_CAP_MAX_PAYLOAD_SIZE('H3),
     .DSN_CAP_ENABLE("FALSE"),
     .PF0_VC_CAP_ENABLE("FALSE"),
-    .PF0_DSN_CAP_NEXTPTR('H000),
+    .PF0_DSN_CAP_NEXTPTR('H1C0),
     .PF0_EXPANSION_ROM_APERTURE_SIZE('H000),
     .PF0_EXPANSION_ROM_ENABLE("FALSE"),
     .PF0_INTERRUPT_PIN('H1),
@@ -544,7 +544,7 @@ output wire phy_rdy_out;
     .PF0_MSIX_CAP_TABLE_BIR(0),
     .PF0_MSIX_CAP_TABLE_OFFSET('H00000000),
     .PF0_MSIX_CAP_TABLE_SIZE('H000),
-    .PF0_MSI_CAP_MULTIMSGCAP(0),
+    .PF0_MSI_CAP_MULTIMSGCAP(3),
     .PF0_MSI_CAP_NEXTPTR('H70),
     .PF0_PM_CAP_NEXTPTR('H48),
     .PF0_PM_CAP_PMESUPPORT_D0("FALSE"),
@@ -591,7 +591,7 @@ output wire phy_rdy_out;
     .SPARE_WORD1('H00000000),
     .PF1_AER_CAP_NEXTPTR('H000),
     .PF1_ARI_CAP_NEXTPTR('H000),
-    .PF1_BAR0_APERTURE_SIZE('H00A),
+    .PF1_BAR0_APERTURE_SIZE('H006),
     .PF1_BAR0_CONTROL('H4),
     .PF1_BAR1_APERTURE_SIZE('H000),
     .PF1_BAR1_CONTROL('H0),
@@ -606,7 +606,7 @@ output wire phy_rdy_out;
     .PF1_CAPABILITY_POINTER('H40),
     .PF1_CLASS_CODE('H058000),
     .PF1_DEVICE_ID('H9011),
-    .PF1_DEV_CAP_MAX_PAYLOAD_SIZE('H2),
+    .PF1_DEV_CAP_MAX_PAYLOAD_SIZE('H3),
     .PF1_DSN_CAP_NEXTPTR('H000),
     .PF1_EXPANSION_ROM_APERTURE_SIZE('H000),
     .PF1_EXPANSION_ROM_ENABLE("FALSE"),
@@ -645,7 +645,7 @@ output wire phy_rdy_out;
     .PF1_TPHR_CAP_NEXTPTR('H000),
     .PF2_AER_CAP_NEXTPTR('H000),
     .PF2_ARI_CAP_NEXTPTR('H000),
-    .PF2_BAR0_APERTURE_SIZE('H00A),
+    .PF2_BAR0_APERTURE_SIZE('H006),
     .PF2_BAR0_CONTROL('H4),
     .PF2_BAR1_APERTURE_SIZE('H000),
     .PF2_BAR1_CONTROL('H0),
@@ -659,8 +659,8 @@ output wire phy_rdy_out;
     .PF2_BAR5_CONTROL('H0),
     .PF2_CAPABILITY_POINTER('H40),
     .PF2_CLASS_CODE('H058000),
-    .PF2_DEVICE_ID('H941F),
-    .PF2_DEV_CAP_MAX_PAYLOAD_SIZE('H2),
+    .PF2_DEVICE_ID('H943F),
+    .PF2_DEV_CAP_MAX_PAYLOAD_SIZE('H3),
     .PF2_DSN_CAP_NEXTPTR('H000),
     .PF2_EXPANSION_ROM_APERTURE_SIZE('H000),
     .PF2_EXPANSION_ROM_ENABLE("FALSE"),
@@ -699,7 +699,7 @@ output wire phy_rdy_out;
     .PF2_TPHR_CAP_NEXTPTR('H000),
     .PF3_AER_CAP_NEXTPTR('H000),
     .PF3_ARI_CAP_NEXTPTR('H000),
-    .PF3_BAR0_APERTURE_SIZE('H00A),
+    .PF3_BAR0_APERTURE_SIZE('H006),
     .PF3_BAR0_CONTROL('H4),
     .PF3_BAR1_APERTURE_SIZE('H000),
     .PF3_BAR1_CONTROL('H0),
@@ -713,8 +713,8 @@ output wire phy_rdy_out;
     .PF3_BAR5_CONTROL('H0),
     .PF3_CAPABILITY_POINTER('H40),
     .PF3_CLASS_CODE('H058000),
-    .PF3_DEVICE_ID('H961F),
-    .PF3_DEV_CAP_MAX_PAYLOAD_SIZE('H2),
+    .PF3_DEVICE_ID('H963F),
+    .PF3_DEV_CAP_MAX_PAYLOAD_SIZE('H3),
     .PF3_DSN_CAP_NEXTPTR('H000),
     .PF3_EXPANSION_ROM_APERTURE_SIZE('H000),
     .PF3_EXPANSION_ROM_ENABLE("FALSE"),
@@ -1100,10 +1100,10 @@ output wire phy_rdy_out;
     .cfg_ds_device_number(cfg_ds_device_number),
     .cfg_ds_function_number(3'B0),
     .cfg_subsys_vend_id(16'H10EE),
-    .cfg_dev_id_pf0(16'H901F),
+    .cfg_dev_id_pf0(16'H903F),
     .cfg_dev_id_pf1(16'H9011),
-    .cfg_dev_id_pf2(16'H941F),
-    .cfg_dev_id_pf3(16'H961F),
+    .cfg_dev_id_pf2(16'H943F),
+    .cfg_dev_id_pf3(16'H963F),
     .cfg_vend_id(16'H10EE),
     .cfg_rev_id_pf0(8'H00),
     .cfg_rev_id_pf1(8'H00),
