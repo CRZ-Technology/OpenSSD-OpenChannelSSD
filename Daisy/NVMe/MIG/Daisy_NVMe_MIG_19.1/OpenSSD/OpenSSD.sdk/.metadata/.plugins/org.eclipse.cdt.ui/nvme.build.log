@@ -1,0 +1,7 @@
+10:14:12 **** Clean-only build of configuration Debug for project nvme ****
+make clean 
+rm -rf  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o  ./src/nvme/debug.d ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d  ./src/main.d  nvme.elf.size  nvme.elf
+' '
+
+10:14:13 Build Finished (took 738ms)
+
