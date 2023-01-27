@@ -1,0 +1,55 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port pci_exp_0 -pg 1 -lvl 6 -x 2060 -y 1060 -defaultsOSRD
+preplace port pcie_ref -pg 1 -lvl 0 -x 0 -y 1030 -defaultsOSRD
+preplace port ddr4_rtl_0 -pg 1 -lvl 6 -x 2060 -y 720 -defaultsOSRD
+preplace port diff_clock_rtl_2 -pg 1 -lvl 0 -x 0 -y 820 -defaultsOSRD
+preplace port user_lnk_up_0 -pg 1 -lvl 6 -x 2060 -y 1100 -defaultsOSRD
+preplace port pcie_perst_n -pg 1 -lvl 0 -x 0 -y 1130 -defaultsOSRD
+preplace port c0_init_calib_complete_0 -pg 1 -lvl 6 -x 2060 -y 750 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 4 -x 1490 -y 610 -defaultsOSRD
+preplace inst rst_ps8_0_187M -pg 1 -lvl 3 -x 1000 -y 310 -defaultsOSRD
+preplace inst rst_ps8_0_249M -pg 1 -lvl 1 -x 200 -y 720 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 540 -y 880 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 3 -x 1000 -y 560 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 2 -x 540 -y 710 -defaultsOSRD
+preplace inst ddr4_0 -pg 1 -lvl 5 -x 1840 -y 780 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 1000 -y 110 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 540 -y 90 -defaultsOSRD
+preplace inst nvme_ctrl_0 -pg 1 -lvl 5 -x 1840 -y 1070 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk2 1 2 3 690 410 1320 1050 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_clk3 1 0 5 20 610 370 610 710 700 1310 1090 NJ
+preplace netloc nvme_ctrl_0_dev_irq_assert 1 1 5 400 1190 NJ 1190 NJ 1190 NJ 1190 2020
+preplace netloc xlconcat_0_dout 1 2 1 700J 590n
+preplace netloc nvme_ctrl_0_user_lnk_up 1 5 1 NJ 1100
+preplace netloc rst_ps8_0_187M_peripheral_aresetn 1 3 2 1330 1070 NJ
+preplace netloc rst_ps8_0_249M_peripheral_aresetn 1 1 4 380 940 NJ 940 1340 1110 NJ
+preplace netloc pcie_perst_n_0_1 1 0 5 NJ 1130 NJ 1130 NJ 1130 NJ 1130 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_resetn2 1 2 2 710 420 1290
+preplace netloc zynq_ultra_ps_e_0_pl_resetn3 1 0 4 30 620 NJ 620 690J 710 1290
+preplace netloc ddr4_0_c0_init_calib_complete 1 5 1 2040J 740n
+preplace netloc rst_ps8_0_249M_peripheral_reset 1 1 4 370 810 NJ 810 NJ 810 1640J
+preplace netloc ddr4_0_c0_ddr4_ui_clk 1 2 4 710 210 1340 420 NJ 420 2020
+preplace netloc ddr4_0_c0_ddr4_ui_clk_sync_rst 1 1 5 370 10 NJ 10 NJ 10 NJ 10 2030
+preplace netloc util_vector_logic_0_Res 1 2 1 NJ 90
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 2 1350 800 NJ
+preplace netloc ps8_0_axi_periph_M00_AXI 1 4 1 1650 590n
+preplace netloc ddr4_0_C0_DDR4 1 5 1 NJ 720
+preplace netloc nvme_ctrl_0_pci_exp 1 5 1 NJ 1060
+preplace netloc smartconnect_0_M00_AXI 1 2 1 680 530n
+preplace netloc nvme_ctrl_0_m0_axi 1 1 5 390 950 NJ 950 NJ 950 NJ 950 2020
+preplace netloc ps8_0_axi_periph_M02_AXI 1 4 1 1640 630n
+preplace netloc ps8_0_axi_periph_M01_AXI 1 4 1 1660 610n
+preplace netloc C0_SYS_CLK_0_1 1 0 5 NJ 820 NJ 820 NJ 820 NJ 820 1630J
+preplace netloc pcie_ref_0_1 1 0 5 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 3 1 N 480
+preplace netloc smartconnect_0_M01_AXI 1 2 2 NJ 720 1300
+levelinfo -pg 1 0 200 540 1000 1490 1840 2060
+pagesize -pg 1 -db -bbox -sgen -150 0 2270 1200
+"
+}
+{
+   "da_axi4_cnt":"2"
+}
