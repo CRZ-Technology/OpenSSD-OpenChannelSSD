@@ -1,0 +1,21 @@
+15:28:19 **** Build of configuration Debug for project nvme_m2_bsp_xgpio_tapp_example_1 ****
+make all 
+'Building file: ../src/xgpio_tapp_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_tapp_example.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xgpio_tapp_example.d" -MT"src/xgpio_tapp_example.o" -o "src/xgpio_tapp_example.o" "../src/xgpio_tapp_example.c"
+'Finished building: ../src/xgpio_tapp_example.c'
+' '
+'Building target: nvme_m2_bsp_xgpio_tapp_example_1.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2_bsp_xgpio_tapp_example_1.elf"  ./src/xgpio_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2_bsp_xgpio_tapp_example_1.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2_bsp_xgpio_tapp_example_1.elf  |tee "nvme_m2_bsp_xgpio_tapp_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35756	   2528	  20712	  58996	   e674	nvme_m2_bsp_xgpio_tapp_example_1.elf
+'Finished building: nvme_m2_bsp_xgpio_tapp_example_1.elf.size'
+' '
+
+15:28:22 Build Finished (took 2s.221ms)
+

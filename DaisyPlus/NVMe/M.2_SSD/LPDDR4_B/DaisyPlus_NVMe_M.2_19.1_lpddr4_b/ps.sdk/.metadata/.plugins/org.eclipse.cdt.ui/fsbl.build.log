@@ -1,0 +1,192 @@
+17:58:29 **** Auto Build of configuration Debug for project fsbl ****
+make all 
+'Building file: C:/Xilinx/Daisy/PCIe_RP4/NVMe_M2/2019.1/PS_LPDDR4/ps.sdk/design_1_wrapper_hw_platform_0/psu_init.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/psu_init.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/psu_init.d" -MT"src/psu_init.o" -o "src/psu_init.o" "C:/Xilinx/Daisy/PCIe_RP4/NVMe_M2/2019.1/PS_LPDDR4/ps.sdk/design_1_wrapper_hw_platform_0/psu_init.c"
+C:/Xilinx/Daisy/PCIe_RP4/NVMe_M2/2019.1/PS_LPDDR4/ps.sdk/design_1_wrapper_hw_platform_0/psu_init.c: In function 'psu_ddr_phybringup_data':
+C:/Xilinx/Daisy/PCIe_RP4/NVMe_M2/2019.1/PS_LPDDR4/ps.sdk/design_1_wrapper_hw_platform_0/psu_init.c:18144:15: warning: unused variable 'tmp_regval' [-Wunused-variable]
+  unsigned int tmp_regval = 0;
+               ^~~~~~~~~~
+At top level:
+C:/Xilinx/Daisy/PCIe_RP4/NVMe_M2/2019.1/PS_LPDDR4/ps.sdk/design_1_wrapper_hw_platform_0/psu_init.c:18452:12: warning: 'mask_read' defined but not used [-Wunused-function]
+ static u32 mask_read(u32 add, u32 mask)
+            ^~~~~~~~~
+'Finished building: C:/Xilinx/Daisy/PCIe_RP4/NVMe_M2/2019.1/PS_LPDDR4/ps.sdk/design_1_wrapper_hw_platform_0/psu_init.c'
+' '
+'Building file: ../src/xfsbl_authentication.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_authentication.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_authentication.d" -MT"src/xfsbl_authentication.o" -o "src/xfsbl_authentication.o" "../src/xfsbl_authentication.c"
+In file included from ../src/xfsbl_main.h:63,
+                 from ../src/xfsbl_bs.h:61,
+                 from ../src/xfsbl_authentication.c:63:
+../../fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_authentication.c'
+' '
+'Building file: ../src/xfsbl_board.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_board.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_board.d" -MT"src/xfsbl_board.o" -o "src/xfsbl_board.o" "../src/xfsbl_board.c"
+'Finished building: ../src/xfsbl_board.c'
+' '
+'Building file: ../src/xfsbl_bs.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_bs.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_bs.d" -MT"src/xfsbl_bs.o" -o "src/xfsbl_bs.o" "../src/xfsbl_bs.c"
+In file included from ../src/xfsbl_main.h:63,
+                 from ../src/xfsbl_bs.h:61,
+                 from ../src/xfsbl_bs.c:55:
+../../fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_bs.c'
+' '
+'Building file: ../src/xfsbl_csu_dma.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_csu_dma.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_csu_dma.d" -MT"src/xfsbl_csu_dma.o" -o "src/xfsbl_csu_dma.o" "../src/xfsbl_csu_dma.c"
+'Finished building: ../src/xfsbl_csu_dma.c'
+' '
+'Building file: ../src/xfsbl_ddr_init.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_ddr_init.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_ddr_init.d" -MT"src/xfsbl_ddr_init.o" -o "src/xfsbl_ddr_init.o" "../src/xfsbl_ddr_init.c"
+'Finished building: ../src/xfsbl_ddr_init.c'
+' '
+'Building file: ../src/xfsbl_dfu_util.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_dfu_util.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_dfu_util.d" -MT"src/xfsbl_dfu_util.o" -o "src/xfsbl_dfu_util.o" "../src/xfsbl_dfu_util.c"
+'Finished building: ../src/xfsbl_dfu_util.c'
+' '
+'Building file: ../src/xfsbl_handoff.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_handoff.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_handoff.d" -MT"src/xfsbl_handoff.o" -o "src/xfsbl_handoff.o" "../src/xfsbl_handoff.c"
+In file included from ../src/xfsbl_main.h:63,
+                 from ../src/xfsbl_handoff.c:59:
+../../fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_handoff.c'
+' '
+'Building file: ../src/xfsbl_hooks.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_hooks.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_hooks.d" -MT"src/xfsbl_hooks.o" -o "src/xfsbl_hooks.o" "../src/xfsbl_hooks.c"
+'Finished building: ../src/xfsbl_hooks.c'
+' '
+'Building file: ../src/xfsbl_image_header.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_image_header.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_image_header.d" -MT"src/xfsbl_image_header.o" -o "src/xfsbl_image_header.o" "../src/xfsbl_image_header.c"
+'Finished building: ../src/xfsbl_image_header.c'
+' '
+'Building file: ../src/xfsbl_initialization.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_initialization.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_initialization.d" -MT"src/xfsbl_initialization.o" -o "src/xfsbl_initialization.o" "../src/xfsbl_initialization.c"
+In file included from ../src/xfsbl_main.h:63,
+                 from ../src/xfsbl_initialization.c:69:
+../../fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_initialization.c'
+' '
+'Building file: ../src/xfsbl_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_main.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_main.d" -MT"src/xfsbl_main.o" -o "src/xfsbl_main.o" "../src/xfsbl_main.c"
+In file included from ../src/xfsbl_main.h:63,
+                 from ../src/xfsbl_main.c:54:
+../../fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_main.c'
+' '
+'Building file: ../src/xfsbl_misc.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_misc.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_misc.d" -MT"src/xfsbl_misc.o" -o "src/xfsbl_misc.o" "../src/xfsbl_misc.c"
+In file included from ../src/xfsbl_main.h:63,
+                 from ../src/xfsbl_misc.c:53:
+../../fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_misc.c'
+' '
+'Building file: ../src/xfsbl_misc_drivers.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_misc_drivers.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_misc_drivers.d" -MT"src/xfsbl_misc_drivers.o" -o "src/xfsbl_misc_drivers.o" "../src/xfsbl_misc_drivers.c"
+'Finished building: ../src/xfsbl_misc_drivers.c'
+' '
+'Building file: ../src/xfsbl_nand.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_nand.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_nand.d" -MT"src/xfsbl_nand.o" -o "src/xfsbl_nand.o" "../src/xfsbl_nand.c"
+'Finished building: ../src/xfsbl_nand.c'
+' '
+'Building file: ../src/xfsbl_partition_load.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_partition_load.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_partition_load.d" -MT"src/xfsbl_partition_load.o" -o "src/xfsbl_partition_load.o" "../src/xfsbl_partition_load.c"
+In file included from ../src/xfsbl_main.h:63,
+                 from ../src/xfsbl_partition_load.c:70:
+../../fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_partition_load.c'
+' '
+'Building file: ../src/xfsbl_plpartition_valid.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_plpartition_valid.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_plpartition_valid.d" -MT"src/xfsbl_plpartition_valid.o" -o "src/xfsbl_plpartition_valid.o" "../src/xfsbl_plpartition_valid.c"
+In file included from ../src/xfsbl_main.h:63,
+                 from ../src/xfsbl_authentication.h:64,
+                 from ../src/xfsbl_plpartition_valid.h:58,
+                 from ../src/xfsbl_plpartition_valid.c:73:
+../../fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_plpartition_valid.c'
+' '
+'Building file: ../src/xfsbl_qspi.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_qspi.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_qspi.d" -MT"src/xfsbl_qspi.o" -o "src/xfsbl_qspi.o" "../src/xfsbl_qspi.c"
+'Finished building: ../src/xfsbl_qspi.c'
+' '
+'Building file: ../src/xfsbl_rsa_sha.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_rsa_sha.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_rsa_sha.d" -MT"src/xfsbl_rsa_sha.o" -o "src/xfsbl_rsa_sha.o" "../src/xfsbl_rsa_sha.c"
+In file included from ../src/xfsbl_main.h:63,
+                 from ../src/xfsbl_authentication.h:64,
+                 from ../src/xfsbl_rsa_sha.c:54:
+../../fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_rsa_sha.c'
+' '
+'Building file: ../src/xfsbl_sd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_sd.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_sd.d" -MT"src/xfsbl_sd.o" -o "src/xfsbl_sd.o" "../src/xfsbl_sd.c"
+In file included from ../src/xfsbl_main.h:63,
+                 from ../src/xfsbl_sd.c:51:
+../../fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_sd.c'
+' '
+'Building file: ../src/xfsbl_translation_table.S'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_translation_table.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_translation_table.d" -MT"src/xfsbl_translation_table.o" -o "src/xfsbl_translation_table.o" "../src/xfsbl_translation_table.S"
+../src/xfsbl_translation_table.S:107:2: warning: #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined" [-Wcpp]
+ #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined"
+  ^~~~~~~
+'Finished building: ../src/xfsbl_translation_table.S'
+' '
+'Building file: ../src/xfsbl_usb.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\Xilinx\Daisy\PCIe_RP4\NVMe_M2\2019.1\PS_LPDDR4\ps.sdk\design_1_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_usb.o" -I../../fsbl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_usb.d" -MT"src/xfsbl_usb.o" -o "src/xfsbl_usb.o" "../src/xfsbl_usb.c"
+'Finished building: ../src/xfsbl_usb.c'
+' '
+'Building target: fsbl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/psu_cortexa53_0/lib -o "fsbl.elf"  ./src/psu_init.o ./src/xfsbl_authentication.o ./src/xfsbl_board.o ./src/xfsbl_bs.o ./src/xfsbl_csu_dma.o ./src/xfsbl_ddr_init.o ./src/xfsbl_dfu_util.o ./src/xfsbl_exit.o ./src/xfsbl_handoff.o ./src/xfsbl_hooks.o ./src/xfsbl_image_header.o ./src/xfsbl_initialization.o ./src/xfsbl_main.o ./src/xfsbl_misc.o ./src/xfsbl_misc_drivers.o ./src/xfsbl_nand.o ./src/xfsbl_partition_load.o ./src/xfsbl_plpartition_valid.o ./src/xfsbl_qspi.o ./src/xfsbl_rsa_sha.o ./src/xfsbl_sd.o ./src/xfsbl_translation_table.o ./src/xfsbl_usb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -n
+'Finished building target: fsbl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size fsbl.elf  |tee "fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 130868	   5120	  87672	 223660	  369ac	fsbl.elf
+'Finished building: fsbl.elf.size'
+' '
+
+17:58:41 Build Finished (took 12s.366ms)
+
