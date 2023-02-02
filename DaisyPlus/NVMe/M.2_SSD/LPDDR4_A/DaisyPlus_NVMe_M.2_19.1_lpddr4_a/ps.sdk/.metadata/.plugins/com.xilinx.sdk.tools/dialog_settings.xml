@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="design_1_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="qspi-x8-dual_parallel" key="design_1_wrapper_hw_platform_0-flashType"/>
+	<item value="Local" key="design_1_wrapper_hw_platform_0-target"/>
+	<item value="Y:\project\daisy_20191\project-spec\image\QSPI_image\BOOT.BIN" key="design_1_wrapper_hw_platform_0-imgFile"/>
+	<item value="true" key="design_1_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="Auto Detect" key="design_1_wrapper_hw_platform_0-device"/>
+	<item value="true" key="design_1_wrapper_hw_platform_0-blankCheck"/>
+	<item value="C:\Xilinx\Daisy\PS\ps\ps.sdk\fsbl\Debug\fsbl.elf" key="design_1_wrapper_hw_platform_0-fsblFile"/>
+	<item value="0" key="design_1_wrapper_hw_platform_0-offSet"/>
+</section>

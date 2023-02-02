@@ -32,12 +32,14 @@ DaisyPlus Directory
 
           - DOC - documents about DaisyPlus
 
-          - NVMe - LPDDR4 - LPDDR4_A - NVMe source on DaisyPlus board(LPDDR4_A), PS LPDDR4 DRAM is used for NVMe storage(1GB).
-                          - LPDDR4_B - NVMe source on DaisyPlus board(LPDDR4_B), PS LPDDR4 DRAM is used for NVMe storage(1GB).
-                 - MIG    - LPDDR4_A - SI5391B - NVMe source on DaisyPlus board(LPDDR4_A & SI5391B), MIG DDR4 DIMM is used for NVMe storage(64GB).
-                                     - SI5395P - NVMe source on DaisyPlus board(LPDDR4_A & SI5395P), MIG DDR4 DIMM is used for NVMe storage(64GB).
-                          - LPDDR4_B - SI5391B - NVMe source on DaisyPlus board(LPDDR4_B & SI5391B), MIG DDR4 DIMM is used for NVMe storage(64GB).
-                                     - SI5395P - NVMe source on DaisyPlus board(LPDDR4_B & SI5395P), MIG DDR4 DIMM is used for NVMe storage(64GB).
+          - NVMe - LPDDR4  - LPDDR4_A - NVMe source on DaisyPlus board(LPDDR4_A), PS LPDDR4 DRAM is used for NVMe storage(1GB).
+                           - LPDDR4_B - NVMe source on DaisyPlus board(LPDDR4_B), PS LPDDR4 DRAM is used for NVMe storage(1GB).
+                 - MIG     - LPDDR4_A - SI5391B - NVMe source on DaisyPlus board(LPDDR4_A & SI5391B), MIG DDR4 DIMM is used for NVMe storage(64GB).
+                                      - SI5395P - NVMe source on DaisyPlus board(LPDDR4_A & SI5395P), MIG DDR4 DIMM is used for NVMe storage(64GB).
+                           - LPDDR4_B - SI5391B - NVMe source on DaisyPlus board(LPDDR4_B & SI5391B), MIG DDR4 DIMM is used for NVMe storage(64GB).
+                                      - SI5395P - NVMe source on DaisyPlus board(LPDDR4_B & SI5395P), MIG DDR4 DIMM is used for NVMe storage(64GB).
+                 - M.2 SSD - LPDDR4_A - NVMe source on DaisyPlus board(LPDDR4_A), two M.2 SSDs are used for NVMe storage.
+                           - LPDDR4_B - NVMe source on DaisyPlus board(LPDDR4_B), two M.2 SSDs are used for NVMe storage.
 
           - M.2_MIG_PCIe - LPDDR4_A - SI5391B - M.2 / MIG / PCIe test project on DaisyPlus board(LPDDR4_A)      
                                     - SI5395P - M.2 / MIG / PCIe test project on DaisyPlus board(LPDDR4_A)
