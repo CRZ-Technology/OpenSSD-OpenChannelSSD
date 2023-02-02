@@ -1,0 +1,428 @@
+20:57:56 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+In file included from ../src/nvme/nvme_main.c:60:
+../src/nvme/nvme_main.c: In function 'nvme_main':
+../../nvme_m2_bsp/psu_cortexa53_0/include/xstatus.h:61:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^~
+../src/nvme/nvme_main.c:84:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/nvme/nvme_main.c:76:6: note: declared here
+ void nvme_main()
+      ^~~~~~~~~
+../src/nvme/nvme_main.c:94:9: error: 'unsinged' undeclared (first use in this function)
+         unsinged int total_lba = nvme_storage[0], nlb = 0;
+         ^~~~~~~~
+../src/nvme/nvme_main.c:94:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/nvme/nvme_main.c:94:17: error: expected ';' before 'int'
+         unsinged int total_lba = nvme_storage[0], nlb = 0;
+                 ^~~~
+                 ;
+../src/nvme/nvme_main.c:95:17: error: expected ';' before 'int'
+         unsinged int startLba = 0, seed = 0, i = 0, j = 0, devAddr = DATA_BUFFER_BASE_ADDR;
+                 ^~~~
+                 ;
+../src/nvme/nvme_main.c:98:15: error: 'total_lba' undeclared (first use in this function)
+         while(total_lba)
+               ^~~~~~~~~
+../src/nvme/nvme_main.c:102:17: error: 'nlb' undeclared (first use in this function)
+                 nlb = MAX_NLB;
+                 ^~~
+../src/nvme/nvme_main.c:111:17: error: 'i' undeclared (first use in this function)
+             for(i = 0; i < MAX_NLB * 4 * 1024 / sizeof(unsigned long long); i++)
+                 ^
+../src/nvme/nvme_main.c:113:26: error: 'seed' undeclared (first use in this function)
+                 *ptr++ = seed++;
+                          ^~~~
+../src/nvme/nvme_main.c:116:27: error: 'startLba' undeclared (first use in this function); did you mean 'strtok'?
+             write_nvme(0, startLba, devAddr, nlb);
+                           ^~~~~~~~
+                           strtok
+../src/nvme/nvme_main.c:116:37: error: 'devAddr' undeclared (first use in this function)
+             write_nvme(0, startLba, devAddr, nlb);
+                                     ^~~~~~~
+../src/nvme/nvme_main.c:121:18: error: 'j' undeclared (first use in this function)
+             if(++j % 2048 == 0)
+                  ^
+../src/nvme/nvme_main.c:130:17: error: expected ';' before 'while'
+         seed = 0
+                 ^
+                 ;
+         while(total_lba)
+         ~~~~~    
+../src/nvme/nvme_main.c:168:17: error: expected ';' before 'while'
+         seed = 0
+                 ^
+                 ;
+../src/nvme/nvme_main.c:170:9:
+         while(total_lba)
+         ~~~~~    
+../src/nvme/nvme_main.c:202:17: error: expected ';' before 'while'
+         seed = 0
+                 ^
+                 ;
+         while(total_lba)
+         ~~~~~    
+make: *** [src/nvme/subdir.mk:38: src/nvme/nvme_main.o] Error 1
+20:58:15 **** Auto Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+In file included from ../src/nvme/nvme_main.c:60:
+../src/nvme/nvme_main.c: In function 'nvme_main':
+../../nvme_m2_bsp/psu_cortexa53_0/include/xstatus.h:61:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^~
+../src/nvme/nvme_main.c:84:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/nvme/nvme_main.c:76:6: note: declared here
+ void nvme_main()
+      ^~~~~~~~~
+../src/nvme/nvme_main.c:130:17: error: expected ';' before 'while'
+         seed = 0
+                 ^
+                 ;
+         while(total_lba)
+         ~~~~~    
+../src/nvme/nvme_main.c:168:17: error: expected ';' before 'while'
+         seed = 0
+                 ^
+                 ;
+../src/nvme/nvme_main.c:170:9:
+         while(total_lba)
+         ~~~~~    
+../src/nvme/nvme_main.c:202:17: error: expected ';' before 'while'
+         seed = 0
+                 ^
+                 ;
+         while(total_lba)
+         ~~~~~    
+make: *** [src/nvme/subdir.mk:38: src/nvme/nvme_main.o] Error 1
+20:58:34 **** Auto Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+In file included from ../src/nvme/nvme_main.c:60:
+../src/nvme/nvme_main.c: In function 'nvme_main':
+../../nvme_m2_bsp/psu_cortexa53_0/include/xstatus.h:61:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^~
+../src/nvme/nvme_main.c:84:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/nvme/nvme_main.c:76:6: note: declared here
+ void nvme_main()
+      ^~~~~~~~~
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building target: nvme_m2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2.elf"  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2.elf  |tee "nvme_m2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120536	   8624	 267120	 396280	  60bf8	nvme_m2.elf
+'Finished building: nvme_m2.elf.size'
+' '
+20:58:40 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+make: Nothing to be done for 'all'.
+21:00:19 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+In file included from ../src/nvme/nvme_main.c:60:
+../src/nvme/nvme_main.c: In function 'nvme_main':
+../../nvme_m2_bsp/psu_cortexa53_0/include/xstatus.h:61:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^~
+../src/nvme/nvme_main.c:84:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/nvme/nvme_main.c:76:6: note: declared here
+ void nvme_main()
+      ^~~~~~~~~
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building target: nvme_m2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2.elf"  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2.elf  |tee "nvme_m2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120536	   8624	 267120	 396280	  60bf8	nvme_m2.elf
+'Finished building: nvme_m2.elf.size'
+' '
+21:06:11 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+In file included from ../src/nvme/nvme_main.c:60:
+../src/nvme/nvme_main.c: In function 'nvme_main':
+../../nvme_m2_bsp/psu_cortexa53_0/include/xstatus.h:61:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^~
+../src/nvme/nvme_main.c:84:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/nvme/nvme_main.c:76:6: note: declared here
+ void nvme_main()
+      ^~~~~~~~~
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building target: nvme_m2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2.elf"  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2.elf  |tee "nvme_m2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120536	   8624	 267120	 396280	  60bf8	nvme_m2.elf
+'Finished building: nvme_m2.elf.size'
+' '
+21:08:23 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+In file included from ../src/nvme/nvme_main.c:60:
+../src/nvme/nvme_main.c: In function 'nvme_main':
+../../nvme_m2_bsp/psu_cortexa53_0/include/xstatus.h:61:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^~
+../src/nvme/nvme_main.c:84:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/nvme/nvme_main.c:76:6: note: declared here
+ void nvme_main()
+      ^~~~~~~~~
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building target: nvme_m2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2.elf"  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2.elf  |tee "nvme_m2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120536	   8624	 267120	 396280	  60bf8	nvme_m2.elf
+'Finished building: nvme_m2.elf.size'
+' '
+21:54:09 **** Auto Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme_rp/drivers/nvme/nvme.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme_rp/drivers/nvme/nvme.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme_rp/drivers/nvme/nvme.d" -MT"src/nvme_rp/drivers/nvme/nvme.o" -o "src/nvme_rp/drivers/nvme/nvme.o" "../src/nvme_rp/drivers/nvme/nvme.c"
+'Finished building: ../src/nvme_rp/drivers/nvme/nvme.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+In file included from ../src/nvme/nvme_main.c:60:
+../src/nvme/nvme_main.c: In function 'nvme_main':
+../../nvme_m2_bsp/psu_cortexa53_0/include/xstatus.h:61:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^~
+../src/nvme/nvme_main.c:84:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/nvme/nvme_main.c:76:6: note: declared here
+ void nvme_main()
+      ^~~~~~~~~
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building target: nvme_m2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2.elf"  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2.elf  |tee "nvme_m2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120616	   8624	 267104	 396344	  60c38	nvme_m2.elf
+'Finished building: nvme_m2.elf.size'
+' '
+21:54:13 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+make: Nothing to be done for 'all'.
+21:55:47 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+In file included from ../src/nvme/nvme_main.c:60:
+../src/nvme/nvme_main.c: In function 'nvme_main':
+../../nvme_m2_bsp/psu_cortexa53_0/include/xstatus.h:61:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^~
+../src/nvme/nvme_main.c:84:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/nvme/nvme_main.c:76:6: note: declared here
+ void nvme_main()
+      ^~~~~~~~~
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building target: nvme_m2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2.elf"  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2.elf  |tee "nvme_m2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 119368	   8624	 267136	 395128	  60778	nvme_m2.elf
+'Finished building: nvme_m2.elf.size'
+' '
+22:36:39 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+../src/nvme/nvme_io_cmd.c: In function 'handle_nvme_io_write':
+../src/nvme/nvme_io_cmd.c:139:84: warning: integer overflow in expression of type 'int' results in '-2147483648' [-Woverflow]
+     if(devAddr + requestedNvmeBlock * BYTES_PER_NVME_BLOCK > DATA_BUFFER_BASE_ADDR + 0x40000000)
+                                                                                    ^
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building target: nvme_m2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2.elf"  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2.elf  |tee "nvme_m2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 119496	   8640	 267120	 395256	  607f8	nvme_m2.elf
+'Finished building: nvme_m2.elf.size'
+' '
+22:39:12 **** Auto Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+../src/nvme/nvme_io_cmd.c: In function 'handle_nvme_io_write':
+../src/nvme/nvme_io_cmd.c:139:84: warning: integer overflow in expression of type 'int' results in '-1895825408' [-Woverflow]
+     if(devAddr + requestedNvmeBlock * BYTES_PER_NVME_BLOCK > DATA_BUFFER_BASE_ADDR + 0x4F000000)
+                                                                                    ^
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building target: nvme_m2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2.elf"  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2.elf  |tee "nvme_m2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 119496	   8640	 267120	 395256	  607f8	nvme_m2.elf
+'Finished building: nvme_m2.elf.size'
+' '
+22:39:30 **** Auto Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building target: nvme_m2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2.elf"  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2.elf  |tee "nvme_m2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 119496	   8640	 267120	 395256	  607f8	nvme_m2.elf
+'Finished building: nvme_m2.elf.size'
+' '
+22:39:39 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+make: Nothing to be done for 'all'.
+23:18:27 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+'Building file: ../src/nvme_rp/drivers/nvme/nvme.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme_rp/drivers/nvme/nvme.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme_rp/drivers/nvme/nvme.d" -MT"src/nvme_rp/drivers/nvme/nvme.o" -o "src/nvme_rp/drivers/nvme/nvme.o" "../src/nvme_rp/drivers/nvme/nvme.c"
+'Finished building: ../src/nvme_rp/drivers/nvme/nvme.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include" -I"D:\sources\Daisy\NVMe\512bit\Daisy_M.2_NVMe_19.1_20230131\ps.sdk\nvme_m2\src\nvme_rp\include\dm" -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../nvme_m2_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+In file included from ../src/nvme/nvme_main.c:60:
+../src/nvme/nvme_main.c: In function 'nvme_main':
+../../nvme_m2_bsp/psu_cortexa53_0/include/xstatus.h:61:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^~
+../src/nvme/nvme_main.c:84:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^~~~~~~~~~~
+../src/nvme/nvme_main.c:76:6: note: declared here
+ void nvme_main()
+      ^~~~~~~~~
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building target: nvme_m2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nvme_m2_bsp/psu_cortexa53_0/lib -o "nvme_m2.elf"  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nvme_m2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size nvme_m2.elf  |tee "nvme_m2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 119480	   8640	 267072	 395192	  607b8	nvme_m2.elf
+'Finished building: nvme_m2.elf.size'
+' '
+00:24:51 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+make: Nothing to be done for 'all'.
+01:09:10 **** Clean-only build of configuration Debug for project nvme_m2 ****
+make clean 
+rm -rf  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o  ./src/pcie/xdmapcie.d  ./src/nvme_rp/drivers/pci/pci-uclass.d  ./src/nvme_rp/drivers/nvme/nvme-uclass.d ./src/nvme_rp/drivers/nvme/nvme.d  ./src/nvme_rp/drivers/core/device.d ./src/nvme_rp/drivers/core/lists.d ./src/nvme_rp/drivers/core/uclass.d  ./src/nvme_rp/drivers/block/blk-uclass.d  ./src/nvme/debug.d ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_api.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d  ./src/main.d  nvme_m2.elf.size  nvme_m2.elf
+' '
+01:09:11 **** Clean-only build of project nvme_m2_bsp ****
+make -k clean 
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/clockps_v1_1/src -s clean 
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/csudma_v1_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s clean 
+make -C psu_cortexa53_0/libsrc/emacps_v3_9/src -s clean 
+make -C psu_cortexa53_0/libsrc/gpiops_v3_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/gpio_v4_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/iicps_v3_9/src -s clean 
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_9/src -s clean 
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s clean 
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/scugic_v4_0/src -s clean 
+make -C psu_cortexa53_0/libsrc/sdps_v3_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/standalone_v7_0/src -s clean 
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/ttcps_v3_9/src -s clean 
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/wdtps_v3_1/src -s clean 
+make -C psu_cortexa53_0/libsrc/xdmapcie_v1_0/src -s clean 
+make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s clean 
+rm -f psu_cortexa53_0/lib/libxil.a

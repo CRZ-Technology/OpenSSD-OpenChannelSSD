@@ -1,0 +1,6 @@
+16:25:22 **** Incremental Build of configuration Debug for project memtest ****
+make all 
+make: Nothing to be done for 'all'.
+
+16:25:23 Build Finished (took 318ms)
+

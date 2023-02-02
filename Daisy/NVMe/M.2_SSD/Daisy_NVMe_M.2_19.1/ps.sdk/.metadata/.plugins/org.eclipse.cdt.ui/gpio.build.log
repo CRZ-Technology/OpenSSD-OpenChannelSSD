@@ -1,0 +1,60 @@
+13:33:53 **** Auto Build of configuration Debug for project gpio ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:143:2: warning: implicit declaration of function 'iic_example' [-Wimplicit-function-declaration]
+  iic_example();
+  ^~~~~~~~~~~
+../src/main.c: In function 'GpioOutputExample':
+../src/main.c:224:6: warning: unused variable 'LedLoop' [-Wunused-variable]
+  u32 LedLoop;
+      ^~~~~~~
+../src/main.c:223:15: warning: unused variable 'Delay' [-Wunused-variable]
+  volatile int Delay;
+               ^~~~~
+../src/main.c:222:6: warning: unused variable 'Data' [-Wunused-variable]
+  u32 Data;
+      ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/xiicps_polled_master_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xiicps_polled_master_example.o" -I../../gpio_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/xiicps_polled_master_example.d" -MT"src/xiicps_polled_master_example.o" -o "src/xiicps_polled_master_example.o" "../src/xiicps_polled_master_example.c"
+../src/xiicps_polled_master_example.c: In function 'iic_example':
+../src/xiicps_polled_master_example.c:111:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(1000000);
+  ^~~~~~
+../src/xiicps_polled_master_example.c: In function 'IicPsMasterPolledExample':
+../src/xiicps_polled_master_example.c:230:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("[%03d] %02x\r\n", Index, RecvBuffer[Index]);
+   ^~~~~~
+../src/xiicps_polled_master_example.c:230:3: warning: incompatible implicit declaration of built-in function 'printf'
+../src/xiicps_polled_master_example.c:230:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/xiicps_polled_master_example.c:55:1:
++#include <stdio.h>
+ 
+../src/xiicps_polled_master_example.c:230:3:
+   printf("[%03d] %02x\r\n", Index, RecvBuffer[Index]);
+   ^~~~~~
+../src/xiicps_polled_master_example.c:272:4: warning: incompatible implicit declaration of built-in function 'printf'
+    printf("[%03d] %02x (%c)\r\n", Index + 128, RecvBuffer[Index], RecvBuffer[Index]);
+    ^~~~~~
+../src/xiicps_polled_master_example.c:272:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+'Finished building: ../src/xiicps_polled_master_example.c'
+' '
+'Building target: gpio.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_bsp/psu_cortexa53_0/lib -o "gpio.elf"  ./src/main.o ./src/xiicps_polled_master_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size gpio.elf  |tee "gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91016	   4592	  21440	 117048	  1c938	gpio.elf
+'Finished building: gpio.elf.size'
+' '
+
+13:33:55 Build Finished (took 2s.106ms)
+

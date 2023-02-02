@@ -21,9 +21,10 @@ Daisy Directory
 
            - DOC - documents about Daisy
 
-           - NVMe - LPDDR4 - NVMe source on Daisy board, PS LPDDR4 DRAM is used for NVMe storage(1GB).
-                  - MIG    - NVMe source on Daisy board, MIG DDR4 DIMM is used for NVMe storage(64GB).
-		  
+           - NVMe - LPDDR4  - NVMe source on Daisy board, PS LPDDR4 DRAM is used for NVMe storage(1GB).
+                  - MIG     - NVMe source on Daisy board, MIG DDR4 DIMM is used for NVMe storage(64GB).
+                  - M.2 SSD - NVMe source on Daisy board, two M.2 SSDs are used for NVMe storage.		  
+
            - M.2_MIG_PCIe - M.2 / MIG / PCIe test project on Daisy board
 		  
 		  
