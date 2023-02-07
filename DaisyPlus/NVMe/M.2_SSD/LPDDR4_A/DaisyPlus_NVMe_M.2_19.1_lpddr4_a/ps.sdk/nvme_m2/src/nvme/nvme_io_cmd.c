@@ -60,9 +60,14 @@
 #include "../memory_map.h"
 #include "nvme_api.h"
 
+#define RD_NLB (64)
+#define WR_NLB (64)
+
+#define ABS(a,b) (((a) > (b))?((a) - (b)):((b) - (a)))
+
 void handle_nvme_io_read(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd)
 {
-	unsigned int requestedNvmeBlock, dmaIndex, numOfNvmeBlock;
+	unsigned int requestedNvmeBlock, dmaIndex, numOfNvmeBlock, i;
 	static unsigned long devAddr = DATA_BUFFER_BASE_ADDR;
 
 	IO_READ_COMMAND_DW12 readInfo12;
@@ -93,14 +98,33 @@ void handle_nvme_io_read(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd)
     }
     numOfNvmeBlock = 0;
 
-	read_nvme(nsid-1, startLba[0], devAddr, requestedNvmeBlock);
-    while(numOfNvmeBlock < requestedNvmeBlock)
+    if(requestedNvmeBlock % RD_NLB == 0)
     {
-        set_auto_tx_dma(cmdSlotTag, dmaIndex, devAddr, NVME_COMMAND_AUTO_COMPLETION_ON);
+        while(numOfNvmeBlock < requestedNvmeBlock)
+        {
+            read_nvme(nsid-1, startLba[0] + numOfNvmeBlock, devAddr, RD_NLB);
 
-        numOfNvmeBlock++;
-        dmaIndex++;
-        devAddr += BYTES_PER_NVME_BLOCK;
+            for(i = 0; i < RD_NLB; i++)
+            {
+                set_auto_tx_dma(cmdSlotTag, dmaIndex, devAddr, NVME_COMMAND_AUTO_COMPLETION_ON);
+
+                numOfNvmeBlock++;
+                dmaIndex++;
+                devAddr += BYTES_PER_NVME_BLOCK;
+            }
+        }
+    }
+    else
+    {
+        read_nvme(nsid-1, startLba[0], devAddr, requestedNvmeBlock);
+        while(numOfNvmeBlock < requestedNvmeBlock)
+        {
+            set_auto_tx_dma(cmdSlotTag, dmaIndex, devAddr, NVME_COMMAND_AUTO_COMPLETION_ON);
+        
+            numOfNvmeBlock++;
+            dmaIndex++;
+            devAddr += BYTES_PER_NVME_BLOCK;
+        }
     }
 }
 
@@ -110,6 +134,7 @@ void handle_nvme_io_write(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd)
 	unsigned int requestedNvmeBlock, dmaIndex, numOfNvmeBlock;
 	static unsigned long devAddr = DATA_BUFFER_BASE_ADDR + 0x30000000;
 	unsigned long devAddrOrg;
+    unsigned char autoDmaRx;
 	
 	IO_READ_COMMAND_DW12 writeInfo12;
 	//IO_READ_COMMAND_DW13 writeInfo13;
@@ -143,17 +168,50 @@ void handle_nvme_io_write(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd)
     devAddrOrg = devAddr;
     numOfNvmeBlock = 0;
 
-    while(numOfNvmeBlock < requestedNvmeBlock)
+    if(requestedNvmeBlock % WR_NLB == 0)
     {
-        set_auto_rx_dma(cmdSlotTag, dmaIndex, devAddr, NVME_COMMAND_AUTO_COMPLETION_ON);
+    	g_hostDmaStatus.fifoHead.dword = IO_READ32(HOST_DMA_FIFO_CNT_REG_ADDR);
+        autoDmaRx = g_hostDmaStatus.fifoHead.autoDmaRx; 
 
-        numOfNvmeBlock++;
-        dmaIndex++;
-        devAddr += BYTES_PER_NVME_BLOCK;
+        while(numOfNvmeBlock < requestedNvmeBlock)
+        {
+            set_auto_rx_dma(cmdSlotTag, dmaIndex, devAddr, NVME_COMMAND_AUTO_COMPLETION_ON);
+
+            numOfNvmeBlock++;
+            dmaIndex++;
+            devAddr += BYTES_PER_NVME_BLOCK;
+        }
+
+        numOfNvmeBlock = 0;
+        devAddr = devAddrOrg;
+
+        while(numOfNvmeBlock < requestedNvmeBlock)
+        {
+            g_hostDmaStatus.fifoHead.dword = IO_READ32(HOST_DMA_FIFO_CNT_REG_ADDR);
+            if((autoDmaRx != g_hostDmaStatus.fifoHead.autoDmaRx) && ((ABS(autoDmaRx,g_hostDmaStatus.fifoHead.autoDmaRx) % WR_NLB) == 0))
+            {
+                write_nvme(nsid-1, startLba[0] + numOfNvmeBlock, devAddr, WR_NLB);
+
+                numOfNvmeBlock += WR_NLB;
+                autoDmaRx += WR_NLB;
+                devAddr += (WR_NLB * BYTES_PER_NVME_BLOCK);
+            }
+        }
     }
-    check_auto_rx_dma_done();
-
-   	write_nvme(nsid-1, startLba[0], devAddrOrg, requestedNvmeBlock);
+    else
+    {
+        while(numOfNvmeBlock < requestedNvmeBlock)
+        {
+            set_auto_rx_dma(cmdSlotTag, dmaIndex, devAddr, NVME_COMMAND_AUTO_COMPLETION_ON);
+        
+            numOfNvmeBlock++;
+            dmaIndex++;
+            devAddr += BYTES_PER_NVME_BLOCK;
+        }
+        check_auto_rx_dma_done();
+        
+        write_nvme(nsid-1, startLba[0], devAddrOrg, requestedNvmeBlock);
+    }
 }
 
 void handle_nvme_io_cmd(NVME_COMMAND *nvmeCmd)

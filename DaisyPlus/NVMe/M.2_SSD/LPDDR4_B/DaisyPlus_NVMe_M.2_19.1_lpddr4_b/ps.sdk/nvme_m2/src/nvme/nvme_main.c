@@ -81,7 +81,7 @@ void nvme_main()
 	Status = init_nvme_rp(nvme_storage);
 	if (Status != XST_SUCCESS) {
 		xil_printf("init_nvme() Failed\r\n");
-		return XST_FAILURE;
+		return;
 	}
 	xil_printf("[ storage capacity %d MB ]\r\n", STORAGE_CAPACITY_L / ((1024*1024) / BYTES_PER_NVME_BLOCK));
 
