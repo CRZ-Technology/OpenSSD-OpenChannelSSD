@@ -1,4 +1,4 @@
-01:18:58 **** Clean-only build of project nvme_m2_bsp ****
+17:36:44 **** Clean-only build of project nvme_m2_bsp ****
 make -k clean 
 make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s clean 
 make -C psu_cortexa53_0/libsrc/clockps_v1_1/src -s clean 
@@ -25,5 +25,5 @@ make -C psu_cortexa53_0/libsrc/xdmapcie_v1_0/src -s clean
 make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s clean 
 rm -f psu_cortexa53_0/lib/libxil.a
 
-01:19:03 Build Finished (took 4s.647ms)
+17:37:00 Build Finished (took 15s.321ms)
 

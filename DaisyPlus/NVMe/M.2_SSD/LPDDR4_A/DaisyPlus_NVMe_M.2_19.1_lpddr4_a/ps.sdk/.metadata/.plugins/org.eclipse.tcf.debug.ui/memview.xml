@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Memory>
+<Block Addr="0xffff0014" Context="JTAG-jsn-JTAG-SMT2NC-210308AF966C-5ba00477-0A0" Size="-1"/>
+<Block Addr="0x03000000" Context="JTAG-jsn-JTAG-SMT2NC-210308AF966C-5ba00477-0A0" Size="-1"/>
+<Block Addr="0x11f388" Context="JTAG-jsn-JTAG-SMT2NC-210308AF966C-5ba00477-0A0" Size="-1"/>
+<Block Addr="0x03000000" Context="JTAG-jsn-JTAG-SMT2NC-210308AF966C-5ba00477-0A1" Size="-1"/>
+<Block Addr="0x28000008" Context="JTAG-jsn-JTAG-SMT2NC-210308AF966C-5ba00477-0A1" Size="-1"/>
+<Block Addr="0x28000008" Context="JTAG-jsn-JTAG-SMT2NC-210308AF966C-5ba00477-0A2" Size="-1"/>
 <Block Addr="0xfffc0000" Context="JTAG-jsn-JTAG-SMT2NC-210308AAF6A7-5ba00477-0A0" Size="-1"/>
 <Block Addr="0xffffab00" Context="JTAG-jsn-JTAG-SMT2NC-210308AAF6A7-5ba00477-0A0" Size="-1"/>
 <Block Addr="0xfffc0000" Context="JTAG-jsn-JTAG-SMT2NC-210308AAF6A7-5ba00477-0A0" Size="-1"/>

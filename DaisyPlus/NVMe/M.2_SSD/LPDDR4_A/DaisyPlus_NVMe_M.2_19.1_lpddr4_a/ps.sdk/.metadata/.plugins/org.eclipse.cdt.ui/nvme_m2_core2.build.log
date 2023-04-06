@@ -1,0 +1,7 @@
+17:36:43 **** Clean-only build of configuration Debug for project nvme_m2_core2 ****
+make clean 
+rm -rf  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/debug.o ./src/main.o ./src/nvme_api.o ./src/nvme_main.o ./src/request_ipc.o  ./src/nvme_rp/drivers/pci/pci-uclass.d  ./src/nvme_rp/drivers/nvme/nvme-uclass.d ./src/nvme_rp/drivers/nvme/nvme.d  ./src/nvme_rp/drivers/core/device.d ./src/nvme_rp/drivers/core/lists.d ./src/nvme_rp/drivers/core/uclass.d  ./src/nvme_rp/drivers/block/blk-uclass.d  ./src/debug.d ./src/main.d ./src/nvme_api.d ./src/nvme_main.d ./src/request_ipc.d  nvme_m2_core2.elf.size  nvme_m2_core2.elf
+' '
+
+17:36:44 Build Finished (took 1s.819ms)
+

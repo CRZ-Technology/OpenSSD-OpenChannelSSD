@@ -86,6 +86,9 @@ XScuGic GicInstance;
 XGpio GpioOutput1;
 XGpio GpioOutput2;
 
+extern const unsigned int start_req_addr[];
+extern const unsigned int start_res_addr[];
+
 int main()
 {
 	unsigned int u;
@@ -100,9 +103,9 @@ int main()
 	#define MB (1024*1024)
 	for (u = 0; u < 4096; u+=2)
 	{
-		if (u < 0x2)
+		if (u < 0x4)
 			Xil_SetTlbAttributes(u * MB, NORM_WB_CACHE);
-		else if (u < 0x200)
+		else if (u < 0x300)
 			Xil_SetTlbAttributes(u * MB, NORM_NONCACHE);
 		else if (u < 0x400)
 			Xil_SetTlbAttributes(u * MB, NORM_WB_CACHE);
@@ -114,6 +117,13 @@ int main()
 
 	Xil_ICacheEnable();
 	Xil_DCacheEnable();
+
+    for(int i = 0; i < NUM_NVME_M2; i++)
+    {
+        *(unsigned int *)start_req_addr[i]= 0;
+        *(unsigned int *)start_res_addr[i]= 0;
+    }
+
 	xil_printf("[!] MMU has been enabled.\r\n");
 
 	xil_printf("\r\n Hello DaisyPlus OpenSSD !!! \r\n");

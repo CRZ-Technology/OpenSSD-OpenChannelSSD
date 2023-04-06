@@ -51,20 +51,22 @@
 #ifndef __NVME_H_
 #define __NVME_H_
 
-#define NUM_NVME (2)
-extern unsigned int nvme_storage[NUM_NVME];
+#define NUM_NVME_M2 (2)
+#define	BYTES_PER_NVME_BLOCK		4096
+
+#include "../memory_map.h"
+
+extern unsigned int nvme_m2_storage[NUM_NVME_M2];
 
 #define MAX_NUM_OF_IO_SQ	8
 #define MAX_NUM_OF_IO_CQ	8
 
-#define ADMIN_CMD_DRAM_DATA_BUFFER		0x00200000
+#define ADMIN_CMD_DRAM_DATA_BUFFER		NVME_MANAGEMENT_START_ADDR
 
-#define	BYTES_PER_NVME_BLOCK		    (4096)               /* 4KB */
-
-#define STORAGE_CAPACITY_L				(nvme_storage[0] + nvme_storage[1])
+#define STORAGE_CAPACITY_L				(nvme_m2_storage[0] + nvme_m2_storage[1])
 #define STORAGE_CAPACITY_H				0x00000000
 
-#define MAX_NUM_OF_NLB					(512 * 1024 / 4096)
+#define MAX_NUM_OF_NLB					(1024 * 1024 / 4096)
 
 #define NVME_COMMAND_AUTO_COMPLETION_OFF	0
 #define NVME_COMMAND_AUTO_COMPLETION_ON		1
@@ -93,6 +95,7 @@ extern unsigned int nvme_storage[NUM_NVME];
 #define IO_NVM_READ											0x02
 #define IO_NVM_WRITE_UNCORRECTABLE							0x04
 #define IO_NVM_COMPARE										0x05
+#define IO_NVM_WRITE_ZEROS									0x08
 #define IO_NVM_DATASET_MANAGEMENT							0x09
 
 /*Status Code Type */
@@ -434,8 +437,8 @@ typedef struct _ADMIN_IDENTIFY_COMMAND_DW10
 	union {
 		unsigned int dword;
 		struct {
-			unsigned int CNS			:2;
-			unsigned int reserved0		:30;
+			unsigned int CNS			:1;
+			unsigned int reserved0		:31;
 		};
 	};
 } ADMIN_IDENTIFY_COMMAND_DW10;
@@ -685,11 +688,6 @@ typedef struct _ADMIN_IDENTIFY_NAMESPACE
 	unsigned char VS[3712];
 } ADMIN_IDENTIFY_NAMESPACE;
 
-/* Identify Active Namespace Data Structure */
-typedef struct _ADMIN_IDENTIFY_ACTIVE_NAMESPACE
-{
-    unsigned int active_namespace[1024];
-} ADMIN_IDENTIFY_ACTIVE_NAMESPACE;
 
 /* IO Write Command */
 typedef struct _IO_WRITE_COMMAND_DW12
