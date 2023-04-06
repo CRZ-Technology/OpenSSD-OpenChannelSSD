@@ -379,11 +379,7 @@ void handle_identify(NVME_ADMIN_COMMAND *nvmeAdminCmd, NVME_COMPLETION *nvmeCPL)
 
 		//ASSERT(nvmeAdminCmd->NSID == 1);
 		ASSERT((nvmeAdminCmd->PRP1[0] & 0x3) == 0 && (nvmeAdminCmd->PRP2[0] & 0x3) == 0);
-		namespace_identification(nvmeAdminCmd->NSID, pIdentifyData);
-	}
-	else if(identifyInfo.CNS == 2)
-	{
-		active_namespace_identification(pIdentifyData);
+		namespace_identification(pIdentifyData);
 	}
 	else
 		ASSERT(0);

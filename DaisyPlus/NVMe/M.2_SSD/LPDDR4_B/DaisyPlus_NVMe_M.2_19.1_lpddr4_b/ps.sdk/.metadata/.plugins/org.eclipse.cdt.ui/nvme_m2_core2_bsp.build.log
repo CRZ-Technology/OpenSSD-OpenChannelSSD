@@ -1,0 +1,29 @@
+19:34:57 **** Clean-only build of project nvme_m2_core2_bsp ****
+make -k clean 
+make -C psu_cortexa53_2/libsrc/axipmon_v6_7/src -s clean 
+make -C psu_cortexa53_2/libsrc/clockps_v1_1/src -s clean 
+make -C psu_cortexa53_2/libsrc/coresightps_dcc_v1_5/src -s clean 
+make -C psu_cortexa53_2/libsrc/cpu_cortexa53_v1_5/src -s clean 
+make -C psu_cortexa53_2/libsrc/csudma_v1_4/src -s clean 
+make -C psu_cortexa53_2/libsrc/ddrcpsu_v1_1/src -s clean 
+make -C psu_cortexa53_2/libsrc/emacps_v3_9/src -s clean 
+make -C psu_cortexa53_2/libsrc/gpiops_v3_5/src -s clean 
+make -C psu_cortexa53_2/libsrc/gpio_v4_4/src -s clean 
+make -C psu_cortexa53_2/libsrc/iicps_v3_9/src -s clean 
+make -C psu_cortexa53_2/libsrc/ipipsu_v2_5/src -s clean 
+make -C psu_cortexa53_2/libsrc/qspipsu_v1_9/src -s clean 
+make -C psu_cortexa53_2/libsrc/resetps_v1_2/src -s clean 
+make -C psu_cortexa53_2/libsrc/rtcpsu_v1_7/src -s clean 
+make -C psu_cortexa53_2/libsrc/scugic_v4_0/src -s clean 
+make -C psu_cortexa53_2/libsrc/sdps_v3_7/src -s clean 
+make -C psu_cortexa53_2/libsrc/standalone_v7_0/src -s clean 
+make -C psu_cortexa53_2/libsrc/sysmonpsu_v2_5/src -s clean 
+make -C psu_cortexa53_2/libsrc/ttcps_v3_9/src -s clean 
+make -C psu_cortexa53_2/libsrc/uartps_v3_7/src -s clean 
+make -C psu_cortexa53_2/libsrc/wdtps_v3_1/src -s clean 
+make -C psu_cortexa53_2/libsrc/xdmapcie_v1_0/src -s clean 
+make -C psu_cortexa53_2/libsrc/zdma_v1_7/src -s clean 
+rm -f psu_cortexa53_2/lib/libxil.a
+
+19:35:05 Build Finished (took 8s.1ms)
+

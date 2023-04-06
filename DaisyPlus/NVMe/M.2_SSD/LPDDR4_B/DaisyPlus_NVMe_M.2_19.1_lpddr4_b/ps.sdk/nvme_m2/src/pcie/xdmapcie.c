@@ -856,15 +856,15 @@ static void XDmaPcie_EnumeratePCIe(XDmaPcie *InstancePtr)
 	XDmaPcie_FetchDevicesInBus(InstancePtr, 0, TRUE);
 }
 
-static u16 DeviceId[NUM_NVME] = {XPAR_XDMAPCIE_0_DEVICE_ID, XPAR_XDMAPCIE_1_DEVICE_ID};
-static XDmaPcie XdmaPcieInstance[NUM_NVME];
+static u16 DeviceId[NUM_NVME_M2] = {XPAR_XDMAPCIE_0_DEVICE_ID, XPAR_XDMAPCIE_1_DEVICE_ID};
+static XDmaPcie XdmaPcieInstance[NUM_NVME_M2];
 
 int pcie_init(u64 *bar)
 {
 	int Status = XST_SUCCESS;
 	int i;
 
-    for(i = 0; i < NUM_NVME; i++)
+    for(i = 0; i < NUM_NVME_M2; i++)
     {
     	/* Initialize Root Complex */
 	    Status = PcieInitRootComplex(&XdmaPcieInstance[i], DeviceId[i]);
