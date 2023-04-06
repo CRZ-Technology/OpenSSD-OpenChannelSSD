@@ -112,7 +112,7 @@ void controller_identification(unsigned int pBuffer)
 	identifyCNTL->CQES.requiredCompletionQueueEntrySize = 0x4;
 	identifyCNTL->CQES.maximumCompletionQueueEntrySize = 0x4;
 
-	identifyCNTL->NN = NUM_NVME;
+	identifyCNTL->NN = 0x1;
 
 	identifyCNTL->ONCS.supportsCompare = 0x0;
 	identifyCNTL->ONCS.supportsWriteUncorrectable = 0x0;
@@ -147,7 +147,7 @@ void controller_identification(unsigned int pBuffer)
 	powerStateDesc->RWL = 0x0;
 }
 
-void namespace_identification(unsigned int NSID, unsigned int pBuffer)
+void namespace_identification(unsigned int pBuffer)
 {
 	ADMIN_IDENTIFY_NAMESPACE *identifyNS;
 	ADMIN_IDENTIFY_FORMAT_DATA *formatData;
@@ -155,24 +155,12 @@ void namespace_identification(unsigned int NSID, unsigned int pBuffer)
 
 	memset(identifyNS, 0, sizeof(ADMIN_IDENTIFY_NAMESPACE));
 
-	if(NSID == 1)
-	{
-		identifyNS->NSZE[0] = nvme_storage[0];
-		identifyNS->NSZE[1] = STORAGE_CAPACITY_H;
-		identifyNS->NCAP[0] = nvme_storage[0];
-		identifyNS->NCAP[1] = STORAGE_CAPACITY_H;
-		identifyNS->NUSE[0] = nvme_storage[0];
-		identifyNS->NUSE[1] = STORAGE_CAPACITY_H;
-	}
-	else
-	{
-		identifyNS->NSZE[0] = nvme_storage[1];
-		identifyNS->NSZE[1] = STORAGE_CAPACITY_H;
-		identifyNS->NCAP[0] = nvme_storage[1];
-		identifyNS->NCAP[1] = STORAGE_CAPACITY_H;
-		identifyNS->NUSE[0] = nvme_storage[1];
-		identifyNS->NUSE[1] = STORAGE_CAPACITY_H;
-	}
+	identifyNS->NSZE[0] = STORAGE_CAPACITY_L;
+	identifyNS->NSZE[1] = STORAGE_CAPACITY_H;
+	identifyNS->NCAP[0] = STORAGE_CAPACITY_L;
+	identifyNS->NCAP[1] = STORAGE_CAPACITY_H;
+	identifyNS->NUSE[0] = STORAGE_CAPACITY_L;
+	identifyNS->NUSE[1] = STORAGE_CAPACITY_H;
 
 	identifyNS->NSFEAT.supportsThinProvisioning = 0x0;
 
@@ -210,16 +198,3 @@ void namespace_identification(unsigned int NSID, unsigned int pBuffer)
 	formatData->RP = 0x2;
 }
 
-void active_namespace_identification(unsigned int pBuffer)
-{
-    ADMIN_IDENTIFY_ACTIVE_NAMESPACE *identifyNS;
-    int i = 0;
-
-    identifyNS = (ADMIN_IDENTIFY_ACTIVE_NAMESPACE *)pBuffer;
-    memset(identifyNS, 0, sizeof(ADMIN_IDENTIFY_ACTIVE_NAMESPACE));
-
-    for(i = 0; i < NUM_NVME; i++)
-    {
-        identifyNS->active_namespace[i] = i + 1;
-    }
-}

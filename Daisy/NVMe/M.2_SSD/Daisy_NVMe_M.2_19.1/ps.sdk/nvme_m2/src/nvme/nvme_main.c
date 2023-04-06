@@ -68,21 +68,48 @@
 #include "nvme_io_cmd.h"
 
 #include "../memory_map.h"
-#include "nvme_api.h"
 
 volatile NVME_CONTEXT g_nvmeTask;
-unsigned int nvme_storage[NUM_NVME];
+unsigned int nvme_m2_storage[NUM_NVME_M2];
+static const unsigned int storage_info_addr[] = {IPC_STORAGE_CORE1_ADDR, IPC_STORAGE_CORE2_ADDR};
+const unsigned int start_req_addr[] = {IPC_START_REQ_CORE1_ADDR, IPC_START_REQ_CORE2_ADDR};
+const unsigned int start_res_addr[] = {IPC_START_RES_CORE1_ADDR, IPC_START_RES_CORE2_ADDR};
+static const unsigned int bar_addr[] = {IPC_BAR_CORE1_ADDR, IPC_BAR_CORE2_ADDR};
+
+extern int pcie_init(u64 *bar);
 
 void nvme_main()
 {
 	unsigned int rstCnt = 0;
 	int Status;
+	u64 bar[NUM_NVME_M2];
 
-	Status = init_nvme_rp(nvme_storage);
+	InitReqPool();
+	InitDataBuf();
+    InitIpcQueue();
+
+    Status = pcie_init(bar);
 	if (Status != XST_SUCCESS) {
-		xil_printf("init_nvme() Failed\r\n");
+		xil_printf("pcie_init() Failed\r\n");
 		return;
 	}
+
+    for(int i = 0; i < NUM_NVME_M2; i++)
+    {
+        *(u64 *)bar_addr[i] = bar[i];
+    }
+
+    for(int i = 0; i < NUM_NVME_M2; i++)
+    {
+        while(*(unsigned int *)start_res_addr[i] == 0)
+            *(unsigned int *)start_req_addr[i] = 1;
+    }
+
+    for(int i = 0; i < NUM_NVME_M2; i++)
+    {
+        nvme_m2_storage[i] = *(unsigned int *)storage_info_addr[i];
+    }
+
 	xil_printf("[ storage capacity %d MB ]\r\n", STORAGE_CAPACITY_L / ((1024*1024) / BYTES_PER_NVME_BLOCK));
 
 	xil_printf("Turn on the host PC \r\n");
@@ -118,6 +145,7 @@ void nvme_main()
 				else
 				{
 					handle_nvme_io_cmd(&nvmeCmd);
+					ReqTransSliceToLowLevel();
 				}
 			}
 		}
@@ -192,6 +220,12 @@ void nvme_main()
 			g_nvmeTask.status = NVME_TASK_IDLE;
 
 			xil_printf("\r\nNVMe reset!!!\r\n");
+		}
+
+		if((nvmeDmaReqQ.headReq != REQ_SLOT_TAG_NONE) || notCompletedNvmeM2ReqCnt || blockedReqCnt)
+		{
+			CheckDoneNvmeDmaReq();
+			CheckDoneNvmeM2Req();
 		}
 	}
 }

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="D:/sources/Daisy/NVMe/512bit/tmp/Daisy_NVMe_M.2_19.1_20230203/ps.xpr">
+<Project Version="7" Minor="40" Path="D:/sources/Daisy/NVMe/512bit/tmp/Daisy_NVMe_M.2_multicore_19.1_20230406/ps.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="2b2c74fc03974dd8a9ceb337778b59ab"/>

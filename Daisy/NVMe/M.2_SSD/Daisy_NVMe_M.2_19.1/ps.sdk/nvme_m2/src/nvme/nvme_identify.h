@@ -57,7 +57,7 @@
 
 void controller_identification(unsigned int pBuffer);
 
-void namespace_identification(unsigned int NSID, unsigned int pBuffer);
+void namespace_identification(unsigned int pBuffer);
 
-void active_namespace_identification(unsigned int pBuffer);
+
 #endif	//__NVME_IDENTIFY_H_

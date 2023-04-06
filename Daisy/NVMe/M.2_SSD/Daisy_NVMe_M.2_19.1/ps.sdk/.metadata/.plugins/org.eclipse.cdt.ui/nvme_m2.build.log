@@ -1,7 +1,7 @@
-01:09:10 **** Clean-only build of configuration Debug for project nvme_m2 ****
+20:08:59 **** Clean-only build of configuration Debug for project nvme_m2 ****
 make clean 
-rm -rf  ./src/pcie/xdmapcie.o  ./src/nvme_rp/drivers/pci/pci-uclass.o  ./src/nvme_rp/drivers/nvme/nvme-uclass.o ./src/nvme_rp/drivers/nvme/nvme.o  ./src/nvme_rp/drivers/core/device.o ./src/nvme_rp/drivers/core/lists.o ./src/nvme_rp/drivers/core/uclass.o  ./src/nvme_rp/drivers/block/blk-uclass.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_api.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/main.o  ./src/pcie/xdmapcie.d  ./src/nvme_rp/drivers/pci/pci-uclass.d  ./src/nvme_rp/drivers/nvme/nvme-uclass.d ./src/nvme_rp/drivers/nvme/nvme.d  ./src/nvme_rp/drivers/core/device.d ./src/nvme_rp/drivers/core/lists.d ./src/nvme_rp/drivers/core/uclass.d  ./src/nvme_rp/drivers/block/blk-uclass.d  ./src/nvme/debug.d ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_api.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d  ./src/main.d  nvme_m2.elf.size  nvme_m2.elf
+rm -rf  ./src/pcie/xdmapcie.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/data_buffer.o ./src/main.o ./src/request_allocation.o ./src/request_ipc.o ./src/request_schedule.o ./src/request_transform.o  ./src/pcie/xdmapcie.d  ./src/nvme/debug.d ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d  ./src/data_buffer.d ./src/main.d ./src/request_allocation.d ./src/request_ipc.d ./src/request_schedule.d ./src/request_transform.d  nvme_m2.elf.size  nvme_m2.elf
 ' '
 
-01:09:11 Build Finished (took 707ms)
+20:09:01 Build Finished (took 1s.333ms)
 
