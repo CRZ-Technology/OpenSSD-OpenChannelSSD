@@ -268,7 +268,6 @@ begin
 	end
 end
 
-/*
 always @ (*)
 begin
 	case(r_cq_msi_irq_sel)  // synthesis parallel_case full_case
@@ -283,12 +282,13 @@ begin
 		9'b100000000: r_pcie_irq_vector <= io_cq8_iv;
 	endcase
 end
-*/
 
+/*
 always @ (*)
 begin
 	r_pcie_irq_vector <= r_cq_msi_irq_sel;
 end
+*/
 
 always @ (*)
 begin
