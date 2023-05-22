@@ -6,9 +6,6 @@ https://github.com/Csoyee/documents/issues/5
 
 DaisyPlus OCSSD verification
 
-1. patch drivers/nvme/host/pci.c on linux-kernel-4.16.18
-
-2. 
 sudo nvme list
 sudo nvme lnvm list
 sudo nvme lnvm-diag-bbtbl /dev/nvme0n1 -c 0
