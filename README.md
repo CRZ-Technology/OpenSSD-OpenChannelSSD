@@ -73,6 +73,6 @@ DaisyPlus Directory
 
 ZNS Directory
 
-           - CosmosPlus
+           - CosmosPlus - Micron_NAND  - CosmosPlus_ZNS_Micron_8C2W - ZNS project w/ Micron 8Channel 2Way NAND module on CosmosPlus board.
 		   
-           - DaisyPlus - Micron_NAND - daisyplus_zns_micron_4c2w - ZNS project w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_A)
+           - DaisyPlus - Micron_NAND - daisyplus_zns_micron_4c2w    - ZNS project w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_A)
