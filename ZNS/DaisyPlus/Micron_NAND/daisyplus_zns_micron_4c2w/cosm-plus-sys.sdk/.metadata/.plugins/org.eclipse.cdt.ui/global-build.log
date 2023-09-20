@@ -1,0 +1,1145 @@
+10:31:05 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+../src/address_translation.c: In function 'RecoverBadBlockTable':
+../src/address_translation.c:208:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo]);
+                     ^
+../src/address_translation.c:218:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo] + blockNo);
+                       ^
+../src/address_translation.c: In function 'UpdateBadBlockTableForGrownBadBlock':
+../src/address_translation.c:324:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                  ^
+../src/address_translation.c: In function 'FindBadBlock':
+../src/address_translation.c:386:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:387:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:428:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:429:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:443:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater= (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                 ^
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitChCtlReg':
+../src/ftl_config.c:115:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   nfc_install_ucode((unsigned int*)NSC_UCODES[i]);
+                     ^
+../src/ftl_config.c:116:37: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   V2FInitializeHandle(&chCtlReg[i], (void*)NSCS[i]);
+                                     ^
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:175:35: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+    V2FReadIdSync(&chCtlReg[i], k, idData);
+                                   ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:446:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+At top level:
+../src/ftl_config.c:106:21: warning: 'dq_delay' defined but not used [-Wunused-variable]
+ static unsigned int dq_delay[]  = {00, 00, 00, 00};
+                     ^~~~~~~~
+../src/ftl_config.c:105:21: warning: 'dqs_delay' defined but not used [-Wunused-variable]
+ static unsigned int dqs_delay[] = {1099, 1099, 1099, 1099};
+                     ^~~~~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/nvme_io_cmd_completion.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_io_cmd_completion.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme_io_cmd_completion.d" -MT"src/nvme_io_cmd_completion.o" -o "src/nvme_io_cmd_completion.o" "../src/nvme_io_cmd_completion.c"
+'Finished building: ../src/nvme_io_cmd_completion.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:637:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:638:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:847:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:923:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+../src/request_transform.c: In function 'handle_nvme_io_erase':
+../src/request_transform.c:99:5: error: 'nvmeIoCmdCompleteTablePtr' undeclared (first use in this function); did you mean 'InitNvmeIoCmdCompleteTable'?
+     nvmeIoCmdCompleteTablePtr->nvmeIoCmdCompleteEntry[cmdSlotTag].w_ptr = 0;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+     InitNvmeIoCmdCompleteTable
+../src/request_transform.c:99:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/request_transform.c: In function 'ReqTransNvmeToSlice':
+../src/request_transform.c:186:2: error: 'nvmeIoCmdCompleteTablePtr' undeclared (first use in this function); did you mean 'InitNvmeIoCmdCompleteTable'?
+  nvmeIoCmdCompleteTablePtr->nvmeIoCmdCompleteEntry[cmdSlotTag].w_ptr = w_ptr;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
+  InitNvmeIoCmdCompleteTable
+make: *** [src/subdir.mk:47: src/request_transform.o] Error 1
+10:35:07 **** Auto Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+../src/address_translation.c: In function 'RecoverBadBlockTable':
+../src/address_translation.c:208:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo]);
+                     ^
+../src/address_translation.c:218:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo] + blockNo);
+                       ^
+../src/address_translation.c: In function 'UpdateBadBlockTableForGrownBadBlock':
+../src/address_translation.c:324:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                  ^
+../src/address_translation.c: In function 'FindBadBlock':
+../src/address_translation.c:386:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:387:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:428:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:429:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:443:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater= (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                 ^
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitChCtlReg':
+../src/ftl_config.c:115:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   nfc_install_ucode((unsigned int*)NSC_UCODES[i]);
+                     ^
+../src/ftl_config.c:116:37: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   V2FInitializeHandle(&chCtlReg[i], (void*)NSCS[i]);
+                                     ^
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:175:35: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+    V2FReadIdSync(&chCtlReg[i], k, idData);
+                                   ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:446:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+At top level:
+../src/ftl_config.c:106:21: warning: 'dq_delay' defined but not used [-Wunused-variable]
+ static unsigned int dq_delay[]  = {00, 00, 00, 00};
+                     ^~~~~~~~
+../src/ftl_config.c:105:21: warning: 'dqs_delay' defined but not used [-Wunused-variable]
+ static unsigned int dqs_delay[] = {1099, 1099, 1099, 1099};
+                     ^~~~~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/nvme_io_cmd_completion.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_io_cmd_completion.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme_io_cmd_completion.d" -MT"src/nvme_io_cmd_completion.o" -o "src/nvme_io_cmd_completion.o" "../src/nvme_io_cmd_completion.c"
+'Finished building: ../src/nvme_io_cmd_completion.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:637:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:638:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:847:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:923:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: run-gr3ftl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gr3ftl_bsp/psu_cortexa53_0/lib -o "run-gr3ftl.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gr3ftl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gr3ftl.elf  |tee "run-gr3ftl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145488	  11256	  34840	 191584	  2ec60	run-gr3ftl.elf
+'Finished building: run-gr3ftl.elf.size'
+' '
+14:26:15 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:22 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/zns.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/zns.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/zns.d" -MT"src/nvme/zns.o" -o "src/nvme/zns.o" "../src/nvme/zns.c"
+../src/nvme/zns.c: In function 'nvme_zone_mgmt_recv':
+../src/nvme/zns.c:703:11: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     buf = (char *)pZoneManagementAddr;
+           ^
+'Finished building: ../src/nvme/zns.c'
+' '
+'Building target: run-gr3ftl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gr3ftl_bsp/psu_cortexa53_0/lib -o "run-gr3ftl.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gr3ftl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gr3ftl.elf  |tee "run-gr3ftl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145488	  11256	  34840	 191584	  2ec60	run-gr3ftl.elf
+'Finished building: run-gr3ftl.elf.size'
+' '
+15:23:17 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/debug.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/debug.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/debug.d" -MT"src/nvme/debug.o" -o "src/nvme/debug.o" "../src/nvme/debug.c"
+'Finished building: ../src/nvme/debug.c'
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+In file included from ../src/nvme/host_lld.c:61:
+../src/nvme/host_lld.c: In function 'get_nvme_cmd':
+../src/nvme/io_access.h:52:30: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                              ^
+../src/nvme/host_lld.c:262:24: note: in expansion of macro 'IO_READ32'
+    *(cmdDword + idx) = IO_READ32(addr + (idx * 4));
+                        ^~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_sq':
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:321:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32(addr, nvmeReg.dword[0]);
+  ^~~~~~~~~~
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:322:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32((addr + 4), nvmeReg.dword[1]);
+  ^~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_cq':
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:338:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32(addr, nvmeReg.dword[0]);
+  ^~~~~~~~~~
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:339:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32((addr + 4), nvmeReg.dword[1]);
+  ^~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.c:363:64: warning: 'hostDmaReg.<U6be0>.dword[4]' is used uninitialized in this function [-Wuninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.c:388:64: warning: 'hostDmaReg.<U6be0>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+'Finished building: ../src/nvme/host_lld.c'
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+../src/nvme/nvme_admin_cmd.c: In function 'handle_identify':
+../src/nvme/nvme_admin_cmd.c:388:3: warning: implicit declaration of function 'active_namespace_identification'; did you mean 'zns_namespace_identification'? [-Wimplicit-function-declaration]
+   active_namespace_identification(pIdentifyData);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   zns_namespace_identification
+../src/nvme/nvme_admin_cmd.c:405:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         memset((void *)pIdentifyData, 0, sizeof(ADMIN_IDENTIFY_CONTROLLER));
+                ^
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:67:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:159:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+../src/nvme/nvme_identify.c: In function 'zns_namespace_identification':
+../src/nvme/nvme_identify.c:209:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_ZNS_NAMESPACE *)pBuffer;
+               ^
+../src/nvme/nvme_identify.c: In function 'zns_controller_identification':
+../src/nvme/nvme_identify.c:225:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_ZNS_CONTROLLER *)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'nvme_identify_cmd_set':
+../src/nvme/nvme_identify.c:234:27: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     unsigned char *list = (unsigned char *)pBuffer;
+                           ^
+../src/nvme/nvme_identify.c: In function 'active_namespace_identification':
+../src/nvme/nvme_identify.c:248:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     identifyNS = (ADMIN_IDENTIFY_ACTIVE_NAMESPACE *)pBuffer;
+                  ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nvme_io_cmd_completion.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_io_cmd_completion.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme_io_cmd_completion.d" -MT"src/nvme_io_cmd_completion.o" -o "src/nvme_io_cmd_completion.o" "../src/nvme_io_cmd_completion.c"
+'Finished building: ../src/nvme_io_cmd_completion.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:637:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:638:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:847:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:923:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building target: run-gr3ftl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gr3ftl_bsp/psu_cortexa53_0/lib -o "run-gr3ftl.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gr3ftl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gr3ftl.elf  |tee "run-gr3ftl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146264	  11256	  34832	 192352	  2ef60	run-gr3ftl.elf
+'Finished building: run-gr3ftl.elf.size'
+' '
+15:23:29 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+make: Nothing to be done for 'all'.
+15:37:42 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/zns.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/zns.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/zns.d" -MT"src/nvme/zns.o" -o "src/nvme/zns.o" "../src/nvme/zns.c"
+../src/nvme/zns.c: In function 'nvme_zone_mgmt_recv':
+../src/nvme/zns.c:703:11: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     buf = (char *)pZoneManagementAddr;
+           ^
+'Finished building: ../src/nvme/zns.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/address_translation.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+../src/address_translation.c: In function 'RecoverBadBlockTable':
+../src/address_translation.c:208:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo]);
+                     ^
+../src/address_translation.c:218:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtTableChecker = (unsigned char*)(tempBbtBufAddr[dieNo] + blockNo);
+                       ^
+../src/address_translation.c: In function 'UpdateBadBlockTableForGrownBadBlock':
+../src/address_translation.c:324:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater = (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                  ^
+../src/address_translation.c: In function 'FindBadBlock':
+../src/address_translation.c:386:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:387:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:428:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer0 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE0);
+                    ^
+../src/address_translation.c:429:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     markPointer1 = (unsigned char*)(tempReadBufAddr[dieNo] + BAD_BLOCK_MARK_BYTE1);
+                    ^
+../src/address_translation.c:443:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     bbtUpdater= (unsigned char*)(tempBbtBufAddr[dieNo] + phyBlockNo);
+                 ^
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/data_buffer.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ftl_config.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitChCtlReg':
+../src/ftl_config.c:115:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   nfc_install_ucode((unsigned int*)NSC_UCODES[i]);
+                     ^
+../src/ftl_config.c:116:37: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   V2FInitializeHandle(&chCtlReg[i], (void*)NSCS[i]);
+                                     ^
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:175:35: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+    V2FReadIdSync(&chCtlReg[i], k, idData);
+                                   ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:446:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+At top level:
+../src/ftl_config.c:106:21: warning: 'dq_delay' defined but not used [-Wunused-variable]
+ static unsigned int dq_delay[]  = {00, 00, 00, 00};
+                     ^~~~~~~~
+../src/ftl_config.c:105:21: warning: 'dqs_delay' defined but not used [-Wunused-variable]
+ static unsigned int dqs_delay[] = {1099, 1099, 1099, 1099};
+                     ^~~~~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/nvme_io_cmd_completion.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_io_cmd_completion.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme_io_cmd_completion.d" -MT"src/nvme_io_cmd_completion.o" -o "src/nvme_io_cmd_completion.o" "../src/nvme_io_cmd_completion.c"
+'Finished building: ../src/nvme_io_cmd_completion.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_allocation.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:637:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:638:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:847:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:923:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: run-gr3ftl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gr3ftl_bsp/psu_cortexa53_0/lib -o "run-gr3ftl.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gr3ftl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gr3ftl.elf  |tee "run-gr3ftl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146136	  11256	  34832	 192224	  2eee0	run-gr3ftl.elf
+'Finished building: run-gr3ftl.elf.size'
+' '
+15:38:56 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+make: Nothing to be done for 'all'.
+16:02:36 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+../src/nvme/nvme_io_cmd.c: In function 'handle_nvme_io_write':
+../src/nvme/nvme_io_cmd.c:144:62: error: 'w_ptr' undeclared (first use in this function); did you mean 'func_ptr'?
+  xil_printf("write,cmdSlotTag=%d, w_ptr=%x\r\n", cmdSlotTag, w_ptr);
+                                                              ^~~~~
+                                                              func_ptr
+../src/nvme/nvme_io_cmd.c:144:62: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/nvme/subdir.mk:38: src/nvme/nvme_io_cmd.o] Error 1
+16:03:01 **** Auto Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme_io_cmd_completion.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_io_cmd_completion.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme_io_cmd_completion.d" -MT"src/nvme_io_cmd_completion.o" -o "src/nvme_io_cmd_completion.o" "../src/nvme_io_cmd_completion.c"
+'Finished building: ../src/nvme_io_cmd_completion.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: run-gr3ftl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gr3ftl_bsp/psu_cortexa53_0/lib -o "run-gr3ftl.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gr3ftl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gr3ftl.elf  |tee "run-gr3ftl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146328	  11256	  34832	 192416	  2efa0	run-gr3ftl.elf
+'Finished building: run-gr3ftl.elf.size'
+' '
+16:03:12 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:28 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/debug.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/debug.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/debug.d" -MT"src/nvme/debug.o" -o "src/nvme/debug.o" "../src/nvme/debug.c"
+'Finished building: ../src/nvme/debug.c'
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+In file included from ../src/nvme/host_lld.c:61:
+../src/nvme/host_lld.c: In function 'get_nvme_cmd':
+../src/nvme/io_access.h:52:30: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                              ^
+../src/nvme/host_lld.c:262:24: note: in expansion of macro 'IO_READ32'
+    *(cmdDword + idx) = IO_READ32(addr + (idx * 4));
+                        ^~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_sq':
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:321:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32(addr, nvmeReg.dword[0]);
+  ^~~~~~~~~~
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:322:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32((addr + 4), nvmeReg.dword[1]);
+  ^~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_cq':
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:338:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32(addr, nvmeReg.dword[0]);
+  ^~~~~~~~~~
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:339:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32((addr + 4), nvmeReg.dword[1]);
+  ^~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.c:363:64: warning: 'hostDmaReg.<U9be0>.dword[4]' is used uninitialized in this function [-Wuninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.c:388:64: warning: 'hostDmaReg.<U9be0>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+'Finished building: ../src/nvme/host_lld.c'
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+../src/nvme/nvme_admin_cmd.c: In function 'handle_identify':
+../src/nvme/nvme_admin_cmd.c:388:3: warning: implicit declaration of function 'active_namespace_identification'; did you mean 'zns_namespace_identification'? [-Wimplicit-function-declaration]
+   active_namespace_identification(pIdentifyData);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   zns_namespace_identification
+../src/nvme/nvme_admin_cmd.c:405:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         memset((void *)pIdentifyData, 0, sizeof(ADMIN_IDENTIFY_CONTROLLER));
+                ^
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:67:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:159:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+../src/nvme/nvme_identify.c: In function 'zns_namespace_identification':
+../src/nvme/nvme_identify.c:209:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_ZNS_NAMESPACE *)pBuffer;
+               ^
+../src/nvme/nvme_identify.c: In function 'zns_controller_identification':
+../src/nvme/nvme_identify.c:225:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_ZNS_CONTROLLER *)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'nvme_identify_cmd_set':
+../src/nvme/nvme_identify.c:234:27: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     unsigned char *list = (unsigned char *)pBuffer;
+                           ^
+../src/nvme/nvme_identify.c: In function 'active_namespace_identification':
+../src/nvme/nvme_identify.c:248:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     identifyNS = (ADMIN_IDENTIFY_ACTIVE_NAMESPACE *)pBuffer;
+                  ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nvme_io_cmd_completion.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme_io_cmd_completion.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme_io_cmd_completion.d" -MT"src/nvme_io_cmd_completion.o" -o "src/nvme_io_cmd_completion.o" "../src/nvme_io_cmd_completion.c"
+'Finished building: ../src/nvme_io_cmd_completion.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:637:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:638:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:847:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:923:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_transform.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: run-gr3ftl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gr3ftl_bsp/psu_cortexa53_0/lib -o "run-gr3ftl.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gr3ftl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gr3ftl.elf  |tee "run-gr3ftl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145360	  11256	  34840	 191456	  2ebe0	run-gr3ftl.elf
+'Finished building: run-gr3ftl.elf.size'
+' '
+16:10:42 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+make: Nothing to be done for 'all'.
+09:41:47 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+make: Nothing to be done for 'all'.
+10:48:26 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/debug.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/debug.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/debug.d" -MT"src/nvme/debug.o" -o "src/nvme/debug.o" "../src/nvme/debug.c"
+'Finished building: ../src/nvme/debug.c'
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+In file included from ../src/nvme/host_lld.c:61:
+../src/nvme/host_lld.c: In function 'get_nvme_cmd':
+../src/nvme/io_access.h:52:30: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                              ^
+../src/nvme/host_lld.c:262:24: note: in expansion of macro 'IO_READ32'
+    *(cmdDword + idx) = IO_READ32(addr + (idx * 4));
+                        ^~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_sq':
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:321:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32(addr, nvmeReg.dword[0]);
+  ^~~~~~~~~~
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:322:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32((addr + 4), nvmeReg.dword[1]);
+  ^~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_cq':
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:338:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32(addr, nvmeReg.dword[0]);
+  ^~~~~~~~~~
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:339:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32((addr + 4), nvmeReg.dword[1]);
+  ^~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.c:363:64: warning: 'hostDmaReg.<U9be0>.dword[4]' is used uninitialized in this function [-Wuninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.c:388:64: warning: 'hostDmaReg.<U9be0>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+'Finished building: ../src/nvme/host_lld.c'
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+../src/nvme/nvme_admin_cmd.c: In function 'handle_identify':
+../src/nvme/nvme_admin_cmd.c:388:3: warning: implicit declaration of function 'active_namespace_identification'; did you mean 'zns_namespace_identification'? [-Wimplicit-function-declaration]
+   active_namespace_identification(pIdentifyData);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   zns_namespace_identification
+../src/nvme/nvme_admin_cmd.c:405:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         memset((void *)pIdentifyData, 0, sizeof(ADMIN_IDENTIFY_CONTROLLER));
+                ^
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:67:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:159:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+../src/nvme/nvme_identify.c: In function 'zns_namespace_identification':
+../src/nvme/nvme_identify.c:209:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_ZNS_NAMESPACE *)pBuffer;
+               ^
+../src/nvme/nvme_identify.c: In function 'zns_controller_identification':
+../src/nvme/nvme_identify.c:225:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_ZNS_CONTROLLER *)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'nvme_identify_cmd_set':
+../src/nvme/nvme_identify.c:234:27: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     unsigned char *list = (unsigned char *)pBuffer;
+                           ^
+../src/nvme/nvme_identify.c: In function 'active_namespace_identification':
+../src/nvme/nvme_identify.c:248:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     identifyNS = (ADMIN_IDENTIFY_ACTIVE_NAMESPACE *)pBuffer;
+                  ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:637:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:638:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:847:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:923:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building target: run-gr3ftl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gr3ftl_bsp/psu_cortexa53_0/lib -o "run-gr3ftl.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gr3ftl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gr3ftl.elf  |tee "run-gr3ftl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146024	  11256	  34880	 192160	  2eea0	run-gr3ftl.elf
+'Finished building: run-gr3ftl.elf.size'
+' '
+10:48:53 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+make: Nothing to be done for 'all'.
+11:05:28 **** Auto Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/zns.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/zns.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/zns.d" -MT"src/nvme/zns.o" -o "src/nvme/zns.o" "../src/nvme/zns.c"
+../src/nvme/zns.c: In function 'nvme_zone_mgmt_recv':
+../src/nvme/zns.c:703:11: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     buf = (char *)pZoneManagementAddr;
+           ^
+'Finished building: ../src/nvme/zns.c'
+' '
+'Building target: run-gr3ftl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gr3ftl_bsp/psu_cortexa53_0/lib -o "run-gr3ftl.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gr3ftl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gr3ftl.elf  |tee "run-gr3ftl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146024	  11256	  34880	 192160	  2eea0	run-gr3ftl.elf
+'Finished building: run-gr3ftl.elf.size'
+' '
+11:06:20 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+make: Nothing to be done for 'all'.
+11:31:00 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:67:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:159:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+../src/nvme/nvme_identify.c: In function 'zns_namespace_identification':
+../src/nvme/nvme_identify.c:209:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_ZNS_NAMESPACE *)pBuffer;
+               ^
+../src/nvme/nvme_identify.c: In function 'zns_controller_identification':
+../src/nvme/nvme_identify.c:225:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_ZNS_CONTROLLER *)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'nvme_identify_cmd_set':
+../src/nvme/nvme_identify.c:234:27: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     unsigned char *list = (unsigned char *)pBuffer;
+                           ^
+../src/nvme/nvme_identify.c: In function 'active_namespace_identification':
+../src/nvme/nvme_identify.c:248:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     identifyNS = (ADMIN_IDENTIFY_ACTIVE_NAMESPACE *)pBuffer;
+                  ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/nvme/zns.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/zns.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/zns.d" -MT"src/nvme/zns.o" -o "src/nvme/zns.o" "../src/nvme/zns.c"
+../src/nvme/zns.c: In function 'nvme_zone_mgmt_recv':
+../src/nvme/zns.c:703:11: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     buf = (char *)pZoneManagementAddr;
+           ^
+'Finished building: ../src/nvme/zns.c'
+' '
+'Building target: run-gr3ftl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gr3ftl_bsp/psu_cortexa53_0/lib -o "run-gr3ftl.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gr3ftl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gr3ftl.elf  |tee "run-gr3ftl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146088	  11256	  34880	 192224	  2eee0	run-gr3ftl.elf
+'Finished building: run-gr3ftl.elf.size'
+' '
+12:37:00 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+'Building file: ../src/nvme/debug.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/debug.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/debug.d" -MT"src/nvme/debug.o" -o "src/nvme/debug.o" "../src/nvme/debug.c"
+'Finished building: ../src/nvme/debug.c'
+' '
+'Building file: ../src/nvme/host_lld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/host_lld.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/host_lld.d" -MT"src/nvme/host_lld.o" -o "src/nvme/host_lld.o" "../src/nvme/host_lld.c"
+In file included from ../src/nvme/host_lld.c:61:
+../src/nvme/host_lld.c: In function 'get_nvme_cmd':
+../src/nvme/io_access.h:52:30: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_READ32(addr)    *((volatile unsigned int *)(addr))
+                              ^
+../src/nvme/host_lld.c:262:24: note: in expansion of macro 'IO_READ32'
+    *(cmdDword + idx) = IO_READ32(addr + (idx * 4));
+                        ^~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_sq':
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:321:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32(addr, nvmeReg.dword[0]);
+  ^~~~~~~~~~
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:322:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32((addr + 4), nvmeReg.dword[1]);
+  ^~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_io_cq':
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:338:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32(addr, nvmeReg.dword[0]);
+  ^~~~~~~~~~
+../src/nvme/io_access.h:51:34: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ #define IO_WRITE32(addr, val)  *((volatile unsigned int *)(addr)) = val
+                                  ^
+../src/nvme/host_lld.c:339:2: note: in expansion of macro 'IO_WRITE32'
+  IO_WRITE32((addr + 4), nvmeReg.dword[1]);
+  ^~~~~~~~~~
+../src/nvme/host_lld.c: In function 'set_direct_tx_dma':
+../src/nvme/host_lld.c:363:64: warning: 'hostDmaReg.<U9be0>.dword[4]' is used uninitialized in this function [-Wuninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+../src/nvme/host_lld.c: In function 'set_direct_rx_dma':
+../src/nvme/host_lld.c:388:64: warning: 'hostDmaReg.<U9be0>.dword[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  IO_WRITE32((HOST_DMA_CMD_FIFO_REG_ADDR + 16), hostDmaReg.dword[4]);//slot_modified
+                                                                ^
+'Finished building: ../src/nvme/host_lld.c'
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+../src/nvme/nvme_admin_cmd.c: In function 'handle_identify':
+../src/nvme/nvme_admin_cmd.c:388:3: warning: implicit declaration of function 'active_namespace_identification'; did you mean 'zns_namespace_identification'? [-Wimplicit-function-declaration]
+   active_namespace_identification(pIdentifyData);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   zns_namespace_identification
+../src/nvme/nvme_admin_cmd.c:405:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         memset((void *)pIdentifyData, 0, sizeof(ADMIN_IDENTIFY_CONTROLLER));
+                ^
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_identify.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_identify.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_identify.d" -MT"src/nvme/nvme_identify.o" -o "src/nvme/nvme_identify.o" "../src/nvme/nvme_identify.c"
+../src/nvme/nvme_identify.c: In function 'controller_identification':
+../src/nvme/nvme_identify.c:67:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_CONTROLLER*)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'namespace_identification':
+../src/nvme/nvme_identify.c:159:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_NAMESPACE *)pBuffer;
+               ^
+../src/nvme/nvme_identify.c: In function 'zns_namespace_identification':
+../src/nvme/nvme_identify.c:209:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyNS = (ADMIN_IDENTIFY_ZNS_NAMESPACE *)pBuffer;
+               ^
+../src/nvme/nvme_identify.c: In function 'zns_controller_identification':
+../src/nvme/nvme_identify.c:225:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  identifyCNTL = (ADMIN_IDENTIFY_ZNS_CONTROLLER *)pBuffer;
+                 ^
+../src/nvme/nvme_identify.c: In function 'nvme_identify_cmd_set':
+../src/nvme/nvme_identify.c:234:27: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     unsigned char *list = (unsigned char *)pBuffer;
+                           ^
+../src/nvme/nvme_identify.c: In function 'active_namespace_identification':
+../src/nvme/nvme_identify.c:248:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     identifyNS = (ADMIN_IDENTIFY_ACTIVE_NAMESPACE *)pBuffer;
+                  ^
+'Finished building: ../src/nvme/nvme_identify.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/request_schedule.o" -I../../run-gr3ftl_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'IssueNandReq':
+../src/request_schedule.c:637:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  dataBufAddr = (void*)GenerateDataBufAddr(reqSlotTag);
+                ^
+../src/request_schedule.c:638:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  spareDataBufAddr = (void*)GenerateSpareDataBufAddr(reqSlotTag);
+                     ^
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:847:27: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+  unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                           ^~~~~~~~~~
+../src/request_schedule.c: In function 'ExecuteNandReq':
+../src/request_schedule.c:923:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+       badCheck = (unsigned char*)reqPoolPtr->reqPool[reqSlotTag].dataBufInfo.addr;
+                  ^
+'Finished building: ../src/request_schedule.c'
+' '
+'Building target: run-gr3ftl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../run-gr3ftl_bsp/psu_cortexa53_0/lib -o "run-gr3ftl.elf"  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: run-gr3ftl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size run-gr3ftl.elf  |tee "run-gr3ftl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145424	  11256	  34840	 191520	  2ec20	run-gr3ftl.elf
+'Finished building: run-gr3ftl.elf.size'
+' '
+12:37:26 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+make: Nothing to be done for 'all'.
+13:14:54 **** Clean-only build of configuration Debug for project run-gr3ftl ****
+make clean 
+rm -rf  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o ./src/nvme/zns.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/main.o ./src/nsc_driver.o ./src/nvme_io_cmd_completion.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o  ./src/nvme/debug.d ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d ./src/nvme/zns.d  ./src/address_translation.d ./src/data_buffer.d ./src/ftl_config.d ./src/main.d ./src/nsc_driver.d ./src/nvme_io_cmd_completion.d ./src/request_allocation.d ./src/request_schedule.d ./src/request_transform.d  run-gr3ftl.elf.size  run-gr3ftl.elf
+' '
+13:14:55 **** Clean-only build of project run-gr3ftl_bsp ****
+make -k clean 
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/bram_v4_3/src -s clean 
+make -C psu_cortexa53_0/libsrc/clockps_v1_1/src -s clean 
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/csudma_v1_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s clean 
+make -C psu_cortexa53_0/libsrc/emacps_v3_9/src -s clean 
+make -C psu_cortexa53_0/libsrc/gpiops_v3_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/iicps_v3_9/src -s clean 
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_9/src -s clean 
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s clean 
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/scugic_v4_0/src -s clean 
+make -C psu_cortexa53_0/libsrc/sdps_v3_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/standalone_v7_0/src -s clean 
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/zdma_v1_7/src -s clean 
+rm -f psu_cortexa53_0/lib/libxil.a
