@@ -1,0 +1,62 @@
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets sys_top_i/v2nfc_4/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets sys_top_i/v2nfc_5/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets sys_top_i/v2nfc_6/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets sys_top_i/v2nfc_7/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/wDelayedDQS]
+
+set_property IDELAY_VALUE 13 [get_cells sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY]
+set_property IDELAY_VALUE 13 [get_cells sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY]
+set_property IDELAY_VALUE 13 [get_cells sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY]
+set_property IDELAY_VALUE 13 [get_cells sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY]
+set_property IDELAY_VALUE 17 [get_cells sys_top_i/v2nfc_4/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY]
+set_property IDELAY_VALUE 15 [get_cells sys_top_i/v2nfc_5/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY]
+set_property IDELAY_VALUE 18 [get_cells sys_top_i/v2nfc_6/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY]
+set_property IDELAY_VALUE 16 [get_cells sys_top_i/v2nfc_7/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/Inst_DQSIDELAY]
+
+set_false_path -from [get_clocks clk_fpga_0] -to [get_pins sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/rIN_FIFO_WE_Latch_reg/D]
+set_false_path -from [get_clocks clk_fpga_0] -to [get_pins sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/rIN_FIFO_WE_Latch_reg/D]
+set_false_path -from [get_clocks clk_fpga_0] -to [get_pins sys_top_i/v2nfc_2/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/rIN_FIFO_WE_Latch_reg/D]
+set_false_path -from [get_clocks clk_fpga_0] -to [get_pins sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/rIN_FIFO_WE_Latch_reg/D]
+set_false_path -from [get_clocks clk_fpga_1] -to [get_pins sys_top_i/v2nfc_4/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/rIN_FIFO_WE_Latch_reg/D]
+set_false_path -from [get_clocks clk_fpga_1] -to [get_pins sys_top_i/v2nfc_5/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/rIN_FIFO_WE_Latch_reg/D]
+set_false_path -from [get_clocks clk_fpga_1] -to [get_pins sys_top_i/v2nfc_6/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/rIN_FIFO_WE_Latch_reg/D]
+set_false_path -from [get_clocks clk_fpga_1] -to [get_pins sys_top_i/v2nfc_7/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/rIN_FIFO_WE_Latch_reg/D]
+
+set_property IDELAY_VALUE 0 [get_cells {sys_top_i/v2nfc_6/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/DQIDDRBits[*].Inst_DQIDELAY}]
+
+set_property IODELAY_GROUP BANK_4_IODELAY_GROUP [get_cells {sys_top_i/v2nfc_4/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/DQIDDRBits[*].Inst_DQIDELAY}]
+set_property IODELAY_GROUP BANK_4_IODELAY_GROUP [get_cells {sys_top_i/v2nfc_5/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/DQIDDRBits[*].Inst_DQIDELAY}]
+set_property IODELAY_GROUP BANK_6_IODELAY_GROUP [get_cells {sys_top_i/v2nfc_6/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/DQIDDRBits[*].Inst_DQIDELAY}]
+set_property IODELAY_GROUP BANK_7_IODELAY_GROUP [get_cells {sys_top_i/v2nfc_7/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/DQIDDRBits[*].Inst_DQIDELAY}]
+
+create_clock -period 10.000 -name pcie_ref_clk -waveform {0.000 5.000} [get_ports pcie_ref_clk_clk_p]
+
+set_false_path -through [get_ports pcie_perst_n]
+
+#set_false_path -from [get_clocks *userclk2] -to [get_clocks clk_fpga_0]
+set_false_path -from [get_clocks clk_fpga_2] -to [get_clocks *userclk2]
+set_false_path -from [get_clocks *userclk2] -to [get_clocks clk_fpga_2]
+#set_false_path -from [get_clocks clk_fpga_3] -to [get_clocks *userclk2]
+set_false_path -from [get_clocks *userclk2] -to [get_clocks clk_fpga_3]
+set_false_path -from [get_clocks clk_125mhz_mux_x0y0] -to [get_clocks clk_fpga_2]
+##set_false_path -from [get_clocks clk_fpga_2] -to [get_clocks clk_125mhz_mux_x0y0]
+set_false_path -from [get_clocks clk_250mhz_mux_x0y0] -to [get_clocks clk_fpga_2]
+##set_false_path -from [get_clocks clk_fpga_2] -to [get_clocks clk_250mhz_mux_x0y0]
+set_false_path -from [get_clocks clk_fpga_3] -to [get_clocks clk_fpga_2]
+set_false_path -from [get_clocks clk_fpga_2] -to [get_clocks clk_fpga_3]
+
+
+set_property INTERNAL_VREF 0.9 [get_iobanks 11]
+set_property INTERNAL_VREF 0.9 [get_iobanks 12]
+set_property INTERNAL_VREF 0.9 [get_iobanks 13]
+set_property INTERNAL_VREF 0.9 [get_iobanks 33]
+set_property INTERNAL_VREF 0.9 [get_iobanks 34]
+set_property INTERNAL_VREF 0.9 [get_iobanks 35]
+connect_debug_port u_ila_0/clk [get_nets [list u_ila_0_iClock]]
+connect_debug_port u_ila_1/clk [get_nets [list u_ila_0_iClock]]
+connect_debug_port dbg_hub/clk [get_nets u_ila_0_iClock]
+
+

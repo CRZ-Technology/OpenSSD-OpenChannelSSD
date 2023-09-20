@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="D:\sources\CosmosPlus\Micron\OpenSSD\CosmosPlus_Micron_OpenSSD_8C2W_19.1_20220318\cosm-plus-sys.sdk\run-gftl3\Debug" key="bootgen_files_selection"/>
+	<item value="C:\Xilinx\Cosmos+\Toshiba\cosm-plus-sys-083021.xpr\cosm-plus-sys\cosm-plus-sys.sdk\fsbl\Debug" key="zynq_flash_files_selection"/>
+	<item value="D:\sources\CosmosPlus\Micron\OpenSSD\CosmosPlus_Micron_OpenSSD_8C2W_19.1_20220318\cosm-plus-sys.sdk\run-gftl3\Debug" key="last_stored_selection"/>
+</section>

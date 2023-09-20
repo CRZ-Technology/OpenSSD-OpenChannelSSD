@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="sys_top_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="Auto Detect" key="sys_top_wrapper_hw_platform_0-device"/>
+	<item value="Local" key="sys_top_wrapper_hw_platform_0-target"/>
+	<item value="qspi-x8-dual_parallel" key="sys_top_wrapper_hw_platform_0-flashType"/>
+	<item value="false" key="sys_top_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="C:\Xilinx\Cosmos+\Toshiba\cosm-plus-sys-083021.xpr\cosm-plus-sys\cosm-plus-sys.sdk\run-gftl3\bootimage\BOOT.bin" key="sys_top_wrapper_hw_platform_0-imgFile"/>
+	<item value="" key="sys_top_wrapper_hw_platform_0-offSet"/>
+	<item value="false" key="sys_top_wrapper_hw_platform_0-blankCheck"/>
+	<item value="C:\Xilinx\Cosmos+\Toshiba\cosm-plus-sys-083021.xpr\cosm-plus-sys\cosm-plus-sys.sdk\fsbl\Debug\fsbl.elf" key="sys_top_wrapper_hw_platform_0-fsblFile"/>
+</section>
