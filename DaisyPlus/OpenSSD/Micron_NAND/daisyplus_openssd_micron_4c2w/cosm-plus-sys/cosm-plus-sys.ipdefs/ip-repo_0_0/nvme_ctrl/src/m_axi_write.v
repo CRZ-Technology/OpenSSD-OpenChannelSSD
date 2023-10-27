@@ -308,8 +308,8 @@ begin
 			r_dma_cmd_type     <= dev_rx_cmd_rd_data[P_SLOT_TAG_WIDTH+12]; //slot_modified
 			r_dma_done_check   <= dev_rx_cmd_rd_data[P_SLOT_TAG_WIDTH+11];
 			r_hcmd_slot_tag    <= dev_rx_cmd_rd_data[(P_SLOT_TAG_WIDTH+11)-1:11]; //slot_modified
-			r_dev_dma_len      <= {dev_rx_cmd_rd_data[10:2], 2'b0};
-			if(dev_rx_cmd_rd_data[9:2] != 0) begin
+			r_dev_dma_len      <= dev_rx_cmd_rd_data[10:0];
+			if(dev_rx_cmd_rd_data[9:0] != 0) begin
 				if(r_2nd_dma == 0)
 					r_2nd_dma <= 1;
 				else
@@ -349,8 +349,8 @@ begin
 				end
 			end
 
-			r_dev_addr        <= {dev_rx_cmd_rd_data[29:2], 2'b0};
-			r_dev_addr_backup <= {dev_rx_cmd_rd_data[29:2], 2'b0};
+			r_dev_addr        <= dev_rx_cmd_rd_data[29:0];
+			r_dev_addr_backup <= dev_rx_cmd_rd_data[29:0];
 
 			if(r_dev_dma_len[5:2] != 0)
 				r_wr_count   <= 4'h8 - r_dev_dma_len[5:3] - r_dev_dma_len[2];
