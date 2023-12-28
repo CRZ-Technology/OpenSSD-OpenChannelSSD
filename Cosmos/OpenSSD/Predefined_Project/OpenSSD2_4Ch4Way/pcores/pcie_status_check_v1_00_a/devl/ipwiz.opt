@@ -1,0 +1,8 @@
+-batch 
+-create pcie_status_check 
+-ver 1.00.a 
+-dir "C:\xilinx_project\gobs_bin\wo_pm_128_fin_compact" 
+-lang verilog 
+-bus axi4lite s 
+-reg 1 
+-xps 

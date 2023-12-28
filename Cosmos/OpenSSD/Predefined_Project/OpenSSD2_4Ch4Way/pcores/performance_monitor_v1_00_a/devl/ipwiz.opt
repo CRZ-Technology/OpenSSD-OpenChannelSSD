@@ -1,0 +1,8 @@
+-batch 
+-create performance_monitor 
+-ver 1.00.a 
+-dir "I:\Projects\tutorial\wo_pm_128_tut" 
+-lang verilog 
+-bus axi4lite s 
+-reg 1 
+-xps 

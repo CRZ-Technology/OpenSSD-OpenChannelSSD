@@ -1,0 +1,161 @@
+
+----------------------------------------------------------------------------
+--                            Design Analysis                             --
+----------------------------------------------------------------------------
+Analyze pcore pcie_status_check ...
+
+
+----------------------------------------------------------------------------
+--                            Design Analysis                             --
+----------------------------------------------------------------------------
+Analyze pcore pcie_status_check ...
+
+
+----------------------------------------------------------------------------
+--                            Design Analysis                             --
+----------------------------------------------------------------------------
+Analyze pcore pcie_status_check ...
+
+
+----------------------------------------------------------------------------
+--                            Design Analysis                             --
+----------------------------------------------------------------------------
+Analyze pcore pcie_status_check ...
+
+
+----------------------------------------------------------------------------
+--                            Design Analysis                             --
+----------------------------------------------------------------------------
+Analyze pcore pcie_status_check ...
+
+
+----------------------------------------------------------------------------
+--                            File Generation                             --
+----------------------------------------------------------------------------
+Creating HDL source directory ...
+Generating top peripheral VHDL template ...
+Generating stub user logic Verilog template ...
+HDL templates successfully generated ...
+Creating data directory ...
+Generating XPS inteface files ...
+WARNING:HDLParsers:3497 - Ignoring Verilog File
+   "C:/xilinx_project/gobs_bin/wo_pm_128_fin_compact/pcores/pcie_status_check_v1
+   _00_a/data/../hdl/verilog/user_logic.v"
+Compiling vhdl file
+"C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/
+hdl/vhdl/address_decoder.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <address_decoder> compiled.
+Entity <address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/
+hdl/vhdl/slave_attachment.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <slave_attachment> compiled.
+Entity <slave_attachment> (Architecture <imp>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/
+hdl/vhdl/axi_lite_ipif.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <axi_lite_ipif> compiled.
+Entity <axi_lite_ipif> (Architecture <imp>) compiled.
+Compiling vhdl file
+"C:/xilinx_project/gobs_bin/wo_pm_128_fin_compact/pcores/pcie_status_check_v1_00
+_a/data/../hdl/vhdl/pcie_status_check.vhd" in Library pcie_status_check_v1_00_a.
+Entity <pcie_status_check> compiled.
+Entity <pcie_status_check> (Architecture <IMP>) compiled.
+
+
+Analyzing HDL attributes ...
+Entity name = pcie_status_check
+INFO:EDK:1607 - IPTYPE set to value : PERIPHERAL
+INFO:EDK:1511 - IMP_NETLIST set to value : TRUE
+INFO:EDK:1486 - HDL set to value : VHDL
+WARNING:EDK:3588 - Unable to delete temporary XST project file
+   C:\xilinx_project\gobs_bin\wo_pm_128_fin_compact\pcores\pcie_status_check_v1_
+   00_a\data\_pcie_status_check_xst.prj : 13
+XPS interface files successfully generated ...
+Creating development directory ...
+Generating command option file ...
+Generating readme file ...
+Development misc files successfully generated ...
+No ProjNavigator support files will be generated at this time ...
+No XST synthesis support files will be generated at this time ...
+No BFM simulation files will be generated at this time ...
+No software driver files will be generated at this time ...
+
+----------------------------------------------------------------------------
+--                              Final Report                              --
+----------------------------------------------------------------------------
+Thank you for using Create and Import Peripheral Wizard! Please find your
+peripheral hardware templates under
+C:\xilinx_project\gobs_bin\wo_pm_128_fin_compact/pcores/pcie_status_check_v1_00_
+a.
+
+Peripheral Summary:
+
+  top name       : pcie_status_check
+  version        : 1.00.a
+  type           : AXI4LITE slave
+  features       : slave attachment
+                   user s/w registers
+
+Address Block Summary:
+
+  user logic slv : C_BASEADDR + 0x00000000
+                 : C_BASEADDR + 0x000000FF
+
+File Summary
+
+  - HDL source -
+C:\xilinx_project\gobs_bin\wo_pm_128_fin_compact/pcores/pcie_status_check_v1_00_
+a/hdl
+  top entity     : vhdl/pcie_status_check.vhd
+  user logic     : verilog/user_logic.v
+
+  - XPS interface -
+C:\xilinx_project\gobs_bin\wo_pm_128_fin_compact/pcores/pcie_status_check_v1_00_
+a/data
+  mpd            : pcie_status_check_v2_1_0.mpd
+  pao            : pcie_status_check_v2_1_0.pao
+
+  - Misc file -
+C:\xilinx_project\gobs_bin\wo_pm_128_fin_compact/pcores/pcie_status_check_v1_00_
+a/devl
+  help           : README.txt
+  option         : ipwiz.opt
+  log            : ipwiz.log
+
+

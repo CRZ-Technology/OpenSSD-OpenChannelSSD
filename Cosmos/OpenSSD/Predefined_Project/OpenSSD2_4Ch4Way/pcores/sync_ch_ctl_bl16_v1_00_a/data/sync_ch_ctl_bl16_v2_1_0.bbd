@@ -1,0 +1,2 @@
+FILES
+dpram_8x40_32x10.ngc, dpram_8x2198_64x256.ngc, pll_50M.ngc, received_message_buffer.ngc

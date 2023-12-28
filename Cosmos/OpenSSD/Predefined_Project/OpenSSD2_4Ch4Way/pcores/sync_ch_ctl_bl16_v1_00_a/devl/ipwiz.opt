@@ -1,0 +1,10 @@
+-batch 
+-create sync_ch_ctl_bl16 
+-ver 1.00.a 
+-dir "I:\Projects\tutorial\wo_pm_128_tut" 
+-lang verilog 
+-bus axi4 ms 
+-burst m 64 
+-axi4_opt len_wid 12 
+-reg 32 
+-xps 

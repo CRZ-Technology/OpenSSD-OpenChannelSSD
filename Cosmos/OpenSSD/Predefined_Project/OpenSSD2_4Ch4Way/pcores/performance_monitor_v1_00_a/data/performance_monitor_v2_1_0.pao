@@ -1,0 +1,12 @@
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+
+lib performance_monitor_v1_00_a performance_ch_read_counter verilog
+lib performance_monitor_v1_00_a performance_ch_prog_counter verilog
+lib performance_monitor_v1_00_a performance_ch_erase_counter verilog
+lib performance_monitor_v1_00_a performance_counter_read verilog
+lib performance_monitor_v1_00_a performance_counter_prog verilog
+lib performance_monitor_v1_00_a performance_counter_erase verilog
+lib performance_monitor_v1_00_a performance_monitor_reg verilog
+lib performance_monitor_v1_00_a performance_monitor_top verilog
+lib performance_monitor_v1_00_a performance_monitor vhdl
