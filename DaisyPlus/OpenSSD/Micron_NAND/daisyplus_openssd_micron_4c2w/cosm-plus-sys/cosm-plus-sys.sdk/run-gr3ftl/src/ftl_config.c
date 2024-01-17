@@ -160,6 +160,26 @@ void InitNandArray()
 
 	SyncAllLowLevelReqDone();
 
+#if 0
+    for(i = 0; i < 1100; i += 50)
+    {
+        nfc_set_dqs_delay(0, i);
+        for(k = 0; k < 1100; k += 50)
+        {
+            nfc_set_dq_delay(0, k);
+
+            printf("dqs=%d, dq=%d\r\n", i, k);
+
+            int j;
+            unsigned char* idData = (unsigned char*)(TEMPORARY_PAY_LOAD_ADDR + 16);
+            V2FReadIdSync(&chCtlReg[0], 0, idData);
+            printf("Ch %d Way %d ReadId: ", 0, 0);
+            for (j = 0; j < 6;j ++)
+                printf("%x ", idData[j]);
+            printf("\r\n");
+        }
+    }
+#else
 	/*for (i = 0; i < USER_CHANNELS; i++)
 	{
 		nfc_set_dqs_delay(i, dqs_delay[i]);
@@ -179,7 +199,7 @@ void InitNandArray()
 			printf("\r\n");
 		}
 	}
-
+#endif
 	xil_printf("[ NAND device reset complete. ]\r\n");
 }
 

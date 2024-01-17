@@ -125,8 +125,8 @@ module NPhy_Toggle_Physical_Input_DDR100
     input   [8:0]   iDQ7IDelayTap       ;
     input   [1:0]   iDQ7IDelayTapLoad   ;
     // Input Capture Clock -> delayed DQS signal with IDELAYE2
-    // IDELAYE2, REFCLK: SDR 200MHz
-    //           Tap resolution: 1/(32*2*200MHz) = 78.125 ps
+    // IDELAYE2, REFCLK: SDR 300MHz
+    //           Tap resolution: 1/(32*2*300MHz) = 78.125 ps
     //           Initial Tap: 28, 78.125 ps * 28 = 2187.5 ps
     
     // Data Width (DQ): 8 bit
@@ -218,7 +218,7 @@ module NPhy_Toggle_Physical_Input_DDR100
         .DELAY_SRC          ("IDATAIN"  ),
         .DELAY_VALUE        (IDelayValue),
         .DELAY_FORMAT       ("TIME"     ),
-        .REFCLK_FREQUENCY   (200        ),
+        .REFCLK_FREQUENCY   (300        ),
         .SIM_DEVICE         ("ULTRASCALE_PLUS"),
         .CASCADE            ("NONE")
     )
@@ -257,7 +257,7 @@ module NPhy_Toggle_Physical_Input_DDR100
         .DELAY_SRC          ("IDATAIN"  ),
         .DELAY_VALUE        (IDelayValue),
         .DELAY_FORMAT       ("TIME"     ),
-        .REFCLK_FREQUENCY   (200        ),
+        .REFCLK_FREQUENCY   (300        ),
         .SIM_DEVICE         ("ULTRASCALE_PLUS"),
         .CASCADE            ("NONE")
     )
@@ -303,7 +303,7 @@ module NPhy_Toggle_Physical_Input_DDR100
         .DELAY_SRC          ("IDATAIN"  ),
         .DELAY_VALUE        (IDelayValue),
         .DELAY_FORMAT       ("TIME"     ),
-        .REFCLK_FREQUENCY   (200        ),
+        .REFCLK_FREQUENCY   (300        ),
         .SIM_DEVICE         ("ULTRASCALE_PLUS"),
         .CASCADE            ("NONE")
     )
@@ -342,7 +342,7 @@ module NPhy_Toggle_Physical_Input_DDR100
         .DELAY_SRC          ("IDATAIN"  ),
         .DELAY_VALUE        (IDelayValue),
         .DELAY_FORMAT       ("TIME"     ),
-        .REFCLK_FREQUENCY   (200        ),
+        .REFCLK_FREQUENCY   (300        ),
         .SIM_DEVICE         ("ULTRASCALE_PLUS"),
         .CASCADE            ("NONE")
     )
@@ -420,7 +420,7 @@ module NPhy_Toggle_Physical_Input_DDR100
 				.DELAY_SRC          ("IDATAIN"  ),
 				.DELAY_VALUE        (DQIDelayValue),
 				.DELAY_FORMAT       ("TIME"     ),
-				.REFCLK_FREQUENCY   (200        ),
+				.REFCLK_FREQUENCY   (300        ),
 				.SIM_DEVICE         ("ULTRASCALE_PLUS"),
 				.CASCADE            ("NONE")
             )

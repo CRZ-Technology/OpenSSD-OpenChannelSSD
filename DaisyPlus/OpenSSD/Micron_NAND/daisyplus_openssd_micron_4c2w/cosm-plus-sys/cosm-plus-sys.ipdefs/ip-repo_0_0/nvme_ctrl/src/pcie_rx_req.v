@@ -203,8 +203,8 @@ begin
 
 		end
 		S_PCIE_RX_CMD_0: begin
-			r_pcie_rx_len <= pcie_rx_cmd_rd_data[10:0];
-			if(pcie_rx_cmd_rd_data[9:0] != 0) begin
+			r_pcie_rx_len <= {pcie_rx_cmd_rd_data[10:2], 2'b0};
+			if(pcie_rx_cmd_rd_data[9:2] != 0) begin
 				if(r_2nd_dma == 0)
 					r_2nd_dma <= 1;
 				else
@@ -289,7 +289,7 @@ begin
 				end
 			endcase
 
-			r_pcie_addr <= pcie_rx_cmd_rd_data[45:0]; //modified
+			r_pcie_addr <= {pcie_rx_cmd_rd_data[45:2], 2'b0}; //modified
 		end
 		S_PCIE_CHK_NUM_MRD: begin
 

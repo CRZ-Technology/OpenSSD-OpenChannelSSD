@@ -10,7 +10,7 @@
       <spirit:componentRef spirit:vendor="enclab" spirit:library="user" spirit:name="bch_sccs_256B_21B_13b" spirit:version="1.0.0"/>
       <spirit:configurableElementValues>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.ICLOCK.CLK_DOMAIN">/pll_bank10_clk_out1</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.ICLOCK.FREQ_HZ">49999000</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.ICLOCK.FREQ_HZ">66666000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.ICLOCK.INSERT_VIP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.ICLOCK.PHASE">0.0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.IRESET.INSERT_VIP">0</spirit:configurableElementValue>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="C:\project\DaisyPlus\OpenSSD\Toshiba\daisyplus_openssd_toshiba_4c8w_20220425.xpr\cosm-plus-sys\cosm-plus-sys.sdk\run-gr3ftl\Debug" key="tcf_debug_app_selection"/>
-	<item value="C:\project\DaisyPlus\OpenSSD\Toshiba\daisyplus_openssd_toshiba_4c8w_20220425.xpr\cosm-plus-sys\cosm-plus-sys.sdk\run-gr3ftl\Debug" key="last_stored_selection"/>
+	<item value="D:\sources\DaisyPlus\M.2_MIG_PCIe\DaisyPlus_M.2_PCIe_MIG_NEW_LPDDR4_201901_20210719\ps.sdk\fsbl\Debug" key="zynq_flash_files_selection"/>
+	<item value="D:\sources\DaisyPlus\M.2_MIG_PCIe\DaisyPlus_M.2_PCIe_MIG_NEW_LPDDR4_201901_20210719\ps.sdk\fsbl\Debug" key="last_stored_selection"/>
 </section>

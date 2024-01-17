@@ -268,27 +268,27 @@ begin
 	end
 end
 
+/*
 always @ (*)
 begin
 	case(r_cq_msi_irq_sel)  // synthesis parallel_case full_case
-		9'b000000001: r_pcie_irq_vector <= 9'b000000001;
-		9'b000000010: r_pcie_irq_vector <= 9'b000000001 << io_cq1_iv;
-		9'b000000100: r_pcie_irq_vector <= 9'b000000001 << io_cq2_iv;
-		9'b000001000: r_pcie_irq_vector <= 9'b000000001 << io_cq3_iv;
-		9'b000010000: r_pcie_irq_vector <= 9'b000000001 << io_cq4_iv;
-		9'b000100000: r_pcie_irq_vector <= 9'b000000001 << io_cq5_iv;
-		9'b001000000: r_pcie_irq_vector <= 9'b000000001 << io_cq6_iv;
-		9'b010000000: r_pcie_irq_vector <= 9'b000000001 << io_cq7_iv;
-		9'b100000000: r_pcie_irq_vector <= 9'b000000001 << io_cq8_iv;
+		9'b000000001: r_pcie_irq_vector <= 0;
+		9'b000000010: r_pcie_irq_vector <= io_cq1_iv;
+		9'b000000100: r_pcie_irq_vector <= io_cq2_iv;
+		9'b000001000: r_pcie_irq_vector <= io_cq3_iv;
+		9'b000010000: r_pcie_irq_vector <= io_cq4_iv;
+		9'b000100000: r_pcie_irq_vector <= io_cq5_iv;
+		9'b001000000: r_pcie_irq_vector <= io_cq6_iv;
+		9'b010000000: r_pcie_irq_vector <= io_cq7_iv;
+		9'b100000000: r_pcie_irq_vector <= io_cq8_iv;
 	endcase
 end
- 
-/*
+*/
+
 always @ (*)
 begin
 	r_pcie_irq_vector <= r_cq_msi_irq_sel;
 end
-*/
 
 always @ (*)
 begin

@@ -33,6 +33,10 @@ set_property SLEW FAST [get_ports nand_if_*_nand_re_p]
 
 
 
+
+
+
+
 set_property OFFCHIP_TERM NONE [get_ports nand_if_0_nand_ale]
 set_property OFFCHIP_TERM NONE [get_ports nand_if_0_nand_cle]
 set_property OFFCHIP_TERM NONE [get_ports nand_if_0_nand_dqs_p]

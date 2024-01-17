@@ -27,8 +27,8 @@
 /* Number of Fabric Resets */
 #define XPAR_NUM_FABRIC_RESETS 4
 
-#define STDIN_BASEADDRESS 0xFF000000
-#define STDOUT_BASEADDRESS 0xFF000000
+#define STDIN_BASEADDRESS 0xFE800000
+#define STDOUT_BASEADDRESS 0xFE800000
 
 /******************************************************************/
 

@@ -64,3 +64,7 @@ set_property INTERNAL_VREF 0.9 [get_iobanks 71]
 set_clock_groups -asynchronous -group clk_pl_1 -group nand_ch0_fabric_clk -group nand_ch1_fabric_clk -group nand_ch2_fabric_clk -group nand_ch3_fabric_clk
 set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
 
+set_false_path -from [get_clocks nand_ch3_fabric_clk] -to [get_clocks -of_objects [get_pins sys_top_i/pll_bank13/inst/mmcme4_adv_inst/CLKOUT2]]
+set_false_path -from [get_clocks nand_ch2_fabric_clk] -to [get_clocks -of_objects [get_pins sys_top_i/pll_bank12/inst/mmcme4_adv_inst/CLKOUT2]]
+set_false_path -from [get_clocks nand_ch1_fabric_clk] -to [get_clocks -of_objects [get_pins sys_top_i/pll_bank11/inst/mmcme4_adv_inst/CLKOUT2]]
+set_false_path -from [get_clocks nand_ch0_fabric_clk] -to [get_clocks -of_objects [get_pins sys_top_i/pll_bank10/inst/mmcme4_adv_inst/CLKOUT2]]

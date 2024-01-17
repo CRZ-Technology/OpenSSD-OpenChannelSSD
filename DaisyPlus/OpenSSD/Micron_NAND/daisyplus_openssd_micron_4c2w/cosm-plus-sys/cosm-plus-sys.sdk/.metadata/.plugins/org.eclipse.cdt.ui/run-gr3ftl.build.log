@@ -1,7 +1,6 @@
-14:06:29 **** Clean-only build of configuration Debug for project run-gr3ftl ****
-make clean 
-rm -rf  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o  ./src/nvme/debug.d ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d  ./src/address_translation.d ./src/data_buffer.d ./src/ftl_config.d ./src/garbage_collection.d ./src/main.d ./src/nsc_driver.d ./src/request_allocation.d ./src/request_schedule.d ./src/request_transform.d  run-gr3ftl.elf.size  run-gr3ftl.elf
-' '
+10:41:00 **** Incremental Build of configuration Debug for project run-gr3ftl ****
+make all 
+make: Nothing to be done for 'all'.
 
-14:06:30 Build Finished (took 607ms)
+10:41:01 Build Finished (took 683ms)
 

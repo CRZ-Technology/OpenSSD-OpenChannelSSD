@@ -105,7 +105,7 @@
 #define V2FWorstChunkErrorCount(errorInformation) ((*((uint32_t*)(errorInformation)) & 0x00FF0000) >> 16)
 #define V2FPageDecodeSuccess(secErrorInformation) ((*((uint32_t*)(secErrorInformation)) & 0xFFFFFFFF) == 0xFFFFFFFF)
 
-#define V2FEnterToggleMode(dev, way, payLoadAddr) V2FSetFeaturesSync(dev, way, 0x7, 0x02, 0x100, 0x22, payLoadAddr)
+#define V2FEnterToggleMode(dev, way, payLoadAddr) V2FSetFeaturesSync(dev, way, 0x7, 0x03, 0x100, 0x24, payLoadAddr)
 
 #define V2FWayReady(readyBusy, wayNo) (((readyBusy) >> (wayNo)) & 1)
 #define V2FTransferComplete(completeFlag) ((completeFlag) & 1)

@@ -163,7 +163,7 @@ module NPM_Toggle_DI_DDR100
         // counter, decoded data
     wire    [17:0]                  wTranslatedNum          ;
     reg     [17:1]                  rRECCounter             ;
-    reg     [4:0]                   rRECSubCounter          ;
+    reg     [5:0]                   rRECSubCounter          ;
     reg     [17:1]                  rDQICounter             ;
     reg     [17:2]                  rDQOCounter             ;
     
@@ -302,12 +302,12 @@ module NPM_Toggle_DI_DDR100
     
     // Flow Control
     
-    assign wLetsStart = (rRECSubCounter[4:0] == 5'b00000);
-    assign wtCRxxDone = (rRECSubCounter[4:0] == 5'b01000);
-    assign wtCRxxPostDone = (rRECSubCounter[4:0] == 5'b01110);
-    assign wtRPREDone = (rRECSubCounter[4:0] == 5'b10010);
+    assign wLetsStart = (rRECSubCounter[5:0] == 6'b000000);
+    assign wtCRxxDone = (rRECSubCounter[5:0] == 6'b010000);
+    assign wtCRxxPostDone = (rRECSubCounter[5:0] == 6'b011100);
+    assign wtRPREDone = (rRECSubCounter[5:0] == 6'b100100);
     assign wRELoopDone = (rRECCounter[17:1] == wTranslatedNum[17:1]);
-    assign wtRPSTDone = (rRECSubCounter[4:0] == 5'b11110);
+    assign wtRPSTDone = (rRECSubCounter[5:0] == 6'b111100);
     
     assign wPMActive = (rREC_cur_state != REC_RESET) & (rREC_cur_state != REC_READY);
     
@@ -466,7 +466,7 @@ module NPM_Toggle_DI_DDR100
             rNumOfData[15:0]                    <= 0;
             
             rRECCounter[17:1]                   <= 0;
-            rRECSubCounter[4:0]                 <= 0;
+            rRECSubCounter[5:0]                 <= 0;
             
             rPO_ChipEnable                      <= 0;
             rPO_ReadEnable[3:0]                 <= 0;
@@ -486,7 +486,7 @@ module NPM_Toggle_DI_DDR100
                     rNumOfData[15:0]                    <= 0;
                     
                     rRECCounter[17:1]                   <= 0;
-                    rRECSubCounter[4:0]                 <= 0;
+                    rRECSubCounter[5:0]                 <= 0;
                     
                     rPO_ChipEnable                      <= 0;
                     rPO_ReadEnable[3:0]                 <= 0;
@@ -505,7 +505,7 @@ module NPM_Toggle_DI_DDR100
                     rNumOfData[15:0]                    <= 0;
                     
                     rRECCounter[17:1]                   <= 0;
-                    rRECSubCounter[4:0]                 <= 0;
+                    rRECSubCounter[5:0]                 <= 0;
                     
                     rPO_ChipEnable                      <= 0;
                     rPO_ReadEnable[3:0]                 <= 0;
@@ -524,7 +524,7 @@ module NPM_Toggle_DI_DDR100
                     rNumOfData[15:0]                    <= (wLetsStart)? iNumOfData[15:0]:rNumOfData[15:0];
                     
                     rRECCounter[17:1]                   <= 0;
-                    rRECSubCounter[4:0]                 <= rRECSubCounter[4:0] + 1'b1;
+                    rRECSubCounter[5:0]                 <= rRECSubCounter[5:0] + 1'b1;
                     
                     rPO_ChipEnable                      <= (wLetsStart)? wPO_ChipEnable:rPO_ChipEnable;
                     rPO_ReadEnable[3:0]                 <= 4'b0000;
@@ -543,7 +543,7 @@ module NPM_Toggle_DI_DDR100
                     rNumOfData[15:0]                    <= rNumOfData[15:0];
                     
                     rRECCounter[17:1]                   <= 0;
-                    rRECSubCounter[4:0]                 <= rRECSubCounter[4:0] + 1'b1;
+                    rRECSubCounter[5:0]                 <= rRECSubCounter[5:0] + 1'b1;
                     
                     rPO_ChipEnable                      <= rPO_ChipEnable;
                     rPO_ReadEnable[3:0]                 <= 4'b1111;
@@ -562,7 +562,7 @@ module NPM_Toggle_DI_DDR100
                     rNumOfData[15:0]                    <= rNumOfData[15:0];
                     
                     rRECCounter[17:1]                   <= rRECCounter[17:1] + 1'b1;
-                    rRECSubCounter[4:0]                 <= rRECSubCounter[4:0];
+                    rRECSubCounter[5:0]                 <= rRECSubCounter[5:0];
                     
                     rPO_ChipEnable                      <= rPO_ChipEnable;
                     rPO_ReadEnable[3:0]                 <= 4'b1010;
@@ -581,7 +581,7 @@ module NPM_Toggle_DI_DDR100
                     rNumOfData[15:0]                    <= rNumOfData[15:0];
                     
                     rRECCounter[17:1]                   <= rRECCounter[17:1];
-                    rRECSubCounter[4:0]                 <= rRECSubCounter[4:0];
+                    rRECSubCounter[5:0]                 <= rRECSubCounter[5:0];
                     
                     rPO_ChipEnable                      <= rPO_ChipEnable;
                     rPO_ReadEnable[3:0]                 <= rLastRE[3:0];
@@ -600,7 +600,7 @@ module NPM_Toggle_DI_DDR100
                     rNumOfData[15:0]                    <= rNumOfData[15:0];
                     
                     rRECCounter[17:1]                   <= rRECCounter[17:1];
-                    rRECSubCounter[4:0]                 <= rRECSubCounter[4:0] + 1'b1;
+                    rRECSubCounter[5:0]                 <= rRECSubCounter[5:0] + 1'b1;
                     
                     rPO_ChipEnable                      <= rPO_ChipEnable;
                     rPO_ReadEnable[3:0]                 <= { 4{ rLastRE[3] } };
@@ -619,7 +619,7 @@ module NPM_Toggle_DI_DDR100
                     rNumOfData[15:0]                    <= rNumOfData[15:0];
                     
                     rRECCounter[17:1]                   <= rRECCounter[17:1];
-                    rRECSubCounter[4:0]                 <= rRECSubCounter[4:0];
+                    rRECSubCounter[5:0]                 <= rRECSubCounter[5:0];
                     
                     rPO_ChipEnable                      <= rPO_ChipEnable;
                     rPO_ReadEnable[3:0]                 <= { 4{ rLastRE[3] } };
