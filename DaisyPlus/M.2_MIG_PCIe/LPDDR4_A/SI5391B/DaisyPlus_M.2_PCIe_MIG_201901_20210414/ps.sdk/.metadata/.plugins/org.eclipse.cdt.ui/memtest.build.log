@@ -1,31 +1,7 @@
-12:54:15 **** Build of configuration Debug for project MemTest ****
-make all 
-'Building file: ../src/memory_config_g.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/memory_config_g.o" -I../../MemTest_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.o" -o "src/memory_config_g.o" "../src/memory_config_g.c"
-'Finished building: ../src/memory_config_g.c'
-' '
-'Building file: ../src/memorytest.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/memorytest.o" -I../../MemTest_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.o" -o "src/memorytest.o" "../src/memorytest.c"
-'Finished building: ../src/memorytest.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MemTest_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: MemTest.elf'
-'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MemTest_bsp/psu_cortexa53_0/lib -o "MemTest.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: MemTest.elf'
-' '
-'Invoking: ARM v8 Print Size'
-aarch64-none-elf-size MemTest.elf  |tee "MemTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  38724	   2544	  12544	  53812	   d234	MemTest.elf
-'Finished building: MemTest.elf.size'
+17:52:04 **** Clean-only build of configuration Debug for project MemTest ****
+make clean 
+rm -rf  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o  ./src/memory_config_g.d ./src/memorytest.d ./src/platform.d  MemTest.elf.size  MemTest.elf
 ' '
 
-12:54:18 Build Finished (took 3s.251ms)
+17:52:05 Build Finished (took 371ms)
 

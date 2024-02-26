@@ -7494,12 +7494,8 @@
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Apr 14 06:38:55 UTC 2021</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ba7a77b2</spirit:value>
+            <spirit:value>9:aa45bc89</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -21360,7 +21356,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>ENABLE_IBERT</spirit:name>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.ENABLE_IBERT">FALSE</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.ENABLE_IBERT">TRUE</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>GEN4_EIEOS_0S7</spirit:name>
@@ -22298,6 +22294,14 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>ip_0/design_1_xdma_0_0_pcie4_ip_gt.xml</spirit:name>
+        <spirit:userFileType>xml</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>ip_1/design_1_xdma_0_0_pcie4_ip_ibert.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>ip_1/design_1_xdma_0_0_pcie4_ip_ibert.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -27044,7 +27048,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>enable_ibert</spirit:name>
-      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.enable_ibert" spirit:order="13.2">false</spirit:value>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.enable_ibert" spirit:order="13.2">true</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>two_port_switch</spirit:name>

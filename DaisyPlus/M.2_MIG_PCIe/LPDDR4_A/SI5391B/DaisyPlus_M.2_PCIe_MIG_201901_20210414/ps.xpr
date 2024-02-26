@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="C:/Xilinx/tmp/daisyplus_20191_20210419/daisyplus_20191_20210419~/daisyplus_20191/hardware/DaisyPlus_M.2_PCIe_MIG_201901_20210414/ps.xpr">
+<Project Version="7" Minor="40" Path="D:/tmp/DaisyPlus_M.2_PCIe_MIG_201901_20210414/ps.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="2b2c74fc03974dd8a9ceb337778b59ab"/>

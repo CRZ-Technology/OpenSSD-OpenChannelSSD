@@ -105,10 +105,45 @@
       <Attributes Attribute="TX_HANDLE" value="0_1_0_2/IBERT/Quad_228/MGT_X0Y19/TX"/>
       <Properties Property="DESCRIPTION" value="Link 3"/>
     </Object>
+    <Object name="0_1_0_3/IBERT/Quad_228/MGT_X0Y16/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y16/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y16/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y16/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 0"/>
+    </Object>
+    <Object name="0_1_0_3/IBERT/Quad_228/MGT_X0Y17/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y17/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y17/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y17/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 2"/>
+    </Object>
+    <Object name="0_1_0_3/IBERT/Quad_228/MGT_X0Y18/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y18/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y18/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y18/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 1"/>
+    </Object>
+    <Object name="0_1_0_3/IBERT/Quad_228/MGT_X0Y19/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y19/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y19/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y19/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 3"/>
+    </Object>
     <Object name="0_1_0_3/IBERT/Quad_230/MGT_X0Y24/TX->0_1_0_3/IBERT/Quad_230/MGT_X0Y24/RX" gui_info="">
       <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_230/MGT_X0Y24/RX"/>
       <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_230/MGT_X0Y24/TX"/>
       <Properties Property="DESCRIPTION" value="Link 0"/>
+    </Object>
+    <Object name="0_1_0_3/IBERT/Quad_230/MGT_X0Y25/TX->0_1_0_3/IBERT/Quad_230/MGT_X0Y25/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_230/MGT_X0Y25/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_230/MGT_X0Y25/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 1"/>
+    </Object>
+    <Object name="0_1_0_3/IBERT/Quad_230/MGT_X0Y26/TX->0_1_0_3/IBERT/Quad_230/MGT_X0Y26/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_230/MGT_X0Y26/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_230/MGT_X0Y26/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 2"/>
+    </Object>
+    <Object name="0_1_0_3/IBERT/Quad_230/MGT_X0Y27/TX->0_1_0_3/IBERT/Quad_230/MGT_X0Y27/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_230/MGT_X0Y27/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_230/MGT_X0Y27/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 3"/>
     </Object>
     <Object name="0_1_0_6/IBERT/Quad_230/MGT_X0Y24/TX->0_1_0_6/IBERT/Quad_230/MGT_X0Y24/RX" gui_info="">
       <Attributes Attribute="RX_HANDLE" value="0_1_0_6/IBERT/Quad_230/MGT_X0Y24/RX"/>
@@ -193,15 +228,11 @@
   </ObjectList>
   <ObjectList object_type="hw_sio_linkgroup" gui_info="">
     <Object name="LINKGROUP_0" gui_info="">
-      <Attributes Attribute="LINK_HANDLE0" value="0_1_0_3/IBERT/Quad_230/MGT_X0Y24/TX->0_1_0_3/IBERT/Quad_230/MGT_X0Y24/RX"/>
-      <Attributes Attribute="LINK_HANDLE1" value="0_1_0_16/IBERT/Quad_224/MGT_X0Y2/TX->0_1_0_16/IBERT/Quad_224/MGT_X0Y1/RX"/>
-      <Attributes Attribute="LINK_HANDLE2" value="0_1_0_1/IBERT/Quad_228/MGT_X0Y18/TX->0_1_0_1/IBERT/Quad_228/MGT_X0Y18/RX"/>
-      <Attributes Attribute="LINK_HANDLE3" value="0_1_0_1/IBERT/Quad_228/MGT_X0Y19/TX->0_1_0_1/IBERT/Quad_228/MGT_X0Y19/RX"/>
-      <Attributes Attribute="LINK_HANDLE4" value="0_1_0_6/IBERT/Quad_230/MGT_X0Y24/TX->0_1_0_6/IBERT/Quad_230/MGT_X0Y24/RX"/>
-      <Attributes Attribute="LINK_HANDLE5" value="0_1_0_6/IBERT/Quad_230/MGT_X0Y25/TX->0_1_0_6/IBERT/Quad_230/MGT_X0Y25/RX"/>
-      <Attributes Attribute="LINK_HANDLE6" value="0_1_0_6/IBERT/Quad_230/MGT_X0Y26/TX->0_1_0_6/IBERT/Quad_230/MGT_X0Y26/RX"/>
-      <Attributes Attribute="LINK_HANDLE7" value="0_1_0_6/IBERT/Quad_230/MGT_X0Y27/TX->0_1_0_6/IBERT/Quad_230/MGT_X0Y27/RX"/>
-      <Properties Property="DESCRIPTION" value="Link Group 0"/>
+      <Attributes Attribute="LINK_HANDLE0" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y24/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y24/RX"/>
+      <Attributes Attribute="LINK_HANDLE1" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y25/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y25/RX"/>
+      <Attributes Attribute="LINK_HANDLE2" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y26/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y26/RX"/>
+      <Attributes Attribute="LINK_HANDLE3" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y27/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y27/RX"/>
+      <Properties Property="DESCRIPTION" value="Link Group 1"/>
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_vio" gui_info="">
