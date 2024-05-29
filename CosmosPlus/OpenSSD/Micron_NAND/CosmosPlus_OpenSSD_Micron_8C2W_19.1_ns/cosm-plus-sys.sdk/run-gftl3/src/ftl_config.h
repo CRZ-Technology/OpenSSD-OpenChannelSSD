@@ -201,7 +201,7 @@
 #define	BITS_PER_FLASH_CELL		SLC_MODE	//user configurable factor
 #define	USER_BLOCKS_PER_LUN		2048		//user configurable factor
 #define	USER_CHANNELS		(NUMBER_OF_CONNECTED_CHANNEL)		//user configurable factor
-#define	USER_WAYS				8			//user configurable factor
+#define	USER_WAYS				2//8			//user configurable factor
 //************************************************************************
 
 #define	BYTES_PER_DATA_REGION_OF_SLICE		16384		//slice is a mapping unit of FTL

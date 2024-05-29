@@ -307,7 +307,7 @@ void __attribute__((optimize("O0"))) V2FStatusCheckAsync(T4REGS* t4regs, int way
 	V2FIssueCommand(t4regs);
 }
 
-void V2FReadIdAsync(T4REGS* t4regs, int way, unsigned int* statusReport, unsigned int* completion)
+void __attribute__((optimize("O0"))) V2FReadIdAsync(T4REGS* t4regs, int way, unsigned int* statusReport, unsigned int* completion)
 {
 	T4REG_CMD_READ_ID readIdCmd;
 
@@ -323,7 +323,7 @@ void V2FReadIdAsync(T4REGS* t4regs, int way, unsigned int* statusReport, unsigne
 	V2FIssueCommand(t4regs);
 }
 
-void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport)
+void __attribute__((optimize("O0")))  V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport)
 {
 	unsigned char buf[8] = {0};
 	int i;
