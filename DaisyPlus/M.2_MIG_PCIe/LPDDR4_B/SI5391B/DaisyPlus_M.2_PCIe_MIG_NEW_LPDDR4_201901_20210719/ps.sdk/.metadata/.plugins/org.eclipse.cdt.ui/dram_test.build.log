@@ -1,0 +1,7 @@
+13:13:02 **** Clean-only build of configuration Debug for project dram_test ****
+make clean 
+rm -rf  ./src/xmt_common.o ./src/xmt_main.o ./src/xmt_read_eye.o ./src/xmt_write_eye.o  ./src/xmt_common.d ./src/xmt_main.d ./src/xmt_read_eye.d ./src/xmt_write_eye.d  dram_test.elf.size  dram_test.elf
+' '
+
+13:13:02 Build Finished (took 342ms)
+

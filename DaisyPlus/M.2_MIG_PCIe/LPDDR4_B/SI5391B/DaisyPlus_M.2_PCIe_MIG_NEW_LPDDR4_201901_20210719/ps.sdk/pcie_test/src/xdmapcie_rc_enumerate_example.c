@@ -159,7 +159,7 @@ int main(void)
 
 	xil_printf("XdmaPcie rc enumerate Example\r\n");
 
-	(void)getchar();
+	//(void)getchar();
 
 	/* Initialize Root Complex */
 	Status = PcieInitRootComplex(&XdmaPcieInstance, XDMAPCIE_DEVICE_ID);

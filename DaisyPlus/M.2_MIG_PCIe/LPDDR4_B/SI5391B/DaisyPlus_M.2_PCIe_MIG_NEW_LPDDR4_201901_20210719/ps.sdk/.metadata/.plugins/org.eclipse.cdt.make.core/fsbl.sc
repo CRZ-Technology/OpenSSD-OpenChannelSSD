@@ -2,14 +2,19 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.arm.a53.exe.debug.324834550;xilinx.gnu.arm.a53.exe.debug.324834550.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __AARCH64_CMODEL_SMALL__" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_FP16_VECTOR_ARITHMETIC" removed="true"/>
 <includePath path="#undef __AARCH64_CMODEL_LARGE__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include"/>
 <includePath path="#undef _ILP32" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>
+<includePath path="#undef __ARM_FEATURE_CRC32" removed="true"/>
 <includePath path="#undef __ILP32__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
+<includePath path="#undef __ARM_FEATURE_DOTPROD" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
+<includePath path="#undef __AARCH64_CMODEL_TINY__" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_VERSION__=201710L"/>
@@ -726,9 +731,13 @@
 <instance id="xilinx.gnu.arm.a53.exe.debug.324834550;xilinx.gnu.arm.a53.exe.debug.324834550.;xilinx.gnu.arm.a53.c.toolchain.compiler.debug.504635905;xilinx.gnu.arm.a53.c.compiler.input.2071189691">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include"/>
+<includePath path="#undef __ARM_FEATURE_CRC32" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>
+<includePath path="#undef __ARM_FEATURE_DOTPROD" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
+<includePath path="#undef __AARCH64_CMODEL_TINY__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
+<includePath path="#undef __AARCH64_CMODEL_SMALL__" removed="true"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_VERSION__=201710L"/>
 <definedSymbol symbol="__STDC_UTF_16__=1"/>
