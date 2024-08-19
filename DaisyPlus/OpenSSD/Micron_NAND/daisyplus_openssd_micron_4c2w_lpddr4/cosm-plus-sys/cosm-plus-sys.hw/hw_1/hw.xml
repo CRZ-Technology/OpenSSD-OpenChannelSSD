@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="2">
-  <device name="xczu17_0" gui_info="dashboard1=hw_ila_1[xczu17_0/hw_ila_1/Waveform=ILA_WAVE_1;xczu17_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xczu17_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xczu17_0/hw_ila_1/Settings=ILA_SETTINGS_1;xczu17_0/hw_ila_1/Status=ILA_STATUS_1;],dashboard2=hw_ila_2[xczu17_0/hw_ila_2/Capture Setup=ILA_CAPTURE_1;xczu17_0/hw_ila_2/Status=ILA_STATUS_1;xczu17_0/hw_ila_2/Settings=ILA_SETTINGS_1;xczu17_0/hw_ila_2/Waveform=ILA_WAVE_1;xczu17_0/hw_ila_2/Trigger Setup=ILA_TRIGGER_1;],dashboard3=hw_ila_3[xczu17_0/hw_ila_3/Settings=ILA_SETTINGS_1;xczu17_0/hw_ila_3/Capture Setup=ILA_CAPTURE_1;xczu17_0/hw_ila_3/Waveform=ILA_WAVE_1;xczu17_0/hw_ila_3/Status=ILA_STATUS_1;xczu17_0/hw_ila_3/Trigger Setup=ILA_TRIGGER_1;]"/>
+  <device name="xczu17_1" gui_info="dashboard1=hw_vios[xczu17_0/hw_vio_2=VIO_PROBES_2;xczu17_0/hw_vio_1=VIO_PROBES_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7z045_1" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/sys_top_wrapper.ltx"/>
@@ -60,6 +60,61 @@
     <Object name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/wPI_BUFF_WE_PM_PHY" gui_info=""/>
     <Object name="sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/src_in" gui_info="Trigger Setup=0"/>
     <Object name="sys_top_i/v2nfc_3/inst/Inst_NPhy_Toggle_Top/wPI_BUFF_WE_PM_PHY" gui_info="Trigger Setup=0"/>
+  </ObjectList>
+  <ObjectList object_type="hw_sio_link" gui_info="">
+    <Object name="0_1_0_3/IBERT/Quad_228/MGT_X0Y16/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y16/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y16/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y16/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 0"/>
+    </Object>
+    <Object name="0_1_0_3/IBERT/Quad_228/MGT_X0Y17/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y17/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y17/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y17/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 1"/>
+    </Object>
+    <Object name="0_1_0_3/IBERT/Quad_228/MGT_X0Y18/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y18/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y18/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y18/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 2"/>
+    </Object>
+    <Object name="0_1_0_3/IBERT/Quad_228/MGT_X0Y19/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y19/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y19/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y19/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 3"/>
+    </Object>
+    <Object name="0_1_0_7/IBERT/Quad_230/MGT_X0Y24/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y24/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y24/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y24/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 4"/>
+    </Object>
+    <Object name="0_1_0_7/IBERT/Quad_230/MGT_X0Y25/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y25/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y25/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y25/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 5"/>
+    </Object>
+    <Object name="0_1_0_7/IBERT/Quad_230/MGT_X0Y26/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y26/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y26/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y26/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 6"/>
+    </Object>
+    <Object name="0_1_0_7/IBERT/Quad_230/MGT_X0Y27/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y27/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y27/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y27/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 7"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_sio_linkgroup" gui_info="">
+    <Object name="LINKGROUP_0" gui_info="">
+      <Attributes Attribute="LINK_HANDLE0" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y16/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y16/RX"/>
+      <Attributes Attribute="LINK_HANDLE1" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y17/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y17/RX"/>
+      <Attributes Attribute="LINK_HANDLE2" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y18/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y18/RX"/>
+      <Attributes Attribute="LINK_HANDLE3" value="0_1_0_3/IBERT/Quad_228/MGT_X0Y19/TX->0_1_0_3/IBERT/Quad_228/MGT_X0Y19/RX"/>
+      <Attributes Attribute="LINK_HANDLE4" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y24/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y24/RX"/>
+      <Attributes Attribute="LINK_HANDLE5" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y25/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y25/RX"/>
+      <Attributes Attribute="LINK_HANDLE6" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y26/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y26/RX"/>
+      <Attributes Attribute="LINK_HANDLE7" value="0_1_0_7/IBERT/Quad_230/MGT_X0Y27/TX->0_1_0_7/IBERT/Quad_230/MGT_X0Y27/RX"/>
+      <Properties Property="DESCRIPTION" value="Link Group 0"/>
+    </Object>
   </ObjectList>
   <probeset name="hw project" active="false">
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -2972,7 +3027,7 @@
         <net name="sys_top_i/t4nfc_hlper_3/oWriteValid"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
@@ -3008,7 +3063,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/PM_DI_DQ_Buffer/dina[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3029,7 +3084,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/PM_DI_DQ_Buffer/wea[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
@@ -3095,7 +3150,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Input/src_in"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
@@ -3119,7 +3174,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSIOBUFDS[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3140,7 +3195,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_ALE[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;b0"/>
@@ -3161,7 +3216,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[0][0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3182,7 +3237,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[1][0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3287,7 +3342,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[6][0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3308,7 +3363,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[7][0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3329,7 +3384,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CLE[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq3&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq3&apos;hX"/>
@@ -3352,7 +3407,7 @@
         <net name="sys_top_i/v2nfc_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_RE_P[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq3&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq3&apos;hX"/>
@@ -3616,7 +3671,7 @@
         <net name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_ALE[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;b0"/>
@@ -3637,7 +3692,7 @@
         <net name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[0][0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3658,7 +3713,7 @@
         <net name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[1][0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3700,7 +3755,7 @@
         <net name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[3][0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3763,7 +3818,7 @@
         <net name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[6][0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3784,7 +3839,7 @@
         <net name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CE[7][0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -3805,7 +3860,7 @@
         <net name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_CLE[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq3&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq3&apos;hX"/>
@@ -3828,7 +3883,7 @@
         <net name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/O_NAND_RE_P[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq3&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq3&apos;hX"/>
@@ -3872,7 +3927,7 @@
         <net name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/rDQSOut_IOBUF_T"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -3945,7 +4000,7 @@
         <net name="sys_top_i/v2nfc_1/inst/Inst_NPhy_Toggle_Top/wPI_BUFF_WE_PM_PHY"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
@@ -3981,7 +4036,7 @@
         <net name="sys_top_i/v2nfc_3/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/PM_DI_DQ_Buffer/dina[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
@@ -4002,7 +4057,7 @@
         <net name="sys_top_i/v2nfc_3/inst/Inst_NPM_Toggle_Top/Inst_NPM_Toggle_DI/PM_DI_DQ_Buffer/wea[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
