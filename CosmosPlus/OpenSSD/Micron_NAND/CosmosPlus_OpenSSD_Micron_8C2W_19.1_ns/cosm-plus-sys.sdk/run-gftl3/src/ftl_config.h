@@ -200,7 +200,7 @@
 //************************************************************************
 #define	BITS_PER_FLASH_CELL		SLC_MODE	//user configurable factor
 #define	USER_BLOCKS_PER_LUN		2048		//user configurable factor
-#define	USER_CHANNELS		(NUMBER_OF_CONNECTED_CHANNEL)		//user configurable factor
+#define	USER_CHANNELS		4//(NUMBER_OF_CONNECTED_CHANNEL)		//user configurable factor
 #define	USER_WAYS				2//8			//user configurable factor
 //************************************************************************
 

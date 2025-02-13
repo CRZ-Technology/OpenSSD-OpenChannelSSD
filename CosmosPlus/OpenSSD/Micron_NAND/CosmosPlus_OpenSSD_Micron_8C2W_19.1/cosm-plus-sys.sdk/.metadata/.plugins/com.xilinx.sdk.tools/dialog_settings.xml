@@ -5,8 +5,8 @@
 	<item value="Local" key="sys_top_wrapper_hw_platform_0-target"/>
 	<item value="qspi-x8-dual_parallel" key="sys_top_wrapper_hw_platform_0-flashType"/>
 	<item value="false" key="sys_top_wrapper_hw_platform_0-verifyFlash"/>
-	<item value="C:\Xilinx\Cosmos+\Toshiba\cosm-plus-sys-083021.xpr\cosm-plus-sys\cosm-plus-sys.sdk\run-gftl3\bootimage\BOOT.bin" key="sys_top_wrapper_hw_platform_0-imgFile"/>
+	<item value="D:\sources\CosmosPlus\Micron\OpenSSD\CosmosPlus_Micron_OpenSSD_8C2W_19.1_20220318\cosm-plus-sys.sdk\run-gftl3\bootimage\BOOT.bin" key="sys_top_wrapper_hw_platform_0-imgFile"/>
 	<item value="" key="sys_top_wrapper_hw_platform_0-offSet"/>
 	<item value="false" key="sys_top_wrapper_hw_platform_0-blankCheck"/>
-	<item value="C:\Xilinx\Cosmos+\Toshiba\cosm-plus-sys-083021.xpr\cosm-plus-sys\cosm-plus-sys.sdk\fsbl\Debug\fsbl.elf" key="sys_top_wrapper_hw_platform_0-fsblFile"/>
+	<item value="D:\sources\CosmosPlus\Micron\OpenSSD\CosmosPlus_Micron_OpenSSD_8C2W_19.1_20220318\cosm-plus-sys.sdk\fsbl\Debug\fsbl.elf" key="sys_top_wrapper_hw_platform_0-fsblFile"/>
 </section>
