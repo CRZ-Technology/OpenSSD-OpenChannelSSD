@@ -1,5 +1,5 @@
 #include "xparameters.h"
-#include "xcoresightpsdcc.h"
+#include "xuartps_hw.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -10,5 +10,5 @@ char inbyte(void);
 #endif 
 
 char inbyte(void) {
-	 return XCoresightPs_DccRecvByte(STDIN_BASEADDRESS);
+	 return XUartPs_RecvByte(STDIN_BASEADDRESS);
 }
