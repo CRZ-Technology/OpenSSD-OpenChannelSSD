@@ -78,8 +78,8 @@ DaisyPlus Directory
                                   - daisyplus_openssd_micron_4c2w_ns_lpddr4 - OpenSSD project(multiple namespace) w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_B)
                                   - daisyplus_openssd_micron_4c2w_ns        - OpenSSD project(multiple namespace) w/ Micron 4Channel 2Way NAND module on DaisyPlus board(LPDDR4_A)
 
-          - 2025.1 - Micron_NAND - daisyplus_openssd_micron_4c2w - OpenSSD project w/ Micron 4Channel 2Way NAND module on DaisyPlus board - Vivado 2025.1
-
+          - 2025.1 - Micron_NAND - PS_LPDDR4_A - daisyplus_openssd_micron_4c2w - OpenSSD project w/ Micron 4Channel 2Way NAND module on DaisyPlus board - Vivado 2025.1
+                                 - PS_LPDDR4_B - daisyplus_openssd_micron_4c2w - OpenSSD project w/ Micron 4Channel 2Way NAND module on DaisyPlus board - Vivado 2025.1
 ZNS Directory
 
            - CosmosPlus - Micron_NAND  - CosmosPlus_ZNS_Micron_8C2W - ZNS project w/ Micron 8Channel 2Way NAND module on CosmosPlus board.
