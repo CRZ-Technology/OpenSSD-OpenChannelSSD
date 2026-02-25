@@ -1,0 +1,34 @@
+psu_cortexa53_0:
+    ip_name: psu_cortexa53
+    supported_os:
+    - standalone
+    - freertos
+psu_cortexa53_1:
+    ip_name: psu_cortexa53
+    supported_os:
+    - standalone
+    - freertos
+psu_cortexa53_2:
+    ip_name: psu_cortexa53
+    supported_os:
+    - standalone
+    - freertos
+psu_cortexa53_3:
+    ip_name: psu_cortexa53
+    supported_os:
+    - standalone
+    - freertos
+psu_cortexr5_0:
+    ip_name: psu_cortexr5
+    supported_os:
+    - standalone
+    - freertos
+psu_cortexr5_1:
+    ip_name: psu_cortexr5
+    supported_os:
+    - standalone
+    - freertos
+psu_pmu_0:
+    ip_name: psu_pmu
+    supported_os:
+    - standalone

@@ -1,0 +1,468 @@
+sdt: hw_artifacts\psu_cortexa53_0_baremetal.dts
+family: ZynqMP
+path: D:\tmp\daisyplus_micron_new_lpddr4_a_260225_2\ws\daisyplus\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+config: default
+os: standalone
+os_info:
+  standalone:
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\bsp\standalone_v9_3
+os_config:
+  standalone:
+    standalone_clocking:
+      name: standalone_clocking
+      permission: read_write
+      type: boolean
+      value: 'false'
+      default: 'false'
+      options:
+      - 'true'
+      - 'false'
+      description: Disable or Enable the clocking feature
+    standalone_el1_ns:
+      name: standalone_el1_ns
+      permission: read_write
+      type: boolean
+      value: 'false'
+      default: 'false'
+      options:
+      - 'true'
+      - 'false'
+      description: Enable plain EL1 Nonsecure.
+    standalone_enable_sw_intrusive_profiling:
+      name: standalone_enable_sw_intrusive_profiling
+      permission: read_write
+      type: string
+      value: None
+      default: None
+      options:
+      - None
+      description: This option is not supported in the Unified Vitis IDE in this version.
+        Change to the classic IDE if you want to use this option
+    standalone_hypervisor_guest:
+      name: standalone_hypervisor_guest
+      permission: read_write
+      type: boolean
+      value: 'false'
+      default: 'false'
+      options:
+      - 'true'
+      - 'false'
+      description: Enable hypervisor guest for EL1 Nonsecure. If hypervisor guest
+        is not selected, BSP will be built for EL3.
+    standalone_microblaze_exceptions:
+      name: standalone_microblaze_exceptions
+      permission: read_write
+      type: string
+      value: None
+      default: None
+      options:
+      - None
+      description: Unused option and deprecated
+    standalone_pmu_sleep_timer:
+      name: standalone_pmu_sleep_timer
+      permission: read_write
+      type: string
+      value: None
+      default: None
+      options:
+      - None
+      description: Deprecated in favor of xiltimer
+    standalone_profile_timer:
+      name: standalone_profile_timer
+      permission: read_write
+      type: string
+      value: None
+      default: None
+      options:
+      - None
+      description: This option is not supported in the Unified Vitis IDE in this version.
+        Change to the classic IDE if you want to use this option
+    standalone_sleep_timer:
+      name: standalone_sleep_timer
+      permission: read_write
+      type: string
+      value: None
+      default: None
+      options:
+      - None
+      description: Deprecated in favor of xiltimer
+    standalone_stdin:
+      name: standalone_stdin
+      permission: read_write
+      type: string
+      value: psu_uart_0
+      default: psu_uart_0
+      options:
+      - None
+      - psu_uart_0
+      - psu_uart_1
+      - psu_coresight_0
+      description: stdin peripheral
+    standalone_stdout:
+      name: standalone_stdout
+      permission: read_write
+      type: string
+      value: psu_uart_0
+      default: psu_uart_0
+      options:
+      - None
+      - psu_uart_0
+      - psu_uart_1
+      - psu_coresight_0
+      description: stdout peripheral
+    standalone_ttc_select_cntr:
+      name: standalone_ttc_select_cntr
+      permission: read_write
+      type: string
+      value: None
+      default: None
+      options:
+      - None
+      description: Deprecated in favor of xiltimer
+    standalone_use_xen_pv_console:
+      name: standalone_use_xen_pv_console
+      permission: read_write
+      type: boolean
+      value: 'true'
+      default: 'true'
+      options:
+      - 'true'
+      - 'false'
+      description: Use Xen PV console as console input/output
+    standalone_xpm_support:
+      name: standalone_xpm_support
+      permission: read_write
+      type: string
+      value: None
+      default: None
+      options:
+      - None
+      description: This option is not supported in the Unified Vitis IDE in this version.
+        Change to the classic IDE if you want to use this option.
+    standalone_zynqmp_fsbl_bsp:
+      name: standalone_zynqmp_fsbl_bsp
+      permission: read_write
+      type: boolean
+      value: 'false'
+      default: 'false'
+      options:
+      - 'true'
+      - 'false'
+      description: Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will
+        set this to true
+toolchain_file: cortexa53_toolchain.cmake
+specs_file: Xilinx.spec
+proc: psu_cortexa53_0
+proc_config:
+  psu_cortexa53_0:
+    proc_archiver:
+      name: proc_archiver
+      permission: readonly
+      type: string
+      value: aarch64-none-elf-gcc-ar.exe
+      default: aarch64-none-elf-gcc-ar.exe
+      options: []
+      description: Archiver used to archive libraries for both BSP generation as well
+        as applications.
+    proc_assembler:
+      name: proc_assembler
+      permission: readonly
+      type: string
+      value: aarch64-none-elf-gcc
+      default: aarch64-none-elf-gcc
+      options: []
+      description: Assembler used to assemble both BSP/libraries and applications.
+    proc_compiler:
+      name: proc_compiler
+      permission: readonly
+      type: string
+      value: aarch64-none-elf-gcc.exe
+      default: aarch64-none-elf-gcc.exe
+      options: []
+      description: Compiler used to compile both BSP/libraries and applications.
+    proc_compiler_flags:
+      name: proc_compiler_flags
+      permission: readonly
+      type: string
+      value: ' -DSDT;-c'
+      default: ' -DSDT;-c'
+      options: []
+      description: Compiler Flags used in BSP and library generation.'-c'flag stands
+        for 'compile and assemble, but do not link'.Without this flag, gcc tries to
+        link the code, which will fail because there is no application involved during
+        libgen.'-O2' can be overwritten by extra compile flags.
+    proc_extra_compiler_flags:
+      name: proc_extra_compiler_flags
+      permission: read_write
+      type: string
+      value: ' -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns'
+      default: ' -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns'
+      options: []
+      description: Extra Compiler Flags used in BSP and library generation
+template: empty_application
+compiler: gcc
+compiler_flags: ''
+include_folder: include
+lib_folder: lib
+libsrc_folder: libsrc
+drv_info:
+  axi_bram_ctrl_0:
+    driver: bram
+    ip_name: axi_bram_ctrl
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\bram_v4_12
+  axi_bram_ctrl_1:
+    driver: bram
+    ip_name: axi_bram_ctrl
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\bram_v4_12
+  axi_bram_ctrl_2:
+    driver: bram
+    ip_name: axi_bram_ctrl
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\bram_v4_12
+  axi_bram_ctrl_3:
+    driver: bram
+    ip_name: axi_bram_ctrl
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\bram_v4_12
+  iodelay_if_0: None
+  iodelay_if_0_dqs: None
+  nvme_ctrl_0: None
+  psu_acpu_gic:
+    driver: scugic
+    ip_name: psu_acpu_gic
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\scugic_v5_5
+  psu_adma_0:
+    driver: zdma
+    ip_name: psu_adma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_adma_1:
+    driver: zdma
+    ip_name: psu_adma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_adma_2:
+    driver: zdma
+    ip_name: psu_adma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_adma_3:
+    driver: zdma
+    ip_name: psu_adma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_adma_4:
+    driver: zdma
+    ip_name: psu_adma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_adma_5:
+    driver: zdma
+    ip_name: psu_adma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_adma_6:
+    driver: zdma
+    ip_name: psu_adma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_adma_7:
+    driver: zdma
+    ip_name: psu_adma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_afi_0: None
+  psu_afi_1: None
+  psu_afi_2: None
+  psu_afi_3: None
+  psu_afi_4: None
+  psu_afi_5: None
+  psu_afi_6: None
+  psu_ams:
+    driver: sysmonpsu
+    ip_name: psu_ams
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\sysmonpsu_v3_1
+  psu_apm_0:
+    driver: axipmon
+    ip_name: psu_apm
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\axipmon_v6_12
+  psu_apm_1:
+    driver: axipmon
+    ip_name: psu_apm
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\axipmon_v6_12
+  psu_apm_2:
+    driver: axipmon
+    ip_name: psu_apm
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\axipmon_v6_12
+  psu_apm_5:
+    driver: axipmon
+    ip_name: psu_apm
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\axipmon_v6_12
+  psu_apu: None
+  psu_cci_gpv: None
+  psu_cci_reg: None
+  psu_coresight_0:
+    driver: coresightps_dcc
+    ip_name: psu_coresight_0
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\coresightps_dcc_v1_12
+  psu_crf_apb:
+    driver: resetps
+    ip_name: psu_crf_apb
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\resetps_v1_7
+  psu_crl_apb:
+    driver: clockps
+    ip_name: psu_crl_apb
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\clockps_v1_6
+  psu_csu_0: None
+  psu_csudma:
+    driver: csudma
+    ip_name: psu_csudma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\csudma_v1_17
+  psu_ddr_phy: None
+  psu_ddr_qos_ctrl: None
+  psu_ddr_xmpu0_cfg: None
+  psu_ddr_xmpu1_cfg: None
+  psu_ddr_xmpu2_cfg: None
+  psu_ddr_xmpu3_cfg: None
+  psu_ddr_xmpu4_cfg: None
+  psu_ddr_xmpu5_cfg: None
+  psu_ddrc_0:
+    driver: ddrcpsu
+    ip_name: psu_ddrc
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\ddrcpsu_v1_8
+  psu_efuse: None
+  psu_ethernet_3:
+    driver: emacps
+    ip_name: psu_ethernet
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\emacps_v3_22
+  psu_fpd_gpv: None
+  psu_fpd_slcr: None
+  psu_fpd_slcr_secure: None
+  psu_fpd_xmpu_cfg: None
+  psu_fpd_xmpu_sink: None
+  psu_gdma_0:
+    driver: zdma
+    ip_name: psu_gdma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_gdma_1:
+    driver: zdma
+    ip_name: psu_gdma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_gdma_2:
+    driver: zdma
+    ip_name: psu_gdma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_gdma_3:
+    driver: zdma
+    ip_name: psu_gdma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_gdma_4:
+    driver: zdma
+    ip_name: psu_gdma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_gdma_5:
+    driver: zdma
+    ip_name: psu_gdma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_gdma_6:
+    driver: zdma
+    ip_name: psu_gdma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_gdma_7:
+    driver: zdma
+    ip_name: psu_gdma
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
+  psu_gpio_0:
+    driver: gpiops
+    ip_name: psu_gpio
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\gpiops_v3_14
+  psu_gpu: None
+  psu_i2c_0:
+    driver: iicps
+    ip_name: psu_i2c
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\iicps_v3_21
+  psu_i2c_1:
+    driver: iicps
+    ip_name: psu_i2c
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\iicps_v3_21
+  psu_iou_scntr: None
+  psu_iou_scntrs: None
+  psu_iousecure_slcr: None
+  psu_iouslcr_0: None
+  psu_ipi_0:
+    driver: ipipsu
+    ip_name: psu_ipi
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\ipipsu_v2_17
+  psu_lpd_slcr: None
+  psu_lpd_slcr_secure: None
+  psu_lpd_xppu: None
+  psu_lpd_xppu_sink: None
+  psu_mbistjtag: None
+  psu_ocm: None
+  psu_ocm_xmpu_cfg: None
+  psu_pmu_global_0: None
+  psu_qspi_0:
+    driver: qspipsu
+    ip_name: psu_qspi
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\qspipsu_v1_21
+  psu_r5_0_atcm: None
+  psu_r5_0_atcm_global: None
+  psu_r5_0_atcm_lockstep: None
+  psu_r5_0_btcm: None
+  psu_r5_0_btcm_global: None
+  psu_r5_0_btcm_lockstep: None
+  psu_r5_1_atcm: None
+  psu_r5_1_atcm_global: None
+  psu_r5_1_btcm: None
+  psu_r5_1_btcm_global: None
+  psu_r5_tcm_ram_0: None
+  psu_r5_tcm_ram_global: None
+  psu_rpu: None
+  psu_rsa: None
+  psu_rtc:
+    driver: rtcpsu
+    ip_name: psu_rtc
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\rtcpsu_v1_15
+  psu_sd_1:
+    driver: sdps
+    ip_name: psu_sd
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\sdps_v4_4
+  psu_serdes: None
+  psu_siou: None
+  psu_smmu_gpv: None
+  psu_smmu_reg: None
+  psu_uart_0:
+    driver: uartps
+    ip_name: psu_uart
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\uartps_v3_16
+  psu_uart_1:
+    driver: uartps
+    ip_name: psu_uart
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\uartps_v3_16
+  t4nfc_hlper_0: None
+  t4nfc_hlper_1: None
+  t4nfc_hlper_2: None
+  t4nfc_hlper_3: None
+lib_info:
+  xiltimer:
+    path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xiltimer_v2_2
+lib_config:
+  xiltimer:
+    XILTIMER_en_interval_timer:
+      name: XILTIMER_en_interval_timer
+      permission: read_write
+      type: boolean
+      value: 'false'
+      default: 'false'
+      options:
+      - 'true'
+      - 'false'
+      description: Enable Interval Timer
+    XILTIMER_sleep_timer:
+      name: XILTIMER_sleep_timer
+      permission: read_write
+      type: string
+      value: Default
+      default: Default
+      options:
+      - Default
+      description: This parameter is used to select specific timer for sleep functionality
+    XILTIMER_tick_timer:
+      name: XILTIMER_tick_timer
+      permission: read_write
+      type: string
+      value: None
+      default: None
+      options:
+      - None
+      description: This parameter is used to select specific timer for tick functionality

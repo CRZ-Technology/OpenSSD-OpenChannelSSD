@@ -1,0 +1,188 @@
+2019.1:
+ * Version 1.3 (Rev. 5)
+ * Bug Fix: Disabled subsystem vendor ID change for non PF0 case
+ * Bug Fix: Removed 0 VFs option per PF when SRIOV is enabled. Each enabled PF should have minimum 4VFs when SRIOV is enabled.
+ * Feature Enhancement: Added GUI option to disable the GT channel LOC constraints in GTWizard IP XDC
+ * Feature Enhancement: Added GUI option to change message routing parameter-AXISTEN_IF_ENABLE_MSG_ROUTE
+ * Revision change in one or more subcores
+
+2018.3.1:
+ * Version 1.3 (Rev. 4)
+ * No changes
+
+2018.3:
+ * Version 1.3 (Rev. 4)
+ * Bug Fix: Disabled vendor ID change for non PF0 case
+ * Feature Enhancement: Added Mark Debug utility in "Add. Debug Options" page
+ * Feature Enhancement: Added Resizable BAR functionality
+ * Revision change in one or more subcores
+
+2018.2:
+ * Version 1.3 (Rev. 3)
+ * Feature Enhancement: Enhancement in PIO Example Design to support multiple DWORD transaction.
+ * Revision change in one or more subcores
+
+2018.1:
+ * Version 1.3 (Rev. 2)
+ * Feature Enhancement: Modified the Tandem Stage1 np_req credit allocation. Tandem stage1 will now allocate one np_req credit rather than infinite np_req credits. This allows better control of credit allocation after stage2 is loaded.
+ * Feature Enhancement: Added GEN4 control skip filter module with parameter(ctrl_skip_mask).This can be used for EndPoint to work with GEN4 RootPort generating control skips.
+ * Feature Enhancement: Added an option to set the MCAP bitstream version register within the MCAP register space.
+ * Feature Enhancement: Added Core Interface Parameters GUI page.
+ * Feature Enhancement: Added support for fsve1156,fsvg1517 packages for xczu25dr,xczu27dr,xczu28dr devices and fsvf1760 for xczu29dr device
+ * Revision change in one or more subcores
+
+2017.4:
+ * Version 1.3 (Rev. 1)
+ * Feature Enhancement: Added Auto Rx Equalization support in the GT Settings GUI page.
+ * Feature Enhancement: Removed naming of the set_clock_groups in the IP level XDC.
+ * Feature Enhancement: Removed naming of the create_clock constraints in the IP level XDC.
+ * Feature Enhancement: Added clock_delay_group constraints in 512-I/F to fix timing.
+ * Other: Changed Link Number (cfg_ds_port_number) in RP mode example design from 8'h9F to 8'h00
+ * Revision change in one or more subcores
+
+2017.3:
+ * Version 1.3
+ * Bug Fix: Updated arrow colors for JTAG debugger LTSSM graph
+ * Bug Fix: Fix for Include GT Wizard in Example Design mode
+ * Feature Enhancement: Added option to enable external BUFG_GT/SYNC for sys_clk
+ * Feature Enhancement: Moved phy_clk module in support wrapper when selecting Include GT Wizard in Example Design mode
+ * Feature Enhancement: Added GT_COMMON sharing option
+ * Feature Enhancement: Added support to simulate tandem using the SIMULATION define. When this define is set, design_switch will be asserted and the core will operate as though stage2 is loaded.
+ * Feature Enhancement: Removed tandem stage1/stage2 mux on the cfg_dsn input. This allows user to set this value as desired for stage1 and/or stage2 operation.
+ * Feature Enhancement: Added support for xazu4ev and xazu5ev
+ * Revision change in one or more subcores
+
+2017.2:
+ * Version 1.2 (Rev. 1)
+ * Bug Fix: Fixed timing issue related to asynchronous CDC signals.
+ * Bug Fix: Changed default value of parameter AXISTEN_IF_ENABLE_MSG_ROUTE to 0x2FFFF.
+ * Feature Enhancement: Added support for xczu27dr-ffvg1517,ffve1156 devices.
+ * Revision change in one or more subcores
+
+2017.1:
+ * Version 1.2
+ * Bug Fix: Fixed issue with the core generation for xczu7ev-fbvb900 device when x16 configuration is selected by enabling valid GT Quads.
+ * Bug Fix: Fixed SRIOV PF's First VF Offset default value.
+ * Bug Fix: Fixed SRIOV VF's Next Capability Pointer at PCIe Configuration Space offset 0x34
+ * Bug Fix: Enable or Disable MSI-X Capability Structure uniformly on all PFs and VFs when SRIOV capability is enabled
+ * Feature Enhancement: Added support for xczu21dr, xczu25dr and xczu28dr devices.
+ * Feature Enhancement: JTAG debugger module is moved inside the core top module.
+ * Feature Enhancement: In-System IBERT module is moved inside the core top module and enabled for all link speeds.
+ * Feature Enhancement: Added Tandem and MCAP support for KU15P, VU3P, VU5P, VU7P, VU9P, VU11P, VU13P, and zu19EG
+ * Feature Enhancement: Added example on VSEC to the example design when extended config is enabled.
+ * Feature Enhancement: Added GT DRP Arbiter module to support In-System IBERT and user DRP access
+ * Feature Enhancement: Added free_run_clock option in the GT Settings GUI tab
+ * Feature Enhancement: Added support for Zynq UltraScale Plus devices - xczu4cg,xczu4eg, xczu5cg, xczu5eg, xczu7cg and xczu7eg
+ * Feature Enhancement: Updated the tandem with field updates scripts to use the new PR methodology
+ * Feature Enhancement: Added debug core examples to the tandem with field updates example design.
+ * Feature Enhancement: Added option to enable PM_L23 Entry in Rootport configuration. Set the user parameter 'Enable PM_L23_Entry' on 'Adv.Options-1' tab when Rootport and Advanced mode are selected
+ * Feature Enhancement: Added special non-ARI 1PF+7VF SRIOV configuration
+ * Revision change in one or more subcores
+
+2016.4:
+ * Version 1.1 (Rev. 3)
+ * Bug Fix: Fixed PF-1 settings edit issue when MSI-X is enabled.
+ * Bug Fix: Fixed Root Port as DUT simulation issue when the configuration is Gen3x16 and RQ/RC, 4TLP straddle is enabled.
+ * Other: MSI-X TABLE/PBA OFFSET address shifted to right by 3-bits to match PCIe Hard Block requirement.
+ * Revision change in one or more subcores
+
+2016.3:
+ * Version 1.1 (Rev. 2)
+ * Port Change: No mandatory port changes. But added new optional ports and interfaces for PCIe DRP, GT DRP, GT Wizard, In System IBERT, Transceiver Control and Status ports.
+ * Bug Fix: Enabled ASPM L0s.
+ * Bug Fix: Added PMARESET fix, update to the GT reset sequence during the rate change.
+ * Bug Fix: Added CDRHOLD fix to ensure CDR and RX Equalization to start working first and not give any false indication that data is good already.
+ * Bug Fix: Added Sequence number fifo fix for ES2 silicon.
+ * Feature Enhancement: Added GT DRP, PCIe DRP and Transceiver Control and Status ports option in the core configuration GUI.
+ * Feature Enhancement: Added simulation model support to run post synthesis and post implementation simulation.
+ * Feature Enhancement: Added support for 125 MHz and 250 MHz reference clock option.
+ * Feature Enhancement: Added GT Wizard support for Xilinx example design in the Shared Logic page.
+ * Feature Enhancement: Added In-System IBERT support in the Add. Debug Options page to scan eye diagram of the serial lane
+ * Feature Enhancement: Added JTAG debugger support in the Add. Debug Options page to debug LTSSM, Rx sequence, Rx detect.
+ * Feature Enhancement: Added Descrambler debugg support in the Add. Debug Options page to debug PIPE data.
+ * Other: Moved pblock constraints from IP level XDC file to Xilinx example design top XDC file to allow users to access SLICE range settings in 512-bit AXIST mode.
+ * Revision change in one or more subcores
+
+2016.2:
+ * Version 1.1 (Rev. 1)
+ * Updated MSI-X CAP and NEXTPTR values.
+ * Added GT Settings tab for Insertion loss adjustment.
+ * Receiver detect drp module is replaced by receiver detect rxtermination module.
+ * Fixed GUI typo for BAR-5 and Exp ROM values.
+ * QPLL1 support is added for Gen2 (5.0 Gbps) speed along with CPLL. QPLL1 is default.
+ * Fixed I/O bank names in quad selection mode for xcvu9p-flga2104/flgb2104/flgc2104 and flga2577.
+ * Revision change in one or more subcores
+
+2016.1:
+ * Version 1.1
+ * Modified Customization GUI View for PF BARs,SRIOV BARs,PCIe ID and ClassCode parameters
+ * Support is enabled for all Ultrascale+ parts and packages that support PCIe.
+ * Added gtwizard subcore (HIP) support, which includes GTHE4 and GTYE4.
+ * Added support for All link widths/speeds (Gen1/2/3 to x1,x2,x4,x8,x16)
+ * Added support for Root Port(RP) Mode and RP Example Design synthesis/simulation for all available configurations.
+ * Revision change in one or more subcores
+
+2015.4.2:
+ * Version 1.0 (Rev. 1)
+ * No changes
+
+2015.4.1:
+ * Version 1.0 (Rev. 1)
+ * No changes
+
+2015.4:
+ * Version 1.0 (Rev. 1)
+ * Integrated new GTY and GTH wrapper changes
+ * Added support for few more Devices/Packages
+ * Revision change in one or more subcores
+
+2015.3:
+ * Version 1.0
+ * Initial release
+ * Dedicated PERST is not supported for the Beta release
+
+(c) Copyright 2015 - 2019 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.
