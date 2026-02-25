@@ -1,0 +1,97 @@
+psu_cortexa53_0:
+  standalone:
+    libmetal:
+      description: Provide runtime primitives APIs across heterogenous processors.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\ThirdParty\sw_services\libmetal_v2_9
+    lwip220:
+      description: lwip220 library lwIP (light weight IP) is an open source TCP/IP stack configured for AMD hard and soft Ethernet MACs.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\ThirdParty\sw_services\lwip220_v1_2
+    xilffs:
+      description: Generic Fat File System Library.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilffs_v5_4
+    xilfpga:
+      description: XilFPGA library provides an interface to the Linux or bare-metal users for configuring the PL over PCAP from PS.
+      depends_libs:
+      - xilsecure
+      - xilmailbox
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilfpga_v6_8
+    xilmailbox:
+      description: Xilinx IPI Mailbox Library.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilmailbox_v1_11
+    xilpm:
+      description: Platform Management API Library for ZynqMP and Versal.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilpm_v6_0
+    xilsecure:
+      description: Xilinx Secure Library provides interface to AES, RSA and SHA hardware engines on ZynqMP Soc and Versal.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilsecure_v5_5
+    xilskey:
+      description: Xilinx Secure Key Library supports programming efuse and bbram.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilskey_v7_7
+    xiltimer:
+      description: Xiltimer library provides generic timer interface for the timer IP's.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xiltimer_v2_2
+  freertos:
+    libmetal:
+      description: Provide runtime primitives APIs across heterogenous processors.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\ThirdParty\sw_services\libmetal_v2_9
+    lwip220:
+      description: lwip220 library lwIP (light weight IP) is an open source TCP/IP stack configured for AMD hard and soft Ethernet MACs.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\ThirdParty\sw_services\lwip220_v1_2
+    xilffs:
+      description: Generic Fat File System Library.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilffs_v5_4
+    xilfpga:
+      description: XilFPGA library provides an interface to the Linux or bare-metal users for configuring the PL over PCAP from PS.
+      depends_libs:
+      - xilsecure
+      - xilmailbox
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilfpga_v6_8
+    xilmailbox:
+      description: Xilinx IPI Mailbox Library.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilmailbox_v1_11
+    xilpm:
+      description: Platform Management API Library for ZynqMP and Versal.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilpm_v6_0
+    xilsecure:
+      description: Xilinx Secure Library provides interface to AES, RSA and SHA hardware engines on ZynqMP Soc and Versal.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilsecure_v5_5
+    xilskey:
+      description: Xilinx Secure Key Library supports programming efuse and bbram.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xilskey_v7_7
+    xiltimer:
+      description: Xiltimer library provides generic timer interface for the timer IP's.
+      depends_libs: []
+      path:
+      - D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_services\xiltimer_v2_2
