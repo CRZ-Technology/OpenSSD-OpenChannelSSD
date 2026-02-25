@@ -1,0 +1,232 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "sys_top_iodelay_if_0_0",
+    "cell_name": "iodelay_if_0",
+    "component_reference": "ENCLab:user:iodelay_if:1.0.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../cosm-plus-sys.gen/sources_1/bd/sys_top/ip/sys_top_iodelay_if_0_0",
+    "parameters": {
+      "component_parameters": {
+        "addr_width": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "sys_top_iodelay_if_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "addr_width": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynquplus" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xczu17eg" } ],
+        "PACKAGE": [ { "value": "ffvc1760" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "E" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../cosm-plus-sys.gen/sources_1/bd/sys_top/ip/sys_top_iodelay_if_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2025.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "sys__clk": [ { "direction": "in" } ],
+        "sys__srstn": [ { "direction": "in" } ],
+        "ctrl__s_awaddr": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
+        "ctrl__s_awprot": [ { "direction": "in", "size_left": "2", "size_right": "0", "driver_value": "0" } ],
+        "ctrl__s_awvalid": [ { "direction": "in", "driver_value": "0" } ],
+        "ctrl__s_awready": [ { "direction": "out" } ],
+        "ctrl__s_wdata": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
+        "ctrl__s_wstrb": [ { "direction": "in", "size_left": "3", "size_right": "0", "driver_value": "1" } ],
+        "ctrl__s_wvalid": [ { "direction": "in", "driver_value": "0" } ],
+        "ctrl__s_wready": [ { "direction": "out" } ],
+        "ctrl__s_bresp": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "ctrl__s_bvalid": [ { "direction": "out" } ],
+        "ctrl__s_bready": [ { "direction": "in", "driver_value": "0" } ],
+        "ctrl__s_araddr": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
+        "ctrl__s_arprot": [ { "direction": "in", "size_left": "2", "size_right": "0", "driver_value": "0" } ],
+        "ctrl__s_arvalid": [ { "direction": "in", "driver_value": "0" } ],
+        "ctrl__s_arready": [ { "direction": "out" } ],
+        "ctrl__s_rdata": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "ctrl__s_rresp": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "ctrl__s_rvalid": [ { "direction": "out" } ],
+        "ctrl__s_rready": [ { "direction": "in", "driver_value": "0" } ],
+        "iodly_00__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_00__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_01__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_01__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_02__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_02__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_03__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_03__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_04__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_04__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_05__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_05__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_06__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_06__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_07__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_07__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_08__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_08__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_09__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_09__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_10__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_10__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_11__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_11__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_12__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_12__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_13__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_13__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_14__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_14__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_15__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_15__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_16__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_16__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_17__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_17__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_18__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_18__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_19__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_19__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_20__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_20__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_21__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_21__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_22__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_22__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_23__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_23__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_24__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_24__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_25__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_25__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_26__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_26__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_27__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_27__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_28__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_28__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_29__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_29__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_30__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_30__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "iodly_31__tap": [ { "direction": "out", "size_left": "8", "size_right": "0" } ],
+        "iodly_31__tap_load": [ { "direction": "out", "size_left": "1", "size_right": "0" } ]
+      },
+      "interfaces": {
+        "ctrl__s": {
+          "vlnv": "xilinx.com:interface:aximm:1.0",
+          "abstraction_type": "xilinx.com:interface:aximm_rtl:1.0",
+          "mode": "slave",
+          "memory_map_ref": "ctrl__s",
+          "parameters": {
+            "DATA_WIDTH": [ { "value": "32", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "PROTOCOL": [ { "value": "AXI4LITE", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "66666000", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "ID_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "ADDR_WIDTH": [ { "value": "32", "value_src": "auto", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "AWUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "ARUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "WUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "RUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "BUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "READ_WRITE_MODE": [ { "value": "READ_WRITE", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "is_static_object": false } ],
+            "HAS_BURST": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_LOCK": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_PROT": [ { "value": "1", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_CACHE": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_QOS": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_REGION": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_WSTRB": [ { "value": "1", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_BRESP": [ { "value": "1", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_RRESP": [ { "value": "1", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "SUPPORTS_NARROW_BURST": [ { "value": "0", "value_src": "auto", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "NUM_READ_OUTSTANDING": [ { "value": "1", "value_src": "auto", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "NUM_WRITE_OUTSTANDING": [ { "value": "1", "value_src": "auto", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "MAX_BURST_LENGTH": [ { "value": "1", "value_src": "auto", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "sys_top_zynq_ultra_ps_e_0_0_pl_clk0", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_static_object": false } ],
+            "NUM_READ_THREADS": [ { "value": "1", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "NUM_WRITE_THREADS": [ { "value": "1", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "RUSER_BITS_PER_BYTE": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "WUSER_BITS_PER_BYTE": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "AWADDR": [ { "physical_name": "ctrl__s_awaddr" } ],
+            "AWPROT": [ { "physical_name": "ctrl__s_awprot" } ],
+            "AWVALID": [ { "physical_name": "ctrl__s_awvalid" } ],
+            "AWREADY": [ { "physical_name": "ctrl__s_awready" } ],
+            "WDATA": [ { "physical_name": "ctrl__s_wdata" } ],
+            "WSTRB": [ { "physical_name": "ctrl__s_wstrb" } ],
+            "WVALID": [ { "physical_name": "ctrl__s_wvalid" } ],
+            "WREADY": [ { "physical_name": "ctrl__s_wready" } ],
+            "BRESP": [ { "physical_name": "ctrl__s_bresp" } ],
+            "BVALID": [ { "physical_name": "ctrl__s_bvalid" } ],
+            "BREADY": [ { "physical_name": "ctrl__s_bready" } ],
+            "ARADDR": [ { "physical_name": "ctrl__s_araddr" } ],
+            "ARPROT": [ { "physical_name": "ctrl__s_arprot" } ],
+            "ARVALID": [ { "physical_name": "ctrl__s_arvalid" } ],
+            "ARREADY": [ { "physical_name": "ctrl__s_arready" } ],
+            "RDATA": [ { "physical_name": "ctrl__s_rdata" } ],
+            "RRESP": [ { "physical_name": "ctrl__s_rresp" } ],
+            "RVALID": [ { "physical_name": "ctrl__s_rvalid" } ],
+            "RREADY": [ { "physical_name": "ctrl__s_rready" } ]
+          }
+        },
+        "sys__clk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "ASSOCIATED_RESET": [ { "value": "sys__srstn", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "ASSOCIATED_BUSIF": [ { "value": "ctrl__s", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "66666000", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "sys_top_zynq_ultra_ps_e_0_0_pl_clk0", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "sys__clk" } ]
+          }
+        },
+        "sys__srstn": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_LOW", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "sys__srstn" } ]
+          }
+        }
+      },
+      "memory_maps": {
+        "ctrl__s": {
+          "address_blocks": {
+            "reg0": {
+              "base_address": "0",
+              "range": "65536",
+              "usage": "register"
+            }
+          }
+        }
+      }
+    }
+  }
+}

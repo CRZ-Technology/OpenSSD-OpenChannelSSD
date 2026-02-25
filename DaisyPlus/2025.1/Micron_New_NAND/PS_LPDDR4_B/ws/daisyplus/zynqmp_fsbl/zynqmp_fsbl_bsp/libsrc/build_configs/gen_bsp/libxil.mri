@@ -1,0 +1,21 @@
+create libxil.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/zdma/src/libzdma.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/libuartps.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sysmonpsu/src/libsysmonpsu.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/libsdps.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scugic/src/libscugic.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/rtcpsu/src/librtcpsu.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/resetps/src/libresetps.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/qspipsu/src/libqspipsu.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/ipipsu/src/libipipsu.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src/libiicps.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/libgpiops.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src/libemacps.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/ddrcpsu/src/libddrcpsu.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/csudma/src/libcsudma.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/coresightps_dcc/src/libcoresightps_dcc.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/clockps/src/libclockps.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/bram/src/libbram.a
+addlib D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/axipmon/src/libaxipmon.a
+save
+end

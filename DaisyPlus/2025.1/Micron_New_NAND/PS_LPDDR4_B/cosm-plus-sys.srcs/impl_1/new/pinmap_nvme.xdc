@@ -1,0 +1,23 @@
+set_property IOSTANDARD LVCMOS33 [get_ports user_lnk_up_0]
+set_property PACKAGE_PIN E1 [get_ports user_lnk_up_0]
+set_property IOSTANDARD LVCMOS33 [get_ports pcie_perst_n]
+set_property PACKAGE_PIN D9 [get_ports pcie_perst_n]
+
+set_property PACKAGE_PIN BA2 [get_ports {pci_exp_0_rxp[15]}]
+set_property PACKAGE_PIN AE2 [get_ports {pci_exp_0_rxp[0]}]
+set_property PACKAGE_PIN AW2 [get_ports {pci_exp_0_rxp[14]}]
+set_property PACKAGE_PIN AF4 [get_ports {pci_exp_0_rxp[1]}]
+set_property PACKAGE_PIN AV4 [get_ports {pci_exp_0_rxp[13]}]
+set_property PACKAGE_PIN AG2 [get_ports {pci_exp_0_rxp[2]}]
+set_property PACKAGE_PIN AU2 [get_ports {pci_exp_0_rxp[12]}]
+set_property PACKAGE_PIN AH4 [get_ports {pci_exp_0_rxp[3]}]
+set_property PACKAGE_PIN AT4 [get_ports {pci_exp_0_rxp[11]}]
+set_property PACKAGE_PIN AJ2 [get_ports {pci_exp_0_rxp[4]}]
+set_property PACKAGE_PIN AR2 [get_ports {pci_exp_0_rxp[10]}]
+set_property PACKAGE_PIN AK4 [get_ports {pci_exp_0_rxp[5]}]
+set_property PACKAGE_PIN AP4 [get_ports {pci_exp_0_rxp[9]}]
+set_property PACKAGE_PIN AL2 [get_ports {pci_exp_0_rxp[6]}]
+set_property PACKAGE_PIN AN2 [get_ports {pci_exp_0_rxp[8]}]
+set_property PACKAGE_PIN AM4 [get_ports {pci_exp_0_rxp[7]}]
+
+

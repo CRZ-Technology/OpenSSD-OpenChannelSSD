@@ -1,0 +1,312 @@
+axi_bram_ctrl_0:
+- axi_bram_ctrl
+- bram
+axi_bram_ctrl_1:
+- axi_bram_ctrl
+- bram
+axi_bram_ctrl_2:
+- axi_bram_ctrl
+- bram
+axi_bram_ctrl_3:
+- axi_bram_ctrl
+- bram
+iodelay_if_0:
+- iodelay_if
+- None
+iodelay_if_0_dqs:
+- iodelay_if
+- None
+nvme_ctrl_0:
+- nvme_ctrl
+- None
+psu_acpu_gic:
+- psu_acpu_gic
+- scugic
+psu_adma_0:
+- psu_adma
+- zdma
+psu_adma_1:
+- psu_adma
+- zdma
+psu_adma_2:
+- psu_adma
+- zdma
+psu_adma_3:
+- psu_adma
+- zdma
+psu_adma_4:
+- psu_adma
+- zdma
+psu_adma_5:
+- psu_adma
+- zdma
+psu_adma_6:
+- psu_adma
+- zdma
+psu_adma_7:
+- psu_adma
+- zdma
+psu_afi_0:
+- psu_afi
+- None
+psu_afi_1:
+- psu_afi
+- None
+psu_afi_2:
+- psu_afi
+- None
+psu_afi_3:
+- psu_afi
+- None
+psu_afi_4:
+- psu_afi
+- None
+psu_afi_5:
+- psu_afi
+- None
+psu_afi_6:
+- psu_afi
+- None
+psu_ams:
+- psu_ams
+- sysmonpsu
+psu_apm_0:
+- psu_apm
+- axipmon
+psu_apm_1:
+- psu_apm
+- axipmon
+psu_apm_2:
+- psu_apm
+- axipmon
+psu_apm_5:
+- psu_apm
+- axipmon
+psu_apu:
+- psu_apu
+- None
+psu_cci_gpv:
+- psu_cci_gpv
+- None
+psu_cci_reg:
+- psu_cci_reg
+- None
+psu_coresight_0:
+- psu_coresight_0
+- coresightps_dcc
+psu_crf_apb:
+- psu_crf_apb
+- resetps
+psu_crl_apb:
+- psu_crl_apb
+- clockps
+psu_csu_0:
+- psu_csu
+- None
+psu_csudma:
+- psu_csudma
+- csudma
+psu_ddr_phy:
+- psu_ddr_phy
+- None
+psu_ddr_qos_ctrl:
+- psu_ddr_qos_ctrl
+- None
+psu_ddr_xmpu0_cfg:
+- psu_ddr_xmpu0_cfg
+- None
+psu_ddr_xmpu1_cfg:
+- psu_ddr_xmpu1_cfg
+- None
+psu_ddr_xmpu2_cfg:
+- psu_ddr_xmpu2_cfg
+- None
+psu_ddr_xmpu3_cfg:
+- psu_ddr_xmpu3_cfg
+- None
+psu_ddr_xmpu4_cfg:
+- psu_ddr_xmpu4_cfg
+- None
+psu_ddr_xmpu5_cfg:
+- psu_ddr_xmpu5_cfg
+- None
+psu_ddrc_0:
+- psu_ddrc
+- ddrcpsu
+psu_efuse:
+- psu_efuse
+- None
+psu_ethernet_3:
+- psu_ethernet
+- emacps
+psu_fpd_gpv:
+- psu_fpd_gpv
+- None
+psu_fpd_slcr:
+- psu_fpd_slcr
+- None
+psu_fpd_slcr_secure:
+- psu_fpd_slcr_secure
+- None
+psu_fpd_xmpu_cfg:
+- psu_fpd_xmpu_cfg
+- None
+psu_fpd_xmpu_sink:
+- psu_fpd_xmpu_sink
+- None
+psu_gdma_0:
+- psu_gdma
+- zdma
+psu_gdma_1:
+- psu_gdma
+- zdma
+psu_gdma_2:
+- psu_gdma
+- zdma
+psu_gdma_3:
+- psu_gdma
+- zdma
+psu_gdma_4:
+- psu_gdma
+- zdma
+psu_gdma_5:
+- psu_gdma
+- zdma
+psu_gdma_6:
+- psu_gdma
+- zdma
+psu_gdma_7:
+- psu_gdma
+- zdma
+psu_gpio_0:
+- psu_gpio
+- gpiops
+psu_gpu:
+- psu_gpu
+- None
+psu_i2c_0:
+- psu_i2c
+- iicps
+psu_i2c_1:
+- psu_i2c
+- iicps
+psu_iou_scntr:
+- psu_iou_scntr
+- None
+psu_iou_scntrs:
+- psu_iou_scntrs
+- None
+psu_iousecure_slcr:
+- psu_iousecure_slcr
+- None
+psu_iouslcr_0:
+- psu_iouslcr
+- None
+psu_ipi_0:
+- psu_ipi
+- ipipsu
+psu_lpd_slcr:
+- psu_lpd_slcr
+- None
+psu_lpd_slcr_secure:
+- psu_lpd_slcr_secure
+- None
+psu_lpd_xppu:
+- psu_lpd_xppu
+- None
+psu_lpd_xppu_sink:
+- psu_lpd_xppu_sink
+- None
+psu_mbistjtag:
+- psu_mbistjtag
+- None
+psu_ocm:
+- psu_ocm
+- None
+psu_ocm_xmpu_cfg:
+- psu_ocm_xmpu_cfg
+- None
+psu_pmu_global_0:
+- psu_pmu_global_0
+- None
+psu_qspi_0:
+- psu_qspi
+- qspipsu
+psu_r5_0_atcm:
+- psu_r5_0_atcm
+- None
+psu_r5_0_atcm_global:
+- psu_r5_0_atcm_global
+- None
+psu_r5_0_atcm_lockstep:
+- psu_r5_0_atcm_lockstep
+- None
+psu_r5_0_btcm:
+- psu_r5_0_btcm
+- None
+psu_r5_0_btcm_global:
+- psu_r5_0_btcm_global
+- None
+psu_r5_0_btcm_lockstep:
+- psu_r5_0_btcm_lockstep
+- None
+psu_r5_1_atcm:
+- psu_r5_1_atcm
+- None
+psu_r5_1_atcm_global:
+- psu_r5_1_atcm_global
+- None
+psu_r5_1_btcm:
+- psu_r5_1_btcm
+- None
+psu_r5_1_btcm_global:
+- psu_r5_1_btcm_global
+- None
+psu_r5_tcm_ram_0:
+- psu_r5_tcm_ram
+- None
+psu_r5_tcm_ram_global:
+- psu_r5_tcm_ram
+- None
+psu_rpu:
+- psu_rpu
+- None
+psu_rsa:
+- psu_rsa
+- None
+psu_rtc:
+- psu_rtc
+- rtcpsu
+psu_sd_1:
+- psu_sd
+- sdps
+psu_serdes:
+- psu_serdes
+- None
+psu_siou:
+- psu_siou
+- None
+psu_smmu_gpv:
+- psu_smmu_gpv
+- None
+psu_smmu_reg:
+- psu_smmu_reg
+- None
+psu_uart_0:
+- psu_uart
+- uartps
+psu_uart_1:
+- psu_uart
+- uartps
+t4nfc_hlper_0:
+- t4nfc_hlper
+- None
+t4nfc_hlper_1:
+- t4nfc_hlper
+- None
+t4nfc_hlper_2:
+- t4nfc_hlper
+- None
+t4nfc_hlper_3:
+- t4nfc_hlper
+- None

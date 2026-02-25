@@ -1,0 +1,116 @@
+########################################################################
+# This is file which used to generate QEMU(which emulates A53 cores)
+# commandline(start_qemu.sh script) which used in ZynqMP HW-EMU. 
+# This is a template file which is packaged in platform and it gets 
+# processed by Vitis tool to generate meaningful file.
+#
+# This file contains flag and value pairs and they must be seperated 
+# into two lines value followed by flag. Below are the common/mandated 
+# flag and value pairs used for emulating ZynqMP. User can add more 
+# commandline args to this file depends on requirements.
+# 
+# For more details on the QEMU commandline, please refer to 
+# the QEMU user guide UG1169.
+########################################################################
+#
+#
+# selects emulated machine
+-M
+arm-generic-fdt
+#
+#
+# redirect the serial port to specified char dev (i.e stdio, tcp port, file etc)
+#-serial
+#mon:stdio
+#
+#
+# Creating a chardev device for stdio as backend and both UART0(-serial) and
+# moniter uses this chardev device for outputs. Here all the UART0 and moniter 
+# logs are redirected to qemu_output.log
+-chardev
+stdio,id=serial2,logfile=qemu_output.log,mux=on,signal=off
+-serial
+chardev:serial2
+-mon
+serial2
+#
+#
+# Make the specified cpu come out of reset (ZynqMP specific)
+-global
+xlnx,zynqmp-boot.cpu-num=0
+#
+#
+# Handovers static pmc config data to pmufw  (ZynqMP specific)
+-global
+xlnx,zynqmp-boot.use-pmufw=true
+#
+#
+# initialize network interface gem0
+-net
+nic
+#
+#
+# initialize network interface gem1
+-net
+nic
+#
+#
+# initialize network interface gem2
+-net
+nic
+#
+#
+# initialize network interface gem3
+-net
+nic
+#
+#
+# Connect the previous mentioned network adaptor to user mode network
+-net
+user
+#
+#
+# Mention the ddr size according to support ddr address space
+-m
+4G
+#
+#
+# Configuration(structure) Needed by Arm Trusted firmware to find the U-boot start
+# address and flags for it. Earlier there was default structure which has similar
+# configuration, but now ATF imposing strict policy to provide this structre by FSBL
+# So these structre is passed manually to QEMU as there is no FSBL in QEMU flow.
+# 0xfffc0008 is address look by ATF to find the U-boot start address
+# 0xfffc0010 is for flags as 1
+# 0xffd80048 is the PMU_GLOBAL_GEN_STORAGE6 register set to 0xfffc0000, using this address
+# ATF will read the 0x584c4e5801000000 as data about the ASCII name of PMU generation name.
+# 
+-device 
+loader,addr=0xfffc0000,data=0x584c4e5801000000,data-be=true,data-len=8
+-device 
+loader,addr=0xfffc0008,data=0x0000081000000000,data-be=true,data-len=8
+-device 
+loader,addr=0xfffc0010,data=0x1000000000000000,data-be=true,data-len=8
+-device 
+loader,addr=0xffd80048,data=0xfffc0000,data-len=4,attrs-secure=on
+#
+#
+# Syste.dtb is passing as commandline to QEMU, as it is no more part 
+# of u-boot.elf
+-device
+loader,addr=0x100000,file=<system.dtb>
+#
+#
+# Load bl31 elf file on A53 core 0
+-device
+loader,file=<bl31.elf>,cpu-num=0
+#
+#
+# Loading u-boot.elf
+-device
+loader,file=<u-boot.elf>
+#
+#
+# Dtb file which describes PS which is emulated by QEMU can be specifed using -hw-dtb
+# (By default Vitis tool provides standard dtb, But user can specify dtb).
+#-hw-dtb
+#<path-to-ps-dtb>
