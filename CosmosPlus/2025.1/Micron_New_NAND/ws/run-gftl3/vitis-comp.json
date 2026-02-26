@@ -1,0 +1,16 @@
+{
+  "name": "run-gftl3",
+  "type": "HOST",
+  "platform": "cosmosplus",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "useSysrootToolchain": false,
+  "applicationFlow": "EMBEDDED"
+}

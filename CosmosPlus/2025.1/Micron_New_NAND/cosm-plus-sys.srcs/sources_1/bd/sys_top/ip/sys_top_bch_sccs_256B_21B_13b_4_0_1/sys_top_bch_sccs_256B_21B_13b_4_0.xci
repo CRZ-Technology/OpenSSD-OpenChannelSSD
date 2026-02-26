@@ -1,0 +1,215 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "sys_top_bch_sccs_256B_21B_13b_4_0",
+    "cell_name": "bch_sccs_256B_21B_13b_4",
+    "component_reference": "enclab:user:bch_sccs_256B_21B_13b:1.0.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../cosm-plus-sys.gen/sources_1/bd/sys_top/ip/sys_top_bch_sccs_256B_21B_13b_4_0_1",
+    "parameters": {
+      "component_parameters": {
+        "BCHDecMulti": [ { "value": "2", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "GaloisFieldDegree": [ { "value": "12", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "MaxErrorCountBits": [ { "value": "9", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Syndromes": [ { "value": "27", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "ELPCoefficients": [ { "value": "15", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "sys_top_bch_sccs_256B_21B_13b_4_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "BCHDecMulti": [ { "value": "2", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "GaloisFieldDegree": [ { "value": "12", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "MaxErrorCountBits": [ { "value": "9", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "Syndromes": [ { "value": "27", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "ELPCoefficients": [ { "value": "15", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z045" } ],
+        "PACKAGE": [ { "value": "ffg900" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-3" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../cosm-plus-sys.gen/sources_1/bd/sys_top/ip/sys_top_bch_sccs_256B_21B_13b_4_0_1" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2025.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "iClock": [ { "direction": "in" } ],
+        "iReset": [ { "direction": "in" } ],
+        "iToECCWOpcode": [ { "direction": "in", "size_left": "5", "size_right": "0", "driver_value": "0" } ],
+        "iToECCWTargetID": [ { "direction": "in", "size_left": "4", "size_right": "0", "driver_value": "0" } ],
+        "iToECCWSourceID": [ { "direction": "in", "size_left": "4", "size_right": "0", "driver_value": "0" } ],
+        "iToECCWAddress": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
+        "iToECCWLength": [ { "direction": "in", "size_left": "15", "size_right": "0", "driver_value": "0" } ],
+        "iToECCWCmdValid": [ { "direction": "in", "driver_value": "0" } ],
+        "oToECCWCmdReady": [ { "direction": "out" } ],
+        "iToECCWData": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
+        "iToECCWValid": [ { "direction": "in", "driver_value": "0" } ],
+        "iToECCWLast": [ { "direction": "in", "driver_value": "0" } ],
+        "oToECCWReady": [ { "direction": "out" } ],
+        "iToECCROpcode": [ { "direction": "in", "size_left": "5", "size_right": "0", "driver_value": "0" } ],
+        "iToECCRTargetID": [ { "direction": "in", "size_left": "4", "size_right": "0", "driver_value": "0" } ],
+        "iToECCRSourceID": [ { "direction": "in", "size_left": "4", "size_right": "0", "driver_value": "0" } ],
+        "iToECCRAddress": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
+        "iToECCRLength": [ { "direction": "in", "size_left": "15", "size_right": "0", "driver_value": "0" } ],
+        "iToECCRCmdValid": [ { "direction": "in", "driver_value": "0" } ],
+        "oToECCRCmdReady": [ { "direction": "out" } ],
+        "oToECCRData": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "oToECCRValid": [ { "direction": "out" } ],
+        "oToECCRLast": [ { "direction": "out" } ],
+        "iToECCRReady": [ { "direction": "in", "driver_value": "0" } ],
+        "ofromECCWOpcode": [ { "direction": "out", "size_left": "5", "size_right": "0" } ],
+        "ofromECCWTargetID": [ { "direction": "out", "size_left": "4", "size_right": "0" } ],
+        "ofromECCWSourceID": [ { "direction": "out", "size_left": "4", "size_right": "0" } ],
+        "ofromECCWAddress": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "ofromECCWLength": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "ofromECCWCmdValid": [ { "direction": "out" } ],
+        "ifromECCWCmdReady": [ { "direction": "in", "driver_value": "0" } ],
+        "ofromECCWData": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "ofromECCWValid": [ { "direction": "out" } ],
+        "ofromECCWLast": [ { "direction": "out" } ],
+        "ifromECCWReady": [ { "direction": "in", "driver_value": "0" } ],
+        "ofromECCROpcode": [ { "direction": "out", "size_left": "5", "size_right": "0" } ],
+        "ofromECCRTargetID": [ { "direction": "out", "size_left": "4", "size_right": "0" } ],
+        "ofromECCRSourceID": [ { "direction": "out", "size_left": "4", "size_right": "0" } ],
+        "ofromECCRAddress": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "ofromECCRLength": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "ofromECCRCmdValid": [ { "direction": "out" } ],
+        "ifromECCRCmdReady": [ { "direction": "in", "driver_value": "0" } ],
+        "ifromECCRData": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
+        "ifromECCRValid": [ { "direction": "in", "driver_value": "0" } ],
+        "ifromECCRLast": [ { "direction": "in", "driver_value": "0" } ],
+        "ofromECCRReady": [ { "direction": "out" } ],
+        "iSharedKESReady": [ { "direction": "in", "driver_value": "0" } ],
+        "oErrorDetectionEnd": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "oDecodeNeeded": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "oSyndromes": [ { "direction": "out", "size_left": "647", "size_right": "0" } ],
+        "iIntraSharedKESEnd": [ { "direction": "in", "driver_value": "0" } ],
+        "iErroredChunk": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "iCorrectionFail": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "iErrorCount": [ { "direction": "in", "size_left": "17", "size_right": "0", "driver_value": "0" } ],
+        "iELPCoefficients": [ { "direction": "in", "size_left": "359", "size_right": "0", "driver_value": "0" } ],
+        "oCSAvailable": [ { "direction": "out" } ]
+      },
+      "interfaces": {
+        "to_ecc_if": {
+          "vlnv": "enclab:user:ecc_if:1.0",
+          "abstraction_type": "enclab:user:ecc_if_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "WOpcode": [ { "physical_name": "iToECCWOpcode" } ],
+            "WTargetID": [ { "physical_name": "iToECCWTargetID" } ],
+            "WSourceID": [ { "physical_name": "iToECCWSourceID" } ],
+            "WAddress": [ { "physical_name": "iToECCWAddress" } ],
+            "WLength": [ { "physical_name": "iToECCWLength" } ],
+            "WCmdValid": [ { "physical_name": "iToECCWCmdValid" } ],
+            "WCmdReady": [ { "physical_name": "oToECCWCmdReady" } ],
+            "WData": [ { "physical_name": "iToECCWData" } ],
+            "WValid": [ { "physical_name": "iToECCWValid" } ],
+            "WLast": [ { "physical_name": "iToECCWLast" } ],
+            "WReady": [ { "physical_name": "oToECCWReady" } ],
+            "ROpcode": [ { "physical_name": "iToECCROpcode" } ],
+            "RTargetID": [ { "physical_name": "iToECCRTargetID" } ],
+            "RSourceID": [ { "physical_name": "iToECCRSourceID" } ],
+            "RAddress": [ { "physical_name": "iToECCRAddress" } ],
+            "RLength": [ { "physical_name": "iToECCRLength" } ],
+            "RCmdValid": [ { "physical_name": "iToECCRCmdValid" } ],
+            "RCmdReady": [ { "physical_name": "oToECCRCmdReady" } ],
+            "RData": [ { "physical_name": "oToECCRData" } ],
+            "RValid": [ { "physical_name": "oToECCRValid" } ],
+            "RLast": [ { "physical_name": "oToECCRLast" } ],
+            "RReady": [ { "physical_name": "iToECCRReady" } ]
+          }
+        },
+        "from_ecc_if": {
+          "vlnv": "enclab:user:ecc_if:1.0",
+          "abstraction_type": "enclab:user:ecc_if_rtl:1.0",
+          "mode": "master",
+          "port_maps": {
+            "WOpcode": [ { "physical_name": "ofromECCWOpcode" } ],
+            "WTargetID": [ { "physical_name": "ofromECCWTargetID" } ],
+            "WSourceID": [ { "physical_name": "ofromECCWSourceID" } ],
+            "WAddress": [ { "physical_name": "ofromECCWAddress" } ],
+            "WLength": [ { "physical_name": "ofromECCWLength" } ],
+            "WCmdValid": [ { "physical_name": "ofromECCWCmdValid" } ],
+            "WCmdReady": [ { "physical_name": "ifromECCWCmdReady" } ],
+            "WData": [ { "physical_name": "ofromECCWData" } ],
+            "WValid": [ { "physical_name": "ofromECCWValid" } ],
+            "WLast": [ { "physical_name": "ofromECCWLast" } ],
+            "WReady": [ { "physical_name": "ifromECCWReady" } ],
+            "ROpcode": [ { "physical_name": "ofromECCROpcode" } ],
+            "RTargetID": [ { "physical_name": "ofromECCRTargetID" } ],
+            "RSourceID": [ { "physical_name": "ofromECCRSourceID" } ],
+            "RAddress": [ { "physical_name": "ofromECCRAddress" } ],
+            "RLength": [ { "physical_name": "ofromECCRLength" } ],
+            "RCmdValid": [ { "physical_name": "ofromECCRCmdValid" } ],
+            "RCmdReady": [ { "physical_name": "ifromECCRCmdReady" } ],
+            "RData": [ { "physical_name": "ifromECCRData" } ],
+            "RValid": [ { "physical_name": "ifromECCRValid" } ],
+            "RLast": [ { "physical_name": "ifromECCRLast" } ],
+            "RReady": [ { "physical_name": "ofromECCRReady" } ]
+          }
+        },
+        "bch_skes_if": {
+          "vlnv": "enclab:user:bch_skes_if:1.0",
+          "abstraction_type": "enclab:user:bch_skes_if_rtl:1.0",
+          "mode": "master",
+          "port_maps": {
+            "SharedKESReady": [ { "physical_name": "iSharedKESReady" } ],
+            "ErrorDetectionEnd": [ { "physical_name": "oErrorDetectionEnd" } ],
+            "DecodeNeeded": [ { "physical_name": "oDecodeNeeded" } ],
+            "Syndromes": [ { "physical_name": "oSyndromes" } ],
+            "IntraSharedKESEnd": [ { "physical_name": "iIntraSharedKESEnd" } ],
+            "ErroredChunk": [ { "physical_name": "iErroredChunk" } ],
+            "CorrectionFail": [ { "physical_name": "iCorrectionFail" } ],
+            "ErrorCount": [ { "physical_name": "iErrorCount" } ],
+            "ELPCoefficients": [ { "physical_name": "iELPCoefficients" } ],
+            "CSAvailable": [ { "physical_name": "oCSAvailable" } ]
+          }
+        },
+        "iReset": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "iReset" } ]
+          }
+        },
+        "iClock": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "ASSOCIATED_RESET": [ { "value": "iReset", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "ASSOCIATED_BUSIF": [ { "value": "to_ecc_if:from_ecc_if:bch_skes_if", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "66666672", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "sys_top_processing_system7_0_0_FCLK_CLK1", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "iClock" } ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+/*
+ * Skeleton device tree; the bare minimum needed to boot; just include and
+ * add a compatible value.  The bootloader will typically populate the memory
+ * node.
+ */
+
+/ {
+	#address-cells = <1>;
+	#size-cells = <1>;
+	chosen { };
+	aliases { };
+	memory { device_type = "memory"; reg = <0 0>; };
+
+	cpu_card {
+		compatible = "simple-bus";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		bootph-all;
+
+		timer@0 {
+			compatible = "snps,arc-timer";
+			clocks = <&core_clk>;
+			reg = <0 1>;
+		};
+	};
+};

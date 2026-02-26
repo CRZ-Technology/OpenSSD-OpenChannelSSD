@@ -1,0 +1,196 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "sys_top_bch_skes_256B_21B_13b_1_0",
+    "cell_name": "bch_skes_256B_21B_13b_1",
+    "component_reference": "enclab:user:bch_skes_256B_21B_13b:1.0.2",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../cosm-plus-sys.gen/sources_1/bd/sys_top/ip/sys_top_bch_skes_256B_21B_13b_1_0_1",
+    "parameters": {
+      "component_parameters": {
+        "Channel": [ { "value": "4", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Multi": [ { "value": "2", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "GaloisFieldDegree": [ { "value": "12", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "MaxErrorCountBits": [ { "value": "9", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Syndromes": [ { "value": "27", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "ELPCoefficients": [ { "value": "15", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "sys_top_bch_skes_256B_21B_13b_1_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "Channel": [ { "value": "4", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "Multi": [ { "value": "2", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "GaloisFieldDegree": [ { "value": "12", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "MaxErrorCountBits": [ { "value": "9", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "Syndromes": [ { "value": "27", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "ELPCoefficients": [ { "value": "15", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z045" } ],
+        "PACKAGE": [ { "value": "ffg900" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-3" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../cosm-plus-sys.gen/sources_1/bd/sys_top/ip/sys_top_bch_skes_256B_21B_13b_1_0_1" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2025.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "iClock": [ { "direction": "in" } ],
+        "iReset": [ { "direction": "in" } ],
+        "oSharedKESReady_0": [ { "direction": "out" } ],
+        "iErrorDetectionEnd_0": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "iDecodeNeeded_0": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "iSyndromes_0": [ { "direction": "in", "size_left": "647", "size_right": "0", "driver_value": "0" } ],
+        "iCSAvailable_0": [ { "direction": "in", "driver_value": "0" } ],
+        "oIntraSharedKESEnd_0": [ { "direction": "out" } ],
+        "oErroredChunk_0": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "oCorrectionFail_0": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "oClusterErrorCount_0": [ { "direction": "out", "size_left": "17", "size_right": "0" } ],
+        "oELPCoefficients_0": [ { "direction": "out", "size_left": "359", "size_right": "0" } ],
+        "oSharedKESReady_1": [ { "direction": "out" } ],
+        "iErrorDetectionEnd_1": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "iDecodeNeeded_1": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "iSyndromes_1": [ { "direction": "in", "size_left": "647", "size_right": "0", "driver_value": "0" } ],
+        "iCSAvailable_1": [ { "direction": "in", "driver_value": "0" } ],
+        "oIntraSharedKESEnd_1": [ { "direction": "out" } ],
+        "oErroredChunk_1": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "oCorrectionFail_1": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "oClusterErrorCount_1": [ { "direction": "out", "size_left": "17", "size_right": "0" } ],
+        "oELPCoefficients_1": [ { "direction": "out", "size_left": "359", "size_right": "0" } ],
+        "oSharedKESReady_2": [ { "direction": "out" } ],
+        "iErrorDetectionEnd_2": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "iDecodeNeeded_2": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "iSyndromes_2": [ { "direction": "in", "size_left": "647", "size_right": "0", "driver_value": "0" } ],
+        "iCSAvailable_2": [ { "direction": "in", "driver_value": "0" } ],
+        "oIntraSharedKESEnd_2": [ { "direction": "out" } ],
+        "oErroredChunk_2": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "oCorrectionFail_2": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "oClusterErrorCount_2": [ { "direction": "out", "size_left": "17", "size_right": "0" } ],
+        "oELPCoefficients_2": [ { "direction": "out", "size_left": "359", "size_right": "0" } ],
+        "oSharedKESReady_3": [ { "direction": "out" } ],
+        "iErrorDetectionEnd_3": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "iDecodeNeeded_3": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "iSyndromes_3": [ { "direction": "in", "size_left": "647", "size_right": "0", "driver_value": "0" } ],
+        "iCSAvailable_3": [ { "direction": "in", "driver_value": "0" } ],
+        "oIntraSharedKESEnd_3": [ { "direction": "out" } ],
+        "oErroredChunk_3": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "oCorrectionFail_3": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "oClusterErrorCount_3": [ { "direction": "out", "size_left": "17", "size_right": "0" } ],
+        "oELPCoefficients_3": [ { "direction": "out", "size_left": "359", "size_right": "0" } ]
+      },
+      "interfaces": {
+        "signal_clock": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "ASSOCIATED_RESET": [ { "value": "iReset", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "ASSOCIATED_BUSIF": [ { "value": "bch_skes_ch0_if:bch_skes_ch1_if:bch_skes_ch2_if:bch_skes_ch3_if", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "66666672", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "sys_top_processing_system7_0_0_FCLK_CLK1", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "iClock" } ]
+          }
+        },
+        "signal_reset": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "iReset" } ]
+          }
+        },
+        "bch_skes_ch0_if": {
+          "vlnv": "enclab:user:bch_skes_if:1.0",
+          "abstraction_type": "enclab:user:bch_skes_if_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "SharedKESReady": [ { "physical_name": "oSharedKESReady_0" } ],
+            "ErrorDetectionEnd": [ { "physical_name": "iErrorDetectionEnd_0" } ],
+            "DecodeNeeded": [ { "physical_name": "iDecodeNeeded_0" } ],
+            "Syndromes": [ { "physical_name": "iSyndromes_0" } ],
+            "IntraSharedKESEnd": [ { "physical_name": "oIntraSharedKESEnd_0" } ],
+            "ErroredChunk": [ { "physical_name": "oErroredChunk_0" } ],
+            "CorrectionFail": [ { "physical_name": "oCorrectionFail_0" } ],
+            "ErrorCount": [ { "physical_name": "oClusterErrorCount_0" } ],
+            "ELPCoefficients": [ { "physical_name": "oELPCoefficients_0" } ],
+            "CSAvailable": [ { "physical_name": "iCSAvailable_0" } ]
+          }
+        },
+        "bch_skes_ch1_if": {
+          "vlnv": "enclab:user:bch_skes_if:1.0",
+          "abstraction_type": "enclab:user:bch_skes_if_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "SharedKESReady": [ { "physical_name": "oSharedKESReady_1" } ],
+            "ErrorDetectionEnd": [ { "physical_name": "iErrorDetectionEnd_1" } ],
+            "DecodeNeeded": [ { "physical_name": "iDecodeNeeded_1" } ],
+            "Syndromes": [ { "physical_name": "iSyndromes_1" } ],
+            "IntraSharedKESEnd": [ { "physical_name": "oIntraSharedKESEnd_1" } ],
+            "ErroredChunk": [ { "physical_name": "oErroredChunk_1" } ],
+            "CorrectionFail": [ { "physical_name": "oCorrectionFail_1" } ],
+            "ErrorCount": [ { "physical_name": "oClusterErrorCount_1" } ],
+            "ELPCoefficients": [ { "physical_name": "oELPCoefficients_1" } ],
+            "CSAvailable": [ { "physical_name": "iCSAvailable_1" } ]
+          }
+        },
+        "bch_skes_ch2_if": {
+          "vlnv": "enclab:user:bch_skes_if:1.0",
+          "abstraction_type": "enclab:user:bch_skes_if_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "SharedKESReady": [ { "physical_name": "oSharedKESReady_2" } ],
+            "ErrorDetectionEnd": [ { "physical_name": "iErrorDetectionEnd_2" } ],
+            "DecodeNeeded": [ { "physical_name": "iDecodeNeeded_2" } ],
+            "Syndromes": [ { "physical_name": "iSyndromes_2" } ],
+            "IntraSharedKESEnd": [ { "physical_name": "oIntraSharedKESEnd_2" } ],
+            "ErroredChunk": [ { "physical_name": "oErroredChunk_2" } ],
+            "CorrectionFail": [ { "physical_name": "oCorrectionFail_2" } ],
+            "ErrorCount": [ { "physical_name": "oClusterErrorCount_2" } ],
+            "ELPCoefficients": [ { "physical_name": "oELPCoefficients_2" } ],
+            "CSAvailable": [ { "physical_name": "iCSAvailable_2" } ]
+          }
+        },
+        "bch_skes_ch3_if": {
+          "vlnv": "enclab:user:bch_skes_if:1.0",
+          "abstraction_type": "enclab:user:bch_skes_if_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "SharedKESReady": [ { "physical_name": "oSharedKESReady_3" } ],
+            "ErrorDetectionEnd": [ { "physical_name": "iErrorDetectionEnd_3" } ],
+            "DecodeNeeded": [ { "physical_name": "iDecodeNeeded_3" } ],
+            "Syndromes": [ { "physical_name": "iSyndromes_3" } ],
+            "IntraSharedKESEnd": [ { "physical_name": "oIntraSharedKESEnd_3" } ],
+            "ErroredChunk": [ { "physical_name": "oErroredChunk_3" } ],
+            "CorrectionFail": [ { "physical_name": "oCorrectionFail_3" } ],
+            "ErrorCount": [ { "physical_name": "oClusterErrorCount_3" } ],
+            "ELPCoefficients": [ { "physical_name": "oELPCoefficients_3" } ],
+            "CSAvailable": [ { "physical_name": "iCSAvailable_3" } ]
+          }
+        }
+      }
+    }
+  }
+}

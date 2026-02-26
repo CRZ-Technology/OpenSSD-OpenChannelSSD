@@ -1,0 +1,178 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "sys_top_v2nfc_4_0",
+    "cell_name": "v2nfc_5",
+    "component_reference": "enclab:user:v2nfc:1.4.1",
+    "ip_revision": "2",
+    "gen_directory": "../../../../../../cosm-plus-sys.gen/sources_1/bd/sys_top/ip/sys_top_v2nfc_4_0",
+    "parameters": {
+      "component_parameters": {
+        "IDelayValue": [ { "value": "17", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "InputClockBufferType": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "NumberOfWays": [ { "value": "8", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "BufferType": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "sys_top_v2nfc_4_0", "resolve_type": "user", "usage": "all" } ],
+        "IDelayCtrlInst": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "DQIDelayValue": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "DQIDelayInst": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "IDelayValue": [ { "value": "17", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "DQIDelayValue": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "InputClockBufferType": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "NumberOfWays": [ { "value": "8", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "BufferType": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "IDelayCtrlInst": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "DQIDelayInst": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z045" } ],
+        "PACKAGE": [ { "value": "ffg900" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-3" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "2" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../cosm-plus-sys.gen/sources_1/bd/sys_top/ip/sys_top_v2nfc_4_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2025.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "iSystemClock": [ { "direction": "in" } ],
+        "iDelayRefClock": [ { "direction": "in" } ],
+        "iOutputDrivingClock": [ { "direction": "in" } ],
+        "iOutputStrobeClock": [ { "direction": "in" } ],
+        "iReset": [ { "direction": "in" } ],
+        "iOpcode": [ { "direction": "in", "size_left": "5", "size_right": "0" } ],
+        "iTargetID": [ { "direction": "in", "size_left": "4", "size_right": "0" } ],
+        "iSourceID": [ { "direction": "in", "size_left": "4", "size_right": "0" } ],
+        "iAddress": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "iLength": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "iCMDValid": [ { "direction": "in" } ],
+        "oCMDReady": [ { "direction": "out" } ],
+        "iWriteData": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "iWriteLast": [ { "direction": "in" } ],
+        "iWriteValid": [ { "direction": "in" } ],
+        "oWriteReady": [ { "direction": "out" } ],
+        "oReadData": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "oReadLast": [ { "direction": "out" } ],
+        "oReadValid": [ { "direction": "out" } ],
+        "iReadReady": [ { "direction": "in" } ],
+        "oReadyBusy": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "IO_NAND_DQS_P": [ { "direction": "inout" } ],
+        "IO_NAND_DQS_N": [ { "direction": "inout" } ],
+        "IO_NAND_DQ": [ { "direction": "inout", "size_left": "7", "size_right": "0" } ],
+        "O_NAND_CE": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "O_NAND_WE": [ { "direction": "out" } ],
+        "O_NAND_RE_P": [ { "direction": "out" } ],
+        "O_NAND_RE_N": [ { "direction": "out" } ],
+        "O_NAND_ALE": [ { "direction": "out" } ],
+        "O_NAND_CLE": [ { "direction": "out" } ],
+        "I_NAND_RB": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "O_NAND_WP": [ { "direction": "out" } ],
+        "iDQSIDelayTap": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "iDQSIDelayTapLoad": [ { "direction": "in" } ],
+        "iDQ0IDelayTap": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "iDQ0IDelayTapLoad": [ { "direction": "in" } ],
+        "iDQ1IDelayTap": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "iDQ1IDelayTapLoad": [ { "direction": "in" } ],
+        "iDQ2IDelayTap": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "iDQ2IDelayTapLoad": [ { "direction": "in" } ],
+        "iDQ3IDelayTap": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "iDQ3IDelayTapLoad": [ { "direction": "in" } ],
+        "iDQ4IDelayTap": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "iDQ4IDelayTapLoad": [ { "direction": "in" } ],
+        "iDQ5IDelayTap": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "iDQ5IDelayTapLoad": [ { "direction": "in" } ],
+        "iDQ6IDelayTap": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "iDQ6IDelayTapLoad": [ { "direction": "in" } ],
+        "iDQ7IDelayTap": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "iDQ7IDelayTapLoad": [ { "direction": "in" } ]
+      },
+      "interfaces": {
+        "iSystemClock": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "ASSOCIATED_RESET": [ { "value": "iReset", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "ASSOCIATED_BUSIF": [ { "value": "v2nfc_if", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "66666672", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "sys_top_processing_system7_0_0_FCLK_CLK1", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "iSystemClock" } ]
+          }
+        },
+        "iReset": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "iReset" } ]
+          }
+        },
+        "v2nfc_if": {
+          "vlnv": "enclab:user:v2nfc_if:1.0",
+          "abstraction_type": "enclab:user:v2nfc_if_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "Opcode": [ { "physical_name": "iOpcode" } ],
+            "TargetID": [ { "physical_name": "iTargetID" } ],
+            "SourceID": [ { "physical_name": "iSourceID" } ],
+            "Address": [ { "physical_name": "iAddress" } ],
+            "Length": [ { "physical_name": "iLength" } ],
+            "CMDValid": [ { "physical_name": "iCMDValid" } ],
+            "CMDReady": [ { "physical_name": "oCMDReady" } ],
+            "WriteData": [ { "physical_name": "iWriteData" } ],
+            "WriteLast": [ { "physical_name": "iWriteLast" } ],
+            "WriteValid": [ { "physical_name": "iWriteValid" } ],
+            "WriteReady": [ { "physical_name": "oWriteReady" } ],
+            "ReadData": [ { "physical_name": "oReadData" } ],
+            "ReadLast": [ { "physical_name": "oReadLast" } ],
+            "ReadValid": [ { "physical_name": "oReadValid" } ],
+            "ReadReady": [ { "physical_name": "iReadReady" } ]
+          }
+        },
+        "nand_if": {
+          "vlnv": "enclab:user:nand_if:1.0",
+          "abstraction_type": "enclab:user:nand_if_rtl:1.0",
+          "mode": "master",
+          "port_maps": {
+            "NAND_DQS_P": [ { "physical_name": "IO_NAND_DQS_P" } ],
+            "NAND_DQS_N": [ { "physical_name": "IO_NAND_DQS_N" } ],
+            "NAND_DQ": [ { "physical_name": "IO_NAND_DQ" } ],
+            "NAND_CE": [ { "physical_name": "O_NAND_CE" } ],
+            "NAND_WE": [ { "physical_name": "O_NAND_WE" } ],
+            "NAND_RE_P": [ { "physical_name": "O_NAND_RE_P" } ],
+            "NAND_RE_N": [ { "physical_name": "O_NAND_RE_N" } ],
+            "NAND_RB": [ { "physical_name": "I_NAND_RB" } ],
+            "NAND_WP": [ { "physical_name": "O_NAND_WP" } ],
+            "NAND_ALE": [ { "physical_name": "O_NAND_ALE" } ],
+            "NAND_CLE": [ { "physical_name": "O_NAND_CLE" } ]
+          }
+        }
+      }
+    }
+  }
+}
