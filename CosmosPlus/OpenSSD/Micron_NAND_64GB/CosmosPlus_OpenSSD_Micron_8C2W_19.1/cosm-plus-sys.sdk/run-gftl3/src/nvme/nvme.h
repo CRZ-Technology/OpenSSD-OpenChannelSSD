@@ -85,6 +85,7 @@
 #define IO_NVM_READ											0x02
 #define IO_NVM_WRITE_UNCORRECTABLE							0x04
 #define IO_NVM_COMPARE										0x05
+#define IO_NVM_WRITE_ZEROS									0x08
 #define IO_NVM_DATASET_MANAGEMENT							0x09
 
 /*Status Code Type */

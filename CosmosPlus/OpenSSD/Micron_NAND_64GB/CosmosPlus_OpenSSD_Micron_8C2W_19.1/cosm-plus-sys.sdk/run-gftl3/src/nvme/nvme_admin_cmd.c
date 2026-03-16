@@ -334,6 +334,7 @@ void handle_identify(NVME_ADMIN_COMMAND *nvmeAdminCmd, NVME_COMPLETION *nvmeCPL)
 	unsigned int pIdentifyData = ADMIN_CMD_DRAM_DATA_BUFFER;
 	unsigned int prp[2];
 	unsigned int prpLen;
+	unsigned int prpMisallign;
 
 	identifyInfo.dword = nvmeAdminCmd->dword10;
 
@@ -358,21 +359,52 @@ void handle_identify(NVME_ADMIN_COMMAND *nvmeAdminCmd, NVME_COMPLETION *nvmeCPL)
 	
 	prp[0] = nvmeAdminCmd->PRP1[0];
 	prp[1] = nvmeAdminCmd->PRP1[1];
+	prpMisallign = (prp[0] & 0xF);
 
-	prpLen = 0x1000 - (prp[0] & 0xFFF);
-//	xil_printf("prpLen = %X, prp[1] = %X, prp[0] = %X\r\n",prpLen, prp[1], prp[0]);
-	set_direct_tx_dma(pIdentifyData, prp[1], prp[0], prpLen);
-	if(prpLen != 0x1000)
-	{
-		pIdentifyData = pIdentifyData + prpLen;
-		prpLen = 0x1000 - prpLen;
-		prp[0] = nvmeAdminCmd->PRP2[0];
-		prp[1] = nvmeAdminCmd->PRP2[1];
+    if(prpMisallign)
+    {
+        if((0x1000 - (prp[0] & 0xFFF)) > 0x10)
+        {
+        	prpLen =  (0x1000 - (prp[0] & 0xFFF)) - (0x10 - prpMisallign);
+        	//xil_printf("pIdentifyData=%X, prpLen = %X, prp[1] = %X, prp[0] = %X\r\n",pIdentifyData,prpLen, prp[1], prp[0]);
+        	set_direct_tx_dma(pIdentifyData, prp[1], prp[0], prpLen);
+        	pIdentifyData += prpLen;
+        }
 
-//		ASSERT((prp[1] & 0xFFF) == 0);
+    	prp[0] = prp[0] + (0x1000 - (prp[0] & 0xFFF)) - 0x10;
+    	prpLen =  0x10;
+      	pIdentifyData -= prpMisallign;
 //		xil_printf("prpLen = %X, prp[1] = %X, prp[0] = %X\r\n",prpLen, prp[1], prp[0]);
-		set_direct_tx_dma(pIdentifyData, prp[1], prp[0], prpLen);
-	}
+    	set_direct_tx_dma(pIdentifyData, prp[1], prp[0], prpLen);
+
+		pIdentifyData = pIdentifyData + prpLen;
+    	prp[0] = nvmeAdminCmd->PRP1[0];
+		prpLen = (prp[0] & 0xFFF) - prpMisallign;
+		if(prpLen)
+		{
+    		prp[0] = nvmeAdminCmd->PRP2[0];
+    		prp[1] = nvmeAdminCmd->PRP2[1];
+    		//ASSERT((prp[1] & 0xFFF) == 0);
+           	//xil_printf("pIdentifyData=%X, prpLen = %X, prp[1] = %X, prp[0] = %X\r\n",pIdentifyData,prpLen, prp[1], prp[0]);
+    		set_direct_tx_dma(pIdentifyData, prp[1], prp[0], prpLen);
+        }
+    }
+    else
+    {
+    	prpLen =  (0x1000 - (prp[0] & 0xFFF));
+    	set_direct_tx_dma(pIdentifyData, prp[1], prp[0], prpLen);
+    	if(prpLen != 0x1000)
+    	{
+    		pIdentifyData = pIdentifyData + prpLen;
+    		prpLen = 0x1000 - prpLen;
+    		prp[0] = nvmeAdminCmd->PRP2[0];
+    		prp[1] = nvmeAdminCmd->PRP2[1];
+
+//			ASSERT((prp[1] & 0xFFF) == 0);
+//			xil_printf("prpLen = %X, prp[1] = %X, prp[0] = %X\r\n",prpLen, prp[1], prp[0]);
+    		set_direct_tx_dma(pIdentifyData, prp[1], prp[0], prpLen);
+    	}
+    }
 
 	check_direct_tx_dma_done();
 	nvmeCPL->dword[0] = 0;

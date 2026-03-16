@@ -712,8 +712,13 @@ unsigned int GenerateNandRowAddr(unsigned int reqSlotTag)
 		tempBlockNo = phyBlockMapPtr->phyBlock[dieNo][phyBlockNo].remappedPhyBlock % TOTAL_BLOCKS_PER_LUN;
 		tempPageNo = Vsa2VpageTranslation(reqPoolPtr->reqPool[reqSlotTag].nandInfo.virtualSliceAddr);
 
-		//if(BITS_PER_FLASH_CELL == SLC_MODE)
-		//	tempPageNo = Vpage2PlsbPageTranslation(tempPageNo);
+		if(BITS_PER_FLASH_CELL == SLC_MODE)
+		{
+		    if(micron_nand_type == MT29F256G08CEECB)
+		    {
+    			tempPageNo = Vpage2PlsbPageTranslation(tempPageNo);
+    		}
+		}
 	}
 	else if(reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandAddr == REQ_OPT_NAND_ADDR_PHY_ORG)
 	{

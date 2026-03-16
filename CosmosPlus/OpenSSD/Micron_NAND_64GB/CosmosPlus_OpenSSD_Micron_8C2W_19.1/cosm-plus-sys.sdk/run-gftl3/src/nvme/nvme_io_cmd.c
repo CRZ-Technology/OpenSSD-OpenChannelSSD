@@ -151,6 +151,14 @@ void handle_nvme_io_cmd(NVME_COMMAND *nvmeCmd)
 			handle_nvme_io_read(nvmeCmd->cmdSlotTag, nvmeIOCmd);
 			break;
 		}
+		case IO_NVM_WRITE_ZEROS:
+		{
+//			xil_printf("IO Write Zeros Command\r\n");
+			nvmeCPL.dword[0] = 0;
+			nvmeCPL.specific = 0x0;
+			set_auto_nvme_cpl(nvmeCmd->cmdSlotTag, nvmeCPL.specific, nvmeCPL.statusFieldWord);
+			break;
+		}
 		default:
 		{
 			xil_printf("Not Support IO Command OPC: %X\r\n", opc);

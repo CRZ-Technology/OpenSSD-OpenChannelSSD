@@ -102,7 +102,8 @@
 #define Vdie2PwayTranslation(dieNo) ((dieNo) / (USER_CHANNELS))
 #define Vblock2PblockOfTbsTranslation(blockNo) (((blockNo) / (USER_BLOCKS_PER_LUN)) * (TOTAL_BLOCKS_PER_LUN) + ((blockNo) % (USER_BLOCKS_PER_LUN))) //Tbs = Total block space
 #define Vblock2PblockOfMbsTranslation(blockNo) (((blockNo) / (USER_BLOCKS_PER_LUN)) * (MAIN_BLOCKS_PER_LUN) + ((blockNo) % (USER_BLOCKS_PER_LUN))) //Mbs = Main block space
-#define Vpage2PlsbPageTranslation(pageNo) ((pageNo) > (0) ? (2 * (pageNo) - 1): (0))
+//#define Vpage2PlsbPageTranslation(pageNo) ((pageNo) > (0) ? (2 * (pageNo) - 1): (0))
+unsigned int Vpage2PlsbPageTranslation(unsigned int pageNo);
 
 // physical to virtual translation
 #define Pcw2VdieTranslation(chNo, wayNo) ((chNo) + (wayNo) * (USER_CHANNELS))
@@ -180,7 +181,7 @@ typedef struct _PHY_BLOCK_ENTRY {
 } PHY_BLOCK_ENTRY, *P_PHY_BLOCK_ENTRY;
 
 typedef struct _PHY_BLOCK_MAP {
-	PHY_BLOCK_ENTRY phyBlock[USER_DIES][TOTAL_BLOCKS_PER_DIE];
+	PHY_BLOCK_ENTRY phyBlock[USER_DIES][TOTAL_BLOCKS_PER_DIE_DEF];
 } PHY_BLOCK_MAP, *P_PHY_BLOCK_MAP;
 
 

@@ -51,6 +51,14 @@
 #include "xparameters.h"
 #include "nvme/nvme.h"
 
+/* MICRON NAND DEVICE */
+enum {
+    NAND_TYPE_NONE   = -1,
+    MT29F128G08CBCEB = 0,
+    MT29F256G08CEECB = 1,
+    NUM_NAND_MODULE  = 2,
+};
+
 //checks NSC connection, initializes base address
 #ifdef	XPAR_T4NFC_HLPER_7_BASEADDR
 #define NSC_7_CONNECTED	1
@@ -128,21 +136,23 @@
 //number of connected (=AXI mapped) NSC
 #define NUMBER_OF_CONNECTED_CHANNEL (NSC_7_CONNECTED + NSC_6_CONNECTED + NSC_5_CONNECTED + NSC_4_CONNECTED + NSC_3_CONNECTED + NSC_2_CONNECTED + NSC_1_CONNECTED + NSC_0_CONNECTED)
 
-
 //--------------------------------
 //NAND flash memory specifications
 //--------------------------------
 
 #define	BYTES_PER_DATA_REGION_OF_NAND_ROW		16384
-#define	BYTES_PER_SPARE_REGION_OF_NAND_ROW		2208
+//#define	BYTES_PER_SPARE_REGION_OF_NAND_ROW		1872
 #define BYTES_PER_NAND_ROW						(BYTES_PER_DATA_REGION_OF_NAND_ROW + BYTES_PER_SPARE_REGION_OF_NAND_ROW)
 
 #define	ROWS_PER_SLC_BLOCK			256
 #define	ROWS_PER_MLC_BLOCK			512
 
 #define	MAIN_BLOCKS_PER_LUN			2048
-#define EXTENDED_BLOCKS_PER_LUN		144
+//#define EXTENDED_BLOCKS_PER_LUN		48
+#define EXTENDED_BLOCKS_PER_LUN_DEF		144
+
 #define TOTAL_BLOCKS_PER_LUN		(MAIN_BLOCKS_PER_LUN + EXTENDED_BLOCKS_PER_LUN)
+#define TOTAL_BLOCKS_PER_LUN_DEF		(MAIN_BLOCKS_PER_LUN + EXTENDED_BLOCKS_PER_LUN_DEF)
 
 #define	MAIN_ROWS_PER_SLC_LUN		(ROWS_PER_SLC_BLOCK * MAIN_BLOCKS_PER_LUN)
 #define	MAIN_ROWS_PER_MLC_LUN		(ROWS_PER_MLC_BLOCK * MAIN_BLOCKS_PER_LUN)
@@ -151,6 +161,7 @@
 
 #define	MAIN_BLOCKS_PER_DIE			(MAIN_BLOCKS_PER_LUN * LUNS_PER_DIE)
 #define TOTAL_BLOCKS_PER_DIE		(TOTAL_BLOCKS_PER_LUN * LUNS_PER_DIE)
+#define TOTAL_BLOCKS_PER_DIE_DEF		(TOTAL_BLOCKS_PER_LUN_DEF * LUNS_PER_DIE)
 
 #define BAD_BLOCK_MARK_PAGE0		0										//first row of a block
 #define BAD_BLOCK_MARK_PAGE1		(ROWS_PER_MLC_BLOCK - 1)				//last row of a block
@@ -242,5 +253,9 @@ void CheckConfigRestriction();
 
 extern unsigned int storageCapacity_L;
 extern T4REGS chCtlReg[USER_CHANNELS];
+
+extern char micron_nand_type;
+extern unsigned int BYTES_PER_SPARE_REGION_OF_NAND_ROW;
+extern unsigned int EXTENDED_BLOCKS_PER_LUN;
 
 #endif /* FTL_CONFIG_H_ */

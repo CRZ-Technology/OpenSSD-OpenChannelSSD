@@ -918,3 +918,36 @@ void UpdateBadBlockTableForGrownBadBlock(unsigned int tempBufAddr)
 	SaveBadBlockTable(dieState, tempBbtBufAddr, tempBbtBufEntrySize);
 }
 
+unsigned int Vpage2PlsbPageTranslation(unsigned int pageNo)
+{
+    unsigned int lsbPage = 0;
+
+    // Head exceptions (pageNo = 0..7)
+    static const uint16_t head_map[8] = {
+        0, 1, 2, 3, 4, 5, 7, 8
+    };
+
+    // Tail exceptions (pageNo = 254..259)
+    static const uint16_t tail_map[6] = {
+        503, 502, 506, 507, 509, 510
+    };
+
+    if (pageNo < 8) {
+        lsbPage = head_map[pageNo];
+        return lsbPage;
+    }
+
+    if (pageNo <= 253) {
+        // n = pageNo - 8 (0..245)
+        uint16_t n = (uint16_t)(pageNo - 8);
+        // LSB = 4*floor(n/2) + 10 + (n%2)
+        lsbPage = (uint16_t)(4 * (n >> 1) + 10 + (n & 1));
+        return lsbPage;
+    }
+
+    // pageNo = 254..259
+    lsbPage = tail_map[pageNo - 254];
+    return lsbPage;
+}
+
+

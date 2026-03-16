@@ -1,4 +1,0 @@
-domain_path: D:\tmp\CosmosPlus_micron_new_260225_2\ws\cosmosplus\zynq_fsbl\zynq_fsbl_bsp
-app_src_dir: D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_apps\zynq_fsbl
-template: zynq_fsbl
-lang: c
