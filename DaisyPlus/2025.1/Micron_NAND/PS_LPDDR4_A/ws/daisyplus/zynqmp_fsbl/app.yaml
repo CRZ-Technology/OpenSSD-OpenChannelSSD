@@ -1,4 +1,4 @@
-domain_path: D:\sources\workspace\daisyplus_openssd_micron\daisyplus\zynqmp_fsbl\zynqmp_fsbl_bsp
+domain_path: D:\tmp\daisyplus_micron_multi_lpddr4_a_25.1_260310\ws\daisyplus\zynqmp_fsbl\zynqmp_fsbl_bsp
 app_src_dir: D:\Xilinx\2025.1\Vitis\data\embeddedsw\lib\sw_apps\zynqmp_fsbl
 template: zynqmp_fsbl
 lang: c

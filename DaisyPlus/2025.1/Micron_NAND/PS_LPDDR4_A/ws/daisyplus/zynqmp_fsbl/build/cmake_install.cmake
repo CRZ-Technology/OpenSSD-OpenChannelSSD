@@ -1,4 +1,4 @@
-# Install script for directory: D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl
+# Install script for directory: D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

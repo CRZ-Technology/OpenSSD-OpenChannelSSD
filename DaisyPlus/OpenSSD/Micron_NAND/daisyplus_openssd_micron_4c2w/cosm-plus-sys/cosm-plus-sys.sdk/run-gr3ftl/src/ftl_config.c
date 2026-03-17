@@ -55,6 +55,15 @@
 
 unsigned int storageCapacity_L;
 T4REGS chCtlReg[USER_CHANNELS];
+char micron_nand_type = NAND_TYPE_NONE;
+static const char nand_id[NUM_NAND_MODULE][6] = 
+{
+   {0x2C, 0x84, 0x44, 0x34, 0xAA, 0x00},
+   {0x2C, 0x84, 0x64, 0x54, 0xA9, 0x00}
+};
+
+unsigned int BYTES_PER_SPARE_REGION_OF_NAND_ROW;
+unsigned int EXTENDED_BLOCKS_PER_LUN;
 
 void InitFTL()
 {
@@ -120,7 +129,63 @@ void InitChCtlReg()
 void InitNandArray()
 {
 	unsigned int chNo, wayNo, reqSlotTag;
-	int i; int k;
+	int i;
+
+    reqSlotTag = GetFromFreeReqQ();
+
+    reqPoolPtr->reqPool[reqSlotTag].reqType = REQ_TYPE_NAND;
+    reqPoolPtr->reqPool[reqSlotTag].reqCode = REQ_CODE_RESET;
+    reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandAddr = REQ_OPT_NAND_ADDR_PHY_ORG;
+    reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat = REQ_OPT_DATA_BUF_NONE;
+    reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
+    reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_TOTAL;
+    reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalCh = 0;
+    reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalWay = 0;
+    reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalBlock = 0; //dummy
+    reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalPage = 0;  //dummy
+    reqPoolPtr->reqPool[reqSlotTag].prevBlockingReq = REQ_SLOT_TAG_NONE;
+
+    SelectLowLevelReqQ(reqSlotTag);
+
+    reqSlotTag = GetFromFreeReqQ();
+
+    reqPoolPtr->reqPool[reqSlotTag].reqType = REQ_TYPE_NAND;
+    reqPoolPtr->reqPool[reqSlotTag].reqCode = REQ_CODE_SET_FEATURE;
+    reqPoolPtr->reqPool[reqSlotTag].reqOpt.nandAddr =  REQ_OPT_NAND_ADDR_PHY_ORG;
+    reqPoolPtr->reqPool[reqSlotTag].reqOpt.dataBufFormat = REQ_OPT_DATA_BUF_NONE;
+    reqPoolPtr->reqPool[reqSlotTag].reqOpt.rowAddrDependencyCheck = REQ_OPT_ROW_ADDR_DEPENDENCY_NONE;
+    reqPoolPtr->reqPool[reqSlotTag].reqOpt.blockSpace = REQ_OPT_BLOCK_SPACE_TOTAL;
+    reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalCh = 0;
+    reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalWay = 0;
+    reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalBlock = 0; //dummy
+    reqPoolPtr->reqPool[reqSlotTag].nandInfo.physicalPage = 0;  //dummy
+    reqPoolPtr->reqPool[reqSlotTag].prevBlockingReq = REQ_SLOT_TAG_NONE;
+
+    SelectLowLevelReqQ(reqSlotTag);
+    SyncAllLowLevelReqDone();
+
+    unsigned char* idData = (unsigned char*)(TEMPORARY_PAY_LOAD_ADDR + 16);
+    V2FReadIdSync(&chCtlReg[0], 0, idData);
+
+    for (int j = 0; j < NUM_NAND_MODULE;j ++)
+    {
+        if(!memcmp(idData, &nand_id[j][0], sizeof(nand_id[j])))
+        {
+            micron_nand_type = j;
+            break;
+        }
+    }
+
+    if(micron_nand_type == MT29F128G08CBCEB)
+    {
+        BYTES_PER_SPARE_REGION_OF_NAND_ROW = 2208;
+        EXTENDED_BLOCKS_PER_LUN            = 144;
+    }
+    else if(micron_nand_type == MT29F256G08CEECB)
+    {
+        BYTES_PER_SPARE_REGION_OF_NAND_ROW = 1872;
+        EXTENDED_BLOCKS_PER_LUN            = 48;
+    }
 
 	for(chNo=0; chNo<USER_CHANNELS; ++chNo)
 		for(wayNo=0; wayNo<USER_WAYS; ++wayNo)
@@ -188,7 +253,7 @@ void InitNandArray()
 
 	for (i = 0; i < USER_CHANNELS; i++)
 	{
-		for (k = 0; k < USER_WAYS; k++)
+		for (int k = 0; k < USER_WAYS; k++)
 		{
 			int j;
 			unsigned char* idData = (unsigned char*)(TEMPORARY_PAY_LOAD_ADDR + 16);

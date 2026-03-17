@@ -1,3 +1,0 @@
-D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/build/CMakeFiles/fsbl.elf.dir
-D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/build/CMakeFiles/edit_cache.dir
-D:/tmp/daisyplus_micron_new_lpddr4_b_260225_2/ws/daisyplus/zynqmp_fsbl/build/CMakeFiles/rebuild_cache.dir

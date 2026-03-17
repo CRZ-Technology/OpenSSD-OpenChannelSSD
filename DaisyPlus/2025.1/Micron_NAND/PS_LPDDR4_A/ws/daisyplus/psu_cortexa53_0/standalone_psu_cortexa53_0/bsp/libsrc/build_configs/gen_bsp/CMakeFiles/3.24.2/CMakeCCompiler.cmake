@@ -67,7 +67,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "D:/sources/workspace/daisyplus_openssd_micron/daisyplus/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/include;D:/Xilinx/2025.1/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/lib/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/13.3.0/include;D:/Xilinx/2025.1/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/lib/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/13.3.0/include-fixed;D:/Xilinx/2025.1/Vitis/gnu/aarch64/nt/aarch64-none/aarch64-xilinx-elf/usr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/include;D:/Xilinx/2025.1/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/lib/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/13.3.0/include;D:/Xilinx/2025.1/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/lib/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/13.3.0/include-fixed;D:/Xilinx/2025.1/Vitis/gnu/aarch64/nt/aarch64-none/aarch64-xilinx-elf/usr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;c;gcc")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "D:/Xilinx/2025.1/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/lib/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/13.3.0;D:/Xilinx/2025.1/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/lib/aarch64-xilinx-elf/gcc;D:/Xilinx/2025.1/Vitis/gnu/aarch64/nt/aarch64-none/aarch64-xilinx-elf/usr/lib64/aarch64-xilinx-elf/13.3.0;D:/Xilinx/2025.1/Vitis/gnu/aarch64/nt/aarch64-none/aarch64-xilinx-elf/usr/lib64")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

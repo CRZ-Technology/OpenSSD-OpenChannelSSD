@@ -1,4 +1,4 @@
-# Install script for directory: D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp
+# Install script for directory: D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,32 +39,32 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/cmake_install.cmake")
+  include("D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/cmake_install.cmake")
+  include("D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/cmake_install.cmake")
+  include("D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/cmake_install.cmake")
+  include("D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilsecure/src/cmake_install.cmake")
+  include("D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilsecure/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilpm/src/cmake_install.cmake")
+  include("D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilpm/src/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -75,5 +75,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

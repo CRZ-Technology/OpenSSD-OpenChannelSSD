@@ -1,4 +1,4 @@
-# Install script for directory: D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/xilffs/src
+# Install script for directory: D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/xilffs/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,31 +39,31 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/lib/libxilffs.a")
+   "D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/lib/libxilffs.a")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/lib" TYPE STATIC_LIBRARY MESSAGE_LAZY FILES "D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/libxilffs.a")
+  file(INSTALL DESTINATION "D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/lib" TYPE STATIC_LIBRARY MESSAGE_LAZY FILES "D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/libxilffs.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/include/../include")
+   "D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/include/../include")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/include/.." TYPE DIRECTORY MESSAGE_LAZY FILES "D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/include")
+  file(INSTALL DESTINATION "D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/include/.." TYPE DIRECTORY MESSAGE_LAZY FILES "D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/include")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/include/cmake_install.cmake")
+  include("D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/include/cmake_install.cmake")
 
 endif()
 

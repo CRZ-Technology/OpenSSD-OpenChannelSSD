@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Windows")
 set(CMAKE_HOST_SYSTEM_VERSION "10.0.19045")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "AMD64")
 
-include("D:/sources/workspace/daisyplus_openssd_micron/daisyplus/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/cortexa53_toolchain.cmake")
+include("D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/cortexa53_toolchain.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")

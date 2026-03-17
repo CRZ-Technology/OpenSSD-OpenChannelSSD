@@ -1,4 +1,4 @@
-# Install script for directory: D:/sources/workspace/daisyplus_openssd_micron/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/standalone/src/arm/ARMv8/64bit/platform/ZynqMP/gcc
+# Install script for directory: D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp/libsrc/standalone/src/arm/ARMv8/64bit/platform/ZynqMP/gcc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

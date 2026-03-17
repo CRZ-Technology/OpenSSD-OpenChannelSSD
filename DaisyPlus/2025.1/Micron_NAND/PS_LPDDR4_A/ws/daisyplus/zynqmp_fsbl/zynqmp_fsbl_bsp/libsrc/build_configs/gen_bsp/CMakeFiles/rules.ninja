@@ -470,7 +470,7 @@ rule C_STATIC_LIBRARY_LINKER__xilpm_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = D:\Xilinx\2025.1\tps\win64\cmake-3.24.2\bin\cmake.exe --regenerate-during-build -SD:\sources\workspace\daisyplus_openssd_micron\daisyplus\zynqmp_fsbl\zynqmp_fsbl_bsp -BD:\sources\workspace\daisyplus_openssd_micron\daisyplus\zynqmp_fsbl\zynqmp_fsbl_bsp\libsrc\build_configs\gen_bsp
+  command = D:\Xilinx\2025.1\tps\win64\cmake-3.24.2\bin\cmake.exe --regenerate-during-build -SD:\tmp\daisyplus_micron_multi_lpddr4_a_25.1_260310\ws\daisyplus\zynqmp_fsbl\zynqmp_fsbl_bsp -BD:\tmp\daisyplus_micron_multi_lpddr4_a_25.1_260310\ws\daisyplus\zynqmp_fsbl\zynqmp_fsbl_bsp\libsrc\build_configs\gen_bsp
   description = Re-running CMake...
   generator = 1
 

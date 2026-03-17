@@ -1,4 +1,4 @@
-# Install script for directory: D:/sources/workspace/daisyplus_openssd_micron/daisyplus/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/ddrcpsu/src
+# Install script for directory: D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/ddrcpsu/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

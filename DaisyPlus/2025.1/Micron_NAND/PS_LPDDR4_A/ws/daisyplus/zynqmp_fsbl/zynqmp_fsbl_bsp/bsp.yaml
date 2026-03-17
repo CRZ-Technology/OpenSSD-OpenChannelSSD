@@ -1,6 +1,6 @@
 sdt: hw_artifacts\psu_cortexa53_0_baremetal.dts
 family: ZynqMP
-path: D:\sources\workspace\daisyplus_openssd_micron\daisyplus\zynqmp_fsbl\zynqmp_fsbl_bsp
+path: D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/zynqmp_fsbl/zynqmp_fsbl_bsp
 config: default
 os: standalone
 os_info:

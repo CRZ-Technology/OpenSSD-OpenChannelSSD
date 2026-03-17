@@ -11,6 +11,7 @@ enable_language(C ASM CXX)
 # Add any compiler definitions, they will be added as extra definitions
 # Example : Adding VERBOSE=1 will pass -DVERBOSE=1 to the compiler.
 set(USER_COMPILE_DEFINITIONS
+""
 )
 
 # Undefine any previously specified compiler definitions, either built in or provided with a -D option
@@ -28,61 +29,61 @@ set(USER_UNDEFINED_SYMBOLS
 set(USER_INCLUDE_DIRECTORIES
 )
 set(USER_COMPILE_SOURCES
-"address_translation.c"
-"data_buffer.c"
-"ftl_config.c"
-"garbage_collection.c"
-"main.c"
-"nsc_driver.c"
-"nvme/debug.c"
-"nvme/host_lld.c"
-"nvme/nvme_admin_cmd.c"
-"nvme/nvme_identify.c"
-"nvme/nvme_io_cmd.c"
-"nvme/nvme_main.c"
-"request_allocation.c"
-"request_schedule.c"
-"request_transform.c"
+"../address_translation.c"
+"../data_buffer.c"
+"../ftl_config.c"
+"../garbage_collection.c"
+"../main.c"
+"../nsc_driver.c"
+"../request_allocation.c"
+"../request_schedule.c"
+"../request_transform.c"
+"../nvme/debug.c"
+"../nvme/host_lld.c"
+"../nvme/nvme_admin_cmd.c"
+"../nvme/nvme_identify.c"
+"../nvme/nvme_io_cmd.c"
+"../nvme/nvme_main.c"
 )
 
 # -----------------------------------------
 
 # Turn on all optional warnings (-Wall)
-set(USER_COMPILE_WARNINGS_ALL "-Wall")
+set(USER_COMPILE_WARNINGS_ALL -Wall)
 
 # Enable extra warning flags (-Wextra)
-set(USER_COMPILE_WARNINGS_EXTRA "-Wextra")
+set(USER_COMPILE_WARNINGS_EXTRA -Wextra)
 
 # Make all warnings into hard errors (-Werror)
-set(USER_COMPILE_WARNINGS_AS_ERRORS "")
+set(USER_COMPILE_WARNINGS_AS_ERRORS )
 
 # Check the code for syntax errors, but don't do anything beyond that (-fsyntax-only)
-set(USER_COMPILE_WARNINGS_CHECK_SYNTAX_ONLY "")
+set(USER_COMPILE_WARNINGS_CHECK_SYNTAX_ONLY )
 
 # Issue all the mandatory diagnostics listed in the C standard (-pedantic)
-set(USER_COMPILE_WARNINGS_PEDANTIC "")
+set(USER_COMPILE_WARNINGS_PEDANTIC )
 
 # Issue all the mandatory diagnostics, and make all mandatory diagnostics into errors. (-pedantic-errors)
-set(USER_COMPILE_WARNINGS_PEDANTIC_AS_ERRORS "")
+set(USER_COMPILE_WARNINGS_PEDANTIC_AS_ERRORS )
 
 # Suppress all warnings (-w)
-set(USER_COMPILE_WARNINGS_INHIBIT_ALL "")
+set(USER_COMPILE_WARNINGS_INHIBIT_ALL )
 
 # -----------------------------------------
 
 # Optimization level   "-O0" [None], "-O1" [Optimize] , "-O2" [Optimize More], "-O3" [Optimize Most] or "-Os" [Optimize Size]
-set(USER_COMPILE_OPTIMIZATION_LEVEL "-O0")
+set(USER_COMPILE_OPTIMIZATION_LEVEL -O0)
 
 # Other flags related to optimization
-set(USER_COMPILE_OPTIMIZATION_OTHER_FLAGS "")
+set(USER_COMPILE_OPTIMIZATION_OTHER_FLAGS )
 
 # -----------------------------------------
 
 # Debug level "" [None], "-g1" [Minimum], "g2" [Default], "g3" [Maximum]
-set(USER_COMPILE_DEBUG_LEVEL "-g3")
+set(USER_COMPILE_DEBUG_LEVEL -g3)
 
 # Other flags related to debugging
-set(USER_COMPILE_DEBUG_OTHER_FLAGS "")
+set(USER_COMPILE_DEBUG_OTHER_FLAGS )
 
 # -----------------------------------------
 
@@ -92,31 +93,31 @@ set(USER_COMPILE_DEBUG_OTHER_FLAGS "")
 # -----------------------------------------
 
 # Verbose (-v)
-set(USER_COMPILE_VERBOSE "")
+set(USER_COMPILE_VERBOSE )
 
 # Support ANSI_PROGRAM (-ansi)
-set(USER_COMPILE_ANSI "")
+set(USER_COMPILE_ANSI )
 set(USER_COMPILE_RELAXATION "-Wl,--no-relax")
 set(USER_COMPILE_GARBAGE "")
 # Add any compiler options that are not covered by the above variables, they will be added as extra compiler options
 # To enable profiling -pg [ for gprof ]  or -p [ for prof information ]
-set(USER_COMPILE_OTHER_FLAGS "")
+set(USER_COMPILE_OTHER_FLAGS )
 
 # -----------------------------------------
 
 # Linker options
 # Do not use the standard system startup files when linking.
 # The standard system libraries are used normally, unless -nostdlib or -nodefaultlibs is used. (-nostartfiles)
-set(USER_LINK_NO_START_FILES "")
+set(USER_LINK_NO_START_FILES )
 
 # Do not use the standard system libraries when linking. (-nodefaultlibs)
-set(USER_LINK_NO_DEFAULT_LIBS "")
+set(USER_LINK_NO_DEFAULT_LIBS )
 
 # Do not use the standard system startup files or libraries when linking. (-nostdlib)
-set(USER_LINK_NO_STDLIB "")
+set(USER_LINK_NO_STDLIB )
 
 # Omit all symbol information. (-s)
-set(USER_LINK_OMIT_ALL_SYMBOL_INFO "")
+set(USER_LINK_OMIT_ALL_SYMBOL_INFO )
 
 
 # -----------------------------------------

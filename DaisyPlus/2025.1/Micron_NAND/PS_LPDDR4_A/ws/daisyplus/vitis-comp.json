@@ -3,7 +3,7 @@
   "type": "PLATFORM",
   "configuration": {
     "description": "",
-    "xsa": "D:\\sources\\DaisyPlus\\2025.1\\daisyplus_openssd_micron_4c2w_66mhz_20251_20250708\\sys_top_wrapper.xsa",
+    "xsa": "D:\\tmp\\daisyplus_micron_new_lpddr4_a_260225_2\\sys_top_wrapper.xsa",
     "xsaPathInPlatform": "daisyplus\\hw\\sys_top_wrapper.xsa",
     "emulationXsa": "",
     "emulationXsaPathInPlatform": "",

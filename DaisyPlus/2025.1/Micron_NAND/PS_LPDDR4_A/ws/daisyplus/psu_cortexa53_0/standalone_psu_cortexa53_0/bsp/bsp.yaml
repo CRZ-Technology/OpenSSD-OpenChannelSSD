@@ -1,6 +1,6 @@
 sdt: hw_artifacts\psu_cortexa53_0_baremetal.dts
 family: ZynqMP
-path: D:\sources\workspace\daisyplus_openssd_micron\daisyplus\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp
+path: D:/tmp/daisyplus_micron_multi_lpddr4_a_25.1_260310/ws/daisyplus/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp
 config: default
 os: standalone
 os_info:
@@ -210,26 +210,18 @@ drv_info:
     driver: bram
     ip_name: axi_bram_ctrl
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\bram_v4_12
-    examples:
-      xbram_example.c: []
   axi_bram_ctrl_1:
     driver: bram
     ip_name: axi_bram_ctrl
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\bram_v4_12
-    examples:
-      xbram_example.c: []
   axi_bram_ctrl_2:
     driver: bram
     ip_name: axi_bram_ctrl
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\bram_v4_12
-    examples:
-      xbram_example.c: []
   axi_bram_ctrl_3:
     driver: bram
     ip_name: axi_bram_ctrl
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\bram_v4_12
-    examples:
-      xbram_example.c: []
   iodelay_if_0: None
   iodelay_if_0_dqs: None
   nvme_ctrl_0: None
@@ -237,98 +229,38 @@ drv_info:
     driver: scugic
     ip_name: psu_acpu_gic
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\scugic_v5_5
-    examples:
-      xscugic_example.c: []
-      xscugic_low_level_example.c: []
-      xscugic_tapp_example.c: []
   psu_adma_0:
     driver: zdma
     ip_name: psu_adma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_adma_1:
     driver: zdma
     ip_name: psu_adma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_adma_2:
     driver: zdma
     ip_name: psu_adma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_adma_3:
     driver: zdma
     ip_name: psu_adma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_adma_4:
     driver: zdma
     ip_name: psu_adma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_adma_5:
     driver: zdma
     ip_name: psu_adma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_adma_6:
     driver: zdma
     ip_name: psu_adma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_adma_7:
     driver: zdma
     ip_name: psu_adma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_afi_0: None
   psu_afi_1: None
   psu_afi_2: None
@@ -340,44 +272,22 @@ drv_info:
     driver: sysmonpsu
     ip_name: psu_ams
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\sysmonpsu_v3_1
-    examples:
-      xsysmonpsu_intr_example.c: []
-      xsysmonpsu_single_ch_intr_example.c: []
-      xsysmonpsu_ams_example.c: []
-      xsysmonpsu_low_level_example.c: []
-      xsysmonpsu_polled_example.c: []
   psu_apm_0:
     driver: axipmon
     ip_name: psu_apm
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\axipmon_v6_12
-    examples:
-      xaxipmon_intr_example.c: []
-      xaxipmon_ocm_example.c: []
-      xaxipmon_polled_example.c: []
   psu_apm_1:
     driver: axipmon
     ip_name: psu_apm
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\axipmon_v6_12
-    examples:
-      xaxipmon_intr_example.c: []
-      xaxipmon_ocm_example.c: []
-      xaxipmon_polled_example.c: []
   psu_apm_2:
     driver: axipmon
     ip_name: psu_apm
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\axipmon_v6_12
-    examples:
-      xaxipmon_intr_example.c: []
-      xaxipmon_ocm_example.c: []
-      xaxipmon_polled_example.c: []
   psu_apm_5:
     driver: axipmon
     ip_name: psu_apm
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\axipmon_v6_12
-    examples:
-      xaxipmon_intr_example.c: []
-      xaxipmon_ocm_example.c: []
-      xaxipmon_polled_example.c: []
   psu_apu: None
   psu_cci_gpv: None
   psu_cci_reg: None
@@ -389,23 +299,15 @@ drv_info:
     driver: resetps
     ip_name: psu_crf_apb
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\resetps_v1_7
-    examples:
-      xresetps_example.c: []
   psu_crl_apb:
     driver: clockps
     ip_name: psu_crl_apb
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\clockps_v1_6
-    examples:
-      xclockps_i2c_example.c: []
   psu_csu_0: None
   psu_csudma:
     driver: csudma
     ip_name: psu_csudma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\csudma_v1_17
-    examples:
-      xcsudma_intr_example.c: []
-      xcsudma_polled_example.c: []
-      xcsudma_selftest_example.c: []
   psu_ddr_phy: None
   psu_ddr_qos_ctrl: None
   psu_ddr_xmpu0_cfg: None
@@ -423,10 +325,6 @@ drv_info:
     driver: emacps
     ip_name: psu_ethernet
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\emacps_v3_22
-    examples:
-      xemacps_example_intr_dma.c:
-      - xemacps_example_util.c
-      - xemacps_example.h
   psu_fpd_gpv: None
   psu_fpd_slcr: None
   psu_fpd_slcr_secure: None
@@ -436,138 +334,47 @@ drv_info:
     driver: zdma
     ip_name: psu_gdma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_gdma_1:
     driver: zdma
     ip_name: psu_gdma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_gdma_2:
     driver: zdma
     ip_name: psu_gdma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_gdma_3:
     driver: zdma
     ip_name: psu_gdma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_gdma_4:
     driver: zdma
     ip_name: psu_gdma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_gdma_5:
     driver: zdma
     ip_name: psu_gdma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_gdma_6:
     driver: zdma
     ip_name: psu_gdma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_gdma_7:
     driver: zdma
     ip_name: psu_gdma
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\zdma_v1_20
-    examples:
-      xzdma_linear_example.c: []
-      xzdma_linkedlist_example.c: []
-      xzdma_readonlymode_example.c: []
-      xzdma_simple_example.c: []
-      xzdma_writeonlymode_example.c: []
-      xzdma_selftest_example.c: []
   psu_gpio_0:
     driver: gpiops
     ip_name: psu_gpio
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\gpiops_v3_14
-    examples:
-      xgpiops_intr_example.c: []
-      xgpiops_polled_example.c: []
   psu_gpu: None
   psu_i2c_0:
     driver: iicps
     ip_name: psu_i2c
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\iicps_v3_21
-    examples:
-      xiicps_eeprom_intr_example.c: []
-      xiicps_eeprom_polled_example.c: []
-      xiicps_intr_master_example.c: []
-      xiicps_intr_multi_master_example.c: []
-      xiicps_intr_slave_example.c: []
-      xiicps_polled_master_example.c: []
-      xiicps_polled_multi_master_example.c: []
-      xiicps_polled_slave_example.c: []
-      xiicps_repeated_start_example.c: []
-      xiicps_selftest_example.c: []
-      xiicps_slave_monitor_example.c: []
-      xiicps_smbus_intr_master_example.c: []
-      xiicps_smbus_intr_slave_example.c: []
-      xiicps_smbus_polled_master_example.c: []
-      xiicps_smbus_polled_slave_example.c: []
   psu_i2c_1:
     driver: iicps
     ip_name: psu_i2c
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\iicps_v3_21
-    examples:
-      xiicps_eeprom_intr_example.c: []
-      xiicps_eeprom_polled_example.c: []
-      xiicps_intr_master_example.c: []
-      xiicps_intr_multi_master_example.c: []
-      xiicps_intr_slave_example.c: []
-      xiicps_polled_master_example.c: []
-      xiicps_polled_multi_master_example.c: []
-      xiicps_polled_slave_example.c: []
-      xiicps_repeated_start_example.c: []
-      xiicps_selftest_example.c: []
-      xiicps_slave_monitor_example.c: []
-      xiicps_smbus_intr_master_example.c: []
-      xiicps_smbus_intr_slave_example.c: []
-      xiicps_smbus_polled_master_example.c: []
-      xiicps_smbus_polled_slave_example.c: []
   psu_iou_scntr: None
   psu_iou_scntrs: None
   psu_iousecure_slcr: None
@@ -576,8 +383,6 @@ drv_info:
     driver: ipipsu
     ip_name: psu_ipi
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\ipipsu_v2_17
-    examples:
-      xipipsu_self_test_example.c: []
   psu_lpd_slcr: None
   psu_lpd_slcr_secure: None
   psu_lpd_xppu: None
@@ -590,25 +395,6 @@ drv_info:
     driver: qspipsu
     ip_name: psu_qspi
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\qspipsu_v1_21
-    examples:
-      xqspipsu_polldata_polltimeout_interrupt_example.c:
-      - xqspipsu_flash_config.h
-      xqspipsu_generic_flash_interrupt_example.c:
-      - xqspipsu_flash_config.h
-      xqspipsu_write_protect_example.c:
-      - xqspipsu_flash_config.h
-      xqspipsu_generic_flash_polled_64bit_dma_r5_example.c:
-      - xqspipsu_flash_config.h
-      xqspipsu_generic_flash_polled_example.c:
-      - xqspipsu_flash_config.h
-      xqspipsu_generic_flash_non_blocking_read_example.c:
-      - xqspipsu_flash_config.h
-      xqspipsu_generic_flash_lqspi_example.c:
-      - xqspipsu_flash_config.h
-      xqspipsu_generic_nand_flash_interrupt_example.c:
-      - xqspipsu_flash_config.h
-      xqspipsu_generic_nand_flash_polled_example.c:
-      - xqspipsu_flash_config.h
   psu_r5_0_atcm: None
   psu_r5_0_atcm_global: None
   psu_r5_0_atcm_lockstep: None
@@ -627,20 +413,10 @@ drv_info:
     driver: rtcpsu
     ip_name: psu_rtc
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\rtcpsu_v1_15
-    examples:
-      xrtcpsu_alarm_interrupt_example.c: []
-      xrtcpsu_alarm_polled_example.c: []
-      xrtcpsu_periodic_alarm_interrupt_example.c: []
-      xrtcpsu_seconds_interrupt_example.c: []
-      xrtcpsu_seconds_polled_example.c: []
-      xrtcpsu_set_calibration_example.c: []
-      xrtcpsu_set_time_example.c: []
   psu_sd_1:
     driver: sdps
     ip_name: psu_sd
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\sdps_v4_4
-    examples:
-      xsdps_raw_example.c: []
   psu_serdes: None
   psu_siou: None
   psu_smmu_gpv: None
@@ -649,22 +425,10 @@ drv_info:
     driver: uartps
     ip_name: psu_uart
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\uartps_v3_16
-    examples:
-      xuartps_hello_world_example.c: []
-      xuartps_intr_example.c: []
-      xuartps_low_echo_example.c: []
-      xuartps_polled_example.c: []
-      xuartps_selftest_example.c: []
   psu_uart_1:
     driver: uartps
     ip_name: psu_uart
     path: D:\Xilinx\2025.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\uartps_v3_16
-    examples:
-      xuartps_hello_world_example.c: []
-      xuartps_intr_example.c: []
-      xuartps_low_echo_example.c: []
-      xuartps_polled_example.c: []
-      xuartps_selftest_example.c: []
   t4nfc_hlper_0: None
   t4nfc_hlper_1: None
   t4nfc_hlper_2: None
@@ -678,7 +442,7 @@ lib_config:
       name: XILTIMER_en_interval_timer
       permission: read_write
       type: boolean
-      value: 'true'
+      value: 'false'
       default: 'false'
       options:
       - 'true'

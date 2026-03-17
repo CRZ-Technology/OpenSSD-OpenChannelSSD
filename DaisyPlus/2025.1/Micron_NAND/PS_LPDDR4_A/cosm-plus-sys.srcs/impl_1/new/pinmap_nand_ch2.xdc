@@ -88,7 +88,7 @@ set_property SLEW SLOW [get_ports {nand_if_2_nand_ce[0]}]
 set_property DRIVE 12 [get_ports {nand_if_2_nand_ce[0]}]
 
 set_property IOSTANDARD LVCMOS18 [get_ports {nand_if_2_nand_ce[1]}]
-set_property PACKAGE_PIN B15 [get_ports {nand_if_2_nand_ce[1]}]
+set_property PACKAGE_PIN D16 [get_ports {nand_if_2_nand_ce[1]}]
 set_property SLEW SLOW [get_ports {nand_if_2_nand_ce[1]}]
 set_property DRIVE 12 [get_ports {nand_if_2_nand_ce[1]}]
 
@@ -103,7 +103,7 @@ set_property SLEW SLOW [get_ports {nand_if_2_nand_ce[3]}]
 set_property DRIVE 12 [get_ports {nand_if_2_nand_ce[3]}]
 
 set_property IOSTANDARD LVCMOS18 [get_ports {nand_if_2_nand_ce[4]}]
-set_property PACKAGE_PIN D16 [get_ports {nand_if_2_nand_ce[4]}]
+set_property PACKAGE_PIN B15 [get_ports {nand_if_2_nand_ce[4]}]
 set_property SLEW SLOW [get_ports {nand_if_2_nand_ce[4]}]
 set_property DRIVE 12 [get_ports {nand_if_2_nand_ce[4]}]
 
@@ -161,7 +161,7 @@ set_property IOSTANDARD LVCMOS18 [get_ports {nand_if_2_nand_rb[0]}]
 set_property PACKAGE_PIN G15 [get_ports {nand_if_2_nand_rb[0]}]
 
 set_property IOSTANDARD LVCMOS18 [get_ports {nand_if_2_nand_rb[1]}]
-set_property PACKAGE_PIN L17 [get_ports {nand_if_2_nand_rb[1]}]
+set_property PACKAGE_PIN H15 [get_ports {nand_if_2_nand_rb[1]}]
 
 set_property IOSTANDARD LVCMOS18 [get_ports {nand_if_2_nand_rb[2]}]
 set_property PACKAGE_PIN R15 [get_ports {nand_if_2_nand_rb[2]}]
@@ -170,7 +170,7 @@ set_property IOSTANDARD LVCMOS18 [get_ports {nand_if_2_nand_rb[3]}]
 set_property PACKAGE_PIN K17 [get_ports {nand_if_2_nand_rb[3]}]
 
 set_property IOSTANDARD LVCMOS18 [get_ports {nand_if_2_nand_rb[4]}]
-set_property PACKAGE_PIN H15 [get_ports {nand_if_2_nand_rb[4]}]
+set_property PACKAGE_PIN L17 [get_ports {nand_if_2_nand_rb[4]}]
 
 set_property IOSTANDARD LVCMOS18 [get_ports {nand_if_2_nand_rb[5]}]
 set_property PACKAGE_PIN K15 [get_ports {nand_if_2_nand_rb[5]}]

@@ -413,7 +413,7 @@ rule C_STATIC_LIBRARY_LINKER__xiltimer_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = D:\Xilinx\2025.1\tps\win64\cmake-3.24.2\bin\cmake.exe --regenerate-during-build -SD:\sources\workspace\daisyplus_openssd_micron\daisyplus\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp -BD:\sources\workspace\daisyplus_openssd_micron\daisyplus\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp\libsrc\build_configs\gen_bsp
+  command = D:\Xilinx\2025.1\tps\win64\cmake-3.24.2\bin\cmake.exe --regenerate-during-build -SD:\tmp\daisyplus_micron_multi_lpddr4_a_25.1_260310\ws\daisyplus\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp -BD:\tmp\daisyplus_micron_multi_lpddr4_a_25.1_260310\ws\daisyplus\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp\libsrc\build_configs\gen_bsp
   description = Re-running CMake...
   generator = 1
 
