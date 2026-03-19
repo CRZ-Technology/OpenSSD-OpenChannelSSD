@@ -50,11 +50,18 @@
 #include "nsc_driver.h"
 #include "xparameters.h"
 #include <assert.h>
+#include "ftl_config.h"
 
 typedef struct
 {
 	unsigned int delayVal[32];
 } iodelay_if;
+
+static const int way_table[NUM_NAND_MODULE][NSC_MAX_WAYS] =
+{
+    {0, 1, 2, 3, 4, 5, 6, 7}, /* MT29F128G08CBCEB -> way configuration : O X X X O X X X */
+    {0, 4, 2, 3, 4, 5, 6, 7}  /* MT29F256G08CEECB -> way configuration : O O X X X X X X */
+};
 
 void nfc_set_dqs_delay(int channel, unsigned int newValue)
 {
@@ -104,6 +111,11 @@ void __attribute__((optimize("O0"))) V2FResetSync(T4REGS* t4regs, int way)
 {
 	T4REG_CMD_NAND_RESET resetCmd;
 
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
+    
 	resetCmd.cmdSelect = T4NSC_CMD_NAND_RESET;
 	resetCmd.waySelect = 1 << way;
 
@@ -118,6 +130,11 @@ void __attribute__((optimize("O0"))) V2FResetSync(T4REGS* t4regs, int way)
 void __attribute__((optimize("O0"))) V2FSetFeaturesT(T4REGS* t4regs, int way, unsigned int address, volatile unsigned int* payload)
 {
 	T4REG_CMD_SET_FEATURES setFeaturesCmd;
+
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
 
 	setFeaturesCmd.cmdSelect = T4NSC_CMD_SET_FEATUREST;
 	setFeaturesCmd.waySelect = 1 << way;
@@ -144,6 +161,11 @@ void __attribute__((optimize("O0"))) V2FSetFeaturesSync(T4REGS* t4regs, int way,
 {
 	volatile unsigned int* payload = (unsigned int*)payLoadAddr;
 	volatile unsigned int* status = (unsigned int*)(payLoadAddr + 4);
+
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
 
 	*payload = feature0x02;
 	while (V2FIsControllerBusy(t4regs));
@@ -201,6 +223,11 @@ void __attribute__((optimize("O0"))) V2FReadPageTriggerAsync(T4REGS* t4regs, int
 {
 	T4REG_CMD_READ_PAGE_TRIGGER readPageTrigggerCmd;
 
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
+
 	readPageTrigggerCmd.cmdSelect = T4NSC_CMD_READ_PAGE_TRIGGER_PSLC;
 	readPageTrigggerCmd.waySelect = 1 << way;
 	readPageTrigggerCmd.rowAddress = rowAddress;
@@ -213,6 +240,11 @@ void __attribute__((optimize("O0"))) V2FReadPageTriggerAsync(T4REGS* t4regs, int
 void __attribute__((optimize("O0"))) V2FReadPageTransferAsync(T4REGS* t4regs, int way, void* pageDataBuffer, void* spareDataBuffer, unsigned int* errorInformation, unsigned int* completion, unsigned int rowAddress)
 {
 	T4REG_CMD_READ_PAGE_TRANSFER_PSLC readpagepSLC;
+
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
 
 	readpagepSLC.cmdSelect = T4NSC_CMD_READ_TRANSFER_PSLC;
 	readpagepSLC.waySelect = 1 << way;
@@ -232,6 +264,11 @@ void __attribute__((optimize("O0"))) V2FReadPageTransferRawAsync(T4REGS* t4regs,
 {
 	T4REG_CMD_READ_PAGE_TRANSFER_RAW readPageTransferRaw;
 
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
+
 	readPageTransferRaw.cmdSelect = T4NSC_CMD_READ_TRANSFER_RAW;
 	readPageTransferRaw.waySelect = 1 << way;
 	readPageTransferRaw.colAddress = 0;
@@ -250,6 +287,11 @@ void __attribute__((optimize("O0"))) V2FProgramPageAsync(T4REGS* t4regs, int way
 {
 	T4REG_CMD_PROGRAM_PAGE_TRANSFER_PSLC progPagepSLC;
 
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
+
 	progPagepSLC.cmdSelect = T4NSC_CMD_PROGRAM_PAGE_PSLC;
 	progPagepSLC.waySelect = 1 << way;
 	progPagepSLC.rowAddress = rowAddress;
@@ -267,6 +309,11 @@ void __attribute__((optimize("O0"))) V2FEraseBlockAsync(T4REGS* t4regs, int way,
 
 	assert((rowAddress & 0xFF) == 0);
 
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
+
 	eraseBlockCmd.cmdSelect = T4NSC_CMD_ERASE_BLOCK;
 	eraseBlockCmd.waySelect = 1 << way;
 	eraseBlockCmd.rowAddress = rowAddress;
@@ -280,6 +327,11 @@ void __attribute__((optimize("O0"))) V2FStatusCheckAsync(T4REGS* t4regs, int way
 {
 	T4REG_CMD_READ_STATUS readStatusCmd;
 
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
+
 	readStatusCmd.cmdSelect = T4NSC_CMD_READ_STATUS;
 	readStatusCmd.waySelect = 1 << way;
 	readStatusCmd.reportAddress = (unsigned int)statusReport;
@@ -292,6 +344,11 @@ void __attribute__((optimize("O0"))) V2FStatusCheckAsync(T4REGS* t4regs, int way
 
 void __attribute__((optimize("O0"))) V2FStatusCheckSync(T4REGS* t4regs, int way, unsigned int* statusReport)
 {
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
+
 	do
 	{
         while (V2FIsControllerBusy(t4regs));
@@ -307,6 +364,11 @@ void __attribute__((optimize("O0"))) V2FStatusCheckSync(T4REGS* t4regs, int way,
 void V2FReadIdAsync(T4REGS* t4regs, int way, unsigned int* statusReport, unsigned int* completion)
 {
 	T4REG_CMD_READ_ID readIdCmd;
+
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
 
 	readIdCmd.cmdSelect = T4NSC_CMD_READ_ID;
 	readIdCmd.waySelect = 1 << way;
@@ -324,6 +386,12 @@ void V2FReadIdSync(T4REGS* t4regs, int way, unsigned int* statusReport)
 {
 	unsigned char buf[8] = {0};
 	int i;
+
+    if(micron_nand_type != (char) NAND_TYPE_NONE)
+    {
+        way = way_table[micron_nand_type][way];
+    }
+
 	for (i = 0; i < 8; i++)
 		((unsigned char*)statusReport)[i] = 0;
 	unsigned int* completion = &statusReport[4];
