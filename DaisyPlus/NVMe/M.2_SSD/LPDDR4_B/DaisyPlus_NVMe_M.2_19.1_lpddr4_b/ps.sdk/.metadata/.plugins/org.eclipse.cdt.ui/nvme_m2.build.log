@@ -1,7 +1,6 @@
-19:34:48 **** Clean-only build of configuration Debug for project nvme_m2 ****
-make clean 
-rm -rf  ./src/pcie/xdmapcie.o  ./src/nvme/debug.o ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/data_buffer.o ./src/main.o ./src/request_allocation.o ./src/request_ipc.o ./src/request_schedule.o ./src/request_transform.o  ./src/pcie/xdmapcie.d  ./src/nvme/debug.d ./src/nvme/host_lld.d ./src/nvme/nvme_admin_cmd.d ./src/nvme/nvme_identify.d ./src/nvme/nvme_io_cmd.d ./src/nvme/nvme_main.d  ./src/data_buffer.d ./src/main.d ./src/request_allocation.d ./src/request_ipc.d ./src/request_schedule.d ./src/request_transform.d  nvme_m2.elf.size  nvme_m2.elf
-' '
+15:10:22 **** Incremental Build of configuration Debug for project nvme_m2 ****
+make all 
+make: Nothing to be done for 'all'.
 
-19:34:49 Build Finished (took 749ms)
+15:10:23 Build Finished (took 478ms)
 

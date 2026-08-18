@@ -735,6 +735,7 @@
 <includePath path="#undef __ARM_FEATURE_SM3" removed="true"/>
 <includePath path="#undef __FLT_EVAL_METHOD_C99__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>
+<includePath path="#undef __ARM_FP_FAST" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_SM4" removed="true"/>
 <includePath path="c:\xilinx\sdk\2019.1\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
 <includePath path="#undef __ARM_FEATURE_FP16_FML" removed="true"/>
